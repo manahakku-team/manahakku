@@ -4,17 +4,19 @@ plugins {
 }
 
 val runNumber = System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull() ?: 1
+// The release line ("0.2" while testing, "1.0" at launch) lives in version.txt so the app and the release tag always agree.
+val versionLine = rootProject.file("version.txt").readText().trim()
 
 android {
     namespace = "org.manahakku.app"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "org.manahakku.app"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 100 + runNumber   // continues after the last 0.1.x builds
-        versionName = "0.2.$runNumber"
+        versionName = "$versionLine.$runNumber"
     }
 
     // Shared test key so each new build installs over the previous one.

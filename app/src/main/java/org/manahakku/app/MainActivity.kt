@@ -12,7 +12,14 @@ import android.os.Environment
 import android.print.PrintAttributes
 import android.print.PrintManager
 import android.provider.MediaStore
+import android.content.res.Configuration
+import android.graphics.Color
+import android.view.View
+import android.view.WindowInsets
+import android.view.WindowInsetsController
 import android.view.WindowManager
+import android.widget.FrameLayout
+import android.window.OnBackInvokedDispatcher
 import android.widget.Toast
 import android.speech.RecognizerIntent
 import android.speech.tts.TextToSpeech
@@ -46,7 +53,7 @@ class MainActivity : Activity(), TextToSpeech.OnInitListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         web = WebView(this)
-        setContentView(web)
+        setContentView(edgeToEdge(web))
 
         with(web.settings) {
             javaScriptEnabled = true
@@ -90,6 +97,48 @@ class MainActivity : Activity(), TextToSpeech.OnInitListener {
 
         if (savedInstanceState != null) web.restoreState(savedInstanceState)
         else web.loadUrl("file:///android_asset/index.html")
+    }
+
+    /**
+     * Android 15+ draws apps under the status and navigation bars. Keep the page clear of them: an indigo strip
+     * behind the status bar (matching the header), the page colour behind the navigation bar, and the page lifted
+     * above the keyboard.
+     */
+    private fun edgeToEdge(page: WebView): View {
+        val dark = (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+        val pageColor = if (dark) Color.parseColor("#11141B") else Color.parseColor("#F2F3EF")
+        val root = FrameLayout(this).apply { setBackgroundColor(pageColor) }
+        val top = View(this).apply { setBackgroundColor(Color.parseColor("#2B3A8F")) }
+        root.addView(top, FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, 0))
+        root.addView(page, FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT))
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            root.setOnApplyWindowInsetsListener { _, insets ->
+                val bars = insets.getInsets(WindowInsets.Type.systemBars() or WindowInsets.Type.displayCutout())
+                val ime = insets.getInsets(WindowInsets.Type.ime())
+                top.layoutParams = (top.layoutParams as FrameLayout.LayoutParams).apply { height = bars.top }
+                page.layoutParams = (page.layoutParams as FrameLayout.LayoutParams).apply {
+                    setMargins(bars.left, bars.top, bars.right, maxOf(bars.bottom, ime.bottom))
+                }
+                top.requestLayout(); page.requestLayout()
+                WindowInsets.CONSUMED
+            }
+            window.setDecorFitsSystemWindows(false)
+            window.insetsController?.setSystemBarsAppearance(
+                if (dark) 0 else WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS,
+                WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS or WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS)
+        }
+        // Back gesture / button (Android 13+): let the page close its own panels first, then go back or close the app.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            onBackInvokedDispatcher.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT) { handleBack() }
+        }
+        return root
+    }
+
+    private fun handleBack() {
+        web.evaluateJavascript("(window.mhBack && window.mhBack()) ? 'y' : 'n'") { r ->
+            if (r?.contains("y") == true) return@evaluateJavascript
+            if (web.canGoBack()) web.goBack() else finish()
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -267,10 +316,7 @@ class MainActivity : Activity(), TextToSpeech.OnInitListener {
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        web.evaluateJavascript("(window.mhBack && window.mhBack()) ? 'y' : 'n'") { r ->
-            if (r?.contains("y") == true) return@evaluateJavascript
-            if (web.canGoBack()) web.goBack() else finish()
-        }
+        handleBack()
     }
 
     override fun onDestroy() {
