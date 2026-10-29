@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-29T13:17",
+ "updated": "2026-10-29T16:08",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 30,
+    "agri": 31,
+    "other": 128,
     "health": 16,
-    "education": 11,
-    "other": 124,
+    "education": 12,
     "water": 25,
     "power": 3,
     "housing": 3,
@@ -18,6 +18,10 @@
     "livelihood": 3,
     "sanitation": 5
    },
+   "Warangal": {
+    "health": 5,
+    "agri": 1
+   },
    "Hyderabad": {
     "nutrition": 2,
     "women": 1,
@@ -28,10 +32,6 @@
    },
    "Siddipet": {
     "education": 1
-   },
-   "Warangal": {
-    "health": 4,
-    "agri": 1
    },
    "Mahabubnagar": {
     "other": 2
@@ -68,17 +68,22 @@
    }
   },
   "ap": {
+   "Guntur": {
+    "health": 1,
+    "other": 1,
+    "water": 1
+   },
    "(state-wide / unknown)": {
-    "other": 279,
+    "other": 290,
+    "health": 14,
+    "power": 21,
+    "education": 20,
     "agri": 24,
     "roads": 5,
-    "power": 19,
     "water": 9,
-    "sanitation": 10,
+    "sanitation": 11,
     "livelihood": 1,
     "social": 2,
-    "education": 19,
-    "health": 13,
     "women": 2,
     "nutrition": 5,
     "elderly": 1,
@@ -86,10 +91,6 @@
    },
    "Chittoor": {
     "power": 1
-   },
-   "Guntur": {
-    "other": 1,
-    "water": 1
    },
    "Kakinada": {
     "agri": 1,
