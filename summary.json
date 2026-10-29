@@ -1,119 +1,85 @@
 {
- "updated": "2026-10-29T10:44",
+ "updated": "2026-10-29T11:03",
  "last7days_trusted": {
   "ts": {
-   "Siddipet": {
-    "education": 1,
-    "nutrition": 1
-   },
    "Hyderabad": {
-    "nutrition": 8,
+    "nutrition": 2,
     "women": 1,
-    "other": 7,
+    "other": 6,
     "water": 3,
     "health": 2,
     "housing": 1
    },
+   "Siddipet": {
+    "education": 1
+   },
    "(state-wide / unknown)": {
     "health": 15,
-    "other": 96,
-    "nutrition": 24,
-    "water": 28,
-    "power": 4,
-    "agri": 23,
+    "other": 115,
+    "agri": 26,
+    "water": 25,
+    "power": 3,
     "education": 9,
-    "housing": 4,
-    "social": 3,
-    "roads": 9,
-    "women": 2,
+    "housing": 3,
+    "social": 1,
+    "nutrition": 7,
+    "roads": 7,
     "elderly": 2,
+    "women": 1,
     "livelihood": 3,
     "sanitation": 5
    },
    "Warangal": {
     "health": 3,
-    "agri": 1,
-    "nutrition": 1
+    "agri": 1
    },
    "Mahabubnagar": {
     "other": 2
    },
-   "Jangaon": {
-    "sanitation": 1
-   },
    "Medak": {
-    "agri": 1,
-    "nutrition": 1
-   },
-   "Nagarkurnool": {
-    "nutrition": 3
-   },
-   "Medchal–Malkajgiri": {
-    "nutrition": 5
-   },
-   "Mulugu": {
-    "nutrition": 1
-   },
-   "Vikarabad": {
-    "nutrition": 4
+    "agri": 1
    },
    "Karimnagar": {
     "agri": 1
    },
    "Khammam": {
     "agri": 1,
-    "nutrition": 2,
+    "nutrition": 1,
     "water": 1
    },
-   "Mancherial": {
-    "other": 3
-   },
-   "Jagtial": {
-    "nutrition": 1,
-    "education": 1
-   },
-   "Mahabubabad": {
-    "nutrition": 1
-   },
-   "Nizamabad": {
-    "nutrition": 1
-   },
    "Nalgonda": {
-    "nutrition": 2,
-    "women": 1,
-    "other": 1
+    "women": 1
    },
    "Adilabad": {
-    "nutrition": 1,
     "agri": 1,
     "power": 1
+   },
+   "Jagtial": {
+    "education": 1
    },
    "Wanaparthy": {
     "other": 1
    },
-   "Hanumakonda": {
-    "nutrition": 1
-   },
-   "Peddapalli": {
-    "nutrition": 1
+   "Mancherial": {
+    "other": 1
    }
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 245,
-    "agri": 19,
-    "nutrition": 17,
-    "roads": 7,
+    "other": 268,
+    "agri": 24,
+    "roads": 5,
     "power": 19,
-    "water": 8,
+    "water": 9,
     "sanitation": 9,
     "livelihood": 1,
     "social": 2,
-    "education": 21,
+    "education": 19,
     "health": 13,
     "women": 2,
+    "nutrition": 5,
     "elderly": 1,
-    "housing": 4
+    "housing": 3
    },
    "Chittoor": {
     "power": 1
@@ -135,19 +101,17 @@
     "education": 1
    },
    "East Godavari": {
-    "housing": 1
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "agri": 1,
-    "nutrition": 1,
-    "other": 2
+    "other": 1
    },
    "Palnadu": {
     "power": 1,
-    "water": 1
+    "sanitation": 1
    },
    "Krishna": {
     "other": 2
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "nutrition": 1
    },
    "Visakhapatnam": {
     "other": 2
@@ -157,10 +121,10 @@
     "other": 1
    },
    "Kurnool": {
-    "nutrition": 1
+    "other": 1
    },
    "Ananthapuramu": {
-    "water": 2
+    "other": 2
    }
   }
  }
