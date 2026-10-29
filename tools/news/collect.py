@@ -104,7 +104,7 @@ def sector_of(title):
 # Official and trusted YouTube channels (titles and links only). Handles are tried in order; the first that resolves is kept.
 YT = [("PIB India", ["@PIBIndia"], True), ("DD News", ["@DDNewslive", "@ddnews"], True), ("DD Saptagiri", ["@DDSaptagiri", "@ddsaptagiri"], True),
       ("DD Yadagiri", ["@DDYadagiri", "@DDYadagiriOfficial"], True), ("The Hindu", ["@TheHindu-Official", "@thehindu"], False), ("NDTV", ["@NDTV"], False),
-      ("ETV Andhra Pradesh", ["@ETVAndhraPradesh"], False), ("ETV Telangana", ["@ETVTelangana"], False), ("Sakshi TV", ["@SakshiTV"], False),
+      ("ETV Andhra Pradesh", ["@ETVAndhraPradesh"], False), ("ETV Telangana", ["@ETVTelanganaOfficial", "@etvtelangana"], False), ("Sakshi TV", ["@SakshiTV"], False),
       ("ABN Telugu", ["@abntelugutv", "@ABNTeluguTV"], False), ("TV9 Telugu", ["@TV9TeluguLive"], False), ("V6 News", ["@V6NewsTelugu"], False),
       ("NTV Telugu", ["@NtvTeluguLive"], False)]
 def yt_ids(cache_path):
@@ -119,6 +119,8 @@ def yt_ids(cache_path):
             except Exception as e:
                 print("  youtube handle failed:", h, str(e)[:60])
         if not ids.get(name): print("  youtube channel not found:", name)
+        elif list(ids.values()).count(ids[name]) > 1:
+            print("  youtube handle points to another channel, dropped:", name); ids[name] = ""
     json.dump(ids, open(cache_path, "w"), indent=1)
     return ids
 def yt_items(ids):
@@ -134,7 +136,7 @@ def yt_items(ids):
             title = tag(e, "title"); link = (re.search(r'<link rel="alternate" href="([^"]+)"', e) or [None, ""])[1]
             date = tag(e, "published")[:16]
             if title and link.startswith("https://"):
-                out.append({"t": title[:220], "link": link, "src": name + " (YouTube)", "dom": "youtube.com", "trusted": True, "gov": gov,
+                out.append({"t": title[:220], "link": link, "src": name + " (YouTube)", "dom": "youtube.com", "trusted": gov, "gov": gov,
                             "date": date, "lang": "te" if re.search("[\u0C00-\u0C7F]", title) else "en"})
         time.sleep(0.5)
     return out
