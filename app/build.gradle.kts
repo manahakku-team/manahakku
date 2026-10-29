@@ -13,8 +13,8 @@ android {
         applicationId = "org.manahakku.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = runNumber
-        versionName = "0.1.$runNumber"
+        versionCode = 100 + runNumber   // continues after the last 0.1.x builds
+        versionName = "0.2.$runNumber"
     }
 
     // Shared test key so each new build installs over the previous one.
