@@ -62,7 +62,7 @@ const page = (title, desc, canon, head, body) => `<!doctype html>
 </div></header>
 <main class="wrap">
 ${body}
-<p class="note">${pair("Facts are copied from the Mana Hakku app, which takes them from government sources. ", "వాస్తవాలు మన హక్కు యాప్ నుండి; యాప్ వాటిని ప్రభుత్వ ఆధారాల నుండి తీసుకుంటుంది. ")}<a href="${BASE}about.html">${pair("About", "గురించి")}</a> · <a href="${BASE}privacy.html">${pair("Privacy", "గోప్యత")}</a></p>
+<p class="note">${pair("Not a government website: Mana Hakku is independent. Facts are copied from the Mana Hakku app, which takes them from official public sources. ", "ఇది ప్రభుత్వ వెబ్‌సైట్ కాదు: మన హక్కు స్వతంత్రమైనది. వాస్తవాలు మన హక్కు యాప్ నుండి; యాప్ వాటిని అధికారిక బహిరంగ ఆధారాల నుండి తీసుకుంటుంది. ")}<a href="${BASE}about.html">${pair("About", "గురించి")}</a> · <a href="${BASE}privacy.html">${pair("Privacy", "గోప్యత")}</a></p>
 </main>
 ${TOGGLE}
 </body>
