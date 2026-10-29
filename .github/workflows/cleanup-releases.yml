@@ -1,0 +1,18 @@
+name: Remove old test releases
+on:
+  workflow_dispatch:
+    inputs:
+      tags: { description: "Space-separated release tags to delete (with their tags)", required: true }
+permissions:
+  contents: write
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+    steps:
+      - env: { GH_TOKEN: "${{ github.token }}", TAGS: "${{ github.event.inputs.tags }}" }
+        run: |
+          for t in $TAGS; do
+            gh release delete "$t" --repo "${{ github.repository }}" --cleanup-tag -y && echo "deleted $t" || \
+            gh api -X DELETE "repos/${{ github.repository }}/git/refs/tags/$t" && echo "tag removed $t"
+          done
+          gh api "repos/${{ github.repository }}/tags" --jq '.[].name'
