@@ -1,0 +1,27 @@
+name: News collector
+on:
+  schedule:
+    - cron: "23 */3 * * *"     # every 3 hours
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: newsfeed, cancel-in-progress: false }
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Previous feed
+        run: |
+          if git fetch -q origin newsfeed 2>/dev/null; then git worktree add -q /tmp/feed origin/newsfeed; else mkdir -p /tmp/feed; fi
+      - name: Collect
+        run: |
+          node tools/export_keywords.js web/data/keywords.json >/dev/null
+          python3 tools/news/collect.py /tmp/feed
+      - name: Save feed (newsfeed branch)
+        run: |
+          cd /tmp/feed
+          [ -d .git ] || [ -f .git ] || git init -q -b newsfeed
+          git add -A && git -c user.name=news -c user.email=news@users.noreply.github.com commit -qm "News $(date -u +%Y-%m-%dT%H:%M)" || exit 0
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/newsfeed
