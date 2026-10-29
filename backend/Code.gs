@@ -454,7 +454,9 @@ function doGet(e) {
     locked: String(r[idx.auto_fix] || '').toLowerCase() === 'no',
     text_fixed: !!r[idx.desc_original],
     grv_system: String(r[idx.grv_system] || ''),
-    grv_number: String(r[idx.grv_number] || ''),
+    // The number itself is never sent: looking it up on a grievance portal could show who filed it.
+    grv_number: '',
+    grv_filed: !!String(r[idx.grv_number] || '').trim(),
     grv_date: r[idx.grv_date] instanceof Date ? r[idx.grv_date].toISOString() : String(r[idx.grv_date] || ''),
     grv_by: String(r[idx.grv_by] || ''),
     reporter_says: OUTCOMES.indexOf(String(r[idx.reporter_says])) >= 0 ? String(r[idx.reporter_says]) : '',
