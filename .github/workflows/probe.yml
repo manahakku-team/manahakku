@@ -1,0 +1,16 @@
+name: Probe
+on:
+  workflow_dispatch:
+    inputs:
+      cmd: { description: "Command to run (its outputs in out/ are kept)", required: true }
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p out
+          bash -c "${{ github.event.inputs.cmd }}" > out/log.txt 2>&1 || true
+          cd out && git init -q -b probe && git add -A && git -c user.name=gha -c user.email=gha@users.noreply.github.com commit -qm probe && git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" probe
