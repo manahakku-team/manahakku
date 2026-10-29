@@ -180,6 +180,12 @@ def main():
         d = summ.setdefault(i["state"], {}).setdefault(i["district"] or "(state-wide / unknown)", {})
         d[i["sector"] or "other"] = d.get(i["sector"] or "other", 0) + 1
     json.dump({"updated": now.isoformat()[:16], "last7days_trusted": summ}, open(os.path.join(OUT, "summary.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    # Small per-state files for the app's news chart: district-tagged stories only, no extra fields.
+    for st in STATE:
+        keep = [{"t": i["t"], "link": i["link"], "src": i["src"], "domain": i["dom"], "trusted": i["trusted"], "gov": i["gov"],
+                 "date": i.get("date") or i["seen"], "district": i["district"], "sector": i["sector"]} for i in items if i["state"] == st and i["district"]]
+        json.dump({"updated": now.isoformat()[:16], "days": KEEP_DAYS, "items": keep}, open(os.path.join(OUT, f"news-{st}.json"), "w", encoding="utf-8"),
+                  ensure_ascii=False, separators=(",", ":"))
     tagged = sum(1 for i in items if i["district"])
     print(f"new {new}; kept {len(items)} (30 days); with a district {tagged}; trusted/gov {sum(1 for i in items if i['trusted'] or i['gov'])}")
 
