@@ -69,21 +69,27 @@ def fetch(q, lang):
     return out
 
 def norm(s): return " " + re.sub(r"[^a-z0-9ఀ-౿]+", " ", s.lower()) + " "
-PLACES = {}   # state -> list of (word, district, strength) ; strength 2 = district name, 1 = mandal
+PLACES = {}   # state -> list of (word, district, strength) ; strength 2 = district name or alias, 1 = mandal unique to one district
 for st, dl in DISTRICTS.items():
-    lst = []
+    lst, owners = [], {}
     for en, te in dl:
-        lst += [(norm(en).strip(), en, 2), (te, en, 2)]
         for m_en, m_te in mandals.get(st, {}).get(en, []):
             e = re.sub(r"\b(rural|urban)\b", "", m_en.lower()).strip()
-            if len(e) >= 5: lst.append((norm(e).strip(), en, 1))
-            if m_te and len(m_te) >= 3: lst.append((m_te, en, 1))
+            if len(e) >= 5: owners.setdefault(norm(e).strip(), set()).add(en)
+            if m_te and len(m_te) >= 4: owners.setdefault(m_te, set()).add(en)
+    for en, te in dl:
+        lst += [(norm(en).strip(), en, 2), (te, en, 2)]
     lst += [(norm(a).strip(), d, 2) for a, d in ALIAS.items() if d in [x[0] for x in dl]]
+    lst += [(w, next(iter(ds)), 1) for w, ds in owners.items() if len(ds) == 1]
     PLACES[st] = lst
+def has_place(title, h, w):
+    if re.match(r"^[a-z0-9 ]+$", w): return (" " + w + " ") in h
+    # Telugu: the name must start a word (endings like -లో, -కు may follow), never sit inside another word
+    return re.search(r"(^|[^\u0C00-\u0C7F])" + re.escape(w), title) is not None
 def district_of(title, st):
     h = norm(title); best = None
     for w, d, s in PLACES[st]:
-        if (" " + w + " ") in h if re.match(r"^[a-z0-9 ]+$", w) else w in title:
+        if has_place(title, h, w):
             if not best or s > best[1]: best = (d, s)
             if s == 2: break
     return best[0] if best else ""
@@ -93,6 +99,45 @@ def sector_of(title):
         x = sum((2 if len(w) > 4 else 1) for w in v["kw"] if w.lower() in s0)
         if x > sc: best, sc = k, x
     return best
+
+
+# Official and trusted YouTube channels (titles and links only). Handles are tried in order; the first that resolves is kept.
+YT = [("PIB India", ["@PIBIndia"], True), ("DD News", ["@DDNewslive", "@ddnews"], True), ("DD Saptagiri", ["@DDSaptagiri", "@ddsaptagiri"], True),
+      ("DD Yadagiri", ["@DDYadagiri", "@DDYadagiriOfficial"], True), ("The Hindu", ["@TheHindu-Official", "@thehindu"], False), ("NDTV", ["@NDTV"], False),
+      ("ETV Andhra Pradesh", ["@ETVAndhraPradesh"], False), ("ETV Telangana", ["@ETVTelangana"], False), ("Sakshi TV", ["@SakshiTV"], False),
+      ("ABN Telugu", ["@abntelugutv", "@ABNTeluguTV"], False), ("TV9 Telugu", ["@TV9TeluguLive"], False), ("V6 News", ["@V6NewsTelugu"], False),
+      ("NTV Telugu", ["@NtvTeluguLive"], False)]
+def yt_ids(cache_path):
+    ids = json.load(open(cache_path)) if os.path.exists(cache_path) else {}
+    for name, handles, _ in YT:
+        if ids.get(name): continue
+        for h in handles:
+            try:
+                page = urllib.request.urlopen(urllib.request.Request("https://www.youtube.com/" + h, headers={"User-Agent": "Mozilla/5.0", "Accept-Language": "en"}), timeout=30).read().decode("utf-8", "ignore")
+                m = re.search(r'"(?:externalId|channelId)":"(UC[\w-]{22})"', page)
+                if m: ids[name] = m.group(1); break
+            except Exception as e:
+                print("  youtube handle failed:", h, str(e)[:60])
+        if not ids.get(name): print("  youtube channel not found:", name)
+    json.dump(ids, open(cache_path, "w"), indent=1)
+    return ids
+def yt_items(ids):
+    out = []
+    for name, _, gov in YT:
+        cid = ids.get(name)
+        if not cid: continue
+        try:
+            xml = urllib.request.urlopen("https://www.youtube.com/feeds/videos.xml?channel_id=" + cid, timeout=30).read().decode("utf-8", "ignore")
+        except Exception as e:
+            print("  youtube feed failed:", name, str(e)[:60]); continue
+        for e in re.findall(r"<entry>[\s\S]*?</entry>", xml):
+            title = tag(e, "title"); link = (re.search(r'<link rel="alternate" href="([^"]+)"', e) or [None, ""])[1]
+            date = tag(e, "published")[:16]
+            if title and link.startswith("https://"):
+                out.append({"t": title[:220], "link": link, "src": name + " (YouTube)", "dom": "youtube.com", "trusted": True, "gov": gov,
+                            "date": date, "lang": "te" if re.search("[\u0C00-\u0C7F]", title) else "en"})
+        time.sleep(0.5)
+    return out
 
 def main():
     os.makedirs(OUT, exist_ok=True)
@@ -111,6 +156,14 @@ def main():
                 it.update({"id": iid, "state": st, "district": district_of(it["t"], st), "sector": sector_of(it["t"]), "seen": now.isoformat()[:16]})
                 seen[iid] = it; new += 1
             time.sleep(1.2)
+    # YouTube: keep only videos that name a state, district or mandal
+    for it in yt_items(yt_ids(os.path.join(OUT, "youtube_channels.json"))):
+        key = re.sub(r"\W+", "", it["t"].lower())[:120]; iid = hashlib.md5(key.encode()).hexdigest()[:12]
+        if iid in seen: continue
+        for st, (en_name, te_name) in STATE.items():
+            d = district_of(it["t"], st)
+            if d or en_name.lower() in it["t"].lower() or te_name in it["t"] or (st == "ap" and re.search(r"\bAP\b|ఏపీ", it["t"])):
+                it.update({"id": iid, "state": st, "district": d, "sector": sector_of(it["t"]), "seen": now.isoformat()[:16]}); seen[iid] = it; new += 1; break
     cut = (now - timedelta(days=KEEP_DAYS)).isoformat()[:16]
     items = sorted([i for i in seen.values() if (i.get("date") or i["seen"]) >= cut], key=lambda i: i.get("date") or i["seen"], reverse=True)
     json.dump({"updated": now.isoformat()[:16], "items": items}, open(path, "w", encoding="utf-8"), ensure_ascii=False)
