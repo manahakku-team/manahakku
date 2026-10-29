@@ -93,12 +93,22 @@ def district_of(title, st):
             if not best or s > best[1]: best = (d, s)
             if s == 2: break
     return best[0] if best else ""
+KW_RE = {}
+def kw_hit(title, w):
+    # a keyword counts only at the start of a word ("ration" must not match "registration", "వృద్ధ" not "అభివృద్ధి")
+    r = KW_RE.get(w)
+    if r is None:
+        r = KW_RE[w] = re.compile(r"(?<![a-z0-9\u0C00-\u0C7F])" + re.escape(w.lower()))
+    return r.search(title.lower()) is not None
 def sector_of(title):
-    s0 = " " + title.lower() + " "; best, sc = "", 0
+    best, sc = "", 0
     for k, v in kw.items():
-        x = sum((2 if len(w) > 4 else 1) for w in v["kw"] if w.lower() in s0)
+        x = sum((2 if len(w) > 4 else 1) for w in v["kw"] if kw_hit(title, w))
         if x > sc: best, sc = k, x
     return best
+# Routine notices that are not news about people's problems
+NOT_NEWS = re.compile(r"list of|numbers available|recruitment|notification for|tender|walk-in|e-procurement|results? declared|hall ticket|merit list|"
+                      r"admit card|syllabus|answer key|horoscope|రాశి ఫలాలు|గోల్డ్ రేట్|బంగారం ధర", re.I)
 
 
 # Official and trusted YouTube channels (titles and links only). Handles are tried in order; the first that resolves is kept.
@@ -170,6 +180,9 @@ def main():
             d = district_of(it["t"], st)
             if d or en_name.lower() in it["t"].lower() or te_name in it["t"] or (st == "ap" and re.search(r"\bAP\b|ఏపీ", it["t"])):
                 it.update({"id": iid, "state": st, "district": d, "sector": sector_of(it["t"]), "seen": now.isoformat()[:16]}); seen[iid] = it; new += 1; break
+    for iid, i in list(seen.items()):
+        if NOT_NEWS.search(i["t"]): del seen[iid]; continue
+        i["district"] = district_of(i["t"], i["state"]); i["sector"] = sector_of(i["t"])
     cut = (now - timedelta(days=KEEP_DAYS)).isoformat()[:16]
     items = sorted([i for i in seen.values() if (i.get("date") or i["seen"]) >= cut], key=lambda i: i.get("date") or i["seen"], reverse=True)
     json.dump({"updated": now.isoformat()[:16], "items": items}, open(path, "w", encoding="utf-8"), ensure_ascii=False)
