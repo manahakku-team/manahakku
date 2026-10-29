@@ -1,0 +1,118 @@
+{
+ "updated": "2026-10-29T10:29",
+ "last7days_trusted": {
+  "ap": {
+   "(state-wide / unknown)": {
+    "other": 152,
+    "nutrition": 13,
+    "power": 18,
+    "water": 8,
+    "agri": 17,
+    "roads": 3,
+    "livelihood": 1,
+    "social": 2,
+    "education": 17,
+    "health": 9,
+    "women": 2,
+    "elderly": 1,
+    "housing": 4,
+    "sanitation": 1
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "agri": 1,
+    "nutrition": 1,
+    "other": 2
+   },
+   "Krishna": {
+    "other": 2
+   },
+   "West Godavari": {
+    "other": 1
+   },
+   "Visakhapatnam": {
+    "other": 2
+   },
+   "Kakinada": {
+    "other": 2
+   },
+   "Palnadu": {
+    "water": 1
+   },
+   "Prakasam": {
+    "education": 1,
+    "other": 1
+   },
+   "Guntur": {
+    "water": 1
+   },
+   "Anakapalli": {
+    "education": 1
+   },
+   "Kurnool": {
+    "nutrition": 1
+   },
+   "Ananthapuramu": {
+    "water": 2
+   }
+  },
+  "ts": {
+   "Warangal": {
+    "health": 3,
+    "agri": 1
+   },
+   "(state-wide / unknown)": {
+    "other": 57,
+    "health": 9,
+    "nutrition": 12,
+    "water": 24,
+    "power": 3,
+    "agri": 17,
+    "education": 7,
+    "housing": 2,
+    "social": 2,
+    "roads": 5,
+    "elderly": 2,
+    "women": 1
+   },
+   "Mahabubnagar": {
+    "other": 1
+   },
+   "Jangaon": {
+    "sanitation": 1
+   },
+   "Hyderabad": {
+    "health": 2,
+    "other": 1,
+    "housing": 1,
+    "water": 2
+   },
+   "Medak": {
+    "agri": 1
+   },
+   "Karimnagar": {
+    "agri": 1
+   },
+   "Khammam": {
+    "agri": 1,
+    "water": 1
+   },
+   "Mancherial": {
+    "other": 2
+   },
+   "Jagtial": {
+    "nutrition": 1,
+    "education": 1
+   },
+   "Adilabad": {
+    "agri": 1,
+    "power": 1
+   },
+   "Wanaparthy": {
+    "other": 1
+   },
+   "Nalgonda": {
+    "other": 1
+   }
+  }
+ }
+}
