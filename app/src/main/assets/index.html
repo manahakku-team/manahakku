@@ -1416,8 +1416,9 @@ const GRV_PAT={pgrs:/^[A-Z]{3}20\d\d(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\d{1,6}$
 const GRV_EX={pgrs:"BPT2026103024",cpgrams:"GOVAP/E/2026/0012345"};
 const grvNorm=n=>String(n||"").toUpperCase().replace(/\s+/g,"");
 // Returns "" when the number looks right; otherwise the warning to show. May switch the system when the number clearly belongs to the other one.
-function grvWarn(sel,n){const sys=sel.value;if(!GRV_PAT[sys]||GRV_PAT[sys].test(n))return "";
+function grvWarn(sel,n){const sys=sel.value;if(GRV_PAT[sys]&&GRV_PAT[sys].test(n))return "";
  const other=Object.keys(GRV_PAT).find(k=>k!==sys&&GRV_PAT[k].test(n));if(other){sel.value=other;return ""}
+ if(!GRV_PAT[sys])return "";
  return t("grvPattern").replace("{s}",grvLabel(sys)).replace("{e}",GRV_EX[sys])}
 const repStatus=r=>{const v=STATUSES.includes(r.status)?r.status:"reported";return v==="reported"&&isFiled(r)?"filed":v};
 // Grievance numbers are never shown publicly (a portal lookup could reveal who filed). The register sends only "grv_filed";
