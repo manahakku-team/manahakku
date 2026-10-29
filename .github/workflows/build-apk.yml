@@ -1,8 +1,12 @@
 name: Build APK
 
+# Pilot rhythm: every change is built and tested (kept as a build artifact); a public release happens
+# on Sundays, or when started by hand for an urgent fix.
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "41 4 * * 0"      # Sundays 10:11 IST
   workflow_dispatch:
 
 permissions:
@@ -59,6 +63,7 @@ jobs:
           path: ManaHakku-*.a*
 
       - name: Publish GitHub release
+        if: github.event_name != 'push'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
