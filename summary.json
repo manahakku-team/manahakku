@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-29T11:03",
+ "updated": "2026-10-29T13:17",
  "last7days_trusted": {
   "ts": {
+   "(state-wide / unknown)": {
+    "agri": 30,
+    "health": 16,
+    "education": 11,
+    "other": 124,
+    "water": 25,
+    "power": 3,
+    "housing": 3,
+    "social": 1,
+    "nutrition": 7,
+    "roads": 8,
+    "elderly": 2,
+    "women": 2,
+    "livelihood": 3,
+    "sanitation": 5
+   },
    "Hyderabad": {
     "nutrition": 2,
     "women": 1,
@@ -13,24 +29,8 @@
    "Siddipet": {
     "education": 1
    },
-   "(state-wide / unknown)": {
-    "health": 15,
-    "other": 115,
-    "agri": 26,
-    "water": 25,
-    "power": 3,
-    "education": 9,
-    "housing": 3,
-    "social": 1,
-    "nutrition": 7,
-    "roads": 7,
-    "elderly": 2,
-    "women": 1,
-    "livelihood": 3,
-    "sanitation": 5
-   },
    "Warangal": {
-    "health": 3,
+    "health": 4,
     "agri": 1
    },
    "Mahabubnagar": {
@@ -46,6 +46,9 @@
     "agri": 1,
     "nutrition": 1,
     "water": 1
+   },
+   "Ranga Reddy": {
+    "other": 1
    },
    "Nalgonda": {
     "women": 1
@@ -66,12 +69,12 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 268,
+    "other": 279,
     "agri": 24,
     "roads": 5,
     "power": 19,
     "water": 9,
-    "sanitation": 9,
+    "sanitation": 10,
     "livelihood": 1,
     "social": 2,
     "education": 19,
