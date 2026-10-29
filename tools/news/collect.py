@@ -119,8 +119,12 @@ def yt_ids(cache_path):
             except Exception as e:
                 print("  youtube handle failed:", h, str(e)[:60])
         if not ids.get(name): print("  youtube channel not found:", name)
-        elif list(ids.values()).count(ids[name]) > 1:
-            print("  youtube handle points to another channel, dropped:", name); ids[name] = ""
+
+    firsts = {}
+    for name, _, _ in YT:   # a handle that lands on another listed channel is wrong: drop it (kept blank, retried next run)
+        cid = ids.get(name)
+        if cid and cid in firsts: print("  youtube", name, "is the same channel as", firsts[cid], "- dropped"); ids[name] = ""
+        elif cid: firsts[cid] = name
     json.dump(ids, open(cache_path, "w"), indent=1)
     return ids
 def yt_items(ids):
