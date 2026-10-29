@@ -227,7 +227,14 @@ function keywords_() {
   } catch (e) {}
   return null;
 }
-function kwScore_(s0, list) { let s = 0; (list || []).forEach(w => { if (s0.indexOf(String(w).toLowerCase()) >= 0) s += w.length > 4 ? 2 : 1; }); return s; }
+// A keyword counts only at the start of a word (same rule as the app): "ration" must not match "corporation".
+const KW_RX_ = {};
+function kwAt_(s0, w) {
+  const k = String(w).toLowerCase();
+  if (!KW_RX_[k]) KW_RX_[k] = new RegExp('(^|[^a-z0-9\u0C00-\u0C7F])' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  return KW_RX_[k].test(s0);
+}
+function kwScore_(s0, list) { let s = 0; (list || []).forEach(w => { if (kwAt_(s0, w)) s += w.length > 4 ? 2 : 1; }); return s; }
 // Returns {sector, sub, changed}. Moves a report only when its words clearly belong to another area
 // and say nothing about the chosen one.
 function autoFix_(kw, text, sector) {
