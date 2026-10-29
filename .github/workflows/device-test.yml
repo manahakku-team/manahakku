@@ -1,5 +1,7 @@
 name: Device test
 on:
+  schedule:
+    - cron: "41 3 * * 1"      # Mondays 09:11 IST
   workflow_dispatch:
     inputs:
       api: { description: "Android API level", required: false, default: "36" }
@@ -20,7 +22,7 @@ jobs:
       - name: Run on emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: ${{ github.event.inputs.api }}
+          api-level: ${{ github.event.inputs.api || '36' }}
           target: google_apis
           arch: x86_64
           disable-animations: true

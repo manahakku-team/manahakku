@@ -1,0 +1,47 @@
+name: Daily quality check
+on:
+  schedule:
+    - cron: "17 2 * * *"      # 07:47 IST every day
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: qa, cancel-in-progress: false }
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Install test browser
+        run: |
+          mkdir -p /tmp/pw && cd /tmp/pw && npm init -y >/dev/null && npm i playwright@1.48.2 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Run checks
+        run: |
+          export NODE_PATH=/tmp/pw/node_modules
+          (cd app/src/main/assets && python3 -m http.server 8765 >/dev/null 2>&1 &) ; sleep 2
+          D=$(date -u +%Y-%m-%d); mkdir -p qa-out
+          {
+            echo "# Mana Hakku daily quality check, $D"
+            echo; echo "Build: $(git log -1 --format='%h %s' | cut -c1-90)"
+            echo; echo '## 1. App logic tests'; echo '```'
+            node tools/test_detect.js 2>&1 | tail -3; node tools/test_guide.js 2>&1 | tail -2
+            echo '```'; echo; echo '## 2. Every screen (2 states x 2 languages x light/dark x 2 phone sizes + offline)'; echo '```'
+            timeout 900 node tools/qa/screens.js http://localhost:8765 2>&1 | grep -v -i tunnel | tail -60
+            echo '```'; echo; echo '## 3. Live website, register and data'; echo '```'
+            python3 tools/qa/live.py 2>&1 | tail -40
+            echo '```'; echo; echo '## 4. Live news check (real Google News through the register)'; echo '```'
+            timeout 900 node tools/qa/news_live.js http://localhost:8765 2>&1 | grep -v -i tunnel | tail -60
+            echo '```'
+          } > qa-out/report.md 2>&1 || true
+          T=$(grep -oE '^TOTAL [0-9]+' qa-out/report.md | awk '{print $2}'); L=$(grep -oE '^LIVE_BAD [0-9]+' qa-out/report.md | awk '{print $2}'); N=$(grep -oE '^NEWS_NONE [0-9]+' qa-out/report.md | awk '{print $2}')
+          echo "$D screens=${T:-?} live=${L:-?} news_none=${N:-?}" > qa-out/summary.txt; cat qa-out/summary.txt
+      - name: Keep the report (qa branch, one file per day)
+        run: |
+          git fetch origin qa 2>/dev/null && git worktree add /tmp/qa origin/qa 2>/dev/null || { mkdir -p /tmp/qa && cd /tmp/qa && git init -q -b qa; cd -; }
+          D=$(date -u +%Y-%m-%d); mkdir -p /tmp/qa/reports; cp qa-out/report.md /tmp/qa/reports/$D.md; cp qa-out/report.md /tmp/qa/latest.md
+          cat qa-out/summary.txt >> /tmp/qa/history.txt
+          cd /tmp/qa && git add -A && git -c user.name=qa -c user.email=qa@users.noreply.github.com commit -qm "QA $D" && \
+            git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:qa
