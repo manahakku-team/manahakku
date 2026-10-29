@@ -1,0 +1,24 @@
+name: Public reports copy
+# Every 15 minutes, copies the public reports list from the register to a fast address (raw.githubusercontent.com),
+# so the Problems page opens quickly even on a phone's first visit. The app then refreshes from the register itself.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: snapshot, cancel-in-progress: true }
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Copy public lists
+        run: |
+          mkdir -p out && cd out && git init -q -b snapshot
+          for st in ap ts; do
+            curl -sfL --max-time 60 "https://script.google.com/macros/s/AKfycbz08xXmFDTHqrcos-bO8lQW72yBKCRlL2gC8i3zktchZxnMngXD89ki6AyogSja9RyMNw/exec?state=$st" -o "reports-$st.json" || exit 0
+            python3 -c "import json,sys; j=json.load(open('reports-$st.json')); sys.exit(0 if j.get('ok') and isinstance(j.get('reports'),list) else 1)" || exit 0
+          done
+          git add -A && git -c user.name=snapshot -c user.email=snapshot@users.noreply.github.com commit -qm "copy $(date -u +%H:%M)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/snapshot
