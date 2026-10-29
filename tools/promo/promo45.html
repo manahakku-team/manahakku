@@ -53,6 +53,7 @@ body{font-family:"Anek","Noto Sans Telugu","Noto Sans",sans-serif;color:#fff;pos
 .big{font-size:200px;font-weight:800;color:var(--ochre);line-height:1}
 .badge{display:inline-block;background:var(--ochre);color:var(--ind2);font-weight:800;font-size:34px;padding:8px 22px;border-radius:999px;margin-bottom:22px;letter-spacing:.5px}
 .cardw{margin:30px auto 0;width:900px;border-radius:40px;overflow:hidden;background:#fff;box-shadow:0 40px 90px rgba(0,0,0,.45)}.cardw img{width:100%;display:block}
+.purpose{margin-top:56px;background:rgba(255,255,255,.12);border:2px solid rgba(227,169,58,.7);border-radius:32px;padding:30px 36px;font-size:46px;font-weight:600;line-height:1.35}
 </style></head><body>
 <div class="bg"></div><div class="dots"></div>
 <div class="brand"><i>హ</i><div>మన హక్కు <small>· Mana Hakku</small></div></div>
@@ -67,6 +68,7 @@ body{font-family:"Anek","Noto Sans Telugu","Noto Sans",sans-serif;color:#fff;pos
   <div class="ic" data-a="pop" data-t="1.6"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg><b>డాక్టర్ లేరా?</b><span>No doctor?</span></div>
   <div class="ic" data-a="pop" data-t="2"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11v5c3 2 7 2 10 0v-5"/></svg><b>టీచర్ లేరా?</b><span>No teacher?</span></div>
  </div>
+ <div class="purpose"><b>మన హక్కు</b> · ఎవరు బాధ్యులు, మీ హక్కు ఏమిటి, ఎక్కడ ఫిర్యాదు చేయాలి: చెప్పే <span class="hl">ఉచిత యాప్</span><div class="en" style="font-size:31px;margin-top:8px">A free app that tells you who must fix it, your right, and where to complain</div></div>
 </section>
 
 <!-- 2 logo (4.5-9) -->
@@ -133,9 +135,9 @@ function setup(){
 const TOTAL=45;
 var anim=[];
 function A(el,kf,start,dur,easing){const a=el.animate(kf,{delay:start*1000,duration:dur*1000,fill:"both",easing:easing||"cubic-bezier(.2,.8,.2,1)"});a.pause();anim.push(a)}
-document.querySelectorAll(".scene").forEach(sc=>{const s=+sc.dataset.s,e=+sc.dataset.e,len=e-s,f=.4/len;
- A(sc,[{opacity:0,transform:"scale(1.02)",offset:0},{opacity:1,transform:"scale(1)",offset:f},{opacity:1,transform:"scale(1)",offset:1-f},{opacity:0,transform:"scale(.98)",offset:1}],s,len,"linear");
- sc.querySelectorAll("[data-a]").forEach(el=>{const t=s+ +el.dataset.t,a=el.dataset.a;
+document.querySelectorAll(".scene").forEach(sc=>{const s=+sc.dataset.s,e=+sc.dataset.e,len=e-s,f=.4/len,first=s===0;
+ A(sc,[{opacity:first?1:0,transform:"scale(1.02)",offset:0},{opacity:1,transform:"scale(1)",offset:f},{opacity:1,transform:"scale(1)",offset:1-f},{opacity:0,transform:"scale(.98)",offset:1}],s,len,"linear");
+ sc.querySelectorAll("[data-a]").forEach(el=>{if(first)return;const t=s+ +el.dataset.t,a=el.dataset.a;
   if(a==="up")A(el,[{opacity:0,transform:"translateY(50px)"},{opacity:1,transform:"none"}],t,.7);
   if(a==="pop")A(el,[{opacity:0,transform:"scale(.6)"},{opacity:1,transform:"scale(1.04)",offset:.7},{opacity:1,transform:"scale(1)"}],t,.6);
   if(a==="phone")A(el,[{opacity:0,transform:"translateY(260px) rotate(-3deg)"},{opacity:1,transform:"none"}],t,.9)});
