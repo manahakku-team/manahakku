@@ -123,7 +123,7 @@
   "Anganwadi not giving eggs to children",
   "nutrition",
   null,
-  "Eggs Not Provided"
+  "Eggs"
  ],
  [
   "Pregnant women not getting anganwadi meals",
@@ -988,5 +988,95 @@
   "health",
   null,
   "Wheel Chair applied"
+ ],
+ [
+  "Anganwadi centre not opening at 9 am",
+  "nutrition",
+  null,
+  "Not Opening In Time"
+ ],
+ [
+  "Anganwadi closes early every day",
+  "child",
+  null,
+  "Closing Early"
+ ],
+ [
+  "Old age home food is poor",
+  "elderly",
+  null,
+  "Better Quality Food In Old Age Home"
+ ],
+ [
+  "My son is not looking after me, need maintenance",
+  "elderly",
+  null,
+  "Maintenance From Son"
+ ],
+ [
+  "Adoption application pending for long",
+  "child",
+  null,
+  "Delay In Forwarding"
+ ],
+ [
+  "Applied for guardianship certificate, not issued",
+  "elderly",
+  null,
+  "Applied For Guardianship"
+ ],
+ [
+  "No preschool kit or toys in anganwadi",
+  "nutrition",
+  null,
+  "Preschool Kit"
+ ],
+ [
+  "Teacher beating children in school",
+  "child",
+  null,
+  "Corporal Punishment"
+ ],
+ [
+  "Domestic violence complaint given, no action taken by protection officer",
+  "women",
+  null,
+  "Delay In Action Taken"
+ ],
+ [
+  "Husband beating me every day",
+  "women",
+  null,
+  "Domestic Violence Act"
+ ],
+ [
+  "Pregnant women not getting eggs at anganwadi",
+  "nutrition",
+  null,
+  "Eggs Not Provided To Beneficiaries"
+ ],
+ [
+  "Balamrutham packet not given for my baby",
+  "child",
+  null,
+  "Balamrutham Packet"
+ ],
+ [
+  "Girl Child Protection Scheme instalment amount not received",
+  "women",
+  null,
+  "GCPS Instalment"
+ ],
+ [
+  "Child marriage reported but no action taken",
+  "child",
+  null,
+  "No Action Taken On Stoppage"
+ ],
+ [
+  "Eggs not given to children at anganwadi",
+  "nutrition",
+  null,
+  "Eggs"
  ]
 ]
