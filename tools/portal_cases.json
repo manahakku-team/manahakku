@@ -844,5 +844,17 @@
   "health",
   null,
   "Expiry Drugs"
+ ],
+ [
+  "Hospital refused treatment under Aarogyasri card",
+  "health",
+  null,
+  "Denial of treatment"
+ ],
+ [
+  "Aarogyasri health card not received",
+  "health",
+  null,
+  "Not received NTR Vaidya Seva"
  ]
 ]
