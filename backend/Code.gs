@@ -152,6 +152,15 @@ function namedPerson(x0){const x=String(x0||"").replace(PLACE_PEOPLE," ");if(nam
  GARU_RX.lastIndex=0;while((m=GARU_RX.exec(x))){if(!ROLE_OK.has(m[1].toLowerCase()))return true}
  return false}
 
+// Caste names are never written in reports (mirrors the app).
+const CASTE_WORDS=["mala","madiga","adi andhra","adi dravida","relli","dakkali","lambada","lambadi","banjara","sugali","koya","gond","gondu","yanadi","yerukula","erukala","chenchu","savara","jatapu","golla","kuruma","kuruba","mudiraj","mutharasi","padmasali","devanga","rajaka","chakali","nayi brahmin","mangali","kummari","kamsali","viswabrahmin","vishwabrahmin","vaddera","waddera","uppara","gandla","teli","setti balija","agnikula kshatriya","boya","valmiki","turpu kapu","brahmin","brahmins","kamma","kammas","kapu","kapus","velama","kshatriya","vysya","arya vysya","komati","balija","telaga",
+ "మాల","మాదిగ","ఆది ఆంధ్ర","రెల్లి","లంబాడా","లంబాడీ","బంజారా","సుగాలి","కోయ","గోండు","యానాది","ఎరుకల","చెంచు","సవర","గొల్ల","కురుమ","ముదిరాజ్","ముత్తరాసి","పద్మశాలి","దేవాంగ","రజక","చాకలి","నాయీ బ్రాహ్మణ","మంగలి","కుమ్మరి","కంసాలి","విశ్వబ్రాహ్మణ","వడ్డెర","ఉప్పర","గాండ్ల","శెట్టి బలిజ","అగ్నికుల క్షత్రియ","బోయ","వాల్మీకి","తూర్పు కాపు","బ్రాహ్మణ","బ్రాహ్మణులు","కమ్మ","కాపు","వెలమ","క్షత్రియ","వైశ్య","ఆర్యవైశ్య","కోమటి","బలిజ","తెలగ"];
+const RX_CASTE=wordRx(CASTE_WORDS);
+function hasCaste_(text) { return RX_CASTE.test(normDigits_(text)); }
+// Aadhaar, PAN, voter card, licence, RC and certificates: place only up to the village; no date of birth or age.
+const RX_ADDR=/(^|[^a-z0-9\u0C00-\u0C7F])(?:ward|door\s*no|d\.\s*no|h\.\s*no|house\s*no|house\s*number|plot|flat|street|lane|road\s*no|cross\s*road|colony|వార్డు|ఇంటి\s*నంబర్|డోర్\s*నంబర్|ప్లాట్|ఫ్లాట్|వీధి|కాలనీ)/i;   // below village level
+const RX_DOB=/(^|[^a-z])(?:dob|d\.o\.b|date\s+of\s+birth|born\s+on|age\s*(?:is|:|-)?\s*\d{1,3}|\d{1,3}\s*(?:years?|yrs?)\s*old)|పుట్టిన\s*తేదీ|వయసు\s*\d{1,3}|\d{1,3}\s*ఏళ్ల/i;   // date of birth or age
+function sensitiveDetails_(sector, text) { return (sector === "iddocs" || sector === "certs") && (RX_ADDR.test(text) || RX_DOB.test(text)); }
 function hasParty_(text) { return RX_PARTY.test(normDigits_(text)); }
 function hasPersonalDetails_(text) {
   const x = normDigits_(text);
@@ -694,6 +703,8 @@ function doPost(e) {
   if (!rate_('rp', dev, DEV_REPORTS_PER_HOUR)) return json_({ ok: false, error: 'busy' });
   if (hasPersonalDetails_([r.place, r.mandal, r.title, r.desc].join(' '))) return json_({ ok: false, error: 'pii' });
   if (hasParty_([r.place, r.title, r.desc].join(' '))) return json_({ ok: false, error: 'party' });
+  if (hasCaste_([r.place, r.title, r.desc].join(' '))) return json_({ ok: false, error: 'caste' });
+  if (sensitiveDetails_(r.sector, [r.place, r.title, r.desc].join(' '))) return json_({ ok: false, error: 'pii' });
   // A word that may be a person's name (Krishna, Lakshmi, Raja...): saved, but public only after the owner's quick name check
   // (the owner writes "no" in the hidden column to publish it).
   const nameReview = nameMaybe_([r.place, r.title, r.desc].join(' '));
