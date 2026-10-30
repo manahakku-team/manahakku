@@ -268,7 +268,145 @@
    "app_map": {
     "food (anganwadi part)": "Government Schemes Related/ Welfare Programs > pick the Anganwadi line that matches (building/staff/funds, nutrition food, preschool, Poshan Tracker data)"
    },
-   "out_of_scope_for_app": "NCW and crime categories are personal/police matters; the app does not take these reports and must point to 181 women helpline / 112 / 1098 instead."
+   "out_of_scope_for_app": "App has women and child sectors; their plans already say call 181/112/1098 first. NCW sub-categories fit women's safety reports; NCPCR under Child Protection fits child reports. Never auto-suggest the Corruption line."
+  },
+  "Water Resources, River Development & Ganga Rejuvenation": {
+   "main": {
+    "Establishment Matters": [
+     "Pension/Retirement Benefits/Dues",
+     "Pay Fixation/ Increments",
+     "Leave",
+     "Employment/ Appointments/ Compassionate Appointments",
+     "Recruitment Exam Related",
+     "Transfer / Postings",
+     "Probation / Confirmation",
+     "TA/Transfer Grant",
+     "Joining Time",
+     "SC / ST / OBC /PWD / Minority",
+     "APAR Related",
+     "Recruitment Rules",
+     "Reservation",
+     "Promotions and ACP/MACP/NFSG/NFU",
+     "Corruption",
+     "Sexual Harrassment",
+     "Assaultation",
+     "Others"
+    ],
+    "General Administration": [
+     "Outsourcing of Services",
+     "Tenders",
+     "Payment of Bills",
+     "CGHS matters",
+     "Purchase of Items",
+     "Modernization / Renovation of Offices",
+     "Contractual Employment matters",
+     "Celebration of Important events",
+     "Others"
+    ],
+    "State Projects or Schemes related": [
+     "PMKSY - AIBP",
+     "Polavaram Irrigation Project",
+     "Special Package for Maharashtra",
+     "Works related to Shahpur Kandi Project Relining of Rajasthan Feeder and Sirhind Feeder Project",
+     "Surface Minor Irrigation",
+     "Repair, Renovation and Restoration of Water Bodies (Ponds / Lakes etc.)",
+     "North Koel Reservoir Project",
+     "Atal Bhujal Yojana",
+     "Flood Management and Border Areas Programme",
+     "National Hydrology Project",
+     "River Development",
+     "Command Area Development and Water Management",
+     "CWC related"
+    ],
+    "E-Governance": [
+     "Information Technology",
+     "E-Office",
+     "NIC / DIT Liaisoning",
+     "others"
+    ],
+    "Infrastructure Development": [
+     "Land and Building and IT Plan of CGWB",
+     "Land and Building of CWC",
+     "IT Development of Deptt (HQ)",
+     "Others"
+    ],
+    "Information Education and Communication (IEC)": [
+     "Mass Awareness Activities / Programmes on Water Conservation",
+     "HRD and CB Scheme",
+     "Others"
+    ],
+    "Issues related to Rivers": [
+     "Inter State River Water Disputes",
+     "Interlinking of Rivers",
+     "Brahmaputra and Barak",
+     "River Ganga / National Mission for Clean Ganga",
+     "Pollution of Other Rivers except Ganga",
+     "Indus River",
+     "(list may continue)"
+    ],
+    "Floods": [
+     "Brahmaputra River and its tributaries",
+     "Ganga River and its tributaries",
+     "Other Rivers"
+    ],
+    "Inter Governmental Water Treaty": [
+     "Ganges Treaty",
+     "Mahakali Treaty"
+    ],
+    "Ground Water": [
+     "Ground Water pollution",
+     "Illegal Extraction",
+     "Non Availability of Ground Water",
+     "Others"
+    ],
+    "Rain Water Harvesting": [
+     "Jal Shakti Abhiyan Catch the Rain Campaign",
+     "Others"
+    ],
+    "Agriculture and Irrigation": [
+     "Minor Irrigation",
+     "Peninsular Rivers",
+     "National River Conservation Directorate",
+     "State Projects I",
+     "State Projects II"
+    ],
+    "Water Resources Development and Management": [
+     "Policy and Planning",
+     "National Water Mission",
+     "River Development"
+    ],
+    "Dam Related Rehabilitation Issues": [
+     "Policy and Planning",
+     "Central Water Commission",
+     "Peninsular River"
+    ],
+    "Externally Aided Projects": null,
+    "NPCC Related": null,
+    "WAPCOS Related": null,
+    "Board Related": [
+     "Bansagar Control Board Related",
+     "Betwa River Board Related",
+     "Tungabhadra Board Related",
+     "Brahmaputra Board Related",
+     "Upper Yamuna River Board Related"
+    ],
+    "Narmada Control Authority Related": null,
+    "National Institute of Hydrology Related": null,
+    "OTHERS": null,
+    "Census of Minor Irrigation": null
+   },
+   "note": "Drinking water is NOT this ministry (that is Drinking Water and Sanitation). Irrigation canals/tanks are state subjects: State Government (AP/TS) first.",
+   "app_map": {
+    "agri (village tank/pond repair)": "State Projects or Schemes related > Repair, Renovation and Restoration of Water Bodies (Ponds / Lakes etc.)",
+    "agri (minor irrigation canal/tank)": "Agriculture and Irrigation > Minor Irrigation  (or State Projects > Surface Minor Irrigation)",
+    "agri (Polavaram project area, AP)": "State Projects or Schemes related > Polavaram Irrigation Project",
+    "agri (field channels / command area)": "State Projects or Schemes related > Command Area Development and Water Management",
+    "agri (flood damage, AP/TS rivers)": "Floods > Other Rivers",
+    "water (borewells dry / groundwater)": "Ground Water > Non Availability of Ground Water",
+    "water (contaminated groundwater)": "Ground Water > Ground Water pollution",
+    "sanitation/water (river pollution)": "Issues related to Rivers > Pollution of Other Rivers except Ganga",
+    "dam displacement / rehabilitation": "Dam Related Rehabilitation Issues > Peninsular River"
+   }
   }
  }
 }
