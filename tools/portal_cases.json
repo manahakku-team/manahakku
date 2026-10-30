@@ -1174,5 +1174,23 @@
   "agri",
   null,
   "Input subsidy"
+ ],
+ [
+  "Mango crop damaged in cyclone, no input subsidy",
+  "agri",
+  null,
+  "Entire Damaged Area"
+ ],
+ [
+  "Groundnut sold at procurement center but amount not received",
+  "agri",
+  null,
+  "Amount Not Received"
+ ],
+ [
+  "Commission agent charging more at market yard",
+  "agri",
+  null,
+  "Commission Agents"
  ]
 ]
