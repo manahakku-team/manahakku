@@ -113,6 +113,23 @@
   "infra": [
    "Tribal Welfare Residential Educational Institutions Society-->Residential Schools-->Infrastructure Maintenance / Accommodation",
    "Kapu Welfare and Development Corporation-->Skill Development-->Infrastructure Not Proper (community-named; never auto)"
+  ],
+  "welfare": [
+   "Labour-->Ap Building & Other Construction Workers Welfare Board-->Registration And Renewal Of Building & Other Construction Workers / Issues Related To Claims Under Schemes",
+   "Labour-->Ap Labour Welfare Board-->Issues Related To Claims Under Schemes Of The Ap Labour Welfare Board",
+   "Factories-->Implementation Of Factories Act, 1948.-->Provisions Related To Welfare Amenities To The Workers Are Not Followed.",
+   "Swarna Gramam - Swarna Wardu (SGSW)-->All Welfare Schemes related to Household Mapping-->Land Related / CFMS Related / Government Employee / Electricity Consumption Related / Income Tax Related / Four Wheeler Ownership",
+   "Social Welfare-->Welfare Hostels-->Environment Issues; Social Welfare-->Distribution Of Note Books,Bed Sheets...-->Distributions Of Materials To Social Welfare Hostels",
+   "Differently Abled, Senior Citizens & Transgender-->Senior Citizens Welfare-->Maintenance From Children / Son Sons / A Relative; Issues Relating To Old Age Homes; Better Quality Food / Accommodation / Hygienic Conditions / Adequate Water / Toilets / Health Care In Old Age Home",
+   "AP State Aids Control Society-->Social Protection Schemes-->Not provided Welfare measures (sensitive: user's words only)"
+  ],
+  "food": [
+   "Institute of Preventive medicine (IPM) & Food Safety-->Quality of Food-->Any kind of adulteration in food / Adulteration in oils / Sale of Expired/Infested food items in local shops / Received spoiled food/meat through online delivery",
+   "Institute of Preventive medicine (IPM) & Food Safety-->Complaints on restaurants-->Complaints on restaurant regarding quality of prepared food, raw material, maintain of hygiene",
+   "Institute of Preventive medicine (IPM) & Food Safety-->Violation of FSSAI Rules-->Non-display of Batch No., Manufacturing & Expiry dates on food items",
+   "Women Development and Child Welfare-->SP/ SP Plus+ (Children 6 to 36 Months)-->Shortage Of Eggs / Food Stocks In The Anganwadi Centres",
+   "Social Welfare-->Sw Hostel Adiministration-->Non Distribution Of Food / Food Issues",
+   "Acharya N.G.Ranga Agricultural University(ANGRAU)-->Student Related Issues-->Poor Quality Food in the Messes"
   ]
  },
  "app_map": {
@@ -163,7 +180,14 @@
   "agri - crops damaged by wild animals, compensation": "search 'animal' > Forest (PCCF)-->Wildlife-->Payment Of Ex-Gratia /Crop Compenssation Due To Damage By Wild Animals",
   "livelihood - subsidy animals (cows/sheep) not supplied": "search 'animal' > Animal Husbandry-->POVERTY ALLEVIATION PROGRAMMES-->NON SUPPLY OF ANIMALS ON SUBSIDY",
   "livelihood - fishermen boats/nets lost in cyclone": "search 'fisher' > Fisheries-->Cyclone Rehabilitation And Relief To Fishers-->Request for Relief, Loss of Boats Nets Etc..During Cyclones / Natural Calamities",
-  "livelihood - fishing ID card / permit": "search 'fisher' > Fisheries-->Fishermen Co-Operaative Issues (Fcs)-->Issue of fishing permit/ID card to Societies/fishers"
+  "livelihood - fishing ID card / permit": "search 'fisher' > Fisheries-->Fishermen Co-Operaative Issues (Fcs)-->Issue of fishing permit/ID card to Societies/fishers",
+  "livelihood - construction worker welfare card / claim": "search 'welfare' > Labour-->Ap Building & Other Construction Workers Welfare Board-->Registration And Renewal / Issues Related To Claims",
+  "welfare - scheme rejected due to household mapping error (land, 4-wheeler, income tax, govt employee, electricity)": "search 'welfare' > Swarna Gramam - Swarna Wardu (SGSW)-->All Welfare Schemes related to Household Mapping-->(matching reason)",
+  "elderly - children not supporting parent (maintenance)": "search 'welfare' > Differently Abled, Senior Citizens & Transgender-->Senior Citizens Welfare-->Maintenance From Children",
+  "elderly - old age home food/water/hygiene": "search 'welfare' > ...Senior Citizens Welfare-->Better Quality Food / Adequate Supply Of Water / Better Hygienic And Sanitary Conditions In Old Age Home",
+  "education - social welfare hostel food not given": "search 'food' > Social Welfare-->Sw Hostel Adiministration-->Non Distribution Of Food / Food Issues",
+  "nutrition - anganwadi eggs/food shortage": "search 'food' > Women Development and Child Welfare-->SP/ SP Plus+ (Children 6 to 36 Months)-->Shortage Of Eggs / Food Stocks In The Anganwadi Centres",
+  "health - adulterated food / expired items in shop": "search 'food' > Institute of Preventive medicine (IPM) & Food Safety-->Quality of Food-->Any kind of adulteration in food / Sale of Expired/Infested food items in local shops"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -183,7 +207,12 @@
   "Fishermen society Election Disputes / Misappropriation Of Society Funds",
   "RBK / SGSW employee Rude Behavior / Disciplinary Matters",
   "Community-named corporations (Kapu, Christian etc.) unless the user names the scheme",
-  "AP State Wakf Board (religious)"
+  "AP State Wakf Board (religious)",
+  "SP Plus 'Issuing Food To The Ineligible Beneficiaries' (blames)",
+  "Social Welfare 'Warden Behaviour Issues' (blames)",
+  "Youth Services food/accommodation (events)",
+  "Law-->Advocates Welfare",
+  "Sainik Welfare service matters (staff)"
  ],
  "still_needed_keywords": [
   "college",
