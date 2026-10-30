@@ -129,6 +129,8 @@ const NAMES_MAYBE=["ram","సంధ్య","కోటి","sandhya"];
 const PLACE_NOUN=new RegExp("^(?:(?:temple|gudi|district|river|nagar|colony|street|road|palem|peta|puram|school|college|hospital|centre|center|circle|bridge|theatre|theater|ward|layout|mandal|village|tank|cheruvu|canal|project|reservoir|dam|statue|park|market|bazaar|junction|gudem|church|mosque|masjid|hall|bhavan|stadium|mandir|mandiram|devasthanam|mandapam|dairy|rupees|crore|crores|lakh|lakhs)(?![a-z])|(?:ఆలయం|గుడి|జిల్లా|నది|నగర్|కాలనీ|వీధి|రోడ్డు|రహదారి|పాఠశాల|కళాశాల|ఆసుపత్రి|చెరువు|కాలువ|ప్రాజెక్టు|సెంటర్|బజార్|మండలం|గ్రామం|పాలెం|పేట|పురం|భవన్|విగ్రహం|మందిరం|దేవస్థానం|దేవాలయం|రూపాయలు|రూపాయల|కోట్లు|లక్షలు)(?:లో|కు|ని|లోని|ను|పై)?(?![\\u0C00-\\u0C7F]))","i");
 const nameRx=list=>new RegExp("(?:^|[^a-z0-9\\u0C00-\\u0C7F])("+list.map(w=>{const e=w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"\\s+");return /[\u0C00-\u0C7F]/.test(w)?e+TE_END:e+"(?![a-z0-9])"}).join("|")+")","gi");
 const RX_NAME_SURE=nameRx(NAMES_SURE),RX_NAME_MAYBE=nameRx(NAMES_MAYBE);
+// Gods' names before a place word are places ("Hanuman Nagar", "Sai temple", "Durga colony"): these pass.
+const GOD_NAMES=new Set(["krishna","rama","sai","lakshmi","laxmi","durga","ganesh","siva","shiva","surya","chandra","venkateswara","narasimha","anjaneya","hanuman","ganga","saraswati","vijaya","narayana","hari","vishnu","balaji","amarnath","somanath","gangamma","ramanjaneyulu","edukondalu","sagar","venkanna","kalyan","sita","devi","padma","కృష్ణ","రామ","సాయి","లక్ష్మి","దుర్గ","గణేష్","శివ","సూర్య","చంద్ర","వెంకటేశ్వర","నరసింహ","ఆంజనేయ","హరి","విష్ణు","నారాయణ","సాగర్","బాలాజీ","గంగమ్మ","రామాంజనేయులు","శ్రీహరి","సోమనాథ్","ఏడుకొండలు","వెంకన్న","సీత","దేవి"]);
 // Districts and mandals may contain names (Krishna district, Sri Sathya Sai, Ramachandrapuram): they are removed first.
 let RX_PLACES=null;
 const NAME_SET=new Set([...NAMES_SURE,...NAMES_MAYBE]);
@@ -136,7 +138,7 @@ function placesRx(places){if(RX_PLACES)return RX_PLACES;const ws=[...new Set(pla
  RX_PLACES=new RegExp("(^|[^a-z0-9\\u0C00-\\u0C7F])(?:"+ws.join("|")+")(?![a-z0-9\\u0C00-\\u0C7F])","gi");return RX_PLACES}
 // Returns "" (no name), "sure" (block) or "maybe" (owner's quick check).
 function nameLevel(x0,places){let x=String(x0||"").replace(PLACE_PEOPLE," ").replace(/కృష్ణా?\s*(?:జిల్లా|మండల)/g," ");if(places&&places.length)x=x.replace(placesRx(places),"$1 ");
- const hits=(rx)=>{const out=[];rx.lastIndex=0;let m;while((m=rx.exec(x))){const after=x.slice(m.index+m[0].length).match(/^\s*([^\s,.;:!?()]+)(?:\s+([^\s,.;:!?()]+))?/);out.push(!!(after&&(PLACE_NOUN.test(after[1])||(after[2]&&NAME_SET.has(after[1].toLowerCase())&&PLACE_NOUN.test(after[2])))));if(rx.lastIndex===m.index)rx.lastIndex++}return out};
+ const hits=(rx)=>{const out=[];rx.lastIndex=0;let m;while((m=rx.exec(x))){const w=m[1].toLowerCase().replace(/\s+/g," ");const after=x.slice(m.index+m[0].length).match(/^\s*([^\s,.;:!?()]+)(?:\s+([^\s,.;:!?()]+))?/);const place=!!(after&&(PLACE_NOUN.test(after[1])||(after[2]&&NAME_SET.has(after[1].toLowerCase())&&PLACE_NOUN.test(after[2]))));if(place&&[...GOD_NAMES].some(gn=>w.startsWith(gn)))continue;out.push(place);if(rx.lastIndex===m.index)rx.lastIndex++}return out};
  const sure=hits(RX_NAME_SURE),maybe=hits(RX_NAME_MAYBE);
  if(sure.some(p=>!p))return "sure";
  if(sure.length||maybe.some(p=>!p))return "maybe";
