@@ -183,7 +183,30 @@
   "social": [
    "Society for Social Audit, Accountability and Transparency(SSAAT-AP)-->Social Audit-->Grama Sabha & Public Hearing Dates of Social Audit / Social Audit Decision Taken Formats(DTF) Request",
    "Forest (PCCF)-->Social Forestry -->Raising And Distribution Of Seedlings / Soil And Moisture Conservation Works"
-  ]
+  ],
+  "service": [
+   "AP Central Power Distribution Co Ltd (CPDCL)-->Existing Services Related Issues-->Power Supply Interuptions / Reduce The Frequent Power Cutting / 24hrs Power Supply / High/Low Voltage Rectification / Non Extending 9 Hours Power Supply To Agriculture Services / Additional Load/Deration Of Load/Phase Conversions / Change Of Category / Consumer Refund",
+   "AP Central Power Distribution Co Ltd (CPDCL)-->New Service Release-->Issue In Release Of New Services",
+   "AP Central Power Distribution Co Ltd (CPDCL)-->Operation & Mantainence Services-->Lines Shifting / Poles Shifting / Distribution Transformer Erection/Shifting/Rectification / Cyclone Works Pending / Compensation Towards Electrical Accidents",
+   "note: CPDCL covers central AP districts; EPDCL (north) and SPDCL (south) likely have same sub-subjects - guide says 'pick your power company'"
+  ],
+  "panchayat": [
+   "Panchayati Raj-->GP Administration & Panchayatraj Administration Related-->Issuing Birth & Death Certificates / Approval of Building Plans ( Residential/Commercial) / House tax Ownership / Catching of monkeys & Pigs / Sterilization Of Stray Dogs",
+   "never_auto: Complaints on Officials /Staff behaviour; Complaint against Misappropriation of funds; SGSW Disciplinary Matters of Functionaries"
+  ],
+  "insurance": [
+   "Agriculture-->Agri-Crop Insurance-->Crop Insurance claim not received - Dr.Free Crop Insurance (from Kharif 2020) / Prior to Free Crop Insurance (PMFBY & RWBCIS from Kharif 2016 to Kharif 2019) / New Crops to be included for Insurance coverage",
+   "Horticulture-->Crop Insurance-->Claims Not Recieved Under Crop Insurance Scheme."
+  ],
+  "plan": [
+   "Agriculture-->Agri Inputs- Seeds-->Supply of seed on 80% subsidy on contingency plan",
+   "Social Welfare-->Scsp-Sub Plan-->Implementation Lapses (user's words only)",
+   "AP Pollution Control Board-->Plastic Waste Management / Industrial Pollution-->Effluent Treatment Plant Not Operating / Not Functioning"
+  ],
+  "rural": [
+   "Animal Husbandry-->RURAL BACKYARD POULTRY-->NON SUPPLY OF RURAL BACKYARD POULTRY UNITS"
+  ],
+  "fallback_misc": "Blank search shows department 'Miscellaneous issues which are not covered above' lines (e.g. AP Transco)"
  },
  "app_map": {
   "roads - village road potholes/repair": "search 'road' > Panchayati Raj Engineering-->Repairs to Roads-->Minor Repairs of roads CC Roads/BT Roads (within village/mandal)  (big damage: Major Repairs)",
@@ -266,7 +289,23 @@
   "education - hostel toilets need repair (user names BC hostel)": "search 'buildings' > BC Welfare-->Construction Of Bc Hostel Buildings-->Repair To Toilet & Batrooms In Bc Hostels",
   "safety - building/factory without fire safety": "search 'buildings' > Fire Services-->Non Issuance Of Fire Noc-->Non Conducting Of Fire Safety Inspections In Hazardous Premises/Buildings",
   "livelihood - want social audit dates for NREGA works (transparency)": "search 'social' > Society for Social Audit...(SSAAT-AP)-->Social Audit-->Grama Sabha & Public Hearing Dates of Social Audit",
-  "college - university-affiliated college facilities": "search 'water' > AP State Council for Higher Education-->Constituent / Affiliated College Infrastructure Related-->(facility)"
+  "college - university-affiliated college facilities": "search 'water' > AP State Council for Higher Education-->Constituent / Affiliated College Infrastructure Related-->(facility)",
+  "power - frequent power cuts": "search 'service' > [your power company, e.g. CPDCL]-->Existing Services Related Issues-->Reduce The Frequent Power Cutting / Power Supply Interuptions",
+  "power - low/high voltage": "search 'service' > ...-->Existing Services Related Issues-->High/Low Voltage Rectification",
+  "power - new connection not given": "search 'service' > ...-->New Service Release-->Issue In Release Of New Services",
+  "power - transformer burnt / needs repair": "search 'service' > ...-->Operation & Mantainence Services-->Distribution Transformer Erection/Shifting/Rectification",
+  "power - dangerous pole / line to shift": "search 'service' > ...-->Operation & Mantainence Services-->Poles Shifting / Lines Shifting",
+  "power - cyclone damage not repaired": "search 'service' > ...-->Operation & Mantainence Services-->Cyclone Works Pending",
+  "power - compensation for electrical accident": "search 'service' > ...-->Operation & Mantainence Services-->Compensation Towards Electrical Accidents",
+  "certs.birthdeath - birth/death certificate from panchayat": "search 'panchayat' > Panchayati Raj-->GP Administration & Panchayatraj Administration Related-->Issuing Birth & Death Certificates",
+  "housing - house tax / ownership change": "search 'panchayat' > Panchayati Raj-->GP Administration...-->House tax Ownership",
+  "housing - building plan approval delayed": "search 'panchayat' or 'plan' > Panchayati Raj-->GP Administration...-->Approval of Building Plans ( Residential/Commercial)",
+  "sanitation/health - stray dogs": "search 'panchayat' > Panchayati Raj-->GP Administration...-->Sterilization Of Stray Dogs",
+  "sanitation - monkeys / pigs menace": "search 'panchayat' > Panchayati Raj-->GP Administration...-->Catching of monkeys & Pigs",
+  "agri - crop insurance claim not received": "search 'insurance' > Agriculture-->Agri-Crop Insurance-->Crop Insurance claim not received (pick the season period) / Horticulture-->Crop Insurance-->Claims Not Recieved",
+  "agri - subsidy seed after crop loss": "search 'plan' > Agriculture-->Agri Inputs- Seeds-->Supply of seed on 80% subsidy on contingency plan",
+  "livelihood - backyard poultry units not supplied": "search 'rural' > Animal Husbandry-->RURAL BACKYARD POULTRY-->NON SUPPLY OF RURAL BACKYARD POULTRY UNITS",
+  "water/sanitation - factory effluent plant not working": "search 'plan' > AP Pollution Control Board-->...-->Effluent Treatment Plant Not Operating"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -306,22 +345,19 @@
   "Endowment temple anti-social activities / water (religious)",
   "Tribal Welfare-->Itda Court Cases (court matter; not accepted)",
   "Water Users Association elections; Unauthorised pipes/cultivation/fish ponds (blames individuals)",
-  "Sports Authority water sports (not civic)"
+  "Sports Authority water sports (not civic)",
+  "Panchayat 'Complaints on Officials /Staff behaviour' and 'Misappropriation of funds'",
+  "Factories approval-of-plan violations (accuse named factory)",
+  "Mines mining-plan approvals (business)",
+  "Christian / Kapu corporation lines (community-named)"
  ],
  "still_needed_keywords": [
-  "college",
   "garbage",
   "toilet",
   "streetlight",
   "ration",
   "pension",
-  "anganwadi",
-  "hospital",
-  "current",
-  "certificate",
-  "land",
-  "house",
-  "mid-day meal"
+  "land"
  ],
  "search_tips": "Meekosam search matches words in the option text, not meaning. 'revenue' found only a church line, so for certificates/land use 'certificate', 'caste', 'income', 'land', 'pattadar', 'survey', 'mutation'.",
  "manual_route": {
