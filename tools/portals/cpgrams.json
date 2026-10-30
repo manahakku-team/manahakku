@@ -1123,8 +1123,50 @@
      "Admit Card not received": "-> board_list",
      "Delay in Results": "-> board_list"
     },
-    "Government Scheme Related": "not checked (needed: mid-day meal / Samagra Shiksha)",
-    "Government Policy/Act": "not checked",
+    "Government Scheme Related": {
+     "Samagra Shiksha": [
+      "Early Childhood Care and Education (ECCE)",
+      "Kasturba Gandhi Balika Vidyalaya",
+      "CWSN Children With special needs/ Inclusive education",
+      "Eco Clubs for Mission Life",
+      "Promotion of sports/yoga in schools",
+      "Out of School Children",
+      "Quality of Education",
+      "School infrastructure",
+      "Skill Education",
+      "Gender Equity",
+      "School Safety"
+     ],
+     "PM Poshan Related": [
+      "Cook cum Helper",
+      "Housekeeping/ Infrastructure",
+      "Food hygiene Related issues",
+      "Food Grains"
+     ],
+     "ULLAS (Understanding of Lifelong Learning for All in Society)": [
+      "Salary of Teachers",
+      "Quality of Teachers"
+     ],
+     "PM-SHRI (Pradhan Mantri Schools for Rising India)": "no next level; asks 'Name of the School with Complete Address' (required) then description",
+     "STARS (Strengthening Teaching-Learning and Results for States)": "no next level; asks State/UT",
+     "National Mean-cum-Merit Scholarship Scheme (NMMSS) and other scholarship related issues": [
+      "National Scholarship Portal (NSP) Registration Issue",
+      "OTR/Aadhaar Issues",
+      "NSP Verification Issue",
+      "NSP Payment Issue",
+      "Offline Payment Issue",
+      "Other NSP Related Issues",
+      "Any Other Issue Regarding NMMSS"
+     ],
+     "Other Scholarship related": "asks Name of the Board (optional) + Name of the School with Complete Address (required)",
+     "Pradhan Mantri Innovative Learning Programme - DHRUV": "asks State/UT",
+     "Other Schemes": "asks State/UT (safe fallback for school scheme issues)"
+    },
+    "Government Policy/Act": [
+     "National Education Policy 2020",
+     "Right of Children to Free and Compulsory Education Act, 2009",
+     "National Council for Teacher Education (NCTE) Act"
+    ],
     "Misbehaviour/ Corruption/ Harassment": "never auto",
     "Pension Related": "skip",
     "Training of Teachers": "skip",
@@ -1139,9 +1181,26 @@
     "education - name/DOB wrong in certificate": "... > Change in details in certificates > (board)",
     "education - 10th result delayed / re-evaluation": "Entrance Exam and Results Related > Delay in Results / Board Exam Re-evaluation > (board)",
     "education - hall ticket not received": "Entrance Exam and Results Related > Admit Card not received > (board)",
-    "education - teacher salary pending (only if user is affected)": "Employee Services Related > Delayed Salary Payment > (board)"
+    "education - teacher salary pending (only if user is affected)": "Employee Services Related > Delayed Salary Payment > (board)",
+    "education - no school building / classrooms / toilets / water in school": "Government Scheme Related > Samagra Shiksha > School infrastructure",
+    "education - teachers absent / poor teaching": "... > Samagra Shiksha > Quality of Education",
+    "education - children out of school / dropouts": "... > Samagra Shiksha > Out of School Children",
+    "education - unsafe school (building, wall, road)": "... > Samagra Shiksha > School Safety",
+    "education - girls' facilities / KGBV": "... > Samagra Shiksha > Gender Equity / Kasturba Gandhi Balika Vidyalaya",
+    "education - disabled children support": "... > Samagra Shiksha > CWSN Children With special needs/ Inclusive education",
+    "nutrition/education - mid-day meal bad food": "Government Scheme Related > PM Poshan Related > Food hygiene Related issues",
+    "nutrition/education - mid-day meal not served / rice shortage": "... > PM Poshan Related > Food Grains",
+    "nutrition/education - kitchen shed / plates / cleaning": "... > PM Poshan Related > Housekeeping/ Infrastructure",
+    "education - scholarship (NMMSS / NSP) not paid": "... > NMMSS and other scholarship related issues > NSP Payment Issue",
+    "education - scholarship stuck in verification": "... > NSP Verification Issue",
+    "education - RTE 25% seat / free education refused": "Government Policy/Act > Right of Children to Free and Compulsory Education Act, 2009",
+    "education - any other school scheme": "Government Scheme Related > Other Schemes > State: Andhra Pradesh / Telangana"
    },
-   "complete": false
+   "complete": true,
+   "never_auto": [
+    "Misbehaviour/ Corruption/ Harassment"
+   ],
+   "privacy_note": "Some forms ask School name with complete address: school name is a public institution and OK; never put a child's name."
   }
  }
 }
