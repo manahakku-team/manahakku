@@ -8,14 +8,14 @@ const code="const L=v=>Array.isArray(v)?v[0]:v;"+html.slice(a,b+"const SKEYS=Obj
 const m={exports:{}};new Function("module","exports",code)(m,m.exports);
 const {detect,detectSub,portalPick,cpClean,PG,MK_D}=m.exports;
 const cases=JSON.parse(fs.readFileSync(path.join(__dirname,"portal_cases.json"),"utf8"));
-const BLAME=/corrupt|bribe|fake|misappropr|misbehav|harass|bogus|demanding money|staff misusing|favorit|colluded/i;
+const BLAME=/corrupt|bribe|fake|misappropr|misbehav|harass|bogus|demanding money|staff misusing|favorit|colluded|benami/i;
 let fail=0,specific=0;const rows=[];
 for(const [text,wantSec,wantSub,expect] of cases){
  const det=detect(text);
  // Test with the problem type the app itself picks (the person may keep it), falling back to the right one when the app asks.
  const sec=det.key||wantSec,sub=det.key&&det.key!==wantSec?(detectSub(sec,text)||null):(wantSub||(detectSub(sec,text)||null));
  const g=portalPick({sector:sec,sub,title:"",desc:text});
- const mk=!g?"NONE":g.m===null?"(own portal)":Array.isArray(g.m)?"search '"+g.m[0]+"' > "+g.m[1]:"dropdown: "+MK_D[g.m.d]+(g.m.hod?" > "+g.m.hod:"")+(g.m.subj?" > "+g.m.subj:"");
+ const mk=!g?"NONE":g.m===null?"(own portal)":Array.isArray(g.m)?"search '"+g.m[0]+"' > "+g.m[1]:"dropdown: "+MK_D[g.m.d]+(g.m.hod?" > "+g.m.hod:"")+(g.m.subj?" > "+g.m.subj:"")+(g.m.ss?" > "+g.m.ss:"");
  const cp=!g||!g.c?"-":g.c.join(" > ");
  const isDefault=g&&!g.k&&!g.sub;
  let err="";
