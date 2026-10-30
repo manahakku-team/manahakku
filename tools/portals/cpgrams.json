@@ -924,6 +924,99 @@
     "anything else village-level": "Miscellaneous (straight to description)"
    },
    "complete": "mostly; open sub-levels of Basic facilities / Civic Amenities if time"
+  },
+  "Health Research": {
+   "main": {
+    "Alternative System of Medicine": {
+     "Electrohomoeopathy": [
+      "Status for grant of recognition",
+      "Orders on grant of recognition",
+      "Others"
+     ],
+     "Acupunture": [
+      "Others",
+      "Status for grant of recognition",
+      "Orders on grant of recognition"
+     ],
+     "Inter Departmentatl Committee": [
+      "Constitution",
+      "Terms of Reference",
+      "Committee's report",
+      "Others"
+     ]
+    },
+    "Viral Research Diagnostic Laboratory": {
+     "VRDL Institutes": [
+      "Release of funds",
+      "Uses of funds",
+      "Increment",
+      "Salary",
+      "Recruitment of staff or PMU",
+      "Technical query",
+      "Others"
+     ]
+    },
+    "Related to ART and Surrogacy": [
+     "Import of Gametes /embryos etc.",
+     "Export of gametes/embryos etc.",
+     "Related to various Provisions of Acts",
+     "NOC related",
+     "Others"
+    ],
+    "MRUs and MRHRUs": {
+     "Salary": [
+      "Arrears",
+      "HRA",
+      "Pay scale of officers/staffs",
+      "TA/DA",
+      "Others"
+     ],
+     "Conflict of Interest": [
+      "Appointment of Nodal Officers",
+      "Appointment of Staffs",
+      "Others"
+     ],
+     "Release of funds": [
+      "Issues related to Head-wise usage of funds",
+      "Delay in release of funds",
+      "Others"
+     ],
+     "Research Projects": [
+      "Approval mechanism of the research project",
+      "Low representation of various departments",
+      "Others"
+     ]
+    },
+    "General Admin": [
+     "Domestic/Foreign visit",
+     "Procurement",
+     "Out Sourced employees",
+     "Bills/Payments",
+     "Others"
+    ],
+    "Establishment": [
+     "Recruitment",
+     "Service Matters",
+     "Salary",
+     "Posting/Transfer",
+     "Policy Related",
+     "Others",
+     "Pension"
+    ],
+    "HTAIn": {
+     "HTAIn Secretariat": [
+      "Resource Centers",
+      "Diamonds Centers"
+     ]
+    },
+    "Ethics Committee Registry": "not checked",
+    "Grant-in-Aid Scheme": "not checked",
+    "Human Research Development Scheme": "not checked",
+    "Public Health": "not checked",
+    "Hospitals": "not checked"
+   },
+   "note": "Department of Health Research (ICMR side) - research labs, staff, grants. NOT the route for village health problems; use Health and Family Welfare / State Government. Not suggested by the app except maybe Public Health / Hospitals if they turn out relevant.",
+   "app_map": {}
   }
  }
 }
