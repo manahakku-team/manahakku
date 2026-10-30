@@ -1485,11 +1485,42 @@
      "Power Sector Research & Innovation",
      "Miscelleneous Training Institutes related matters"
     ],
-    "Employee Services Related": "skip",
-    "Pension Related": "skip",
-    "Misbehaviour/ Corruption/ Harassment": "never auto",
-    "Suggestions and Feedback": "not checked",
-    "Miscellaneous matters of Ministry of Power": "not checked (needed)"
+    "Employee Services Related": "skip (staff/contract labour of CPSEs)",
+    "Pension Related": "skip (staff)",
+    "Misbehaviour/ Corruption/ Harassment": {
+     "list": [
+      "Corruption",
+      "Misuse of position or authority by officials",
+      "Unfair treatment, favoritism, or discrimination",
+      "Vigilance and disciplinary matters related to MoP and CPSEs",
+      "Sexual harrassment at Work Place",
+      "Negligence or dereliction of duty affecting public service",
+      "Legal matters/Legal disputes",
+      "Any other matter pertaining Corruption, Harassment, Misconduct, Vigilance etc."
+     ],
+     "rule": "never auto"
+    },
+    "Suggestions and Feedback": [
+     "Suggestions for improvement in power supply, regulation, or governance",
+     "General Feedback on MoP related policies, schemes, services etc.",
+     "Innovative ideas or proposals for the Ministry of Power",
+     "Any other suggestions pertaining to Ministry of Power"
+    ],
+    "Miscellaneous matters of Ministry of Power": [
+     "Smart Meter related Matters",
+     "Energy Efficiency & Energy Conservation matters",
+     "Transmission & Distribution Infrastructure Issues",
+     "Rural & Remote Area Electrification Issues",
+     "Coal/Fuel Supply related matter",
+     "Regulatory Affairs",
+     "Power Exchange related matter",
+     "IT Infrastructure & Cyber Security related to Power Sector",
+     "Corporate Social Responsibility",
+     "E-governance Matters",
+     "Matter related to MoU with PSUs",
+     "Various policies pertaining to PSUs under MoP",
+     "Matters related to coordination between multiple agencies under Ministry of Power"
+    ]
    },
    "KEY_RULE": "Village electricity (power cuts, transformer, low voltage, poles/wires, meter, bill, new connection) is the state DISCOM's job, NOT Ministry of Power. Route: DISCOM complaint / 1912 helpline / Meekosam (AP) / Prajavani (TS) first; CPGRAMS via State Governments/Others -> State Government -> AP/TS. Ministry of Power only for central PSU projects (NTPC, POWERGRID towers, land/crop compensation).",
    "app_map": {
@@ -1504,9 +1535,12 @@
     "power - unsafe tower/substation near homes (central)": "Power Project Impacts... > Transmission Lines, switchyard, substation and Towers – Safety Issues > (company)",
     "power - health impact near plant": "Power Project Impacts... > Health Impacts on Local Communities > (company)",
     "power - village feeder/transformer upgrade under RDSS not done": "Power Tariff, Policies, Acts, Schemes etc. > Matters pertaining to Schemes like RDSS, UDAY, NFMS, CSRD etc.",
-    "power - anything else": "Miscellaneous matters of Ministry of Power (not yet seen) or State route"
+    "power - anything else": "Miscellaneous matters of Ministry of Power (not yet seen) or State route",
+    "power - village/hamlet has no electricity at all": "Miscellaneous matters of Ministry of Power > Rural & Remote Area Electrification Issues",
+    "power - smart meter problem (after DISCOM)": "Miscellaneous matters of Ministry of Power > Smart Meter related Matters",
+    "power - old poles/lines/transformer need replacement (after DISCOM)": "Miscellaneous matters of Ministry of Power > Transmission & Distribution Infrastructure Issues"
    },
-   "complete": "yes except Miscellaneous matters screen"
+   "complete": true
   }
  }
 }
