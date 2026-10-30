@@ -804,11 +804,29 @@
       "Grant related to SIRD (State Institute of Rural Development) / ETC (Extension Training Centre)"
      ]
     },
-    "Financial Matters Related": [
-     "Bill Related",
-     "International Cooperation"
-    ],
-    "Other Division": "not checked"
+    "Financial Matters Related": {
+     "Bill Related": [
+      "Pending Bill",
+      "Short payment of Bill"
+     ],
+     "International Cooperation": "skip"
+    },
+    "Other Division": {
+     "RURBAN (SPMRM)": [
+      "Employee /Service Related"
+     ],
+     "BPL": [
+      "Exclusion / Inclusion/Deprivation Criteria in BPL / SECC list at any level.Request for Addition in SECC List",
+      "Old BPL List"
+     ],
+     "DISHA": [
+      "Action on decision taken in DISHA meeting on rnatter related to State",
+      "Action on decision taken in DISHA meetings on matter pertaining to Ministries of Govt. of lndia"
+     ],
+     "SGSY": [
+      "financial support, beneficiary selection, training, challenges, impact, sector focus, and role of local bodies in SGSY"
+     ]
+    }
    },
    "app_map": {
     "roads - PMGSY road not finished": "Govt Schemes > PMGSY > Complaints about PMGSY roads > Complaints regarding Delay in constructions of roads Under PMGSY",
@@ -837,7 +855,8 @@
     "housing - application ignored by panchayat": "... > Request/ Representation > Negligence of request for new house by official /GPs",
     "housing - village never surveyed": "... > Request/ Representation > Survey not conducted/ Village not mapped",
     "housing - installment delayed / geo-tag pending": "Govt Schemes > PMAY-G > PMAY - G related Complaints > Delay in sanction of installments/ geo - tagging of stages of construction of house",
-    "social - discrimination in rural scheme (SC/ST/OBC, disabled)": "Misbehaviour/ Corruption/ Harassment > Attrocities Against > SC/ST/OBC or Differently Abled (only on user's own words; never auto)"
+    "social - discrimination in rural scheme (SC/ST/OBC, disabled)": "Misbehaviour/ Corruption/ Harassment > Attrocities Against > SC/ST/OBC or Differently Abled (only on user's own words; never auto)",
+    "welfare - name missing from BPL / SECC list": "Other Division > BPL > Exclusion / Inclusion/Deprivation Criteria in BPL / SECC list ... Request for Addition in SECC List"
    },
    "note": "PMGSY = only roads built under that scheme (usually signboard says PMGSY). Unknown road type -> State Government (AP/TS) route. Corruption/fake-payment options never auto-suggested (facts, no blame). NSAP pensions in AP/TS are paid under state pension schemes; State Government route first, this route for central NSAP share. Some leaves ask a State dropdown before description. PMAY-G 'bribe' options are never auto-suggested; for a stuck installment use the neutral 'Delay in sanction of installments' option.",
    "complete": true
