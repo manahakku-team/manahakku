@@ -1860,6 +1860,45 @@
    },
    "complete": "yes except Natural Calamity/Drought sub-list and PMFBY sub-list",
    "note": "Farm schemes (PM-KISAN approval, seeds, fertiliser, Rythu Seva / RBK centres) are run on the ground by the state Agriculture department: Meekosam/Prajavani first, then this route."
+  },
+  "Urban Development (Housing and Urban Affairs)": {
+   "main": {
+    "Principal Accounts Office": "staff - skip",
+    "TCPO (Town and Country Planning Organisation)": "staff - skip",
+    "HPL (Hindustan Prefab Ltd.)": [
+     "Pending any type of bill/dues of the payment",
+     "Establishment Related",
+     "Land Related",
+     "Pay & Allowances",
+     "Corruption Related",
+     "Others"
+    ],
+    "HUDCO (Housing and Urban Development Corporation)": {
+     "CENTRAL NODAL AGENCY -PMAY": [
+      "Credit Linked Subsidy Scheme"
+     ],
+     "Service matter related to employee": "skip",
+     "HUDCO Bonds": [
+      "Interest"
+     ],
+     "HUDCO Shares": [
+      "Dividend"
+     ],
+     "Others": null
+    },
+    "NBO (National Buildings Organisation)": "skip (data/staff)",
+    "NCHFI": "not checked",
+    "CGEWHO": "skip (central staff housing)",
+    "BMTPC": "not checked",
+    "NIUA": "not checked",
+    "Schemes, Programs & Other Divisions under MoHUA": "NOT YET SEEN - needed (PMAY-Urban, Swachh Bharat Urban, AMRUT, street vendors)",
+    "Delhi Division": "out of scope"
+   },
+   "note": "Ministry appears as 'Urban Development'. Town water/drains/garbage/roads are municipality (state) matters: Meekosam/Prajavani first.",
+   "app_map": {
+    "housing (town) - home-loan interest subsidy (CLSS) not received": "HUDCO > CENTRAL NODAL AGENCY -PMAY > Credit Linked Subsidy Scheme"
+   },
+   "complete": false
   }
  }
 }
