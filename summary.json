@@ -1,26 +1,28 @@
 {
- "updated": "2026-10-30T07:17",
+ "updated": "2026-10-30T10:05",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 163,
-    "water": 28,
-    "agri": 36,
-    "health": 22,
-    "roads": 13,
+    "water": 30,
+    "agri": 38,
+    "health": 23,
+    "other": 162,
+    "roads": 14,
     "power": 7,
     "nutrition": 10,
     "education": 13,
     "elderly": 3,
     "sanitation": 6,
+    "certs": 2,
     "housing": 3,
+    "iddocs": 2,
     "social": 1,
     "women": 2,
     "livelihood": 2
    },
    "Adilabad": {
+    "agri": 2,
     "other": 1,
-    "agri": 1,
     "power": 1
    },
    "Hyderabad": {
@@ -78,13 +80,16 @@
    }
   },
   "ap": {
+   "Kurnool": {
+    "other": 2
+   },
    "(state-wide / unknown)": {
+    "other": 356,
+    "agri": 33,
+    "health": 20,
+    "power": 28,
     "education": 25,
     "elderly": 5,
-    "other": 343,
-    "health": 19,
-    "power": 26,
-    "agri": 31,
     "roads": 5,
     "water": 11,
     "sanitation": 11,
@@ -136,13 +141,10 @@
     "nutrition": 1
    },
    "Visakhapatnam": {
-    "other": 2
+    "other": 3
    },
    "Prakasam": {
     "education": 1,
-    "other": 1
-   },
-   "Kurnool": {
     "other": 1
    },
    "Ananthapuramu": {
