@@ -1919,9 +1919,67 @@
       "Housing For All (HFA) Division",
       "CPHEEO",
       "NERDUP & Mission Coordination",
-      "Coordination Division"
+      "Coordination Division",
+      "LSG Division",
+      "Others"
      ],
-     "next_level": "NOT YET SEEN for AMRUT / Swachh Bharat / HFA / NULM"
+     "next_level": {
+      "NULM Division": {
+       "Matter related to Urban Livelihoold": [
+        "Promotion of urban livelihoold",
+        "Skill training of urban poors",
+        "Release of funds to the State Governments under DAY-NULM scheme",
+        "Street Vendors Act",
+        "Shelter for Urban Homeless",
+        "Support to Urban Street Vendors",
+        "Self Employment Programme",
+        "Innovation & Special Projects",
+        "Social Mobilization & Institution Development"
+       ]
+      },
+      "Swachh Bharat Mission Division": {
+       "Matter related to Swachh Bhart Mission (Urban)": [
+        "Household Toilets, Community/Public Toilets",
+        "Solid Waste Management",
+        "Awareness about sanitation and its linkage with public health",
+        "Elimination of open defecation",
+        "Eradication of Manual Scavenging",
+        "Corruption in Swachh Bhart Scheme",
+        "Delay in complition of Project",
+        "Suggestions/request related to Swachh Bharat Mission"
+       ]
+      },
+      "Housing For All (HFA) Division": {
+       "Matter related to PMAY (Urban) , Payment of subsidy etc.": [
+        "Complaint/request for PMAY",
+        "Complaint regarding payment of subsidy"
+       ]
+      },
+      "CPHEEO": {
+       "Matter related to urban water supply and sanitation": [
+        "Complaint/Request for water supply",
+        "Matter related urban sanitation",
+        "Mannual scavenging",
+        "Matter related solid waste management in urban area"
+       ]
+      },
+      "LSG Division": {
+       "Civic Amenities and  quality of service in ULBs": [
+        "Poor quality of road, construction, maintenance related,  delay in action, parking related etc"
+       ],
+       "Unathorised &  illegal construction in ULBs": [
+        "Encroachment, Unathorised construction etc"
+       ],
+       "Corruption in Urban  Local Bodies": [
+        "Mis-appropriation of funds in ULBs, misuse of powers etc (never auto)"
+       ]
+      },
+      "Urban Development Divison": "FDI / disaster mgmt / World Bank projects - skip",
+      "Works Division": "CPWD admin / monuments - skip",
+      "NERDUP & Mission Coordination": "North East only - skip",
+      "Coordination Division": "court/RTI/general - not accepted / skip",
+      "AMRUT Division": "next level NOT YET SEEN (CPHEEO covers town water meanwhile)"
+     }
     },
     "Delhi Division": "out of scope"
    },
@@ -1931,9 +1989,21 @@
     "water/sanitation (town) - drinking water pipeline, sewerage, drains": "Schemes, Programs & Other Divisions under MoHUA > AMRUT Division > (next level TBD)",
     "sanitation (town) - garbage, public toilets": "Schemes... > Swachh Bharat Mission Division > (next level TBD)",
     "housing (town) - PMAY-Urban house not sanctioned / instalment stuck": "Schemes... > Housing For All (HFA) Division > (next level TBD)",
-    "livelihood (town) - street vendor / urban livelihood": "Schemes... > NULM Division > (next level TBD)"
+    "livelihood (town) - street vendor / urban livelihood": "Schemes... > NULM Division > (next level TBD)",
+    "water (town) - no/irregular drinking water": "Schemes... > CPHEEO > Matter related to urban water supply and sanitation > Complaint/Request for water supply",
+    "sanitation (town) - drains/sewage": "Schemes... > CPHEEO > ... > Matter related urban sanitation",
+    "sanitation (town) - garbage not collected": "Schemes... > Swachh Bharat Mission Division > Matter related to SBM (Urban) > Solid Waste Management",
+    "sanitation (town) - public/community toilet, household toilet": "Schemes... > Swachh Bharat Mission Division > ... > Household Toilets, Community/Public Toilets",
+    "sanitation (town) - manual scavenging": "Schemes... > Swachh Bharat Mission Division > ... > Eradication of Manual Scavenging",
+    "housing (town) - PMAY-U house": "Schemes... > Housing For All (HFA) Division > Matter related to PMAY (Urban)... > Complaint/request for PMAY",
+    "housing (town) - PMAY-U subsidy not paid": "... > Complaint regarding payment of subsidy",
+    "livelihood (town) - street vendor": "Schemes... > NULM Division > Matter related to Urban Livelihoold > Support to Urban Street Vendors / Street Vendors Act",
+    "housing (town) - homeless shelter": "... NULM ... > Shelter for Urban Homeless",
+    "livelihood (town) - skill training": "... NULM ... > Skill training of urban poors",
+    "roads (town) - municipal road poor/ potholes / civic amenity": "Schemes... > LSG Division > Civic Amenities and quality of service in ULBs > Poor quality of road...",
+    "roads (town) - encroachment / illegal construction": "Schemes... > LSG Division > Unathorised & illegal construction in ULBs > Encroachment, Unathorised construction etc"
    },
-   "complete": false
+   "complete": "yes (AMRUT sub-list optional)"
   }
  }
 }
