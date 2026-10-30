@@ -1306,5 +1306,17 @@
   "agri",
   null,
   "Digging Of Sand"
+ ],
+ [
+  "Lift irrigation motor not working, fields dry",
+  "agri",
+  null,
+  "Repairs To Lift Irrigation"
+ ],
+ [
+  "Vehicle data missing, not allowing transaction at RTO",
+  "roads",
+  null,
+  "Not Allowing For Transactions"
  ]
 ]
