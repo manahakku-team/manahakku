@@ -1264,5 +1264,29 @@
   "roads",
   null,
   "Dead Trees"
+ ],
+ [
+  "Canal silt not removed, water not reaching",
+  "agri",
+  null,
+  "Silt Not Removed"
+ ],
+ [
+  "Weeds blocking irrigation canal",
+  "agri",
+  null,
+  "Jungle Clearance"
+ ],
+ [
+  "Irrigation project land compensation not paid",
+  "agri",
+  null,
+  "Payment For Compensation Of Land"
+ ],
+ [
+  "Water not reaching tail end of canal",
+  "agri",
+  null,
+  "Tail End"
  ]
 ]
