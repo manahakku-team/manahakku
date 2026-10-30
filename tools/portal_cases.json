@@ -69,7 +69,7 @@
 "Toilet incentive money not paid under Swachh Bharat",
 "sanitation",
 "toilet",
-"Incentives Related"
+"Pending Bills related IHHLs"
 ],
 [
 "Stray dogs biting children in the village",
@@ -213,7 +213,7 @@ null,
 "Old age pension stopped for three months",
 "elderly",
 null,
-"Restoration of pension"
+"Pension disbursement delayed"
 ],
 [
 "Wheelchair not given to disabled person",
@@ -231,7 +231,7 @@ null,
 "NREGA wages not paid for 2 months",
 "livelihood",
 null,
-"Non payment of wage"
+"Pending wage payments"
 ],
 [
 "Shop owner not paying wages",
@@ -273,7 +273,7 @@ null,
 "Village road full of potholes",
 "roads",
 null,
-"Minor Repairs"
+"Potholes Repairs"
 ],
 [
 "No road to our hamlet",
@@ -580,5 +580,65 @@ null,
 "roads",
 null,
 "Removal Of Encroachments"
+],
+[
+"Asked for NREGA work but no work given",
+"livelihood",
+null,
+"demanded but not provided"
+],
+[
+"No shade or water at NREGA worksite",
+"livelihood",
+null,
+"Worksite facilities"
+],
+[
+"Job card name wrong",
+"livelihood",
+null,
+"Job card issue"
+],
+[
+"Hand pump not working in our street",
+"water",
+null,
+"Bore Wells"
+],
+[
+"Potholes on panchayat road",
+"roads",
+null,
+"Potholes Repairs"
+],
+[
+"ZP high school has no compound wall",
+"education",
+null,
+"Compound Walls"
+],
+[
+"Village water tank motor burnt",
+"water",
+null,
+"Repair To Electric Motar"
+],
+[
+"Pipeline not laid to our street, need extension",
+"water",
+null,
+"Extension Of Pipeline"
+],
+[
+"Widow pension not sanctioned",
+"elderly",
+null,
+"eligibility & sanctions"
+],
+[
+"DWACRA group loan interest not credited",
+"livelihood",
+null,
+"Sunnavaddi"
 ]
 ]
