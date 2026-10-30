@@ -826,5 +826,23 @@
   "health",
   null,
   "NCD screening"
+ ],
+ [
+  "Baby kit not given after delivery",
+  "health",
+  null,
+  "Baby kit"
+ ],
+ [
+  "Medical shop selling tablets above MRP",
+  "health",
+  null,
+  "Higher Prices"
+ ],
+ [
+  "Medical shop sold expired medicine",
+  "health",
+  null,
+  "Expiry Drugs"
  ]
 ]
