@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-30T13:14",
+ "updated": "2026-10-30T16:03",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 171,
-    "agri": 40,
+    "other": 177,
+    "agri": 42,
+    "power": 8,
     "health": 24,
     "water": 31,
     "livelihood": 3,
     "elderly": 4,
-    "roads": 14,
-    "power": 7,
+    "roads": 15,
     "nutrition": 10,
     "education": 13,
     "housing": 4,
@@ -21,9 +21,19 @@
     "women": 2
    },
    "Khammam": {
+    "other": 1,
     "agri": 2,
     "nutrition": 1,
     "water": 1
+   },
+   "Hyderabad": {
+    "water": 4,
+    "roads": 1,
+    "other": 10,
+    "nutrition": 2,
+    "women": 1,
+    "health": 2,
+    "housing": 1
    },
    "Ranga Reddy": {
     "agri": 1,
@@ -33,15 +43,6 @@
     "agri": 2,
     "other": 1,
     "power": 1
-   },
-   "Hyderabad": {
-    "roads": 1,
-    "other": 10,
-    "nutrition": 2,
-    "women": 1,
-    "water": 3,
-    "health": 2,
-    "housing": 1
    },
    "Kumuram Bheem Asifabad": {
     "other": 2,
@@ -81,13 +82,18 @@
    }
   },
   "ap": {
+   "Ananthapuramu": {
+    "health": 1,
+    "other": 2
+   },
    "(state-wide / unknown)": {
-    "other": 363,
+    "education": 26,
+    "agri": 36,
+    "other": 369,
     "power": 29,
     "health": 22,
-    "agri": 34,
-    "education": 25,
     "elderly": 5,
+    "child": 1,
     "roads": 5,
     "water": 11,
     "sanitation": 11,
@@ -147,9 +153,6 @@
    "Prakasam": {
     "education": 1,
     "other": 1
-   },
-   "Ananthapuramu": {
-    "other": 2
    }
   }
  }
