@@ -71,7 +71,8 @@
    "AP Pollution Control Board-->Industrial Pollution Related -->Waste Water Discharges Into Rivers, Canals & Tanks",
    "AP Pollution Control Board-->Industrial Pollution Related -->Waste Water Discharge Out Side Factories",
    "Ground Water-->Construction Of Tube Wells And Bore Wells Referred By S.C.Corporation, I.T.D.A. ...-->Issues Related To Drilling Of Bore/ Tube Wells (user's words only)",
-   "Ground Water-->Ground Water Surveys Under A.P.W.A.L.T.A. ...-->Issues Related To Delays In Conducting Groundwater Surveys Under Ap Walta"
+   "Ground Water-->Ground Water Surveys Under A.P.W.A.L.T.A. ...-->Issues Related To Delays In Conducting Groundwater Surveys Under Ap Walta",
+   "Technical Education-->Polytechnic Infrastructure Related-->Hostel/Lab/Library/Rest Room/Drinking Water Facility"
   ],
   "education": [
    "Intermediate Education-->About Raising Educational Standards in Colleges-->Centre For Excellence / MANA TV",
@@ -139,7 +140,13 @@
    "Women Development and Child Welfare-->Girl Child Protection Scheme-->Delay In Sanction Of GCPS Scheme/GCPS Benefits / Delay In Changing Beneficiary Name / DOB corrections in GCPS Bond",
    "Women Development and Child Welfare-->Homes-->Improper Accommodation / Maintenance / Cleanliness In Children Homes / Working Women Hostels; Delay In Admission Of Orphan /Semi Orphan Into Children Homes",
    "Women Development and Child Welfare-->District Child Protection Unit-->Complaints Related To Child Begging /Bonded Labour/ Child Labour/Child Marriage/... (call 1098 first)",
-   "Women Development and Child Welfare-->Adoption-->Delay In Forwarding The Application For The Adoption Of The Child"
+   "Women Development and Child Welfare-->Adoption-->Delay In Forwarding The Application For The Adoption Of The Child",
+   "Women Development and Child Welfare-->SP/SP Plus+ (Children 36 to 72 Months)-->Anganwadi Centre Is Not Clean / Quality Of Mid Day Meal Is Less / Providing Less Quantity Hot Cooked Meal To Children",
+   "Women Development and Child Welfare-->SP/ SP Plus+ (Children 6 to 36 Months)-->Balamrutham Quality Is Not Good",
+   "Women Development and Child Welfare-->Homes-->Complaint Related To Street Children",
+   "Labour-->Managements Under Various Laour Laws-->Engagement Of Child Labour In Shops / Establishments / Factories / Industries Etc.,",
+   "Factories-->Implementation Of Factories Act, 1948.-->Employment Of Child Workers To Work In The Factory.",
+   "Family Welfare-->Thalli Bidda Express-->Driver refusing to take the mother and child to their home"
   ],
   "senior citizen": [
    "Differently Abled, Senior Citizens & Transgender-->Senior Citizens Welfare-->Maintenance From Children / Son Sons / A Relative; Old Age Home food/water/toilets/health care/hygiene/accommodation; Delay In Issue Of Registration Certificate",
@@ -155,6 +162,13 @@
   ],
   "tourism": [
    "AP Tourism Development Corporation-->Tourism Transport-->Collecting Extra Fare/Price On Tickets"
+  ],
+  "women": [
+   "Women Development and Child Welfare-->SP / SP Plus+ (Pregnant Women and Lactating Mothers)-->Hot Cooked Meals Not Provided / Eggs Not Provided / Milk Not Provided / Take Home Kit is Not Being Provided / Issuing Of Less Quality Food / Spoiled Eggs / Anganwadi Centre Is Far Away To Reach Beneficiaries",
+   "Women Development and Child Welfare-->Homes-->Delay In Admission Into Working Women Hostel/State Home",
+   "Labour-->Managements Under Various Laour Laws-->Issues Related To Maternity Leave For Women Workers Private Establishments / Shops / Factories",
+   "Youth Services-->Self- Defence Training To Women-->Training Arrangements",
+   "SAFETY (helpline first, user's words only): Police-->Crime against Women; Women Development and Child Welfare-->Domestic Violence Act; Rythu Sadhikara Samstha-->Harassment At Work Place; Police-->Abetment of Suicide (Women)"
   ]
  },
  "app_map": {
@@ -222,7 +236,15 @@
   "child - girl child scheme (GCPS) benefit delayed": "search 'child' > Women Development and Child Welfare-->Girl Child Protection Scheme-->Delay In Sanction Of GCPS Scheme/GCPS Benefits",
   "child - child labour / child marriage seen": "call 1098 / 112 FIRST; then search 'child' > Women Development and Child Welfare-->District Child Protection Unit-->Complaints Related To Child Begging /Bonded Labour/ Child Labour/Child Marriage",
   "child - orphan admission to children home delayed": "search 'child' > Women Development and Child Welfare-->Homes-->Delay In Admission Of Orphan /Semi Orphan Into Children Homes",
-  "livelihood - youth army pre-recruitment training": "search 'youth' > Youth Services-->Pre- Recruitment Training...-->Training And Training Centres"
+  "livelihood - youth army pre-recruitment training": "search 'youth' > Youth Services-->Pre- Recruitment Training...-->Training And Training Centres",
+  "nutrition - anganwadi not clean": "search 'child' > Women Development and Child Welfare-->SP/SP Plus+ (Children 36 to 72 Months)-->Anganwadi Centre Is Not Clean",
+  "nutrition - anganwadi meal poor / less": "search 'child' > ...SP/SP Plus+ (Children 36 to 72 Months)-->Quality Of Mid Day Meal Is Less / Providing Less Quantity Hot Cooked Meal To Children",
+  "nutrition - pregnant women not getting anganwadi meals/eggs/milk": "search 'women' > Women Development and Child Welfare-->SP / SP Plus+ (Pregnant Women and Lactating Mothers)-->Hot Cooked Meals Not Provided / Eggs / Milk Not Provided",
+  "nutrition - anganwadi too far for mothers": "search 'women' > ...SP / SP Plus+ (Pregnant Women and Lactating Mothers)-->Anganwadi Centre Is Far Away To Reach Beneficiaries",
+  "child - child labour in shop/factory": "call 1098 first; then search 'child' > Labour-->...-->Engagement Of Child Labour In Shops / Establishments / Factories",
+  "health - Thalli Bidda Express (mother-baby drop) refused": "search 'child' > Family Welfare-->Thalli Bidda Express-->Driver refusing to take the mother and child to their home",
+  "livelihood - maternity leave denied (private job)": "search 'women' > Labour-->...-->Issues Related To Maternity Leave For Women Workers",
+  "education.college - polytechnic facilities": "search 'water' > Technical Education-->Polytechnic Infrastructure Related-->(facility)"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -251,7 +273,12 @@
   "GCPS 'Accepting Bribes By The Workers/Helpers' (blames)",
   "District Child Protection Unit 'Corporal Punishment' (child safety: user's words only; call 1098)",
   "Tribal Welfare-->Itda Court Cases (court matters not accepted)",
-  "Youth festival/award selections"
+  "Youth festival/award selections",
+  "Crime against women / Domestic Violence / workplace harassment / abetment of suicide: never auto; show 181/112 (and Tele-MANAS 14416, verify) first",
+  "AP State Wakf Board divorced women (religious)",
+  "AIDS Control Society / HIV lines (sensitive health)",
+  "Selling Of Food By Anganwadi Workers / Issuing Food To Ineligible (blames)",
+  "Police-->Child Kidnapping / Crime Against Children (police: 112/1098)"
  ],
  "still_needed_keywords": [
   "college",
