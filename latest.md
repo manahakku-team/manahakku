@@ -1,13 +1,13 @@
-# Mana Hakku daily quality check, 2026-10-29
+# Mana Hakku daily quality check, 2026-10-30
 
-Build: a1f7e5d Daily quality check (screens, live site/register/data, live news) and weekly Andro
+Build: f0e92bf Grievance pattern: switch to CPGRAMS/PGRS even when Prajavani or Other is selected
 
 ## 1. App logic tests
 ```
-  SURE  got sanitation/null  want sanitation/garbage  | chetta teeyatledu, dhomalu ekkuva
-  popup got water/supply  want sanitation/toilet  | Community toilet is locked and has no water
+Right automatically 52/57 · asked with pop-up 5 · wrong without asking 0 · right-or-asked 100%
+  popup got null/null  want livelihood/-  | Land registration office is not issuing documents, people wait for weeks
 Auto-correction 16/16
-guide: 7 tabs checked, change log 2026-10-29
+guide: 7 tabs checked, change log 2026-10-30
 ```
 
 ## 2. Every screen (2 states x 2 languages x light/dark x 2 phone sizes + offline)
@@ -20,9 +20,9 @@ TOTAL 0
 ## 3. Live website, register and data
 ```
 Website
-  OK  / 200 910172
+  OK  / 200 932296
   OK  /about.html 200 10376
-  OK  /privacy.html 200 15038
+  OK  /privacy.html 200 19981
   OK  /d/ 200 13148
   OK  /d/ap-guntur.html 200 11369
   OK  /d/ts-hyderabad.html 200 7745
@@ -36,42 +36,36 @@ Website
   OK  built-in fonts
   OK  no Google Fonts request
 Register (read only)
-  OK  ap: 7 reports, 0 hidden, newest 2026-10-27
+  OK  ap: 7 reports, 0 hidden, newest 2026-10-29
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (3 days ago)
+  OK  finance data updated 2026-10-26 (4 days ago)
 LIVE_BAD 0
 ```
 
 ## 4. Live news check (real Google News through the register)
 ```
-OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 4 naming the district
+OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 1 naming the district
       - దేవరపల్లి: జెన్‌జీ సైతం వైఎస్‌ జగన్‌ వెంటే..
-      - దేవరపల్లి: జెన్‌జీ సైతం వైఎస్‌ జగన్‌ వెంటే..
-      - Gopalapuram: ఆగస్టు 5న వైఎస్సార్‌సీపీ అధినేత వైఎస్ జగన్ మోహన్ రెడ్డి పర్యటన
-      - Gopalapuram: ఆగస్టు 5న వైఎస్సార్‌సీపీ అధినేత వైఎస్ జగన్ మోహన్ రెడ్డి పర్యటన
-OK   ap en "Drinking water shortage in villages" @ Guntur: 2 naming the district
+OK   ap en "Drinking water shortage in villages" @ Guntur: 3 naming the district
+      - Guntur civic body launches ₹2.7 crore summer action plan to ensure drinking water supply
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-      - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-OK   ap en "Road accident on highway" @ Krishna: 10 naming the district
+      - National Watershed Conference begins in Guntur with call to strengthen rainwater harvesting
+OK   ap en "Road accident on highway" @ Krishna: 7 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
-      - 17 Injured in Road Accident Near Pendur in NTR Krishna District
+      - Four killed in road accident in Vuyyuru
       - Four Killed in Road Accident in Krishna District
-      - Four Killed in Road Accident in Krishna District
-OK   ts en "Doctors absent at government hospital" @ Hyderabad: 6 naming the district
-      - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
+      - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 2 naming the district
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
-      - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
-OK   ts te "రైతుల ఆందోళన" @ Khammam: 6 naming the district
-      - Farmers | మక్కలు అమ్మిన రైతుల పేర్లు ఆన్‌లైన్‌లో గల్లంతు.. ఖమ్మం మార్క్‌ఫెడ్‌ అధికారుల నిర్లక్ష్యం!
+OK   ts te "రైతుల ఆందోళన" @ Khammam: 3 naming the district
       - Farmers | మక్కలు అమ్మిన రైతుల పేర్లు ఆన్‌లైన్‌లో గల్లంతు.. ఖమ్మం మార్క్‌ఫెడ్‌ అధికారుల నిర్లక్ష్యం!
       - Kodada : సూర్యాపేట- ఖమ్మం జాతీయ రహదారిపై రైతుల ధ‌ర్నా
-      - Kodada : సూర్యాపేట- ఖమ్మం జాతీయ రహదారిపై రైతుల ధ‌ర్నా
-OK   ts en "Floods damage crops" @ Warangal: 6 naming the district
-      - Rain Damages Crops, Disrupts Transport In Warangal
+      - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
+OK   ts en "Floods damage crops" @ Warangal: 3 naming the district
       - Rain Damages Crops, Disrupts Transport In Warangal
       - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
-      - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
+      - Revanth to Conduct Aerial Survey in Warangal, Husnabad
 NEWS_NONE 0
 ```
