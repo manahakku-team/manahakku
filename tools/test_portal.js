@@ -15,7 +15,7 @@ for(const [text,wantSec,wantSub,expect] of cases){
  // Test with the problem type the app itself picks (the person may keep it), falling back to the right one when the app asks.
  const sec=det.key||wantSec,sub=det.key&&det.key!==wantSec?(detectSub(sec,text)||null):(wantSub||(detectSub(sec,text)||null));
  const g=portalPick({sector:sec,sub,title:"",desc:text});
- const mk=!g?"NONE":g.m===null?"(own portal)":Array.isArray(g.m)?"search '"+g.m[0]+"' > "+g.m[1]:"dropdown: "+MK_D[g.m.d]+(g.m.hod?" > "+g.m.hod:"");
+ const mk=!g?"NONE":g.m===null?"(own portal)":Array.isArray(g.m)?"search '"+g.m[0]+"' > "+g.m[1]:"dropdown: "+MK_D[g.m.d]+(g.m.hod?" > "+g.m.hod:"")+(g.m.subj?" > "+g.m.subj:"");
  const cp=!g||!g.c?"-":g.c.join(" > ");
  const isDefault=g&&!g.k&&!g.sub;
  let err="";
