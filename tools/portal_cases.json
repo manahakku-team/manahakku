@@ -1318,5 +1318,17 @@
   "roads",
   null,
   "Not Allowing For Transactions"
+ ],
+ [
+  "Bridge on our village road is damaged",
+  "roads",
+  null,
+  "R&B-Bridges"
+ ],
+ [
+  "R&B road widening land compensation not paid",
+  "roads",
+  null,
+  "R&B-Land Acquisition"
  ]
 ]
