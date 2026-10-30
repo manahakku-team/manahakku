@@ -1519,7 +1519,8 @@
      "E-governance Matters",
      "Matter related to MoU with PSUs",
      "Various policies pertaining to PSUs under MoP",
-     "Matters related to coordination between multiple agencies under Ministry of Power"
+     "Matters related to coordination between multiple agencies under Ministry of Power",
+     "Miscellaneous and any other matters"
     ]
    },
    "KEY_RULE": "Village electricity (power cuts, transformer, low voltage, poles/wires, meter, bill, new connection) is the state DISCOM's job, NOT Ministry of Power. Route: DISCOM complaint / 1912 helpline / Meekosam (AP) / Prajavani (TS) first; CPGRAMS via State Governments/Others -> State Government -> AP/TS. Ministry of Power only for central PSU projects (NTPC, POWERGRID towers, land/crop compensation).",
@@ -1535,7 +1536,7 @@
     "power - unsafe tower/substation near homes (central)": "Power Project Impacts... > Transmission Lines, switchyard, substation and Towers – Safety Issues > (company)",
     "power - health impact near plant": "Power Project Impacts... > Health Impacts on Local Communities > (company)",
     "power - village feeder/transformer upgrade under RDSS not done": "Power Tariff, Policies, Acts, Schemes etc. > Matters pertaining to Schemes like RDSS, UDAY, NFMS, CSRD etc.",
-    "power - anything else": "Miscellaneous matters of Ministry of Power (not yet seen) or State route",
+    "power - anything else": "Miscellaneous matters of Ministry of Power > Miscellaneous and any other matters (only after DISCOM / State route)",
     "power - village/hamlet has no electricity at all": "Miscellaneous matters of Ministry of Power > Rural & Remote Area Electrification Issues",
     "power - smart meter problem (after DISCOM)": "Miscellaneous matters of Ministry of Power > Smart Meter related Matters",
     "power - old poles/lines/transformer need replacement (after DISCOM)": "Miscellaneous matters of Ministry of Power > Transmission & Distribution Infrastructure Issues"
