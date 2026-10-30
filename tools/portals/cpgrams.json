@@ -1978,7 +1978,45 @@
       "Works Division": "CPWD admin / monuments - skip",
       "NERDUP & Mission Coordination": "North East only - skip",
       "Coordination Division": "court/RTI/general - not accepted / skip",
-      "AMRUT Division": "next level NOT YET SEEN (CPHEEO covers town water meanwhile)"
+      "AMRUT Division": {
+       "Basic civic amenities in 500 AMRUT cities and towns": [
+        "Water Supply System",
+        "Sewerage System",
+        "Storm Water Drainage",
+        "Public Transport facility to reduce pollution",
+        "Green Space and Parks",
+        "Path Wasys",
+        "Ease of doing business",
+        "Others"
+       ]
+      },
+      "Housing Division": {
+       "Real Estate Matter, RERA related matter, Matter related to rent control": [
+        "Non completion of Housing Schemes/Projects",
+        "Delay in giving possession of flat",
+        "Fraud done by builders",
+        "Matter related to rent control in cities other than Delhi",
+        "Administrative matter of HUDCO, HPL, CGEWHO, BMPTC"
+       ]
+      },
+      "Smart City Division": {
+       "Matters related to Smart Cities Schemes/Project": [
+        "Civic amenties like -adequate water supply, assured electricity supply, sanitation, including solid waste management, efficient urban mobility and public transport etc.",
+        "Corruption in Smart City Project (never auto)",
+        "Delay in complition of Project",
+        "Suggestions/request related to Smart City",
+        "Payement of contractor"
+       ]
+      },
+      "HRIDAY Division": {
+       "HRIDAY - Urban Planning, economic growth and heritage": [
+        "Project Related Complaint",
+        "Quality Service",
+        "Non completion of Schemes/Projects"
+       ]
+      },
+      "Delhi Division": "Delhi only - skip",
+      "Administration Division": "staff - skip"
      }
     },
     "Delhi Division": "out of scope"
@@ -2001,9 +2039,15 @@
     "housing (town) - homeless shelter": "... NULM ... > Shelter for Urban Homeless",
     "livelihood (town) - skill training": "... NULM ... > Skill training of urban poors",
     "roads (town) - municipal road poor/ potholes / civic amenity": "Schemes... > LSG Division > Civic Amenities and quality of service in ULBs > Poor quality of road...",
-    "roads (town) - encroachment / illegal construction": "Schemes... > LSG Division > Unathorised & illegal construction in ULBs > Encroachment, Unathorised construction etc"
+    "roads (town) - encroachment / illegal construction": "Schemes... > LSG Division > Unathorised & illegal construction in ULBs > Encroachment, Unathorised construction etc",
+    "water (town, AMRUT city) - water supply": "Schemes... > AMRUT Division > Basic civic amenities in 500 AMRUT cities and towns > Water Supply System",
+    "sanitation (town, AMRUT city) - sewerage": "... AMRUT ... > Sewerage System",
+    "sanitation (town) - storm water drain / flooding streets": "... AMRUT ... > Storm Water Drainage",
+    "town - park / footpath": "... AMRUT ... > Green Space and Parks / Path Wasys",
+    "housing (town) - builder delay / flat possession": "Schemes... > Housing Division > Real Estate Matter... > Delay in giving possession of flat (also state RERA)"
    },
-   "complete": "yes (AMRUT sub-list optional)"
+   "complete": true,
+   "rule_town_water": "If town is an AMRUT city use AMRUT > Water Supply System; else CPHEEO > Complaint/Request for water supply. Unsure -> CPHEEO."
   }
  }
 }
