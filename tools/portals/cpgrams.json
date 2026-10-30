@@ -1,10 +1,211 @@
 {
  "portal": "CPGRAMS (pgportal.gov.in) - Lodge Public Grievance",
- "source": "Owner's screenshots of the live portal, 30 Oct 2026 (more to come)",
- "not_accepted": ["RTI matters", "Court related / subjudice matters", "Religious matters", "Service matters of government employees (unless prescribed channels are exhausted)"],
+ "source": "Owner's screenshots of the live portal, 30 Oct 2026 (parts 1-2)",
+ "not_accepted": [
+  "RTI matters",
+  "Court related / subjudice matters",
+  "Religious matters",
+  "Service matters of government employees (unless prescribed channels are exhausted)"
+ ],
  "pension_note": "Pension issues of central ministries/departments: use the separate 'Lodge Pension Grievance' option.",
  "first_screen_title": "Please select a Ministry/Department/State Government",
- "tiles": ["Financial Services (Banking Division)", "Labour and Employment", "Central Board of Direct Taxes (Income Tax)", "Posts", "Telecommunications", "Home Affairs", "Urban Development", "Personnel and Training", "Health & Family Welfare", "Financial Services (Insurance Division)"],
- "more_list_seen": ["Agriculture and Farmers Welfare", "Agriculture Research and Education", "Animal Husbandry, Dairying", "Atomic Energy", "Ayush", "Bio Technology", "Capital Development", "Central Board of Excise and Customs", "Chemicals and Petrochemicals", "Civil Aviation", "Coal", "Commerce", "Consumer Affairs", "Cooperation", "Corporate Affairs", "Culture", "Defence", "Defence Finance", "Defence Production", "Defence Research and Development", "Development of North Eastern Region", "Drinking Water and Sanitation", "Earth Sciences", "Economic Affairs", "Electronics & Information Technology", "Empowerment of Persons with Disabilities", "Environment, Forest and Climate Change", "Ex Servicemen Welfare", "Expenditure", "External Affairs", "Fertilizers", "Financial Services (Pension Reforms)", "Fisheries", "Food and Public Distribution", "Food Processing Industries", "Health Research", "Heavy Industry", "Higher Education", "Information and Broadcasting", "Investment & Public Asset Management", "Justice", "Land Resources", "Legal Affairs", "Legislative Department", "Micro Small and Medium Enterprises", "Military Affairs", "Mines", "Minority Affairs", "New and Renewable Energy", "NITI Aayog", "O/o the Comptroller & Auditor General of India", "Official Language", "Panchayati Raj", "Parliamentary Affairs", "Petroleum and Natural Gas", "Pharmaceutical", "Power", "Promotion of Industry and Internal Trade", "Public Enterprises", "Railways, ( Railway Board)", "Revenue", "Road Transport and Highways", "Rural Development", "School Education and Literacy", "Science and Technology", "Scientific & Industrial Research"],
- "gaps_to_capture": ["between 'Justice' and 'Land Resources'", "between 'Parliamentary Affairs' and 'Petroleum and Natural Gas'", "after 'Scientific & Industrial Research' to the end, including the State Government entries (Andhra Pradesh, Telangana)", "the category screens shown after choosing a ministry or a state"]
+ "tiles": [
+  "Financial Services (Banking Division)",
+  "Labour and Employment",
+  "Central Board of Direct Taxes (Income Tax)",
+  "Posts",
+  "Telecommunications",
+  "Home Affairs",
+  "Urban Development",
+  "Personnel and Training",
+  "Health & Family Welfare",
+  "Financial Services (Insurance Division)"
+ ],
+ "more_list_seen": [
+  "Agriculture and Farmers Welfare",
+  "Agriculture Research and Education",
+  "Animal Husbandry, Dairying",
+  "Atomic Energy",
+  "Ayush",
+  "Bio Technology",
+  "Capital Development",
+  "Central Board of Excise and Customs",
+  "Chemicals and Petrochemicals",
+  "Civil Aviation",
+  "Coal",
+  "Commerce",
+  "Consumer Affairs",
+  "Cooperation",
+  "Corporate Affairs",
+  "Culture",
+  "Defence",
+  "Defence Finance",
+  "Defence Production",
+  "Defence Research and Development",
+  "Development of North Eastern Region",
+  "Drinking Water and Sanitation",
+  "Earth Sciences",
+  "Economic Affairs",
+  "Electronics & Information Technology",
+  "Empowerment of Persons with Disabilities",
+  "Environment, Forest and Climate Change",
+  "Ex Servicemen Welfare",
+  "Expenditure",
+  "External Affairs",
+  "Fertilizers",
+  "Financial Services (Pension Reforms)",
+  "Fisheries",
+  "Food and Public Distribution",
+  "Food Processing Industries",
+  "Health Research",
+  "Heavy Industry",
+  "Higher Education",
+  "Information and Broadcasting",
+  "Investment & Public Asset Management",
+  "Justice",
+  "Land Resources",
+  "Legal Affairs",
+  "Legislative Department",
+  "Micro Small and Medium Enterprises",
+  "Military Affairs",
+  "Mines",
+  "Minority Affairs",
+  "New and Renewable Energy",
+  "NITI Aayog",
+  "O/o the Comptroller & Auditor General of India",
+  "Official Language",
+  "Panchayati Raj",
+  "Parliamentary Affairs",
+  "Petroleum and Natural Gas",
+  "Pharmaceutical",
+  "Power",
+  "Promotion of Industry and Internal Trade",
+  "Public Enterprises",
+  "Railways, ( Railway Board)",
+  "Revenue",
+  "Road Transport and Highways",
+  "Rural Development",
+  "School Education and Literacy",
+  "Science and Technology",
+  "Scientific & Industrial Research",
+  "Shipping",
+  "Skill Development and Entrepreneurship",
+  "Social Justice and Empowerment",
+  "Space",
+  "Sports",
+  "Staff Selection Commission",
+  "Statistics and Programme Implementation",
+  "Steel",
+  "Textiles",
+  "Tourism",
+  "Tribal Affairs",
+  "Unique Identification Authority of India",
+  "Water Resources, River Development & Ganga Rejuvenation,",
+  "Women and Child Development",
+  "Youth Affairs",
+  "State Governments/Others"
+ ],
+ "gaps_to_capture": [
+  "between 'Justice' and 'Land Resources'",
+  "between 'Parliamentary Affairs' and 'Petroleum and Natural Gas'"
+ ],
+ "state_route": {
+  "pick": "State Governments/Others (last entry of 'More... Ministries/Departments')",
+  "concerned_authority": [
+   "State Government",
+   "Not Listed/Not Known"
+  ],
+  "state_dropdown_seen": [
+   "Andhra Pradesh",
+   "Arunachal Pradesh",
+   "Assam",
+   "Bihar",
+   "Chattisgarh",
+   "..."
+  ],
+  "not_listed_goes_to": "Administrative Reforms and Public Grievances",
+  "fields": {
+   "description_max_chars": 4000,
+   "reference_number": "earlier complaint number, if any",
+   "reference_date": "optional",
+   "attachment": "PDF only, up to 4 MB"
+  },
+  "note": "No category screen seen after choosing a state on this form; the state government routes it."
+ },
+ "ministry_route": {
+  "fields": [
+   "Ministry/Department (fixed after picking the tile)",
+   "Select main category",
+   "Select next level category",
+   "Grievance text (Remarks)"
+  ],
+  "description_max_chars": 2000,
+  "hint_on_page": "If specific information related to a service is not available / known, select Others/Misc. option for lodging of grievance, if available.",
+  "example_youth_affairs": {
+   "Administration Related": [
+    "Establishment matters for Main Secretariat only",
+    "Pension matters for Main Secretariat only",
+    "Digital platforms and eGov related issues for MoYAS"
+   ],
+   "General Related": [
+    "General Administration related issues for Ministry of Youth Affairs and Sports"
+   ],
+   "Vigilance Related": [
+    "Vigilance matters for Ministry of Youth Affairs and Sports"
+   ],
+   "Nehru Yuva Kendra Sangathan": [
+    "National Youth Corps- deployment of National Youth Volunteer (NYV)",
+    "National Young Leaders Programme",
+    "Work relating to NYKS, autonomous body under the Ministry."
+   ],
+   "Rajiv Gandhi National Institute of Youth Development": [
+    "Administrative Establishment Matters related to RGNIYD Sriperumbudur",
+    "Release of Grants in Aid to RGNIYD",
+    "Vigilance Cases and Audit Observations"
+   ],
+   "Scouts and Guides": [
+    "Financial assistance"
+   ],
+   "Policy Related": [
+    "Work relating to National Youth Policy"
+   ],
+   "International Co-operation Related": [
+    "Nominations of youth delegates for various International Youth Exchange Program",
+    "Selection of youth delegates for various International Youth Exchange Programs",
+    "Project Strengthening of NSS and NYKS"
+   ],
+   "National Service Scheme Related": [
+    "Establishment matter",
+    "Release of NSS Grants to All States UTs",
+    "Appointment of State NSS Officer in All States UTs",
+    "Appointment of Programme Coordinators in Universities two Councils States UTs",
+    "Appointment of Programme Officers",
+    "Selection of Volunteers",
+    "Miscellaneous issues if any",
+    "Nomination and selection of NSS Awards"
+   ],
+   "Hindi Related": [
+    "Implementation of the Official Language Policy of the Union",
+    "Translation work"
+   ],
+   "Youth Hostels Related": [
+    "Matters pertaining to Government Youth Hostels"
+   ],
+   "National Programme for Youth and Adolescent Development": [
+    "National Youth Festival",
+    "North East Youth Festival",
+    "National Youth Awards",
+    "Tenzing Norgay National Adventure Awards"
+   ]
+  }
+ },
+ "text_rules": {
+  "allowed_characters": "A-Z a-z 0-9 and , . - _ ( ) / : & @ # $ % * ? + = ! ' \" only",
+  "consequence": "Telugu text, curly quotes, the rupee sign and emoji are NOT accepted: the app must give an English, plain-character version for CPGRAMS"
+ },
+ "mapping_notes": {
+  "aadhaar": "Unique Identification Authority of India (its own entry)",
+  "pan": "Central Board of Direct Taxes (Income Tax)",
+  "state_matters": "State Governments/Others -> State Government -> Andhra Pradesh or Telangana"
+ }
 }
