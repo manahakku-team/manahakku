@@ -485,22 +485,44 @@
     ],
     "Vigilance Matters": null,
     "Waqf Matters": null,
-    "National Commission for Minorities": "not checked",
-    "Haj Committee of India": "not checked",
-    "Dargah Khawaja Sahib, Ajmer": "not checked",
-    "Central Waqf Council": "not checked",
-    "CLM MOMA": "not checked",
-    "National Waqf Development Corporation Limited": "not checked",
-    "Maulana Azad Education Foundation": "not checked",
-    "National Minority Development and Finance Corporation": "not checked"
+    "National Commission for Minorities": [
+     "Complaints/Grievances of Minorities"
+    ],
+    "Haj Committee of India": [
+     "Administrative and other matters related to HCOI"
+    ],
+    "Dargah Khawaja Sahib, Ajmer": [
+     "Administrative and other matters related to DARGAH KHAWAJA SAHIB"
+    ],
+    "Central Waqf Council": [
+     "Administrative and Establishment Matters",
+     "Legal Matters",
+     "Accounts Matters"
+    ],
+    "CLM MOMA": [
+     "Administrative matters of CLM"
+    ],
+    "National Waqf Development Corporation Limited": [
+     "Administrative and other WAQF matters related to NAWADCO"
+    ],
+    "Maulana Azad Education Foundation": [
+     "Administrative and other matters related to MAEF",
+     "Grant-in-Aid for Educational Infrastructure Facility for Educationally Backward Minorities",
+     "Gharib Nawaz Employment Scheme"
+    ],
+    "National Minority Development and Finance Corporation": [
+     "Administrative and other matters related schemes conducted by NMDFC"
+    ]
    },
    "note": "null = goes straight to description box. Religious-institution matters (Haj, Dargah, Waqf, Madarsa) are outside Mana Hakku scope (religious/neutrality rule): never suggest them.",
    "app_map": {
     "education (minority scholarship not received)": "Scholarship Scheme > Pre-matric / Post-matric / Merit-cum-means (pick by class level)",
     "livelihood (minority skilling/loan)": "PM Vikas Scheme > Skilling and Training Component",
-    "village infrastructure in minority-concentration area": "Pradhan Mantri Jan Vikas Karyakram Scheme"
+    "village infrastructure in minority-concentration area": "Pradhan Mantri Jan Vikas Karyakram Scheme",
+    "social (discrimination complaint by a minority person)": "National Commission for Minorities > Complaints/Grievances of Minorities (only if user's own text says so)"
    },
-   "caution": "App asks no one's religion. Only suggest this ministry when the user's own text names a minority scholarship or scheme; otherwise use the general education / livelihood route."
+   "caution": "App asks no one's religion. Only suggest this ministry when the user's own text names a minority scholarship or scheme; otherwise use the general education / livelihood route.",
+   "complete": true
   }
  }
 }
