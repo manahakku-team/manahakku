@@ -242,16 +242,12 @@
   ],
   "certificate": [
    "Electronics Delivery Services-->Certificates-->Incorrect certificate issued at MeeSeva",
-   "Electronics Delivery Services-->Secured Stationery / Certificate Issues-->Fake or tampered certificates issued at MeeSeva Centres",
-   "Directorate of Secondary Health-->Sadarem Certificate-->Request For Slot Booking / Assessment Issues / Printout Issues / Appeal Against The Decision Of The Doctor / Board / Slot booking done but ID not showing / Modification In Sadarem Certificate / Request to delete old and re-issue / Disability percentage is high, But percentage less than 40% got",
-   "Differently Abled, Senior Citizens & Transgender-->Senior Citizens Welfare-->Delay In Issue Of Registration Certificate",
-   "Differently Abled, Senior Citizens & Transgender-->National Trust Act-->Legal Guardianship Certificate / Guardianship Certificate Not Accepted / Rectification Of Mistakes",
-   "Registration and Stamps-->Ancillary Services-->Issue Of Encumbrance Certificate / Market Value Certificate; Meeseva Grievances-->Non Issuance / Delay in Certificates beyond SLA (EC & CC)",
-   "Transport-->Registrations-->Registraion Certificate Card Not Received; Transport-->Driving License-->Driving School Certificate Not Issued",
-   "School Education-->Student Related Issues-->Certificates Related Issues; Intermediate Education-->Student Related Issues-->TC, Bonafide, Pass Certificates & Mark List Etc. Not Given; Collegiate Education-->Student Problems-->Tc, Bonafide, Conduct Degree Certificates & Mark List; Technical Education-->Polytechnic Student Related-->Issue Of Certificates / Certificates Blocked By Institution; AP State Council for Higher Education-->...-->Certificates Blocked By College / Issue Of Certificates",
-   "Board of Intermediate Education-->Student exams related-->Certificate, Fees, Pass Certificates, Duplicate Pass Certificate, Migration",
+   "Registration and Stamps-->Meeseva Grievances-->Non Issuance / Delay in Certificates beyond SLA (EC & CC); Ancillary Services-->Issue Of Encumbrance / Market Value Certificate",
+   "Directorate of Secondary Health-->Sadarem Certificate-->(slot booking / assessment / appeal / modification / percentage)",
    "Panchayati Raj-->GP Administration...-->Issuing Birth & Death Certificates",
-   "AP Scheduled Tribes Cooperative Finance Corporation-->Student Related Issues-->Non Issue Of Caste Certificate By M.R.O (user's words only)"
+   "School / Intermediate / Collegiate / Technical Education-->Student...-->TC, Bonafide, Pass Certificates & Mark List Not Given",
+   "AP State Council for Higher Education-->...-->Certificates Blocked By College",
+   "Transport-->Registrations-->Registraion Certificate Card Not Received"
   ],
   "land": [
    "AP Transco-->Projects-->Crop/land compensation for the towers and lines laid in farm fields",
@@ -262,8 +258,38 @@
   ],
   "light": [
    "Panchayati Raj-->GP-Street Lights-->Request for Street Lights Repairs",
-   "Samagra Shiksha-->School Maintanance-->Lights / Nadu-Nedu Works-->Lights",
-   "Differently Abled...-->Hostels Education-->Insufficient Lights"
+   "Samagra Shiksha-->School Maintanance-->Lights / Nadu-Nedu Works-->Lights"
+  ],
+  "pension": [
+   "only AP Transco staff pension lines - no public pension option found by search"
+  ],
+  "meal": [
+   "Women Development and Child Welfare-->SP/SP Plus+ (Children 36 to 72 Months)-->Quality Of Mid Day Meal Is Less / Providing Less Quantity Hot Cooked Meal To Children",
+   "Women Development and Child Welfare-->SP / SP Plus+ (Pregnant Women and Lactating Mothers)-->Hot Cooked Meals Not Provided To Beneficiaries"
+  ],
+  "house": [
+   "AP State Housing Corporation Ltd-->Grievance On Already Sanctioned Houses-->Selection Of Beneficiaries / Incompletion/Pending Houses / Selection of option for Construction type",
+   "AP State Housing Corporation Ltd-->Grievance On Payment Of Bills-->Payment Of Bills To Backlog Houses (Till 2015-16)",
+   "Swarna Gramam - Swarna Wardu (SGSW)-->Household Data-->Household Mapping / Household Splitting",
+   "Rural Water Supply Engineering-->PWS Scheme-->Providing New Pipeline / Extension Of Pipeline & Household Taps etc.,",
+   "Panchayati Raj-->GP Administration...-->House tax Ownership",
+   "Handlooms & Textiles-->Cyclones-->Request For Financial Assistance For House Damage"
+  ],
+  "medicine": [
+   "Public Health-->Shortage of HR / Drugs / Lab Services-->Non availability of Medicines",
+   "Dr. NTR Vaidya Seva Trust-->104 MMU-->Un availability of Medicines / Inadequate supply of medicines",
+   "Family Welfare-->UPHCs-->Issues related Staff/Medicines/Treatment",
+   "Family Welfare-->Non-communicable diseases (NCD-CD)-->Issues related to NCD screening and supply of Medicines",
+   "Family Welfare-->RBSK-->RBSK Staff not arrange the health camps /Not Prividing sufficient Medicine",
+   "Animal Husbandry-->DRUGS & MEDICINES-->INSUFFICIENT SUPPLY OF MEDICINES; SANCHARA PASHU AROGYA SEVA (1962)-->INSUFFICIENT SUPPLY OF MEDICINES TO THE FARMER",
+   "Drugs Control Administration-->Unlicensed sale of Drugs/medicines-->Stocking/selling of medicines without license"
+  ],
+  "toilet": [
+   "Samagra Shiksha-->School Maintanance-->Toilets with running Water / Nadu-Nedu Works-->Toilets with running Water",
+   "Intermediate Education / Collegiate Education-->Infrastructure Facilities...-->Toilets Facility",
+   "APSWREIS-->Infrastructure Provision-->Bathrooms And Toilets Are In Very Worst Condition",
+   "Women Development and Child Welfare-->Homes-->Improper Maintenance Of Bath Rooms/Toilets In Homes",
+   "Differently Abled...-->Senior Citizens Welfare-->Adequate Number Of Toilets And Bathrooms In Old Age Homes"
   ]
  },
  "app_map": {
@@ -406,7 +432,25 @@
   "education.college - college holding back certificates": "search 'certificate' > AP State Council for Higher Education-->...-->Certificates Blocked By College",
   "certs.revenue - caste/income/residence certificate": "NO search line found: Department dropdown > Revenue",
   "agri - land record/patta problem": "NO search line found: Department dropdown > Revenue",
-  "iddocs.rc - RC card not received": "search 'certificate' > Transport-->Registrations-->Registraion Certificate Card Not Received"
+  "iddocs.rc - RC card not received": "search 'certificate' > Transport-->Registrations-->Registraion Certificate Card Not Received",
+  "village - streetlights not working": "search 'light' > Panchayati Raj-->GP-Street Lights-->Request for Street Lights Repairs",
+  "health - PHC has no medicines": "search 'medicine' > Public Health-->Shortage of HR / Drugs / Lab Services-->Non availability of Medicines",
+  "health - 104 mobile van no medicines": "search 'medicine' > Dr. NTR Vaidya Seva Trust-->104 MMU-->Un availability of Medicines",
+  "health - town health centre (UPHC) staff/medicine": "search 'medicine' > Family Welfare-->UPHCs-->Issues related Staff/Medicines/Treatment",
+  "health - BP/sugar screening or medicines": "search 'medicine' > Family Welfare-->Non-communicable diseases (NCD-CD)-->Issues related to NCD screening and supply of Medicines",
+  "agri - veterinary medicines short / 1962 van": "search 'medicine' > Animal Husbandry-->DRUGS & MEDICINES-->INSUFFICIENT SUPPLY OF MEDICINES",
+  "housing - sanctioned house incomplete / pending": "search 'house' > AP State Housing Corporation Ltd-->Grievance On Already Sanctioned Houses-->Incompletion/Pending Houses",
+  "housing - old house bill not paid": "search 'house' > AP State Housing Corporation Ltd-->Grievance On Payment Of Bills-->Payment Of Bills To Backlog Houses (Till 2015-16)",
+  "welfare - household split / mapping wrong": "search 'house' > Swarna Gramam - Swarna Wardu (SGSW)-->Household Data-->Household Splitting / Household Mapping",
+  "water - new pipeline / household tap needed": "search 'house' > Rural Water Supply Engineering-->PWS Scheme-->Providing New Pipeline / Extension Of Pipeline & Household Taps etc.,",
+  "housing - cyclone house damage help": "search 'house' > Handlooms & Textiles-->Cyclones-->Request For Financial Assistance For House Damage (weavers only; others via Revenue)",
+  "nutrition - anganwadi hot meal poor / less": "search 'meal' > Women Development and Child Welfare-->SP/SP Plus+ (Children 36 to 72 Months)-->Quality Of Mid Day Meal Is Less",
+  "education - school/college toilets": "search 'toilet' > Samagra Shiksha-->School Maintanance-->Toilets with running Water (college: Collegiate / Intermediate Education-->Toilets Facility)",
+  "elderly/disabled - SADAREM disability certificate": "search 'certificate' > Directorate of Secondary Health-->Sadarem Certificate-->(matching line)",
+  "education - TC / marks memo not given": "search 'certificate' > (School / Intermediate / Collegiate Education)-->Student...-->TC, Bonafide... Not Given",
+  "certs.revenue / land - caste, income, land records": "no search line: Department dropdown > Revenue",
+  "nutrition - ration": "no search line: Department dropdown > Consumer Affairs, Food and Civil Supplies",
+  "elderly - pension": "no search line: Department dropdown > Panchayat Raj And Rural Development (or Social Welfare)"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -469,7 +513,13 @@
   "Temple 'Flex Boards Of Politicians' (political + religious)",
   "Universities/MeeSeva 'Asking amount for give certificate' / 'Demanding Excess Amount' (blames)",
   "Water Resources 'Fake Certificates By The Contractor' (accuses)",
-  "Christian / Kapu corporation lines (community-named)"
+  "Christian / Kapu corporation lines (community-named)",
+  "Police burglary lines (police: 112)",
+  "AIDS Control Society ART lines (sensitive health)",
+  "104 MMU 'Demanding money' / Animal Husbandry 'STAFF MISUSING DRUGS' / University 'Asking amount' (blames)",
+  "Drugs Control false advertisement/unlicensed (accuse businesses)",
+  "Water Resources encroachment by houses/temples (accuses + religious)",
+  "Sainik house sites / TTD / Christian corporation (out of scope / religious / community)"
  ],
  "still_needed_keywords": [
   "garbage",
@@ -533,12 +583,11 @@
   }
  },
  "no_result_words": [
-  "ration",
-  "pension",
-  "toilet",
-  "medicine",
-  "house",
-  "meal"
+  "ration (owner: no such keyword)",
+  "pension (public)",
+  "household toilet (village)",
+  "caste/income/residence certificate",
+  "land records / patta"
  ],
- "fallback_rule": "If search finds nothing: use manual Department dropdowns. ration->Consumer Affairs, Food and Civil Supplies; pension->Panchayat Raj And Rural Development (SERP pensions) or Social Welfare; toilet->Panchayat Raj And Rural Development; medicine/doctor->Health, Medical And Family Welfare; house->Housing; mid-day meal->Human Resources (School Education). Revenue certificates (caste/income/residence) + land records: Revenue department via dropdown."
+ "fallback_rule": "If search finds nothing, use the Department dropdowns: ration -> Consumer Affairs, Food and Civil Supplies; pension -> Panchayat Raj And Rural Development (SERP) or Social Welfare; village toilet -> Panchayat Raj And Rural Development; caste/income/residence certificate + land records -> Revenue."
 }
