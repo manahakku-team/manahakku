@@ -205,7 +205,7 @@
  },
  "mapping_notes": {
   "aadhaar": "Unique Identification Authority of India (its own entry)",
-  "pan": "CBDT not listed in CPGRAMS ministry list (checked by owner 30 Oct). Try 'Revenue' (Department of Revenue, parent of CBDT). Primary PAN channels are outside CPGRAMS: Income Tax e-filing portal grievance (e-Nivaran), and the PAN service agencies (Protean / UTIITSL) - confirm before build.",
+  "pan": "CBDT IS listed: 'Central Board of Direct Taxes (Income Tax)' > PAN Issues.",
   "state_matters": "State Governments/Others -> State Government -> Andhra Pradesh or Telangana"
  },
  "ministry_categories": {
@@ -2313,6 +2313,98 @@
     "housing/agri - Polavaram displaced families rehabilitation (AP)": "Miscellaneous > Polavaram Project"
    },
    "complete": true
+  },
+  "Central Board of Direct Taxes (Income Tax)": {
+   "main": {
+    "Direct Taxes": {
+     "Issues with IT Returns/Assessment/Appeal": [
+      "Faceless Assessment / Faceless Appeal",
+      "Other than Faceless Assessment / Appeal",
+      "TDS Mismatch",
+      "Refund Matter/Wrong Demand",
+      "Rectification",
+      "Appeal effect",
+      "Delay Condonation",
+      "IT Return Processing",
+      "Challan Correction"
+     ],
+     "Tax Policy Matter/ Suggestions": null,
+     "Search, Seizure Matters/ Reward to informer/ Tax Evasion Petition /Release of assets": "never auto",
+     "Information about Undisclosed Foreign Income and Assets": "never auto",
+     "Information about Benami Transaction": "never auto",
+     "Others": null
+    },
+    "PAN Issues": [
+     "Delay in PAN issues",
+     "Correction in PAN",
+     "Same PAN numbers allotted to multiple users",
+     "Deduplication of PAN",
+     "Linking of PAN with Aadhar",
+     "Transfer of PAN",
+     "(list may continue)"
+    ],
+    "Technical Issues with website": "not checked",
+    "Misbehaviour/ Corruption/ Harassment": [
+     "Corruption",
+     "Misbehaviour / Harassment / Sexual Harassment"
+    ],
+    "Employee Services Related/ Administration": "skip",
+    "Pension Related": "skip (staff: Family Pension, PPO etc.)"
+   },
+   "note": "Found by owner 30 Oct (earlier search missed it). Income Tax e-filing portal grievance is also a direct channel.",
+   "app_map": {
+    "iddocs.pan - PAN card not received / delayed": "PAN Issues > Delay in PAN issues",
+    "iddocs.pan - wrong name/DOB on PAN": "PAN Issues > Correction in PAN",
+    "iddocs.pan - two PANs / duplicate": "PAN Issues > Deduplication of PAN",
+    "iddocs.pan - same PAN number given to someone else": "PAN Issues > Same PAN numbers allotted to multiple users",
+    "iddocs.pan - PAN-Aadhaar linking failing": "PAN Issues > Linking of PAN with Aadhar",
+    "iddocs.pan - income tax refund not received": "Direct Taxes > Issues with IT Returns/Assessment/Appeal > Refund Matter/Wrong Demand"
+   },
+   "complete": true
+  },
+  "Health & Family Welfare": {
+   "main": {
+    "Hospitals": {
+     "list": [
+      "AIIMS (sub-list of AIIMS cities)",
+      "RML Hospital",
+      "Safdarjung Hospital",
+      "LHMC & Smt. S.K. Hospital",
+      "KalavatiSaran Hospital",
+      "JIPMER Puducherry",
+      "PGIMER Chandigarh",
+      "North East Institutions",
+      "Other Hospitals"
+     ],
+     "per_hospital": [
+      "Patient Care",
+      "Students Related",
+      "Recruitment Related",
+      "Procurement Related",
+      "Pension Related",
+      "Other"
+     ]
+    },
+    "Medicines": [
+     "Quality of Medicines",
+     "Shortage of Medicines",
+     "Medical Store Related",
+     "Import Related",
+     "Clinical Trial",
+     "AMRIT Pharmacy Stores",
+     "Allegation of Malpractice",
+     "Suggestions",
+     "Other"
+    ],
+    "other_main": "NOT YET SEEN - need full main list (PHC/NHM, Ayushman/PM-JAY, 108, maternity, vaccination)"
+   },
+   "note": "Village PHC/CHC/area hospital are STATE (AP: Health Dept; TS: Health Dept): Meekosam/Prajavani first. 'Hospitals' here = central hospitals only; check if AIIMS Mangalagiri / AIIMS Bibinagar in AIIMS sub-list.",
+   "app_map": {
+    "health - medicines not available (central/AMRIT)": "Medicines > Shortage of Medicines",
+    "health - fake / bad quality medicine": "Medicines > Quality of Medicines",
+    "health - patient care at AIIMS Mangalagiri/Bibinagar (if listed)": "Hospitals > AIIMS > (city) > Patient Care"
+   },
+   "complete": false
   }
  }
 }
