@@ -2908,6 +2908,8 @@ const SHARED_KEY=st=>"mh-shared-"+st;let sharedStale=false;
 function normKey(v){return String(v==null?"":v).trim().toLowerCase().replace(/\s+/g," ")}
 function normRep(r){if(!r||!r.id)return null;const o={...r,id:String(r.id).trim()};const st=normKey(r.state);o.state=st.startsWith("t")?"ts":st&&!st.startsWith("a")?st:"ap";
  const dk=normKey(r.district).replace(/\s+district$/,"");o.district=DNAMES.find(d=>normKey(d)===dk)||DNAMES.find(d=>dk&&(normKey(d).includes(dk)||dk.includes(normKey(d))))||"";
+ if(!o.district){const hay=[r.mandal,r.district,r.place].map(normKey).join(" | ");for(const d of DNAMES){try{if(mandalIn(d,hay)){o.district=d;break}}catch(e){}}if(o.district&&!o.place&&r.district)o.place=String(r.district).trim()}
+ if(!o.district)o.district="?";
  const sk=normKey(r.sector);o.sector=sk in S?sk:(SKEYS.find(k=>normKey(L(S[k].name)).startsWith(sk)||normKey(S[k].name[0]).startsWith(sk))||"");
  if(!o.sector){const d=detect([r.title,r.desc].join(" "));o.sector=d.key||"social";o.sector_was=o.sector_was||String(r.sector||"")}
  o.sub=normKey(r.sub);if(r.sector_was)o.sector_was=normKey(r.sector_was);if(r.status)o.status=normKey(r.status);if(r.urgency)o.urgency=normKey(r.urgency);return o}
