@@ -437,24 +437,54 @@
     ],
     "National Minority Development and Finance Corporation matters": null,
     "Pradhan Mantri Jan Vikas Karyakram Scheme": null,
-    "Jiyo Parsi Scheme": "not checked",
-    "Shahari Waqf Sampatti Vikas Yojna": "not checked",
-    "Qaumi Waqf Board Taraqqiati Scheme": "not checked",
-    "Research Studies, Monitoring and Evaluation of Development Schemes including Publicity": "not checked",
-    "Maulana Azad Education Foundation Matters": "not checked",
-    "15 Point Programme": "not checked",
-    "Sachar Committee Report": "not checked",
-    "Haj Management": "not checked",
-    "Dargah Matters": "not checked",
-    "Madarsa Education Scheme": "not checked",
-    "Establishment Matters": "not checked",
-    "General Admn": "not checked",
-    "Coordination Matters": "not checked",
-    "Budget Matters": "not checked",
-    "Institutional Management (IM) Division": "not checked",
-    "Commissioner for Linguistic Minorities in India (CLM)": "not checked",
-    "Vigilance Matters": "not checked",
-    "Waqf Matters": "not checked",
+    "Jiyo Parsi Scheme": null,
+    "Shahari Waqf Sampatti Vikas Yojna": null,
+    "Qaumi Waqf Board Taraqqiati Scheme": null,
+    "Research Studies, Monitoring and Evaluation of Development Schemes including Publicity": [
+     "Research and Evaluation",
+     "Media/Publicity"
+    ],
+    "Maulana Azad Education Foundation Matters": null,
+    "15 Point Programme": [
+     "Prime Minister's New 15 Point Programme for the Welfare of Minorities"
+    ],
+    "Sachar Committee Report": [
+     "Sachar Committee Report"
+    ],
+    "Haj Management": [
+     "Haj Group Organiser",
+     "Haj Deputation",
+     "Haj Commmittee of India"
+    ],
+    "Dargah Matters": null,
+    "Madarsa Education Scheme": [
+     "Scheme for Providing Education in Madarsas/Minorities(SPEMM)"
+    ],
+    "Establishment Matters": [
+     "All Service Matters of MOMA",
+     "All Pension Related Matters of MOMA",
+     "All Establishment matter related to MOMA"
+    ],
+    "General Admn": [
+     "Tender related matters regarding General Admn",
+     "Purchasing related matters",
+     "Security related matters",
+     "House keeping related matters",
+     "Vehicle hiring related matters",
+     "Covid related matters",
+     "Hiring/Outsourcing of Contractual staff/Consultants in MOMA"
+    ],
+    "Coordination Matters": null,
+    "Budget Matters": null,
+    "Institutional Management (IM) Division": [
+     "Institutional Management",
+     "NCM matters"
+    ],
+    "Commissioner for Linguistic Minorities in India (CLM)": [
+     "Administrative matters of CLM and other matters related to Linguistics Minorities"
+    ],
+    "Vigilance Matters": null,
+    "Waqf Matters": null,
     "National Commission for Minorities": "not checked",
     "Haj Committee of India": "not checked",
     "Dargah Khawaja Sahib, Ajmer": "not checked",
