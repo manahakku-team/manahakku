@@ -1185,12 +1185,24 @@
   "Groundnut sold at procurement center but amount not received",
   "agri",
   null,
-  "Amount Not Received"
+  "payment not released"
  ],
  [
   "Commission agent charging more at market yard",
   "agri",
   null,
   "Commission Agents"
+ ],
+ [
+  "Rythu bazar selling vegetables higher than price board",
+  "agri",
+  null,
+  "Higher Price Than The Price Board"
+ ],
+ [
+  "Copra centre made us pay hamali charges",
+  "agri",
+  null,
+  "Hamali Charges"
  ]
 ]
