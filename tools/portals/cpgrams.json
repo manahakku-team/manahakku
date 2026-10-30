@@ -1095,6 +1095,53 @@
     "Misbehaviour/ Corruption/ Harassment"
    ],
    "complete": true
+  },
+  "School Education and Literacy": {
+   "board_list": [
+    "All School Boards except CBSE",
+    "CBSE Affiliated",
+    "Kendriya Vidyalaya Sangathan (KVS)",
+    "Navodaya Vidyalaya Samiti (NVS)",
+    "National Institute of Open Schooling (NIOS)",
+    "National Council of Educational Research and Training (NCERT)",
+    "National Bal Bhawan (NBB) Related",
+    "National Council for Teacher Education (NCTE)"
+   ],
+   "main": {
+    "Admission Related": "-> board_list",
+    "Employee Services Related": {
+     "Delayed Salary Payment": "-> board_list",
+     "Appointment/Resignation/Transfer/Promotion Related": "-> board_list"
+    },
+    "Degree/Certificate/Markesheet Related": {
+     "Delay in Degree/Certificate/Marksheet": "-> board_list",
+     "Change in details in certificates": "-> board_list",
+     "Transfer Certificate Related": "-> board_list"
+    },
+    "Entrance Exam and Results Related": {
+     "Board Exam Re-evaluation/Improvement of marks": "-> board_list",
+     "Admit Card not received": "-> board_list",
+     "Delay in Results": "-> board_list"
+    },
+    "Government Scheme Related": "not checked (needed: mid-day meal / Samagra Shiksha)",
+    "Government Policy/Act": "not checked",
+    "Misbehaviour/ Corruption/ Harassment": "never auto",
+    "Pension Related": "skip",
+    "Training of Teachers": "skip",
+    "National Award for Teachers (NAT) Related": "skip",
+    "Miscellaneous Issues": "not checked"
+   },
+   "note": "Board choice: AP/TS state board and government/private state schools = 'All School Boards except CBSE'. Village schools are run by the state (AP: School Education; TS: School Education) - state route / Meekosam / Prajavani first.",
+   "app_map": {
+    "education - school admission refused (RTE etc.)": "Admission Related > All School Boards except CBSE",
+    "education - TC not given": "Degree/Certificate/Markesheet Related > Transfer Certificate Related > All School Boards except CBSE",
+    "education - marks memo / certificate delayed": "... > Delay in Degree/Certificate/Marksheet > All School Boards except CBSE",
+    "education - name/DOB wrong in certificate": "... > Change in details in certificates > (board)",
+    "education - 10th result delayed / re-evaluation": "Entrance Exam and Results Related > Delay in Results / Board Exam Re-evaluation > (board)",
+    "education - hall ticket not received": "Entrance Exam and Results Related > Admit Card not received > (board)",
+    "education - teacher salary pending (only if user is affected)": "Employee Services Related > Delayed Salary Payment > (board)"
+   },
+   "complete": false
   }
  }
 }
