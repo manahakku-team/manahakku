@@ -874,5 +874,47 @@
   "health",
   null,
   "Amount not Credited"
+ ],
+ [
+  "No medicines in area hospital",
+  "health",
+  null,
+  "Shortage Of Drugs"
+ ],
+ [
+  "Patients food in government hospital is poor",
+  "health",
+  null,
+  "Poor Quality Of Diet"
+ ],
+ [
+  "Sadarem slot booking not available",
+  "certs",
+  null,
+  "Slot Booking"
+ ],
+ [
+  "Sadarem gave less than 40 percent",
+  "health",
+  null,
+  "less than 40%"
+ ],
+ [
+  "X-ray machine not working in district hospital",
+  "health",
+  null,
+  "Repair To The Equipment"
+ ],
+ [
+  "ART centre has no stock of HIV medicines",
+  "health",
+  null,
+  "No stock of ART"
+ ],
+ [
+  "HIV pension sanctioned but not paid for months",
+  "health",
+  null,
+  "Pension sanctioned But delay"
  ]
 ]
