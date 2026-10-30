@@ -2904,16 +2904,13 @@ const SHARED=/^https:\/\/script\.google\.com\//.test(REGISTER_URL);
 let sharedLoaded=false,sharedError=false,sharedReports=[],sharedHidden=[];
 // The phone keeps the last public list it downloaded, so Problems opens instantly and refreshes quietly in the background.
 const SHARED_KEY=st=>"mh-shared-"+st;let sharedStale=false;
-// Sheet values are typed by hand: tolerate spaces, capitals and near-miss names, and never drop a report silently.
+// Sheet values are typed by hand: forgive only spaces and capitals. A wrong value is never guessed or published; that report stays out of the public list until the Sheet is corrected.
 function normKey(v){return String(v==null?"":v).trim().toLowerCase().replace(/\s+/g," ")}
-function normRep(r){if(!r||!r.id)return null;const o={...r,id:String(r.id).trim()};const st=normKey(r.state);o.state=st.startsWith("t")?"ts":st&&!st.startsWith("a")?st:"ap";
- const dk=normKey(r.district).replace(/\s+district$/,"");o.district=DNAMES.find(d=>normKey(d)===dk)||DNAMES.find(d=>dk&&(normKey(d).includes(dk)||dk.includes(normKey(d))))||"";
- if(!o.district){const hay=[r.mandal,r.district,r.place].map(normKey).join(" | ");for(const d of DNAMES){try{if(mandalIn(d,hay)){o.district=d;break}}catch(e){}}if(o.district&&!o.place&&r.district)o.place=String(r.district).trim()}
- if(!o.district)o.district="?";
- const sk=normKey(r.sector);o.sector=sk in S?sk:(SKEYS.find(k=>normKey(L(S[k].name)).startsWith(sk)||normKey(S[k].name[0]).startsWith(sk))||"");
- if(!o.sector){const d=detect([r.title,r.desc].join(" "));o.sector=d.key||"social";o.sector_was=o.sector_was||String(r.sector||"")}
- o.sub=normKey(r.sub);if(r.sector_was)o.sector_was=normKey(r.sector_was);if(r.status)o.status=normKey(r.status);if(r.urgency)o.urgency=normKey(r.urgency);return o}
-function applyShared(j){sharedHidden=(j.hidden||[]).filter(h=>h&&h.id).map(h=>({id:String(h.id),created:h.created,reason:String(h.reason||""),hidden:true}));sharedReports=(j.reports||[]).map(normRep).filter(r=>r&&r.id&&r.state===ST&&r.district).map(r=>{if(r.locked||r.sector_was)return r;const f=autoFix([r.title,r.desc,r.place].join(" "),r.sector);return f.changed?{...r,sector_was:r.sector,sector:f.sector,sub:""}:r}).map(r=>({...r,mandal:r.mandal||mandalIn(r.district,r.place),sub:r.sub&&S[r.sector].subs&&S[r.sector].subs[r.sub]?r.sub:detectSub(r.sector,[r.title,r.desc].join(" "))||""}));}
+function normRep(r){if(!r||!r.id)return null;const o={...r,id:String(r.id).trim()};const st=normKey(r.state)||"ap";o.state=st;
+ const dk=normKey(r.district);o.district=DNAMES.find(d=>normKey(d)===dk)||"";const sk=normKey(r.sector);o.sector=sk in S?sk:"";
+ o.sub=normKey(r.sub);if(r.sector_was)o.sector_was=normKey(r.sector_was);if(r.status)o.status=normKey(r.status);if(r.urgency)o.urgency=normKey(r.urgency);
+ if(!o.district||!o.sector){try{console.warn("Report held back, fix the Sheet:",o.id,!o.district?"district="+JSON.stringify(r.district):"",!o.sector?"sector="+JSON.stringify(r.sector):"")}catch(e){}return null}return o}
+function applyShared(j){sharedHidden=(j.hidden||[]).filter(h=>h&&h.id).map(h=>({id:String(h.id),created:h.created,reason:String(h.reason||""),hidden:true}));sharedReports=(j.reports||[]).map(normRep).filter(r=>r&&r.state===ST).map(r=>{if(r.locked||r.sector_was)return r;const f=autoFix([r.title,r.desc,r.place].join(" "),r.sector);return f.changed?{...r,sector_was:r.sector,sector:f.sector,sub:""}:r}).map(r=>({...r,mandal:r.mandal||mandalIn(r.district,r.place),sub:r.sub&&S[r.sector].subs&&S[r.sector].subs[r.sub]?r.sub:detectSub(r.sector,[r.title,r.desc].join(" "))||""}));}
 async function loadShared(){
  if(!SHARED)return;const want=ST;sharedError=false;
  if(!sharedLoaded){try{const c=JSON.parse(localStorage.getItem(SHARED_KEY(ST))||"null");if(c&&c.j&&c.j.ok&&Date.now()-c.t<30*864e5){applyShared(c.j);sharedLoaded=true;sharedStale=true}}catch(e){}}
