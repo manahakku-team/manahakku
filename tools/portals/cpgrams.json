@@ -2513,9 +2513,101 @@
     "Portals, IT",
     "Corruption"
    ],
-   "next_level": "NOT YET SEEN - need: Tribal Schools, Tribal Health, Tribal Land / R&R, Scheduled Areas, Dharti Aaba",
+   "next_level": {
+    "Tribal Schools": {
+     "Centre of Excellence for Sports (CoE for Sports)": [
+      "Recruitment/Selection/Promotion of Teaching/Non-Teaching in EMRS",
+      "Construction of EMRS",
+      "Sanction of EMRS",
+      "Misuse of funds by implementing officers (never auto)",
+      "Administrative matters of NESTS employees",
+      "Emolument or Honorarium of NESTS employees",
+      "Others"
+     ],
+     "Eklavya Model Day Boarding Schools (EMDBS)": [
+      "Recruitment of Teaching and Non-Teaching Contractual Staff/ Adhoc Employees in EMRS including eligibility criteria",
+      "Hostel Facility/Infrastructure Facilities in EMRS",
+      "Mess Facility in EMRS",
+      "Emolument or Honorarium of Contractual Staff/ Adhoc Employees in EMRS",
+      "Misuse of funds by implementing officers in EMRS (never auto)",
+      "Education in EMRS",
+      "Misbehavior /Harassment by officers / staff/other with Students",
+      "Others"
+     ],
+     "Eklavya Model Residential Schools (EMRS)": [
+      "Review of implementation of EMRS Scheme",
+      "Guidelines and norms maintain, control and manage the EMRS",
+      "Selection of agencies for construction of EMRSs",
+      "Centralised mechanism for the online monitoring of the EMRSs",
+      "Audit matters of EMRS Scheme",
+      "Approval of new EMRS/CoE for Sports",
+      "Change of Block for EMRS",
+      "Administrative matters of NESTS Staff (Group A Officers)",
+      "Budgetary allocation to NESTS",
+      "Matters related to HQ/regional Officers of NESTS",
+      "Creation...abolition of posts of NESTS",
+      "Others"
+     ]
+    },
+    "Tribal Health": [
+     "All matter pertaining to Tribal Health including Sickle Cell Anaemia",
+     "Complaints against CoCs (SCD)",
+     "Misuse of funds by implementing officers (never auto)",
+     "Misuse of Ministry of Tribal Affairs' Funds by State or UT Government officials (never auto)",
+     "Others"
+    ],
+    "Safeguard Rights for STs": {
+     "Atrocities Against STs": [
+      "Atrocities by Officers / Staff with STs",
+      "Misbehaviour / Harassment / Sexual harassment related complaints"
+     ],
+     "Affirmative Action": [
+      "Affirmative Action for STs including Private Sector and Others",
+      "Relief and rehabilitation measures for tribal groups displaced by development projects",
+      "Planning Process related to Socio Economic Development of STs",
+      "Safeguard rights of the Tribal Communities over mineral resources, water resources etc. as per law"
+     ]
+    },
+    "Tribal Welfare Funds": [
+     "DAPST (Central Government STC or TSP Funds)",
+     "Development of Scheduled Areas and Welfare of STs Article 275(1)",
+     "Fellowship",
+     "Scholarship",
+     "STC / TSP Schemes of States and UTs (for States / UT Funds only)",
+     "Pradhan Mantri Jan Jatiya Vikas Mission (PMJVM)",
+     "Livelihood",
+     "TRIFED",
+     "NSTFDC /Concessional Loans",
+     "Pradhan Mantri Adi Adarsh Gram Yojna",
+     "PM-JANMAN Funds"
+    ],
+    "Tribal Land related matters / Rights, Resettlement and Rehabilitation": [
+     "Allocation of Forest Land",
+     "Basic Development Facilities (Education, Health, Nutrition, Infrastructure including Roads etc) for forest Dwellers",
+     "Community Forest Resource",
+     "Community Rights as Grazing, Fishing and Access to Water Bodies in Forests",
+     "Forest Right Act (FRA)",
+     "Land Titles",
+     "Traditional Seasonal Resource Access of Nomadic",
+     "Rights of Self Cultivation and Habitation"
+    ],
+    "Scheduled Areas": "not yet seen (optional)",
+    "Dharti Aaba- Janjatiya Gram Utkarsh Abhiyan": "not yet seen (optional)"
+   },
    "SAFETY": "App never asks or infers ST status. Suggest only when report is about a tribal/agency area school, hostel, land or scheme by the user's own words; ITDA (state) route first.",
-   "complete": false
+   "complete": true,
+   "app_map": {
+    "education - residential/EMRS school hostel or building problem (user says tribal/EMRS)": "Tribal Schools > Eklavya Model Day Boarding Schools (EMDBS) > Hostel Facility/Infrastructure Facilities in EMRS",
+    "nutrition/education - EMRS mess food": "... > Mess Facility in EMRS",
+    "education - teaching quality in EMRS": "... > Education in EMRS",
+    "health - sickle cell / tribal health": "Tribal Health > All matter pertaining to Tribal Health including Sickle Cell Anaemia",
+    "roads/health/education in forest habitations (agency area)": "Tribal Land related matters... > Basic Development Facilities (Education, Health, Nutrition, Infrastructure including Roads etc) for forest Dwellers",
+    "agri - forest land title (patta) under FRA pending": "Tribal Land related matters... > Forest Right Act (FRA)  (or Land Titles)",
+    "agri - grazing / fishing / water access in forest denied": "... > Community Rights as Grazing, Fishing and Access to Water Bodies in Forests",
+    "housing/agri - displaced by project (e.g. Polavaram) rehabilitation": "Safeguard Rights for STs > Affirmative Action > Relief and rehabilitation measures for tribal groups displaced by development projects",
+    "education - tribal scholarship not received (user names it)": "Tribal Welfare Funds > Scholarship",
+    "village development - PM-JANMAN / Adi Adarsh Gram (user names it)": "Tribal Welfare Funds > PM-JANMAN Funds / Pradhan Mantri Adi Adarsh Gram Yojna"
+   }
   }
  }
 }
