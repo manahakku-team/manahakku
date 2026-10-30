@@ -725,10 +725,21 @@
        "Appointment Related",
        "Salary related"
       ],
-      "Training & capacity building of rural SHG": "not checked",
-      "Funds / Release": "not checked",
-      "Maketing Support (Fair/Stall)": "not checked",
-      "Interest Subvention": "not checked"
+      "Training & capacity building of rural SHG": [
+       "SHG Women",
+       "Bank Shakhi",
+       "Krishi Shakhi",
+       "SHG Foundation"
+      ],
+      "Funds / Release": [
+       "Revolving Fund",
+       "Community Fund",
+       "VRF"
+      ],
+      "Maketing Support (Fair/Stall)": null,
+      "Interest Subvention": [
+       "Interest Subsidy"
+      ]
      },
      "Pradhan Mantri Awaas Yojana Gramin (Rural)": "not checked",
      "SAANSAD ADARSH GRAM YOJANA (SAGY)": "not checked"
@@ -759,7 +770,7 @@
     "elderly - pension irregular": "... > Pension Related Matter > Irregular/Discontinution payment of pension",
     "elderly - wrong pension amount": "... > Pension Related Matter > Mis-match in Pension payment",
     "livelihood - skill training / placement not given": "Govt Schemes > Skill Division > DDU-GKY > Training/Admission or Job/placement related complaint",
-    "livelihood - SHG training/funds/interest": "Govt Schemes > NRLM > Training & capacity building of rural SHG / Funds / Release / Interest Subvention",
+    "livelihood - SHG training/funds/interest": "NRLM > Training (SHG Women) / Funds / Release (Revolving Fund, Community Fund, VRF) / Interest Subvention > Interest Subsidy",
     "women - safety at NREGA worksite": "Govt Schemes > MGNREGA > Issue related to women worker of MGNREGA > Safety concerns"
    },
    "note": "PMGSY = only roads built under that scheme (usually signboard says PMGSY). Unknown road type -> State Government (AP/TS) route. Corruption/fake-payment options never auto-suggested (facts, no blame). NSAP pensions in AP/TS are paid under state pension schemes; State Government route first, this route for central NSAP share. Some leaves ask a State dropdown before description.",
