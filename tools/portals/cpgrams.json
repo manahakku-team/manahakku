@@ -741,14 +741,73 @@
        "Interest Subsidy"
       ]
      },
-     "Pradhan Mantri Awaas Yojana Gramin (Rural)": "not checked",
-     "SAANSAD ADARSH GRAM YOJANA (SAGY)": "not checked"
+     "Pradhan Mantri Awaas Yojana Gramin (Rural)": {
+      "Request/ Representation": [
+       "Requests/ representations for new house, name included already included in PWL (State Govt.)",
+       "Requests/ representations for new house, name not included in PWL (State Govt.)",
+       "Requests/ representations for new house, status of inclusion in PWL unknown (State Govt.)",
+       "Negligence of request for new house by official /GPs (State Govt./ Block)",
+       "Survey not conducted/ Village not mapped",
+       "AwaasSoft (State Govt.)",
+       "Others (State Govt./ Block)"
+      ],
+      "PMAY - G related Complaints": [
+       "Allotment of house to ineligible beneficiaries through bribe seeking (State Govt./Block)",
+       "Bribe seeking for allotment of house to eligible beneficiaries (State Govt./ Block)",
+       "Bribe seeking for sanction of assistance/installment to eligible beneficiaries (State Govt./ Block)",
+       "Issue of wrong / fake investigation report regarding eligibility of beneficiaries by officials/ GPs (State Govt./ Block)",
+       "Irregularities/ misappropriation of PMAY-G funds (State Govt./ Block)",
+       "Delay in sanction of installments/ geo - tagging of stages of construction of house (State Govt./ Block)"
+      ]
+     },
+     "SAANSAD ADARSH GRAM YOJANA (SAGY)": [
+      "Unsatisfactory quality of work"
+     ]
     },
-    "Employee Services Related": "skip",
-    "Pension Related (RD)": "skip (staff pension)",
-    "Misbehaviour/ Corruption/ Harassment": "never auto-suggest",
-    "Division & Training Institute": "skip",
-    "Financial Matters Related": "skip",
+    "Employee Services Related": {
+     "Compassionate/Other Appointment Related": "skip",
+     "Transfer / Posting": "skip",
+     "Issues related to promotion": "skip",
+     "Salaries / Wages": [
+      "Pay Fixation/Increment",
+      "Pending Payment of any type of bills / dues",
+      "Pending salaries / wages",
+      "Advances & Allowances Related"
+     ]
+    },
+    "Pension Related (RD)": [
+     "Pension not started / Pension stopped",
+     "Revision of Pension",
+     "Retirement dues"
+    ],
+    "Misbehaviour/ Corruption/ Harassment": {
+     "Sexual Harassment": [
+      "Department/Division"
+     ],
+     "Misbehaviour/ Harassment by any Officer / Official": [
+      "Department/Division"
+     ],
+     "Corruption": [
+      "Any government schemes/ Division/Department/DRDA / Zila Parishad/Etc."
+     ],
+     "Attrocities Against": [
+      "Minorities",
+      "SC/ST/OBC",
+      "Differently Abled"
+     ]
+    },
+    "Division & Training Institute": {
+     "Training & PC Division Related": [
+      "Disciplinary cases / Vigilance matters",
+      "NGOs / VOs / Private / firms etc. related",
+      "Matters related to NIRD",
+      "Grant related to SIRD (State Institute of Rural Development) / ETC (Extension Training Centre)"
+     ]
+    },
+    "Financial Matters Related": [
+     "Bill Related",
+     "International Cooperation"
+    ],
     "Other Division": "not checked"
    },
    "app_map": {
@@ -771,9 +830,16 @@
     "elderly - wrong pension amount": "... > Pension Related Matter > Mis-match in Pension payment",
     "livelihood - skill training / placement not given": "Govt Schemes > Skill Division > DDU-GKY > Training/Admission or Job/placement related complaint",
     "livelihood - SHG training/funds/interest": "NRLM > Training (SHG Women) / Funds / Release (Revolving Fund, Community Fund, VRF) / Interest Subvention > Interest Subsidy",
-    "women - safety at NREGA worksite": "Govt Schemes > MGNREGA > Issue related to women worker of MGNREGA > Safety concerns"
+    "women - safety at NREGA worksite": "Govt Schemes > MGNREGA > Issue related to women worker of MGNREGA > Safety concerns",
+    "housing - name in waitlist, house not given": "Govt Schemes > PMAY-G > Request/ Representation > ...name included already included in PWL (State Govt.)",
+    "housing - name not in waitlist": "... > Request/ Representation > ...name not included in PWL (State Govt.)",
+    "housing - don't know if in list": "... > Request/ Representation > ...status of inclusion in PWL unknown (State Govt.)",
+    "housing - application ignored by panchayat": "... > Request/ Representation > Negligence of request for new house by official /GPs",
+    "housing - village never surveyed": "... > Request/ Representation > Survey not conducted/ Village not mapped",
+    "housing - installment delayed / geo-tag pending": "Govt Schemes > PMAY-G > PMAY - G related Complaints > Delay in sanction of installments/ geo - tagging of stages of construction of house",
+    "social - discrimination in rural scheme (SC/ST/OBC, disabled)": "Misbehaviour/ Corruption/ Harassment > Attrocities Against > SC/ST/OBC or Differently Abled (only on user's own words; never auto)"
    },
-   "note": "PMGSY = only roads built under that scheme (usually signboard says PMGSY). Unknown road type -> State Government (AP/TS) route. Corruption/fake-payment options never auto-suggested (facts, no blame). NSAP pensions in AP/TS are paid under state pension schemes; State Government route first, this route for central NSAP share. Some leaves ask a State dropdown before description.",
+   "note": "PMGSY = only roads built under that scheme (usually signboard says PMGSY). Unknown road type -> State Government (AP/TS) route. Corruption/fake-payment options never auto-suggested (facts, no blame). NSAP pensions in AP/TS are paid under state pension schemes; State Government route first, this route for central NSAP share. Some leaves ask a State dropdown before description. PMAY-G 'bribe' options are never auto-suggested; for a stuck installment use the neutral 'Delay in sanction of installments' option.",
    "complete": true
   }
  }
