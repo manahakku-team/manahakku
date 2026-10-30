@@ -255,7 +255,7 @@
   "House construction incomplete, bill not paid",
   "housing",
   null,
-  "Incompletion/Pending"
+  "Payment Of Bills To Housing Beneficiaries"
  ],
  [
   "Housing colony has no road or water",
@@ -694,5 +694,47 @@
   "housing",
   null,
   "Resurvey - RoR Corrections"
+ ],
+ [
+  "House construction bill not paid for 6 months",
+  "housing",
+  null,
+  "Payment Of Bills To Housing Beneficiaries"
+ ],
+ [
+  "My bank account number is wrong in housing, bill stuck",
+  "housing",
+  null,
+  "Correction Of Bank Account Details"
+ ],
+ [
+  "Cement not given for my sanctioned house",
+  "housing",
+  null,
+  "Release /Issue Of Materials"
+ ],
+ [
+  "House half built and stuck for one year",
+  "housing",
+  null,
+  "Incompletion/Pending Houses"
+ ],
+ [
+  "No roads and drainage in our housing colony",
+  "housing",
+  null,
+  "Providing Infrastructure Facilities"
+ ],
+ [
+  "Beneficiary died, legal heir needs house bill",
+  "housing",
+  null,
+  "Legal Heir"
+ ],
+ [
+  "Patta not returned after paying housing loan",
+  "housing",
+  null,
+  "Patta/Lpc Not Returned"
  ]
 ]
