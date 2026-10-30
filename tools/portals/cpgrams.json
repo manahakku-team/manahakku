@@ -1631,6 +1631,81 @@
     "iddocs.dl / iddocs.rc - licence or RC delayed (after state RTO)": "Transport Related > Road Transport [service related to Motor Vehicles] > MORTH"
    },
    "complete": true
+  },
+  "Unique Identification Authority of India": {
+   "main": {
+    "Aadhaar Enrolment": [
+     "Delay in generation of Aadhaar (Age above 18 Years)",
+     "Delay in generation of Aadhaar (Age between 5- 18 Years)",
+     "Delay in generation of Aadhaar (Age below 5 Years)",
+     "Rejection of Aadhaar enrolment request",
+     "Request for home enrolment"
+    ],
+    "Aadhaar Update": [
+     "Delay in update of name/date of birth/gender in Aadhaar",
+     "Rejection of name/date of birth/gender update request",
+     "Delay in update of mobile/address/email in Aadhaar",
+     "Rejection of mobile/address/email update request",
+     "Delay in biometric (Photo/Fingerprint/IRIS) update",
+     "Rejection of biometric (Photo/Fingerprint/IRIS) update request",
+     "Wrong update in Aadhaar"
+    ],
+    "Aadhaar Authentication": [
+     "e-KYC issue",
+     "Authentication issue (Fingerprint/IRIS/OTP)",
+     "Virtual ID issue"
+    ],
+    "Aadhaar Letter/ PVC Card/ e-Aadhaar": [
+     "Non-receipt of Aadhaar letter",
+     "Issue relating to ordering of PVC card",
+     "Non-receipt of PVC card",
+     "Misprint of Aadhaar letter/ PVC card",
+     "Issue in e-Aadhaar download"
+    ],
+    "Fraud Related Matters": [
+     "Authentication done by someone else",
+     "Misuse of Aadhaar /data"
+    ],
+    "Misbehaviour / Corruption / Harassment": {
+     "list": [
+      "Misbehaviour / Harassment by operator",
+      "Corruption",
+      "Overcharging by operator",
+      "Other issues at enrolment center / ASK"
+     ],
+     "rule": "never auto, except 'Overcharging by operator' and 'Other issues at enrolment center / ASK' are factual service issues and may be suggested when user text says extra fee / centre problem"
+    },
+    "Aadhaar Number Deactivated / Lost": [
+     "Aadhaar deactivated",
+     "Forgot Aadhaar number"
+    ],
+    "Website/Mobile App / Toll Free Number Related Issues": [
+     "UIDAI website related issues",
+     "myAadhaar portal issues",
+     "mAadhaar app issues",
+     "Toll Free Number (1947) related issues"
+    ],
+    "Employee Services Related": "skip"
+   },
+   "note": "UIDAI's own channel first: 1947 helpline / myAadhaar grievance; CPGRAMS UIDAI route next. Personal doc: never share Aadhaar number, enrolment ID only on the official form, never in Mana Hakku.",
+   "app_map": {
+    "iddocs.aadhaar - new Aadhaar not generated (adult)": "Aadhaar Enrolment > Delay in generation of Aadhaar (Age above 18 Years)",
+    "iddocs.aadhaar - child Aadhaar not generated": "Aadhaar Enrolment > Delay in generation of Aadhaar (Age between 5- 18 / below 5)",
+    "iddocs.aadhaar - enrolment rejected": "Aadhaar Enrolment > Rejection of Aadhaar enrolment request",
+    "iddocs.aadhaar - elderly/disabled needs home enrolment": "Aadhaar Enrolment > Request for home enrolment",
+    "iddocs.aadhaar - name/DOB/gender correction delayed or rejected": "Aadhaar Update > Delay in / Rejection of name/date of birth/gender update",
+    "iddocs.aadhaar - mobile/address update delayed or rejected": "Aadhaar Update > Delay in / Rejection of mobile/address/email update",
+    "iddocs.aadhaar - biometric update (child turning 5/15, worn fingerprints)": "Aadhaar Update > Delay in / Rejection of biometric update",
+    "iddocs.aadhaar - wrong detail after update": "Aadhaar Update > Wrong update in Aadhaar",
+    "iddocs.aadhaar / nutrition - fingerprint fails at ration shop / bank": "Aadhaar Authentication > Authentication issue (Fingerprint/IRIS/OTP)",
+    "iddocs.aadhaar - e-KYC failing": "Aadhaar Authentication > e-KYC issue",
+    "iddocs.aadhaar - card/letter not received": "Aadhaar Letter/ PVC Card/ e-Aadhaar > Non-receipt of Aadhaar letter / Non-receipt of PVC card",
+    "iddocs.aadhaar - misprint on card": "Aadhaar Letter/ PVC Card/ e-Aadhaar > Misprint of Aadhaar letter/ PVC card",
+    "iddocs.aadhaar - Aadhaar deactivated (pension/ration stopped)": "Aadhaar Number Deactivated / Lost > Aadhaar deactivated",
+    "iddocs.aadhaar - extra fee charged at centre": "Misbehaviour / Corruption / Harassment > Overcharging by operator",
+    "iddocs.aadhaar - someone misused my Aadhaar": "Fraud Related Matters > Misuse of Aadhaar /data (also report to cyber crime 1930)"
+   },
+   "complete": true
   }
  }
 }
