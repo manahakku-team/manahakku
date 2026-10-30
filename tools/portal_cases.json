@@ -1288,5 +1288,23 @@
   "agri",
   null,
   "Tail End"
+ ],
+ [
+  "Village tank full of silt, not desilted",
+  "agri",
+  null,
+  "Silt Not Removed From The Existing Tanks"
+ ],
+ [
+  "Canal breach not closed, water wasted",
+  "agri",
+  null,
+  "Breaches"
+ ],
+ [
+  "Sand being dug from the river near village",
+  "agri",
+  null,
+  "Digging Of Sand"
  ]
 ]
