@@ -72,7 +72,10 @@
    "AP Pollution Control Board-->Industrial Pollution Related -->Waste Water Discharge Out Side Factories",
    "Ground Water-->Construction Of Tube Wells And Bore Wells Referred By S.C.Corporation, I.T.D.A. ...-->Issues Related To Drilling Of Bore/ Tube Wells (user's words only)",
    "Ground Water-->Ground Water Surveys Under A.P.W.A.L.T.A. ...-->Issues Related To Delays In Conducting Groundwater Surveys Under Ap Walta",
-   "Technical Education-->Polytechnic Infrastructure Related-->Hostel/Lab/Library/Rest Room/Drinking Water Facility"
+   "Technical Education-->Polytechnic Infrastructure Related-->Hostel/Lab/Library/Rest Room/Drinking Water Facility",
+   "AP State Council for Higher Education-->Constituent / Affiliated College Infrastructure Related-->...Drinking Water Facility",
+   "Women Development and Child Welfare-->Homes-->Non Supply Of Water Facilities",
+   "Water Resources (E-In-C)-->ICADPW-->Water Regulation-->Drinking Water Not Released"
   ],
   "education": [
    "Intermediate Education-->About Raising Educational Standards in Colleges-->Centre For Excellence / MANA TV",
@@ -169,6 +172,17 @@
    "Labour-->Managements Under Various Laour Laws-->Issues Related To Maternity Leave For Women Workers Private Establishments / Shops / Factories",
    "Youth Services-->Self- Defence Training To Women-->Training Arrangements",
    "SAFETY (helpline first, user's words only): Police-->Crime against Women; Women Development and Child Welfare-->Domestic Violence Act; Rythu Sadhikara Samstha-->Harassment At Work Place; Police-->Abetment of Suicide (Women)"
+  ],
+  "buildings": [
+   "Public Health-->Poor Infrastructure & Facilities-->Dilapidated / Broken Buildings",
+   "Panchayati Raj Engineering-->Issues Related to Building Works (New or Repairs) in Execution-->Sanction of New GP/MP/ZP/Community Hall buildings / Major Repairs to all Buildings (GP/MPDO/ZP/Community Halls/ZPHS) / Minor Repairs to all Buildings",
+   "Animal Husbandry-->INSTITUTIONS/ BUILDINGS/ INFRASTRUCTURE-->NEED SANCTION OF NEW HOSPITAL BUILDING / EXISTING HOSPITAL BUILDING REQUIRES REPAIRS / SUPPLY OF INFRASTRUCTURE",
+   "BC Welfare-->Construction Of Bc Hostel Buildings-->Repair To Toilet & Batrooms In Bc Hostels",
+   "Fire Services-->Non Issuance Of Fire Noc-->Non Conducting Of Fire Safety Inspections In Hazardous Premises/Buildings"
+  ],
+  "social": [
+   "Society for Social Audit, Accountability and Transparency(SSAAT-AP)-->Social Audit-->Grama Sabha & Public Hearing Dates of Social Audit / Social Audit Decision Taken Formats(DTF) Request",
+   "Forest (PCCF)-->Social Forestry -->Raising And Distribution Of Seedlings / Soil And Moisture Conservation Works"
   ]
  },
  "app_map": {
@@ -244,7 +258,15 @@
   "child - child labour in shop/factory": "call 1098 first; then search 'child' > Labour-->...-->Engagement Of Child Labour In Shops / Establishments / Factories",
   "health - Thalli Bidda Express (mother-baby drop) refused": "search 'child' > Family Welfare-->Thalli Bidda Express-->Driver refusing to take the mother and child to their home",
   "livelihood - maternity leave denied (private job)": "search 'women' > Labour-->...-->Issues Related To Maternity Leave For Women Workers",
-  "education.college - polytechnic facilities": "search 'water' > Technical Education-->Polytechnic Infrastructure Related-->(facility)"
+  "education.college - polytechnic facilities": "search 'water' > Technical Education-->Polytechnic Infrastructure Related-->(facility)",
+  "health - PHC/hospital building broken": "search 'buildings' > Public Health-->Poor Infrastructure & Facilities-->Dilapidated / Broken Buildings",
+  "village - panchayat office / community hall / ZP school building repair": "search 'buildings' > Panchayati Raj Engineering-->Issues Related to Building Works...-->Major / Minor Repairs to all Buildings (GP/MPDO/ZP/Community Halls/ZPHS)",
+  "village - new community hall / panchayat building": "search 'buildings' > Panchayati Raj Engineering-->...-->Sanction of New GP/MP/ZP/Community Hall buildings",
+  "agri - veterinary hospital building / repairs": "search 'buildings' > Animal Husbandry-->INSTITUTIONS/ BUILDINGS/ INFRASTRUCTURE-->NEED SANCTION OF NEW / EXISTING HOSPITAL BUILDING REQUIRES REPAIRS",
+  "education - hostel toilets need repair (user names BC hostel)": "search 'buildings' > BC Welfare-->Construction Of Bc Hostel Buildings-->Repair To Toilet & Batrooms In Bc Hostels",
+  "safety - building/factory without fire safety": "search 'buildings' > Fire Services-->Non Issuance Of Fire Noc-->Non Conducting Of Fire Safety Inspections In Hazardous Premises/Buildings",
+  "livelihood - want social audit dates for NREGA works (transparency)": "search 'social' > Society for Social Audit...(SSAAT-AP)-->Social Audit-->Grama Sabha & Public Hearing Dates of Social Audit",
+  "college - university-affiliated college facilities": "search 'water' > AP State Council for Higher Education-->Constituent / Affiliated College Infrastructure Related-->(facility)"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -278,7 +300,13 @@
   "AP State Wakf Board divorced women (religious)",
   "AIDS Control Society / HIV lines (sensitive health)",
   "Selling Of Food By Anganwadi Workers / Issuing Food To Ineligible (blames)",
-  "Police-->Child Kidnapping / Crime Against Children (police: 112/1098)"
+  "Police-->Child Kidnapping / Crime Against Children (police: 112/1098)",
+  "SSAAT Complaint Against Staff (blames)",
+  "Domestic Violence Act counsellor bribes/delay (blame + sensitive)",
+  "Endowment temple anti-social activities / water (religious)",
+  "Tribal Welfare-->Itda Court Cases (court matter; not accepted)",
+  "Water Users Association elections; Unauthorised pipes/cultivation/fish ponds (blames individuals)",
+  "Sports Authority water sports (not civic)"
  ],
  "still_needed_keywords": [
   "college",
