@@ -97,7 +97,23 @@
    "AP Public Service Commission-->AP Public Service Commission-->Unfair or Discriminatory Selection Process (never auto)",
    "note: NO voter-card / Election Commission option on Meekosam. Voter card -> ECI (voters.eci.gov.in / 1950) route already in app."
   ],
-  "music_dance_colleges": "AP State Creativity And Culture Commission--> Govt Music & Dance colleges/schools (Guntur, Nellore, Vijayawada, Vizianagaram, Rajamahendravaram)-->Complaints Against Facilities / Teachers / Non-Admissions"
+  "music_dance_colleges": "AP State Creativity And Culture Commission--> Govt Music & Dance colleges/schools (Guntur, Nellore, Vijayawada, Vizianagaram, Rajamahendravaram)-->Complaints Against Facilities / Teachers / Non-Admissions",
+  "agriculture": [
+   "AP Central Power Distribution Co Ltd (CPDCL)-->Existing Services Related Issues-->Non Extending 9 Hours Power Supply To Agriculture Services"
+  ],
+  "animal": [
+   "Forest (PCCF)-->Wildlife-->Payment Of Ex-Gratia /Crop Compenssation Due To Damage By Wild Animals",
+   "Animal Husbandry-->ANIMAL WELFARE-->ANIMALS SUBJECTED TO CRUELITY",
+   "Animal Husbandry-->POVERTY ALLEVIATION PROGRAMMES-->NO SUPPORT FOR INDUCTED ANIMALS / NON SUPPLY OF ANIMALS ON SUBSIDY"
+  ],
+  "fisher": [
+   "Fisheries-->Cyclone Rehabilitation And Relief To Fishers-->Request for Relief, Loss of Boats Nets Etc..During Cyclones / Natural Calamities / Delay In Cyclone alerting and Rehabilation measures / Payment Of Rents/Diesel Oil To The Boats Taken For Rescue Operations",
+   "Fisheries-->Fishermen Co-Operaative Issues (Fcs)-->Issue of fishing permit/ID card / Supply of fish seed from Govt fish seed farms / New/Renewal of fishing licenses / Registration of Fishermen Coop. Societies"
+  ],
+  "infra": [
+   "Tribal Welfare Residential Educational Institutions Society-->Residential Schools-->Infrastructure Maintenance / Accommodation",
+   "Kapu Welfare and Development Corporation-->Skill Development-->Infrastructure Not Proper (community-named; never auto)"
+  ]
  },
  "app_map": {
   "roads - village road potholes/repair": "search 'road' > Panchayati Raj Engineering-->Repairs to Roads-->Minor Repairs of roads CC Roads/BT Roads (within village/mandal)  (big damage: Major Repairs)",
@@ -142,7 +158,12 @@
   "nutrition - anganwadi food/eggs not delivered": "search 'transport' > Women Development and Child Welfare-->Anganwadi Functionaries-->Complaint On Transportation Of Food Items/Eggs To The Anganwadi Centers",
   "housing - house sanctioned but beneficiary selection issue": "search 'election' or 'house' > AP State Housing Corporation Ltd-->Grievance On Already Sanctioned Houses-->Selection Of Beneficiaries",
   "iddocs.voter - voter card": "NOT on Meekosam: use ECI route (voters.eci.gov.in, 1950) - already in app",
-  "education - govt music/dance college facilities": "search 'mus' > AP State Creativity And Culture Commission-->(college)-->Complaints Against Facilities"
+  "education - govt music/dance college facilities": "search 'mus' > AP State Creativity And Culture Commission-->(college)-->Complaints Against Facilities",
+  "power/agri - farm power supply less than 9 hours": "search 'agriculture' > AP Central Power Distribution Co Ltd (CPDCL)-->Existing Services Related Issues-->Non Extending 9 Hours Power Supply To Agriculture Services (other DISCOM areas: pick own DISCOM, e.g. EPDCL/SPDCL)",
+  "agri - crops damaged by wild animals, compensation": "search 'animal' > Forest (PCCF)-->Wildlife-->Payment Of Ex-Gratia /Crop Compenssation Due To Damage By Wild Animals",
+  "livelihood - subsidy animals (cows/sheep) not supplied": "search 'animal' > Animal Husbandry-->POVERTY ALLEVIATION PROGRAMMES-->NON SUPPLY OF ANIMALS ON SUBSIDY",
+  "livelihood - fishermen boats/nets lost in cyclone": "search 'fisher' > Fisheries-->Cyclone Rehabilitation And Relief To Fishers-->Request for Relief, Loss of Boats Nets Etc..During Cyclones / Natural Calamities",
+  "livelihood - fishing ID card / permit": "search 'fisher' > Fisheries-->Fishermen Co-Operaative Issues (Fcs)-->Issue of fishing permit/ID card to Societies/fishers"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -158,7 +179,11 @@
   "AP State Christian (Minorities) Finance Corporation church construction / pilgrimage (religious)",
   "Tirumala Tirupati Devasthanam (religious)",
   "Water Users Association / Cooperative / Fishermen society elections (election matters)",
-  "Sports / Youth Services selections (not civic)"
+  "Sports / Youth Services selections (not civic)",
+  "Fishermen society Election Disputes / Misappropriation Of Society Funds",
+  "RBK / SGSW employee Rude Behavior / Disciplinary Matters",
+  "Community-named corporations (Kapu, Christian etc.) unless the user names the scheme",
+  "AP State Wakf Board (religious)"
  ],
  "still_needed_keywords": [
   "college",
@@ -175,5 +200,57 @@
   "house",
   "mid-day meal"
  ],
- "search_tips": "Meekosam search matches words in the option text, not meaning. 'revenue' found only a church line, so for certificates/land use 'certificate', 'caste', 'income', 'land', 'pattadar', 'survey', 'mutation'."
+ "search_tips": "Meekosam search matches words in the option text, not meaning. 'revenue' found only a church line, so for certificates/land use 'certificate', 'caste', 'income', 'land', 'pattadar', 'survey', 'mutation'.",
+ "manual_route": {
+  "how": "If search finds nothing: below the search box use dropdowns Department -> HOD -> Subject -> Sub-Subject.",
+  "departments": [
+   "Agriculture And Co-operation",
+   "Animal Husbandry, Dairy Development and Fisheries",
+   "Backward Classes Welfare",
+   "Consumer Affairs, Food and Civil Supplies",
+   "Department of Skills Development and Training",
+   "Disaster Management",
+   "Energy",
+   "Environment, Forest, Science And Technology",
+   "Finance",
+   "General Administration",
+   "Health, Medical And Family Welfare",
+   "Home",
+   "Housing",
+   "Human Resources (Higher Education)",
+   "Human Resources (School Education)",
+   "Industries and Commerce",
+   "Infrastructure And Investments",
+   "Labour, Factories, Boilers And Insurance Medical Services",
+   "Law",
+   "Minorities Welfare",
+   "Panchayat Raj And Rural Development",
+   "Planning",
+   "Revenue",
+   "Social Welfare",
+   "Swarna Gramam - Swarna Wardu (SGSW)",
+   "Transport, Roads and Buildings",
+   "Tribal Welfare",
+   "Water Resources",
+   "Women, Children, Disabled and Senior Citizens",
+   "Youth Advancement, Tourism And Culture"
+  ],
+  "app_sector_to_department": {
+   "water": "Panchayat Raj And Rural Development (RWS)",
+   "sanitation": "Panchayat Raj And Rural Development",
+   "roads": "Panchayat Raj And Rural Development (village) / Transport, Roads and Buildings (R&B)",
+   "health": "Health, Medical And Family Welfare",
+   "nutrition (ration)": "Consumer Affairs, Food and Civil Supplies",
+   "nutrition (anganwadi)": "Women, Children, Disabled and Senior Citizens",
+   "education (school)": "Human Resources (School Education)",
+   "education.college": "Human Resources (Higher Education)",
+   "power": "Energy",
+   "housing": "Housing",
+   "certs / land": "Revenue",
+   "agri": "Agriculture And Co-operation / Water Resources",
+   "livelihood": "Labour, Factories, Boilers And Insurance Medical Services / Department of Skills Development and Training",
+   "elderly / disabled / women / child": "Women, Children, Disabled and Senior Citizens",
+   "social": "Social Welfare / Backward Classes Welfare / Tribal Welfare / Minorities Welfare (only on user's own words)"
+  }
+ }
 }
