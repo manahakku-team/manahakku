@@ -1808,10 +1808,33 @@
     "Employees Services Related": "skip",
     "Pension related": "skip (staff)",
     "Natural Clamity Draught related issues": "NOT YET SEEN - needed",
-    "Machinery and Technology issues": "NOT YET SEEN",
-    "Organic farming and fertilizers issues": "NOT YET SEEN - needed (fertiliser shortage)",
-    "Misbehaviour/ Harassment/ Corruption": "never auto",
-    "Miscellaneous Matters": "NOT YET SEEN - fallback"
+    "Machinery and Technology issues": [
+     "Subsidy on Machinery and tractors etc.",
+     "Crops Residue Management",
+     "Agriculture Mechanization"
+    ],
+    "Organic farming and fertilizers issues": [
+     "Soil Health Card (SHC) and Soil Health Management",
+     "Paramparagat Krishi Vikas Yojana",
+     "Organic Farming and fertilizers issues"
+    ],
+    "Misbehaviour/ Harassment/ Corruption": {
+     "list": [
+      "Misbehaviour/Harassment by any officer/staff",
+      "Corruption"
+     ],
+     "then": "Attached Office dropdown (Department / subordinate offices list)",
+     "rule": "never auto"
+    },
+    "Miscellaneous Matters": [
+     "Official Language related matters",
+     "Agriculture Census",
+     "Natural Resource Management",
+     "Rainfed Farming System",
+     "Horticulture related issues",
+     "Digital Agriculture issues",
+     "(list may continue)"
+    ]
    },
    "SENSITIVE": "'Farmers Suicide' option is never auto-suggested. If a report text signals personal crisis, app shows Tele-MANAS 14416 / 112 first (verify numbers before build) and does not route as a grievance.",
    "app_map": {
@@ -1828,9 +1851,15 @@
     "agri - pulses/oilseeds procurement (NAFED)": "Farmers Welfare (MSP...) > Price Support System > NAFED",
     "agri - no warehouse/storage": "Farmers Welfare (MSP...) > Matter relating to Agriculture Marketing > Matter relating to warehouse construction",
     "agri - eNAM market problem": "... > Matter relating to Agriculture Marketing > Matter relating to eNAM",
-    "agri - crop insurance claim not paid": "Other Scheme Related > Pradhan Mantri Fasal Bima Yojana (PMFBY) - Claim Related Issue"
+    "agri - crop insurance claim not paid": "Other Scheme Related > Pradhan Mantri Fasal Bima Yojana (PMFBY) - Claim Related Issue",
+    "agri - tractor/machinery subsidy not received": "Machinery and Technology issues > Subsidy on Machinery and tractors etc.",
+    "agri - soil health card not given": "Organic farming and fertilizers issues > Soil Health Card (SHC) and Soil Health Management",
+    "agri - fertiliser shortage / fake fertiliser": "Organic farming and fertilizers issues > Organic Farming and fertilizers issues",
+    "agri - horticulture (fruit/vegetable) scheme issue": "Miscellaneous Matters > Horticulture related issues",
+    "agri - rainfed/dry-land farming support": "Miscellaneous Matters > Rainfed Farming System"
    },
-   "complete": false
+   "complete": "yes except Natural Calamity/Drought sub-list and PMFBY sub-list",
+   "note": "Farm schemes (PM-KISAN approval, seeds, fertiliser, Rythu Seva / RBK centres) are run on the ground by the state Agriculture department: Meekosam/Prajavani first, then this route."
   }
  }
 }
