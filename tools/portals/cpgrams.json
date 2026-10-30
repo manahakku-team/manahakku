@@ -677,14 +677,59 @@
        "Salary not provided to the Gram Rojagar Sewak",
        "Salary/Honorarium related issue under MGNREGA"
       ],
-      "Issue related to women worker of MGNREGA": "not checked",
-      "Misuse and improper selection of beneficiaries": "not checked",
+      "Issue related to women worker of MGNREGA": [
+       "Safety concerns"
+      ],
+      "Misuse and improper selection of beneficiaries": "no 4th level; asks State dropdown then description",
       "Not proper implementation of central Govt. scheme": "not checked",
-      "Others Issue": "not checked"
+      "Others Issue": [
+       "Maintaining of data base",
+       "Awareness and IEC",
+       "Use of machinery instead of labour",
+       "Awareness of camp"
+      ]
      },
-     "National Social Assistance Programme": "not checked",
-     "Skill Division": "not checked",
-     "National Rural Livelihoods Mission (NRLM)": "not checked",
+     "National Social Assistance Programme": {
+      "Pension Related Matter": [
+       "Sanction of pension",
+       "Restoration of pension",
+       "Irregular/Discontinution payment of pension",
+       "Mis-match in Pension payment"
+      ],
+      "Miscellaneous regarding social assistance programme": [
+       "Enhancement of Pension",
+       "Change in the elegibilty criteria",
+       "Relaxation in age /disability level for sanction of pensions"
+      ]
+     },
+     "Skill Division": {
+      "DDU-GKY": [
+       "Post Placement Support",
+       "Training/Admission related complaint",
+       "Job/placement related complaint",
+       "Salary of faculty of Training Institute",
+       "Information/queries related to scheme",
+       "PRN Generation",
+       "Malprctice/Corruption"
+      ],
+      "Rural Self Employment Training Institute (RSETI)": [
+       "Information/queries related to scheme",
+       "Faculty salary/appointment related issues"
+      ]
+     },
+     "National Rural Livelihoods Mission (NRLM)": {
+      "Salary & HR issues of NRLPS": [
+       "Salary of NRLPS staff"
+      ],
+      "Salary & HR issues of NRLM": [
+       "Appointment Related",
+       "Salary related"
+      ],
+      "Training & capacity building of rural SHG": "not checked",
+      "Funds / Release": "not checked",
+      "Maketing Support (Fair/Stall)": "not checked",
+      "Interest Subvention": "not checked"
+     },
      "Pradhan Mantri Awaas Yojana Gramin (Rural)": "not checked",
      "SAANSAD ADARSH GRAM YOJANA (SAGY)": "not checked"
     },
@@ -708,9 +753,17 @@
     "livelihood - no work given": "... > Payment / Wage > Not providing work and Unemployment Allowance under MGNREGA",
     "livelihood - no job card": "... > Job Card > Fake job cards and non issuance of job card",
     "livelihood - job card name wrong/deleted": "... > Job Card > Deletion of Job Card and name correction",
-    "livelihood - work left incomplete": "... > Works in NREGA > Non completion of work"
+    "livelihood - work left incomplete": "... > Works in NREGA > Non completion of work",
+    "elderly - old age/widow/disability pension not sanctioned": "Govt Schemes > National Social Assistance Programme > Pension Related Matter > Sanction of pension",
+    "elderly - pension stopped": "... > Pension Related Matter > Restoration of pension",
+    "elderly - pension irregular": "... > Pension Related Matter > Irregular/Discontinution payment of pension",
+    "elderly - wrong pension amount": "... > Pension Related Matter > Mis-match in Pension payment",
+    "livelihood - skill training / placement not given": "Govt Schemes > Skill Division > DDU-GKY > Training/Admission or Job/placement related complaint",
+    "livelihood - SHG training/funds/interest": "Govt Schemes > NRLM > Training & capacity building of rural SHG / Funds / Release / Interest Subvention",
+    "women - safety at NREGA worksite": "Govt Schemes > MGNREGA > Issue related to women worker of MGNREGA > Safety concerns"
    },
-   "note": "PMGSY = only roads built under that scheme (usually signboard says PMGSY). Unknown road type -> State Government (AP/TS) route. Corruption/fake-payment options never auto-suggested (facts, no blame)."
+   "note": "PMGSY = only roads built under that scheme (usually signboard says PMGSY). Unknown road type -> State Government (AP/TS) route. Corruption/fake-payment options never auto-suggested (facts, no blame). NSAP pensions in AP/TS are paid under state pension schemes; State Government route first, this route for central NSAP share. Some leaves ask a State dropdown before description.",
+   "complete": true
   }
  }
 }
