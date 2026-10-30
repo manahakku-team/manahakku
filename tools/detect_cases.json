@@ -333,5 +333,20 @@ null
 "Birth certificate not given by the panchayat for 2 months",
 "certs",
 "birthdeath"
+],
+[
+"Driving licence renewal pending at RTA office for 2 months",
+"iddocs",
+"dl"
+],
+[
+"RC transfer not done even after 45 days, vehicle registration stuck",
+"iddocs",
+"rc"
+],
+[
+"డ్రైవింగ్ లైసెన్స్ రెండు నెలలుగా రాలేదు",
+"iddocs",
+"dl"
 ]
 ]

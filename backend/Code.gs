@@ -62,7 +62,7 @@ const REPORTS = 'Reports';
 const SUGGESTIONS = 'Suggestions';
 const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note'];
 const OUTCOMES = ['solved', 'progress', 'none'];
-const GRV_SYSTEMS = ['pgrs', 'prajavani', 'cpgrams', 'uidai', 'incometax', 'eci', 'other'];
+const GRV_SYSTEMS = ['pgrs', 'prajavani', 'cpgrams', 'uidai', 'incometax', 'eci', 'transport', 'state', 'other'];
 const FLAGS = 'Flags';
 const FLAG_COLS = ['created', 'id', 'reason', 'note', 'state', 'dev'];
 const FLAG_REASONS = ['false', 'abusive', 'personal', 'duplicate', 'other'];
@@ -157,6 +157,7 @@ function hasPersonalDetails_(text) {
   if (/[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}/.test(x)) return true; // email
   if (/\b[A-Za-z]{5}\d{4}[A-Za-z]\b/.test(x)) return true;            // PAN
   if (/\b[A-Za-z]{3}\d{7}\b/.test(x)) return true;                   // voter card (EPIC)
+  if (/\b(?:(?!nh|sh|NH|SH|Nh|Sh)[A-Za-z]{2}[\s.-]?\d{1,2}[\s.-]?[A-Za-z]{0,3}[\s.-]?\d{4}|\d{2}[\s.-]?BH[\s.-]?\d{4}[\s.-]?[A-Za-z]{1,2})\b/i.test(x)) return true;   // vehicle number
   return namedPerson(x);                                              // own, leaders' or officials' names
 }
 
