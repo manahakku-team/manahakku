@@ -115,8 +115,11 @@
    "Fisheries-->Fishermen Co-Operaative Issues (Fcs)-->Issue of fishing permit/ID card / Supply of fish seed from Govt fish seed farms / New/Renewal of fishing licenses / Registration of Fishermen Coop. Societies"
   ],
   "infra": [
-   "Tribal Welfare Residential Educational Institutions Society-->Residential Schools-->Infrastructure Maintenance / Accommodation",
-   "Kapu Welfare and Development Corporation-->Skill Development-->Infrastructure Not Proper (community-named; never auto)"
+   "AP State Housing Corporation Ltd-->Infrastructure Works In Housing Colonies-->Providing Infrastructure Facilities / Repairs To Existing Infrastructure Works / Complaint On Excution Of Work",
+   "BC Welfare-->Administration Of Hostels - Inspections-->Non Providing Of Adequate Infrastructure Facilities In Hostels",
+   "Tribal Welfare Residential Educational Institutions Society-->Residential Schools-->Infrastructure Maintenance / Infrastructure Accommodation",
+   "Intermediate Education-->Infrastructure Facilities to College-->Drinking Water Facility / Facilities for Laboratories / Hostel Facility / NCC and NSS / Playground Facility / Sporting Equipment / Toilets Facility",
+   "Technical Education-->Polytechnic Infrastructure Related-->(facilities)"
   ],
   "welfare": [
    "Labour-->Ap Building & Other Construction Workers Welfare Board-->Registration And Renewal Of Building & Other Construction Workers / Issues Related To Claims Under Schemes",
@@ -206,7 +209,19 @@
   "rural": [
    "Animal Husbandry-->RURAL BACKYARD POULTRY-->NON SUPPLY OF RURAL BACKYARD POULTRY UNITS"
   ],
-  "fallback_misc": "Blank search shows department 'Miscellaneous issues which are not covered above' lines (e.g. AP Transco)"
+  "fallback_misc": "Blank search shows department 'Miscellaneous issues which are not covered above' lines (e.g. AP Transco)",
+  "factor": [
+   "Labour-->Managements Under Various Laour Laws-->Non Payment Of Wages In Private Establishments / Shops / Factories / Non Payment Of Compensation To Workmen /Employees / Non Payment Of Gratuity To Workers / Service And Related Matters Of Workers / Issues Related To Maternity Leave / Engagement Of Child Labour / Any Other Issues Related To Enforcement Of Labour Laws",
+   "Factories-->Implementation Of Factories Act, 1948.-->Health Provisions / Working Conditions / Safety Provisions / Provisions Related To Hazardous Process / Welfare Amenities / Working Hours / Leave With Wages / Periodically Medical Check Up In Hazardous Factories Not Conducted",
+   "Sugar And Cane-->Cane Wing -->Suagr Factories Cane Payments",
+   "Dr. NTR Vaidya Seva Trust-->Employee Health Scheme (EHS) / Working Journalist Health Scheme-->Services deficiency i.e., Treatment is not satisfactory"
+  ],
+  "labour": [
+   "Labour-->Contract Labour Act-->Issues Related To Contract Workers",
+   "Labour-->Ap Labour Welfare Board-->Issues Related To Claims Under Schemes Of The Ap Labour Welfare Board / Matters Related To Payment Of Labour Welfare Fund",
+   "Labour-->Sw Bonded Labour-->Identification/Survey Of Bonded Labour Including Child Labour Not Done / Release Order For Bonded Labour Not Issued",
+   "Labour-->Registration Of Establishments-->Issues Related To Registration / Renewal Of Establishments"
+  ]
  },
  "app_map": {
   "roads - village road potholes/repair": "search 'road' > Panchayati Raj Engineering-->Repairs to Roads-->Minor Repairs of roads CC Roads/BT Roads (within village/mandal)  (big damage: Major Repairs)",
@@ -305,7 +320,18 @@
   "agri - crop insurance claim not received": "search 'insurance' > Agriculture-->Agri-Crop Insurance-->Crop Insurance claim not received (pick the season period) / Horticulture-->Crop Insurance-->Claims Not Recieved",
   "agri - subsidy seed after crop loss": "search 'plan' > Agriculture-->Agri Inputs- Seeds-->Supply of seed on 80% subsidy on contingency plan",
   "livelihood - backyard poultry units not supplied": "search 'rural' > Animal Husbandry-->RURAL BACKYARD POULTRY-->NON SUPPLY OF RURAL BACKYARD POULTRY UNITS",
-  "water/sanitation - factory effluent plant not working": "search 'plan' > AP Pollution Control Board-->...-->Effluent Treatment Plant Not Operating"
+  "water/sanitation - factory effluent plant not working": "search 'plan' > AP Pollution Control Board-->...-->Effluent Treatment Plant Not Operating",
+  "livelihood - wages not paid (private shop/factory)": "search 'factor' or 'labour' > Labour-->Managements Under Various Laour Laws-->Non Payment Of Wages In Private Establishments / Shops / Factories",
+  "livelihood - gratuity not paid (private)": "... Labour-->...-->Non Payment Of Gratuity To Workers Private Establishments",
+  "livelihood - injured worker compensation": "... Labour-->...-->Non Payment Of Compensation To Workmen /Employees",
+  "livelihood - contract worker issues": "search 'labour' > Labour-->Contract Labour Act-->Issues Related To Contract Workers",
+  "livelihood - labour welfare board claim": "search 'labour' > Labour-->Ap Labour Welfare Board-->Issues Related To Claims Under Schemes",
+  "livelihood - unsafe factory / no safety gear": "search 'factor' > Factories-->Implementation Of Factories Act, 1948.-->Safety Provisions Of The Act Are Not Followed",
+  "livelihood - long working hours / no leave": "... Factories-->...-->Working Hours Provisions / Non Provision Of Leave With Wages",
+  "agri - sugar factory cane payment pending": "search 'factor' > Sugar And Cane-->Cane Wing -->Suagr Factories Cane Payments",
+  "housing - housing colony lacks roads/water/drains/lights": "search 'infra' > AP State Housing Corporation Ltd-->Infrastructure Works In Housing Colonies-->Providing Infrastructure Facilities",
+  "housing - colony infrastructure needs repair": "search 'infra' > ...-->Repairs To Existing Infrastructure Works",
+  "education.college - junior college toilets/labs/hostel/playground": "search 'infra' > Intermediate Education-->Infrastructure Facilities to College-->(Toilets Facility / Facilities for Laboratories / Hostel Facility / Playground Facility)"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -349,7 +375,13 @@
   "Panchayat 'Complaints on Officials /Staff behaviour' and 'Misappropriation of funds'",
   "Factories approval-of-plan violations (accuse named factory)",
   "Mines mining-plan approvals (business)",
-  "Christian / Kapu corporation lines (community-named)"
+  "Christian / Kapu corporation lines (community-named)",
+  "Bonded labour 'Employers To Be Prosecuted' (blames; bonded labour: police/112 + Labour Dept)",
+  "Factories licence/plan violation lines (accuse named factory)",
+  "Labour Dept employee issues (staff)",
+  "Industries land allotment / medium industries (business)",
+  "Sports infra (not civic)",
+  "Kapu corporation (community-named)"
  ],
  "still_needed_keywords": [
   "garbage",
