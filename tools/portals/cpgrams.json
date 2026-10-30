@@ -1706,6 +1706,31 @@
     "iddocs.aadhaar - someone misused my Aadhaar": "Fraud Related Matters > Misuse of Aadhaar /data (also report to cyber crime 1930)"
    },
    "complete": true
+  },
+  "Revenue": {
+   "main_seen": {
+    "Pension Related": "staff - skip",
+    "Employee Related / Services Related": "staff - skip",
+    "Corruption/Malpractices related": "never auto",
+    "Technical Issues with Return Filing": [
+     "Not able to file Return",
+     "Discrepancy in GST No.",
+     "Not able to get GST No.",
+     "Others"
+    ],
+    "Opium Poppy Cultivation": "out of scope",
+    "State Taxes related matters": [
+     "Stamp Duty",
+     "GST Compensation",
+     "VAT",
+     "State Taxes",
+     "Others"
+    ]
+   },
+   "note": "No PAN / Income Tax option seen under Revenue. PAN route = outside CPGRAMS (Income Tax e-filing grievance; PAN agency) unless an Income Tax entry is found by searching 'Income' or 'Tax' in the ministry list.",
+   "app_map": {
+    "livelihood - small trader cannot get GST number": "Technical Issues with Return Filing > Not able to get GST No."
+   }
   }
  }
 }
