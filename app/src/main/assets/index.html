@@ -2080,6 +2080,9 @@ const PG=[
  {s:"water",m:["drinking","Rural Water Supply Engineering-->PWS Scheme-->Non supply of drinking water from Schemes"],c:[...JJM,"Water Availability Related","Nil Availability"]},
  // sanitation
  {s:"sanitation",k:"overhead tank|ohsr|water tank|ట్యాంకు",m:["drinking","Panchayati Raj-->GP-Drinking Water-->Cleaning of OHSR"],c:["Drinking Water and Sanitation","Jal Jeevan Mission related(Rural)","Water Quality Related","Others issues related to water accessibility"]},
+ {s:"sanitation",k:"mosquito|vector|fogging|దోమ",m:{d:"rd",hod:"Panchayati Raj",subj:"GP-Sanitation",ss:"Request for Vect or Control Measures"},c:["Drinking Water and Sanitation","Swachh Bharat Mission related(Rural)","Cleanliness of Villages","Water Stagnation/Overflowing or blockages of Drainages"]},
+ {s:"sanitation",k:"community (toilet|sanitary)|public toilet|సామూహిక మరుగు",m:{d:"rd",hod:"Panchayati Raj",subj:"GP-Sanitation",ss:"Complaint against Community Sanitary Complex Maintenance"},c:["Drinking Water and Sanitation","Swachh Bharat Mission related(Rural)","Toilet Related","Community Toilets Related"]},
+ {s:"sanitation",k:"encroach|unauthori[sz]ed construction|ఆక్రమణ",m:{d:"rd",hod:"Panchayati Raj",subj:"GP-Encroachments/ Layouts",ss:"Removal Of Encroachments",ssNote:"pgFacts"},c:["Panchayati Raj","Panchayat Development Related Matter","Civic Amenities"]},
  {s:"sanitation",k:"dog|కుక్క",m:["admin","Panchayati Raj-->GP Administration & Panchayatraj Administration Related-->Sterilization Of Stray Dogs"],c:["Panchayati Raj","Panchayat Development Related Matter","Civic Amenities"]},
  {s:"sanitation",k:"monkey|pig|కోతి|పంది",m:["admin","Panchayati Raj-->GP Administration & Panchayatraj Administration Related-->Catching of monkeys & Pigs"],c:["Panchayati Raj","Panchayat Development Related Matter","Civic Amenities"]},
  {s:"sanitation",sub:"garbage",m:["garbage","Panchayati Raj-->GP-Sanitation-->Request for removal And Lifting of Garbage"],c:[...SBM,"Waste Management","Solid Waste Management"]},
@@ -2170,6 +2173,7 @@ const PG=[
  {s:"housing",k:"cyclone|flood|తుఫాను|వరద",m:{d:"rev"},c:["State Governments/Others","State Government"]},
  {s:"housing",m:{d:"housing"},c:["Rural Development","Government Schemes Related","Pradhan Mantri Awaas Yojana Gramin (Rural)","Request/ Representation","Requests/ representations for new house, status of inclusion in PWL unknown (State Govt.)"]},
  // roads
+ {s:"roads",k:"encroach|unauthori[sz]ed construction|ఆక్రమణ",m:{d:"rd",hod:"Panchayati Raj",subj:"GP-Encroachments/ Layouts",ss:"Removal Of Encroachments",ssNote:"pgFacts"},c:["Panchayati Raj","Panchayat Development Related Matter","Civic Amenities"]},
  {s:"roads",k:"\\brc\\b|registration certificate|ఆర్సీ",m:["certificate","Transport-->Registrations-->Registraion Certificate Card Not Received"],c:["Road Transport and Highways","Transport Related","Road Transport [service related to Motor Vehicles]","MORTH"]},
  {s:"roads",k:"street ?light|వీధి దీప",m:["light","Panchayati Raj-->GP-Street Lights-->Request for Street Lights Repairs"],c:["Panchayati Raj","Panchayat Development Related Matter","Basic facilities in villages"]},
  {s:"roads",k:"national highway|\\bnh\\s?-?\\d|toll|జాతీయ రహదారి|టోల్",m:["road","National Highways Authority of India (NHAI)-->NH-Roads-->Maintenance / Quality / Repairs / Improvements/ New Construction/ Reconstruction"],c:["Road Transport and Highways","Construction & Maintenance of Roads [National Highways and State Roads]","Quality of Maintenance of National Highways","NHAI"],nh:1},

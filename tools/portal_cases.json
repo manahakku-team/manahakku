@@ -562,5 +562,23 @@ null,
 "agri",
 null,
 "below MSP"
+],
+[
+"Mosquitoes everywhere, need fogging in village",
+"sanitation",
+null,
+"Vect or Control"
+],
+[
+"Community toilet complex not maintained",
+"sanitation",
+"toilet",
+"Community Sanitary Complex"
+],
+[
+"Road encroached by shops, path blocked",
+"roads",
+null,
+"Removal Of Encroachments"
 ]
 ]
