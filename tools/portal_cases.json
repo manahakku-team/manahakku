@@ -1078,5 +1078,35 @@
   "nutrition",
   null,
   "Eggs"
+ ],
+ [
+  "Toilets in social welfare residential school are very bad",
+  "education",
+  null,
+  "Bathrooms And Toilets"
+ ],
+ [
+  "Need admission seat in gurukul residential school",
+  "education",
+  null,
+  "Student Admission In The School"
+ ],
+ [
+  "No maths teacher in residential school",
+  "education",
+  null,
+  "Principal /Subject Teachers"
+ ],
+ [
+  "Hostel cosmetic charges not paid to students",
+  "education",
+  null,
+  "Cosmetic Charges"
+ ],
+ [
+  "Gurukul residential school food menu not followed",
+  "education",
+  null,
+  "Diet Menu"
  ]
 ]
