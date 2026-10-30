@@ -2664,23 +2664,91 @@
     "(list may continue below)"
    ],
    "next_level": {
+    "ADIP Scheme": [
+     "Providing of Various Type of Aids and Assistive Devices",
+     "Providing of Motorized Tricycle and Wheelchair",
+     "Providing Cochlear Implant"
+    ],
+    "Artificial Limbs Manufacturing Corporation of India": [
+     "Request for Motorized tricycle",
+     "Request for Hearing AIDs",
+     "Request for Cochlear Implants",
+     "Malfunctioning of Aids and Assistive Device",
+     "Employee related (skip)"
+    ],
+    "National Handicapped Finance and Development Corporation": [
+     "Loan Assistance",
+     "Skill Training",
+     "Awareness Creation and Marketing Support"
+    ],
+    "National Institute": [
+     "PDUNIPPD Delhi",
+     "SVNIRTAR Cuttack",
+     "NILD Kolkata",
+     "NIEPVD Dehradun",
+     "AYJNISHD Mumbai",
+     "NIEPID Secunderabad (Telangana)",
+     "NIEPMD Chennai",
+     "ISLRTC New Delhi",
+     "NIMHR Sehore"
+    ],
+    "Chief Commissioner for Persons with Disabilities": [
+     "Non-Compliance of CCPD Order",
+     "State- Government Matter",
+     "Matter Pertaining to State Commissioner of Persons with Disabilities"
+    ],
+    "District Disability Rehabilitation Centres": [
+     "Registration",
+     "Grant-in-Aid",
+     "Assistance to registered institutions",
+     "Appeal",
+     "Application and grant of certificate of registration",
+     "Revocation of registration"
+    ],
+    "Deendayal Disabled Rehabilitation Scheme": "same as DDRC list (NGO grants) - skip",
+    "Scholarship Scheme for SwDs": [
+     "Pre-matric For Classes IX X",
+     "Pre-matric Scholarship for Students with Disabilities",
+     "Post-matric Scholarship for Students with Disabilities",
+     "Top Class Education for Students with Disabilities",
+     "National Overseas Scholarship for Students with Disabilities",
+     "National Fellowship for Persons with Disabilities",
+     "Free Coaching for Students with Disabilities"
+    ],
     "Policy and Act related Matter": {
-     "The Rehabilitation Council of India Act, 1992": [
-      "Distance Education Cell",
-      "Service training and Sensitization programme",
-      "Community Based Inclusive Development",
-      "National Board of Examination in Rehabilitation",
+     "Schemes for Implementation of RPwD Act 2016 SIPDA": [
+      "Creation of barrier free environment for the Persons with Disabilities",
+      "Unique Disability Identification UDID Project or Disability Certificate",
+      "Participation in Exhibitions/Stalls",
+      "SKILL DEVELOPMENT AND EMPLOYMENT"
+     ],
+     "Policy Related Matter": [
       "Violation of Rules Provisions",
+      "Respect /Dignity/ individual autonomy",
+      "Discrimination",
+      "Full and effective participation and inclusion in society",
+      "Respect for difference and acceptance",
+      "Equality of opportunity",
+      "Equality between men and women",
+      "Respect for the evolving capacities of children with disabilities",
+      "Harrasment (user's words only)",
+      "Policy Matter",
       "Other"
      ],
-     "The National Trust Act": "not seen",
-     "Policy Related Matter": "not seen",
-     "Schemes for Implementation of Right of Persons with Disabilities Act 2016 SIPDA": "not seen"
-    },
-    "Scholarship Scheme for SwDs": "NOT YET SEEN",
-    "ADIP Scheme": "NOT YET SEEN",
-    "Chief Commissioner for Persons with Disabilities": "NOT YET SEEN",
-    "District Disability Rehabilitation Centres": "NOT YET SEEN"
+     "The National Trust Act": [
+      "Disha Early Intervention and School Readiness Scheme for 0-10 years",
+      "VIKAAS Day Care Scheme",
+      "Disha-cum Vikaas Scheme (Day Care)",
+      "Samarth (Respite Care Residential Scheme)",
+      "Gharaunda (Group Home for Adults)",
+      "Badhte Kadam",
+      "Niramaya Health Insurance Scheme",
+      "Violation of Rules Provisions",
+      "Registration of Organizations",
+      "Other"
+     ],
+     "The Rehabilitation Council of India Act, 1992": "professional training - skip"
+    }
    },
    "app_map_draft": {
     "elderly/disabled - wheelchair, hearing aid, tricycle, artificial limb not given": "ADIP Scheme (next level TBD)",
@@ -2688,8 +2756,19 @@
     "elderly/disabled - ramp, accessibility, rights under RPwD Act": "Policy and Act > Schemes for Implementation of RPwD Act 2016 SIPDA / Chief Commissioner (TBD)",
     "elderly/disabled - district rehab centre not working": "District Disability Rehabilitation Centres (TBD)"
    },
-   "note": "Disability certificate / UDID and disability pension are state-run (AP/TS) first.",
-   "complete": false
+   "note": "Disability certificate (SADAREM in AP), UDID and disability pension are state-run first (Meekosam/Prajavani). App never asks the type of disability.",
+   "complete": true,
+   "app_map": {
+    "elderly - wheelchair / tricycle / hearing aid / artificial limb not given": "Scheme of Assistance... (ADIP Scheme) > Providing of Various Type of Aids and Assistive Devices / Providing of Motorized Tricycle and Wheelchair",
+    "elderly - device given but broken": "Artificial Limbs Manufacturing Corporation of India > Malfunctioning of Aids and Assistive Device",
+    "elderly - disability certificate / UDID card pending (after state)": "Policy and Act related Matter > SIPDA > Unique Disability Identification UDID Project or Disability Certificate",
+    "elderly - no ramp / accessibility in office, school, bus stand": "Policy and Act related Matter > SIPDA > Creation of barrier free environment for the Persons with Disabilities",
+    "elderly - disabled person refused service / discriminated": "Policy and Act related Matter > Policy Related Matter > Discrimination",
+    "education - disability scholarship not received": "Scholarship Scheme for SwDs > Pre-matric / Post-matric Scholarship for Students with Disabilities",
+    "livelihood - disabled person loan / skill training": "National Handicapped Finance and Development Corporation > Loan Assistance / Skill Training",
+    "health - Niramaya health insurance (intellectual disability)": "Policy and Act > The National Trust Act > Niramaya Health Insurance Scheme",
+    "elderly - state disability commissioner not acting": "Chief Commissioner for Persons with Disabilities > Matter Pertaining to State Commissioner of Persons with Disabilities"
+   }
   }
  }
 }
