@@ -1108,5 +1108,41 @@
   "education",
   null,
   "Diet Menu"
+ ],
+ [
+  "Urea sold above MRP at shop",
+  "agri",
+  null,
+  "more than MRP"
+ ],
+ [
+  "Fake pesticide sold, crop damaged",
+  "agri",
+  null,
+  "Spurious Pesticide"
+ ],
+ [
+  "Seeds given on subsidy did not germinate, crop lost",
+  "agri",
+  null,
+  "Inferior Quality Of Seed"
+ ],
+ [
+  "My crop not entered in e-crop booking",
+  "agri",
+  null,
+  "E-Crop booking"
+ ],
+ [
+  "Drip irrigation sanctioned but not installed",
+  "agri",
+  null,
+  "Drip & Sprinkler"
+ ],
+ [
+  "Farmer ex-gratia not received",
+  "agri",
+  null,
+  "Exgratia not received"
  ]
 ]
