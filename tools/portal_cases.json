@@ -1360,5 +1360,71 @@
   "power",
   null,
   "Electrical Accidents"
+ ],
+ [
+  "Children working in rice mill factory near village",
+  "child",
+  null,
+  "Child Workers To Work In The Factory"
+ ],
+ [
+  "Factory workers not given leave with wages",
+  "livelihood",
+  null,
+  "Leave With Wages"
+ ],
+ [
+  "Chemical gas leak from factory, no crisis group",
+  "livelihood",
+  null,
+  "Local Crisis Group"
+ ],
+ [
+  "Factory running without licence near houses",
+  "livelihood",
+  null,
+  "Without Having Valid Factory Licence"
+ ],
+ [
+  "Construction worker labour card renewal pending",
+  "livelihood",
+  null,
+  "Registration And Renewal"
+ ],
+ [
+  "Construction worker accident claim not paid by welfare board",
+  "livelihood",
+  null,
+  "Claims Under Schemes Of The Ap Building"
+ ],
+ [
+  "ESI hospital not treating, card active",
+  "health",
+  null,
+  "Esi"
+ ],
+ [
+  "Contract workers not paid properly",
+  "livelihood",
+  null,
+  "Contract Workers"
+ ],
+ [
+  "Factory makes us work 12 hours without overtime",
+  "livelihood",
+  null,
+  "Working Hours"
+ ],
+ [
+  "Gratuity not paid after retirement from private company",
+  "livelihood",
+  null,
+  "Gratuity"
+ ],
+ [
+  "Boy working in hotel, child labour",
+  "child",
+  null,
+  "Child Labour"
  ]
 ]
