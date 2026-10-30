@@ -1372,13 +1372,119 @@
       "THDC INDIA LIMITED"
      ]
     },
-    "Regulatory, Technical & Power Sector Governance (CEA Matters)": "not checked",
-    "E-Vehicle/EV Charging Infra": "not checked",
-    "Power Project Impacts – Safety, Environmental, Hazardous and Health Issues": "not checked (needed)",
-    "Power Tariff, Policies, Acts, Schemes etc.": "not checked (needed)",
-    "New and Renewable Energy (NRE) Matters": "not checked",
-    "Shareholder & Bondholder Payment/dividens -Related Issues": "skip",
-    "Research & Development, Training and Certification Matters": "skip",
+    "Regulatory, Technical & Power Sector Governance (CEA Matters)": [
+     "Electrical Safety and Accidents",
+     "Environment and Emission-related Matters",
+     "Right of Way (RoW), Route & Alignment of ISTS Transmission Lines",
+     "Distribution, Metering-related Policies / Regulations",
+     "R&D related Suggestions / Technical Innovation",
+     "Tariff and Commercial Matters",
+     "Power Policy and Planning",
+     "Legal and Regulatory Matters",
+     "Power Projects (Thermal, Hydro & Renewable Energy) related matters",
+     "Miscellaneous Technical Matters"
+    ],
+    "E-Vehicle/EV Charging Infra": [
+     "EV Charging Infra related matter",
+     "EV Tariff related matter",
+     "Universal charging system for EV",
+     "regulatory framework for EV ecosystem",
+     "Any other matter pertaining to E Vehicle/EV Charging"
+    ],
+    "Power Project Impacts – Safety, Environmental, Hazardous and Health Issues": {
+     "Dam Safety, Water Release and Downstream Impact Issues": [
+      "BBMB",
+      "DVC",
+      "NHPC Limited",
+      "NEEPCO",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Air, Water, Soil Pollution and Fly Ash Problems": [
+      "BBMB",
+      "DVC",
+      "NHPC Limited",
+      "NEEPCO",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Environmental Clearance and Compliance Issues": [
+      "BBMB",
+      "DVC",
+      "NHPC Limited",
+      "NEEPCO",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Transmission Lines, switchyard, substation and Towers – Safety Issues": [
+      "BBMB",
+      "DVC",
+      "NHPC Limited",
+      "NEEPCO",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Displacement and Livelihood Impact": [
+      "BBMB",
+      "DVC",
+      "NHPC Limited",
+      "NEEPCO",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Health Impacts on Local Communities": [
+      "BBMB",
+      "DVC",
+      "NHPC Limited",
+      "NEEPCO",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Any other matter pertaining to Power Projects Impact": [
+      "BBMB",
+      "DVC",
+      "NHPC Limited",
+      "NEEPCO",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ]
+    },
+    "Power Tariff, Policies, Acts, Schemes etc.": [
+     "Electricity tariff policy",
+     "Matters related to Electricity Act/ SHANTI Act",
+     "Power policy formulation, planning, and implementation issues",
+     "Reforms-linked or centrally sponsored schemes",
+     "Rules/ Regulations under Energy Conservation Act",
+     "Matters pertaining to Schemes like RDSS, UDAY, NFMS, CSRD etc.",
+     "Any other matter pertaining to Power Tariff, Policies, Acts, Schemes etc."
+    ],
+    "New and Renewable Energy (NRE) Matters": [
+     "Renewable Energy Projects & Battery Energy Storage Systems",
+     "Green Hydrogen / Green Ammonia Initiatives",
+     "Renewable Energy Policy, Bidding Guidelines & Flexibility Schemes",
+     "Any other matter pertaining to New and Renewable Energy (NRE) Matters"
+    ],
+    "Shareholder & Bondholder Payment/dividens -Related Issues": "skip (investors)",
+    "Research & Development, Training and Certification Matters": [
+     "Training & Skill Development Programmes",
+     "Energy Auditor / Energy Manager Certification & Training",
+     "Power Sector Research & Innovation",
+     "Miscelleneous Training Institutes related matters"
+    ],
     "Employee Services Related": "skip",
     "Pension Related": "skip",
     "Misbehaviour/ Corruption/ Harassment": "never auto",
@@ -1390,9 +1496,17 @@
     "power - crop damaged by POWERGRID tower line work": "Land Acquisition... > Crop Damage & Crop Compensation > Power Grid Corporation of India Ltd. (POWERGRID)",
     "power - transmission tower on farmland / RoW compensation": "Land Acquisition... > Right of Way (RoW) & Transmission Tower Issues > POWERGRID",
     "power - land taken for NTPC/central plant, compensation pending": "Land Acquisition... > Land Acquisition & Compensation Issues > NTPC Limited / Others",
-    "power - displaced family rehabilitation (central project)": "Land Acquisition... > Resettlement & Rehabilitation (R&R) Issues > (company)"
+    "power - displaced family rehabilitation (central project)": "Land Acquisition... > Resettlement & Rehabilitation (R&R) Issues > (company)",
+    "power - dangerous low-hanging line / exposed wire / unsafe pole (after DISCOM ignores)": "Regulatory, Technical & Power Sector Governance (CEA Matters) > Electrical Safety and Accidents",
+    "power - electrocution / electrical accident": "Regulatory... (CEA Matters) > Electrical Safety and Accidents  (and call 112 first)",
+    "power - meter / distribution policy issue": "Regulatory... (CEA Matters) > Distribution, Metering-related Policies / Regulations",
+    "power - fly ash / pollution from thermal plant": "Power Project Impacts... > Air, Water, Soil Pollution and Fly Ash Problems > (company e.g. NTPC Limited, else Others)",
+    "power - unsafe tower/substation near homes (central)": "Power Project Impacts... > Transmission Lines, switchyard, substation and Towers – Safety Issues > (company)",
+    "power - health impact near plant": "Power Project Impacts... > Health Impacts on Local Communities > (company)",
+    "power - village feeder/transformer upgrade under RDSS not done": "Power Tariff, Policies, Acts, Schemes etc. > Matters pertaining to Schemes like RDSS, UDAY, NFMS, CSRD etc.",
+    "power - anything else": "Miscellaneous matters of Ministry of Power (not yet seen) or State route"
    },
-   "complete": false
+   "complete": "yes except Miscellaneous matters screen"
   }
  }
 }
