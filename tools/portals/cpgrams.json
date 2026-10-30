@@ -1017,6 +1017,61 @@
    },
    "note": "Department of Health Research (ICMR side) - research labs, staff, grants. NOT the route for village health problems; use Health and Family Welfare / State Government. Not suggested by the app except maybe Public Health / Hospitals if they turn out relevant.",
    "app_map": {}
+  },
+  "Food and Public Distribution": {
+   "main": {
+    "Public Distribution System related": {
+     "Fair Price Shop": [
+      "Food grains not available at FPS",
+      "Less quantity of food grains",
+      "Quality of food grains",
+      "Overcharging/Unofficial charges",
+      "Behaviour of FPS dealer",
+      "E-Pos machine",
+      "Dealer not opening FPS timely",
+      "Corruption and Malpractice"
+     ],
+     "Ration Card related": [
+      "Issuance of Ration Card",
+      "Updation in ration card (Add/Remove/change of name and details etc.)",
+      "Transfer /Category change of Ration Card",
+      "Cancellation of Ration Card",
+      "E-KYC",
+      "One Nation One Ration Card (ONORC)"
+     ]
+    },
+    "Employee Services Related": "skip (staff; asks Organisation: CWC/Establishment/FCI/WDRA)",
+    "Pension Related": "skip (staff pensions: PPO etc.)",
+    "Misbehaviour/ Corruption/ Harassment": [
+     "Sexual Harassment",
+     "Corruption",
+     "Misbehaviour"
+    ],
+    "Storage & Inspection Related": "not checked",
+    "Policy Related matters": "not checked",
+    "Sugarcane, Sugar and Edible Oil related": "not checked"
+   },
+   "note": "Ration shops and cards are run by the state (AP: Civil Supplies; TS: Civil Supplies). State Government route / Meekosam / Prajavani first; this ministry if the state does not act.",
+   "app_map": {
+    "nutrition - ration not given at shop": "PDS related > Fair Price Shop > Food grains not available at FPS",
+    "nutrition - less rice/quantity": "... > Fair Price Shop > Less quantity of food grains",
+    "nutrition - bad quality rice": "... > Fair Price Shop > Quality of food grains",
+    "nutrition - extra money asked": "... > Fair Price Shop > Overcharging/Unofficial charges",
+    "nutrition - shop not opening on time": "... > Fair Price Shop > Dealer not opening FPS timely",
+    "nutrition - fingerprint / e-POS machine fails": "... > Fair Price Shop > E-Pos machine",
+    "nutrition - dealer behaviour": "... > Fair Price Shop > Behaviour of FPS dealer",
+    "nutrition/certs - new ration card not given": "PDS related > Ration Card related > Issuance of Ration Card",
+    "nutrition - add/remove family member, name correction": "... > Ration Card related > Updation in ration card",
+    "nutrition - card category change (e.g. APL to BPL) / transfer": "... > Ration Card related > Transfer /Category change of Ration Card",
+    "nutrition - card cancelled wrongly": "... > Ration Card related > Cancellation of Ration Card",
+    "nutrition - e-KYC failure": "... > Ration Card related > E-KYC",
+    "nutrition - migrant cannot get ration in other state/town": "... > Ration Card related > One Nation One Ration Card (ONORC)"
+   },
+   "never_auto": [
+    "Corruption and Malpractice",
+    "Misbehaviour/ Corruption/ Harassment"
+   ],
+   "complete": true
   }
  }
 }
