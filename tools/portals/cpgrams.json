@@ -1542,6 +1542,95 @@
     "power - old poles/lines/transformer need replacement (after DISCOM)": "Miscellaneous matters of Ministry of Power > Transmission & Distribution Infrastructure Issues"
    },
    "complete": true
+  },
+  "Road Transport and Highways": {
+   "main": {
+    "Construction & Maintenance of Roads [National Highways and State Roads]": {
+     "Quality of Maintenance of National Highways": "-> org",
+     "Quality of construction of National Highways": "-> org",
+     "Quality of maintenance of Bridges on National Highways": "-> org",
+     "Matters related to State Roads": [
+      "Ministry of Road Transport and Highways (MORTH)",
+      "National Highways Authority of India (NHAI)",
+      "NHIDCL"
+     ]
+    },
+    "Land Related": {
+     "Land Acquisition related": [
+      "NHAI HQ/PIU/PMU",
+      "NHIDCL",
+      "MORTH"
+     ],
+     "Land Compensation Related": [
+      "NHAI HQ/PIU/PMU",
+      "NHIDCL",
+      "MORTH"
+     ]
+    },
+    "User Fee/Toll Related": {
+     "Fastag/Toll Related": [
+      "NHAI",
+      "MORTH"
+     ],
+     "Wayside Amenities": [
+      "NHAI",
+      "MORTH"
+     ]
+    },
+    "Transport Related": {
+     "Road Transport [service related to Motor Vehicles]": [
+      "MORTH"
+     ],
+     "Road Safety Related to National Highways": [
+      "MORTH"
+     ],
+     "Road Safety on State Roads": [
+      "MORTH"
+     ]
+    },
+    "Policy Related": {
+     "Transport": [
+      "MORTH",
+      "NHAI",
+      "NHIDCL"
+     ],
+     "Encroachment on National Highways": "-> org",
+     "Access Permission on National Highways": "-> org",
+     "Unauthorised parking on National Highways": [
+      "MORTH",
+      "NHAI",
+      "NHIDCL"
+     ]
+    },
+    "Employee Services Related": "skip",
+    "Pension Related": "skip",
+    "Misbehaviour/Corruption/Harassment": {
+     "list": [
+      "Corruption",
+      "Misbehaviour/Harassment by officer/Staff",
+      "Sexual Harassment",
+      "Financial irregularities"
+     ],
+     "rule": "never auto"
+    }
+   },
+   "extra_fields": "After organisation, highway forms ask NH number / stretch (required); transport-safety forms ask State and Pincode. Guide must tell user to note the NH number (on the milestone) or nearest town-to-town stretch.",
+   "KEY_RULE": "Village roads, panchayat roads, R&B state roads = State Government route (Meekosam/Prajavani/State Govt). PMGSY roads = Rural Development. This ministry only for National Highways (NH number on milestone), tolls, and motor-vehicle services. DL/RC are issued by state RTO: AP/TS Transport Dept first; this route if Vahan/Sarathi (central) issue.",
+   "app_map": {
+    "roads - potholes / damaged National Highway": "Construction & Maintenance... > Quality of Maintenance of National Highways > NHAI",
+    "roads - NH construction poor / delayed": "Construction & Maintenance... > Quality of construction of National Highways > NHAI",
+    "roads - bridge on NH damaged": "Construction & Maintenance... > Quality of maintenance of Bridges on National Highways > NHAI",
+    "roads - state road (fallback if state route fails)": "Construction & Maintenance... > Matters related to State Roads > MORTH",
+    "roads - accident-prone spot / no signs / no lighting on NH": "Transport Related > Road Safety Related to National Highways > MORTH",
+    "roads - accident-prone spot on state road": "Transport Related > Road Safety on State Roads > MORTH (asks State + Pincode)",
+    "roads - encroachment on NH": "Policy Related > Encroachment on National Highways",
+    "roads - trucks parked on NH blocking": "Policy Related > Unauthorised parking on National Highways",
+    "roads - toll / FASTag problem": "User Fee/Toll Related > Fastag/Toll Related > NHAI",
+    "roads - no toilets/water at highway rest stops": "User Fee/Toll Related > Wayside Amenities > NHAI",
+    "roads/agri - land taken for NH, compensation pending": "Land Related > Land Compensation Related > NHAI HQ/PIU/PMU",
+    "iddocs.dl / iddocs.rc - licence or RC delayed (after state RTO)": "Transport Related > Road Transport [service related to Motor Vehicles] > MORTH"
+   },
+   "complete": true
   }
  }
 }
