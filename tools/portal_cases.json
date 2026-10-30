@@ -1204,5 +1204,35 @@
   "agri",
   null,
   "Hamali Charges"
+ ],
+ [
+  "RTC bus not coming on time to our village",
+  "roads",
+  null,
+  "Buses not coming on-time"
+ ],
+ [
+  "Bus stand toilets are dirty",
+  "roads",
+  null,
+  "Wash Rooms"
+ ],
+ [
+  "Need bus stop near our village, bus not halting",
+  "roads",
+  null,
+  "Request For Bus Stop"
+ ],
+ [
+  "National highway land compensation not paid",
+  "roads",
+  null,
+  "NH-Land Acquisition"
+ ],
+ [
+  "Potholes on NH 16 near our village",
+  "roads",
+  null,
+  "POT HOLES"
  ]
 ]
