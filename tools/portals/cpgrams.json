@@ -2210,6 +2210,109 @@
     "Vigilance matter related to ESIC",
     "harassment (only if user's own words)"
    ]
+  },
+  "Social Justice and Empowerment": {
+   "main": {
+    "Administration": {
+     "Establishment": [
+      "Pension",
+      "Others"
+     ],
+     "General Administration": "skip",
+     "Legal Matters": "skip",
+     "Vigilance": "never auto",
+     "Coordination": "skip",
+     "Parliament": "skip"
+    },
+    "Media, Monitoring and Social Auditing": [
+     "Publicity through Print/ Electronic outdoor and Social Media",
+     "I-MESA (Information-Monitoring, Evaluation and Social Audit)"
+    ],
+    "Finance related matter": "skip",
+    "Matters related to Commissions": [
+     "National Commission for Scheduled Caste",
+     "National Commission for Backward classes",
+     "National Commission for Safai Karmchari"
+    ],
+    "Educational Development": [
+     "National Fellowship for OBC Students (NF-OBC)",
+     "Construction of Hostels for OBC Boys and Girls",
+     "Dr. Ambedkar Scheme of Interest Subsidy on Educational Loan for Overseas Studies for OBCs and EBCs",
+     "Pre- Matric Scholarships Scheme for Scheduled Castes and Others",
+     "Post-Matric Scholarship for SC students",
+     "Central Sector Scholarship of Top Class Education for SC Students",
+     "National Overseas scholarship",
+     "National Fellowship for Scheduled Caste Students",
+     "Free Coaching Scheme for SC and OBC Students",
+     "Pre-Matric Scholarship for OBC Students",
+     "SHREYAS (OBC and Others)",
+     "PM-YASASVI (OBCs and others)",
+     "SHRESTHA - SC Students",
+     "Scholarship for PM cares Children"
+    ],
+    "Social Defence": [
+     "Atal Vayo Abhyuday Yojana (AVYAY)",
+     "National Action Plan for Drug Demand Reduction",
+     "SMILE",
+     "Nasha Mukt Bharat Abhiyaan (NMBA)",
+     "Comprehensive Rehabilitation for Welfare of transgender Persons",
+     "Comprehensive Rehabilitation of persons engaged in the act of Begging"
+    ],
+    "Social Empowerment": [
+     "Assistance for Skill Development of OBCs/DNTs/EBCs (NGO Scheme)",
+     "Grant in Aid to Voluntary Organisations working for Scheduled Castes",
+     "PM-AJAY",
+     "Reservation and Caste related issues"
+    ],
+    "Economic Empowerment": [
+     "Credit Enhancement Guarantee Scheme for SCs",
+     "Assistance to SCDCs",
+     "Self Employment Scheme for Rehabilitation of Manual Scavengers (SRMS)",
+     "VCF-SC",
+     "PM-DAKSH",
+     "NSFDC",
+     "NBCFDC",
+     "NSKFDC",
+     "SEED (DNT)",
+     "VCF-BC"
+    ],
+    "Social Protection": {
+     "Centrally Sponsored Scheme for implementation of PCR/POA": [
+      "Prevention of Atrocities Act 1989",
+      "Protection of Civil Rights Act 1955",
+      "Centrally Sponsored scheme for the implementation of the PCR Act 1955 and POA Act 1989"
+     ]
+    },
+    "Matters related to Autonomous Bodies": {
+     "Dr. Ambedkar Foundation": [
+      "Scheme",
+      "Atrocities",
+      "Award"
+     ],
+     "others": "skip"
+    },
+    "Miscellaneous": [
+     "Corporate Cell",
+     "Plan and Statistics matter",
+     "Narmada RR",
+     "Polavaram Project"
+    ]
+   },
+   "SAFETY": "App never asks or infers caste/community. Caste-linked options are suggested ONLY when the user's own report text names that scholarship/scheme; otherwise general education/livelihood route. Atrocity/discrimination: show 112 / police / free legal aid (DLSA) first; this route only on user's words. Never auto-suggest Vigilance, Reservation and Caste related issues.",
+   "app_map": {
+    "education - post-matric scholarship not received (user names it)": "Educational Development > Post-Matric Scholarship for SC students / PM-YASASVI (OBCs and others) - pick the one the user names",
+    "education - pre-matric scholarship (user names it)": "Educational Development > Pre-Matric Scholarships Scheme for Scheduled Castes and Others / Pre-Matric Scholarship for OBC Students",
+    "education - hostel (user names OBC hostel scheme)": "Educational Development > Construction of Hostels for OBC Boys and Girls",
+    "elderly - old-age home / senior citizen care (AVYAY)": "Social Defence > Atal Vayo Abhyuday Yojana (AVYAY)",
+    "health/social - drug addiction help for youth": "Social Defence > Nasha Mukt Bharat Abhiyaan (NMBA)  (helpline: verify before build)",
+    "social - begging / destitute rehabilitation": "Social Defence > Comprehensive Rehabilitation of persons engaged in the act of Begging",
+    "sanitation/livelihood - manual scavenging rehabilitation": "Economic Empowerment > Self Employment Scheme for Rehabilitation of Manual Scavengers (SRMS)",
+    "livelihood - skill training PM-DAKSH (user names it)": "Economic Empowerment > PM-DAKSH",
+    "village development under PM-AJAY (user names it)": "Social Empowerment > PM-AJAY",
+    "social - atrocity / untouchability (user's own words)": "Social Protection > ... > Prevention of Atrocities Act 1989 / Protection of Civil Rights Act 1955  (police/112 + DLSA first)",
+    "housing/agri - Polavaram displaced families rehabilitation (AP)": "Miscellaneous > Polavaram Project"
+   },
+   "complete": true
   }
  }
 }
