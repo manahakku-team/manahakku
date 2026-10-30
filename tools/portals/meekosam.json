@@ -49,7 +49,29 @@
    "School Education-->Private Un Aided Schools-->Schools Running Without Recognition",
    "School Education-->Private Un Aided Schools-->Running Additional Sections Without Permission",
    "Panchayati Raj Engineering-->Issues Related to Building Works (New or Repairs) in Execution-->Sanction Of Compound Walls and other works of ZPH Schools",
-   "Tribal Welfare Residential Educational Institutions Society-->Residential Schools-->Not Providing Proper Diet / Poor Quality Of Diet / Infrastructure Maintenance / Infrastructure Accommodation / Poor Quality Of Education / Allotment Of Institution / Change Of Course / New Institutions / Up Gradation Of Institutions"
+   "Tribal Welfare Residential Educational Institutions Society-->Residential Schools-->Not Providing Proper Diet / Poor Quality Of Diet / Infrastructure Maintenance / Infrastructure Accommodation / Poor Quality Of Education / Allotment Of Institution / Change Of Course / New Institutions / Up Gradation Of Institutions",
+   "School Education-->Private Un Aided Schools-->Delay In Sanctioning'S Of Recognitions",
+   "Samagra Shiksha-->Child Right (Right To Education Act)-->Complaints Regarding Right To Education In Private Schools",
+   "Differently Abled, Senior Citizens & Transgender-->Hostels Education-->Admission Into Special Schools"
+  ],
+  "water": [
+   "Rural Water Supply Engineering-->WATER QUALITY-->Complaint on quality of water supply.",
+   "Rural Water Supply Engineering-->WATER QUALITY-->Request For Water Quality Testing In HPs/PWS/CPWS Schemes",
+   "Rural Water Supply Engineering-->Comprehensive Protected Water Supply -->Request For Repair/Replacement Of Pipelines in CPWS Schemes",
+   "Rural Water Supply Engineering-->Comprehensive Protected Water Supply -->Cleaning Of SSF/RSF/SUMPS In CPWS Schemes",
+   "Rural Water Supply Engineering-->Comprehensive Protected Water Supply -->Cleaning Of SS Tank Related To CPWS",
+   "Panchayati Raj-->GP-Sanitation-->Request for Drainout rainwater/waste water",
+   "Public Health-->Poor Infrastructure & Facilities-->No Water supply",
+   "Samagra Shiksha-->Nadu-Nedu Works-->Toilets with running Water",
+   "Samagra Shiksha-->School Maintanance-->Toilets with running Water",
+   "Women Development and Child Welfare-->Homes-->Non Supply Of Water Facilities",
+   "Differently Abled, Senior Citizens & Transgender-->Senior Citizens Welfare-->Adequate Supply Of Water In Old Age Home",
+   "Water Resources (E-In-C)-->ICADPW-->Water Regulation-->Water Not Supplied Upto Tail End",
+   "Water Resources (E-In-C)-->ICADPW-->Irrigation-->Action On Individuals Not Allowing To Draw Water For Irrigation",
+   "AP Pollution Control Board-->Industrial Pollution Related -->Waste Water Discharges Into Rivers, Canals & Tanks",
+   "AP Pollution Control Board-->Industrial Pollution Related -->Waste Water Discharge Out Side Factories",
+   "Ground Water-->Construction Of Tube Wells And Bore Wells Referred By S.C.Corporation, I.T.D.A. ...-->Issues Related To Drilling Of Bore/ Tube Wells (user's words only)",
+   "Ground Water-->Ground Water Surveys Under A.P.W.A.L.T.A. ...-->Issues Related To Delays In Conducting Groundwater Surveys Under Ap Walta"
   ]
  },
  "app_map": {
@@ -71,11 +93,25 @@
   "sanitation - drain blocked / silt": "search 'drainage' > Panchayati Raj-->GP-Sanitation-->Request for drainage silt cleaning",
   "education - private school overcharging": "search 'schools' > School Education-->Private Un Aided Schools-->Fee Related Issues",
   "education - unrecognised school": "search 'schools' > School Education-->Private Un Aided Schools-->Schools Running Without Recognition",
-  "education - ZP high school compound wall": "search 'schools' > Panchayati Raj Engineering-->Issues Related to Building Works...-->Sanction Of Compound Walls and other works of ZPH Schools"
+  "education - ZP high school compound wall": "search 'schools' > Panchayati Raj Engineering-->Issues Related to Building Works...-->Sanction Of Compound Walls and other works of ZPH Schools",
+  "water.quality - dirty / salty / unsafe water": "search 'water' > Rural Water Supply Engineering-->WATER QUALITY-->Complaint on quality of water supply.",
+  "water.quality - want water tested": "search 'water' > Rural Water Supply Engineering-->WATER QUALITY-->Request For Water Quality Testing In HPs/PWS/CPWS Schemes",
+  "water - big scheme (CPWS) pipeline broken": "search 'water' > Rural Water Supply Engineering-->Comprehensive Protected Water Supply -->Request For Repair/Replacement Of Pipelines in CPWS Schemes",
+  "water - scheme filter/sump/tank dirty": "search 'water' > Rural Water Supply Engineering-->Comprehensive Protected Water Supply -->Cleaning Of SSF/RSF/SUMPS In CPWS Schemes",
+  "sanitation - rain/waste water stagnating": "search 'water' > Panchayati Raj-->GP-Sanitation-->Request for Drainout rainwater/waste water",
+  "sanitation - school toilet without water": "search 'water' > Samagra Shiksha-->School Maintanance-->Toilets with running Water",
+  "health - PHC no water supply": "search 'water' > Public Health-->Poor Infrastructure & Facilities-->No Water supply",
+  "agri - canal water not reaching tail-end fields": "search 'water' > Water Resources (E-In-C)-->ICADPW-->Water Regulation-->Water Not Supplied Upto Tail End",
+  "agri/water - factory waste water into canal/tank": "search 'water' > AP Pollution Control Board-->Industrial Pollution Related -->Waste Water Discharges Into Rivers, Canals & Tanks",
+  "education - free RTE seat refused in private school": "search 'schools' > Samagra Shiksha-->Child Right (Right To Education Act)-->Complaints Regarding Right To Education In Private Schools"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
-  "Endowment-->Temple Administration (religious)"
+  "Endowment-->Temple Administration (religious)",
+  "Prohibition and Excise-->Bars (excise matter)",
+  "Endowment-->Annadanam (religious)",
+  "Water Resources-->Water Users Association elections (election matter)",
+  "Water Resources-->Laying/Removal Of Unauthorised Pipes, Unauthorised Cultivation, Fish ponds (blames individuals)"
  ],
  "still_needed_keywords": [
   "garbage",
