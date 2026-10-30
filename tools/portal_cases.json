@@ -508,5 +508,59 @@ null,
 "nutrition",
 null,
 "pendign beyond SLA"
+],
+[
+"RBK collecting 3 kg extra paddy per bag",
+"agri",
+null,
+"Receiving Of Excess Commodity"
+],
+[
+"BPT paddy variety not being procured at RBK",
+"agri",
+null,
+"BPT Varities"
+],
+[
+"Portal showing less quantity than we cultivated",
+"agri",
+null,
+"Showing less quantity"
+],
+[
+"No lorry at RBK to take our paddy",
+"agri",
+null,
+"Transport vehicles not available"
+],
+[
+"Moisture test not done at RBK",
+"agri",
+null,
+"FAQ tests"
+],
+[
+"Coupons not given for paddy sale",
+"agri",
+null,
+"not distributing coupons"
+],
+[
+"Payment shows paid but money not in my bank for paddy",
+"agri",
+null,
+"Payment status showing Paid"
+],
+[
+"No hamalis at RBK to load paddy",
+"agri",
+null,
+"Hamalies"
+],
+[
+"Paddy bought below MSP",
+"agri",
+null,
+"below MSP"
 ]
 ]
