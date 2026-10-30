@@ -1426,5 +1426,41 @@
   "child",
   null,
   "Child Labour"
+ ],
+ [
+  "Belt shop selling liquor in our village",
+  "social",
+  null,
+  "Sale of liquor in Belt shops"
+ ],
+ [
+  "Naatu saara being made near the village",
+  "water",
+  null,
+  "Preparing of Naatu Saara"
+ ],
+ [
+  "Liquor shop selling above MRP",
+  "nutrition",
+  null,
+  "MRP Violations"
+ ],
+ [
+  "Liquor shop open till midnight",
+  "social",
+  null,
+  "Timing Violations in Liquor shops"
+ ],
+ [
+  "Adulterated toddy sold in village",
+  "health",
+  null,
+  "Sale of adulterated toddy"
+ ],
+ [
+  "Bar opened near school",
+  "education",
+  null,
+  "Bar located near"
  ]
 ]
