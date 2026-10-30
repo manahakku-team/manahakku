@@ -1,0 +1,95 @@
+{
+ "portal": "Meekosam (AP PGRS) meekosam.ap.gov.in",
+ "source": "owner screenshots 30 Oct 2026 (personal fields excluded)",
+ "how_it_works": "Form auto-fills person details from login. Location: tick 'Same as in Personal Information' or pick District > Mandal > GS/WS (village secretariat). Grievance: ONE search box 'Search for a Sub Subject' - type a keyword in English, pick 'Department-->Subject-->Sub-subject'. Then Remarks box (required).",
+ "privacy_warning": "Form shows name, date of birth, house no. Never screenshot or share this part.",
+ "search_keywords": {
+  "road": [
+   "Panchayati Raj Engineering-->Repairs to Roads-->Minor Repairs of roads CC Roads/BT Roads (within village/mandal)",
+   "Panchayati Raj Engineering-->Repairs to Roads-->Major Repairs of roads CC Roads/BT Roads (Village, Inter & Intra Mandal)",
+   "Panchayati Raj Engineering-->Sanction of New Road Works-->Sanction of new BT roads/CC Roads/gravel roads/metal roads",
+   "Panchayati Raj Engineering-->Sanction of New Road Works-->Sanction of Internal CC Roads in village",
+   "Panchayati Raj Engineering-->Issues related to already Sanctioned Road Works-->Non Completion of sanctioned work (repairs/new road)",
+   "Panchayati Raj Engineering-->Issues related to already Sanctioned Road Works-->Change Of Work Name (change of alignment/reach)",
+   "Panchayati Raj Engineering-->Issues related to already Sanctioned Road Works-->Cancellation Of Sanctioned Work",
+   "Panchayati Raj Engineering-->Quality of PR Works-->Complaint on Quality of PR Engineering Works (Roads & Buildings)",
+   "Roads and Buildings (E-in-C)-->R&B-Roads-->Repairs / Maintenance / Quality / Improvements/ New Construction/ Reconstruction",
+   "Roads and Buildings (E-in-C)-->R&B-Caution Boards-->Caution Boards & Road Safety",
+   "Roads and Buildings (E-in-C)-->R&B-Roads(NH)-->Repairs/ Maintenance / New Construction/ widening",
+   "Roads and Buildings (E-in-C)-->R&B - Road Safety(NH)-->Caution Boards, speed breakers (removal/ providing), sign boards, central line painting",
+   "National Highways Authority of India (NHAI)-->NH-Roads-->Maintenance / Quality / Repairs / Improvements/ New Construction/ Reconstruction",
+   "National Highways Authority of India (NHAI)-->NH-Caution Boards-->Caution Boards & Road Safety",
+   "Tribal Welfare Engineering-->Works-->Request For Providing Road / Drinking Water.",
+   "Survey Settlements and Land Records-->General Survey-->Survey Of Porambok Lands viz Canal,Road Etc"
+  ],
+  "drinking": [
+   "Rural Water Supply Engineering-->PWS Scheme-->Non supply of drinking water from Schemes",
+   "Rural Water Supply Engineering-->Transportation Of Drinking Water-->Request For Transportation Of Drinking Water",
+   "Panchayati Raj-->GP-Drinking Water-->Public/Private Tap Connection/Repairs",
+   "Panchayati Raj-->GP-Drinking Water-->Operation and Maintenace of Water Supply",
+   "Panchayati Raj-->GP-Drinking Water-->Cleaning of OHSR",
+   "Panchayati Raj-->GP-Drinking Water-->Cleaning of GLSR",
+   "Panchayati Raj-->GP-Drinking Water-->Jungle Clearance",
+   "Public Health-->Poor Infrastructure & Facilities-->No Drinking water",
+   "Water Resources (E-In-C)-->ICADPW-->Water Regulation-->Drinking Water Not Released",
+   "Samagra Shiksha-->Nadu-Nedu Works-->Drinking Water",
+   "Samagra Shiksha-->School Maintanance-->Drinking Water",
+   "Intermediate Education-->Infrastructure Facilities to College-->Drinking Water Facility",
+   "Collegiate Education-->Infrastructure Facilities To College-->Drinking Water Facility",
+   "AP Social Welfare Residential Educational Institutions Society (APSWREIS)-->Infrastructure Provision-->Non Availability Of Drinking Water",
+   "MJPAPBBCW Residential Education Society-->Drinking Water-->Non Availability Of Drinking Water",
+   "Differently Abled, Senior Citizens & Transgender-->Hostels Education-->Insufficient Drinking Water Facility",
+   "Institute of Preventive medicine (IPM) & Food Safety-->Violation of FSSAI Rules-->Running package drinking water plants without BIS & FSSAI Licence"
+  ],
+  "drainage": [
+   "Panchayati Raj-->GP-Sanitation-->Request for drainage silt cleaning"
+  ],
+  "schools": [
+   "School Education-->Private Un Aided Schools-->Fee Related Issues",
+   "School Education-->Private Un Aided Schools-->Schools Running Without Recognition",
+   "School Education-->Private Un Aided Schools-->Running Additional Sections Without Permission",
+   "Panchayati Raj Engineering-->Issues Related to Building Works (New or Repairs) in Execution-->Sanction Of Compound Walls and other works of ZPH Schools",
+   "Tribal Welfare Residential Educational Institutions Society-->Residential Schools-->Not Providing Proper Diet / Poor Quality Of Diet / Infrastructure Maintenance / Infrastructure Accommodation / Poor Quality Of Education / Allotment Of Institution / Change Of Course / New Institutions / Up Gradation Of Institutions"
+  ]
+ },
+ "app_map": {
+  "roads - village road potholes/repair": "search 'road' > Panchayati Raj Engineering-->Repairs to Roads-->Minor Repairs of roads CC Roads/BT Roads (within village/mandal)  (big damage: Major Repairs)",
+  "roads - no road / new road needed": "search 'road' > Panchayati Raj Engineering-->Sanction of New Road Works-->Sanction of new BT roads/CC Roads/gravel roads/metal roads (inside village: Sanction of Internal CC Roads in village)",
+  "roads - sanctioned road not finished": "search 'road' > Panchayati Raj Engineering-->Issues related to already Sanctioned Road Works-->Non Completion of sanctioned work (repairs/new road)",
+  "roads - poor quality new road": "search 'road' > Panchayati Raj Engineering-->Quality of PR Works-->Complaint on Quality of PR Engineering Works (Roads & Buildings)",
+  "roads - state (R&B) road between towns": "search 'road' > Roads and Buildings (E-in-C)-->R&B-Roads-->Repairs",
+  "roads - National Highway": "search 'road' > National Highways Authority of India (NHAI)-->NH-Roads-->Repairs",
+  "roads - no caution boards / speed breakers": "search 'road' > Roads and Buildings (E-in-C)-->R&B-Caution Boards-->Caution Boards & Road Safety",
+  "water - scheme water not supplied": "search 'drinking' > Rural Water Supply Engineering-->PWS Scheme-->Non supply of drinking water from Schemes",
+  "water - tanker needed (summer)": "search 'drinking' > Rural Water Supply Engineering-->Transportation Of Drinking Water-->Request For Transportation Of Drinking Water",
+  "water - tap broken / new tap": "search 'drinking' > Panchayati Raj-->GP-Drinking Water-->Public/Private Tap Connection/Repairs",
+  "water - overhead tank dirty": "search 'drinking' > Panchayati Raj-->GP-Drinking Water-->Cleaning of OHSR",
+  "water - village supply not maintained": "search 'drinking' > Panchayati Raj-->GP-Drinking Water-->Operation and Maintenace of Water Supply",
+  "water - school has no drinking water": "search 'drinking' > Samagra Shiksha-->School Maintanance-->Drinking Water",
+  "water - college has no drinking water": "search 'drinking' > Intermediate Education (junior college) or Collegiate Education (degree)-->Infrastructure Facilities To College-->Drinking Water Facility",
+  "water - PHC/hospital no drinking water": "search 'drinking' > Public Health-->Poor Infrastructure & Facilities-->No Drinking water",
+  "sanitation - drain blocked / silt": "search 'drainage' > Panchayati Raj-->GP-Sanitation-->Request for drainage silt cleaning",
+  "education - private school overcharging": "search 'schools' > School Education-->Private Un Aided Schools-->Fee Related Issues",
+  "education - unrecognised school": "search 'schools' > School Education-->Private Un Aided Schools-->Schools Running Without Recognition",
+  "education - ZP high school compound wall": "search 'schools' > Panchayati Raj Engineering-->Issues Related to Building Works...-->Sanction Of Compound Walls and other works of ZPH Schools"
+ },
+ "never_auto": [
+  "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
+  "Endowment-->Temple Administration (religious)"
+ ],
+ "still_needed_keywords": [
+  "garbage",
+  "toilet",
+  "streetlight",
+  "ration",
+  "pension",
+  "anganwadi",
+  "hospital / PHC",
+  "electricity / current",
+  "certificate",
+  "land / pattadar",
+  "house (housing)",
+  "school (government school infrastructure, mid-day meal)",
+  "college"
+ ]
+}
