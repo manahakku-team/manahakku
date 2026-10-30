@@ -1,21 +1,27 @@
 {
- "updated": "2026-10-30T19:01",
+ "updated": "2026-10-30T21:52",
  "last7days_trusted": {
   "ap": {
+   "Ananthapuramu": {
+    "health": 2,
+    "sanitation": 1,
+    "other": 2
+   },
    "(state-wide / unknown)": {
-    "other": 376,
+    "agri": 43,
+    "other": 383,
     "health": 23,
     "roads": 7,
-    "education": 26,
-    "agri": 40,
+    "women": 3,
+    "education": 28,
     "power": 30,
     "sanitation": 12,
     "elderly": 5,
+    "certs": 1,
     "child": 1,
     "water": 11,
     "livelihood": 1,
     "social": 2,
-    "women": 2,
     "nutrition": 5,
     "housing": 3
    },
@@ -23,10 +29,6 @@
     "health": 1,
     "agri": 1,
     "education": 1
-   },
-   "Ananthapuramu": {
-    "health": 1,
-    "other": 2
    },
    "Kurnool": {
     "other": 2
@@ -78,38 +80,38 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 181,
-    "water": 33,
+    "other": 185,
+    "water": 35,
+    "iddocs": 3,
+    "certs": 3,
+    "education": 14,
     "nutrition": 12,
-    "agri": 42,
+    "agri": 43,
     "elderly": 5,
     "child": 1,
-    "power": 8,
+    "power": 9,
     "livelihood": 4,
     "health": 24,
     "roads": 15,
-    "education": 13,
     "housing": 4,
     "sanitation": 6,
-    "certs": 2,
-    "iddocs": 2,
     "social": 1,
     "women": 2
+   },
+   "Hyderabad": {
+    "other": 12,
+    "water": 4,
+    "roads": 1,
+    "nutrition": 2,
+    "women": 1,
+    "health": 2,
+    "housing": 1
    },
    "Khammam": {
     "other": 1,
     "agri": 2,
     "nutrition": 1,
     "water": 1
-   },
-   "Hyderabad": {
-    "water": 4,
-    "roads": 1,
-    "other": 10,
-    "nutrition": 2,
-    "women": 1,
-    "health": 2,
-    "housing": 1
    },
    "Siddipet": {
     "education": 2,
