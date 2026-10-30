@@ -22,7 +22,7 @@ for(const [text,wantSec,wantSub,expect] of cases){
  if(!g)err="no rule";
  if(g&&BLAME.test(mk+" "+cp))err="blame word";
  if(expect&&!(mk+" "+cp).toLowerCase().includes(expect.toLowerCase()))err="expected '"+expect+"'";
- if(/college|degree|intermediate|కళాశాల/i.test(text)&&/School Education/.test(mk+cp))err="college sent to School Education";
+ if(/college|degree|intermediate|కళాశాల/i.test(text)&&(!/Intermediate Education|Collegiate|Technical Education|Higher Education/.test(mk)||/School Education and Literacy/.test(cp)))err="college sent to a school desk";
  if(err)fail++;else if(!isDefault)specific++;
  rows.push({text:text.slice(0,70),det:det.key+(det.key===sec?"":" (≠"+sec+")"),mk,cp,def:isDefault?"fallback":"exact",err});
 }

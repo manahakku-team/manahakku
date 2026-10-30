@@ -916,5 +916,47 @@
   "health",
   null,
   "Pension sanctioned But delay"
+ ],
+ [
+  "Mid day meal menu not followed, eggs not given",
+  "education",
+  null,
+  "Supply of Egg/chikki"
+ ],
+ [
+  "Mid day meal food quality is bad",
+  "education",
+  null,
+  "Food quality in MDM"
+ ],
+ [
+  "Vidya Kanuka kit not received",
+  "education",
+  null,
+  "Kit Not Received"
+ ],
+ [
+  "School classroom roof leaking",
+  "education",
+  null,
+  "Repairs"
+ ],
+ [
+  "No drinking water in junior college",
+  "education",
+  null,
+  "Drinking Water Facility"
+ ],
+ [
+  "Junior college not giving TC",
+  "education",
+  null,
+  "TC, Bonafide"
+ ],
+ [
+  "No benches in our school",
+  "education",
+  null,
+  "Furniture To Students"
  ]
 ]
