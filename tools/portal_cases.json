@@ -742,5 +742,89 @@
   "housing",
   null,
   "Selection Of Beneficiaries"
+ ],
+ [
+  "No doctor at our PHC for one month",
+  "health",
+  null,
+  "Shortage of Doctors"
+ ],
+ [
+  "PHC doctor writes medicines to buy outside",
+  "health",
+  null,
+  "Prescribtion to outside"
+ ],
+ [
+  "Snake bite medicine not available at PHC",
+  "health",
+  null,
+  "life saving drugs"
+ ],
+ [
+  "Blood test not done at PHC",
+  "health",
+  null,
+  "Non availability of Lab tests"
+ ],
+ [
+  "No electricity in PHC at night",
+  "health",
+  null,
+  "No Electricity"
+ ],
+ [
+  "Our village needs a new PHC",
+  "health",
+  null,
+  "Request to Construct New PHC"
+ ],
+ [
+  "Hearse vehicle not available to carry dead body from hospital",
+  "health",
+  null,
+  "Mahaprasthanam"
+ ],
+ [
+  "Many dengue cases in our village",
+  "health",
+  null,
+  "Issues not covered"
+ ],
+ [
+  "Adulterated oil sold in our village shop",
+  "nutrition",
+  null,
+  "Adulteration in oils"
+ ],
+ [
+  "Expired food packets sold in kirana shop",
+  "nutrition",
+  null,
+  "Expired/Infested"
+ ],
+ [
+  "Thalli Bidda Express vehicle not available after delivery",
+  "health",
+  null,
+  "Vehicle Not available"
+ ],
+ [
+  "JSY delivery incentive money not paid",
+  "health",
+  null,
+  "Janani Suraksha"
+ ],
+ [
+  "PMMVY maternity money not received",
+  "health",
+  null,
+  "PMMVY"
+ ],
+ [
+  "BP and sugar screening not done in village",
+  "health",
+  null,
+  "NCD screening"
  ]
 ]
