@@ -1167,11 +1167,20 @@
      "Right of Children to Free and Compulsory Education Act, 2009",
      "National Council for Teacher Education (NCTE) Act"
     ],
-    "Misbehaviour/ Corruption/ Harassment": "never auto",
-    "Pension Related": "skip",
-    "Training of Teachers": "skip",
-    "National Award for Teachers (NAT) Related": "skip",
-    "Miscellaneous Issues": "not checked"
+    "Misbehaviour/ Corruption/ Harassment": "-> board list incl. ULLAS (never auto)",
+    "Pension Related": "-> board list (skip, staff)",
+    "Training of Teachers": [
+     "NISHTHA (National Initiative for School Heads' and Teachers' Holistic Advancement)",
+     "National Council for Teacher Education (NCTE)"
+    ],
+    "National Award for Teachers (NAT) Related": "asks State/UT only",
+    "Miscellaneous Issues": [
+     "Statistics",
+     "APAAR ID",
+     "UDISE+",
+     "DIKSHA",
+     "Vidyanjali"
+    ]
    },
    "note": "Board choice: AP/TS state board and government/private state schools = 'All School Boards except CBSE'. Village schools are run by the state (AP: School Education; TS: School Education) - state route / Meekosam / Prajavani first.",
    "app_map": {
@@ -1194,7 +1203,8 @@
     "education - scholarship (NMMSS / NSP) not paid": "... > NMMSS and other scholarship related issues > NSP Payment Issue",
     "education - scholarship stuck in verification": "... > NSP Verification Issue",
     "education - RTE 25% seat / free education refused": "Government Policy/Act > Right of Children to Free and Compulsory Education Act, 2009",
-    "education - any other school scheme": "Government Scheme Related > Other Schemes > State: Andhra Pradesh / Telangana"
+    "education - any other school scheme": "Government Scheme Related > Other Schemes > State: Andhra Pradesh / Telangana",
+    "education - student APAAR ID problem": "Miscellaneous Issues > APAAR ID"
    },
    "complete": true,
    "never_auto": [
