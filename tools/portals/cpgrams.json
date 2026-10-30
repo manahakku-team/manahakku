@@ -2591,8 +2591,45 @@
      "Traditional Seasonal Resource Access of Nomadic",
      "Rights of Self Cultivation and Habitation"
     ],
-    "Scheduled Areas": "not yet seen (optional)",
-    "Dharti Aaba- Janjatiya Gram Utkarsh Abhiyan": "not yet seen (optional)"
+    "Scheduled Areas": [
+     "Schedule V Areas",
+     "Scheduling / De-scheduling of Tribes as ST- Listing of tribes as STs (never auto)"
+    ],
+    "Dharti Aaba- Janjatiya Gram Utkarsh Abhiyan": [
+     "100 TMMC - Multi-purpose Marketing Centres",
+     "Upgradation of Ashram Schools/Govt. Schools & Hostels for Tribals",
+     "FRA Claim Support",
+     "Centres of Competence for Sickle Cell Disease in 17 states",
+     "Misuse of funds (never auto)"
+    ],
+    "NGO /Voluntary organisation": [
+     "Grants in Aid to Voluntary Organisations working for the welfare of the Scheduled Tribes",
+     "Strengthening education among ST girls in low literacy districts",
+     "Misuse of funds (never auto)",
+     "Others"
+    ],
+    "Tribal Groups/ ST Related Data": {
+     "PVTGs": [
+      "Population",
+      "Infrastructure",
+      "Services",
+      "Livelihood",
+      "Coverage",
+      "Others"
+     ],
+     "Data and Evaluation Studies": "skip"
+    },
+    "skip": [
+     "Employee Services Related",
+     "Pension Related",
+     "Tribal Policy",
+     "Procurement",
+     "Finance Related Matters",
+     "Tribal Culture",
+     "PMU",
+     "Portals, IT",
+     "Corruption (never auto)"
+    ]
    },
    "SAFETY": "App never asks or infers ST status. Suggest only when report is about a tribal/agency area school, hostel, land or scheme by the user's own words; ITDA (state) route first.",
    "complete": true,
@@ -2606,8 +2643,53 @@
     "agri - grazing / fishing / water access in forest denied": "... > Community Rights as Grazing, Fishing and Access to Water Bodies in Forests",
     "housing/agri - displaced by project (e.g. Polavaram) rehabilitation": "Safeguard Rights for STs > Affirmative Action > Relief and rehabilitation measures for tribal groups displaced by development projects",
     "education - tribal scholarship not received (user names it)": "Tribal Welfare Funds > Scholarship",
-    "village development - PM-JANMAN / Adi Adarsh Gram (user names it)": "Tribal Welfare Funds > PM-JANMAN Funds / Pradhan Mantri Adi Adarsh Gram Yojna"
+    "village development - PM-JANMAN / Adi Adarsh Gram (user names it)": "Tribal Welfare Funds > PM-JANMAN Funds / Pradhan Mantri Adi Adarsh Gram Yojna",
+    "education - Ashram school / tribal hostel upgrade needed": "Dharti Aaba- Janjatiya Gram Utkarsh Abhiyan > Upgradation of Ashram Schools/Govt. Schools & Hostels for Tribals",
+    "agri - help filing forest rights claim": "Dharti Aaba... > FRA Claim Support",
+    "PVTG habitation lacks road/water/services (user says so)": "Tribal Groups/ ST Related Data > PVTGs > Infrastructure / Services"
    }
+  },
+  "Empowerment of Persons with Disabilities": {
+   "main": [
+    "Policy and Act related Matter",
+    "Scholarship Scheme for SwDs",
+    "Deendayal Disabled Rehabilitation Scheme",
+    "District Disability Rehabilitation Centres",
+    "Chief Commissioner for Persons with Disabilities",
+    "National Institute",
+    "National Handicapped Finance and Development Corporation",
+    "Artificial Limbs Manufacturing Corporation of India",
+    "Scheme of Assistance to Disabled Persons for Purchase and Fitting of Aids and Appliances ADIP Scheme)",
+    "National Awards For The Empowerment Of Persons With Disabilities",
+    "(list may continue below)"
+   ],
+   "next_level": {
+    "Policy and Act related Matter": {
+     "The Rehabilitation Council of India Act, 1992": [
+      "Distance Education Cell",
+      "Service training and Sensitization programme",
+      "Community Based Inclusive Development",
+      "National Board of Examination in Rehabilitation",
+      "Violation of Rules Provisions",
+      "Other"
+     ],
+     "The National Trust Act": "not seen",
+     "Policy Related Matter": "not seen",
+     "Schemes for Implementation of Right of Persons with Disabilities Act 2016 SIPDA": "not seen"
+    },
+    "Scholarship Scheme for SwDs": "NOT YET SEEN",
+    "ADIP Scheme": "NOT YET SEEN",
+    "Chief Commissioner for Persons with Disabilities": "NOT YET SEEN",
+    "District Disability Rehabilitation Centres": "NOT YET SEEN"
+   },
+   "app_map_draft": {
+    "elderly/disabled - wheelchair, hearing aid, tricycle, artificial limb not given": "ADIP Scheme (next level TBD)",
+    "education - disabled student scholarship": "Scholarship Scheme for SwDs (next level TBD)",
+    "elderly/disabled - ramp, accessibility, rights under RPwD Act": "Policy and Act > Schemes for Implementation of RPwD Act 2016 SIPDA / Chief Commissioner (TBD)",
+    "elderly/disabled - district rehab centre not working": "District Disability Rehabilitation Centres (TBD)"
+   },
+   "note": "Disability certificate / UDID and disability pension are state-run (AP/TS) first.",
+   "complete": false
   }
  }
 }
