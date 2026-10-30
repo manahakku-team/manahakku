@@ -207,5 +207,68 @@
   "aadhaar": "Unique Identification Authority of India (its own entry)",
   "pan": "Central Board of Direct Taxes (Income Tax)",
   "state_matters": "State Governments/Others -> State Government -> Andhra Pradesh or Telangana"
+ },
+ "ministry_categories": {
+  "Women and Child Development": {
+   "main": {
+    "National Commission for Women (NCW)": [
+     "Acid Attack issues",
+     "Cyber Crime against women",
+     "Dowry Death Case",
+     "Dowry Harassment Case",
+     "Outraging modesty of Women/Molestation Police Apathy against women",
+     "Domestic Violence",
+     "Rape/Attempt to Rape Case",
+     "Right to exercise choice in marriage/Honour Crimes",
+     "Sex selective abortion/female foeticide/amniocentesis",
+     "Sexual Assault / Harassment",
+     "Trafficking / Prostitution of Women",
+     "Complaint related to NRI",
+     "Administration matter related to NCW"
+    ],
+    "Child Protection / Adoption / Awards": [
+     "National Commission for Protection of Child Rights (NCPCR)",
+     "Central Adoption Resource Authority (CARA)",
+     "Pradhan Mantri Rashtriya Bal Puraskar",
+     "PM Cares for Children"
+    ],
+    "Government Schemes Related/ Welfare Programs": [
+     "Anganwadi Infrastructure, Human Resources and Funds",
+     "Anganwadi Services SNP - Matters relating to Supplementary Nutrition (including SNP/SAG)",
+     "Anganwadi Services ECCE - Matters related to Early Childhood Care and Education",
+     "Anganwadi Services Others - Poshan Abhiyaan, Growth Monitoring, Home Visits etc",
+     "Anganwadi Beneficiary Data and other Poshan Tracker related matters",
+     "Mission Shakti (Women related) Sambal Scheme",
+     "Mission Shakti (Women related) Samarthya Scheme",
+     "Mission Vatsalya (Safety, Security & Welfare of Children)",
+     "Policy / Act matter relating to Women Welfare"
+    ],
+    "Savtribai Phule National Institute of Women and Child Development (SPNIWCD)": [
+     "Issues related to Training",
+     "All Administrative matters"
+    ],
+    "Employee Services Related": [
+     "Establishment and other residual matters related to Central Social Welfare Board (CSWB)",
+     "Establishment and other residual matters related to Food and Nutrition Board (FNB)",
+     "Establishment and other residual matters related to Rashtriya Mahila Kosh (RMK)",
+     "General Administration",
+     "Outsourcing/manpower related matters",
+     "Appointment of Chairperson / Members in Autonomous Bodies"
+    ],
+    "Pension Related": null,
+    "Misbehaviour/Corruption/Harassment": [
+     "Corruption",
+     "Misbehaviour / Harassment",
+     "Sexual Harassment",
+     "Vigilance"
+    ],
+    "Media related": null
+   },
+   "note": "Main categories with null go straight to the description box (2000 chars). Anganwadi is run by the state: try State Government (AP/TS) first; use this ministry route for scheme-level problems or when the state does not act.",
+   "app_map": {
+    "food (anganwadi part)": "Government Schemes Related/ Welfare Programs > pick the Anganwadi line that matches (building/staff/funds, nutrition food, preschool, Poshan Tracker data)"
+   },
+   "out_of_scope_for_app": "NCW and crime categories are personal/police matters; the app does not take these reports and must point to 181 women helpline / 112 / 1098 instead."
+  }
  }
 }
