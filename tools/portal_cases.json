@@ -1,0 +1,1430 @@
+[
+ [
+  "No drinking water in our village for 10 days, taps dry",
+  "water",
+  "supply",
+  "Non supply of drinking water"
+ ],
+ [
+  "We need a water tanker, summer shortage",
+  "water",
+  "supply",
+  "Transportation Of Drinking Water"
+ ],
+ [
+  "Tap water is dirty and smells bad",
+  "water",
+  "quality",
+  "WATER QUALITY"
+ ],
+ [
+  "మా గ్రామంలో తాగునీరు రావడం లేదు",
+  "water",
+  "supply",
+  "Non supply"
+ ],
+ [
+  "Pipeline broken near the school road, water leaking",
+  "water",
+  "supply",
+  "Pipelines"
+ ],
+ [
+  "Overhead tank not cleaned for months",
+  "water",
+  "supply",
+  "Cleaning of OHSR"
+ ],
+ [
+  "School has no drinking water for children",
+  "water",
+  "supply",
+  "Samagra Shiksha"
+ ],
+ [
+  "Drains blocked and overflowing on main street",
+  "sanitation",
+  "drain",
+  "drainage silt"
+ ],
+ [
+  "Rain water stagnating near houses, mosquitoes",
+  "sanitation",
+  "drain",
+  "Drainout rainwater"
+ ],
+ [
+  "Garbage not collected for two weeks",
+  "sanitation",
+  "garbage",
+  "Lifting of Garbage"
+ ],
+ [
+  "చెత్త తీయడం లేదు",
+  "sanitation",
+  "garbage",
+  "Garbage"
+ ],
+ [
+  "Toilet incentive money not paid under Swachh Bharat",
+  "sanitation",
+  "toilet",
+  "Pending Bills related IHHLs"
+ ],
+ [
+  "Stray dogs biting children in the village",
+  "sanitation",
+  null,
+  "Stray Dogs"
+ ],
+ [
+  "PHC has no medicines for fever",
+  "health",
+  null,
+  "Non availability of Medicines"
+ ],
+ [
+  "PHC building roof is broken and leaking",
+  "health",
+  null,
+  "Broken Buildings"
+ ],
+ [
+  "Dengue cases rising in our village",
+  "health",
+  null,
+  "Vector Borne"
+ ],
+ [
+  "Aarogyasri card not accepted at hospital",
+  "health",
+  null,
+  "Jan Arogya"
+ ],
+ [
+  "Ration shop not giving rice this month",
+  "nutrition",
+  null,
+  "PDS - FP Shops"
+ ],
+ [
+  "New ration card not given for one year",
+  "nutrition",
+  null,
+  "Rice Cards"
+ ],
+ [
+  "Fingerprint not working at ration shop e-KYC",
+  "nutrition",
+  null,
+  "E-Pos"
+ ],
+ [
+  "Anganwadi not giving eggs to children",
+  "nutrition",
+  null,
+  "Eggs"
+ ],
+ [
+  "Pregnant women not getting anganwadi meals",
+  "nutrition",
+  null,
+  "Pregnant Women"
+ ],
+ [
+  "Mid-day meal food is bad in the school",
+  "nutrition",
+  null,
+  "PM Poshan"
+ ],
+ [
+  "Government junior college in our village has no students and looks abandoned",
+  "education",
+  null,
+  "Intermediate Education"
+ ],
+ [
+  "Degree college toilets are broken",
+  "education",
+  null,
+  "Collegiate Education"
+ ],
+ [
+  "It has been observed government intermediate degree has been lacking students and is looking like a forbidden area",
+  "education",
+  null,
+  "Intermediate Education"
+ ],
+ [
+  "మా ఊరి ప్రభుత్వ కళాశాలలో విద్యార్థులు లేరు",
+  "education",
+  null,
+  "Higher Education"
+ ],
+ [
+  "Teachers absent from school most days",
+  "education",
+  null,
+  "Teachers Absent"
+ ],
+ [
+  "Private school charging very high fee",
+  "education",
+  null,
+  "Fee Related"
+ ],
+ [
+  "Private school refused RTE free seat",
+  "education",
+  null,
+  "Right To Education"
+ ],
+ [
+  "Children dropping out of school to work",
+  "education",
+  null,
+  "out of school"
+ ],
+ [
+  "School toilets not usable",
+  "education",
+  null,
+  "Toilets with running Water"
+ ],
+ [
+  "TC not given by the school",
+  "education",
+  null,
+  "Certificates Related"
+ ],
+ [
+  "Child labour in brick kiln near our village",
+  "child",
+  null,
+  "Child Labour"
+ ],
+ [
+  "Women not safe on the road at night",
+  "women",
+  null,
+  "NCW"
+ ],
+ [
+  "Old age pension stopped for three months",
+  "elderly",
+  null,
+  "Pension disbursement delayed"
+ ],
+ [
+  "Wheelchair not given to disabled person",
+  "elderly",
+  null,
+  "Tricycle and Wheelchair"
+ ],
+ [
+  "SADAREM disability certificate slot not available",
+  "elderly",
+  null,
+  "Sadarem"
+ ],
+ [
+  "NREGA wages not paid for 2 months",
+  "livelihood",
+  null,
+  "Pending wage payments"
+ ],
+ [
+  "Shop owner not paying wages",
+  "livelihood",
+  null,
+  "Private Establishments"
+ ],
+ [
+  "PF claim pending for 6 months",
+  "livelihood",
+  null,
+  "PF"
+ ],
+ [
+  "Fishermen lost nets in cyclone, no relief",
+  "livelihood",
+  null,
+  "Loss of Boats Nets"
+ ],
+ [
+  "House construction incomplete, bill not paid",
+  "housing",
+  null,
+  "Payment Of Bills To Housing Beneficiaries"
+ ],
+ [
+  "Housing colony has no road or water",
+  "housing",
+  null,
+  "Housing Colonies"
+ ],
+ [
+  "Need a house, applied long back",
+  "housing",
+  null,
+  "PWL"
+ ],
+ [
+  "Village road full of potholes",
+  "roads",
+  null,
+  "Potholes Repairs"
+ ],
+ [
+  "No road to our hamlet",
+  "roads",
+  null,
+  "Sanction of new"
+ ],
+ [
+  "Road work stopped half way, not completed",
+  "roads",
+  null,
+  "Non Completion"
+ ],
+ [
+  "New road broke within 3 months, poor quality",
+  "roads",
+  null,
+  "Quality of PR"
+ ],
+ [
+  "National Highway 16 has big potholes",
+  "roads",
+  null,
+  "NHAI"
+ ],
+ [
+  "Street lights not working in our colony",
+  "roads",
+  null,
+  "Street Lights"
+ ],
+ [
+  "మా రోడ్డు గుంతలతో నిండి ఉంది",
+  "roads",
+  null,
+  "Repairs"
+ ],
+ [
+  "Frequent power cuts every evening",
+  "power",
+  null,
+  "Frequent Power Cutting"
+ ],
+ [
+  "Low voltage, motors not running",
+  "power",
+  null,
+  "Voltage"
+ ],
+ [
+  "Transformer burnt, no power for 3 days",
+  "power",
+  null,
+  "Transformer"
+ ],
+ [
+  "Electric wire hanging low, dangerous",
+  "power",
+  null,
+  "Poles Shifting"
+ ],
+ [
+  "Farm power less than 9 hours",
+  "power",
+  null,
+  "9 Hours"
+ ],
+ [
+  "Caste certificate delayed at MRO office",
+  "certs",
+  "revenue",
+  "Revenue"
+ ],
+ [
+  "Birth certificate not given by panchayat",
+  "certs",
+  "birthdeath",
+  "Birth & Death"
+ ],
+ [
+  "Wrong details printed in MeeSeva certificate",
+  "certs",
+  "revenue",
+  "MeeSeva"
+ ],
+ [
+  "Aadhaar fingerprint fails, pension stopped",
+  "iddocs",
+  "aadhaar",
+  "Authentication"
+ ],
+ [
+  "Aadhaar name correction pending",
+  "iddocs",
+  "aadhaar",
+  "Aadhaar Update"
+ ],
+ [
+  "PAN card not received after applying",
+  "iddocs",
+  "pan",
+  "Delay in PAN"
+ ],
+ [
+  "PAN Aadhaar link failing",
+  "iddocs",
+  "pan",
+  "Linking of PAN"
+ ],
+ [
+  "RC card not received from transport office",
+  "iddocs",
+  "rc",
+  "Registraion Certificate Card"
+ ],
+ [
+  "Voter card not received",
+  "iddocs",
+  "voter",
+  null
+ ],
+ [
+  "Crop insurance claim not received",
+  "agri",
+  null,
+  "Crop Insurance"
+ ],
+ [
+  "Paddy purchase centre not opened, harvest is ready",
+  "agri",
+  null,
+  "not opened"
+ ],
+ [
+  "RBK not buying our paddy",
+  "agri",
+  null,
+  "Paddy Procurement"
+ ],
+ [
+  "PM-KISAN money stopped",
+  "agri",
+  null,
+  "PMKISAN"
+ ],
+ [
+  "Canal water not reaching tail end fields",
+  "agri",
+  null,
+  "Tail End"
+ ],
+ [
+  "Wild boars destroying crops",
+  "agri",
+  null,
+  "Wild Animals"
+ ],
+ [
+  "Fertiliser urea shortage",
+  "agri",
+  null,
+  "fertilizers"
+ ],
+ [
+  "Village tank needs repair",
+  "agri",
+  null,
+  "Water Bodies"
+ ],
+ [
+  "Discrimination against our community in temple entry",
+  "social",
+  null,
+  "Social Welfare"
+ ],
+ [
+  "Ration vehicle not coming to our street",
+  "nutrition",
+  null,
+  "Door to Door Ration"
+ ],
+ [
+  "Ration dealer weighing less on the scale",
+  "nutrition",
+  null,
+  "Weights & Measures"
+ ],
+ [
+  "Paddy sold at RBK but payment not received for 30 days",
+  "agri",
+  null,
+  "Farmer Payments"
+ ],
+ [
+  "Gunny bags not given at purchase centre",
+  "agri",
+  null,
+  "Gunny Bags"
+ ],
+ [
+  "Ration shop is 6 km away, need a new shop in our village",
+  "nutrition",
+  null,
+  "Creation of new FP shop"
+ ],
+ [
+  "Free gas cylinder booked 20 days ago but not delivered",
+  "nutrition",
+  null,
+  "Cylinder booked not delivered"
+ ],
+ [
+  "Deepam cylinder delivered but money not credited to bank",
+  "nutrition",
+  null,
+  "Amount not Credited"
+ ],
+ [
+  "Gas subsidy not coming to bank account",
+  "nutrition",
+  null,
+  "Gas subsidy"
+ ],
+ [
+  "Ration vehicle giving less rice than entitlement",
+  "nutrition",
+  null,
+  "Entitlement"
+ ],
+ [
+  "Rice card application pending for 4 months",
+  "nutrition",
+  null,
+  "pendign beyond SLA"
+ ],
+ [
+  "RBK collecting 3 kg extra paddy per bag",
+  "agri",
+  null,
+  "Receiving Of Excess Commodity"
+ ],
+ [
+  "BPT paddy variety not being procured at RBK",
+  "agri",
+  null,
+  "BPT Varities"
+ ],
+ [
+  "Portal showing less quantity than we cultivated",
+  "agri",
+  null,
+  "Showing less quantity"
+ ],
+ [
+  "No lorry at RBK to take our paddy",
+  "agri",
+  null,
+  "Transport vehicles not available"
+ ],
+ [
+  "Moisture test not done at RBK",
+  "agri",
+  null,
+  "FAQ tests"
+ ],
+ [
+  "Coupons not given for paddy sale",
+  "agri",
+  null,
+  "not distributing coupons"
+ ],
+ [
+  "Payment shows paid but money not in my bank for paddy",
+  "agri",
+  null,
+  "Payment status showing Paid"
+ ],
+ [
+  "No hamalis at RBK to load paddy",
+  "agri",
+  null,
+  "Hamalies"
+ ],
+ [
+  "Paddy bought below MSP",
+  "agri",
+  null,
+  "below MSP"
+ ],
+ [
+  "Mosquitoes everywhere, need fogging in village",
+  "sanitation",
+  null,
+  "Vect or Control"
+ ],
+ [
+  "Community toilet complex not maintained",
+  "sanitation",
+  "toilet",
+  "Community Sanitary Complex"
+ ],
+ [
+  "Road encroached by shops, path blocked",
+  "roads",
+  null,
+  "Removal Of Encroachments"
+ ],
+ [
+  "Asked for NREGA work but no work given",
+  "livelihood",
+  null,
+  "demanded but not provided"
+ ],
+ [
+  "No shade or water at NREGA worksite",
+  "livelihood",
+  null,
+  "Worksite facilities"
+ ],
+ [
+  "Job card name wrong",
+  "livelihood",
+  null,
+  "Job card issue"
+ ],
+ [
+  "Hand pump not working in our street",
+  "water",
+  null,
+  "Bore Wells"
+ ],
+ [
+  "Potholes on panchayat road",
+  "roads",
+  null,
+  "Potholes Repairs"
+ ],
+ [
+  "ZP high school has no compound wall",
+  "education",
+  null,
+  "Compound Walls"
+ ],
+ [
+  "Village water tank motor burnt",
+  "water",
+  null,
+  "Repair To Electric Motar"
+ ],
+ [
+  "Pipeline not laid to our street, need extension",
+  "water",
+  null,
+  "Extension Of Pipeline"
+ ],
+ [
+  "Widow pension not sanctioned",
+  "elderly",
+  null,
+  "eligibility & sanctions"
+ ],
+ [
+  "DWACRA group loan interest not credited",
+  "livelihood",
+  null,
+  "Sunnavaddi"
+ ],
+ [
+  "Land record mutation pending at MRO, patta not given",
+  "agri",
+  null,
+  "Survey Settlements"
+ ],
+ [
+  "Patta sub division not done for my land",
+  "agri",
+  null,
+  "Online Patta Sub division"
+ ],
+ [
+  "Land extent in resurvey is less than on ground",
+  "agri",
+  null,
+  "Mismatch of extent"
+ ],
+ [
+  "Boundary stones between our fields not fixed, need demarcation",
+  "agri",
+  null,
+  "F lines (Boundary demarcation)"
+ ],
+ [
+  "Survey of my field not done even after paying fee",
+  "agri",
+  null,
+  "Survey Not Done"
+ ],
+ [
+  "Encumbrance certificate not issued from meeseva",
+  "certs",
+  null,
+  "(EC &CC)"
+ ],
+ [
+  "Registered document not handed over by sub registrar office",
+  "certs",
+  null,
+  "Document Not Handed Over."
+ ],
+ [
+  "Certified copy of sale deed not given",
+  "certs",
+  null,
+  "Issue Of Certified Copy"
+ ],
+ [
+  "Resurvey RoR wrong name in land record",
+  "housing",
+  null,
+  "Resurvey - RoR Corrections"
+ ],
+ [
+  "House construction bill not paid for 6 months",
+  "housing",
+  null,
+  "Payment Of Bills To Housing Beneficiaries"
+ ],
+ [
+  "My bank account number is wrong in housing, bill stuck",
+  "housing",
+  null,
+  "Correction Of Bank Account Details"
+ ],
+ [
+  "Cement not given for my sanctioned house",
+  "housing",
+  null,
+  "Release /Issue Of Materials"
+ ],
+ [
+  "House half built and stuck for one year",
+  "housing",
+  null,
+  "Incompletion/Pending Houses"
+ ],
+ [
+  "No roads and drainage in our housing colony",
+  "housing",
+  null,
+  "Providing Infrastructure Facilities"
+ ],
+ [
+  "Beneficiary died, legal heir needs house bill",
+  "housing",
+  null,
+  "Legal Heir"
+ ],
+ [
+  "Patta not returned after paying housing loan",
+  "housing",
+  null,
+  "Patta/Lpc Not Returned"
+ ],
+ [
+  "I have no house, applied two years ago but name not in list",
+  "housing",
+  null,
+  "Selection Of Beneficiaries"
+ ],
+ [
+  "No doctor at our PHC for one month",
+  "health",
+  null,
+  "Shortage of Doctors"
+ ],
+ [
+  "PHC doctor writes medicines to buy outside",
+  "health",
+  null,
+  "Prescribtion to outside"
+ ],
+ [
+  "Snake bite medicine not available at PHC",
+  "health",
+  null,
+  "life saving drugs"
+ ],
+ [
+  "Blood test not done at PHC",
+  "health",
+  null,
+  "Non availability of Lab tests"
+ ],
+ [
+  "No electricity in PHC at night",
+  "health",
+  null,
+  "No Electricity"
+ ],
+ [
+  "Our village needs a new PHC",
+  "health",
+  null,
+  "Request to Construct New PHC"
+ ],
+ [
+  "Hearse vehicle not available to carry dead body from hospital",
+  "health",
+  null,
+  "Mahaprasthanam"
+ ],
+ [
+  "Many dengue cases in our village",
+  "health",
+  null,
+  "Issues not covered"
+ ],
+ [
+  "Adulterated oil sold in our village shop",
+  "nutrition",
+  null,
+  "Adulteration in oils"
+ ],
+ [
+  "Expired food packets sold in kirana shop",
+  "nutrition",
+  null,
+  "Expired/Infested"
+ ],
+ [
+  "Thalli Bidda Express vehicle not available after delivery",
+  "health",
+  null,
+  "Vehicle Not available"
+ ],
+ [
+  "JSY delivery incentive money not paid",
+  "health",
+  null,
+  "Janani Suraksha"
+ ],
+ [
+  "PMMVY maternity money not received",
+  "health",
+  null,
+  "PMMVY"
+ ],
+ [
+  "BP and sugar screening not done in village",
+  "health",
+  null,
+  "NCD screening"
+ ],
+ [
+  "Baby kit not given after delivery",
+  "health",
+  null,
+  "Baby kit"
+ ],
+ [
+  "Medical shop selling tablets above MRP",
+  "health",
+  null,
+  "Higher Prices"
+ ],
+ [
+  "Medical shop sold expired medicine",
+  "health",
+  null,
+  "Expiry Drugs"
+ ],
+ [
+  "Hospital refused treatment under Aarogyasri card",
+  "health",
+  null,
+  "Denial of treatment"
+ ],
+ [
+  "Aarogyasri health card not received",
+  "health",
+  null,
+  "Not received NTR Vaidya Seva"
+ ],
+ [
+  "108 ambulance came 2 hours late",
+  "health",
+  null,
+  "Ambulance Delayed"
+ ],
+ [
+  "104 vehicle not coming to our village for months",
+  "health",
+  null,
+  "Vehicle not coming to village"
+ ],
+ [
+  "Aarogya Asara amount not credited after surgery",
+  "health",
+  null,
+  "Amount not Credited"
+ ],
+ [
+  "No medicines in area hospital",
+  "health",
+  null,
+  "Shortage Of Drugs"
+ ],
+ [
+  "Patients food in government hospital is poor",
+  "health",
+  null,
+  "Poor Quality Of Diet"
+ ],
+ [
+  "Sadarem slot booking not available",
+  "certs",
+  null,
+  "Slot Booking"
+ ],
+ [
+  "Sadarem gave less than 40 percent",
+  "health",
+  null,
+  "less than 40%"
+ ],
+ [
+  "X-ray machine not working in district hospital",
+  "health",
+  null,
+  "Repair To The Equipment"
+ ],
+ [
+  "ART centre has no stock of HIV medicines",
+  "health",
+  null,
+  "No stock of ART"
+ ],
+ [
+  "HIV pension sanctioned but not paid for months",
+  "health",
+  null,
+  "Pension sanctioned But delay"
+ ],
+ [
+  "Mid day meal menu not followed, eggs not given",
+  "education",
+  null,
+  "Supply of Egg/chikki"
+ ],
+ [
+  "Mid day meal food quality is bad",
+  "education",
+  null,
+  "Food quality in MDM"
+ ],
+ [
+  "Vidya Kanuka kit not received",
+  "education",
+  null,
+  "Kit Not Received"
+ ],
+ [
+  "School classroom roof leaking",
+  "education",
+  null,
+  "Repairs"
+ ],
+ [
+  "No drinking water in junior college",
+  "education",
+  null,
+  "Drinking Water Facility"
+ ],
+ [
+  "Junior college not giving TC",
+  "education",
+  null,
+  "TC, Bonafide"
+ ],
+ [
+  "No benches in our school",
+  "education",
+  null,
+  "Furniture To Students"
+ ],
+ [
+  "Applied for tricycle two years back, not sanctioned",
+  "elderly",
+  null,
+  "Tricycle applied but not sanctioned"
+ ],
+ [
+  "Wheelchair given is broken, poor quality",
+  "elderly",
+  null,
+  "Wheel Chair quality is not good"
+ ],
+ [
+  "Hearing aid not given",
+  "elderly",
+  null,
+  "Hearing Aids"
+ ],
+ [
+  "Food in disabled hostel is poor",
+  "elderly",
+  null,
+  "Poor Quality Of Food"
+ ],
+ [
+  "Need wheelchair for my father",
+  "health",
+  null,
+  "Wheel Chair applied"
+ ],
+ [
+  "Anganwadi centre not opening at 9 am",
+  "nutrition",
+  null,
+  "Not Opening In Time"
+ ],
+ [
+  "Anganwadi closes early every day",
+  "child",
+  null,
+  "Closing Early"
+ ],
+ [
+  "Old age home food is poor",
+  "elderly",
+  null,
+  "Better Quality Food In Old Age Home"
+ ],
+ [
+  "My son is not looking after me, need maintenance",
+  "elderly",
+  null,
+  "Maintenance From Son"
+ ],
+ [
+  "Adoption application pending for long",
+  "child",
+  null,
+  "Delay In Forwarding"
+ ],
+ [
+  "Applied for guardianship certificate, not issued",
+  "elderly",
+  null,
+  "Applied For Guardianship"
+ ],
+ [
+  "No preschool kit or toys in anganwadi",
+  "nutrition",
+  null,
+  "Preschool Kit"
+ ],
+ [
+  "Teacher beating children in school",
+  "child",
+  null,
+  "Corporal Punishment"
+ ],
+ [
+  "Domestic violence complaint given, no action taken by protection officer",
+  "women",
+  null,
+  "Delay In Action Taken"
+ ],
+ [
+  "Husband beating me every day",
+  "women",
+  null,
+  "Domestic Violence Act"
+ ],
+ [
+  "Pregnant women not getting eggs at anganwadi",
+  "nutrition",
+  null,
+  "Eggs Not Provided To Beneficiaries"
+ ],
+ [
+  "Balamrutham packet not given for my baby",
+  "child",
+  null,
+  "Balamrutham Packet"
+ ],
+ [
+  "Girl Child Protection Scheme instalment amount not received",
+  "women",
+  null,
+  "GCPS Instalment"
+ ],
+ [
+  "Child marriage reported but no action taken",
+  "child",
+  null,
+  "No Action Taken On Stoppage"
+ ],
+ [
+  "Eggs not given to children at anganwadi",
+  "nutrition",
+  null,
+  "Eggs"
+ ],
+ [
+  "Toilets in social welfare residential school are very bad",
+  "education",
+  null,
+  "Bathrooms And Toilets"
+ ],
+ [
+  "Need admission seat in gurukul residential school",
+  "education",
+  null,
+  "Student Admission In The School"
+ ],
+ [
+  "No maths teacher in residential school",
+  "education",
+  null,
+  "Principal /Subject Teachers"
+ ],
+ [
+  "Hostel cosmetic charges not paid to students",
+  "education",
+  null,
+  "Cosmetic Charges"
+ ],
+ [
+  "Gurukul residential school food menu not followed",
+  "education",
+  null,
+  "Diet Menu"
+ ],
+ [
+  "Urea sold above MRP at shop",
+  "agri",
+  null,
+  "more than MRP"
+ ],
+ [
+  "Fake pesticide sold, crop damaged",
+  "agri",
+  null,
+  "Spurious Pesticide"
+ ],
+ [
+  "Seeds given on subsidy did not germinate, crop lost",
+  "agri",
+  null,
+  "Inferior Quality Of Seed"
+ ],
+ [
+  "My crop not entered in e-crop booking",
+  "agri",
+  null,
+  "E-Crop booking"
+ ],
+ [
+  "Drip irrigation sanctioned but not installed",
+  "agri",
+  null,
+  "Drip & Sprinkler"
+ ],
+ [
+  "Farmer ex-gratia not received",
+  "agri",
+  null,
+  "Exgratia not received"
+ ],
+ [
+  "PM Kisan money not credited this year",
+  "agri",
+  null,
+  "PM KISAN – Amount not credited"
+ ],
+ [
+  "Crop damaged in cyclone, enumeration not done",
+  "agri",
+  null,
+  "Crop damage enumeration"
+ ],
+ [
+  "Annadatha Sukhibhava amount not received",
+  "agri",
+  null,
+  "Annadatha Sukhibhava"
+ ],
+ [
+  "Cooperative bank not returning my land documents after loan repaid",
+  "agri",
+  null,
+  "Release of Documents"
+ ],
+ [
+  "Input subsidy not received after flood",
+  "agri",
+  null,
+  "Input subsidy"
+ ],
+ [
+  "Mango crop damaged in cyclone, no input subsidy",
+  "agri",
+  null,
+  "Entire Damaged Area"
+ ],
+ [
+  "Groundnut sold at procurement center but amount not received",
+  "agri",
+  null,
+  "payment not released"
+ ],
+ [
+  "Commission agent charging more at market yard",
+  "agri",
+  null,
+  "Commission Agents"
+ ],
+ [
+  "Rythu bazar selling vegetables higher than price board",
+  "agri",
+  null,
+  "Higher Price Than The Price Board"
+ ],
+ [
+  "Copra centre made us pay hamali charges",
+  "agri",
+  null,
+  "Hamali Charges"
+ ],
+ [
+  "RTC bus not coming on time to our village",
+  "roads",
+  null,
+  "Buses not coming on-time"
+ ],
+ [
+  "Bus stand toilets are dirty",
+  "roads",
+  null,
+  "Wash Rooms"
+ ],
+ [
+  "Need bus stop near our village, bus not halting",
+  "roads",
+  null,
+  "Request For Bus Stop"
+ ],
+ [
+  "National highway land compensation not paid",
+  "roads",
+  null,
+  "NH-Land Acquisition"
+ ],
+ [
+  "Potholes on NH 16 near our village",
+  "roads",
+  null,
+  "POT HOLES"
+ ],
+ [
+  "Driving licence card not received by post",
+  "iddocs",
+  "dl",
+  "Driving Licence Card Not Received By Post"
+ ],
+ [
+  "RC card not received after registration",
+  "roads",
+  null,
+  "Registraion Certificate Card Not Received"
+ ],
+ [
+  "Loan closed but vehicle still showing finance online",
+  "roads",
+  null,
+  "Showing Finance In Online"
+ ],
+ [
+  "Need speed breaker near school on R&B road",
+  "roads",
+  null,
+  "R&B-Speed Breakers"
+ ],
+ [
+  "Dead tree on roadside about to fall",
+  "roads",
+  null,
+  "Dead Trees"
+ ],
+ [
+  "Canal silt not removed, water not reaching",
+  "agri",
+  null,
+  "Silt Not Removed"
+ ],
+ [
+  "Weeds blocking irrigation canal",
+  "agri",
+  null,
+  "Jungle Clearance"
+ ],
+ [
+  "Irrigation project land compensation not paid",
+  "agri",
+  null,
+  "Payment For Compensation Of Land"
+ ],
+ [
+  "Water not reaching tail end of canal",
+  "agri",
+  null,
+  "Tail End"
+ ],
+ [
+  "Village tank full of silt, not desilted",
+  "agri",
+  null,
+  "Silt Not Removed From The Existing Tanks"
+ ],
+ [
+  "Canal breach not closed, water wasted",
+  "agri",
+  null,
+  "Breaches"
+ ],
+ [
+  "Sand being dug from the river near village",
+  "agri",
+  null,
+  "Digging Of Sand"
+ ],
+ [
+  "Lift irrigation motor not working, fields dry",
+  "agri",
+  null,
+  "Repairs To Lift Irrigation"
+ ],
+ [
+  "Vehicle data missing, not allowing transaction at RTO",
+  "roads",
+  null,
+  "Not Allowing For Transactions"
+ ],
+ [
+  "Bridge on our village road is damaged",
+  "roads",
+  null,
+  "R&B-Bridges"
+ ],
+ [
+  "R&B road widening land compensation not paid",
+  "roads",
+  null,
+  "R&B-Land Acquisition"
+ ],
+ [
+  "Electricity meter burnt, need new meter",
+  "power",
+  null,
+  "Meter Burnt"
+ ],
+ [
+  "Current bill very high this month, wrong reading",
+  "power",
+  null,
+  "Wrong Data On Bill"
+ ],
+ [
+  "Power trips many times a day",
+  "power",
+  null,
+  "Interuptions"
+ ],
+ [
+  "Transco tower laid in my field, crop compensation not paid",
+  "power",
+  null,
+  "Crop/land compensation"
+ ],
+ [
+  "Buffalo died of electric shock, compensation not paid",
+  "power",
+  null,
+  "Electrical Accidents"
+ ],
+ [
+  "Children working in rice mill factory near village",
+  "child",
+  null,
+  "Child Workers To Work In The Factory"
+ ],
+ [
+  "Factory workers not given leave with wages",
+  "livelihood",
+  null,
+  "Leave With Wages"
+ ],
+ [
+  "Chemical gas leak from factory, no crisis group",
+  "livelihood",
+  null,
+  "Local Crisis Group"
+ ],
+ [
+  "Factory running without licence near houses",
+  "livelihood",
+  null,
+  "Without Having Valid Factory Licence"
+ ],
+ [
+  "Construction worker labour card renewal pending",
+  "livelihood",
+  null,
+  "Registration And Renewal"
+ ],
+ [
+  "Construction worker accident claim not paid by welfare board",
+  "livelihood",
+  null,
+  "Claims Under Schemes Of The Ap Building"
+ ],
+ [
+  "ESI hospital not treating, card active",
+  "health",
+  null,
+  "Esi"
+ ],
+ [
+  "Contract workers not paid properly",
+  "livelihood",
+  null,
+  "Contract Workers"
+ ],
+ [
+  "Factory makes us work 12 hours without overtime",
+  "livelihood",
+  null,
+  "Working Hours"
+ ],
+ [
+  "Gratuity not paid after retirement from private company",
+  "livelihood",
+  null,
+  "Gratuity"
+ ],
+ [
+  "Boy working in hotel, child labour",
+  "child",
+  null,
+  "Child Labour"
+ ]
+]
