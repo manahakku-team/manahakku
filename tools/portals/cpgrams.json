@@ -407,6 +407,70 @@
     "sanitation/water (river pollution)": "Issues related to Rivers > Pollution of Other Rivers except Ganga",
     "dam displacement / rehabilitation": "Dam Related Rehabilitation Issues > Peninsular River"
    }
+  },
+  "Minority Affairs": {
+   "main": {
+    "Scholarship Scheme": [
+     "Pre-matric Scholarship Scheme",
+     "Post-matric Scholarship Scheme",
+     "Merit-cum-means Scholarship Scheme"
+    ],
+    "Anglo Indian Matters": null,
+    "Maulana Azad National Fellowship Scheme": null,
+    "Padho Pardesh Scheme": null,
+    "Begum Hazrat Mahal National Scholarship": null,
+    "Nai Udaan Scheme": null,
+    "Usttad Scheme": [
+     "Usttad",
+     "Hunar Haat"
+    ],
+    "Naya Savera Free Coaching and Allied Scheme": null,
+    "Hamari Dharohar Schme": null,
+    "Nai Roshni Scheme": null,
+    "Nai Manzil Scheme": null,
+    "Seekho Aur Kamao Scheme": null,
+    "PM Vikas Scheme": [
+     "Skilling and Training Component",
+     "Leadership and Entrepreneurship Component (earlier Nai Roshni)",
+     "Education Component (earlier Nai Manzil)",
+     "Infrastructure Development Component (through Hub and Spoke Villages)"
+    ],
+    "National Minority Development and Finance Corporation matters": null,
+    "Pradhan Mantri Jan Vikas Karyakram Scheme": null,
+    "Jiyo Parsi Scheme": "not checked",
+    "Shahari Waqf Sampatti Vikas Yojna": "not checked",
+    "Qaumi Waqf Board Taraqqiati Scheme": "not checked",
+    "Research Studies, Monitoring and Evaluation of Development Schemes including Publicity": "not checked",
+    "Maulana Azad Education Foundation Matters": "not checked",
+    "15 Point Programme": "not checked",
+    "Sachar Committee Report": "not checked",
+    "Haj Management": "not checked",
+    "Dargah Matters": "not checked",
+    "Madarsa Education Scheme": "not checked",
+    "Establishment Matters": "not checked",
+    "General Admn": "not checked",
+    "Coordination Matters": "not checked",
+    "Budget Matters": "not checked",
+    "Institutional Management (IM) Division": "not checked",
+    "Commissioner for Linguistic Minorities in India (CLM)": "not checked",
+    "Vigilance Matters": "not checked",
+    "Waqf Matters": "not checked",
+    "National Commission for Minorities": "not checked",
+    "Haj Committee of India": "not checked",
+    "Dargah Khawaja Sahib, Ajmer": "not checked",
+    "Central Waqf Council": "not checked",
+    "CLM MOMA": "not checked",
+    "National Waqf Development Corporation Limited": "not checked",
+    "Maulana Azad Education Foundation": "not checked",
+    "National Minority Development and Finance Corporation": "not checked"
+   },
+   "note": "null = goes straight to description box. Religious-institution matters (Haj, Dargah, Waqf, Madarsa) are outside Mana Hakku scope (religious/neutrality rule): never suggest them.",
+   "app_map": {
+    "education (minority scholarship not received)": "Scholarship Scheme > Pre-matric / Post-matric / Merit-cum-means (pick by class level)",
+    "livelihood (minority skilling/loan)": "PM Vikas Scheme > Skilling and Training Component",
+    "village infrastructure in minority-concentration area": "Pradhan Mantri Jan Vikas Karyakram Scheme"
+   },
+   "caution": "App asks no one's religion. Only suggest this ministry when the user's own text names a minority scholarship or scheme; otherwise use the general education / livelihood route."
   }
  }
 }
