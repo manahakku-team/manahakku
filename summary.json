@@ -1,24 +1,33 @@
 {
- "updated": "2026-10-30T10:05",
+ "updated": "2026-10-30T13:14",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "water": 30,
-    "agri": 38,
-    "health": 23,
-    "other": 162,
+    "other": 171,
+    "agri": 40,
+    "health": 24,
+    "water": 31,
+    "livelihood": 3,
+    "elderly": 4,
     "roads": 14,
     "power": 7,
     "nutrition": 10,
     "education": 13,
-    "elderly": 3,
+    "housing": 4,
     "sanitation": 6,
     "certs": 2,
-    "housing": 3,
     "iddocs": 2,
     "social": 1,
-    "women": 2,
-    "livelihood": 2
+    "women": 2
+   },
+   "Khammam": {
+    "agri": 2,
+    "nutrition": 1,
+    "water": 1
+   },
+   "Ranga Reddy": {
+    "agri": 1,
+    "other": 1
    },
    "Adilabad": {
     "agri": 2,
@@ -58,14 +67,6 @@
    "Karimnagar": {
     "agri": 1
    },
-   "Khammam": {
-    "agri": 1,
-    "nutrition": 1,
-    "water": 1
-   },
-   "Ranga Reddy": {
-    "other": 1
-   },
    "Nalgonda": {
     "women": 1
    },
@@ -80,14 +81,11 @@
    }
   },
   "ap": {
-   "Kurnool": {
-    "other": 2
-   },
    "(state-wide / unknown)": {
-    "other": 356,
-    "agri": 33,
-    "health": 20,
-    "power": 28,
+    "other": 363,
+    "power": 29,
+    "health": 22,
+    "agri": 34,
     "education": 25,
     "elderly": 5,
     "roads": 5,
@@ -98,6 +96,9 @@
     "women": 2,
     "nutrition": 5,
     "housing": 3
+   },
+   "Kurnool": {
+    "other": 2
    },
    "West Godavari": {
     "agri": 3,
