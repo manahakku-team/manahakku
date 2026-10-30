@@ -313,5 +313,25 @@ null
 "Old age pension not received for three months",
 "elderly",
 null
+],
+[
+"My Aadhaar address update is pending for 2 months, ration stopped because of it",
+"iddocs",
+"aadhaar"
+],
+[
+"PAN card name spelling wrong, correction not done",
+"iddocs",
+"pan"
+],
+[
+"ఓటరు కార్డు లో వయసు తప్పుగా ఉంది, సవరణ కావడం లేదు",
+"iddocs",
+"voter"
+],
+[
+"Birth certificate not given by the panchayat for 2 months",
+"certs",
+"birthdeath"
 ]
 ]

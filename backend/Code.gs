@@ -62,7 +62,7 @@ const REPORTS = 'Reports';
 const SUGGESTIONS = 'Suggestions';
 const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note'];
 const OUTCOMES = ['solved', 'progress', 'none'];
-const GRV_SYSTEMS = ['pgrs', 'prajavani', 'cpgrams', 'other'];
+const GRV_SYSTEMS = ['pgrs', 'prajavani', 'cpgrams', 'uidai', 'incometax', 'eci', 'other'];
 const FLAGS = 'Flags';
 const FLAG_COLS = ['created', 'id', 'reason', 'note', 'state', 'dev'];
 const FLAG_REASONS = ['false', 'abusive', 'personal', 'duplicate', 'other'];
@@ -91,7 +91,7 @@ const DISTRICTS = {
     'Peddapalli', 'Rajanna Sircilla', 'Ranga Reddy', 'Sangareddy', 'Siddipet', 'Suryapet', 'Vikarabad', 'Wanaparthy',
     'Warangal', 'Yadadri Bhuvanagiri']
 };
-const SECTORS = ['water', 'sanitation', 'health', 'nutrition', 'education', 'child', 'women', 'elderly', 'livelihood', 'housing', 'roads', 'power', 'social', 'certs', 'agri'];
+const SECTORS = ['water', 'sanitation', 'health', 'nutrition', 'education', 'child', 'women', 'elderly', 'livelihood', 'housing', 'roads', 'power', 'social', 'certs', 'iddocs', 'agri'];
 const URGENCY = ['high', 'medium', 'low'];
 const STATUSES = ['reported', 'acknowledged', 'progress', 'resolved'];
 const MAX_ROWS_RETURNED = 20000;   // every report from the start
@@ -506,7 +506,7 @@ function doGet(e) {
     grv_system: String(r[idx.grv_system] || ''),
     // The number itself is never sent: looking it up on a grievance portal could show who filed it.
     grv_number: '',
-    grv_filed: !!String(r[idx.grv_number] || '').trim(),
+    grv_filed: !!String(r[idx.grv_number] || '').trim() || (!!String(r[idx.grv_system] || '').trim() && !!r[idx.grv_date]),
     grv_date: r[idx.grv_date] instanceof Date ? r[idx.grv_date].toISOString() : String(r[idx.grv_date] || ''),
     grv_by: String(r[idx.grv_by] || ''),
     reporter_says: OUTCOMES.indexOf(String(r[idx.reporter_says])) >= 0 ? String(r[idx.reporter_says]) : '',
@@ -618,6 +618,34 @@ function doPost(e) {
       if (!isOwner_(key) && !(stored && stored === key && byNow !== 'claimed')) return json_({ ok: false, error: 'not_allowed' });
       sh.getRange(k + 2, idx.reporter_says + 1).setValue(value);
       sh.getRange(k + 2, idx.reporter_says_date + 1).setValue(new Date().toISOString());
+      return json_({ ok: true });
+    } finally {
+      lock.releaseLock();
+    }
+  }
+
+  // Aadhaar, PAN and voter card reports: the reporter only says "filed" (yes); no request number is ever sent or stored.
+  if (d.type === 'filed') {
+    const id = String(d.id || '').slice(0, 40), key = String(d.key || '');
+    const system = GRV_SYSTEMS.indexOf(d.system) >= 0 ? d.system : 'other';
+    if (!/^r[a-z0-9]{4,30}$/.test(id) || !/^[A-Za-z0-9]{16,40}$/.test(key)) return json_({ ok: false, error: 'bad_request' });
+    const lock = LockService.getScriptLock();
+    lock.waitLock(10000);
+    try {
+      const sh = sheet_(REPORTS, REPORT_COLS);
+      const idx = ensureColumns_(sh, REPORT_COLS);
+      const ids = sh.getRange(2, idx.id + 1, Math.max(1, sh.getLastRow() - 1), 1).getValues().map(x => String(x[0]));
+      const k = ids.indexOf(id);
+      if (k < 0) return json_({ ok: false, error: 'not_found' });
+      const stored = String(sh.getRange(k + 2, idx.edit_key + 1).getValue() || '');
+      let by;
+      if (isOwner_(key)) by = 'owner';
+      else if (stored && stored === key) by = 'owner_phone';
+      else return json_({ ok: false, error: 'not_allowed' });
+      sh.getRange(k + 2, idx.grv_system + 1).setValue(system);
+      sh.getRange(k + 2, idx.grv_number + 1).setValue('');
+      sh.getRange(k + 2, idx.grv_date + 1).setValue(new Date().toISOString());
+      sh.getRange(k + 2, idx.grv_by + 1).setValue(by);
       return json_({ ok: true });
     } finally {
       lock.releaseLock();
