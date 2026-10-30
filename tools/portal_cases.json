@@ -958,5 +958,35 @@
   "education",
   null,
   "Furniture To Students"
+ ],
+ [
+  "Applied for tricycle two years back, not sanctioned",
+  "elderly",
+  null,
+  "Tricycle applied but not sanctioned"
+ ],
+ [
+  "Wheelchair given is broken, poor quality",
+  "elderly",
+  null,
+  "Wheel Chair quality is not good"
+ ],
+ [
+  "Hearing aid not given",
+  "elderly",
+  null,
+  "Hearing Aids"
+ ],
+ [
+  "Food in disabled hostel is poor",
+  "elderly",
+  null,
+  "Poor Quality Of Food"
+ ],
+ [
+  "Need wheelchair for my father",
+  "health",
+  null,
+  "Wheel Chair applied"
  ]
 ]
