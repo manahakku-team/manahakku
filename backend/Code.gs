@@ -102,12 +102,38 @@ function normDigits_(x) { return String(x || '').replace(/[౦-౯]/g, c => Stri
 const NAME_CUES = [/\bmy name\b/i, /\bname\s*(is|:|-)/i, /\b[sdwc]\s*\/\s*o\b/i, /\b(son|daughter|wife|husband) of\b/i,
   /\b(?:[Mm]rs?|[Mm]s|[Ss]mt|[Dd]r)\.?\s+[A-Z][a-z]{2,}/,
   /నా పేరు/, /పేరు\s*[:\-]/, /తండ్రి పేరు/, /భర్త పేరు/, /తల్లి పేరు/, /శ్రీమతి\s+\S/, /కుమారుడు/, /కుమార్తె/];
+// ---------- No party names, no person's names (shared rules: mirrors the app, keep in step with app/src/main/assets/index.html) ----------
+// Latin words must stand alone ("mim" must not match "mimic"); Telugu words may take a case ending (జనసేనకు).
+const TE_END="(?:కు|ను|తో|ది|పై|లో|గారు|గారి|గారికి|కి|ల|పార్టీ)?(?![\\u0C00-\\u0C7F])";
+const wordRx=list=>new RegExp("(?:^|[^a-z0-9\\u0C00-\\u0C7F])(?:"+list.map(w=>{const e=w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"\\s+");return /[\u0C00-\u0C7F]/.test(w)?e+TE_END:e+"(?![a-z0-9])"}).join("|")+")","i");
+const PARTY_WORDS=["tdp","telugu desam","ysrcp","ysrc","ycp","ysr congress","ysr party","janasena","jana sena","jsp","bjp","bharatiya janata","congress","congress party","inc party","brs","bharat rashtra samithi","trs","telangana rashtra samithi","cpi","cpm","cpi(m)","communist party","communists","aimim","mim","majlis","bsp","bahujan samaj","aam aadmi",
+ "తెలుగుదేశం","టీడీపీ","వైసీపీ","వైఎస్సార్సీపీ","వైఎస్ఆర్సీపీ","వైఎస్సార్ కాంగ్రెస్","జనసేన","బీజేపీ","భాజపా","కాంగ్రెస్","బీఆర్ఎస్","టీఆర్ఎస్","సీపీఐ","సీపీఎం","కమ్యూనిస్టు","కమ్యూనిస్ట్","మజ్లిస్","ఎంఐఎం","బీఎస్పీ"];
+const LEADER_WORDS=["chandrababu","chandra babu","cbn","nara lokesh","lokesh","jagan","ys jagan","jaganmohan","jagan mohan","pawan kalyan","revanth","revanth reddy","kcr","ktr","chandrashekar rao","chandrasekhar rao","harish rao","sharmila","modi","narendra modi","rahul gandhi","owaisi","bandi sanjay","kishan reddy","purandeswari",
+ "చంద్రబాబు","లోకేష్","లోకేశ్","జగన్","జగన్మోహన్","పవన్ కళ్యాణ్","పవన్ కల్యాణ్","రేవంత్","కేసీఆర్","కేటీఆర్","హరీష్ రావు","హరీశ్ రావు","షర్మిల","మోదీ","మోడీ","రాహుల్ గాంధీ","ఒవైసీ","బండి సంజయ్","కిషన్ రెడ్డి","పురందేశ్వరి"];
+const RX_PARTY=wordRx(PARTY_WORDS),RX_LEADER=wordRx(LEADER_WORDS);
+// Places and schemes named after people are fine ("Ambedkar colony", "NTR district", "Gandhi Nagar"): removed before the name checks.
+const PLACE_PEOPLE=/\b(?:dr\.?\s*b\.?\s*r\.?\s*)?(?:ambedkar|gandhi|nehru|phule|ntr|rajiv|indira|indiramma|potti sriramulu|alluri sitharama raju|sathya sai|annamayya|kakatiya|jyothiba)\b/gi;
+// A role followed by a capitalised name ("MLA Ramesh", "Collector Sri Rao"); "Collector Office" is fine.
+const ROLE_RX=/\b(?:mla|mp|mlc|minister|collector|sarpanch|mro|mpdo|tahsildar|tehsildar|rdo|si|ci|dsp|officer|commissioner|corporator|councillor|chairman|chairperson|president|secretary|vro|vra|teacher|doctor|headmaster|engineer|ae|aee|de)\s+(?:sri\s+|shri\s+)?([A-Za-z]{3,})/gi;
+const NOT_NAME=new Set(["office","offices","sir","madam","garu","gaaru","saab","sahab","quarters","residence","camp","ward","village","mandal","district","department","dept","school","hospital","college","colony","road","street","house","bungalow","staff","team","meeting","order","orders","visit","level","post","seat","said","says","told","has","have","had","did","does","is","was","are","were","not","and","the","of","in","on","at","for","to","also","only","never","please","sahib"]);
+// "X garu" (గారు) after a word that is not a role is a person's name: "Ramesh garu" (not "Collector garu").
+const GARU_RX=/([a-z\u0C00-\u0C7F]+)\s*(?:garu|gaaru|గారు|గారి|గారికి)(?![a-z])/gi;
+const ROLE_OK=new Set(["collector","mla","mp","mlc","minister","sarpanch","mro","mpdo","tahsildar","tehsildar","rdo","officer","officers","commissioner","sir","madam","doctor","teacher","headmaster","engineer","secretary","president","chairman","si","ci","police","vro","vra","ae",
+ "కలెక్టర్","ఎమ్మెల్యే","ఎంపీ","ఎమ్మెల్సీ","మంత్రి","మంత్రిగారు","సర్పంచ్","సర్పంచి","ఎమ్మార్వో","ఎంపీడీవో","తహసీల్దార్","తహశీల్దార్","ఆర్డీవో","అధికారి","అధికారులు","కమిషనర్","సార్","మేడమ్","మేడం","డాక్టర్","వైద్యులు","టీచర్","ఉపాధ్యాయులు","ప్రధానోపాధ్యాయులు","ఇంజనీర్","కార్యదర్శి","అధ్యక్షులు","చైర్మన్","ఎస్ఐ","సీఐ","పోలీసు","వీఆర్వో","వీఆర్ఏ"]);
+function namedPerson(x0){const x=String(x0||"").replace(PLACE_PEOPLE," ");
+ if(NAME_CUES.some(re=>re.test(x))||RX_LEADER.test(x))return true;
+ ROLE_RX.lastIndex=0;let m;while((m=ROLE_RX.exec(x))){if(/^[A-Z][a-z]{2,}$/.test(m[1])&&!NOT_NAME.has(m[1].toLowerCase()))return true}
+ GARU_RX.lastIndex=0;while((m=GARU_RX.exec(x))){if(!ROLE_OK.has(m[1].toLowerCase()))return true}
+ return false}
+
+function hasParty_(text) { return RX_PARTY.test(normDigits_(text)); }
 function hasPersonalDetails_(text) {
   const x = normDigits_(text);
-  if (/(?:\+?\d[\s.\-()]*){10,}/.test(x)) return true;                 // phone, Aadhaar, account numbers
+  if (/(?:\+?\d[\s.\-()\/]*){10,}/.test(x)) return true;               // phone, Aadhaar, account numbers, slash-style voter cards
   if (/[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}/.test(x)) return true; // email
   if (/\b[A-Za-z]{5}\d{4}[A-Za-z]\b/.test(x)) return true;            // PAN
-  return NAME_CUES.some(re => re.test(x));
+  if (/\b[A-Za-z]{3}\d{7}\b/.test(x)) return true;                   // voter card (EPIC)
+  return namedPerson(x);                                              // own, leaders' or officials' names
 }
 
 // ---------- helpers ----------
@@ -612,6 +638,7 @@ function doPost(e) {
   if (!desc0) return json_({ ok: false, error: 'empty' });
   if (!rate_('rp', dev, DEV_REPORTS_PER_HOUR)) return json_({ ok: false, error: 'busy' });
   if (hasPersonalDetails_([r.place, r.mandal, r.title, r.desc].join(' '))) return json_({ ok: false, error: 'pii' });
+  if (hasParty_([r.place, r.title, r.desc].join(' '))) return json_({ ok: false, error: 'party' });
   const md = mandals_();
   const mandal = mandalCanon_(md, state, r.district, r.mandal) || clip_(tidy_(r.mandal).replace(/\.$/, ''), 40) || mandalIn_(md, state, r.district, r.place);
   // Spelling and grammar are corrected before saving; the person's own words stay in desc_original.
