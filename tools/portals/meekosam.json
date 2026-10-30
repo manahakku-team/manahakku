@@ -232,7 +232,13 @@
    "School Education-->School Administration-->Teachers Absent / Syllabus Not Completed / Teachers in shortage / Teachers Not Teaching Properly",
    "AP State Civil Supplies Corporation-->Paddy Procurement (Adminstration Issues)-->Coupons issued but paddy not procured / Not procuring the paddy even though the paddy is within the prescribed limit / Village agricultural assistant not distributing coupons / Not issuing FTO Copy/FAQ specification report at RBK / Procured paddy in offline not entering in portal / Coupons distributed but Paddy Purchase Centre staff not attending the farm gate",
    "Social Welfare-->Hostel Administration (Pre-Matric & College Hostels-->Implementation of menu",
-   "Samagra Shiksha-->Samagra Shiksha Outsourcing/ contract employees -->Posts required, salary pendings"
+   "Samagra Shiksha-->Samagra Shiksha Outsourcing/ contract employees -->Posts required, salary pendings",
+   "AP State Civil Supplies Corporation-->Paddy Procurement (Adminstration Issues)-->Not Displaying paddy procured farmer details at RBK / Village agricultural assistant not registering farmer details at RBK / Equipment not available at RBK / Paddy Purchase Centre not opened even after commencement of harvest season",
+   "BC Welfare-->Administration Of Hostels - Inspections-->Non Conducting Of Health Checkups / Non Payment Of Cosmetic Charges To Hostlers / Non Providing Of Adequate Infrastructure Facilities / Not Display Of Menu / Not Implementation Of Menu / Regular Inspections Not Done",
+   "BC Welfare-->Administration Of Hostels-->Providing Additional Seats In The Bc Welfare Hostel"
+  ],
+  "training": [
+   "AP State Skill Development Corporation-->Training And Employement-->Placements Are Not Provided / Assessments Are Not Conducting"
   ]
  },
  "app_map": {
@@ -356,7 +362,15 @@
   "agri - no procurement coupons from assistant": "... -->Village agricultural assistant not distributing coupons",
   "agri - FTO/FAQ report not given at RBK": "... -->Not issuing FTO Copy/FAQ specification report at RBK",
   "agri - offline paddy not entered in portal (payment stuck)": "... -->Procured paddy in offline not entering in portal",
-  "agri - paddy purchase centre lacks facilities": "search 'infra' > Marketing-->Procurement Of Agrl.Commoditiespaddy-->Non Availability Of Infrastructure At Paddy Purchase Center -Paddy"
+  "agri - paddy purchase centre lacks facilities": "search 'infra' > Marketing-->Procurement Of Agrl.Commoditiespaddy-->Non Availability Of Infrastructure At Paddy Purchase Center -Paddy",
+  "agri - paddy purchase centre not opened in harvest": "search 'admin' > AP State Civil Supplies Corporation-->Paddy Procurement (Adminstration Issues)-->Paddy Purchase Centre not opened even after commencement of harvest season",
+  "agri - farmer not registered at RBK for procurement": "... -->Village agricultural assistant not registering farmer details at RBK",
+  "agri - moisture meter/equipment missing at RBK": "... -->Equipment not available at RBK",
+  "education - welfare hostel no health checkups": "search 'admin' > BC Welfare-->Administration Of Hostels - Inspections-->Non Conducting Of Health Checkups (user names hostel)",
+  "education - hostel cosmetic charges not paid": "... -->Non Payment Of Cosmetic Charges To Hostlers",
+  "education - more hostel seats needed": "search 'admin' > BC Welfare-->Administration Of Hostels-->Providing Additional Seats",
+  "livelihood - skill course but no placement": "search 'training' > AP State Skill Development Corporation-->Training And Employement-->Placements Are Not Provided",
+  "livelihood - skill course assessment not held": "... -->Assessments Are Not Conducting"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -410,7 +424,13 @@
   "All Endowment / temple / choultry lines (religious - never)",
   "Paddy 'PPCs demanding money' / 'Millers and PPCs colluded' (blames)",
   "Temple 'staff involving in political issues' (political)",
-  "APIIC industrial infra / LIC employee issues (business/staff)"
+  "APIIC industrial infra / LIC employee issues (business/staff)",
+  "Hostel 'Maintaining Bogus Attendance' / 'Mis Behaviour Of Hostel Welfare Officer' (blames)",
+  "Housing 'Misappropriation by VO/SHGs' / 'Recovery Of Misappropriated Amount' (blames)",
+  "Skill 'Expect Money From Student' (blames)",
+  "Paddy 'PPC staff favoritism' (blames)",
+  "Police-->Complaint on Police (police matter)",
+  "Temple 'Flex Boards Of Politicians' (political + religious)"
  ],
  "still_needed_keywords": [
   "garbage",
