@@ -611,6 +611,106 @@
     "sanitation.toilet - poor construction": "SBM(Rural) > Toilet Related > Poor Quality of Toilets"
    },
    "complete": true
+  },
+  "Rural Development": {
+   "levels": "up to 4",
+   "main": {
+    "Government Schemes Related": {
+     "Pradhan Mantri Gram Sadak Yojana": {
+      "Complaints about PMGSY roads": [
+       "Complaints regarding Delay in constructions of roads Under PMGSY",
+       "Abandoned PMGSY roads",
+       "Poor construction quality issues of Roads/Bridges under PMGSY",
+       "Request for new construction of Roads/Bridges under PMGSY",
+       "Bid processing/Award/Tendering",
+       "Complaints regarding maintenance of Roads under PMGSY",
+       "Matters Relating to Road Connectivity Project for Left Wing Extremism Affected Areas",
+       "Environmental Issues",
+       "Complaints regarding Financial release from the Ministry",
+       "Malpractices / Corruption/Financial irregularities in tendering process under Road construction",
+       "Alleging corruption issues involved in construction of roads and in maintenance works of PMGSY road works/Bridges.",
+       "Complaint regarding road under RCPLEWA",
+       "Complaint regarding Bridge under RCPLEWA",
+       "Complaint regading JANMAN under PMGSY",
+       "Complaint regarding under VVP under PMGSY",
+       "Other complaints"
+      ],
+      "Bridge under PMGSY": [
+       "Complaint regarding delay in Bid processing/Award/Tendering of works",
+       "Complaints regarding Delay in constructions of Bridges Under PMGSY",
+       "Complaints regarding maintenance of Bridges under PMGSY",
+       "Malpractices / Corruption/Financial irregularities in tendering process under Bridge construction",
+       "Other complaints"
+      ]
+     },
+     "MGNREGA Related": {
+      "Financial": [
+       "Delaye in payment",
+       "Fake payment",
+       "Not receiving of reimbursement of expenses",
+       "Administratve expense in MGNREGA Scheme",
+       "Fiancial irregularities in implementation of MGNREGA scheme",
+       "Use of machinery instead of labour",
+       "(list continues)"
+      ],
+      "Job Card": [
+       "Fake job cards and non issuance of job card",
+       "Fake attendance in NMMS",
+       "Deletion of Job Card and name correction"
+      ],
+      "Payment / Wage": [
+       "Non payment of wage",
+       "Delayed payment and Delay compensation",
+       "Not providing work and Unemployment Allowance under MGNREGA",
+       "Payment under MGNREGA",
+       "Fake payment in Muster Rolls"
+      ],
+      "Works in NREGA": [
+       "Non completion of work",
+       "Request/Maintenance for internal roads/streets/khadanzas in villages"
+      ],
+      "NREGA employee": [
+       "Discrepancies in selection list of Technical Post",
+       "Filling up the posts under MGNREGA",
+       "Salary structure under MGNREGA",
+       "No provision to regularization of NREGA staff",
+       "Salary not provided to the Gram Rojagar Sewak",
+       "Salary/Honorarium related issue under MGNREGA"
+      ],
+      "Issue related to women worker of MGNREGA": "not checked",
+      "Misuse and improper selection of beneficiaries": "not checked",
+      "Not proper implementation of central Govt. scheme": "not checked",
+      "Others Issue": "not checked"
+     },
+     "National Social Assistance Programme": "not checked",
+     "Skill Division": "not checked",
+     "National Rural Livelihoods Mission (NRLM)": "not checked",
+     "Pradhan Mantri Awaas Yojana Gramin (Rural)": "not checked",
+     "SAANSAD ADARSH GRAM YOJANA (SAGY)": "not checked"
+    },
+    "Employee Services Related": "skip",
+    "Pension Related (RD)": "skip (staff pension)",
+    "Misbehaviour/ Corruption/ Harassment": "never auto-suggest",
+    "Division & Training Institute": "skip",
+    "Financial Matters Related": "skip",
+    "Other Division": "not checked"
+   },
+   "app_map": {
+    "roads - PMGSY road not finished": "Govt Schemes > PMGSY > Complaints about PMGSY roads > Complaints regarding Delay in constructions of roads Under PMGSY",
+    "roads - PMGSY road abandoned": "... > Abandoned PMGSY roads",
+    "roads - poor quality / broken soon": "... > Poor construction quality issues of Roads/Bridges under PMGSY",
+    "roads - potholes on PMGSY road": "... > Complaints regarding maintenance of Roads under PMGSY",
+    "roads - no road to village (new)": "... > Request for new construction of Roads/Bridges under PMGSY",
+    "roads - bridge delayed / damaged": "Govt Schemes > PMGSY > Bridge under PMGSY > Delay / maintenance",
+    "roads - internal village street": "Govt Schemes > MGNREGA Related > Works in NREGA > Request/Maintenance for internal roads/streets/khadanzas in villages",
+    "livelihood - NREGA wages not paid": "Govt Schemes > MGNREGA Related > Payment / Wage > Non payment of wage",
+    "livelihood - NREGA wages late": "... > Payment / Wage > Delayed payment and Delay compensation",
+    "livelihood - no work given": "... > Payment / Wage > Not providing work and Unemployment Allowance under MGNREGA",
+    "livelihood - no job card": "... > Job Card > Fake job cards and non issuance of job card",
+    "livelihood - job card name wrong/deleted": "... > Job Card > Deletion of Job Card and name correction",
+    "livelihood - work left incomplete": "... > Works in NREGA > Non completion of work"
+   },
+   "note": "PMGSY = only roads built under that scheme (usually signboard says PMGSY). Unknown road type -> State Government (AP/TS) route. Corruption/fake-payment options never auto-suggested (facts, no blame)."
   }
  }
 }
