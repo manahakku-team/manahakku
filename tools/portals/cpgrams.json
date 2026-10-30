@@ -1731,6 +1731,106 @@
    "app_map": {
     "livelihood - small trader cannot get GST number": "Technical Issues with Return Filing > Not able to get GST No."
    }
+  },
+  "Agriculture and Farmers Welfare": {
+   "main": {
+    "PMKISAN related issues": {
+     "Technical Issues with PMKISAN Portal": [
+      "Portal not working",
+      "OTP not received",
+      "Issue in uploading land documents",
+      "Issue in submitting Registration application",
+      "Issue in completing e-KYC",
+      "Unable to update the application"
+     ],
+     "Delay in approval by State government": [
+      "Application pending for approval",
+      "Application rejected without any reason",
+      "Delay in land seeding"
+     ],
+     "Delay in receiving benefit": [
+      "Marked ineligible/ hold payment/ dead incorrectly",
+      "Aaadhar seeded with bank account but not receiving benefits",
+      "Benefits received in wrong account",
+      "Benefits to other family members"
+     ],
+     "Ineligible beneficiaries getting benefits": "never auto",
+     "Non receipt of feedback from State Governments": "not checked"
+    },
+    "Crops, Pulses, Plants and Seeds related issues": [
+     "Crop related issues",
+     "Plant Protection Matters",
+     "Seeds related issues",
+     "Oilseeds and Oil Palm issues",
+     "Pulses related issues"
+    ],
+    "Other Scheme Related": {
+     "Rashtriya Krishi Vikas Yojana (RKVY)": [
+      "Issues related to implementation of RKVY",
+      "Non release of funds to agri startups under agri-entrepreneurship programme"
+     ],
+     "Pradhan Mantri Fasal Bima Yojana (PMFBY) - Claim Related Issue": "not checked",
+     "Agricultural Extension activities and ATMA": "not checked"
+    },
+    "Matters Related to Farmers Welfare (MSP, Price Support System, Agriculture Marketing)": {
+     "MSP related Issues": [
+      "Matter relating to MSP for Food Grains and Oil Seeds Crops",
+      "Matter relating to MSP for Commercial Crops",
+      "Cost of cultivation related matter",
+      "Grievances related to Agro Economic Research Centers",
+      "Matter relating to MSP"
+     ],
+     "Price Support System": [
+      "Minimum Price Support System",
+      "NAFED"
+     ],
+     "Agriculture Infrastructure Fund": "not checked",
+     "Matter relating to Agriculture Marketing": [
+      "Query related to training issues - CCSNIAM",
+      "Matter relating to warehouse construction",
+      "Matter relating to Three Agriculture Laws",
+      "Matter relating to Agmark Grading",
+      "Matter relating to eNAM",
+      "DMI related matters"
+     ],
+     "KCC and Agriculture Loan- Scheme information": "not checked"
+    },
+    "Policy and Trade related": {
+     "Policy related matters": [
+      "Farmers Suicide",
+      "Agrrarian distress",
+      "Doubling of Farmers Income",
+      "National Commission on Farmers"
+     ],
+     "Trade related issues": "not checked",
+     "International Agreements": "not checked"
+    },
+    "Employees Services Related": "skip",
+    "Pension related": "skip (staff)",
+    "Natural Clamity Draught related issues": "NOT YET SEEN - needed",
+    "Machinery and Technology issues": "NOT YET SEEN",
+    "Organic farming and fertilizers issues": "NOT YET SEEN - needed (fertiliser shortage)",
+    "Misbehaviour/ Harassment/ Corruption": "never auto",
+    "Miscellaneous Matters": "NOT YET SEEN - fallback"
+   },
+   "SENSITIVE": "'Farmers Suicide' option is never auto-suggested. If a report text signals personal crisis, app shows Tele-MANAS 14416 / 112 first (verify numbers before build) and does not route as a grievance.",
+   "app_map": {
+    "agri - PM-KISAN money stopped / marked ineligible": "PMKISAN > Delay in receiving benefit > Marked ineligible/ hold payment/ dead incorrectly",
+    "agri - PM-KISAN not received though Aadhaar-bank linked": "PMKISAN > Delay in receiving benefit > Aaadhar seeded with bank account but not receiving benefits",
+    "agri - PM-KISAN went to wrong account": "PMKISAN > Delay in receiving benefit > Benefits received in wrong account",
+    "agri - PM-KISAN application pending with state": "PMKISAN > Delay in approval by State government > Application pending for approval",
+    "agri - PM-KISAN rejected": "PMKISAN > Delay in approval by State government > Application rejected without any reason",
+    "agri - land records not linked (land seeding)": "PMKISAN > Delay in approval by State government > Delay in land seeding",
+    "agri - PM-KISAN e-KYC failing": "PMKISAN > Technical Issues > Issue in completing e-KYC",
+    "agri - fake/poor seeds": "Crops, Pulses, Plants and Seeds > Seeds related issues",
+    "agri - pest attack / plant disease help": "Crops, Pulses, Plants and Seeds > Plant Protection Matters",
+    "agri - crop not bought at MSP": "Farmers Welfare (MSP...) > MSP related Issues > Matter relating to MSP for Food Grains and Oil Seeds Crops",
+    "agri - pulses/oilseeds procurement (NAFED)": "Farmers Welfare (MSP...) > Price Support System > NAFED",
+    "agri - no warehouse/storage": "Farmers Welfare (MSP...) > Matter relating to Agriculture Marketing > Matter relating to warehouse construction",
+    "agri - eNAM market problem": "... > Matter relating to Agriculture Marketing > Matter relating to eNAM",
+    "agri - crop insurance claim not paid": "Other Scheme Related > Pradhan Mantri Fasal Bima Yojana (PMFBY) - Claim Related Issue"
+   },
+   "complete": false
   }
  }
 }
