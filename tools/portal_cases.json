@@ -1144,5 +1144,35 @@
   "agri",
   null,
   "Exgratia not received"
+ ],
+ [
+  "PM Kisan money not credited this year",
+  "agri",
+  null,
+  "PM KISAN – Amount not credited"
+ ],
+ [
+  "Crop damaged in cyclone, enumeration not done",
+  "agri",
+  null,
+  "Crop damage enumeration"
+ ],
+ [
+  "Annadatha Sukhibhava amount not received",
+  "agri",
+  null,
+  "Annadatha Sukhibhava"
+ ],
+ [
+  "Cooperative bank not returning my land documents after loan repaid",
+  "agri",
+  null,
+  "Release of Documents"
+ ],
+ [
+  "Input subsidy not received after flood",
+  "agri",
+  null,
+  "Input subsidy"
  ]
 ]
