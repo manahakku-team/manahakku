@@ -2127,18 +2127,54 @@
       "Unemployment Allowance": "not checked",
       "Other Benefits": "not checked"
      },
-     "Medical Benefits provided by ESIC": "not checked (needed: ESI hospital/dispensary care)",
-     "Medical Reimbursement in ESIC": "not checked",
-     "Non-Coverage, Non-compliance, Under Reporting for ESIC": "not checked",
+     "Medical Benefits provided by ESIC": [
+      "Non availability of Resources",
+      "Rude Behaviour of ESIC employees",
+      "Non avaibility of medical facilities in area",
+      "Benefit to Retired Ips"
+     ],
+     "Medical Reimbursement in ESIC": [
+      "Non-Acceptance of Bill",
+      "Delay in Payment",
+      "Less Payment"
+     ],
+     "Non-Coverage, Non-compliance, Under Reporting for ESIC": [
+      "Non registration under ESIC",
+      "Non deposition of ESIC Contribution in respect of registered employees.",
+      "Manipulation of Wages for ESIC Contribution",
+      "Demand Notice"
+     ],
      "ESI Online System Related Issues": "not checked",
      "Recruitment in ESI Corporation": "skip",
      "Service Matters of ESIC Employees": "skip",
      "Suggestions related to ESIC": null,
      "Vigilance matter related to ESIC": "never auto"
     },
-    "Directorate General Factory Advice Service and Labour Institutes (DGFSALI)": "not checked",
-    "Chief Labour Commissioner (CLC)": "NOT YET SEEN - needed (minimum wages, unpaid wages in central-sphere)",
-    "Child Labour": "NOT YET SEEN - needed (child sector)"
+    "Directorate General Factory Advice Service and Labour Institutes (DGFSALI)": {
+     "FAS Division": [
+      "Matters pertains to the administration of the Factories Act, 1948 & Model Rules",
+      "Matters pertains to OSH Code, 2020",
+      "One month certificate course ... hazardous factories",
+      "Others"
+     ],
+     "Dock Safety Division": "skip (ports)",
+     "Central Labour Institutes": "skip (training)",
+     "Regional Labour Institutes": "skip (training)"
+    },
+    "Chief Labour Commissioner (CLC)": [
+     "Complaints related to Wages /delayed / less payment / non-payment / Bonus.",
+     "Complaints related to Termination / dismissal / retirement / discharge.",
+     "Complaints related to other service conditions",
+     "Complaints related to Terminal Benefits (incl. Gratuity).",
+     "Complaints related to employment/ recruitment.",
+     "Complaints related to harassment including harassment against women.",
+     "Complaints related to compensation on closure, layoffs and retrenchment",
+     "Complaints related to other issues."
+    ],
+    "Child Labour": [
+     "Child Labour Incidents",
+     "National Child Labour Project Scheme"
+    ]
    },
    "note": "Wages/working conditions in private shops, farms, local factories are STATE Labour Dept matters: Meekosam/Prajavani first. CLC only for central-sphere establishments. EPFO also has its own portal (EPFiGMS) - verify before build.",
    "app_map": {
@@ -2154,10 +2190,26 @@
     "livelihood - worker died, family EDLI insurance not paid": "EPFO > Insurance benefit > Non settlement / Delay in settlement of EDLI claim",
     "livelihood - ESI sickness cash benefit": "ESIC > Cash Benefit provided by ESIC > Sickness Benefit",
     "livelihood - ESI maternity benefit": "ESIC > Cash Benefit provided by ESIC > Maternity Benefit",
-    "livelihood - ESI unemployment allowance": "ESIC > Cash Benefit provided by ESIC > Unemployment Allowance"
+    "livelihood - ESI unemployment allowance": "ESIC > Cash Benefit provided by ESIC > Unemployment Allowance",
+    "livelihood - wages not paid / delayed / less (central-sphere: mines, railways, banks, central PSU contractors)": "CLC > Complaints related to Wages /delayed / less payment / non-payment / Bonus.",
+    "livelihood - gratuity not paid (central-sphere)": "CLC > Complaints related to Terminal Benefits (incl. Gratuity).",
+    "livelihood - laid off without compensation (central-sphere)": "CLC > Complaints related to compensation on closure, layoffs and retrenchment",
+    "child - child working in shop/factory/farm": "Child Labour > Child Labour Incidents  (call 1098 / 112 FIRST; state Labour Dept also)",
+    "livelihood - unsafe factory conditions": "DGFSALI > FAS Division > Matters pertains to OSH Code, 2020  (state Factories Dept first)",
+    "health/livelihood - no ESI hospital/dispensary nearby": "ESIC > Medical Benefits provided by ESIC > Non avaibility of medical facilities in area",
+    "health/livelihood - ESI hospital lacks medicines/doctors": "ESIC > Medical Benefits provided by ESIC > Non availability of Resources",
+    "livelihood - ESI medical bill not reimbursed": "ESIC > Medical Reimbursement in ESIC > Delay in Payment / Non-Acceptance of Bill / Less Payment",
+    "livelihood - employer not registering worker in ESI": "ESIC > Non-Coverage... > Non registration under ESIC",
+    "livelihood - ESI deducted but not deposited": "ESIC > Non-Coverage... > Non deposition of ESIC Contribution..."
    },
    "privacy": "Never put UAN / PF account number in Mana Hakku; only on the official form.",
-   "complete": false
+   "complete": true,
+   "never_auto": [
+    "Rude Behaviour of ESIC employees",
+    "Manipulation of Wages for ESIC Contribution",
+    "Vigilance matter related to ESIC",
+    "harassment (only if user's own words)"
+   ]
   }
  }
 }
