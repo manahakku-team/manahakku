@@ -523,6 +523,94 @@
    },
    "caution": "App asks no one's religion. Only suggest this ministry when the user's own text names a minority scholarship or scheme; otherwise use the general education / livelihood route.",
    "complete": true
+  },
+  "Drinking Water and Sanitation": {
+   "levels": 3,
+   "main": {
+    "Jal Jeevan Mission related(Rural)": {
+     "Water Availability Related": [
+      "Nil Availability",
+      "Once a week",
+      "Twice a week",
+      "Everyday with least frequency"
+     ],
+     "Water Quality Related": [
+      "Matter pertaining to Colour",
+      "Matter pertaining to Taste",
+      "Matter pertaining to Odour",
+      "Others issues related to water accessibility"
+     ],
+     "Water Accessibility Related": [
+      "Pipeline and Infrastructure",
+      "Supply Related",
+      "Others issues related to functional household tap connection"
+     ],
+     "Functional Household tap Connection Related": [
+      "Tap connection not provided",
+      "leaking in Tap/Pipe",
+      "Others issues related to functional household tap connection"
+     ]
+    },
+    "Swachh Bharat Mission related(Rural)": {
+     "Cleanliness of Villages": [
+      "Littering in Public Places",
+      "Water Stagnation/Overflowing or blockages of Drainages"
+     ],
+     "Waste Management": [
+      "Solid Waste Management",
+      "Liquid Waste Management"
+     ],
+     "Toilet Related": [
+      "Community Toilets Related",
+      "Issue related to Usage/dysfunctional of Toilets",
+      "Request fro household latrine",
+      "Request for household latrine pending with Govt./ Panchayat",
+      "Inappropriate Toilet Technology",
+      "Missing Toilets",
+      "Poor Quality of Toilets",
+      "Incentives Related"
+     ]
+    },
+    "Misbehaviour/Corruption/Harassment": [
+     "Corruption",
+     "Misbehaviour",
+     "Harassment"
+    ],
+    "Pension Related": [
+     "Pension Not Started/Pension Stopped",
+     "Revision of Pension",
+     "Miscalculation in Pension",
+     "Adding beneficiary in PPO"
+    ],
+    "Employee Services Related": [
+     "Appointment Related",
+     "Promotion Related",
+     "Transfer/Posting Related"
+    ]
+   },
+   "note": "3 dropdowns for JJM and SBM. Rural only - town/city water and drains go to State Government (municipal) route. Village water is a state/panchayat service: State Government (AP/TS) first; this ministry for scheme-level (JJM/SBM-G) problems or if the state does not act.",
+   "app_map": {
+    "water.supply - no water at all": "Jal Jeevan Mission related(Rural) > Water Availability Related > Nil Availability",
+    "water.supply - water once/twice a week": "JJM > Water Availability Related > Once a week / Twice a week",
+    "water.supply - daily but very little": "JJM > Water Availability Related > Everyday with least frequency",
+    "water.supply - pipeline broken / not laid": "JJM > Water Accessibility Related > Pipeline and Infrastructure",
+    "water.supply - tap not given under JJM": "JJM > Functional Household tap Connection Related > Tap connection not provided",
+    "water.supply - leaking tap/pipe": "JJM > Functional Household tap Connection Related > leaking in Tap/Pipe",
+    "water.quality - dirty/coloured": "JJM > Water Quality Related > Matter pertaining to Colour",
+    "water.quality - bad taste/salty": "JJM > Water Quality Related > Matter pertaining to Taste",
+    "water.quality - smell": "JJM > Water Quality Related > Matter pertaining to Odour",
+    "sanitation.drain - blocked/overflowing drain, stagnant water": "Swachh Bharat Mission related(Rural) > Cleanliness of Villages > Water Stagnation/Overflowing or blockages of Drainages",
+    "sanitation.garbage - garbage in public places": "SBM(Rural) > Cleanliness of Villages > Littering in Public Places",
+    "sanitation.garbage - no garbage collection": "SBM(Rural) > Waste Management > Solid Waste Management",
+    "sanitation.drain - sewage/wastewater disposal": "SBM(Rural) > Waste Management > Liquid Waste Management",
+    "sanitation.toilet - community toilet": "SBM(Rural) > Toilet Related > Community Toilets Related",
+    "sanitation.toilet - toilet not working": "SBM(Rural) > Toilet Related > Issue related to Usage/dysfunctional of Toilets",
+    "sanitation.toilet - applied, pending": "SBM(Rural) > Toilet Related > Request for household latrine pending with Govt./ Panchayat",
+    "sanitation.toilet - want new toilet": "SBM(Rural) > Toilet Related > Request fro household latrine",
+    "sanitation.toilet - incentive money not paid": "SBM(Rural) > Toilet Related > Incentives Related",
+    "sanitation.toilet - poor construction": "SBM(Rural) > Toilet Related > Poor Quality of Toilets"
+   },
+   "complete": true
   }
  }
 }
