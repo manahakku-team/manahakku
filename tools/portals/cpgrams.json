@@ -205,7 +205,7 @@
  },
  "mapping_notes": {
   "aadhaar": "Unique Identification Authority of India (its own entry)",
-  "pan": "Central Board of Direct Taxes (Income Tax)",
+  "pan": "CBDT not listed in CPGRAMS ministry list (checked by owner 30 Oct). Try 'Revenue' (Department of Revenue, parent of CBDT). Primary PAN channels are outside CPGRAMS: Income Tax e-filing portal grievance (e-Nivaran), and the PAN service agencies (Protean / UTIITSL) - confirm before build.",
   "state_matters": "State Governments/Others -> State Government -> Andhra Pradesh or Telangana"
  },
  "ministry_categories": {
