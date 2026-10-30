@@ -72,6 +72,20 @@
    "AP Pollution Control Board-->Industrial Pollution Related -->Waste Water Discharge Out Side Factories",
    "Ground Water-->Construction Of Tube Wells And Bore Wells Referred By S.C.Corporation, I.T.D.A. ...-->Issues Related To Drilling Of Bore/ Tube Wells (user's words only)",
    "Ground Water-->Ground Water Surveys Under A.P.W.A.L.T.A. ...-->Issues Related To Delays In Conducting Groundwater Surveys Under Ap Walta"
+  ],
+  "education": [
+   "Intermediate Education-->About Raising Educational Standards in Colleges-->Centre For Excellence / MANA TV",
+   "Board of Intermediate Education-->Training for Educating Students-->Higher Education Details to Be Displayed In Notice Boards",
+   "Collegiate Education-->About Raising Educational Standards In Colleges-->Mana Tv / Accreditation",
+   "Collegiate Education-->Training For Educating Students-->Provision Of Books For Higher Education And Competitive Coaching In Libraries",
+   "Samagra Shiksha-->Complaints on IE-->Not Providing Home based education to CwSN by IERPs",
+   "AP State Skill Development Corporation-->Training And Education-->Need To Provide Skill Development Centers / Skill Development Center Trainer Not Available / Not Maintaining Particular Timing",
+   "Differently Abled, Senior Citizens & Transgender-->Hostels Education-->Poor Quality Of Food / Non Availability Of Medicines In The Hostel / In Sufficient Accommodation / Lighting Not Sufficient Bathrooms And Toilets / Insufficient Drinking Water / Warden Not Attending Regularly / Admission Into Special Schools / Admission Into Govt Boys or Girls Hostel",
+   "MJPAPBBCW Residential Education Society-->Education-->Non Availability Of Subject Teachers / Non Availability Of Principal / Poor Quality Of Education",
+   "Minorities Welfare-->Overseas Education-->Amount not Credited",
+   "Sainik Welfare-->...-->Non Payment Of Grants (Children Education Grant ...)",
+   "Swarna Gramam - Swarna Wardu (SGSW)-->Complaints On Secretariat Employees-Welfare & Education Assistant-->Employee do not know the process/Knowledge about Schemes / Multiple visits to the secretariat",
+   "Fisheries-->Issues Related Aquaculture-->Complaints From Adjacent Agriculture Farmers Regarding Seepage Of Saline Water"
   ]
  },
  "app_map": {
@@ -103,7 +117,14 @@
   "health - PHC no water supply": "search 'water' > Public Health-->Poor Infrastructure & Facilities-->No Water supply",
   "agri - canal water not reaching tail-end fields": "search 'water' > Water Resources (E-In-C)-->ICADPW-->Water Regulation-->Water Not Supplied Upto Tail End",
   "agri/water - factory waste water into canal/tank": "search 'water' > AP Pollution Control Board-->Industrial Pollution Related -->Waste Water Discharges Into Rivers, Canals & Tanks",
-  "education - free RTE seat refused in private school": "search 'schools' > Samagra Shiksha-->Child Right (Right To Education Act)-->Complaints Regarding Right To Education In Private Schools"
+  "education - free RTE seat refused in private school": "search 'schools' > Samagra Shiksha-->Child Right (Right To Education Act)-->Complaints Regarding Right To Education In Private Schools",
+  "education.college - degree college facilities (water, labs, library, rest room)": "search 'water' or 'college' > Collegiate Education-->Infrastructure Facilities To College-->Drinking Water Facility (or other facility line)",
+  "education.college - junior college facilities": "search 'college' > Intermediate Education-->Infrastructure Facilities to College-->(facility)",
+  "education - disabled child not getting home-based education": "search 'education' > Samagra Shiksha-->Complaints on IE-->Not Providing Home based education to CwSN by IERPs",
+  "education - government welfare hostel: poor food / no medicines / no lights / warden absent": "search 'education' > [hostel's department]-->Hostels Education-->(matching line)",
+  "livelihood - no skill development centre / trainer": "search 'education' > AP State Skill Development Corporation-->Training And Education-->Need To Provide Skill Development Centers / Trainer Not Available",
+  "public service - village secretariat makes people visit many times": "search 'education' > Swarna Gramam - Swarna Wardu (SGSW)-->Complaints On Secretariat Employees-...-->Multiple visits to the secretariat",
+  "agri - saline water seepage from aqua ponds into fields": "search 'water' > Fisheries-->Issues Related Aquaculture-->Complaints From Adjacent Agriculture Farmers Regarding Seepage Of Saline Water"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -111,21 +132,23 @@
   "Prohibition and Excise-->Bars (excise matter)",
   "Endowment-->Annadanam (religious)",
   "Water Resources-->Water Users Association elections (election matter)",
-  "Water Resources-->Laying/Removal Of Unauthorised Pipes, Unauthorised Cultivation, Fish ponds (blames individuals)"
+  "Water Resources-->Laying/Removal Of Unauthorised Pipes, Unauthorised Cultivation, Fish ponds (blames individuals)",
+  "SGSW Disciplinary Matters / Rude Behavior (blames named functionaries)",
+  "Endowment sanitation / temple water (religious)"
  ],
  "still_needed_keywords": [
+  "college",
   "garbage",
   "toilet",
   "streetlight",
   "ration",
   "pension",
   "anganwadi",
-  "hospital / PHC",
-  "electricity / current",
+  "hospital",
+  "current",
   "certificate",
-  "land / pattadar",
-  "house (housing)",
-  "school (government school infrastructure, mid-day meal)",
-  "college"
+  "land",
+  "house",
+  "mid-day meal"
  ]
 }
