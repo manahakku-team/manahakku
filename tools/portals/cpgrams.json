@@ -2396,14 +2396,125 @@
      "Suggestions",
      "Other"
     ],
-    "other_main": "NOT YET SEEN - need full main list (PHC/NHM, Ayushman/PM-JAY, 108, maternity, vaccination)"
+    "other_main": "NOT YET SEEN - need full main list (PHC/NHM, Ayushman/PM-JAY, 108, maternity, vaccination)",
+    "CGHS Health Centres": [
+     "Hospital Services",
+     "Non-availability of Medicines",
+     "Poor Infrastructure",
+     "CGHS Cards",
+     "Medical Reimbursement Claims",
+     "Employee Related",
+     "Allegation of corruption",
+     "Suggestions",
+     "Other"
+    ],
+    "Medical Education": [
+     "Domicile Criteria in NEET",
+     "Non-allocation of seats in colleges as per rank obtained",
+     "Refund of security amount not in time",
+     "Non allocation of seats in medical colleges as per EVS reservation policy",
+     "Dental Colleges",
+     "Training Institutes",
+     "Vaccine Institutes",
+     "Mental Health Institutes",
+     "Pharmacy Institutes",
+     "All India Institute of Physical Medicine and Rehabilitation",
+     "All India Institute of Speech and Hearing",
+     "Nursing Colleges",
+     "Allegation of Corruption/ Malpractice",
+     "Suggestions",
+     "Other"
+    ],
+    "Financial Assistance for Medical Treatment": [
+     "Assistance under Umbrella Scheme of Rashtriya Arogya Nidhi",
+     "Assistance under Health Minister's Discretionary Grant",
+     "Financial Assistance for Rare Disease",
+     "Other"
+    ],
+    "Health Schemes": [
+     "Pradhan Mantri Jan Arogya Yojna",
+     "National Health Mission",
+     "Employee Health Scheme",
+     "PMSSY",
+     "NPCBVI (blindness)",
+     "NPPCD (deafness)",
+     "National Oral Health Programme",
+     "NPPCF (Fluorosis)",
+     "National Vector Borne Disease Control Programme",
+     "(list may continue)"
+    ],
+    "Public Health": [
+     "Disease Outbreak",
+     "Vector Borne Diseases (Dengue, Malaria etc.)",
+     "Non-communicable Diseases",
+     "Mental Health",
+     "National Aids Control Organisation",
+     "Reproductive and Child Health",
+     "Community Health System",
+     "Other"
+    ],
+    "Food Regulation": [
+     "Licencing issue",
+     "Complaint regarding food products",
+     "Complaint about recruitment in FSSAI",
+     "Suggestions",
+     "Other"
+    ],
+    "Online Health Services": [
+     "Issues in Online registration",
+     "e-Hospital related",
+     "e-Prescription related",
+     "MeraAspatal",
+     "Mobile Applications related",
+     "Electronic Health Records related",
+     "Website Related Issues",
+     "Suggestions",
+     "Other"
+    ],
+    "Policy Matters": "skip (Acts, councils)",
+    "MoHFW Employee Related": "skip"
    },
    "note": "Village PHC/CHC/area hospital are STATE (AP: Health Dept; TS: Health Dept): Meekosam/Prajavani first. 'Hospitals' here = central hospitals only; check if AIIMS Mangalagiri / AIIMS Bibinagar in AIIMS sub-list.",
    "app_map": {
     "health - medicines not available (central/AMRIT)": "Medicines > Shortage of Medicines",
     "health - fake / bad quality medicine": "Medicines > Quality of Medicines",
-    "health - patient care at AIIMS Mangalagiri/Bibinagar (if listed)": "Hospitals > AIIMS > (city) > Patient Care"
+    "health - patient care at AIIMS Mangalagiri/Bibinagar (if listed)": "Hospitals > AIIMS > (city) > Patient Care",
+    "health - Ayushman Bharat / PM-JAY card or hospital refused": "Health Schemes > Pradhan Mantri Jan Arogya Yojna",
+    "health - PHC/CHC no doctor, staff, services (after state route)": "Health Schemes > National Health Mission  (or Public Health > Community Health System)",
+    "health - pregnancy care / vaccination / child health": "Public Health > Reproductive and Child Health",
+    "health - dengue/malaria in village, mosquito control": "Public Health > Vector Borne Diseases (Dengue, Malaria etc.)",
+    "health - many people falling sick (outbreak, diarrhoea, jaundice)": "Public Health > Disease Outbreak",
+    "health/water - fluorosis (bone/teeth problems from water)": "Health Schemes > National Programme for Prevention and Control of Fluorosis (NPPCF)",
+    "health - money for serious illness treatment": "Financial Assistance for Medical Treatment > Assistance under Umbrella Scheme of Rashtriya Arogya Nidhi",
+    "health - adulterated / unsafe food sold": "Food Regulation > Complaint regarding food products",
+    "education - NEET seat not allotted per rank": "Medical Education > Non-allocation of seats in colleges as per rank obtained"
    },
+   "complete": "yes (AIIMS city list check pending)",
+   "rule": "Village PHC/CHC/area hospitals are state-run: Meekosam/Prajavani first; NHM/PM-JAY route next. 108 ambulance is state-run (no CPGRAMS option seen). 'Mental Health' option: if text signals personal crisis, show Tele-MANAS 14416 first (verify)."
+  },
+  "Tribal Affairs": {
+   "main": [
+    "Tribal Schools",
+    "Tribal Health",
+    "Safeguard Rights for STs",
+    "Tribal Welfare Funds",
+    "Tribal Land related matters / Rights, Resettlement and Rehabilitation",
+    "Employee Services Related",
+    "Pension Related",
+    "Procurement of goods and services and meetings conducted",
+    "Tribal Policy",
+    "Tribal Groups/ ST Related Data",
+    "Finance Related Matters",
+    "Scheduled Areas",
+    "NGO /Voluntary organisation",
+    "Tribal Culture",
+    "Dharti Aaba- Janjatiya Gram Utkarsh Abhiyan",
+    "PMU(Messa & Administrative Costs to States and Uts)",
+    "Portals, IT",
+    "Corruption"
+   ],
+   "next_level": "NOT YET SEEN - need: Tribal Schools, Tribal Health, Tribal Land / R&R, Scheduled Areas, Dharti Aaba",
+   "SAFETY": "App never asks or infers ST status. Suggest only when report is about a tribal/agency area school, hostel, land or scheme by the user's own words; ITDA (state) route first.",
    "complete": false
   }
  }
