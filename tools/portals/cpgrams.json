@@ -1211,6 +1211,68 @@
     "Misbehaviour/ Corruption/ Harassment"
    ],
    "privacy_note": "Some forms ask School name with complete address: school name is a public institution and OK; never put a child's name."
+  },
+  "Higher Education": {
+   "main": {
+    "Exam/Entrance Exam Result Related": [
+     "Hall ticket not received",
+     "Results not out",
+     "Re-evaluation",
+     "Others Exam related issue"
+    ],
+    "Fee/Scholarship/Fellowship Related": [
+     "Refund, Late submission",
+     "Payment of semester fee/annual fee",
+     "Hostel Related",
+     "Certificate Not submitted regarding Scholarship/fellowship",
+     "Delayed Scholarship/fellowship",
+     "Others issues regarding Scholarship/Fellowship"
+    ],
+    "Policy Matter/New Education Policy": [
+     "National Education Policy",
+     "Problem in educational Institutions"
+    ],
+    "Misbehaviour/ Corruption/ Harassment/ Anti-ragging Related": [
+     "Anti-ragging",
+     "Misbehavior/Harassment by Educational Institutions",
+     "Corruption"
+    ],
+    "Admission Related": [
+     "Admission fee",
+     "Documents verification",
+     "Other issues related to admission",
+     "Study Material issue regarding distance learning"
+    ],
+    "Indian students studying abroad- NRI fees Related": null,
+    "Employee Services Matter": "skip (staff)",
+    "Pension Related": "skip (staff)",
+    "Reservation and Language Institute Related": [
+     "Reservation matter to Higher Education Institutions",
+     "Language Institute related"
+    ],
+    "Other Issues": [
+     "Matter pertains to state University",
+     "Delay in providing degree"
+    ]
+   },
+   "note": "Colleges in AP/TS are state-run (Intermediate Board, Collegiate/Technical Education, state universities). State Government route / Meekosam / Prajavani first; this ministry next. Never file a college issue under School Education.",
+   "app_map": {
+    "education.college - college facilities / classes / staff / lab / building": "Policy Matter/New Education Policy > Problem in educational Institutions",
+    "education.college - state university issue": "Other Issues > Matter pertains to state University",
+    "education.college - degree certificate delayed": "Other Issues > Delay in providing degree",
+    "education.college - exam result not out": "Exam/Entrance Exam Result Related > Results not out",
+    "education.college - hall ticket": "... > Hall ticket not received",
+    "education.college - re-evaluation": "... > Re-evaluation",
+    "education.college - scholarship / fee reimbursement delayed": "Fee/Scholarship/Fellowship Related > Delayed Scholarship/fellowship",
+    "education.college - hostel": "Fee/Scholarship/Fellowship Related > Hostel Related",
+    "education.college - fee refund": "Fee/Scholarship/Fellowship Related > Refund, Late submission",
+    "education.college - admission / certificate verification": "Admission Related > Documents verification / Other issues related to admission",
+    "education.college - ragging (student safety)": "Misbehaviour.../Anti-ragging Related > Anti-ragging (also call 1800-180-5522 anti-ragging helpline)"
+   },
+   "never_auto": [
+    "Corruption"
+   ],
+   "complete": true
   }
  }
 }
