@@ -1330,5 +1330,35 @@
   "roads",
   null,
   "R&B-Land Acquisition"
+ ],
+ [
+  "Electricity meter burnt, need new meter",
+  "power",
+  null,
+  "Meter Burnt"
+ ],
+ [
+  "Current bill very high this month, wrong reading",
+  "power",
+  null,
+  "Wrong Data On Bill"
+ ],
+ [
+  "Power trips many times a day",
+  "power",
+  null,
+  "Interuptions"
+ ],
+ [
+  "Transco tower laid in my field, crop compensation not paid",
+  "power",
+  null,
+  "Crop/land compensation"
+ ],
+ [
+  "Buffalo died of electric shock, compensation not paid",
+  "power",
+  null,
+  "Electrical Accidents"
  ]
 ]
