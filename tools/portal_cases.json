@@ -856,5 +856,23 @@
   "health",
   null,
   "Not received NTR Vaidya Seva"
+ ],
+ [
+  "108 ambulance came 2 hours late",
+  "health",
+  null,
+  "Ambulance Delayed"
+ ],
+ [
+  "104 vehicle not coming to our village for months",
+  "health",
+  null,
+  "Vehicle not coming to village"
+ ],
+ [
+  "Aarogya Asara amount not credited after surgery",
+  "health",
+  null,
+  "Amount not Credited"
  ]
 ]
