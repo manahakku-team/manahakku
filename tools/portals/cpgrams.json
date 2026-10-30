@@ -1273,6 +1273,126 @@
     "Corruption"
    ],
    "complete": true
+  },
+  "Power": {
+   "main": {
+    "Land Acquisition, Compensation, Right of Way (RoW) & Rehabilitation Issues": {
+     "Land Acquisition & Compensation Issues": [
+      "Bhakra Beas Management Board (BBMB)",
+      "Damodar Valley Corporation (DVC)",
+      "NHPC Limited",
+      "North Eastern Electric Power Corporation (NEEPCO)",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Resettlement & Rehabilitation (R&R) Issues": [
+      "Bhakra Beas Management Board (BBMB)",
+      "Damodar Valley Corporation (DVC)",
+      "NHPC Limited",
+      "North Eastern Electric Power Corporation (NEEPCO)",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Land oustees / Project Affected Person (PAP) Employment Issues": [
+      "Bhakra Beas Management Board (BBMB)",
+      "Damodar Valley Corporation (DVC)",
+      "NHPC Limited",
+      "North Eastern Electric Power Corporation (NEEPCO)",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Others"
+     ],
+     "Crop Damage & Crop Compensation": [
+      "Power Grid Corporation of India Ltd. (POWERGRID)",
+      "Others"
+     ],
+     "Right of Way (RoW) & Transmission Tower Issues": [
+      "Power Grid Corporation of India Ltd. (POWERGRID)",
+      "Others"
+     ],
+     "Community/Local Disputes & Social Impact Issues": [
+      "Bhakra Beas Management Board (BBMB)",
+      "Damodar Valley Corporation (DVC)",
+      "NHPC Limited",
+      "North Eastern Electric Power Corporation (NEEPCO)",
+      "NTPC Limited",
+      "SJVN Limited",
+      "THDC INDIA LIMITED",
+      "Power Grid Corporation of India Ltd. (POWERGRID)",
+      "Others"
+     ],
+     "Any other matters pertaining to Land Acquisition / Compensation": "not checked"
+    },
+    "Tendering, Procurement & Contract Matters": {
+     "Tender / Bidding Related Issues": [
+      "Ministry of Power - Head Office",
+      "Appellate Tribunal for Electricity (APTEL)",
+      "BBMB",
+      "Bureau of Energy Efficiency (BEE)",
+      "Central Electricity Authority (CEA)",
+      "CERC",
+      "CPRI",
+      "DVC",
+      "Energy Efficiency Services Limited (EESL)",
+      "NEEPCO",
+      "NHPC Limited",
+      "NPTI",
+      "NTPC Limited",
+      "Power Finance Corporation Ltd. (PFC)",
+      "POWERGRID",
+      "Grid India",
+      "REC",
+      "SJVN Limited",
+      "THDC INDIA LIMITED"
+     ],
+     "Matters related to Procurement through GeM": [
+      "Ministry of Power - Head Office",
+      "Appellate Tribunal for Electricity (APTEL)",
+      "BBMB",
+      "Bureau of Energy Efficiency (BEE)",
+      "Central Electricity Authority (CEA)",
+      "CERC",
+      "CPRI",
+      "DVC",
+      "Energy Efficiency Services Limited (EESL)",
+      "NEEPCO",
+      "NHPC Limited",
+      "NPTI",
+      "NTPC Limited",
+      "Power Finance Corporation Ltd. (PFC)",
+      "POWERGRID",
+      "Grid India",
+      "REC",
+      "SJVN Limited",
+      "THDC INDIA LIMITED"
+     ]
+    },
+    "Regulatory, Technical & Power Sector Governance (CEA Matters)": "not checked",
+    "E-Vehicle/EV Charging Infra": "not checked",
+    "Power Project Impacts – Safety, Environmental, Hazardous and Health Issues": "not checked (needed)",
+    "Power Tariff, Policies, Acts, Schemes etc.": "not checked (needed)",
+    "New and Renewable Energy (NRE) Matters": "not checked",
+    "Shareholder & Bondholder Payment/dividens -Related Issues": "skip",
+    "Research & Development, Training and Certification Matters": "skip",
+    "Employee Services Related": "skip",
+    "Pension Related": "skip",
+    "Misbehaviour/ Corruption/ Harassment": "never auto",
+    "Suggestions and Feedback": "not checked",
+    "Miscellaneous matters of Ministry of Power": "not checked (needed)"
+   },
+   "KEY_RULE": "Village electricity (power cuts, transformer, low voltage, poles/wires, meter, bill, new connection) is the state DISCOM's job, NOT Ministry of Power. Route: DISCOM complaint / 1912 helpline / Meekosam (AP) / Prajavani (TS) first; CPGRAMS via State Governments/Others -> State Government -> AP/TS. Ministry of Power only for central PSU projects (NTPC, POWERGRID towers, land/crop compensation).",
+   "app_map": {
+    "power - crop damaged by POWERGRID tower line work": "Land Acquisition... > Crop Damage & Crop Compensation > Power Grid Corporation of India Ltd. (POWERGRID)",
+    "power - transmission tower on farmland / RoW compensation": "Land Acquisition... > Right of Way (RoW) & Transmission Tower Issues > POWERGRID",
+    "power - land taken for NTPC/central plant, compensation pending": "Land Acquisition... > Land Acquisition & Compensation Issues > NTPC Limited / Others",
+    "power - displaced family rehabilitation (central project)": "Land Acquisition... > Resettlement & Rehabilitation (R&R) Issues > (company)"
+   },
+   "complete": false
   }
  }
 }
