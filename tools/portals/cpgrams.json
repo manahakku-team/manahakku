@@ -1047,9 +1047,28 @@
      "Corruption",
      "Misbehaviour"
     ],
-    "Storage & Inspection Related": "not checked",
-    "Policy Related matters": "not checked",
-    "Sugarcane, Sugar and Edible Oil related": "not checked"
+    "Storage & Inspection Related": [
+     "Adulration",
+     "Rotten",
+     "Availabity of Godowns",
+     "Mill related",
+     "Private Entrepreneurs Guarantee (PEG) Sechme"
+    ],
+    "Policy Related matters": {
+     "Procurement Policy of Wheat and Paddy for MSP": [
+      "Matters related to Procurement Policy of Wheat and Paddy.",
+      "Matter related to adoption of DCP mode for procurement",
+      "Extension of procurement period of Wheat/Paddy."
+     ],
+     "Gunny bag & MSP for Wheat , Paddy and Conarsegrains": "not checked",
+     "Other issues pertaining to Policy matters of sugar/ethanol": "not checked"
+    },
+    "Sugarcane, Sugar and Edible Oil related": [
+     "Sugar mill related",
+     "Edible Oil price related",
+     "Fair & Remunerative Price of Sugarcane",
+     "Minimum Selling Price (MSP) of Sugar"
+    ]
    },
    "note": "Ration shops and cards are run by the state (AP: Civil Supplies; TS: Civil Supplies). State Government route / Meekosam / Prajavani first; this ministry if the state does not act.",
    "app_map": {
@@ -1065,7 +1084,11 @@
     "nutrition - card category change (e.g. APL to BPL) / transfer": "... > Ration Card related > Transfer /Category change of Ration Card",
     "nutrition - card cancelled wrongly": "... > Ration Card related > Cancellation of Ration Card",
     "nutrition - e-KYC failure": "... > Ration Card related > E-KYC",
-    "nutrition - migrant cannot get ration in other state/town": "... > Ration Card related > One Nation One Ration Card (ONORC)"
+    "nutrition - migrant cannot get ration in other state/town": "... > Ration Card related > One Nation One Ration Card (ONORC)",
+    "agri - paddy procurement centre closed early / extension needed": "Policy Related matters > Procurement Policy of Wheat and Paddy for MSP > Extension of procurement period of Wheat/Paddy.",
+    "agri - sugarcane payment / FRP not paid by mill": "Sugarcane, Sugar and Edible Oil related > Fair & Remunerative Price of Sugarcane",
+    "agri - sugar mill dues / mill issues": "Sugarcane, Sugar and Edible Oil related > Sugar mill related",
+    "nutrition - rotten grain in godown": "Storage & Inspection Related > Rotten"
    },
    "never_auto": [
     "Corruption and Malpractice",
