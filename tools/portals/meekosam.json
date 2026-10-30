@@ -119,7 +119,13 @@
    "BC Welfare-->Administration Of Hostels - Inspections-->Non Providing Of Adequate Infrastructure Facilities In Hostels",
    "Tribal Welfare Residential Educational Institutions Society-->Residential Schools-->Infrastructure Maintenance / Infrastructure Accommodation",
    "Intermediate Education-->Infrastructure Facilities to College-->Drinking Water Facility / Facilities for Laboratories / Hostel Facility / NCC and NSS / Playground Facility / Sporting Equipment / Toilets Facility",
-   "Technical Education-->Polytechnic Infrastructure Related-->(facilities)"
+   "Technical Education-->Polytechnic Infrastructure Related-->(facilities)",
+   "Public Health-->Poor Infrastructure & Facilities-->Insufficient Seating / Waiting Areas / No Electricity / No Drinking water / Lack of Cleanliness / No Water supply / Dilapidated / Broken Buildings",
+   "Directorate of Secondary Health-->Infrastructure Issues-->Repair / Maintenance To Hospital Building/ Ward / Repair To The Equipment",
+   "APSWREIS-->Infrastructure Provision-->Non Availability Of Drinking Water / Bathrooms And Toilets Are In Very Worst Condition",
+   "Marketing-->Procurement Of Agrl.Commoditiespaddy-->Non Availability Of Infrastructure At Paddy Purchase Center -Paddy",
+   "Collegiate Education-->Infrastructure Facilities To College-->Sporting Equipment / Drinking Water / Hostel / Laboratories / Playground / Library / Toilets Facility",
+   "AP State Council for Higher Education-->Constituent / Affiliated College Infrastructure Related-->(facilities)"
   ],
   "welfare": [
    "Labour-->Ap Building & Other Construction Workers Welfare Board-->Registration And Renewal Of Building & Other Construction Workers / Issues Related To Claims Under Schemes",
@@ -221,6 +227,12 @@
    "Labour-->Ap Labour Welfare Board-->Issues Related To Claims Under Schemes Of The Ap Labour Welfare Board / Matters Related To Payment Of Labour Welfare Fund",
    "Labour-->Sw Bonded Labour-->Identification/Survey Of Bonded Labour Including Child Labour Not Done / Release Order For Bonded Labour Not Issued",
    "Labour-->Registration Of Establishments-->Issues Related To Registration / Renewal Of Establishments"
+  ],
+  "admin": [
+   "School Education-->School Administration-->Teachers Absent / Syllabus Not Completed / Teachers in shortage / Teachers Not Teaching Properly",
+   "AP State Civil Supplies Corporation-->Paddy Procurement (Adminstration Issues)-->Coupons issued but paddy not procured / Not procuring the paddy even though the paddy is within the prescribed limit / Village agricultural assistant not distributing coupons / Not issuing FTO Copy/FAQ specification report at RBK / Procured paddy in offline not entering in portal / Coupons distributed but Paddy Purchase Centre staff not attending the farm gate",
+   "Social Welfare-->Hostel Administration (Pre-Matric & College Hostels-->Implementation of menu",
+   "Samagra Shiksha-->Samagra Shiksha Outsourcing/ contract employees -->Posts required, salary pendings"
   ]
  },
  "app_map": {
@@ -331,7 +343,20 @@
   "agri - sugar factory cane payment pending": "search 'factor' > Sugar And Cane-->Cane Wing -->Suagr Factories Cane Payments",
   "housing - housing colony lacks roads/water/drains/lights": "search 'infra' > AP State Housing Corporation Ltd-->Infrastructure Works In Housing Colonies-->Providing Infrastructure Facilities",
   "housing - colony infrastructure needs repair": "search 'infra' > ...-->Repairs To Existing Infrastructure Works",
-  "education.college - junior college toilets/labs/hostel/playground": "search 'infra' > Intermediate Education-->Infrastructure Facilities to College-->(Toilets Facility / Facilities for Laboratories / Hostel Facility / Playground Facility)"
+  "education.college - junior college toilets/labs/hostel/playground": "search 'infra' > Intermediate Education-->Infrastructure Facilities to College-->(Toilets Facility / Facilities for Laboratories / Hostel Facility / Playground Facility)",
+  "health - PHC no seating / no electricity / not clean": "search 'infra' > Public Health-->Poor Infrastructure & Facilities-->(Insufficient Seating / No Electricity / Lack of Cleanliness)",
+  "health - area hospital building/ward or equipment repair": "search 'infra' > Directorate of Secondary Health-->Infrastructure Issues-->Repair / Maintenance To Hospital Building/ Ward / Repair To The Equipment",
+  "education.college - degree college toilets/library/labs/hostel": "search 'infra' > Collegiate Education-->Infrastructure Facilities To College-->(facility)",
+  "education - school teachers absent": "search 'admin' > School Education-->School Administration-->Teachers Absent",
+  "education - school short of teachers": "search 'admin' > School Education-->School Administration-->Teachers in shortage",
+  "education - syllabus not completed / not teaching properly": "search 'admin' > School Education-->School Administration-->Syllabus Not Completed / Teachers Not Teaching Properly",
+  "education - welfare hostel menu not followed": "search 'admin' > Social Welfare-->Hostel Administration (Pre-Matric & College Hostels-->Implementation of menu",
+  "agri - paddy not procured though coupons given": "search 'admin' > AP State Civil Supplies Corporation-->Paddy Procurement (Adminstration Issues)-->Coupons issued but paddy not procured",
+  "agri - paddy refused though within limit": "... -->Not procuring the paddy even though the paddy is within the prescribed limit",
+  "agri - no procurement coupons from assistant": "... -->Village agricultural assistant not distributing coupons",
+  "agri - FTO/FAQ report not given at RBK": "... -->Not issuing FTO Copy/FAQ specification report at RBK",
+  "agri - offline paddy not entered in portal (payment stuck)": "... -->Procured paddy in offline not entering in portal",
+  "agri - paddy purchase centre lacks facilities": "search 'infra' > Marketing-->Procurement Of Agrl.Commoditiespaddy-->Non Availability Of Infrastructure At Paddy Purchase Center -Paddy"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -381,7 +406,11 @@
   "Labour Dept employee issues (staff)",
   "Industries land allotment / medium industries (business)",
   "Sports infra (not civic)",
-  "Kapu corporation (community-named)"
+  "Kapu corporation (community-named)",
+  "All Endowment / temple / choultry lines (religious - never)",
+  "Paddy 'PPCs demanding money' / 'Millers and PPCs colluded' (blames)",
+  "Temple 'staff involving in political issues' (political)",
+  "APIIC industrial infra / LIC employee issues (business/staff)"
  ],
  "still_needed_keywords": [
   "garbage",
