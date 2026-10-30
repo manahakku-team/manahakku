@@ -1887,16 +1887,51 @@
      "Others": null
     },
     "NBO (National Buildings Organisation)": "skip (data/staff)",
-    "NCHFI": "not checked",
-    "CGEWHO": "skip (central staff housing)",
-    "BMTPC": "not checked",
-    "NIUA": "not checked",
-    "Schemes, Programs & Other Divisions under MoHUA": "NOT YET SEEN - needed (PMAY-Urban, Swachh Bharat Urban, AMRUT, street vendors)",
+    "NCHFI": {
+     "Cooperative Housing Societies": [
+      "Organisation & Management",
+      "Mismanagement of funds",
+      "Functioning and Management",
+      "Discrimination by Managing Committee",
+      "High handedness by the society"
+     ],
+     "Others": null
+    },
+    "CGEWHO": "central staff housing - skip",
+    "BMTPC": "skip",
+    "NIUA": "skip (RTI not accepted here)",
+    "Schemes, Programs & Other Divisions under MoHUA": {
+     "divisions": [
+      "Administration Division",
+      "AMRUT Division",
+      "Delhi Division",
+      "HRIDAY Division",
+      "Housing Division",
+      "Integrated Finance Division",
+      "PHE Division",
+      "PSP Division",
+      "Smart City Division",
+      "Swachh Bharat Mission Division",
+      "NULM Division",
+      "Urban Development Divison",
+      "Vigilance Divsion",
+      "Works Division",
+      "Housing For All (HFA) Division",
+      "CPHEEO",
+      "NERDUP & Mission Coordination",
+      "Coordination Division"
+     ],
+     "next_level": "NOT YET SEEN for AMRUT / Swachh Bharat / HFA / NULM"
+    },
     "Delhi Division": "out of scope"
    },
    "note": "Ministry appears as 'Urban Development'. Town water/drains/garbage/roads are municipality (state) matters: Meekosam/Prajavani first.",
    "app_map": {
-    "housing (town) - home-loan interest subsidy (CLSS) not received": "HUDCO > CENTRAL NODAL AGENCY -PMAY > Credit Linked Subsidy Scheme"
+    "housing (town) - home-loan interest subsidy (CLSS) not received": "HUDCO > CENTRAL NODAL AGENCY -PMAY > Credit Linked Subsidy Scheme",
+    "water/sanitation (town) - drinking water pipeline, sewerage, drains": "Schemes, Programs & Other Divisions under MoHUA > AMRUT Division > (next level TBD)",
+    "sanitation (town) - garbage, public toilets": "Schemes... > Swachh Bharat Mission Division > (next level TBD)",
+    "housing (town) - PMAY-Urban house not sanctioned / instalment stuck": "Schemes... > Housing For All (HFA) Division > (next level TBD)",
+    "livelihood (town) - street vendor / urban livelihood": "Schemes... > NULM Division > (next level TBD)"
    },
    "complete": false
   }
