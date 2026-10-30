@@ -478,5 +478,35 @@ null,
 "nutrition",
 null,
 "Creation of new FP shop"
+],
+[
+"Free gas cylinder booked 20 days ago but not delivered",
+"nutrition",
+null,
+"Cylinder booked not delivered"
+],
+[
+"Deepam cylinder delivered but money not credited to bank",
+"nutrition",
+null,
+"Amount not Credited"
+],
+[
+"Gas subsidy not coming to bank account",
+"nutrition",
+null,
+"Gas subsidy"
+],
+[
+"Ration vehicle giving less rice than entitlement",
+"nutrition",
+null,
+"Entitlement"
+],
+[
+"Rice card application pending for 4 months",
+"nutrition",
+null,
+"pendign beyond SLA"
 ]
 ]
