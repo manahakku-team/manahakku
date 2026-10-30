@@ -4144,7 +4144,7 @@ function delivHTML(en){const d=DELIV[en];if(!d)return "";const te=LANG==="te",ou
   cost=`<p class="dvcost">💰 ${pts.join(" → ")}${up?` · <b>${esc(up)}</b>`:""}</p>`}
  const x=d.x?`<p class="dvx">${esc(te?d.x[1]:d.x[0])}</p>`:"";
  const src=d.src?`<p class="note dvsrc">${esc(t("dvMore"))}: ${d.src.map(s=>`<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])} ↗</a>`).join(" · ")}</p>`:"";
- return `<div class="dvrec"><p class="glbl">📏 ${esc(t("dvH"))} <button type="button" class="linkbtn dvhow" data-hc="1">ⓘ ${esc(t("tlH"))}</button></p>${chip}${out.map(s=>`<p class="dvline">${esc(s)}</p>`).join("")}${cost}${x}${src}</div>`}
+ return `<div class="dvrec"><p class="glbl">📏 ${esc(t("dvH"))} <button type="button" class="linkbtn dvhow" data-hc="1">ⓘ ${esc(t("hcH"))}</button></p>${chip}${out.map(s=>`<p class="dvline">${esc(s)}</p>`).join("")}${cost}${x}${src}</div>`}
 function projHTML(en){const pj=DIST_PROJ[en];if(!pj)return "";
  return `<div class="dproj"><p class="glbl">🏗️ ${esc(t("projL"))}</p><h4>${esc(L(pj[0]))}${pj[1]?` <span class="note">· ${esc(pj[1])}</span>`:""}</h4>${delivHTML(en)}<dl class="dfacts"><dt>${esc(t("projWhat"))}</dt><dd>${esc(L(pj[2]))}</dd><dt>${esc(t("projStruggle"))}</dt><dd>${pj[3]?esc(L(pj[3])):`<span class="note">${esc(t("projNoChal"))}</span>`}</dd><dt>${esc(t("projTl"))}</dt><dd>${(PTL[en]||[]).length?`<ol class="ptl">${PTL[en].map(e=>`<li><span class="ly">${esc(tw(e[0]))}</span><span class="le">${esc(LANG==="te"?e[2]:e[1])}</span></li>`).join("")}</ol>`:`<span class="note">${esc(t("projNoTl"))}</span>`}</dd><dt>${esc(t("projNow"))}</dt><dd>${esc(L(pj[4]))}</dd></dl><p class="pcredit">${esc(t("projSrc"))}: <a href="${esc(pj[5])}" target="_blank" rel="noopener noreferrer">${esc(pj[6])} ↗</a></p></div>`}
 
@@ -4323,7 +4323,7 @@ document.querySelectorAll("[data-speak]").forEach(b=>{
   if(v==="all")return `${t("allH")}. ${t("allLede")} ${allSpeech}`;
   if(v==="dash")return `${t("dashH")}. ${t("dashLede")} ${INDIC.map(i=>L(i.l)+": "+i.v.replace("%",LANG==="te"?" శాతం":" percent")).join(". ")}. ${dashSpeech}`;
   if(v==="rights")return `${t("rkH")}. ${t("rkLede")} ${t("amendLede")}`;
-  if(v==="history")return `${t("tlH")}. ${t("hiLede")} `+TIMELINE.map(([p,e])=>`${L(p)}: ${L(e)}`).join(". ");
+  if(v==="history")return `${t("hiH")}. ${t("hiLede")} `+TIMELINE.map(([p,e])=>`${L(p)}: ${L(e)}`).join(". ");
   return `${t("newsH")}. ${t("newsLede")} ${t("corrNote")}`});
 });
 
