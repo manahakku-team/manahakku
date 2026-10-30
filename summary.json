@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-29T21:57",
+ "updated": "2026-10-30T01:19",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "agri": 28,
+    "other": 320,
+    "elderly": 4,
+    "power": 24,
+    "agri": 29,
     "health": 16,
-    "other": 315,
     "education": 21,
-    "power": 21,
-    "elderly": 3,
     "roads": 5,
     "water": 10,
     "sanitation": 11,
@@ -19,7 +19,7 @@
     "housing": 3
    },
    "West Godavari": {
-    "agri": 2,
+    "agri": 3,
     "other": 1
    },
    "Vizianagaram": {
@@ -72,20 +72,20 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 33,
-    "other": 136,
-    "nutrition": 8,
-    "power": 5,
-    "roads": 10,
-    "health": 17,
-    "education": 12,
-    "water": 25,
+    "water": 27,
+    "health": 21,
+    "other": 152,
+    "roads": 12,
+    "nutrition": 10,
+    "education": 13,
+    "agri": 34,
+    "power": 6,
+    "sanitation": 6,
     "housing": 3,
     "social": 1,
     "elderly": 2,
     "women": 2,
-    "livelihood": 3,
-    "sanitation": 5
+    "livelihood": 3
    },
    "Kumuram Bheem Asifabad": {
     "other": 2,
