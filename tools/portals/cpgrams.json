@@ -860,6 +860,70 @@
    },
    "note": "PMGSY = only roads built under that scheme (usually signboard says PMGSY). Unknown road type -> State Government (AP/TS) route. Corruption/fake-payment options never auto-suggested (facts, no blame). NSAP pensions in AP/TS are paid under state pension schemes; State Government route first, this route for central NSAP share. Some leaves ask a State dropdown before description. PMAY-G 'bribe' options are never auto-suggested; for a stuck installment use the neutral 'Delay in sanction of installments' option.",
    "complete": true
+  },
+  "Panchayati Raj": {
+   "main": {
+    "Corruption Related to Panchayats": {
+     "Panchayat related Allegation of Corruption": "then State dropdown (Andhra Pradesh, Telangana listed)",
+     "Panchayat Embezzlement or Misappropriation of Funds": "not checked",
+     "MoPR Officials": "skip"
+    },
+    "Panchayat Development Related Matter": {
+     "Misuse of funds given to Panchayats": "not checked",
+     "Basic facilities in villages": "not checked (may have next level / State dropdown)",
+     "Civic Amenities": "not checked (may have next level / State dropdown)"
+    },
+    "Harassment Related with Panchayats": [
+     "Woman Exploitation in Panchayats",
+     "Harassment cases related to Panchayats",
+     "Others"
+    ],
+    "e Gram Swaraj": [
+     "e gram Swaraj site down",
+     "Planning related issues, Accounting Module",
+     "PRI Profile"
+    ],
+    "Panchayat Election": [
+     "Sarpanch Election GP",
+     "President BP",
+     "Chairman ZP"
+    ],
+    "Svamitva Scheme": [
+     "Property Card",
+     "Scheme Policy",
+     "Others"
+    ],
+    "Establishment and General Administration matters related to Ministry of Panchayati Raj": [
+     "Service related issues",
+     "Procurement or related matters"
+    ],
+    "Capacity Building of Elected Representatives of Panchayats": [
+     "RGSA Training Imparted",
+     "GPDP or BPDP or ZPDP",
+     "NPMU related",
+     "Infrastructure Development under RGSA"
+    ],
+    "Fiscal Devolution": [
+     "15th Finance Commission related",
+     "14th Finance Commission related",
+     "Others"
+    ],
+    "PESA": [
+     "Implementation of PESA Act",
+     "Others"
+    ],
+    "Miscellaneous": null
+   },
+   "note": "Panchayats are state-run: Meekosam/PGRS (AP) or Prajavani (TS) first. Use this ministry when the state route fails. Corruption/Embezzlement/Misuse-of-funds/Election options never auto-suggested (facts, no blame; politically neutral). Miscellaneous goes straight to description = safe fallback.",
+   "app_map": {
+    "roads/water/drain/streetlight - panchayat not acting": "Panchayat Development Related Matter > Basic facilities in villages",
+    "village amenities (community hall, burial ground, market, streetlights)": "Panchayat Development Related Matter > Civic Amenities",
+    "certs - house site / property card (SVAMITVA)": "Svamitva Scheme > Property Card",
+    "tribal village (Scheduled Area) gram sabha rights not followed": "PESA > Implementation of PESA Act",
+    "village plan (GPDP) not made / not shared": "Capacity Building of Elected Representatives of Panchayats > GPDP or BPDP or ZPDP",
+    "anything else village-level": "Miscellaneous (straight to description)"
+   },
+   "complete": "mostly; open sub-levels of Basic facilities / Civic Amenities if time"
   }
  }
 }
