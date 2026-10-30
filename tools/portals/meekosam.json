@@ -86,7 +86,18 @@
    "Sainik Welfare-->...-->Non Payment Of Grants (Children Education Grant ...)",
    "Swarna Gramam - Swarna Wardu (SGSW)-->Complaints On Secretariat Employees-Welfare & Education Assistant-->Employee do not know the process/Knowledge about Schemes / Multiple visits to the secretariat",
    "Fisheries-->Issues Related Aquaculture-->Complaints From Adjacent Agriculture Farmers Regarding Seepage Of Saline Water"
-  ]
+  ],
+  "transport": [
+   "AP State Civil Supplies Corporation-->Transport Vehicles-->Transport vehicles not available at RBK / Demanding more charges for transportation at RBK / Contractor not positioning the vehicles at RBK / Transport charges not paid / Other Transport Vehicles Issue",
+   "Women Development and Child Welfare-->Anganwadi Functionaries-->Complaint On Transportation Of Food Items/Eggs To The Anganwadi Centers",
+   "Rural Water Supply Engineering-->Transportation Of Drinking Water-->Request For Transportation Of Drinking Water"
+  ],
+  "election": [
+   "AP State Housing Corporation Ltd-->Grievance On Already Sanctioned Houses-->Selection Of Beneficiaries / Selection of option for Construction type",
+   "AP Public Service Commission-->AP Public Service Commission-->Unfair or Discriminatory Selection Process (never auto)",
+   "note: NO voter-card / Election Commission option on Meekosam. Voter card -> ECI (voters.eci.gov.in / 1950) route already in app."
+  ],
+  "music_dance_colleges": "AP State Creativity And Culture Commission--> Govt Music & Dance colleges/schools (Guntur, Nellore, Vijayawada, Vizianagaram, Rajamahendravaram)-->Complaints Against Facilities / Teachers / Non-Admissions"
  },
  "app_map": {
   "roads - village road potholes/repair": "search 'road' > Panchayati Raj Engineering-->Repairs to Roads-->Minor Repairs of roads CC Roads/BT Roads (within village/mandal)  (big damage: Major Repairs)",
@@ -124,7 +135,14 @@
   "education - government welfare hostel: poor food / no medicines / no lights / warden absent": "search 'education' > [hostel's department]-->Hostels Education-->(matching line)",
   "livelihood - no skill development centre / trainer": "search 'education' > AP State Skill Development Corporation-->Training And Education-->Need To Provide Skill Development Centers / Trainer Not Available",
   "public service - village secretariat makes people visit many times": "search 'education' > Swarna Gramam - Swarna Wardu (SGSW)-->Complaints On Secretariat Employees-...-->Multiple visits to the secretariat",
-  "agri - saline water seepage from aqua ponds into fields": "search 'water' > Fisheries-->Issues Related Aquaculture-->Complaints From Adjacent Agriculture Farmers Regarding Seepage Of Saline Water"
+  "agri - saline water seepage from aqua ponds into fields": "search 'water' > Fisheries-->Issues Related Aquaculture-->Complaints From Adjacent Agriculture Farmers Regarding Seepage Of Saline Water",
+  "agri - paddy transport vehicle not available at RBK (procurement)": "search 'transport' > AP State Civil Supplies Corporation-->Transport Vehicles-->Transport vehicles not available at RBK",
+  "agri - extra transport charges at RBK": "search 'transport' > AP State Civil Supplies Corporation-->Transport Vehicles-->Demanding more charges for transportation at RBK",
+  "agri - transport charges not paid to farmer": "search 'transport' > AP State Civil Supplies Corporation-->Transport Vehicles-->Transport charges not paid",
+  "nutrition - anganwadi food/eggs not delivered": "search 'transport' > Women Development and Child Welfare-->Anganwadi Functionaries-->Complaint On Transportation Of Food Items/Eggs To The Anganwadi Centers",
+  "housing - house sanctioned but beneficiary selection issue": "search 'election' or 'house' > AP State Housing Corporation Ltd-->Grievance On Already Sanctioned Houses-->Selection Of Beneficiaries",
+  "iddocs.voter - voter card": "NOT on Meekosam: use ECI route (voters.eci.gov.in, 1950) - already in app",
+  "education - govt music/dance college facilities": "search 'mus' > AP State Creativity And Culture Commission-->(college)-->Complaints Against Facilities"
  },
  "never_auto": [
   "Police-->Enforcement-->Drugs / Gutka / Narcotics / Excise / Gambling / Open Drinking (police matter, not drinking water)",
@@ -134,7 +152,13 @@
   "Water Resources-->Water Users Association elections (election matter)",
   "Water Resources-->Laying/Removal Of Unauthorised Pipes, Unauthorised Cultivation, Fish ponds (blames individuals)",
   "SGSW Disciplinary Matters / Rude Behavior (blames named functionaries)",
-  "Endowment sanitation / temple water (religious)"
+  "Endowment sanitation / temple water (religious)",
+  "Prohibition and Excise (liquor transport)",
+  "Police-->Illegal transportation of sand/mineral/cattle (police matter; blames individuals)",
+  "AP State Christian (Minorities) Finance Corporation church construction / pilgrimage (religious)",
+  "Tirumala Tirupati Devasthanam (religious)",
+  "Water Users Association / Cooperative / Fishermen society elections (election matters)",
+  "Sports / Youth Services selections (not civic)"
  ],
  "still_needed_keywords": [
   "college",
@@ -150,5 +174,6 @@
   "land",
   "house",
   "mid-day meal"
- ]
+ ],
+ "search_tips": "Meekosam search matches words in the option text, not meaning. 'revenue' found only a church line, so for certificates/land use 'certificate', 'caste', 'income', 'land', 'pattadar', 'survey', 'mutation'."
 }
