@@ -120,7 +120,33 @@ const NOT_NAME=new Set(["office","offices","sir","madam","garu","gaaru","saab","
 const GARU_RX=/([a-z\u0C00-\u0C7F]+)\s*(?:garu|gaaru|గారు|గారి|గారికి)(?![a-z])/gi;
 const ROLE_OK=new Set(["collector","mla","mp","mlc","minister","sarpanch","mro","mpdo","tahsildar","tehsildar","rdo","officer","officers","commissioner","sir","madam","doctor","teacher","headmaster","engineer","secretary","president","chairman","si","ci","police","vro","vra","ae",
  "కలెక్టర్","ఎమ్మెల్యే","ఎంపీ","ఎమ్మెల్సీ","మంత్రి","మంత్రిగారు","సర్పంచ్","సర్పంచి","ఎమ్మార్వో","ఎంపీడీవో","తహసీల్దార్","తహశీల్దార్","ఆర్డీవో","అధికారి","అధికారులు","కమిషనర్","సార్","మేడమ్","మేడం","డాక్టర్","వైద్యులు","టీచర్","ఉపాధ్యాయులు","ప్రధానోపాధ్యాయులు","ఇంజనీర్","కార్యదర్శి","అధ్యక్షులు","చైర్మన్","ఎస్ఐ","సీఐ","పోలీసు","వీఆర్వో","వీఆర్ఏ"]);
-function namedPerson(x0){const x=String(x0||"").replace(PLACE_PEOPLE," ");
+// ---------- People's names (shared rules: keep in step between the app and backend/Code.gs) ----------
+// SURE: common Telugu first names and surnames: blocked. MAYBE: words that are also gods, places or ordinary words
+// (Krishna, Lakshmi, Sai, Raja...): such a report is saved but waits for the owner's quick name check.
+// A name followed by a place word ("Reddy colony", "Sai temple", "Ramesh nagar") counts one step lighter.
+const NAMES_SURE=["ramesh","suresh","mahesh","naresh","rajesh","rakesh","mukesh","dinesh","umesh","venkat","venkatesh","venkata","srinivas","srinivasa","srinivasulu","srinu","seenu","prasad","ravi","kiran","kumar","raju","ramu","naveen","praveen","pavan","anil","sunil","kishore","kishor","mohan","madhu","murali","nagaraju","nageswara","nageswararao","nagesh","satish","santosh","sandeep","sudheer","sudhir","sravan","shravan","harish","girish","ramana","ramanaiah","subbarao","subbaiah","satyanarayana","appa rao","appalanaidu","yadagiri","mallesh","mallaiah","ramulu","anjaiah","venkaiah","raghu","raghava","siddhu","vamsi","vamshi","karthik","vijay","ajay","sanjay","vinod","prakash","ashok","bhaskar","chandu","gopi","gopal","harsha","jagadish","jayaram","manoj","nagendra","phani","pradeep","rajendra","ranga","ravindra","sekhar","shekar","srikanth","sridhar","srihari","sudhakar","surendra","uday","upendra","veeraiah","veerababu","vasu","david","john","joseph","raheem","rahim","salim","imran","khader","basha","abdul","mohammed","mohammad","ahmed","yusuf","padma","radha","savitri","sarojini","swathi","swapna","sravani","sirisha","sunitha","anitha","kavitha","kalyani","madhavi","manjula","nirmala","rajeswari","ramadevi","renuka","sailaja","sujatha","suneetha","aruna","mounika","nagamani","pavani","sowjanya","srilatha","vasantha","reddy","chowdary","choudary","chowdhary","naidu","varma","sharma","sastry","murthy","goud","setty","shetty","achari","shaik","sheikh","rao","yadav","khan",
+ "రమేష్","సురేష్","మహేష్","నరేష్","రాజేష్","రాకేష్","దినేష్","వెంకట్","వెంకటేష్","శ్రీనివాస్","శ్రీనివాసులు","శ్రీను","ప్రసాద్","రవి","కిరణ్","కుమార్","రాజు","నవీన్","ప్రవీణ్","పవన్","అనిల్","సునీల్","కిషోర్","మోహన్","మురళి","నాగరాజు","సతీష్","సంతోష్","హరీష్","రమణ","సుబ్బారావు","సత్యనారాయణ","అప్పారావు","రాఘవ","వంశీ","కార్తీక్","విజయ్","అజయ్","సంజయ్","ప్రకాష్","అశోక్","భాస్కర్","గోపి","గోపాల్","జగదీష్","మనోజ్","శేఖర్","శ్రీకాంత్","శ్రీధర్","సుధాకర్","ఉదయ్","స్వాతి","స్వప్న","శ్రావణి","సునీత","అనిత","కల్యాణి","కళ్యాణి","మాధవి","మంజుల","నిర్మల","రేణుక","శైలజ","సుజాత","అరుణ","మౌనిక","రెడ్డి","చౌదరి","నాయుడు","వర్మ","శర్మ","గౌడ్","శెట్టి"];
+const NAMES_MAYBE=["krishna","rama","ram","sai","lakshmi","laxmi","durga","ganesh","siva","shiva","surya","chandra","venkateswara","narasimha","anjaneya","hanuman","ganga","saraswati","vijaya","narayana","chaitanya","babu","nani","raja","rani","sita","devi","bharathi","jyothi","kamala","latha","pushpa","usha","sandhya","rekha","tulasi","vani","hari",
+ "కృష్ణ","రామ","సాయి","లక్ష్మి","దుర్గ","గణేష్","శివ","సూర్య","చంద్ర","వెంకటేశ్వర","నరసింహ","ఆంజనేయ","బాబు","రాజా","సీత","దేవి","హరి","రాధ","పద్మ","రాణి","వాణి","జ్యోతి","లత","పుష్ప"];
+const PLACE_NOUN=new RegExp("^(?:(?:temple|gudi|district|river|nagar|colony|street|road|palem|peta|puram|school|college|hospital|centre|center|circle|bridge|theatre|theater|ward|layout|mandal|village|tank|cheruvu|canal|project|reservoir|dam|statue|park|market|bazaar|junction|gudem|church|mosque|masjid|hall|bhavan|stadium)(?![a-z])|(?:ఆలయం|గుడి|జిల్లా|నది|నగర్|కాలనీ|వీధి|రోడ్డు|రహదారి|పాఠశాల|కళాశాల|ఆసుపత్రి|చెరువు|కాలువ|ప్రాజెక్టు|సెంటర్|బజార్|మండలం|గ్రామం|పాలెం|పేట|పురం|భవన్|విగ్రహం)(?:లో|కు|ని|లోని|ను|పై)?(?![\\u0C00-\\u0C7F]))","i");
+const nameRx=list=>new RegExp("(?:^|[^a-z0-9\\u0C00-\\u0C7F])("+list.map(w=>{const e=w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"\\s+");return /[\u0C00-\u0C7F]/.test(w)?e+TE_END:e+"(?![a-z0-9])"}).join("|")+")","gi");
+const RX_NAME_SURE=nameRx(NAMES_SURE),RX_NAME_MAYBE=nameRx(NAMES_MAYBE);
+// Districts and mandals may contain names (Krishna district, Sri Sathya Sai, Ramachandrapuram): they are removed first.
+let RX_PLACES=null;
+const NAME_SET=new Set([...NAMES_SURE,...NAMES_MAYBE]);
+function placesRx(places){if(RX_PLACES)return RX_PLACES;const ws=[...new Set(places.filter(w=>w&&w.length>2).map(w=>w.toLowerCase()).filter(w=>!NAME_SET.has(w)))].sort((a,b)=>b.length-a.length).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/\s+/g,"\\s+"));
+ RX_PLACES=new RegExp("(^|[^a-z0-9\\u0C00-\\u0C7F])(?:"+ws.join("|")+")(?![a-z0-9\\u0C00-\\u0C7F])","gi");return RX_PLACES}
+// Returns "" (no name), "sure" (block) or "maybe" (owner's quick check).
+function nameLevel(x0,places){let x=String(x0||"").replace(PLACE_PEOPLE," ");if(places&&places.length)x=x.replace(placesRx(places),"$1 ");
+ const hits=(rx)=>{const out=[];rx.lastIndex=0;let m;while((m=rx.exec(x))){const after=x.slice(m.index+m[0].length).match(/^\s*([^\s,.;:!?()]+)(?:\s+([^\s,.;:!?()]+))?/);out.push(!!(after&&(PLACE_NOUN.test(after[1])||(after[2]&&NAME_SET.has(after[1].toLowerCase())&&PLACE_NOUN.test(after[2])))));if(rx.lastIndex===m.index)rx.lastIndex++}return out};
+ const sure=hits(RX_NAME_SURE),maybe=hits(RX_NAME_MAYBE);
+ if(sure.some(p=>!p))return "sure";
+ if(sure.length||maybe.some(p=>!p))return "maybe";
+ return ""}
+let PLACE_LIST = null;
+function placeList() { if (PLACE_LIST) return PLACE_LIST; const out = []; Object.keys(DISTRICTS).forEach(st => DISTRICTS[st].forEach(d => out.push(d))); try { const md = mandals_(); ["ap", "ts"].forEach(st => Object.values(md[st] || {}).forEach(ms => ms.forEach(m => out.push(m[0], m[1])))); } catch (e) {} return PLACE_LIST = out; }
+function nameMaybe_(text) { return nameLevel(normDigits_(text), placeList()) === "maybe"; }
+function namedPerson(x0){const x=String(x0||"").replace(PLACE_PEOPLE," ");if(nameLevel(x0,placeList())==="sure")return true;
  if(NAME_CUES.some(re=>re.test(x))||RX_LEADER.test(x))return true;
  ROLE_RX.lastIndex=0;let m;while((m=ROLE_RX.exec(x))){if(/^[A-Z][a-z]{2,}$/.test(m[1])&&!NOT_NAME.has(m[1].toLowerCase()))return true}
  GARU_RX.lastIndex=0;while((m=GARU_RX.exec(x))){if(!ROLE_OK.has(m[1].toLowerCase()))return true}
@@ -453,7 +479,7 @@ function doGet(e) {
     sh.getRange(2, idx[k] + 1, values.length, 1).setValues(values.map(r => [r[idx[k]] === undefined ? '' : r[idx[k]]]));
   }); } finally { wl.releaseLock(); }
   const isHidden = r => { const h = String(r[idx.hidden] || '').trim().toLowerCase(); if (h === 'no') return false;
-    return h === 'yes' || h === 'y' || h === 'hide' || h === 'true' || (Number(r[idx.flags]) || 0) >= AUTO_HIDE_FLAGS; };
+    return h === 'yes' || h === 'y' || h === 'hide' || h === 'true' || h === 'review' || (Number(r[idx.flags]) || 0) >= AUTO_HIDE_FLAGS; };
   const mine = values.filter(r => r[idx.id] && String(r[idx.state] || 'ap') === state);
   const hidden = mine.filter(isHidden).map(r => ({
     id: String(r[idx.id]),
@@ -639,6 +665,9 @@ function doPost(e) {
   if (!rate_('rp', dev, DEV_REPORTS_PER_HOUR)) return json_({ ok: false, error: 'busy' });
   if (hasPersonalDetails_([r.place, r.mandal, r.title, r.desc].join(' '))) return json_({ ok: false, error: 'pii' });
   if (hasParty_([r.place, r.title, r.desc].join(' '))) return json_({ ok: false, error: 'party' });
+  // A word that may be a person's name (Krishna, Lakshmi, Raja...): saved, but public only after the owner's quick name check
+  // (the owner writes "no" in the hidden column to publish it).
+  const nameReview = nameMaybe_([r.place, r.title, r.desc].join(' '));
   const md = mandals_();
   const mandal = mandalCanon_(md, state, r.district, r.mandal) || clip_(tidy_(r.mandal).replace(/\.$/, ''), 40) || mandalIn_(md, state, r.district, r.place);
   // Spelling and grammar are corrected before saving; the person's own words stay in desc_original.
@@ -673,13 +702,13 @@ function doPost(e) {
     put('affected', Math.min(10000000, Math.max(1, parseInt(r.affected, 10) || 1))); put('urgency', r.urgency); put('status', 'reported');
     put('verify_level', Math.min(2, Math.max(0, Number(r.verify && r.verify.level) || 0))); put('outlets', clip_(outlets, 200));
     put('lang', r.lang === 'te' ? 'te' : 'en'); put('state', state); put('sub', sub || ''); put('sector_was', f.changed ? r.sector : ''); put('auto_fix', '');
-    put('hidden', ''); put('hide_reason', ''); put('flags', 0); put('reviewed', false); put('review_note', '');
+    put('hidden', nameReview ? 'review' : ''); put('hide_reason', nameReview ? 'name check' : ''); put('flags', 0); put('reviewed', false); put('review_note', '');
     const key = Utilities.getUuid().replace(/-/g, '');
     put('edit_key', key); put('grv_system', ''); put('grv_number', ''); put('grv_date', '');
     for (let i = 0; i < row.length; i++) if (row[i] === undefined) row[i] = '';
     sh.appendRow(row);
     try { sh.getRange(sh.getLastRow(), idx.reviewed + 1).setDataValidation(SpreadsheetApp.newDataValidation().requireCheckbox().build()); } catch (e) {}
-    return json_({ ok: true, id: id, key: key, sector: f.sector, corrected: f.changed, desc: desc, title: title, mandal: mandal, text_fixed: desc !== desc0 });
+    return json_({ ok: true, id: id, key: key, sector: f.sector, corrected: f.changed, desc: desc, title: title, mandal: mandal, text_fixed: desc !== desc0, review: nameReview });
   } finally {
     lock.releaseLock();
   }
