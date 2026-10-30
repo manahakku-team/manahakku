@@ -91,7 +91,7 @@ const DISTRICTS = {
     'Peddapalli', 'Rajanna Sircilla', 'Ranga Reddy', 'Sangareddy', 'Siddipet', 'Suryapet', 'Vikarabad', 'Wanaparthy',
     'Warangal', 'Yadadri Bhuvanagiri']
 };
-const SECTORS = ['water', 'sanitation', 'health', 'nutrition', 'education', 'child', 'women', 'elderly', 'livelihood', 'housing', 'roads', 'power', 'social', 'agri'];
+const SECTORS = ['water', 'sanitation', 'health', 'nutrition', 'education', 'child', 'women', 'elderly', 'livelihood', 'housing', 'roads', 'power', 'social', 'certs', 'agri'];
 const URGENCY = ['high', 'medium', 'low'];
 const STATUSES = ['reported', 'acknowledged', 'progress', 'resolved'];
 const MAX_ROWS_RETURNED = 20000;   // every report from the start

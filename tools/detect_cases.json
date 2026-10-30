@@ -283,5 +283,35 @@ null
 "The operation theatre at the hospital is closed for a month",
 "health",
 null
+],
+[
+"Caste certificate not issued for 3 weeks at the secretariat, students missing scholarship deadline",
+"certs",
+null
+],
+[
+"Income certificate application pending for 40 days at Meeseva",
+"certs",
+null
+],
+[
+"సచివాలయంలో కుల ధృవీకరణ పత్రం మూడు వారాలుగా ఇవ్వడం లేదు",
+"certs",
+null
+],
+[
+"birth certificate ivvatledu municipality lo nela rojulu",
+"certs",
+null
+],
+[
+"Ration shop is not giving rice for two months",
+"nutrition",
+null
+],
+[
+"Old age pension not received for three months",
+"elderly",
+null
 ]
 ]
