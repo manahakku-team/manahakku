@@ -1,0 +1,462 @@
+# Mandals whose Telugu name is still empty in web/data/mandals.json (and the MANDALS copy in app/src/main/assets/index.html).
+# Generated 2026-10-31 by the draft/mandal-te run. Columns (TAB-separated): state, district, mandal_en, reason.
+# Source used for filled names: Telugu Wikipedia mandal article titles ("<name> మండలం", district-qualified where needed),
+# found through web search restricted to te.wikipedia.org. te.wikipedia pages and the *.ap.gov.in / *.telangana.gov.in
+# district sites could not be opened from this run (fetch blocked / robots.txt), so only article titles were usable.
+# Common reasons below:
+#  - "not searched ... budget exhausted": the run's web-search limit ran out before this mandal got its own search; retry.
+#  - "only village/town article": te.wikipedia has a village/town page for the headquarters but no mandal article; the
+#    spelling is probably the same, but under the rules it was not used.
+#  - "ambiguous": a mandal with the same name exists in another district and the title had no district qualifier.
+ap	Annamayya	Lakkireddipalli	not searched: web search budget exhausted
+ap	Guntur	Kakumanu	not searched: web search budget exhausted
+ap	Guntur	Vatticherukuru	not searched: web search budget exhausted
+ap	Kurnool	Alur	no mandal-form article; only town title 'ఆలూరు (కర్నూలు జిల్లా)'
+ap	Kurnool	C.Belagal	no te.wikipedia mandal article found
+ap	Kurnool	Chippagiri	no mandal-form article; only village title 'చిప్పగిరి'
+ap	Kurnool	Gonegandla	no mandal-form article; only village title 'గోనెగండ్ల'
+ap	Kurnool	Gudur	no mandal-form article; only 'గూడూరు (కర్నూలు జిల్లా)' (not mandal title)
+ap	Kurnool	Halaharvi	no mandal-form article; only village title 'హాలహర్వి'
+ap	Kurnool	Kallur	no mandal-form article; only 'కల్లూరు (కర్నూలు జిల్లా)' (not mandal title)
+ap	Kurnool	Kodumur	no mandal-form article; only town title 'కోడుమూరు'
+ap	Kurnool	Kosigi	no mandal-form article; only 'కోసిగి (కర్నూలు జిల్లా)' (not mandal title)
+ap	Kurnool	Krishnagiri	no mandal-form article; only village title 'క్రిష్ణగిరి'
+ap	Kurnool	Kurnool Rural	no rural-mandal article; only 'కర్నూలు మండలం' (rule: split must match)
+ap	Kurnool	Maddikera East	no mandal-form article; only village title 'మద్దికేర తూర్పు'
+ap	Kurnool	Nandavaram	no mandal-form article; only village title 'నందవరం (నందవరం మండలం)'
+ap	Kurnool	Orvakal	no mandal-form article; only village title 'ఓర్వకల్లు'
+ap	Kurnool	Veldurthi	ambiguous: title 'వెల్దుర్తి మండలం' unqualified (Veldurthi also in Palnadu/Medak); candidate https://te.wikipedia.org/wiki/%E0%B0%B5%E0%B1%86%E0%B0%B2%E0%B1%8D%E0%B0%A6%E0%B1%81%E0%B0%B0%E0%B1%8D%E0%B0%A4%E0%B0%BF_%E0%B0%AE%E0%B0%82%E0%B0%A1%E0%B0%B2%E0%B0%82
+ap	Kurnool	Yemmiganur	no mandal-form article; only town title 'ఎమ్మిగనూరు'
+ap	Markapuram	Ardhaveedu	no te.wikipedia mandal article found (searched; only village/town article titled without మండలం)
+ap	Markapuram	Bestawaripeta	no te.wikipedia mandal article found (searched; only village/town article titled without మండలం)
+ap	Markapuram	Chandra Sekhara Puram	no te.wikipedia mandal article found (searched; only village/town article titled without మండలం)
+ap	Markapuram	Hanumanthuni Padu	no te.wikipedia mandal article found (searched; only village/town article titled without మండలం)
+ap	Markapuram	Konakanamitla	no te.wikipedia mandal article found (searched; only village/town article titled without మండలం)
+ap	Markapuram	Pamur	no te.wikipedia mandal article found (searched; only village/town article titled without మండలం)
+ap	Markapuram	Pedacherlo Palle	no te.wikipedia mandal article found (searched; only village/town article titled without మండలం)
+ap	Markapuram	Pullalacheruvu	no te.wikipedia mandal article found (1 query)
+ap	Markapuram	Racherla	not searched: shared WebSearch budget exhausted
+ap	Markapuram	Tarlupadu	not searched: shared WebSearch budget exhausted
+ap	Markapuram	Veligandla	not searched: shared WebSearch budget exhausted
+ap	Markapuram	Yerragondapalem	not searched: shared WebSearch budget exhausted
+ap	Nandyal	Atmakur	not searched: web search budget exhausted
+ap	Nandyal	Bethamcherla	not searched: web search budget exhausted
+ap	Nandyal	Chagalamarri	not searched: web search budget exhausted
+ap	Nandyal	Dornipadu	not searched: web search budget exhausted
+ap	Nandyal	Gadivemula	not searched: web search budget exhausted
+ap	Nandyal	Gospadu	not searched: web search budget exhausted
+ap	Nandyal	Jupadu Bungalow	not searched: web search budget exhausted
+ap	Nandyal	Koilkuntla	not searched: web search budget exhausted
+ap	Nandyal	Kothapalle	not searched: web search budget exhausted
+ap	Nandyal	Mahanandi	not searched: web search budget exhausted
+ap	Nandyal	Midthuru	not searched: web search budget exhausted
+ap	Nandyal	Nandikotkur	not searched: web search budget exhausted
+ap	Nandyal	Pagidyala	not searched: web search budget exhausted
+ap	Nandyal	Pamulapadu	not searched: web search budget exhausted
+ap	Nandyal	Peapally	not searched: web search budget exhausted
+ap	Nandyal	Uyyalawada	not searched: web search budget exhausted
+ap	Nandyal	Velgodu	not searched: web search budget exhausted
+ap	Palnadu	Atchampet	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Bellamkonda	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Bollapalle	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Dachepalle	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Durgi	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Edlapadu	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Gurazala	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Ipuru	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Karempudi	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Krosuru	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Machavaram	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Muppalla	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Nadendla	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Nekarikallu	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Nuzendla	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Piduguralla	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Rajupalem	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Rentachintala	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Rompicherla	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Savalyapuram	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Veldurthi	not searched: shared WebSearch budget exhausted
+ap	Palnadu	Vinukonda	not searched: shared WebSearch budget exhausted
+ap	Parvathipuram Manyam	Balijipeta	not searched: shared web search budget exhausted
+ap	Parvathipuram Manyam	Garugubilli	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Parvathipuram Manyam	Gummalakshmipuram	not searched: shared web search budget exhausted
+ap	Parvathipuram Manyam	Jiyyammavalasa	not searched: shared web search budget exhausted
+ap	Parvathipuram Manyam	Komarada	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Parvathipuram Manyam	Kurupam	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Parvathipuram Manyam	Palakonda	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Parvathipuram Manyam	Seethampeta	not searched: shared web search budget exhausted
+ap	Parvathipuram Manyam	Seethanagaram	not searched: shared web search budget exhausted
+ap	Parvathipuram Manyam	Veeraghattam	not searched: shared web search budget exhausted
+ap	Polavaram	Gurthedu	not searched: shared web search budget exhausted
+ap	Polavaram	Kunavaram	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Polavaram	Vararamachandrapuram	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Prakasam	Chimakurthi	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Darsi	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Donakonda Kanigiri	English entry malformed
+ap	Prakasam	Kandukuru	ambiguous: Kandukur mandal also in Rangareddy district, title unqualified; candidate https://te.wikipedia.org/wiki/%E0%B0%95%E0%B0%82%E0%B0%A6%E0%B1%81%E0%B0%95%E0%B1%82%E0%B0%B0%E0%B1%81_%E0%B0%AE%E0%B0%82%E0%B0%A1%E0%B0%B2%E0%B0%82
+ap	Prakasam	Korisapadu	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Kurichedu	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Marripudi	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Mundlamuru Ongole	English entry malformed
+ap	Prakasam	Ponnaluru	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Santhamaguluru	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Santhanuthala Padu	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Tangutur	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Thallur	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Ulavapadu	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Voletivaripalem	not searched: shared WebSearch budget exhausted
+ap	Prakasam	Zarugumilli	not searched: shared WebSearch budget exhausted
+ap	Sri Potti Sriramulu Nellore	Ananthasagaram	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Anumasamudrampeta	no mandal article in results (only category 'అనుమసముద్రంపేట మండలంలోని గ్రామాలు' and a village page); search budget then exhausted
+ap	Sri Potti Sriramulu Nellore	Bogolu	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Buchireddypalem	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Chejerla	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Indukurpet	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Kaligiri	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Kaluvoya	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Kodavaluru	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Manubolu	not searched individually: shared web search budget exhausted
+ap	Sri Potti Sriramulu Nellore	Marripadu	not searched individually: shared web search budget exhausted
+ap	Sri Potti Sriramulu Nellore	Muttukuru	not searched individually: shared web search budget exhausted
+ap	Sri Potti Sriramulu Nellore	Nellore Rural	not searched individually: shared web search budget exhausted; only unqualified నెల్లూరు మండలం seen (not rural)
+ap	Sri Potti Sriramulu Nellore	Rapuru	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Potti Sriramulu Nellore	Thotapalligudur	not searched individually: shared web search budget exhausted
+ap	Sri Potti Sriramulu Nellore	Vinjamuru	no te.wikipedia mandal article found (only village/town article in results)
+ap	Sri Sathya Sai	Amarapuram	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Bukkapatnam	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Chennekothapalle	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Chilamathur	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Gandlapenta	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Kanaganapalle	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Kothacheruvu	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Madakasira	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Nallacheruvu	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Nallamada	only village/town article seen in district queries; per-mandal search not done (search budget exhausted)
+ap	Sri Sathya Sai	Obuladevaracheruvu	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Parigi	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Penukonda	only village/town article seen in district queries; per-mandal search not done (search budget exhausted)
+ap	Sri Sathya Sai	Puttaparthi	only village/town article seen in district queries; per-mandal search not done (search budget exhausted)
+ap	Sri Sathya Sai	Ramagiri	not searched individually: shared web search budget exhausted; name also a mandal elsewhere (Peddapalli)
+ap	Sri Sathya Sai	Somandepalle	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Tadimarri	not searched individually: shared web search budget exhausted
+ap	Sri Sathya Sai	Tanakal	only village/town article seen in district queries; per-mandal search not done (search budget exhausted)
+ap	Srikakulam	Burja	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Srikakulam	Etcherla	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Srikakulam	Jalumuru	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Srikakulam	Kanchili	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Srikakulam	Kaviti	not searched: shared web search budget exhausted
+ap	Srikakulam	Kothuru	not searched: shared web search budget exhausted
+ap	Srikakulam	Lakshminarsupeta	not searched: shared web search budget exhausted
+ap	Srikakulam	Mandasa	not searched: shared web search budget exhausted
+ap	Srikakulam	Meliaputti	not searched: shared web search budget exhausted
+ap	Srikakulam	Narasannapeta	not searched: shared web search budget exhausted
+ap	Srikakulam	Polaki	not searched: shared web search budget exhausted
+ap	Srikakulam	Ponduru	not searched: shared web search budget exhausted
+ap	Srikakulam	Saravakota	not searched: shared web search budget exhausted
+ap	Srikakulam	Sarubujjili	not searched: shared web search budget exhausted
+ap	Srikakulam	Sompeta	not searched: shared web search budget exhausted
+ap	Srikakulam	Vajrapukothuru	not searched: shared web search budget exhausted
+ap	Visakhapatnam	Gajuwaka	not searched: web search budget exhausted
+ap	Visakhapatnam	Padmanabham	not searched: web search budget exhausted
+ap	Visakhapatnam	Pedagantyada	not searched: web search budget exhausted
+ap	Visakhapatnam	Pendurthi	not searched: web search budget exhausted
+ap	Vizianagaram	Bondapalle	only village article 'బొండపల్లి (బొండపల్లి మండలం)' found; search budget exhausted before retry
+ap	Vizianagaram	Denkada	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Vizianagaram	Gajapathinagaram	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Vizianagaram	Jami	not searched: shared web search budget exhausted
+ap	Vizianagaram	Merakamudidam	not searched: shared web search budget exhausted
+ap	Vizianagaram	Nellimarla	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Vizianagaram	Pusapatirega	searched once; only village/constituency article found, no mandal-titled article; search budget exhausted before retry
+ap	Vizianagaram	Rajam	only village article 'రాజాం (రాజాం మండలం)' found; search budget exhausted before retry
+ap	Vizianagaram	Santhakaviti	not searched: shared web search budget exhausted
+ap	Vizianagaram	Srungavarapukota	not searched: shared web search budget exhausted
+ap	Vizianagaram	Therlam	not searched: shared web search budget exhausted
+ap	Vizianagaram	Vangara	not searched: shared web search budget exhausted
+ap	Vizianagaram	Vepada	not searched: shared web search budget exhausted
+ap	YSR Kadapa	B. Kodur	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Badvel	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Brahmamgarimattam	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Chakrayapet	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Chapad	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Chennur	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Chinthakommadinne	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Duvvur	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Gopavaram	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Kalasapadu	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Khajipet	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Kondapuram	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Lingala	only village title found (లింగాల (వైఎస్ఆర్ జిల్లా)), no mandal article
+ap	YSR Kadapa	Mylavaram	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Nandalur	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Peddamudium	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Pendlimarri	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Porumamilla	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Rajampet	ambiguous: also a mandal in Kamareddy district, title unqualified; candidate https://te.wikipedia.org/wiki/%E0%B0%B0%E0%B0%BE%E0%B0%9C%E0%B0%82%E0%B0%AA%E0%B1%87%E0%B0%9F_%E0%B0%AE%E0%B0%82%E0%B0%A1%E0%B0%B2%E0%B0%82
+ap	YSR Kadapa	Rajupalem	not searched individually: web search budget exhausted
+ap	YSR Kadapa	S.Mydukur	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Sidhout	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	T. Sundupalle	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Veeraballi	not searched individually: web search budget exhausted
+ap	YSR Kadapa	Vempalle	only village title found (వేంపల్లె (వేంపల్లె మండలం)), no mandal article
+ap	YSR Kadapa	Vontimitta	no te.wikipedia mandal article found (only village/town/constituency titles)
+ap	YSR Kadapa	Yerraguntla	no te.wikipedia mandal article found (only village/town/constituency titles)
+ts	Adilabad	Adilabad Rural	not searched individually: web search budget exhausted
+ts	Adilabad	Adilabad Urban	not searched individually: web search budget exhausted
+ts	Adilabad	Bazarhatnoor	not searched individually: web search budget exhausted
+ts	Adilabad	Bela	not searched individually: web search budget exhausted
+ts	Adilabad	Gadiguda	not searched individually: web search budget exhausted
+ts	Adilabad	Gudihathnur	not searched individually: web search budget exhausted
+ts	Adilabad	Talamadagu	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Allapalli	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Annapureddypally	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Aswapuram	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Chandrugonda	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Chunchupally	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Karakagudem	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Kothagudem	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Laxmidevipalli	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Palvancha	not searched individually: web search budget exhausted
+ts	Bhadradri Kothagudem	Yellandu	not searched individually: web search budget exhausted
+ts	Hanumakonda	Bheemadevarapalle	not searched individually: web search budget exhausted
+ts	Hanumakonda	Damera	not searched individually: web search budget exhausted
+ts	Hanumakonda	Dharmasagar	not searched individually: web search budget exhausted
+ts	Hanumakonda	Inavole	not searched individually: web search budget exhausted
+ts	Hanumakonda	Nadikuda	not searched individually: web search budget exhausted
+ts	Hanumakonda	Velair	not searched individually: web search budget exhausted
+ts	Hyderabad	Bahadurpura	not searched individually: web search budget exhausted
+ts	Hyderabad	Bandlaguda	not searched individually: web search budget exhausted
+ts	Hyderabad	Charminar	not searched individually: web search budget exhausted
+ts	Hyderabad	Golkonda	not searched individually: web search budget exhausted
+ts	Jagtial	Jagtial Rural	no rural-mandal article found (only district/town pages)
+ts	Jangaon	Raghunathapalle	no te.wikipedia mandal article found (only village page రఘునాథపల్లి)
+ts	Jangaon	Tharigoppula	no te.wikipedia mandal article found (only village page తరిగొప్పుల)
+ts	Jayashankar Bhupalpally	Mogullapalle	no te.wikipedia mandal article found (only village page మొగుళ్ళపల్లి)
+ts	Jogulamba Gadwal	Aiza	no te.wikipedia mandal article found (only village page అయిజ)
+ts	Jogulamba Gadwal	Ghattu	not found (only village page గట్టు (గ్రామం)); search budget exhausted before English query
+ts	Jogulamba Gadwal	Itikyal	not found in 1 query; search budget exhausted
+ts	Jogulamba Gadwal	Kaloor_Timmanadoddi	not searched; search budget exhausted
+ts	Jogulamba Gadwal	Manopad	not found in 1 query; search budget exhausted
+ts	Jogulamba Gadwal	Rajoli	not found (only village page రాజోలి (జోగులాంబ గద్వాల జిల్లా)); search budget exhausted
+ts	Jogulamba Gadwal	Waddepalle	not found in 1 query; search budget exhausted
+ts	Kamareddy	Bhiknoor	not found (only village page బిక్నూర్ (బిక్నూర్ మండలం)); search budget exhausted
+ts	Kamareddy	Bichkunda	not found (only village page బిచ్కుంద); search budget exhausted
+ts	Kamareddy	Birkoor	not found (only village page బీర్కూర్); search budget exhausted
+ts	Kamareddy	Dongli	not searched; search budget exhausted
+ts	Kamareddy	Kamareddy	not found in 1 query (only town/district pages); search budget exhausted
+ts	Kamareddy	Lingampet	not searched; search budget exhausted
+ts	Kamareddy	Machareddy	not searched; search budget exhausted
+ts	Kamareddy	Madnur	not searched; search budget exhausted
+ts	Kamareddy	Naga Reddipet	not searched; search budget exhausted
+ts	Kamareddy	Nasurullabad	not searched; search budget exhausted
+ts	Kamareddy	Nizamsagar	not searched; search budget exhausted
+ts	Kamareddy	Palvancha	not searched; search budget exhausted (ambiguous name, also Bhadradri Kothagudem)
+ts	Kamareddy	Pitlam	not searched; search budget exhausted
+ts	Kamareddy	Rajampet	not searched; search budget exhausted (ambiguous name, also Annamayya/Kadapa)
+ts	Kamareddy	Ramareddy	not found (only village page రామారెడ్డి); search budget exhausted
+ts	Kamareddy	Sadasivanagar	not searched; search budget exhausted
+ts	Kamareddy	Tadwai	not searched; search budget exhausted (ambiguous name, also Mulugu)
+ts	Karimnagar	Chigurumamidi	not found in 1 query; search budget exhausted
+ts	Karimnagar	Ellandakunta	not found in 1 query; search budget exhausted
+ts	Karimnagar	Gangadhara	not found in 1 query; search budget exhausted
+ts	Karimnagar	Ganneruvaram	not found in 1 query; search budget exhausted
+ts	Karimnagar	Huzurabad	not found in 1 query; search budget exhausted
+ts	Karimnagar	Jammikunta	not found in 1 query; search budget exhausted
+ts	Karimnagar	Karimnagar (Rural-I)	not found in 1 query; search budget exhausted
+ts	Karimnagar	Karimnagar (Rural-II)	not found in 1 query; search budget exhausted
+ts	Khammam	Konijerla	no te.wikipedia mandal article found (3 queries)
+ts	Khammam	Mudigonda	only village article found: ముదిగొండ (ఖమ్మం జిల్లా), no mandal title
+ts	Khammam	Nelakondapalle	only village article found: నేలకొండపల్లి (ఖమ్మం జిల్లా), no mandal title
+ts	Khammam	Penuballi	only village article found: పెనుబల్లి (ఖమ్మం జిల్లా), no mandal title
+ts	Khammam	Singareni	no te.wikipedia mandal article found (only సింగరేణి general article)
+ts	Kumuram Bheem Asifabad	Asifabad	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Bejjur	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Chintalamanepally	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Dahegaon	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Jainoor	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Kerameri	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Kouthala	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Lingapur	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Penchikalpet	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Rebbena	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Sirpur_T	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Sirpur_U	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Tiryani	not searched: shared web search budget exhausted mid-task
+ts	Kumuram Bheem Asifabad	Wankidi	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Bayyaram	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Danthalapalle	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Ganagavaram	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Gudur	ambiguous: Gudur mandal exists in other districts; not searched with qualifier (search budget exhausted)
+ts	Mahabubabad	Kothaguda	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Mahabubabad	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Maripeda	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Narsimhulapet	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Nellikudur	not searched: shared web search budget exhausted mid-task
+ts	Mahabubabad	Thorrur	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Balanagar	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Chinna_Chintha_Kunta	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Gandeed	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Jadcherla	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Koilkonda	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Mahabubnagar_Rural	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Mahabubnagar_Urban	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Midjil	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Musapet	not searched: shared web search budget exhausted mid-task
+ts	Mahabubnagar	Nawabpet	ambiguous: Nawabpet mandal also in Vikarabad; not searched with qualifier (search budget exhausted)
+ts	Mancherial	Chennur	no te.wikipedia mandal article found (2 queries)
+ts	Mancherial	Dandepally	no te.wikipedia mandal article found (2 queries)
+ts	Mancherial	Hajipur	no mandal article in district queries; per-mandal search blocked by budget exhaustion
+ts	Mancherial	Jaipur	no te.wikipedia mandal article found (district + per-mandal query)
+ts	Mancherial	Kannepally	only village title found: కన్నేపల్లి (మంచిర్యాల జిల్లా)
+ts	Mancherial	Kasipet	only village title found: కాశిపేట (కాశిపేట మండలం)
+ts	Mancherial	Kotapally	only village title found: కోటపల్లి
+ts	Mancherial	Luxettipet	only town title found: లక్సెట్టిపేట
+ts	Mancherial	Vempally	not searched individually: shared web search budget exhausted
+ts	Medak	Alladurg	not found in district queries; not searched individually: shared web search budget exhausted
+ts	Medak	Chegunta	only village title found: చేగుంట
+ts	Medak	Chilipched	only village title found: చిలిప్‌చేడ్
+ts	Medak	Havelighanpur	not found in district queries; not searched individually: shared web search budget exhausted
+ts	Medak	Kowdipalle	only village title found: కౌడిపల్లి
+ts	Medak	Kulcharam	only village title found: కుల్చారం
+ts	Medak	Manoharabad	not found in district queries; not searched individually: shared web search budget exhausted
+ts	Medak	Medak	not found in district queries; not searched individually: shared web search budget exhausted
+ts	Medak	Papannapet	not found in district queries; not searched individually: shared web search budget exhausted
+ts	Medak	Regode	not found in district queries; not searched individually: shared web search budget exhausted
+ts	Medak	Shankarampet_A	only village title found: శంకరంపేట (ఎ); not a mandal article
+ts	Medak	Shankarampet_R	candidate శంకరంపేట మండలం (పట్టణ) but A/R mapping unclear; https://te.wikipedia.org/wiki/%E0%B0%B6%E0%B0%82%E0%B0%95%E0%B0%B0%E0%B0%82%E0%B0%AA%E0%B1%87%E0%B0%9F_%E0%B0%AE%E0%B0%82%E0%B0%A1%E0%B0%B2%E0%B0%82_(%E0%B0%AA%E0%B0%9F%E0%B1%8D%E0%B0%9F%E0%B0%A3)
+ts	Medak	Tekmal	only village title found: టేక్మల్
+ts	Medchal–Malkajgiri	Muduchintalpalli	not searched individually: shared web search budget exhausted
+ts	Mulugu	Eturnagaram	not found in district query; not searched individually: shared web search budget exhausted
+ts	Mulugu	Sammakka Saralamma Tadvai	not found in district query; not searched individually: shared web search budget exhausted
+ts	Mulugu	Venkatapur	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Achampet	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Amrabad	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Balmoor	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Bijinapalle	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Kodair	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Kollapur	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Lingal	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Padra	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Pentlavelli	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Tadoor	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Telkapalle	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Thimmajipeta	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Uppunuthala	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nagarkurnool	Urkonda	not found in district query; not searched individually: shared web search budget exhausted
+ts	Nalgonda	Anumula_Haliya	no te.wikipedia mandal article found (2 queries; only village అనుముల / town హాలియా articles)
+ts	Nalgonda	Chandur	no mandal article found (2 queries; only village title చండూరు (చండూరు మండలం)); name also ambiguous
+ts	Nalgonda	Chityala	no mandal article found (2 queries; only village చిట్యాల (నల్గొండ జిల్లా)); also Chityal mandal in Jayashankar
+ts	Nalgonda	Kattangoor	no mandal article found (2 queries; only village కట్టంగూర్)
+ts	Nalgonda	Neredugommu	not searched enough: shared web search budget exhausted (1 combined query, no hit)
+ts	Nalgonda	Nidamanur	not searched enough: shared web search budget exhausted (1 combined query, no hit)
+ts	Nalgonda	Pedda_adiserlapalle	no mandal article found (1 query; only village పెద్ద అడిశర్లపల్లి); search budget exhausted
+ts	Nalgonda	Peddavoora	not searched enough: shared web search budget exhausted (1 combined query, no hit)
+ts	Nalgonda	Thripuraram	no mandal article found (1 query; only village త్రిపురారం (నల్గొండ జిల్లా)); search budget exhausted
+ts	Nalgonda	Tirumalagiri_Sagar	not searched: shared web search budget exhausted (only village తిరుమలగిరి (నల్గొండ జిల్లా) seen)
+ts	Nalgonda	Vemulapalle	not searched: shared web search budget exhausted
+ts	Narayanpet	Damaragidda	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Narayanpet	Dhanwada	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Narayanpet	Gundumal	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Narayanpet	Kosgi	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Narayanpet	Kottha pally	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Narayanpet	Krishna	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Narayanpet	Maddur	not searched: shared web search budget exhausted; also ambiguous (Maddur in other districts)
+ts	Narayanpet	Maganoor	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Narayanpet	Narayanpet	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Narayanpet	Utkoor	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Basar	not searched: shared web search budget exhausted (only village బాసర seen)
+ts	Nirmal	Bhainsa	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Dastuarabad	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Dilawarpur	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Khanapur	not searched: shared web search budget exhausted; also ambiguous (Khanapur in other districts)
+ts	Nirmal	Kubeer	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Kuntala	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Lokeshwaram	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Mamada	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Mudhole	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Nirmal Rural	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Nirmal Urban	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Pembi	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Sarangapur	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Soan	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nirmal	Tanoor	not searched: shared web search budget exhausted (not in district-level query results)
+ts	Nizamabad	Aloor	not found (only village title ఆలూరు (ఆర్మూరు)); search budget exhausted before per-mandal query
+ts	Nizamabad	Balkonda	no mandal article found (only village/constituency titles)
+ts	Nizamabad	Chandur	not found (only village title చందూర్ (వర్ని)); ambiguous name; search budget exhausted
+ts	Nizamabad	Dichpalle	no mandal article found (only village title డిచ్‌పల్లి)
+ts	Nizamabad	Donkeshwar	not searched individually: search budget exhausted
+ts	Nizamabad	Jakranpalle	not searched individually: search budget exhausted
+ts	Nizamabad	Kammarpalle	no mandal article found (only village title కమ్మర్‌పల్లి (నిజామాబాదు జిల్లా))
+ts	Nizamabad	Kotgiri	no mandal article found (only village title కోటగిరి)
+ts	Nizamabad	Makloor	no mandal article found in 2 queries
+ts	Nizamabad	Mortad	no mandal article found (only village title మోర్తాడ్)
+ts	Nizamabad	Mosra	no mandal article found in 2 queries; search budget exhausted
+ts	Nizamabad	Mugpal	not searched individually: search budget exhausted
+ts	Nizamabad	Mupkal	not searched individually: search budget exhausted
+ts	Nizamabad	Nandipet	no mandal article found (only village title నందిపేట్)
+ts	Nizamabad	Navipet	no mandal article found in 2 queries
+ts	Nizamabad	Pothangal	not searched individually: search budget exhausted
+ts	Nizamabad	Ranjal	not searched individually: search budget exhausted
+ts	Nizamabad	Rudrur	no mandal article found in 2 queries; search budget exhausted
+ts	Nizamabad	Saloora	not searched individually: search budget exhausted
+ts	Nizamabad	Sirkonda	not searched individually: search budget exhausted
+ts	Nizamabad	Vailpur	not searched individually: search budget exhausted
+ts	Nizamabad	Yergatla	not searched individually: search budget exhausted
+ts	Peddapalli	Dharmaram	not found in district queries; ambiguous name; search budget exhausted
+ts	Peddapalli	Elgaid	not found in district queries; search budget exhausted
+ts	Peddapalli	Julapalle	not found in district queries; search budget exhausted
+ts	Peddapalli	Kamanpur	not found in district queries; search budget exhausted
+ts	Peddapalli	Mutharam	not found in district queries; ambiguous name (also Mutharam Mahadevpur); search budget exhausted
+ts	Peddapalli	Odela	not found in district queries; search budget exhausted
+ts	Peddapalli	Peddapalli	no mandal article found (only town/district titles); search budget exhausted
+ts	Peddapalli	Ramagiri	ambiguous (also Anantapur/Sri Sathya Sai); not found; search budget exhausted
+ts	Peddapalli	Sultanabad	not found in district queries; search budget exhausted
+ts	Rajanna Sircilla	Ellanthakunta	not found in district queries; search budget exhausted
+ts	Rajanna Sircilla	Gambhiraopeta	not found in district queries; search budget exhausted
+ts	Rajanna Sircilla	Mustabad	not found in district queries; search budget exhausted
+ts	Rajanna Sircilla	Thangallapalle	not found in district queries; search budget exhausted
+ts	Rajanna Sircilla	Vemulawada_Rural	no rural-mandal article found (only వేములవాడ మండలం, not accepted); search budget exhausted
+ts	Rajanna Sircilla	Yellareddypeta	not found in district queries; search budget exhausted
+ts	Ranga Reddy	Farooqnagar	not searched per-mandal (search budget exhausted); only town article ఫరూఖ్‌నగర్ seen, no mandal title
+ts	Ranga Reddy	Jilled Chowdergudem	not searched per-mandal (search budget exhausted); no mandal title seen
+ts	Ranga Reddy	Kadthal	only village title seen: కడ్తాల్ (కడ్తాల్ మండలం); per-mandal search not done (budget exhausted)
+ts	Ranga Reddy	Kandukur	only village title seen: కందుకూర్ (రంగారెడ్డి జిల్లా); name also a Prakasam mandal; per-mandal search not done (budget exhausted)
+ts	Ranga Reddy	Kothur	ambiguous: title కొత్తూరు మండలం unqualified (Kotturu mandal also in Srikakulam); candidate https://te.wikipedia.org/wiki/%E0%B0%95%E0%B1%8A%E0%B0%A4%E0%B1%8D%E0%B0%A4%E0%B1%82%E0%B0%B0%E0%B1%81_%E0%B0%AE%E0%B0%82%E0%B0%A1%E0%B0%B2%E0%B0%82
+ts	Ranga Reddy	Maheshwaram	no mandal title seen (only village ఘట్‌పల్లి (మహేశ్వరం)); per-mandal search not done (budget exhausted)
+ts	Ranga Reddy	Shadnagar	no mandal title seen (Shadnagar town; mandal is Farooqnagar); per-mandal search not done (budget exhausted)
+ts	Sangareddy	Ameenpur	only village/municipality titles seen: అమీన్‌పూర్ (సంగారెడ్డి జిల్లా); no mandal title
+ts	Sangareddy	Andole	only village/constituency titles seen: ఆందోల్; no mandal title
+ts	Sangareddy	Jinnaram	only village title seen: జిన్నారం (సంగారెడ్డి జిల్లా); no mandal title
+ts	Sangareddy	Kangti	no te.wikipedia mandal article found in searches (budget exhausted before per-mandal query)
+ts	Sangareddy	Munipally	no te.wikipedia mandal article found in searches (budget exhausted before per-mandal query)
+ts	Sangareddy	Nagilgidda	no te.wikipedia mandal article found in searches (budget exhausted before per-mandal query)
+ts	Sangareddy	Pulkal	no te.wikipedia mandal article found in searches (budget exhausted before per-mandal query)
+ts	Sangareddy	Ramchandrapuram	only town/village titles seen: రామచంద్రాపురం (సంగారెడ్డి); no mandal title
+ts	Sangareddy	Sirgapoor	no te.wikipedia mandal article found in searches (budget exhausted before per-mandal query)
+ts	Siddipet	Akkannapet	not searched per-mandal (search budget exhausted)
+ts	Siddipet	Cherial	not searched per-mandal (search budget exhausted)
+ts	Siddipet	Dhoolmitta	not searched per-mandal (search budget exhausted)
+ts	Siddipet	Kukunoorpally	not searched per-mandal (search budget exhausted)
+ts	Siddipet	Maddur	not searched per-mandal (search budget exhausted); name also in other districts, needs qualified title
+ts	Siddipet	Nangnoor	not searched per-mandal (search budget exhausted)
+ts	Siddipet	Raipole	not searched per-mandal (search budget exhausted)
+ts	Siddipet	Siddipet (Rural)	not searched per-mandal (search budget exhausted); needs rural-mandal article
+ts	Siddipet	Siddipet (Urban)	not searched per-mandal (search budget exhausted); needs urban-mandal article
+ts	Siddipet	Wargal	not searched per-mandal (search budget exhausted)
+ts	Vikarabad	Bantwaram	not found in district-wide search; per-mandal search not done (search budget exhausted)
+ts	Vikarabad	Dharur	not found in district-wide search; per-mandal search not done (search budget exhausted)
+ts	Vikarabad	Kotepally	not found in district-wide search; per-mandal search not done (search budget exhausted)
+ts	Vikarabad	Mominpet	not found in district-wide search; per-mandal search not done (search budget exhausted)
+ts	Vikarabad	Nawabpet	not found in district-wide search; per-mandal search not done (search budget exhausted)
+ts	Vikarabad	Pudur	not found in district-wide search; per-mandal search not done (search budget exhausted)
+ts	Wanaparthy	Madanapur	not searched: web search budget exhausted
+ts	Wanaparthy	Revally	not searched: web search budget exhausted
+ts	Wanaparthy	Srirangapur	not searched: web search budget exhausted
+ts	Warangal	Chennaraopet	not searched: web search budget exhausted
+ts	Warangal	Khanapur	not searched: web search budget exhausted
+ts	Warangal	Khila Warangal	not searched: web search budget exhausted
+ts	Warangal	Parvathagiri	not searched: web search budget exhausted
+ts	Warangal	Sangem	not searched: web search budget exhausted
+ts	Yadadri Bhuvanagiri	Addaguduru	not searched: web search budget exhausted
+ts	Yadadri Bhuvanagiri	Motakondur	not searched: web search budget exhausted
+ts	Yadadri Bhuvanagiri	Narayanpur	not searched: web search budget exhausted
