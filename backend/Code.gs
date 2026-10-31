@@ -743,9 +743,9 @@ function doPost(e) {
     put('verify_level', Math.min(2, Math.max(0, Number(r.verify && r.verify.level) || 0))); put('outlets', clip_(outlets, 200));
     put('lang', r.lang === 'te' ? 'te' : 'en'); put('state', state); put('sub', sub || ''); put('sector_was', f.changed ? r.sector : ''); put('auto_fix', '');
     put('hidden', nameReview ? 'review' : ''); put('hide_reason', nameReview ? 'name check' : ''); put('flags', 0); put('reviewed', false); put('review_note', '');
-    // The phone's personal "my reports" code (synced through the browser account) becomes the key, so the same person can
-    // file from any device signed in to that account; otherwise a fresh random key.
-    const key = /^[a-f0-9]{32}$/.test(String(d.my_key || '')) ? String(d.my_key) : Utilities.getUuid().replace(/-/g, '');
+    // The person's own "reports code" (a receipt-like code, no account or password) becomes the key, so the same person can
+    // file from any device by typing it or opening their private link; otherwise a fresh random key.
+    const key = /^[A-HJ-NP-Z2-9]{16}$/.test(String(d.my_key || '')) ? String(d.my_key) : Utilities.getUuid().replace(/-/g, '');
     put('edit_key', key); put('grv_system', ''); put('grv_number', ''); put('grv_date', '');
     for (let i = 0; i < row.length; i++) if (row[i] === undefined) row[i] = '';
     sh.appendRow(row);
