@@ -1,33 +1,40 @@
 {
- "updated": "2026-10-31T18:59",
+ "updated": "2026-10-31T21:49",
  "last7days_trusted": {
   "ts": {
+   "(state-wide / unknown)": {
+    "housing": 7,
+    "power": 18,
+    "other": 234,
+    "water": 40,
+    "agri": 52,
+    "education": 22,
+    "sanitation": 9,
+    "roads": 18,
+    "nutrition": 17,
+    "health": 29,
+    "elderly": 6,
+    "livelihood": 5,
+    "iddocs": 3,
+    "certs": 3,
+    "child": 1,
+    "social": 1,
+    "women": 2
+   },
    "Sangareddy": {
     "agri": 1,
     "education": 1
    },
-   "(state-wide / unknown)": {
-    "education": 22,
-    "agri": 50,
-    "other": 231,
-    "water": 39,
-    "power": 16,
-    "roads": 18,
-    "nutrition": 16,
-    "health": 28,
-    "elderly": 6,
-    "livelihood": 5,
-    "housing": 6,
-    "iddocs": 3,
-    "certs": 3,
-    "child": 1,
-    "sanitation": 8,
-    "social": 1,
-    "women": 2
+   "Khammam": {
+    "education": 2,
+    "other": 1,
+    "agri": 2,
+    "nutrition": 1,
+    "water": 1
    },
    "Hyderabad": {
     "water": 8,
-    "other": 15,
+    "other": 16,
     "women": 2,
     "health": 3,
     "roads": 1,
@@ -41,12 +48,6 @@
    "Kumuram Bheem Asifabad": {
     "other": 3,
     "education": 1
-   },
-   "Khammam": {
-    "other": 1,
-    "agri": 2,
-    "nutrition": 1,
-    "water": 1
    },
    "Siddipet": {
     "education": 2,
@@ -92,10 +93,10 @@
   },
   "ap": {
    "(state-wide / unknown)": {
+    "other": 444,
     "agri": 50,
     "education": 42,
     "nutrition": 7,
-    "other": 439,
     "water": 13,
     "sanitation": 17,
     "power": 33,
@@ -110,7 +111,7 @@
     "housing": 3
    },
    "Ananthapuramu": {
-    "education": 7,
+    "education": 9,
     "other": 4,
     "health": 2,
     "sanitation": 1
