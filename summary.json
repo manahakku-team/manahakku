@@ -1,101 +1,26 @@
 {
- "updated": "2026-10-31T13:05",
+ "updated": "2026-10-31T15:50",
  "last7days_trusted": {
-  "ap": {
-   "(state-wide / unknown)": {
-    "other": 420,
-    "education": 36,
-    "power": 33,
-    "health": 27,
-    "elderly": 6,
-    "sanitation": 14,
-    "agri": 48,
-    "women": 4,
-    "roads": 9,
-    "water": 12,
-    "nutrition": 6,
-    "certs": 1,
-    "child": 1,
-    "livelihood": 1,
-    "social": 2,
-    "housing": 3
-   },
-   "Ananthapuramu": {
-    "education": 6,
-    "other": 4,
-    "health": 2,
-    "sanitation": 1
-   },
-   "Krishna": {
-    "other": 3,
-    "livelihood": 1
-   },
-   "Srikakulam": {
-    "other": 1
-   },
-   "Anakapalli": {
-    "health": 1,
-    "agri": 1,
-    "education": 1
-   },
-   "Kurnool": {
-    "other": 2
-   },
-   "Visakhapatnam": {
-    "other": 4
-   },
-   "West Godavari": {
-    "agri": 3,
-    "other": 1
-   },
-   "Vizianagaram": {
-    "other": 4
-   },
-   "Guntur": {
-    "health": 1,
-    "agri": 1,
-    "other": 2,
-    "water": 1
-   },
-   "NTR": {
-    "other": 1
-   },
-   "Chittoor": {
-    "power": 1
-   },
-   "Kakinada": {
-    "agri": 1,
-    "other": 5
-   },
-   "East Godavari": {
-    "other": 2
-   },
-   "Palnadu": {
-    "power": 1,
-    "sanitation": 1
-   },
-   "Tirupati": {
-    "other": 1
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "nutrition": 1
-   },
-   "Prakasam": {
-    "education": 1,
-    "other": 1
-   }
-  },
   "ts": {
+   "Hyderabad": {
+    "water": 6,
+    "other": 15,
+    "roads": 1,
+    "nutrition": 2,
+    "women": 1,
+    "health": 2,
+    "housing": 1
+   },
    "(state-wide / unknown)": {
-    "power": 14,
+    "other": 228,
+    "agri": 48,
+    "education": 20,
+    "power": 15,
     "roads": 17,
-    "other": 219,
-    "education": 17,
     "nutrition": 16,
     "health": 28,
     "elderly": 6,
-    "agri": 47,
-    "water": 37,
+    "water": 38,
     "livelihood": 5,
     "housing": 6,
     "iddocs": 3,
@@ -108,15 +33,6 @@
    "Warangal": {
     "health": 8,
     "agri": 1
-   },
-   "Hyderabad": {
-    "water": 5,
-    "other": 13,
-    "roads": 1,
-    "nutrition": 2,
-    "women": 1,
-    "health": 2,
-    "housing": 1
    },
    "Kumuram Bheem Asifabad": {
     "other": 3,
@@ -167,6 +83,91 @@
     "other": 1
    },
    "Mancherial": {
+    "other": 1
+   }
+  },
+  "ap": {
+   "(state-wide / unknown)": {
+    "water": 13,
+    "other": 429,
+    "education": 38,
+    "power": 33,
+    "health": 28,
+    "elderly": 6,
+    "sanitation": 15,
+    "agri": 48,
+    "women": 4,
+    "roads": 9,
+    "nutrition": 6,
+    "certs": 1,
+    "child": 1,
+    "livelihood": 1,
+    "social": 2,
+    "housing": 3
+   },
+   "Ananthapuramu": {
+    "education": 6,
+    "other": 4,
+    "health": 2,
+    "sanitation": 1
+   },
+   "Krishna": {
+    "other": 3,
+    "livelihood": 1
+   },
+   "Srikakulam": {
+    "other": 1,
+    "agri": 1
+   },
+   "Anakapalli": {
+    "health": 1,
+    "agri": 1,
+    "education": 1
+   },
+   "Kurnool": {
+    "other": 2
+   },
+   "Visakhapatnam": {
+    "other": 4
+   },
+   "West Godavari": {
+    "agri": 3,
+    "other": 1
+   },
+   "Vizianagaram": {
+    "other": 4
+   },
+   "Guntur": {
+    "health": 1,
+    "agri": 1,
+    "other": 2,
+    "water": 1
+   },
+   "NTR": {
+    "other": 1
+   },
+   "Chittoor": {
+    "power": 1
+   },
+   "Kakinada": {
+    "agri": 1,
+    "other": 5
+   },
+   "East Godavari": {
+    "other": 2
+   },
+   "Palnadu": {
+    "power": 1,
+    "sanitation": 1
+   },
+   "Tirupati": {
+    "other": 1
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "nutrition": 1
+   },
+   "Prakasam": {
+    "education": 1,
     "other": 1
    }
   }
