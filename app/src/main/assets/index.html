@@ -22,7 +22,11 @@
 .stseg button[aria-pressed="false"] .sgi{opacity:.5}
 header.top.pinned{position:fixed;top:0;left:0;right:0;z-index:40;box-shadow:0 4px 14px rgba(0,0,0,.18)}
 header.top.pinned .brand,header.top.pinned .sub,header.top.pinned #home-eb{display:none}
-header.top.pinned .wrap{padding-block:8px 8px}
+header.top.pinned .wrap{padding-block:6px;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;gap:8px}
+header.top.pinned .stseg{order:1;flex:1 1 auto;width:auto;min-width:0;margin:0;padding:3px}header.top.pinned .stseg .sgi{display:none}
+header.top.pinned .stseg button{min-height:40px;padding:6px 4px;font-size:.9rem}
+header.top.pinned .toprow{order:2;margin:0;flex:none}
+header.top.pinned .langs button{padding:6px 10px;font-size:.85rem;min-height:40px}header.top.pinned .langs button[aria-pressed="true"]{display:none}header.top.pinned .langs{padding:3px}
 #st-btn{display:none!important}
 </style>
 <style>
