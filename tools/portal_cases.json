@@ -244,4 +244,6 @@
 ["Bar opened near school","education",null,"Bar located near"],
 ["Road condition very bad accident-prone area during nighttime near village overhead tank area, Audipudi bridge area, the village bus stand area on the road between two villages.","roads",null,"Minor Repairs of roads"],
 ["The bridge over the canal near our village has cracks and railings are broken","roads",null,"R&B-Bridges"],
-["Bus stand has no toilets for women","roads",null,"Wash Rooms"]]
+["Bus stand has no toilets for women","roads",null,"Wash Rooms"],
+["Road connecting two mandals is in very bad condition and accidents happen at night","roads",null,"R&B-Roads"],
+["రెండు మండలాల మధ్య రోడ్డు పూర్తిగా దెబ్బతిన్నది","roads",null,"R&B-Roads"]]
