@@ -2070,6 +2070,12 @@ $("flag-send").onclick=async()=>{const r=(document.querySelector('input[name="fl
   if(j&&j.ok){flagged.add(flagId);try{localStorage.setItem("mh-flagged",JSON.stringify([...flagged]))}catch(e){}closeFlag();toast(t("flagThanks"));renderAll()}
   else{$("flag-msg").textContent=t(j&&j.error==="busy"?"errBusyFlag":"flagFail");$("flag-send").disabled=false}}catch(e){$("flag-msg").textContent=t("flagFail");$("flag-send").disabled=false}};
 // ---------- Grievance number: only the phone that saved a report holds its key and can add the official number ----------
+// One personal "my reports" code: new reports are saved with it, so any browser that has it can file them.
+// Chrome and Edge keep it in the browser account's password manager, which syncs to the same account on other devices.
+let myCode=(()=>{try{let c=localStorage.getItem("mh-code");if(!/^[a-f0-9]{32}$/.test(c||"")){const a=new Uint8Array(16);crypto.getRandomValues(a);c=[...a].map(x=>x.toString(16).padStart(2,"0")).join("");localStorage.setItem("mh-code",c)}return c}catch(e){return ""}})();
+async function codeToAccount(){try{if(!window.PasswordCredential||!navigator.credentials||!myCode||localStorage.getItem("mh-code-saved")===myCode)return;await navigator.credentials.store(new PasswordCredential({id:"Mana Hakku",password:myCode,name:"Mana Hakku · my reports"}));localStorage.setItem("mh-code-saved",myCode)}catch(e){}}
+async function codeFromAccount(){try{if(!window.PasswordCredential||!navigator.credentials)return false;const c=await navigator.credentials.get({password:true,mediation:"optional"});if(c&&/^[a-f0-9]{32}$/.test(c.password||"")&&c.password!==myCode){myCode=c.password;localStorage.setItem("mh-code",myCode);localStorage.setItem("mh-code-saved",myCode);return true}}catch(e){}return false}
+const keyFor=id=>myKeys[id]||ownerCode||myCode;
 const myKeys=(()=>{try{return JSON.parse(localStorage.getItem("mh-keys")||"{}")}catch(e){return {}}})();
 let ownerCode=(()=>{try{return localStorage.getItem("mh-owner")||""}catch(e){return ""}})();
 function openOwn(){$("own-h").textContent=t("ownH");$("own-s").textContent=t("ownS");$("own-l").textContent=t("ownL");$("own-send").textContent=t("ownSave");$("own-off").textContent=t("ownOff");$("own-off").hidden=!ownerCode;$("own-msg").textContent="";$("own-code").value="";$("own-send").disabled=false;try{$("own-pop").showModal()}catch(e){$("own-pop").setAttribute("open","")}}
@@ -2769,7 +2775,7 @@ function fileRender(){const r=repById(fileId);if(!r)return fileClose();const f=F
  else if(r.sector==="iddocs"){b.innerHTML=`<p><b>${esc(t("idFiledQ"))}</b></p><p class="note">🔒 ${esc(t("idFiledS"))}</p><div class="btns"><button class="btn" type="button" id="f-idyes">✓ ${esc(t("idFiledYes"))}</button><button class="btn ghost" type="button" id="f-idno">${esc(t("idFiledNo"))}</button>${back}</div><p class="note" id="f-msg"></p>`;
   const done=()=>{f.step=5;f.filed=Date.now();f.next=Date.now()+7*DAY;f.num="";f.lvl=0;saveFilings();fileClose();renderAll&&renderAll();toast(t("fileSaved").replace("{d}",new Date(f.next).toLocaleDateString(LANG==="te"?"te-IN":"en-IN",{day:"numeric",month:"long"})))};
   $("f-idno").onclick=()=>{f.step=3;saveFilings();fileClose();toast(t("fileLaterT"))};
-  $("f-idyes").onclick=async()=>{const key=myKeys[fileId]||ownerCode;if(!SHARED||!key){done();return}
+  $("f-idyes").onclick=async()=>{const key=keyFor(fileId);if(!SHARED||!key){done();return}
    $("f-idyes").disabled=true;try{const j=await postRegister({type:"filed",id:fileId,key:key,system:ch?ch.sys:"other",state:ST});
     if(j&&j.ok){const rr=repById(fileId);if(rr){rr.grv_filed=true;rr.grv_system=ch?ch.sys:"other";rr.grv_date=new Date().toISOString()}done();loadShared()}else{$("f-msg").textContent=t(j&&j.error==="not_allowed"?"idFiledOnlyYou":"flagFail");$("f-idyes").disabled=false}}catch(e){$("f-msg").textContent=t("flagFail");$("f-idyes").disabled=false}};}
  else{b.innerHTML=`<p><b>${esc(t("fileNumH"))}</b></p><p class="note">${esc(t(myKeys[fileId]||ownerCode?"fileNumS":"fileNumSOther"))}</p><label for="f-sys"><span>${esc(t("grvSys"))}</span><select id="f-sys"></select></label><label for="f-num"><span>${esc(t("grvNum"))}</span><input id="f-num" maxlength="40" autocomplete="off"></label>
@@ -2780,12 +2786,13 @@ function fileRender(){const r=repById(fileId);if(!r)return fileClose();const f=F
   $("f-nonum").onclick=()=>finish("");
   $("f-save").onclick=async()=>{const n=grvNorm($("f-num").value);if(!/^[A-Za-z0-9][A-Za-z0-9\/\-_. ]{3,39}$/.test(n)){$("f-msg").textContent=t("grvBad");return}
    {const w=grvWarn($("f-sys"),n);if(w&&$("f-save").dataset.ok!==n){$("f-msg").textContent="⚠️ "+w;$("f-save").dataset.ok=n;$("f-save").textContent=t("grvSaveAnyway");toast(w);return}}
-   const key=myKeys[fileId]||ownerCode;if(!SHARED||!key){finish(n);return}
-   $("f-save").disabled=true;try{const j=await postRegister({type:"grievance",id:fileId,key:key,system:$("f-sys").value,number:n,state:ST});
+   let key=keyFor(fileId);if(!SHARED||!key){finish(n);return}
+   $("f-save").disabled=true;try{let j=await postRegister({type:"grievance",id:fileId,key:key,system:$("f-sys").value,number:n,state:ST});
+    if(j&&j.error==="not_allowed"&&!myKeys[fileId]&&!ownerCode){if(await codeFromAccount()){key=myCode;j=await postRegister({type:"grievance",id:fileId,key:key,system:$("f-sys").value,number:n,state:ST})}if(j&&j.error==="not_allowed"){$("f-msg").textContent=t("fileNumSOther");finish(n);return}}
     if(j&&j.ok){const rr=repById(fileId);if(rr){rr.grv_number=n;rr.grv_system=$("f-sys").value;rr.grv_date=new Date().toISOString()}finish(n);loadShared()}else{$("f-msg").textContent=t(j&&j.error==="not_allowed"?"grvNotAllowed":"flagFail");$("f-save").disabled=false}}catch(e){$("f-msg").textContent=t("flagFail");$("f-save").disabled=false}};}
  const bk=$("f-back");if(bk)bk.onclick=()=>{fileStep=Math.max(1,fileStep-1);fileRender()};
 }
-async function sendOutcome(id,v){const key=myKeys[id]||ownerCode;if(!SHARED||!key)return;try{await postRegister({type:"outcome",id:id,key:key,value:v,state:ST});loadShared()}catch(e){}}
+async function sendOutcome(id,v){const key=keyFor(id);if(!SHARED||!key)return;try{await postRegister({type:"outcome",id:id,key:key,value:v,state:ST});loadShared()}catch(e){}}
 function fileCheckH(id,f){const r=repById(id);if(!r)return;fileId=id;const b=$("file-body"),d=$("file-pop"),days=Math.max(1,Math.round((Date.now()-(f.filed||f.at))/DAY));
  $("file-h").textContent=t("fileCheckH");
  b.innerHTML=`<p>${esc(t("fileCheckS").replace("{d}",days).replace("{n}",repNo(id)).replace("{t}",r.title||sec(r.sector).name).replace("{g}",f.num?" ("+f.num+")":""))}</p><div class="fch"><button type="button" data-o="solved"><b>${esc(t("oSolved"))}</b></button><button type="button" data-o="progress"><b>${esc(t("oProgress"))}</b></button><button type="button" data-o="none"><b>${esc(t("oNone"))}</b></button></div>`;
@@ -2966,7 +2973,7 @@ async function save(){trackStep("save");
  reports.unshift(rec);
  if(!persist()){reports.shift();btn.disabled=false;$("r-save-note").textContent=t("saveFail");return}
  if(!SHARED){btn.textContent=t("saved");$("r-save-note").textContent=t("savedNote");renderDash();thanks("report","",()=>{const sh=$("r-share");if(sh)sh.click()});return}
- try{const j=await postRegister({type:"report",report:rec});
+ try{const j=await postRegister({type:"report",report:rec,my_key:myCode});if(j&&j.ok&&j.key&&j.key===myCode)setTimeout(codeToAccount,1200);
   if(j&&j.ok){saveKey(j.id,j.key);if(j.id&&j.id!==rec.id){const k=reports.findIndex(x=>x.id===rec.id);if(k>=0){reports[k].id=j.id;persist()}}btn.textContent=t("saved");let note=t("sharedSaved");
    if(j.desc&&j.desc!==rec.desc){const k=reports.findIndex(x=>x.id===rec.id);if(k>=0){reports[k]={...reports[k],desc:j.desc,title:j.title||reports[k].title,mandal:j.mandal||reports[k].mandal};persist()}note+=" "+t("textFixedNote")+" “"+j.desc+"”"}
    $("r-save-note").textContent=note;loadShared();thanks("report",(j.review?t("thxNameCheck")+" ":"")+(j.desc&&j.desc!==rec.desc?t("textFixedNote")+" “"+j.desc+"” · ":"")+t(rec.sector==="iddocs"?"thxGrvTipId":"thxGrvTip"),()=>{const sh=$("r-share");if(sh)sh.click()},j.id)}
