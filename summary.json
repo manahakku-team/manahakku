@@ -1,26 +1,21 @@
 {
- "updated": "2026-10-31T15:50",
+ "updated": "2026-10-31T18:59",
  "last7days_trusted": {
   "ts": {
-   "Hyderabad": {
-    "water": 6,
-    "other": 15,
-    "roads": 1,
-    "nutrition": 2,
-    "women": 1,
-    "health": 2,
-    "housing": 1
+   "Sangareddy": {
+    "agri": 1,
+    "education": 1
    },
    "(state-wide / unknown)": {
-    "other": 228,
-    "agri": 48,
-    "education": 20,
-    "power": 15,
-    "roads": 17,
+    "education": 22,
+    "agri": 50,
+    "other": 231,
+    "water": 39,
+    "power": 16,
+    "roads": 18,
     "nutrition": 16,
     "health": 28,
     "elderly": 6,
-    "water": 38,
     "livelihood": 5,
     "housing": 6,
     "iddocs": 3,
@@ -29,6 +24,15 @@
     "sanitation": 8,
     "social": 1,
     "women": 2
+   },
+   "Hyderabad": {
+    "water": 8,
+    "other": 15,
+    "women": 2,
+    "health": 3,
+    "roads": 1,
+    "nutrition": 2,
+    "housing": 1
    },
    "Warangal": {
     "health": 8,
@@ -88,17 +92,17 @@
   },
   "ap": {
    "(state-wide / unknown)": {
+    "agri": 50,
+    "education": 42,
+    "nutrition": 7,
+    "other": 439,
     "water": 13,
-    "other": 429,
-    "education": 38,
+    "sanitation": 17,
     "power": 33,
     "health": 28,
-    "elderly": 6,
-    "sanitation": 15,
-    "agri": 48,
+    "elderly": 7,
     "women": 4,
     "roads": 9,
-    "nutrition": 6,
     "certs": 1,
     "child": 1,
     "livelihood": 1,
@@ -106,7 +110,7 @@
     "housing": 3
    },
    "Ananthapuramu": {
-    "education": 6,
+    "education": 7,
     "other": 4,
     "health": 2,
     "sanitation": 1
