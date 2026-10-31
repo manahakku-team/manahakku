@@ -1,0 +1,25 @@
+name: Deploy Sheet script
+# One-tap deploy of backend/Code.gs to the live Sheet web app (same address), from a phone.
+# 1) Open the approval link from the README/instructions, approve, copy the address you land on.
+# 2) Actions → Deploy Sheet script → Run workflow → paste it → Run.
+on:
+  workflow_dispatch:
+    inputs:
+      approval:
+        description: "Paste the full address you landed on after approving (starts with http://localhost:8888/?code=)"
+        required: true
+permissions:
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Deploy
+        env:
+          AUTH: ${{ github.event.inputs.approval }}
+          SCRIPT_ID: ${{ vars.SCRIPT_ID }}
+        run: node tools/deploy_script.js
