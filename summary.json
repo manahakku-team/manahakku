@@ -1,30 +1,37 @@
 {
- "updated": "2026-10-31T09:54",
+ "updated": "2026-10-31T13:05",
  "last7days_trusted": {
   "ap": {
-   "Ananthapuramu": {
-    "other": 3,
-    "education": 5,
-    "health": 2,
-    "sanitation": 1
-   },
    "(state-wide / unknown)": {
+    "other": 420,
+    "education": 36,
     "power": 33,
-    "other": 413,
-    "education": 33,
     "health": 27,
-    "sanitation": 13,
-    "agri": 47,
+    "elderly": 6,
+    "sanitation": 14,
+    "agri": 48,
     "women": 4,
     "roads": 9,
     "water": 12,
     "nutrition": 6,
-    "elderly": 5,
     "certs": 1,
     "child": 1,
     "livelihood": 1,
     "social": 2,
     "housing": 3
+   },
+   "Ananthapuramu": {
+    "education": 6,
+    "other": 4,
+    "health": 2,
+    "sanitation": 1
+   },
+   "Krishna": {
+    "other": 3,
+    "livelihood": 1
+   },
+   "Srikakulam": {
+    "other": 1
    },
    "Anakapalli": {
     "health": 1,
@@ -67,10 +74,6 @@
     "power": 1,
     "sanitation": 1
    },
-   "Krishna": {
-    "other": 2,
-    "livelihood": 1
-   },
    "Tirupati": {
     "other": 1
    },
@@ -84,27 +87,31 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 216,
+    "power": 14,
+    "roads": 17,
+    "other": 219,
+    "education": 17,
+    "nutrition": 16,
     "health": 28,
+    "elderly": 6,
     "agri": 47,
     "water": 37,
-    "education": 16,
-    "power": 13,
     "livelihood": 5,
     "housing": 6,
-    "nutrition": 15,
     "iddocs": 3,
     "certs": 3,
-    "elderly": 5,
     "child": 1,
-    "roads": 15,
     "sanitation": 8,
     "social": 1,
     "women": 2
    },
+   "Warangal": {
+    "health": 8,
+    "agri": 1
+   },
    "Hyderabad": {
-    "other": 12,
-    "water": 4,
+    "water": 5,
+    "other": 13,
     "roads": 1,
     "nutrition": 2,
     "women": 1,
@@ -136,10 +143,6 @@
    },
    "Bhadradri Kothagudem": {
     "water": 1
-   },
-   "Warangal": {
-    "health": 6,
-    "agri": 1
    },
    "Mahabubnagar": {
     "other": 2
