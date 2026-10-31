@@ -1,12 +1,12 @@
-# Mana Hakku daily quality check, 2026-10-30
+# Mana Hakku daily quality check, 2026-10-31
 
-Build: f0e92bf Grievance pattern: switch to CPGRAMS/PGRS even when Prajavani or Other is selected
+Build: d556103 First-time villager fixes: district must be chosen (no silent first-district defau
 
 ## 1. App logic tests
 ```
-Right automatically 52/57 · asked with pop-up 5 · wrong without asking 0 · right-or-asked 100%
   popup got null/null  want livelihood/-  | Land registration office is not issuing documents, people wait for weeks
-Auto-correction 16/16
+  popup got nutrition/null  want iddocs/aadhaar  | My Aadhaar address update is pending for 2 months, ration stopped because of it
+Auto-correction 22/22
 guide: 7 tabs checked, change log 2026-10-30
 ```
 
@@ -20,7 +20,7 @@ TOTAL 0
 ## 3. Live website, register and data
 ```
 Website
-  OK  / 200 932296
+  OK  / 200 1333194
   OK  /about.html 200 10376
   OK  /privacy.html 200 19981
   OK  /d/ 200 13148
@@ -36,10 +36,10 @@ Website
   OK  built-in fonts
   OK  no Google Fonts request
 Register (read only)
-  OK  ap: 7 reports, 0 hidden, newest 2026-10-29
+  OK  ap: 8 reports, 0 hidden, newest 2026-10-30
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (4 days ago)
+  OK  finance data updated 2026-10-26 (5 days ago)
 LIVE_BAD 0
 ```
 
@@ -51,21 +51,24 @@ OK   ap en "Drinking water shortage in villages" @ Guntur: 3 naming the district
       - Guntur civic body launches ₹2.7 crore summer action plan to ensure drinking water supply
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
       - National Watershed Conference begins in Guntur with call to strengthen rainwater harvesting
-OK   ap en "Road accident on highway" @ Krishna: 7 naming the district
+OK   ap en "Road accident on highway" @ Krishna: 5 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
-      - Four killed in road accident in Vuyyuru
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
-OK   ts en "Doctors absent at government hospital" @ Hyderabad: 2 naming the district
+      - Tipper truck plunges into Krishna River after crashing into car on Karnataka bridge; driver missing
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 4 naming the district
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
+      - In open letter, Hyderabad citizens urge govt to improve facilities in public hospitals
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
+      - SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
 OK   ts te "రైతుల ఆందోళన" @ Khammam: 3 naming the district
       - Farmers | మక్కలు అమ్మిన రైతుల పేర్లు ఆన్‌లైన్‌లో గల్లంతు.. ఖమ్మం మార్క్‌ఫెడ్‌ అధికారుల నిర్లక్ష్యం!
       - Kodada : సూర్యాపేట- ఖమ్మం జాతీయ రహదారిపై రైతుల ధ‌ర్నా
       - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
-OK   ts en "Floods damage crops" @ Warangal: 3 naming the district
-      - Rain Damages Crops, Disrupts Transport In Warangal
-      - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
+OK   ts en "Floods damage crops" @ Warangal: 7 naming the district
+      - Floods Ravage Lowlands as Uplands Face Water Scarcity in Undivided Warangal
+      - Warangal, Hanamkonda Steps Up Relief Works After Floods
+      - Warangal, Khammam, Nalgonda worst hit as Cyclone Montha leaves trail of ruin; Six lives lost
       - Revanth to Conduct Aerial Survey in Warangal, Husnabad
 NEWS_NONE 0
 ```
