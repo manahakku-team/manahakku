@@ -60,8 +60,8 @@
 
 const REPORTS = 'Reports';
 const SUGGESTIONS = 'Suggestions';
-const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note'];
-const OUTCOMES = ['solved', 'progress', 'none'];
+const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note', 'reporter_note', 'reporter_note_ok'];
+const OUTCOMES = ['acknowledged', 'progress', 'solved', 'none'];
 const GRV_SYSTEMS = ['pgrs', 'prajavani', 'cpgrams', 'uidai', 'incometax', 'eci', 'transport', 'state', 'other'];
 const FLAGS = 'Flags';
 const FLAG_COLS = ['created', 'id', 'reason', 'note', 'state', 'dev'];
@@ -522,6 +522,9 @@ function doGet(e) {
     grv_date: r[idx.grv_date] instanceof Date ? r[idx.grv_date].toISOString() : String(r[idx.grv_date] || ''),
     grv_by: String(r[idx.grv_by] || ''),
     reporter_says: OUTCOMES.indexOf(String(r[idx.reporter_says])) >= 0 ? String(r[idx.reporter_says]) : '',
+    reporter_says_date: r[idx.reporter_says_date] instanceof Date ? r[idx.reporter_says_date].toISOString() : String(r[idx.reporter_says_date] || ''),
+    // The reporter's short update is public only after it passes the name check (or you set reporter_note_ok to "yes").
+    reporter_note: /^(yes|ok)$/i.test(String(r[idx.reporter_note_ok] || '').trim()) ? String(r[idx.reporter_note] || '').slice(0, 300) : '',
     reviewed: r[idx.reviewed] === true || /^(yes|y|true|✔|checked)$/i.test(String(r[idx.reviewed] || '').trim()),
     review_note: String(r[idx.review_note] || '').slice(0, 140)
   }));
@@ -630,7 +633,14 @@ function doPost(e) {
       if (!isOwner_(key) && !(stored && stored === key && byNow !== 'claimed')) return json_({ ok: false, error: 'not_allowed' });
       sh.getRange(k + 2, idx.reporter_says + 1).setValue(value);
       sh.getRange(k + 2, idx.reporter_says_date + 1).setValue(new Date().toISOString());
-      return json_({ ok: true });
+      // Optional short note from the reporter. Digits that look like phone, Aadhaar or grievance numbers are removed;
+      // a note that may contain a person's name waits for your check ("review") instead of going public.
+      const note = clip_(String(d.note || '').replace(/[0-9][0-9 \-]{5,}[0-9]/g, '…').replace(/\s+/g, ' ').trim(), 300);
+      if (note || d.note === '') {
+        sh.getRange(k + 2, idx.reporter_note + 1).setValue(note);
+        sh.getRange(k + 2, idx.reporter_note_ok + 1).setValue(note ? (nameMaybe_(note) ? 'review' : 'yes') : '');
+      }
+      return json_({ ok: true, note_review: !!note && nameMaybe_(note) });
     } finally {
       lock.releaseLock();
     }
