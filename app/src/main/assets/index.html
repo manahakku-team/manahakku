@@ -1086,6 +1086,17 @@ i.t-lo{background:var(--crit)}i.t-hi{background:var(--warn)}i.t-ok{background:va
 <div class="toast" id="toast" hidden role="status"></div>
 
 <script>
+// Moving from the old address: the old site passes this browser's own saved data (report keys, filings, owner code) in the
+// part of the link after "#", which never reaches any server. Merge it once, then clean the link.
+(function(){try{var h=location.hash;if(h.indexOf("#mhimport=")!==0)return;var i=h.indexOf("|"),b=h.slice(10,i<0?undefined:i),rest=i<0?"":h.slice(i+1);
+var o=JSON.parse(decodeURIComponent(escape(atob(b.replace(/-/g,"+").replace(/_/g,"/")))));
+var obj=function(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}};
+["mh-keys","mh-filing"].forEach(function(k){if(!o[k])return;var a=JSON.parse(o[k]),c=obj(k)||{};for(var x in a)if(!(x in c))c[x]=a[x];localStorage.setItem(k,JSON.stringify(c))});
+if(o["mh-reports-v1"]){var A=JSON.parse(o["mh-reports-v1"]),C=obj("mh-reports-v1")||[];if(Array.isArray(A)&&Array.isArray(C)){var ids={};C.forEach(function(r){if(r&&r.id)ids[r.id]=1});A.forEach(function(r){if(r&&r.id&&!ids[r.id])C.push(r)});localStorage.setItem("mh-reports-v1",JSON.stringify(C))}}
+["mh-owner","mh-lang","mh-state"].forEach(function(k){if(o[k]&&!localStorage.getItem(k))localStorage.setItem(k,o[k])});
+history.replaceState(null,"",location.pathname+location.search+(rest?"#"+rest.replace(/^#/,""):""))}catch(e){try{history.replaceState(null,"",location.pathname+location.search)}catch(e2){}}})();
+</script>
+<script>
 (function(){
 "use strict";
 let LANG="te";
