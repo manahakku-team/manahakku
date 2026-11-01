@@ -171,5 +171,12 @@
 ["క్లాస్ జరుగుతుండగా రంపంతో వచ్చి విద్యార్థినిపై దాడి చేశాడు", "education", null],
 ["A 6-year-old girl was kidnapped from our street", "child", null],
 ["రోడ్డు మీద చిన్నారిని బైక్‌పై వచ్చి ఎత్తుకెళ్లారు", "child", null],
-["Road safety is poor, many crashes on the highway", "roads", null]
+["Road safety is poor, many crashes on the highway", "roads", null],
+["Our village is flooded, people moved to the relief camp, no food there", "disaster", null],
+["తుఫానుకు మా ఇల్లు కూలిపోయింది, సాయం అందలేదు", "disaster", null],
+["varadalu vachi illu munigipoyindi", "disaster", null],
+["Cyclone damaged our paddy crop, enumeration not done", "agri", null],
+["Electric poles fell in the cyclone, no power for 3 days", "power", null],
+["Road washed away in the floods, bus stopped", "roads", null],
+["Fishermen lost boats and nets in the cyclone", "livelihood", null]
 ]

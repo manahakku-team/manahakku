@@ -258,5 +258,6 @@
 ["Seat not given in SC hostel for my son, admission refused", "education", null, "Admissions Not Given"],
 ["NREGS skilled wage not paid to masons", "livelihood", null, "skilled"],
 ["Pesticides not available at RBK", "agri", null, "pesticides"],
-["New crop to be included in crop insurance", "agri", null, "New Crops"]
+["New crop to be included in crop insurance", "agri", null, "New Crops"],
+["Our village is flooded, people moved to the relief camp, no food there", "disaster", null, "State Government"]
 ]
