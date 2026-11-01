@@ -1,6 +1,6 @@
-# Mana Hakku daily quality check, 2026-10-31
+# Mana Hakku daily quality check, 2026-11-01
 
-Build: d556103 First-time villager fixes: district must be chosen (no silent first-district defau
+Build: faf6b7b One-tap deploy of the Sheet script from GitHub (no script editor needed): approve 
 
 ## 1. App logic tests
 ```
@@ -20,7 +20,7 @@ TOTAL 0
 ## 3. Live website, register and data
 ```
 Website
-  OK  / 200 1333194
+  OK  / 200 1359946
   OK  /about.html 200 10376
   OK  /privacy.html 200 19981
   OK  /d/ 200 13148
@@ -39,7 +39,7 @@ Register (read only)
   OK  ap: 8 reports, 0 hidden, newest 2026-10-30
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (5 days ago)
+  OK  finance data updated 2026-10-26 (6 days ago)
 LIVE_BAD 0
 ```
 
@@ -56,11 +56,9 @@ OK   ap en "Road accident on highway" @ Krishna: 5 naming the district
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
       - Tipper truck plunges into Krishna River after crashing into car on Karnataka bridge; driver missing
-OK   ts en "Doctors absent at government hospital" @ Hyderabad: 4 naming the district
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 2 naming the district
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
-      - In open letter, Hyderabad citizens urge govt to improve facilities in public hospitals
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
-      - SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
 OK   ts te "రైతుల ఆందోళన" @ Khammam: 3 naming the district
       - Farmers | మక్కలు అమ్మిన రైతుల పేర్లు ఆన్‌లైన్‌లో గల్లంతు.. ఖమ్మం మార్క్‌ఫెడ్‌ అధికారుల నిర్లక్ష్యం!
       - Kodada : సూర్యాపేట- ఖమ్మం జాతీయ రహదారిపై రైతుల ధ‌ర్నా
