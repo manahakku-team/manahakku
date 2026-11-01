@@ -84,5 +84,10 @@
 ["The garbage bin on road no 4 is full for many days", "sanitation", "garbage"],
 ["No watchman at our school, gate is always open and outsiders walk in", "education", null],
 ["మా బడికి వాచ్‌మెన్ లేడు, గేటు ఎప్పుడూ తెరిచే ఉంటుంది", "education", null],
-["A stranger entered the school and attacked a student, no security", "education", null]
+["A stranger entered the school and attacked a student, no security", "education", null],
+["school girl harrassing", "education", null],
+["Boys harassing schoolgirls near the school gate every day", "education", null],
+["బడి అమ్మాయిలను కొందరు వేధిస్తున్నారు", "education", null],
+["Some men are harassing women at the bus stop at night", "women", null],
+["teasing girls on the road near our village tank", "women", null]
 ]
