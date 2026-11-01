@@ -443,8 +443,22 @@ function fixTitle_(title0, desc0, desc1) {
 }
 
 // ---------- read: everyone's reports ----------
+// How many safety ideas people have shared from the Home page (only the count is public, never the text). Cached 5 minutes.
+function safetyIdeas_() {
+  const cache = CacheService.getScriptCache();
+  const hit = cache.get('safety_ideas');
+  if (hit !== null) return Number(hit);
+  const ss = sheet_(SUGGESTIONS, SUGGESTION_COLS);
+  const n = Math.max(0, ss.getLastRow() - 1);
+  const texts = n ? ss.getRange(2, 2, n, 1).getValues() : [];
+  const count = texts.filter(r => /^\[Safety idea\]/.test(String(r[0] || ''))).length;
+  cache.put('safety_ideas', String(count), 300);
+  return count;
+}
+
 function doGet(e) {
   if (e && e.parameter && e.parameter.action === 'news') return json_(newsSearch_(e.parameter));
+  if (e && e.parameter && e.parameter.action === 'ideas') return json_({ ok: true, safety_ideas: safetyIdeas_() });
   const state = e && e.parameter && e.parameter.state === 'ts' ? 'ts' : 'ap';
   const sh = sheet_(REPORTS, REPORT_COLS);
   const idx = ensureColumns_(sh, REPORT_COLS);
