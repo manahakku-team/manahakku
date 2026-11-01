@@ -2012,7 +2012,7 @@ const RX_CASTE=wordRx(CASTE_WORDS);
 const PLACE_PEOPLE=/\b(?:dr\.?\s*b\.?\s*r\.?\s*)?(?:ambedkar|gandhi|nehru|phule|ntr|rajiv|indira|indiramma|potti sriramulu|alluri sitharama raju|sathya sai|annamayya|kakatiya|jyothiba|nagarjuna sagar|janani suraksha|tirumala|srisailam|surya ghar|saraswati shishu mandir|saraswati vidya|ganga kalyan|vijaya dairy|chandranna|krishna\s+(?:district|jilla|zilla|mandal|mandalam))\b/gi;
 // A role followed by a capitalised name ("MLA Ramesh", "Collector Sri Rao"); "Collector Office" is fine.
 const ROLE_RX=/\b(?:mla|mp|mlc|minister|collector|sarpanch|mro|mpdo|tahsildar|tehsildar|rdo|si|ci|dsp|officer|commissioner|corporator|councillor|chairman|chairperson|president|secretary|vro|vra|teacher|doctor|headmaster|engineer|ae|aee|de)\s+(?:sri\s+|shri\s+)?([A-Za-z]{3,})/gi;
-const NOT_NAME=new Set(["office","offices","sir","madam","garu","gaaru","saab","sahab","quarters","residence","camp","ward","village","mandal","district","department","dept","school","hospital","college","colony","road","street","house","bungalow","staff","team","meeting","order","orders","visit","level","post","seat","said","says","told","has","have","had","did","does","is","was","are","were","not","and","the","of","in","on","at","for","to","also","only","never","please","sahib"]);
+const NOT_NAME=new Set(["appreciates","directs","inspects","visits","orders","reviews","holds","meets","says","warns","urges","launches","school","schools","teachers","students","office","offices","sir","madam","garu","gaaru","saab","sahab","quarters","residence","camp","ward","village","mandal","district","department","dept","school","hospital","college","colony","road","street","house","bungalow","staff","team","meeting","order","orders","visit","level","post","seat","said","says","told","has","have","had","did","does","is","was","are","were","not","and","the","of","in","on","at","for","to","also","only","never","please","sahib"]);
 // "X garu" (గారు) after a word that is not a role is a person's name: "Ramesh garu" (not "Collector garu").
 const GARU_RX=/([a-z\u0C00-\u0C7F]+)\s*(?:garu|gaaru|గారు|గారి|గారికి)(?![a-z])/gi;
 const ROLE_OK=new Set(["collector","mla","mp","mlc","minister","sarpanch","mro","mpdo","tahsildar","tehsildar","rdo","officer","officers","commissioner","sir","madam","doctor","teacher","headmaster","engineer","secretary","president","chairman","si","ci","police","vro","vra","ae",
@@ -2042,7 +2042,9 @@ function nameLevel(x0,places){let x=String(x0||"").replace(PLACE_PEOPLE," ").rep
  return ""}
 let PLACE_LIST=null;
 function placeList(){if(PLACE_LIST)return PLACE_LIST;const out=[];[AP_DISTRICTS,TS_DISTRICTS].forEach(D=>D.forEach(d=>out.push(d[0],d[1])));Object.values(MANDALS).forEach(st=>Object.values(st).forEach(ms=>ms.forEach(m=>out.push(m[0],m[1]))));return PLACE_LIST=out}
-function namedPerson(x0){const x=String(x0||"").replace(PLACE_PEOPLE," ");if(nameLevel(x0,placeList())==="sure")return true;
+// Places named after people (a district, a reservoir) are places, not names.
+const PLACE_NAMED=/\bntr\s*(?:,|and|&)?\s*(?:krishna\s*)?districts?\b|ఎన్టీఆర్\s*(?:,\s*కృష్ణా?\s*)?జిల్లా|\b(?:osman|himayat|hussain|nagarjuna|nizam)\s?sagar\b|(?:ఉస్మాన్|హిమాయత్|హుస్సేన్|నాగార్జున|నిజాం)\s?‌?సాగర్/gi;
+function namedPerson(x0){x0=String(x0||"").replace(PLACE_NAMED," ");const x=String(x0||"").replace(PLACE_PEOPLE," ");if(nameLevel(x0,placeList())==="sure")return true;
  if(NAME_CUES.some(re=>re.test(x))||RX_LEADER.test(x))return true;
  ROLE_RX.lastIndex=0;let m;while((m=ROLE_RX.exec(x))){if(/^[A-Z][a-z]{2,}$/.test(m[1])&&!NOT_NAME.has(m[1].toLowerCase()))return true}
  GARU_RX.lastIndex=0;while((m=GARU_RX.exec(x))){if(!ROLE_OK.has(m[1].toLowerCase()))return true}
