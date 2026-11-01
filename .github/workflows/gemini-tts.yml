@@ -1,0 +1,33 @@
+name: Voice-over with Gemini
+on:
+  workflow_dispatch:
+    inputs:
+      spec: { description: "Script TSV", default: "tools/promo/appeal/spoken.tsv" }
+      voices: { description: "Gemini voices, comma separated", default: "Sulafat,Leda" }
+      takes: { description: "Takes per voice", default: "2" }
+      langs: { description: "Languages", default: "en,te" }
+      model: { default: "gemini-2.5-flash-preview-tts" }
+permissions:
+  contents: write
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make the voice takes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          VOICES: ${{ inputs.voices }}
+          TAKES: ${{ inputs.takes }}
+          LANGS: ${{ inputs.langs }}
+          MODEL: ${{ inputs.model }}
+        run: |
+          test -n "$GEMINI_API_KEY" || { echo "GEMINI_API_KEY secret is missing"; exit 1; }
+          python3 tools/promo/gemini_tts.py "${{ inputs.spec }}" /tmp/out
+          ls -l /tmp/out
+      - name: Save to the media3 branch
+        run: |
+          cd /tmp/out && git init -q -b media3 && git add -A
+          git -c user.name=tts -c user.email=tts@users.noreply.github.com commit -qm "Gemini voice-over $(date -u +%FT%H:%M)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/media3
