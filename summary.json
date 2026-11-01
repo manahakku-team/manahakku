@@ -1,14 +1,15 @@
 {
- "updated": "2026-11-01T15:49",
+ "updated": "2026-11-01T18:59",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "other": 243,
+    "education": 28,
     "disaster": 23,
-    "other": 241,
-    "education": 27,
     "water": 50,
     "agri": 55,
     "nutrition": 23,
+    "roads": 20,
     "sanitation": 10,
     "health": 30,
     "livelihood": 5,
@@ -16,30 +17,41 @@
     "power": 19,
     "certs": 4,
     "housing": 7,
-    "roads": 19,
     "iddocs": 3,
     "child": 1,
     "women": 4,
     "social": 1
+   },
+   "Kumuram Bheem Asifabad": {
+    "education": 2,
+    "other": 4
+   },
+   "Warangal": {
+    "health": 9,
+    "agri": 1
+   },
+   "Medak": {
+    "education": 1,
+    "agri": 1
    },
    "Adilabad": {
     "agri": 3,
     "other": 2,
     "power": 1
    },
-   "Jangaon": {
-    "sanitation": 1,
-    "other": 1
-   },
    "Hyderabad": {
+    "other": 16,
     "water": 13,
-    "other": 15,
     "women": 1,
     "disaster": 4,
     "roads": 1,
     "nutrition": 3,
     "health": 2,
     "housing": 1
+   },
+   "Jangaon": {
+    "sanitation": 1,
+    "other": 1
    },
    "Vikarabad": {
     "other": 1
@@ -55,19 +67,11 @@
     "nutrition": 1,
     "water": 1
    },
-   "Warangal": {
-    "health": 8,
-    "agri": 1
-   },
    "Ranga Reddy": {
     "education": 1,
     "agri": 1,
     "child": 1,
     "other": 1
-   },
-   "Kumuram Bheem Asifabad": {
-    "other": 3,
-    "education": 1
    },
    "Siddipet": {
     "education": 2,
@@ -86,9 +90,6 @@
    "Nizamabad": {
     "other": 1
    },
-   "Medak": {
-    "agri": 1
-   },
    "Peddapalli": {
     "water": 1
    },
@@ -106,21 +107,15 @@
    }
   },
   "ap": {
-   "Ananthapuramu": {
-    "health": 4,
-    "education": 14,
-    "other": 4,
-    "sanitation": 1
-   },
    "(state-wide / unknown)": {
+    "disaster": 185,
+    "education": 45,
+    "power": 35,
+    "agri": 53,
+    "other": 351,
     "women": 7,
-    "disaster": 177,
-    "other": 345,
     "roads": 14,
-    "education": 44,
-    "agri": 52,
     "elderly": 12,
-    "power": 34,
     "livelihood": 3,
     "nutrition": 8,
     "social": 3,
@@ -130,6 +125,20 @@
     "certs": 1,
     "child": 1,
     "housing": 2
+   },
+   "Ananthapuramu": {
+    "education": 15,
+    "health": 4,
+    "other": 4,
+    "sanitation": 1
+   },
+   "Kakinada": {
+    "disaster": 5,
+    "agri": 1,
+    "other": 1
+   },
+   "Bapatla": {
+    "other": 1
    },
    "Palnadu": {
     "health": 2,
@@ -178,11 +187,6 @@
    },
    "Chittoor": {
     "power": 1
-   },
-   "Kakinada": {
-    "agri": 1,
-    "disaster": 4,
-    "other": 1
    },
    "East Godavari": {
     "disaster": 1,
