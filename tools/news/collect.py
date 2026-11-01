@@ -5,7 +5,7 @@ Keeps a rolling 30-day feed of headline + outlet + date + link only (never artic
 
 Usage: python3 tools/news/collect.py <feed dir>     (needs web/data/keywords.json, built by tools/export_keywords.js)
 """
-import hashlib, json, os, re, sys, time, urllib.parse, urllib.request
+import hashlib, json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
@@ -106,6 +106,13 @@ def sector_of(title):
         x = sum((2 if len(w) > 4 else 1) for w in v["kw"] if kw_hit(title, w))
         if x > sc: best, sc = k, x
     return best
+def app_sectors(titles):
+    try:
+        out = subprocess.run(["node", os.path.join(os.path.dirname(__file__), "tag_sectors.js")], input=json.dumps(titles), capture_output=True, text=True, timeout=120)
+        res = json.loads(out.stdout)
+        return res if len(res) == len(titles) else None
+    except Exception as e:
+        print("app sorting unavailable, using keyword counts:", e); return None
 # Routine notices that are not news about people's problems
 NOT_NEWS = re.compile(r"list of|numbers available|recruitment|notification for|tender|walk-in|e-procurement|results? declared|hall ticket|merit list|"
                       r"admit card|syllabus|answer key|horoscope|రాశి ఫలాలు|గోల్డ్ రేట్|బంగారం ధర", re.I)
@@ -183,6 +190,10 @@ def main():
     for iid, i in list(seen.items()):
         if NOT_NEWS.search(i["t"]): del seen[iid]; continue
         i["district"] = district_of(i["t"], i["state"]); i["sector"] = sector_of(i["t"])
+    # The app's own sorting decides the problem type, so news matches reports exactly (keyword count above is the fallback).
+    secs = app_sectors([i["t"] for i in seen.values()])
+    if secs:
+        for i, sec in zip(seen.values(), secs): i["sector"] = sec
     cut = (now - timedelta(days=KEEP_DAYS)).isoformat()[:16]
     items = sorted([i for i in seen.values() if (i.get("date") or i["seen"]) >= cut], key=lambda i: i.get("date") or i["seen"], reverse=True)
     json.dump({"updated": now.isoformat()[:16], "items": items}, open(path, "w", encoding="utf-8"), ensure_ascii=False)
