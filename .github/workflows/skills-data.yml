@@ -1,0 +1,21 @@
+name: Skills-gap data
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download government reports and keep the state lines
+        run: |
+          sudo apt-get -qq install -y poppler-utils >/dev/null || true
+          bash tools/skills/fetch.sh /tmp/skills
+      - name: Save to the skillsdata branch
+        if: always()
+        run: |
+          cd /tmp/skills && git init -q -b skillsdata && git add -A
+          git -c user.name=skills -c user.email=skills@users.noreply.github.com commit -qm "Skills-gap data $(date -u +%Y-%m-%dT%H:%M)" || exit 0
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/skillsdata
