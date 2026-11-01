@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       spec: { description: "Script TSV", default: "tools/promo/appeal/spoken.tsv" }
-      voices: { description: "Gemini voices, comma separated", default: "Sulafat,Leda" }
-      takes: { description: "Takes per voice", default: "2" }
-      langs: { description: "Languages", default: "en,te" }
+      voices: { description: "Gemini voices, comma separated", default: "Sulafat" }
+      takes: { description: "Takes per voice", default: "1" }
+      langs: { description: "Languages", default: "te,en" }
       model: { default: "gemini-2.5-flash-preview-tts" }
 permissions:
   contents: write
@@ -26,7 +26,9 @@ jobs:
           test -n "$GEMINI_API_KEY" || { echo "GEMINI_API_KEY secret is missing"; exit 1; }
           python3 tools/promo/gemini_tts.py "${{ inputs.spec }}" /tmp/out
           ls -l /tmp/out
+          ls /tmp/out/*.wav >/dev/null 2>&1 || exit 1
       - name: Save to the media3 branch
+        if: always()
         run: |
           cd /tmp/out && git init -q -b media3 && git add -A
           git -c user.name=tts -c user.email=tts@users.noreply.github.com commit -qm "Gemini voice-over $(date -u +%FT%H:%M)"

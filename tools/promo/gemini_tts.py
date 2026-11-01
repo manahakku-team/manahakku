@@ -12,7 +12,7 @@ SPEC, OUT = sys.argv[1], sys.argv[2]
 MODEL = os.environ.get("MODEL", "gemini-2.5-flash-preview-tts")
 VOICES = [v.strip() for v in os.environ.get("VOICES", "Sulafat,Leda").split(",") if v.strip()]
 TAKES = int(os.environ.get("TAKES", "2"))
-LANGS = os.environ.get("LANGS", "en,te").split(",")
+LANGS = os.environ.get("LANGS", "te,en").split(",")
 KEY = os.environ["GEMINI_API_KEY"]
 
 STYLE = {
@@ -63,7 +63,7 @@ def call(prompt, voice):
             raise
         except (KeyError, IndexError) as e:
             print(f"  no audio in reply ({e}), retrying", flush=True); time.sleep(10)
-    raise SystemExit("gave up after retries")
+    return None
 
 def save(pcm, path):
     with wave.open(path, "wb") as w:
@@ -77,6 +77,8 @@ for lang in LANGS:
         for t in range(1, TAKES + 1):
             name = f"{lang}-{voice}-take{t}.wav"
             print("making", name, flush=True)
-            save(call(prompt, voice), os.path.join(OUT, name))
+            pcm = call(prompt, voice)
+            if pcm is None: print("  skipped (quota)"); continue
+            save(pcm, os.path.join(OUT, name))
             time.sleep(8)
 print("done")
