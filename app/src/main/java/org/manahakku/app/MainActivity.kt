@@ -190,13 +190,25 @@ class MainActivity : Activity(), TextToSpeech.OnInitListener {
                 js("window.mhSpeechDone && window.mhSpeechDone()")
                 return
             }
-            engine.language = Locale.forLanguageTag(lang)
-            engine.setSpeechRate(if (lang.startsWith("te")) 0.9f else 0.97f)
+            val loc = Locale.forLanguageTag(lang)
+            engine.language = loc
+            // Clearest voice for this language: highest quality, natural (not robotic) and works offline first.
+            try {
+                val best = engine.voices?.filter { it.locale.language == loc.language && (it.locale.country.isEmpty() || it.locale.country == loc.country || it.locale.country == "IN") && !it.features.contains("notInstalled") }
+                    ?.sortedWith(compareByDescending<android.speech.tts.Voice> { it.quality }.thenBy { if (it.isNetworkConnectionRequired) 1 else 0 }.thenBy { it.latency })
+                    ?.firstOrNull()
+                if (best != null) engine.voice = best
+            } catch (_: Exception) {}
+            // A calm, clear pace: a little slower for Telugu, natural pitch.
+            engine.setSpeechRate(if (lang.startsWith("te")) 0.88f else 0.95f)
+            engine.setPitch(1.0f)
             val parts = splitForSpeech(text)
             parts.forEachIndexed { i, part ->
                 val mode = if (i == 0) TextToSpeech.QUEUE_FLUSH else TextToSpeech.QUEUE_ADD
                 val id = if (i == parts.lastIndex) LAST_ID else "mh-$i"
                 engine.speak(part, mode, null, id)
+                // A short breath between sentences, like a clear speaker.
+                if (i < parts.lastIndex) engine.playSilentUtterance(320L, TextToSpeech.QUEUE_ADD, "mh-gap-$i")
             }
             if (parts.isEmpty()) js("window.mhSpeechDone && window.mhSpeechDone()")
         }
@@ -208,7 +220,7 @@ class MainActivity : Activity(), TextToSpeech.OnInitListener {
     }
 
     private fun splitForSpeech(text: String): List<String> {
-        val max = minOf(TextToSpeech.getMaxSpeechInputLength() - 50, 1500)
+        val max = minOf(TextToSpeech.getMaxSpeechInputLength() - 50, 260)
         val sentences = text.split(Regex("(?<=[.!?।;:\\n])\\s+"))
         val out = mutableListOf<String>()
         val cur = StringBuilder()

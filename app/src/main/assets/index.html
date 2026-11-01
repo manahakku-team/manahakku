@@ -1564,9 +1564,21 @@ window.mhSpeechDone=()=>{if(speakingBtn){setListenBtn(speakingBtn,false);speakin
 let voices=[],speakingBtn=null;
 function loadVoices(){try{voices=speechSynthesis.getVoices()||[]}catch(e){voices=[]}}
 if(WEBTTS&&!NATIVE){loadVoices();try{speechSynthesis.addEventListener("voiceschanged",loadVoices)}catch(e){}}
-function pickVoice(lang){const p=lang.slice(0,2);return voices.find(v=>v.lang&&v.lang.replace("_","-").toLowerCase()===lang.toLowerCase())||voices.find(v=>v.lang&&v.lang.toLowerCase().startsWith(p))||null}
-const digits=s=>String(s).replace(/\d{3,}/g,m=>m.split("").join(" "));
-function chunks(text){const parts=text.replace(/\s+/g," ").split(/(?<=[.!?।;:])\s+|\n/);const out=[];let cur="";for(const p of parts){if((cur+" "+p).length>220&&cur){out.push(cur);cur=p}else cur=cur?cur+" "+p:p}if(cur)out.push(cur);return out.filter(x=>x.trim())}
+function pickVoice(lang){const p=lang.slice(0,2),L=lang.toLowerCase();const ok=voices.filter(v=>v.lang&&v.lang.replace("_","-").toLowerCase().startsWith(p));
+ const score=v=>{const n=(v.name||"").toLowerCase(),l=v.lang.replace("_","-").toLowerCase();let x=0;if(l===L)x+=4;else if(l.endsWith("-in"))x+=2;if(/natural|neural|wavenet|online/.test(n))x+=6;if(/google/.test(n))x+=4;if(/microsoft/.test(n)&&!/natural|online/.test(n))x-=1;if(/compact|espeak/.test(n))x-=5;return x};
+ return ok.sort((a,b)=>score(b)-score(a))[0]||null}
+const digits=s=>String(s).replace(/\d{7,}/g,m=>m.split("").join(" "));
+// Make text sound like a clear speaker: no symbols or emojis read aloud, short forms spoken in full, pauses at line ends.
+function speechText(text){const te=LANG==="te";let x=String(text||"");
+ x=x.replace(/https?:\/\/\S+/g," ").replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu," ")
+  .replace(/[→›»⟶]/g,", ").replace(/[·•|]/g,", ").replace(/[✓✔✗✕×]/g," ").replace(/["“”«»]/g,"")
+  .replace(/₹\s?([\d,.]+)\s*(crore|lakh|cr)?/gi,(m,n,u)=>n+" "+(u?(te?(/l/i.test(u)?"లక్షల":"కోట్ల"):(/l/i.test(u)?"lakh":"crore"))+" ":"")+(te?"రూపాయలు ":"rupees "))
+  .replace(/(\d)\s?%/g,"$1 "+(te?"శాతం":"percent")).replace(/\s&\s/g,te?" మరియు ":" and ")
+  .replace(/\b(PGRS|CPGRAMS|RTI|PHC|MRO|MEO|BLO|SRN|OTP|RTC|EPIC|ECI|UIDAI|DLSA|NFSA|R&B|AP|TS)\b/g,m=>m.replace("&"," and ").split("").filter(c=>c!==" ").join(" ").replace(/ a n d /," and "))
+  .replace(/\be\.g\./gi,te?"ఉదాహరణకు":"for example").replace(/\bvs\.?\b/gi,te?"మరియు":"versus")
+  .replace(/\s*\n+\s*/g,". ").replace(/\s+([,.!?।])/g,"$1").replace(/,(\s*,)+/g,",").replace(/([.!?।])(\s*[.!?।,])+/g,"$1").replace(/[()]/g," ").replace(/\s{2,}/g," ").replace(/\s+([,.!?।])/g,"$1").trim();
+ return x}
+function chunks(text){const parts=text.replace(/\s+/g," ").split(/(?<=[.!?।;:])\s+|\n/);if(parts.every(p=>p.length<=220))return parts.filter(x=>x.trim());const out=[];let cur="";for(const p of parts){if((cur+" "+p).length>220&&cur){out.push(cur);cur=p}else cur=cur?cur+" "+p:p}if(cur)out.push(cur);return out.filter(x=>x.trim())}
 function stopSpeak(){if(!TTS)return;try{if(NATIVE)AndroidTTS.stop();else speechSynthesis.cancel()}catch(e){}if(speakingBtn){setListenBtn(speakingBtn,false)}speakingBtn=null}
 function setListenBtn(b,on){b.setAttribute("aria-pressed",String(on));if(b.classList.contains("mini")){b.innerHTML=on?STOP_ICON:SPK_ICON;b.setAttribute("aria-label",on?t("stop"):t("listen"));return}const big=b.classList.contains("big");b.innerHTML=(on?STOP_ICON:SPK_ICON)+`<span>${esc(on?t("stop"):(big?R("listenAll"):t("listen")))}</span>`}
 function speak(text,btn){
@@ -1575,13 +1587,13 @@ function speak(text,btn){
  stopSpeak();
  if(NATIVE){const lang=LANG==="te"?"te-IN":"en-IN";
   try{if(LANG==="te"&&AndroidTTS.ready()&&!AndroidTTS.hasLang(lang)){const n=$("voice-note");n.textContent=t("noTeVoice");n.hidden=false;toast(t("noTeVoice"))}}catch(e){}
-  speakingBtn=btn;setListenBtn(btn,true);try{AndroidTTS.speak(digits(text),lang)}catch(e){window.mhSpeechDone()}return}
+  speakingBtn=btn;setListenBtn(btn,true);try{AndroidTTS.speak(digits(speechText(text)),lang)}catch(e){window.mhSpeechDone()}return}
  loadVoices();
  const lang=LANG==="te"?"te-IN":"en-IN";const v=pickVoice(lang);
  if(LANG==="te"&&!v){const n=$("voice-note");n.textContent=t("noTeVoice");n.hidden=false;toast(t("noTeVoice"))}
- const list=chunks(digits(text));if(!list.length)return;
+ const list=chunks(digits(speechText(text)));if(!list.length)return;
  speakingBtn=btn;setListenBtn(btn,true);
- list.forEach((c,i)=>{const u=new SpeechSynthesisUtterance(c);u.lang=lang;if(v)u.voice=v;u.rate=LANG==="te"?0.92:0.97;if(i===list.length-1){u.onend=()=>{if(speakingBtn===btn){setListenBtn(btn,false);speakingBtn=null}}}u.onerror=()=>{if(speakingBtn===btn){setListenBtn(btn,false);speakingBtn=null}};try{speechSynthesis.speak(u)}catch(e){}});
+ list.forEach((c,i)=>{const u=new SpeechSynthesisUtterance(c);u.lang=lang;if(v)u.voice=v;u.rate=LANG==="te"?0.88:0.95;u.pitch=1;if(i===list.length-1){u.onend=()=>{if(speakingBtn===btn){setListenBtn(btn,false);speakingBtn=null}}}u.onerror=()=>{if(speakingBtn===btn){setListenBtn(btn,false);speakingBtn=null}};try{speechSynthesis.speak(u)}catch(e){}});
 }
 function bindListen(btn,getText){if(!TTS){btn.hidden=true;return}setListenBtn(btn,false);btn.onclick=()=>speak(getText(),btn)}
 
