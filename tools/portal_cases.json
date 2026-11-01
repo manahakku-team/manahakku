@@ -250,5 +250,13 @@
 ["రెండు మండలాల మధ్య రోడ్డు పూర్తిగా దెబ్బతిన్నది", "roads", null, "R&B-Roads"],
 ["No watchman at our school, gate is always open and outsiders walk in", "education", null, "School Safety"],
 ["Boys stalk girl students near the high school every evening, no safety", "education", null, "School Safety"],
-["School compound wall broken, cattle and outsiders enter", "education", null, "Compound Walls"]
+["School compound wall broken, cattle and outsiders enter", "education", null, "Compound Walls"],
+["Problem on the national highway near our village, no sign boards, many accidents", "roads", null, "Caution"],
+["ESI hospital not reimbursing my medical bill", "livelihood", null, "Reimbursement"],
+["Shops encroached the national highway near our village", "roads", null, "NH-Encroachments"],
+["Encroachment on R&B road", "roads", null, "R&B-Encroachments"],
+["Seat not given in SC hostel for my son, admission refused", "education", null, "Admissions Not Given"],
+["NREGS skilled wage not paid to masons", "livelihood", null, "skilled"],
+["Pesticides not available at RBK", "agri", null, "pesticides"],
+["New crop to be included in crop insurance", "agri", null, "New Crops"]
 ]
