@@ -1,130 +1,31 @@
 {
- "updated": "2026-11-01T09:57",
+ "updated": "2026-11-01T13:08",
  "last7days_trusted": {
-  "ts": {
-   "Hyderabad": {
-    "water": 13,
-    "other": 15,
-    "women": 1,
-    "disaster": 4,
-    "roads": 1,
-    "nutrition": 3,
-    "health": 2,
-    "housing": 1
-   },
-   "(state-wide / unknown)": {
-    "health": 30,
-    "agri": 54,
-    "other": 233,
-    "nutrition": 21,
-    "education": 26,
-    "livelihood": 5,
-    "elderly": 7,
-    "disaster": 22,
-    "water": 47,
-    "power": 19,
-    "certs": 4,
-    "housing": 7,
-    "sanitation": 8,
-    "roads": 19,
-    "iddocs": 3,
-    "child": 1,
-    "women": 4,
-    "social": 1
-   },
-   "Vikarabad": {
-    "other": 1
-   },
-   "Sangareddy": {
-    "agri": 1,
-    "education": 1
-   },
-   "Khammam": {
-    "education": 2,
-    "other": 2,
-    "agri": 2,
-    "nutrition": 1,
-    "water": 1
-   },
-   "Warangal": {
-    "health": 8,
-    "agri": 1
-   },
-   "Kumuram Bheem Asifabad": {
-    "other": 3,
-    "education": 1
-   },
-   "Siddipet": {
-    "education": 2,
-    "agri": 1
-   },
-   "Ranga Reddy": {
-    "agri": 1,
-    "child": 1,
-    "other": 1
-   },
-   "Adilabad": {
-    "agri": 2,
-    "other": 2,
-    "power": 1
-   },
-   "Bhadradri Kothagudem": {
-    "water": 1
-   },
-   "Mahabubnagar": {
-    "other": 2
-   },
-   "Nalgonda": {
-    "other": 1,
-    "women": 1
-   },
-   "Nizamabad": {
-    "other": 1
-   },
-   "Medak": {
-    "agri": 1
-   },
-   "Peddapalli": {
-    "water": 1
-   },
-   "Karimnagar": {
-    "agri": 1
-   },
-   "Jagtial": {
-    "education": 1
-   },
-   "Wanaparthy": {
-    "other": 1
-   },
-   "Mancherial": {
-    "other": 1
-   }
-  },
   "ap": {
-   "(state-wide / unknown)": {
-    "power": 34,
-    "other": 333,
-    "disaster": 172,
-    "women": 5,
-    "education": 43,
-    "agri": 50,
-    "livelihood": 3,
-    "nutrition": 8,
-    "social": 3,
-    "water": 16,
-    "elderly": 11,
-    "sanitation": 17,
-    "health": 27,
-    "roads": 11,
-    "certs": 1,
-    "child": 1,
-    "housing": 2
-   },
    "Ananthapuramu": {
-    "education": 11,
+    "education": 13,
     "health": 3,
     "other": 4,
     "sanitation": 1
+   },
+   "(state-wide / unknown)": {
+    "education": 44,
+    "other": 341,
+    "agri": 52,
+    "elderly": 12,
+    "disaster": 176,
+    "power": 34,
+    "women": 6,
+    "roads": 12,
+    "livelihood": 3,
+    "nutrition": 8,
+    "social": 3,
+    "water": 17,
+    "sanitation": 17,
+    "health": 27,
+    "certs": 1,
+    "child": 1,
+    "housing": 2
    },
    "Palnadu": {
     "health": 2,
@@ -192,6 +93,105 @@
    "Prakasam": {
     "education": 1,
     "child": 1
+   }
+  },
+  "ts": {
+   "(state-wide / unknown)": {
+    "nutrition": 22,
+    "sanitation": 9,
+    "water": 48,
+    "health": 30,
+    "other": 235,
+    "agri": 54,
+    "education": 26,
+    "livelihood": 5,
+    "elderly": 7,
+    "disaster": 22,
+    "power": 19,
+    "certs": 4,
+    "housing": 7,
+    "roads": 19,
+    "iddocs": 3,
+    "child": 1,
+    "women": 4,
+    "social": 1
+   },
+   "Hyderabad": {
+    "water": 13,
+    "other": 15,
+    "women": 1,
+    "disaster": 4,
+    "roads": 1,
+    "nutrition": 3,
+    "health": 2,
+    "housing": 1
+   },
+   "Vikarabad": {
+    "other": 1
+   },
+   "Sangareddy": {
+    "agri": 1,
+    "education": 1
+   },
+   "Khammam": {
+    "education": 2,
+    "other": 2,
+    "agri": 2,
+    "nutrition": 1,
+    "water": 1
+   },
+   "Warangal": {
+    "health": 8,
+    "agri": 1
+   },
+   "Kumuram Bheem Asifabad": {
+    "other": 3,
+    "education": 1
+   },
+   "Siddipet": {
+    "education": 2,
+    "agri": 1
+   },
+   "Ranga Reddy": {
+    "agri": 1,
+    "child": 1,
+    "other": 1
+   },
+   "Adilabad": {
+    "agri": 2,
+    "other": 2,
+    "power": 1
+   },
+   "Bhadradri Kothagudem": {
+    "water": 1
+   },
+   "Mahabubnagar": {
+    "other": 2
+   },
+   "Nalgonda": {
+    "other": 1,
+    "women": 1
+   },
+   "Nizamabad": {
+    "other": 1
+   },
+   "Medak": {
+    "agri": 1
+   },
+   "Peddapalli": {
+    "water": 1
+   },
+   "Karimnagar": {
+    "agri": 1
+   },
+   "Jagtial": {
+    "education": 1
+   },
+   "Wanaparthy": {
+    "other": 1
+   },
+   "Mancherial": {
+    "other": 1
    }
   }
  }
