@@ -2,7 +2,7 @@ const {chromium}=require('playwright');const fs=require('fs');const D=__dirname;
 const vtt=f=>fs.readFileSync(f,'utf8').split(/\n\n+/).map(b=>b.trim().split('\n')).filter(l=>l.length>=3&&l[1].includes('-->')).map(l=>{const [a,c]=l[1].split(' --> ').map(x=>{const [h,m,s]=x.replace(',','.').split(':');return +h*3600+ +m*60+ +s});return {s:a,e:c,t:l.slice(2).join(' ')}});
 (async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
 await p.goto('http://localhost:8799/scene.html?lang=te&t=Warm%20up%20%E0%B0%AE%E0%B0%A8');await p.waitForTimeout(1500);await p.goto('http://localhost:8799/scene.html?lang=en&t=Warm%20up');await p.waitForTimeout(1500);
-for(const lang of ['en','te']){const cues=vtt(`${D}/${lang}.vtt`);const LEAD=0.3,TOTAL=45.0;fs.mkdirSync(`${D}/${lang}`,{recursive:true});
+for(const lang of ['en','te']){const cues=vtt(`${D}/${lang}.vtt`);const LEAD=0.3;const dur=+require('child_process').execSync(`ffprobe -v error -show_entries format=duration -of csv=p=0 ${D}/${lang}.mp3`).toString();const TOTAL=Math.min(55,+(LEAD+dur+1.3).toFixed(2));fs.mkdirSync(`${D}/${lang}`,{recursive:true});
  const shots=[];
  // background only
  await p.goto(`http://localhost:8799/scene.html?lang=${lang}&t=`);await p.waitForTimeout(400);await p.evaluate(()=>{document.getElementById('body').innerHTML=''});await p.screenshot({path:`${D}/${lang}/bg.png`});
