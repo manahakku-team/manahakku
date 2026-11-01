@@ -1,0 +1,27 @@
+name: Voice-over
+on:
+  workflow_dispatch:
+    inputs:
+      dir: { description: "folder with en.txt and te.txt", default: "tools/promo/appeal" }
+      rate: { description: "speaking rate", default: "-6%" }
+permissions:
+  contents: write
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Natural voices (Microsoft neural, Indian English and Telugu)
+        run: |
+          pip install -q edge-tts
+          mkdir -p /tmp/out
+          D="${{ inputs.dir }}"; R="${{ inputs.rate }}"
+          edge-tts --voice en-IN-NeerjaNeural --rate="$R" -f "$D/en.txt" --write-media /tmp/out/en.mp3 --write-subtitles /tmp/out/en.vtt
+          edge-tts --voice te-IN-ShrutiNeural --rate="$R" -f "$D/te.txt" --write-media /tmp/out/te.mp3 --write-subtitles /tmp/out/te.vtt
+          for f in /tmp/out/*.mp3; do ffprobe -v error -show_entries format=duration -of csv=p=0 "$f" | sed "s|^|$(basename $f) |"; done | tee /tmp/out/durations.txt
+      - name: Save to the media branch
+        run: |
+          cd /tmp/out && git init -q -b media && git add -A
+          git -c user.name=tts -c user.email=tts@users.noreply.github.com commit -qm "Voice-over $(date -u +%FT%H:%M)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/media
