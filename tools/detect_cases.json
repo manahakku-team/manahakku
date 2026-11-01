@@ -178,5 +178,7 @@
 ["Cyclone damaged our paddy crop, enumeration not done", "agri", null],
 ["Electric poles fell in the cyclone, no power for 3 days", "power", null],
 ["Road washed away in the floods, bus stopped", "roads", null],
-["Fishermen lost boats and nets in the cyclone", "livelihood", null]
+["Fishermen lost boats and nets in the cyclone", "livelihood", null],
+["Seniors ragging first year students in our engineering college hostel", "education", null],
+["కాలేజీలో అమ్మాయిలను వేధిస్తున్నారు, భద్రత లేదు", "education", null]
 ]
