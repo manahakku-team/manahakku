@@ -1,0 +1,58 @@
+name: Appeal video, fully automatic
+on:
+  schedule:
+    - cron: "2 8 2 11 *"   # 13:32 India time on 2 Nov, right after Google's free limit resets
+  workflow_dispatch:
+    inputs:
+      lang: { default: "en" }
+      reuse: { description: "Take an existing take from the media3 branch instead of Gemini (test)", default: "" }
+permissions:
+  contents: write
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      L: ${{ inputs.lang || 'en' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
+          pip install -q praat-parselmouth numpy
+          cd tools/promo/appeal && npm init -y >/dev/null && npm i -s playwright@1.48.2 && npx playwright install --with-deps chromium >/dev/null
+      - name: Voice (Gemini)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          VOICES: Sulafat
+          TAKES: "1"
+          LANGS: ${{ env.L }}
+        run: |
+          if [ -n "${{ inputs.reuse }}" ]; then mkdir -p /tmp/take && git fetch -q origin media3 && git show FETCH_HEAD:${{ inputs.reuse }} > /tmp/take/$L-Sulafat-take1.wav
+          else python3 tools/promo/gemini_tts.py tools/promo/appeal/spoken.tsv /tmp/take; fi
+          ls /tmp/take/$L-Sulafat-take1.wav
+      - name: Line up, lift questions that fall, tighten
+        run: |
+          cd tools/promo/appeal
+          SPEC=$(python3 auto_voice.py align $L /tmp/take/$L-Sulafat-take1.wav)
+          echo "lift: $SPEC"
+          if [ -n "$SPEC" ]; then python3 ../raise_questions.py /tmp/take/$L-Sulafat-take1.wav /tmp/take/lifted.wav "$SPEC"; else cp /tmp/take/$L-Sulafat-take1.wav /tmp/take/lifted.wav; fi
+          python3 - <<'P'
+          import parselmouth; s=parselmouth.Sound('/tmp/take/lifted.wav'); s=s.resample(24000) if s.sampling_frequency!=24000 else s
+          s.save('/tmp/take/lifted16.wav','WAV')
+          P
+          python3 auto_voice.py build $L /tmp/take/lifted16.wav
+      - name: Render and build
+        run: |
+          cd tools/promo/appeal
+          (python3 -m http.server 8799 >/dev/null 2>&1 &) ; sleep 1
+          LANGS=$L node render.js
+          LANGS=$L bash build.sh
+          D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 Mana-Hakku-safety-appeal-$L.mp4)
+          ffmpeg -nostdin -v error -y -i Mana-Hakku-safety-appeal-$L.mp4 -stream_loop -1 -i pad.mp3 -filter_complex "[1:a]volume=0.14,afade=t=in:d=1.5,afade=t=out:st=$(python3 -c "print($D-2)"):d=2[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]" -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 160k /tmp/Mana-Hakku-safety-appeal-$L-gemini.mp4
+          ls -l /tmp/*.mp4
+      - name: Save to the appeal-video branch
+        run: |
+          mkdir /tmp/pub && cp /tmp/*.mp4 tools/promo/appeal/$L.vtt /tmp/pub/ && cd /tmp/pub && git init -q -b appeal-video && git add -A
+          git -c user.name=tts -c user.email=tts@users.noreply.github.com commit -qm "Appeal video $L $(date -u +%FT%H:%M)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/appeal-video
