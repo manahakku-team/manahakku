@@ -4,12 +4,13 @@
 @font-face{font-family:ATb;src:url(fonts/anek-telugu-telugu-700-normal.woff2) format('woff2');unicode-range:U+0C00-0C7F,U+200C-200D}
 @font-face{font-family:ATb;src:url(fonts/anek-telugu-latin-700-normal.woff2) format('woff2')}
 html,body{margin:0;width:1080px;height:1920px;overflow:hidden}
-body{background:radial-gradient(ellipse 70% 38% at 50% 74%,rgba(255,170,70,.20),transparent 70%),linear-gradient(180deg,#141a3a 0%,#1d2552 55%,#2a2343 100%);color:#fff;font-family:AT,sans-serif;display:flex;flex-direction:column;align-items:center}
+body{background:radial-gradient(ellipse 90% 30% at 50% 104%,rgba(255,196,110,.42),rgba(255,150,90,.12) 55%,transparent 75%),linear-gradient(180deg,#141a3a 0%,#1d2552 50%,#2d3a6e 100%);color:#fff;font-family:AT,sans-serif;display:flex;flex-direction:column;align-items:center}
 .brand{margin-top:120px;font-family:ATb;font-size:44px;letter-spacing:1px;color:#ffd27a;opacity:.95}
 .brand small{display:block;text-align:center;font-family:AT;font-size:28px;color:#c9cdf0;letter-spacing:0;margin-top:6px}
 .mid{flex:1;display:flex;align-items:center;justify-content:center;padding:0 90px}
 .cap{font-size:86px;line-height:1.28;text-align:center;font-family:ATb;text-wrap:balance;text-shadow:0 4px 24px rgba(0,0,0,.35)}
 .cap.long{font-size:70px}
+.dawn{height:300px}
 .candle{width:70px;height:220px;margin-bottom:170px;position:relative}
 .candle .w{position:absolute;bottom:0;left:15px;width:40px;height:150px;border-radius:8px;background:linear-gradient(90deg,#eee 0%,#fff 40%,#ddd 100%)}
 .candle .f{position:absolute;bottom:150px;left:20px;width:30px;height:62px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(ellipse at 50% 70%,#fff6d0 0%,#ffcf5a 45%,#ff8a1f 80%,transparent 82%);box-shadow:0 0 60px 30px rgba(255,170,60,.35)}
@@ -18,7 +19,7 @@ body{background:radial-gradient(ellipse 70% 38% at 50% 74%,rgba(255,170,70,.20),
 .until{margin-top:26px;font-size:46px;font-family:ATb;color:#ffd27a}
 .url{margin-top:40px;font-size:40px;color:#c9cdf0;font-family:AT}
 .help{margin-top:46px;font-size:40px;font-family:ATb;color:#fff;background:rgba(214,64,64,.35);border:2px solid rgba(255,120,120,.7);padding:18px 30px;border-radius:20px;display:inline-block}
-</style></head><body><div class="brand" id="brand"></div><div class="mid"><div id="body"></div></div><div class="candle"><div class="w"></div><div class="f"></div></div>
+</style></head><body><div class="brand" id="brand"></div><div class="mid"><div id="body"></div></div><div class="dawn"></div>
 <script>
 const q=new URLSearchParams(location.search);const lang=q.get('lang');
 document.getElementById('brand').innerHTML=lang==='te'?'మన హక్కు<small>Mana Hakku</small>':'Mana Hakku<small>మన హక్కు</small>';
