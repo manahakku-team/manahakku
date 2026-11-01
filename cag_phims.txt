@@ -1,0 +1,259 @@
+148-   2.3    Statement showing details of district wise shortfall      2.4         91
+149-          of Paramedics in the State
+150:   2.4    Statement showing availability of Specialist              2.5         92
+151-          Doctors, Doctors, Nursing, Paramedics and Other
+152-          Staff in Medical College Hospitals (MCHs) in the
+153-          State as of March 2022
+154:   2.5    Statement showing availability of Specialist             2.6 (i)      93
+155-          Doctors and Doctors in District Hospitals in the
+156-          State
+--
+159-   2.7    Statement showing details of availability of             2.6 (i)      95
+160-          Paramedics in District Hospitals in the State
+161: 2.8 (i) Statement showing availability of Specialist             2.6 (ii)      96
+162-          Doctors and Doctors in Sub-District Hospitals in
+163-          the state as of March 2022
+--
+178-   3.3    Statement showing OPD cases per doctor in test-        3.2.1 (iv)    102
+179-          checked DHs during 2021-22
+180:   3.4    Statement showing non-availability of Specialist       3.2.1 (v)     103
+181-          services in test-checked SDHs during the period
+182-          2016-22
+--
+295-19 districts respectively. State Government may address un-even geographical
+296-distribution of staff in cadre of doctors and paramedics of PHCFs.
+297:Vacancy of specialist doctors was 28 per cent in MCHs, 36 per cent in DHs and
+298-51 per cent in SDHs against the sanction strength. Further, against the sanction
+299-strength in DHs, vacancy of 18 per cent in Doctors cadre, seven per cent in
+--
+303-was noticed in Nursing Colleges/Schools against norms of Indian Nursing
+304-Council. State Government may take necessary steps to fill the vacant posts of
+305:teaching staff in Medical Colleges, Nursing Colleges/Schools, Specialists
+306-Doctor, Doctors and Paramedics in Health care facilities.
+307-
+--
+947-         Table 1.2: Government Healthcare Institutes in the State as of March 2022
+948-    Sr. No.     Government Healthcare Institutions                                Number of units
+949:    1           Super Specialist Institutes                                                05
+950-    2           Tertiary level hospitals                                                   25
+951-    3           District Hospitals                                                         19
+--
+974-1.6           Human Resources in Healthcare
+975-The availability of adequate manpower is essential to provide effective health
+976:services. The availability of doctors (including Specialist Doctors), Nurses and
+977-Paramedics in the State under Health and Family Welfare Department as of
+978-March 2022 is given in Table 1.4:
+--
+990-      One AIIMS, six Government MCHs, eight GMERS MCHs and three Municipal Corporation MCHs.
+991-2
+992:      Which also included specialist doctors
+993-
+994-
+--
+1289-Out of 33 districts, geographical presentation of vacancies in the cadre of
+1290-doctors and paramedics shows that shortage of more than 25 per cent in 22
+1291:and 19 districts respectively. Vacancies of specialist doctors were found 51
+1292-per cent and 49 per cent in SDHs and CHCs respectively.
+1293:Under National Health Mission Scheme, 31 per cent of specialist doctors
+1294-and 32 per cent of paramedics posts were vacant as of March 2022.
+1295-Overall, 76 per cent shortage of teaching staff was noticed in Nursing
+--
+1329-
+1330-     Table 2.1: Cadre-wise recruitment drive taken by State Government during 2016-22
+1331:     Year       Lecturers          Specialist   Doctors       Nurses    Paramedics                            Total
+1332-                in MCH              Doctors
+1333-2016-17             97                 45          295         1,723        786                               2,946
+--
+1340-                                 (Source: Information collected from CoH)
+1341-Recruitment of 399 lecturers4 was done during 2016-22 for MCHs. Further,
+1342:recruitment of 265 specialist doctors and 859 doctors were done in various
+1343-Healthcare Facilities viz., DHs, SDHs, CHCs etc. during 2016-22.
+1344-2.4         Availability of Human Resources in public healthcare
+--
+1436-
+1437-     0
+1438:            Specialist         Doctors       Nursing staff     Paramedics   Other Staff
+1439-             doctors
+1440-                             Sanctioned Strength      Person in Position
+--
+1448-
+1449-
+1450:Overall, there was 28 per cent vacancy in the cadre of Specialist doctors5, nine
+1451-per cent vacancy in the cadre of doctors, seven per cent vacancy in Nursing
+1452-cadre and 13 per cent vacancy in paramedics cadre noticed in the 14 MCHs.
+--
+1459-i. District Hospitals (DHs)
+1460-In the State, 19 District Hospitals (DHs) were established by the State
+1461:Government as of March 2022. Analysis of availability of the Specialist
+1462-Doctors, Doctors, Nurses, and Paramedics against IPHS norms and sanctioned
+1463-strength approved by State Government in all DHs as of March 2022 is shown
+--
+1468-                           worked out    by State              (in per cent) State (in per cent)
+1469-                          as per IPHS
+1470:Specialist doctors                 373         317      203       170 (46)        114 (36)
+1471-    Doctors                        253         250      206        47 (19)         44 (18)
+1472-     Nurses                      1,383       1,099    1,026       357 (26)         73 (07)
+--
+1476-
+1477-In all the DHs, Overall vacancy against IPHS norms and SS approved by the
+1478:State of specialist doctors was 46 per cent and 36 per cent, of doctors was 19
+1479-per cent and 18 per cent, of Nurses was 26 per cent and seven per cent and of
+1480-the paramedics cadre was 76 per cent and 46 per cent respectively. Further, it
+1481:was observed that the vacancies against SS approved by the State of specialist
+1482-doctors in 14 out of 19 DHs was more than 25 per cent, vacancies of doctors
+1483-in four out of 19 DHs were more than 25 per cent, (details in Appendix 2.5).
+--
+1496-                                            
+1497-5
+1498:      Specialist doctors including Senior Resident (SR)
+1499-
+1500-
+--
+1510-                   as per IPHS                           norms (in
+1511-                                                          per cent)
+1512:     Specialist
+1513-                        614           549       268       346 (56)          281 (51)
+1514-      doctors
+--
+1520-
+1521-Overall vacancy against IPHS norms and SS approved by the State of
+1522:specialist doctors was 56 per cent and 51 per cent, of doctors was 49 per cent
+1523-and 29 per cent, of Nurses was 21 per cent and five per cent and of the
+1524-paramedics cadre was 84 per cent and 43 per cent respectively in the SDHs.
+1525-Geographical analysis of the data of human resources of SDHs, indicated that
+1526:vacancies against SS approved by the State of specialist doctors in 22 districts
+1527-6
+1528-  out of 27 districts 7 was more than 25 per cent, vacancies of doctors in 14
+--
+1542-                      worked out      by State                   per cent)       State (in per cent)
+1543-                     as per IPHS
+1544:Specialist doctors       1,725          621        319          1,406 (82)            302 (49)
+1545-    Doctors              1,380         1,086       903           477 (35)             183 (17)
+1546-     Nurses              3,450         2,480      2,426         1,024 (30)             54 (02)
+--
+1572-
+1573-Overall vacancy against IPHS norms and SS approved by the State of
+1574:specialist doctors was 82 per cent and 49 per cent, of doctors was 35 per cent
+1575-and 17 per cent, of Nurses was 30 per cent and two per cent and of the
+1576-paramedics cadre was 77 per cent and 45 per cent respectively in the CHCs.
+1577-Further, district-wise analysis of vacancy indicates that vacancy against the SS
+1578:approved by the State in Specialist doctors cadre in 27 out of 33 districts was
+1579-more than 25 per cent, vacancy in doctor cadre in six out of 33 districts was
+1580-more than 25 per cent, vacancy in nurse cadre in all 33 districts was nominal
+--
+1661-                  Table 2.8: Availability of HR under NHM as of March 2022
+1662-Name of Post                     SS                PIP            Shortfall (in per cent)
+1663:Specialist Doctors               317               220                   97 (31)
+1664-Doctors                          137               117                   20 (15)
+1665-Staff Nurse                     2,583             2,029                 554 (21)
+--
+1680-
+1681-
+1682:From the above table, it was seen that 31 per cent of specialist doctors and 32
+1683-per cent of paramedics posts were vacant under NHM as of March 2022.
+1684-Overall,18 per cent of posts remained vacant.
+--
+1774- Recommendation 2: State Government may take necessary steps to fill the
+1775- vacant posts of teaching staff in Medical Colleges, Nursing
+1776: colleges/schools and specialist doctors, doctors and paramedics in Health
+1777- care facilities.
+1778-
+--
+1792-     and responding to the patients’ needs and preferences. An inadequate
+1793-     number of registration counters were noticed in Tertiary and Secondary
+1794:     Healthcare facilities. Many specialists OPD services were not available in
+1795-     healthcare facilities. The Bed Occupancy Rate was not as per norm in test-
+1796-     checked District Hospitals and CHCs.
+--
+2516-
+2517-
+2518:    ➢ Only four OPD specialist services were available in two DHs
+2519-      (Chhotaudepur and Lunawada).
+2520:    ➢ Five OPD specialist services were available in DH Siddhapur.
+2521-(iv) OPD cases per doctor in test-checked DHs
+2522-OPD cases per doctor is an indicator for measuring efficiency of OPD services
+--
+2527-observed that OPD patient load per doctor per day was ranging between 17
+2528-and 40.
+2529:(v) Availability of specialist OPD Services in selected SDHs
+2530:As per the IPHS, specialist (having masters in respective branches) OPD
+2531-services such as General Medicine (GM), General Surgery (GS), Gynecologist
+2532-(Gyn), Pediatrician (Ped), Orthopedics (Orth), Ophthalmology (Opht.) and
+2533-ENT should be provided in SDHs.
+2534:Audit observed that in test-checked SDHs, OPD specialist services were not
+2535-continuously available throughout the year in some of the SDHs during the
+2536:period 2016-22. OPD specialist services for General medicines were available
+2537-in one SDH 15 , OPD services for General Surgery 16 and Obstetrics &
+2538-Gynecology17 were available in five SDHs, and OPD services for Pediatrics18
+2539-and Ophthalmology19 were available in three and two SDHs respectively for
+2540-full-time during the period 2016-22. No test-checked SDH could provide the
+2541:OPD specialist services in respect of ENT and Orthopedics for the entire
+2542-period during 2016-22. Details of the period for which OPD services were not
+2543-available in test-checked SDHs during 2016-22 are shown in Appendix 3.4.
+--
+2583-3.2.2 In-Patient Services
+2584-Indoor Patient Department (IPD) refers to the areas of the hospital where
+2585:patients are admitted, based on the doctor’s/specialist’s assessment from the
+2586-Out-Patient Department, Emergency Services and Ambulatory Care.
+2587-
+--
+2594-
+2595-3.2.2.2 Availability of IPD services in 18 test-checked CHCs
+2596:As per IPHS, CHC should provide specialist services pertaining to General
+2597-Medicine, General Surgery, Gynecology (and Obstetrics) and Pediatrician.
+2598-Details of the availability of IPD services in test-checked CHCs during 2016-
+--
+10725-                                                   Appendix 2.4
+10726- Statement
+10727:  Statementshowing               of Specialist
+10728:            showing availability of SpecialistDoctors,
+10729-                                               Doctors,Doctors,
+10730-                                                        Doctors,Nursing,
+--
+10750-Sr.
+10751- Sr.
+10752: Sr.                      Name of         Specialist
+10753:                                          Specialist
+10754-                                                             Doctors
+10755-                                                            Doctors          Nursing
+--
+10958-
+10959-                                             Appendix 2.5
+10960:                    Statement showing availability of Specialist Doctors, Doctors in
+10961-                                    District Hospitals in the State
+10962-                                (Reference: Paragraph 2.6(i), Page 15)
+10963-
+10964:                                 Specialist doctors                                 Doctors
+10965-                    Manpower                             Shortfal   Manpower                              Shortfal
+10966-                                 Sanction
+--
+11094-                                              Appendix 2.8 (i)
+11095-
+11096:                 Statement showing availability of Specialist Doctors and Doctors in
+11097-                                Sub-District Hospitals in the State
+11098-                                         as of March 2022
+11099-                              (Reference: Paragraph 2.6 (ii), Page 16)
+11100:     Sr. No.       Name of District            Specialist doctors                            Doctors
+11101-                                         SS        PIP    Shortfall Shortfall   SS      PIP Shortfall Shortfall
+11102-                                                                     in per                            in per
+--
+11205-                    Health Centres (CHCs) in the State as of March 2022
+11206-                             (Reference: Paragraph 2.6 (iii)., Page 17)
+11207:            Sr. No.        Name of District         Specialist       Doctors             Nurses        Paramedics
+11208-                                                     doctors
+11209-                                                 SS     PIP        SS        PIP    SS        PIP      SS        PIP
+--
+11548-                                                              Appendix 3.4                                                                              Appendices
+11549-                                                                                                                                                        Appendices
+11550:                    Statement showing non-availability of specialist
+11551-                                                              Appendix
+11552-                                                                     OPD3.4 services in test-checked SDHs during the period 2016-22
+--
+11554-                                                           Paragraph      3.4
+11555-                                                                      3.2.1
+11556:                    Statement showing non-availability of specialist OPD services
+11557-                                                                            (v), Page in
+11558-                                                                                      24)test-checked SDHs during the period 2016-22
+11559:                    Statement showing non-availability of specialist OPD    services  in
+11560-                                              (Reference: Paragraph 3.2.1 (v), Page 24)test-checked SDHs during the period 2016-22
+11561-Sr. No.   Name of Hospital   General Medicines    (Reference:

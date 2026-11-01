@@ -1,0 +1,30 @@
+curl: (28) Failed to connect to hmis.mohfw.gov.in port 443 after 133967 ms: Could not connect to server
+curl: (28) Failed to connect to hmis.mohfw.gov.in port 443 after 134166 ms: Could not connect to server
+curl: (28) Failed to connect to hmis.mohfw.gov.in port 443 after 133165 ms: Could not connect to server
+hmis.html <- https://hmis.mohfw.gov.in/ : HTTP 000,  bytes, cannot open `/tmp/skills/hmis.
+curl: (28) Failed to connect to hmis.mohfw.gov.in port 443 after 135126 ms: Could not connect to server
+curl: (28) Failed to connect to hmis.mohfw.gov.in port 443 after 134166 ms: Could not connect to server
+curl: (28) Failed to connect to hmis.mohfw.gov.in port 443 after 133165 ms: Could not connect to server
+hmis_pub.html <- https://hmis.mohfw.gov.in/#!/publications : HTTP 000,  bytes, cannot open `/tmp/skills/hmis_
+mohfw_pub.html <- https://mohfw.gov.in/?q=publications-11 : HTTP 200, 6897 bytes, HTML document, ASCII text, wit
+mohfw_arch.html <- https://www.mohfw.gov.in/documents/publication/archives : HTTP 200, 7618 bytes, HTML document, ASCII text, wit
+udise.html <- https://udiseplus.gov.in/ : HTTP 200, 88965 bytes, HTML document, ASCII text, wit
+cag_ap.html <- https://cag.gov.in/ag/andhra-pradesh/en/audit-report : HTTP 500, 1574 bytes, HTML document, ASCII text
+cag_ts.html <- https://cag.gov.in/ag/telangana/en/audit-report : HTTP 500, 1574 bytes, HTML document, ASCII text
+udise.pdf <- https://dashboard.udiseplus.gov.in/report2026/static/media/UDISE+2024_25_Booklet_existing.118ba29d4773e6372f72.pdf : HTTP 200, 11756128 bytes, PDF document, version 1.7, 189
+udise_booklet: 8917 lines, 1897 kept
+cag1.pdf <- https://cag.gov.in/uploads/download_audit_report/2024/Chapter-2-Human-Resources-0676d3322b08c80.89268941.pdf : HTTP 200, 1743680 bytes, PDF document, version 1.6, 3 p
+cag_hr_chapter: 557 lines, 62 kept
+cag2.pdf <- https://cag.gov.in/uploads/download_audit_report/2024/AG-Report-PHIMS-Eng-067f8b204b96f61.37967228.pdf : HTTP 200, 6225525 bytes, PDF document, version 1.4, 2 p
+cag_phims: 14528 lines, 259 kept
+cag3.pdf <- https://cag.gov.in/uploads/download_audit_report/2024/6-Executive-Summary-067567e0a5152f9.68802700.pdf : HTTP 200, 154838 bytes, PDF document, version 1.7, 6 p
+cag_exec_summary: 302 lines, 18 kept
+total 320
+drwxr-xr-x  2 runner runner   4096 Nov  1 14:58 .
+drwxrwxrwt 23 root   root     4096 Nov  1 14:44 ..
+-rw-r--r--  1 runner runner   1257 Nov  1 14:58 cag_exec_summary.txt
+-rw-r--r--  1 runner runner   3596 Nov  1 14:58 cag_hr_chapter.txt
+-rw-r--r--  1 runner runner  15452 Nov  1 14:58 cag_phims.txt
+-rw-r--r--  1 runner runner      0 Nov  1 14:58 links.txt
+-rw-r--r--  1 runner runner   2248 Nov  1 14:58 report.txt
+-rw-r--r--  1 runner runner 288984 Nov  1 14:58 udise_booklet.txt
