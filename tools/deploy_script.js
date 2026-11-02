@@ -6,7 +6,7 @@ const fs=require("fs");
 const CID="1072944905499-vm2v2i5dvn0a0d2o4ca36i1vge8cvbn0.apps.googleusercontent.com"; // clasp's public desktop client
 const CSEC="v6V3fKV_zWU7iw1DrpO1rknX"; // published in clasp's source; not a secret
 const REDIRECT="http://localhost:8888";
-const die=m=>{console.error("✗ "+m);process.exit(1)};
+const die=m=>{console.error("✗ "+m);console.log("::error title=Deploy failed::"+String(m).replace(/\r?\n/g," "));process.exit(1)};
 (async()=>{
  const raw=String(process.env.AUTH||"").trim();let code=raw;try{if(/^https?:/.test(raw))code=new URL(raw).searchParams.get("code")||""}catch(e){}
  if(!code)die("No approval code. Open the approval link again and paste the full address you land on.");
