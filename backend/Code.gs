@@ -105,12 +105,12 @@ const NAME_CUES = [/\bmy name\b/i, /\bname\s*(is|:|-)/i, /\b[sdwc]\s*\/\s*o\b/i,
 // ---------- No party names, no person's names (shared rules: mirrors the app, keep in step with app/src/main/assets/index.html) ----------
 // Latin words must stand alone ("mim" must not match "mimic"); Telugu words may take a case ending (జనసేనకు).
 const TE_END="(?:కు|ను|తో|ది|పై|లో|గారు|గారి|గారికి|కి|ల|పార్టీ)?(?![\\u0C00-\\u0C7F])";
-const wordRx=list=>new RegExp("(?:^|[^a-z0-9\\u0C00-\\u0C7F])(?:"+list.map(w=>{const e=w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"\\s+");return /[\u0C00-\u0C7F]/.test(w)?e+TE_END:e+"(?![a-z0-9])"}).join("|")+")","i");
+const wordRx_=list=>new RegExp("(?:^|[^a-z0-9\\u0C00-\\u0C7F])(?:"+list.map(w=>{const e=w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"\\s+");return /[\u0C00-\u0C7F]/.test(w)?e+TE_END:e+"(?![a-z0-9])"}).join("|")+")","i");
 const PARTY_WORDS=["tdp","telugu desam","ysrcp","ysrc","ycp","ysr congress","ysr party","janasena","jana sena","jsp","bjp","bharatiya janata","congress","congress party","inc party","brs","bharat rashtra samithi","trs","telangana rashtra samithi","cpi","cpm","cpi(m)","communist party","communists","aimim","mim","majlis","bsp","bahujan samaj","aam aadmi",
  "తెలుగుదేశం","టీడీపీ","వైసీపీ","వైఎస్సార్సీపీ","వైఎస్ఆర్సీపీ","వైఎస్సార్ కాంగ్రెస్","జనసేన","బీజేపీ","భాజపా","కాంగ్రెస్","బీఆర్ఎస్","టీఆర్ఎస్","సీపీఐ","సీపీఎం","కమ్యూనిస్టు","కమ్యూనిస్ట్","మజ్లిస్","ఎంఐఎం","బీఎస్పీ"];
 const LEADER_WORDS=["chandrababu","chandra babu","cbn","nara lokesh","lokesh","jagan","ys jagan","jaganmohan","jagan mohan","pawan kalyan","revanth","revanth reddy","kcr","ktr","chandrashekar rao","chandrasekhar rao","harish rao","sharmila","modi","narendra modi","rahul gandhi","owaisi","bandi sanjay","kishan reddy","purandeswari",
  "చంద్రబాబు","లోకేష్","లోకేశ్","జగన్","జగన్మోహన్","పవన్ కళ్యాణ్","పవన్ కల్యాణ్","రేవంత్","కేసీఆర్","కేటీఆర్","హరీష్ రావు","హరీశ్ రావు","షర్మిల","మోదీ","మోడీ","రాహుల్ గాంధీ","ఒవైసీ","బండి సంజయ్","కిషన్ రెడ్డి","పురందేశ్వరి"];
-const RX_PARTY=wordRx(PARTY_WORDS),RX_LEADER=wordRx(LEADER_WORDS);
+const RX_PARTY=wordRx_(PARTY_WORDS),RX_LEADER=wordRx_(LEADER_WORDS);
 // Places and schemes named after people are fine ("Ambedkar colony", "NTR district", "Gandhi Nagar"): removed before the name checks.
 const PLACE_PEOPLE=/\b(?:dr\.?\s*b\.?\s*r\.?\s*)?(?:ambedkar|gandhi|nehru|phule|ntr|rajiv|indira|indiramma|potti sriramulu|alluri sitharama raju|sathya sai|annamayya|kakatiya|jyothiba|nagarjuna sagar|janani suraksha|tirumala|srisailam|surya ghar|saraswati shishu mandir|saraswati vidya|ganga kalyan|vijaya dairy|chandranna|krishna\s+(?:district|jilla|zilla|mandal|mandalam))\b/gi;
 // A role followed by a capitalised name ("MLA Ramesh", "Collector Sri Rao"); "Collector Office" is fine.
@@ -155,7 +155,7 @@ function namedPerson(x0){const x=String(x0||"").replace(PLACE_PEOPLE," ");if(nam
 // Caste names are never written in reports (mirrors the app).
 const CASTE_WORDS=["mala","madiga","adi andhra","adi dravida","relli","dakkali","lambada","lambadi","banjara","sugali","koya","gond","gondu","yanadi","yerukula","erukala","chenchu","savara","jatapu","golla","kuruma","kuruba","mudiraj","mutharasi","padmasali","devanga","rajaka","chakali","nayi brahmin","mangali","kummari","kamsali","viswabrahmin","vishwabrahmin","vaddera","waddera","uppara","gandla","teli","setti balija","agnikula kshatriya","boya","valmiki","turpu kapu","brahmin","brahmins","kamma","kammas","kapu","kapus","velama","kshatriya","vysya","arya vysya","komati","balija","telaga",
  "మాల","మాదిగ","ఆది ఆంధ్ర","రెల్లి","లంబాడా","లంబాడీ","బంజారా","సుగాలి","కోయ","గోండు","యానాది","ఎరుకల","చెంచు","సవర","గొల్ల","కురుమ","ముదిరాజ్","ముత్తరాసి","పద్మశాలి","దేవాంగ","రజక","చాకలి","నాయీ బ్రాహ్మణ","మంగలి","కుమ్మరి","కంసాలి","విశ్వబ్రాహ్మణ","వడ్డెర","ఉప్పర","గాండ్ల","శెట్టి బలిజ","అగ్నికుల క్షత్రియ","బోయ","వాల్మీకి","తూర్పు కాపు","బ్రాహ్మణ","బ్రాహ్మణులు","కమ్మ","కాపు","వెలమ","క్షత్రియ","వైశ్య","ఆర్యవైశ్య","కోమటి","బలిజ","తెలగ"];
-const RX_CASTE=wordRx(CASTE_WORDS);
+const RX_CASTE=wordRx_(CASTE_WORDS);
 function hasCaste_(text) { return RX_CASTE.test(normDigits_(text)); }
 // Aadhaar, PAN, voter card, licence, RC and certificates: place only up to the village; no date of birth or age.
 const RX_ADDR=/(^|[^a-z0-9\u0C00-\u0C7F])(?:ward|door\s*no|d\.\s*no|h\.\s*no|house\s*no|house\s*number|plot|flat|street|lane|road\s*no|cross\s*road|colony|వార్డు|ఇంటి\s*నంబర్|డోర్\s*నంబర్|ప్లాట్|ఫ్లాట్|వీధి|కాలనీ)/i;   // below village level
