@@ -1,22 +1,32 @@
 {
- "updated": "2026-11-02T04:14",
+ "updated": "2026-11-02T07:42",
  "last7days_trusted": {
   "ap": {
+   "NTR": {
+    "disaster": 1,
+    "other": 2
+   },
+   "Ananthapuramu": {
+    "other": 7,
+    "education": 16,
+    "health": 4,
+    "sanitation": 1
+   },
    "(state-wide / unknown)": {
-    "women": 8,
-    "disaster": 188,
-    "education": 47,
-    "other": 364,
+    "health": 29,
+    "other": 372,
+    "women": 9,
+    "education": 48,
+    "nutrition": 10,
+    "disaster": 192,
+    "power": 40,
     "social": 4,
-    "power": 38,
     "sanitation": 18,
     "roads": 15,
     "elderly": 13,
     "agri": 56,
     "livelihood": 4,
-    "nutrition": 9,
     "water": 17,
-    "health": 27,
     "certs": 1,
     "child": 1,
     "housing": 2
@@ -29,15 +39,6 @@
     "education": 1,
     "health": 2,
     "power": 1,
-    "sanitation": 1
-   },
-   "NTR": {
-    "other": 2
-   },
-   "Ananthapuramu": {
-    "education": 16,
-    "other": 6,
-    "health": 4,
     "sanitation": 1
    },
    "Kakinada": {
@@ -103,24 +104,31 @@
   },
   "ts": {
    "(state-wide / unknown)": {
+    "education": 31,
+    "other": 257,
+    "water": 53,
+    "sanitation": 11,
     "disaster": 25,
-    "other": 255,
     "roads": 22,
+    "elderly": 10,
     "agri": 60,
     "nutrition": 24,
-    "education": 29,
     "power": 20,
     "health": 31,
-    "water": 51,
-    "sanitation": 10,
     "livelihood": 5,
-    "elderly": 9,
     "certs": 4,
     "housing": 7,
     "iddocs": 3,
     "child": 1,
     "women": 4,
     "social": 1
+   },
+   "Rajanna Sircilla": {
+    "women": 1
+   },
+   "Sangareddy": {
+    "agri": 2,
+    "education": 1
    },
    "Hyderabad": {
     "water": 14,
@@ -158,10 +166,6 @@
    },
    "Vikarabad": {
     "other": 1
-   },
-   "Sangareddy": {
-    "agri": 1,
-    "education": 1
    },
    "Khammam": {
     "education": 2,
