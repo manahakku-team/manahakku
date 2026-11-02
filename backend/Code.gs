@@ -608,6 +608,8 @@ function doPost(e) {
     }
   }
 
+  if (d.type === 'ask') return json_(ask_(d, dev, state));
+
   if (d.type === 'step') {
     const s = String(d.s || '');
     if (!STEPS[s] || !rate_('st', '*', STEPS_PER_HOUR)) return json_({ ok: false });
@@ -889,4 +891,80 @@ function weeklyIdeasDigest() {
   if (!week.length) body += 'No new ideas this week.\n';
   body += '\nForward this email or paste it to Claude for a full summary and the next step.';
   MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'Mana Hakku: weekly safety ideas (' + week.length + ' new)', body);
+}
+
+// ---------- chat helper: AI only works out WHAT the person needs; the app answers from its own pages ----------
+// Needs the Gemini key in Project Settings → Script properties → GEMINI_API_KEY. Without it the app uses its own search.
+// The text is never stored or logged; only the small JSON answer is cached (by a hash of the text) for 6 hours.
+const ASK_PER_HOUR = 20, ASK_ALL_PER_HOUR = 1500;
+const ASK_SECTORS = {
+  water: 'drinking water; subs: supply (no water), quality (dirty/unsafe water)',
+  sanitation: 'drains, toilets, garbage, stray animals; subs: drain, toilet, animals, garbage',
+  health: 'hospitals, doctors, PHC, medicines, ambulance', nutrition: 'anganwadi, child food, ration, mid-day meal food quality',
+  education: 'schools, colleges, teachers, scholarships, hostels, school safety', child: 'child labour, child marriage, child abuse, children in danger',
+  women: 'women safety, violence at home, harassment outside school, women schemes', elderly: 'old age, pension, elderly care',
+  livelihood: 'jobs, wages, MGNREGS, fishermen, weavers, livestock, migration', housing: 'houses, house sites, housing schemes',
+  roads: 'roads, bridges, buses, transport', power: 'electricity, power cuts, transformers, bills', social: 'liquor, drugs, gambling, social evils',
+  certs: 'certificates; subs: revenue (caste/income/residence), birthdeath (birth or death certificate)',
+  iddocs: 'ID cards; subs: aadhaar, pan, dl (driving licence), rc (vehicle registration), voter',
+  disaster: 'floods, cyclones, heatwave, fire, disasters', agri: 'farming, crops, seeds, fertiliser, irrigation, farm loans, crop insurance'
+};
+const ASK_SUBS = { water: ['supply', 'quality'], sanitation: ['drain', 'toilet', 'animals', 'garbage'], certs: ['revenue', 'birthdeath'], iddocs: ['aadhaar', 'pan', 'dl', 'rc', 'voter'] };
+const ASK_INTENTS = ['report', 'rights', 'helpline', 'file_complaint', 'scheme', 'money', 'history', 'news', 'dashboard', 'roots', 'district', 'other'];
+
+function ask_(d, dev, state) {
+  const text = clip_(d.text, 300).trim();
+  if (!text) return { ok: false, reason: 'empty' };
+  if (hasPersonalDetails_(text)) return { ok: false, reason: 'pii' };
+  const key = PropertiesService.getScriptProperties().getProperty('GEMINI_API_KEY');
+  if (!key) return { ok: false, reason: 'no_key' };
+  const dists = (Array.isArray(d.districts) ? d.districts : []).slice(0, 40).map(x => clip_(x, 40)).filter(x => /^[A-Za-z .'-]+$/.test(x));
+  const cache = CacheService.getScriptCache();
+  const h = Utilities.base64EncodeWebSafe(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, state + '|' + text.toLowerCase())).slice(0, 40);
+  const hit = cache.get('ask:' + h);
+  if (hit) return JSON.parse(hit);
+  if (!rate_('ask', dev, ASK_PER_HOUR) || !rate_('ask', '*', ASK_ALL_PER_HOUR)) return { ok: false, reason: 'limit' };
+  const prompt = 'You route questions for a civic help app in Andhra Pradesh and Telangana, India. ' +
+    'The person writes in Telugu, English, or Telugu typed in English letters. Work out what they need. ' +
+    'Do not answer the question. Reply with JSON only.\n' +
+    'intent: report (they describe a problem), rights (their rights or the law), helpline (a phone number to call), ' +
+    'file_complaint (how or where to complain officially), scheme (a government scheme), money (state budget or spending), ' +
+    'history (history or movements), news (news), dashboard (overall picture of an issue), roots (why a problem happens), ' +
+    'district (about a district), other.\n' +
+    'sector: one of these keys or "":\n' + Object.keys(ASK_SECTORS).map(k => k + ' = ' + ASK_SECTORS[k]).join('\n') + '\n' +
+    'sub: a sub key listed for that sector, or "".\n' +
+    'district: one of these exact names if the text mentions it, else "": ' + dists.join(', ') + '\n' +
+    'urgent: true only if someone is in danger now (violence, child in danger, medical emergency, disaster).\n' +
+    'Text: """' + text.replace(/"""/g, '"') + '"""';
+  const body = {
+    contents: [{ parts: [{ text: prompt }] }],
+    generationConfig: {
+      temperature: 0, maxOutputTokens: 120, responseMimeType: 'application/json',
+      responseSchema: { type: 'OBJECT', properties: { intent: { type: 'STRING' }, sector: { type: 'STRING' }, sub: { type: 'STRING' }, district: { type: 'STRING' }, urgent: { type: 'BOOLEAN' } }, required: ['intent', 'sector', 'sub', 'district', 'urgent'] },
+      thinkingConfig: { thinkingBudget: 0 }
+    }
+  };
+  let r;
+  try {
+    r = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent', {
+      method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, payload: JSON.stringify(body), muteHttpExceptions: true
+    });
+  } catch (err) { return { ok: false, reason: 'ai_down' }; }
+  const code = r.getResponseCode();
+  if (code === 429) return { ok: false, reason: 'limit' };
+  if (code !== 200) return { ok: false, reason: 'ai_down' };
+  let o;
+  try { o = JSON.parse(JSON.parse(r.getContentText()).candidates[0].content.parts[0].text); } catch (err) { return { ok: false, reason: 'ai_bad' }; }
+  // Only known values pass; no model text ever reaches the phone.
+  const sector = ASK_SECTORS[o.sector] ? o.sector : '';
+  const out = {
+    ok: true,
+    intent: ASK_INTENTS.indexOf(o.intent) >= 0 ? o.intent : 'other',
+    sector: sector,
+    sub: sector && (ASK_SUBS[sector] || []).indexOf(o.sub) >= 0 ? o.sub : '',
+    district: dists.indexOf(o.district) >= 0 ? o.district : '',
+    urgent: o.urgent === true
+  };
+  cache.put('ask:' + h, JSON.stringify(out), 21600);
+  return out;
 }
