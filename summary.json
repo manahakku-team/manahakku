@@ -1,22 +1,18 @@
 {
- "updated": "2026-11-02T16:17",
+ "updated": "2026-11-02T19:13",
  "last7days_trusted": {
   "ap": {
-   "Kurnool": {
-    "agri": 1,
-    "other": 2
-   },
    "(state-wide / unknown)": {
-    "disaster": 198,
-    "other": 375,
+    "other": 379,
+    "disaster": 201,
+    "health": 33,
+    "social": 5,
     "agri": 60,
+    "nutrition": 12,
     "power": 40,
-    "health": 30,
     "water": 18,
     "women": 10,
-    "education": 49,
-    "nutrition": 11,
-    "social": 4,
+    "education": 48,
     "sanitation": 17,
     "roads": 14,
     "elderly": 13,
@@ -25,10 +21,14 @@
     "child": 1,
     "housing": 1
    },
+   "Kurnool": {
+    "agri": 1,
+    "other": 1
+   },
    "Ananthapuramu": {
-    "health": 5,
+    "education": 18,
     "other": 6,
-    "education": 16,
+    "health": 5,
     "sanitation": 1
    },
    "Srikakulam": {
@@ -67,6 +67,9 @@
     "disaster": 2,
     "agri": 1
    },
+   "Annamayya": {
+    "other": 1
+   },
    "Kakinada": {
     "disaster": 5,
     "other": 2,
@@ -81,18 +84,17 @@
     "disaster": 2,
     "livelihood": 1
    },
+   "East Godavari": {
+    "disaster": 2,
+    "other": 2
+   },
    "Anakapalli": {
     "health": 1,
-    "agri": 1,
-    "education": 1
+    "agri": 1
    },
    "Vizianagaram": {
     "education": 1,
     "other": 3,
-    "disaster": 1
-   },
-   "East Godavari": {
-    "other": 2,
     "disaster": 1
    },
    "West Godavari": {
@@ -108,17 +110,17 @@
   },
   "ts": {
    "(state-wide / unknown)": {
+    "other": 255,
+    "housing": 9,
+    "agri": 61,
+    "health": 31,
+    "nutrition": 26,
     "water": 53,
-    "other": 251,
-    "agri": 60,
     "roads": 26,
     "education": 33,
-    "health": 30,
-    "housing": 8,
+    "disaster": 27,
     "sanitation": 7,
-    "disaster": 26,
     "elderly": 10,
-    "nutrition": 25,
     "power": 20,
     "women": 5,
     "livelihood": 5,
