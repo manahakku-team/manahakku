@@ -8,7 +8,10 @@ const CSEC="v6V3fKV_zWU7iw1DrpO1rknX"; // published in clasp's source; not a sec
 const REDIRECT="http://localhost:8888";
 const die=m=>{console.error("✗ "+m);console.log("::error title=Deploy failed::"+String(m).replace(/\r?\n/g," "));process.exit(1)};
 (async()=>{
- const raw=String(process.env.AUTH||"").trim();let code=raw;try{if(/^https?:/.test(raw))code=new URL(raw).searchParams.get("code")||""}catch(e){}
+ const raw=String(process.env.AUTH||"").trim();let code=raw;
+ // Accept the full address with or without http://, or just the code; undo %2F-style encoding.
+ const cm=raw.match(/[?&#]code=([^&#\s]+)/);if(cm)code=cm[1];code=code.replace(/\+/g," ").trim();try{code=decodeURIComponent(code)}catch(e){}
+ console.log("• Approval code read: "+code.length+" characters, starts "+(code.startsWith("4/")?"correctly (4/…)":"UNEXPECTEDLY — copy the whole address again")+(raw.includes("scope=")?", scope present":", no scope seen"));
  if(!code)die("No approval code. Open the approval link again and paste the full address you land on.");
  const sid=String(process.env.SCRIPT_ID||"").trim();if(!/^[A-Za-z0-9_-]{20,}$/.test(sid))die("SCRIPT_ID is missing. Add it once under Settings → Secrets and variables → Actions → Variables.");
  const html=fs.readFileSync("app/src/main/assets/index.html","utf8");const m=html.match(/script\.google\.com\/macros\/s\/([A-Za-z0-9_-]+)\/exec/);if(!m)die("Live deployment ID not found in the app.");const dep=m[1];
