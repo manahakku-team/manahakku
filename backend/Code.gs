@@ -847,3 +847,46 @@ function weeklyBackup() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   ss.copy(ss.getName() + ' · backup ' + Utilities.formatDate(new Date(), 'Asia/Kolkata', 'yyyy-MM-dd'));
 }
+
+// ---------- weekly safety-ideas digest, emailed only to the owner of this script ----------
+// Run setupIdeasDigest once from the editor (pick setupIdeasDigest → Run → allow). Every Sunday morning the owner gets
+// the week's new "[Safety idea]" suggestions grouped by theme, plus the total. Nothing is published; no sender details exist.
+const IDEA_THEMES = [
+  ['Lights and public places', /light|lamp|dark|street|cctv|camera|వెలుతురు|లైట్|దీపం|కెమెరా/i],
+  ['Safe travel and transport', /bus|auto|cab|travel|transport|ride|night|ప్రయాణ|బస్సు|ఆటో|రాత్రి/i],
+  ['School, college and respect', /school|college|teach|student|respect|class|బడి|స్కూల్|కాలేజీ|గౌరవ|విద్యార్థ|టీచర్/i],
+  ['Home and parenting', /home|parent|family|mother|father|son|ఇంట్లో|తల్లి|తండ్రి|కుటుంబ|పిల్లల/i],
+  ['Early warning and quick help', /warn|complain|helpline|112|181|1098|report|quick|immediate|ఫిర్యాదు|హెచ్చరిక|వెంటనే|హెల్ప్/i],
+  ['Liquor, drugs and online harm', /liquor|alcohol|drug|ganja|porn|phone|online|social media|మద్యం|గంజాయి|మత్తు|ఫోన్/i],
+  ['Law and punishment', /law|punish|court|fast.?track|justice|చట్ట|శిక్ష|కోర్టు|న్యాయ/i],
+];
+function setupIdeasDigest() {
+  ScriptApp.getProjectTriggers().filter(t => t.getHandlerFunction() === 'weeklyIdeasDigest').forEach(t => ScriptApp.deleteTrigger(t));
+  ScriptApp.newTrigger('weeklyIdeasDigest').timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(9).create();
+  weeklyIdeasDigest();
+  Logger.log('Weekly ideas digest is on: an email goes to this account every Sunday morning (first one sent now).');
+}
+function weeklyIdeasDigest() {
+  const ss = sheet_(SUGGESTIONS, SUGGESTION_COLS);
+  const n = Math.max(0, ss.getLastRow() - 1);
+  const rows = n ? ss.getRange(2, 1, n, 4).getValues() : [];
+  const all = rows.filter(r => /^\[Safety idea\]/.test(String(r[1] || '')));
+  const since = Date.now() - 7 * 24 * 3600 * 1000;
+  const week = all.filter(r => r[0] instanceof Date && r[0].getTime() >= since);
+  const groups = {};
+  week.forEach(r => {
+    const t = String(r[1]).replace(/^\[Safety idea\]\s*/, '').slice(0, 600);
+    const hit = IDEA_THEMES.filter(([, re]) => re.test(t)).map(([name]) => name);
+    (hit.length ? hit : ['Other ideas']).forEach(g => (groups[g] = groups[g] || []).push('• ' + t + (r[2] ? '  (' + r[2] + (r[3] ? ', ' + r[3] : '') + ')' : '')));
+  });
+  const day = Utilities.formatDate(new Date(), 'Asia/Kolkata', 'd MMM yyyy');
+  let body = 'Mana Hakku · safety ideas · week ending ' + day + '\n\n'
+    + 'New this week: ' + week.length + '   ·   Total so far: ' + all.length + '\n'
+    + '(One idea can appear under two themes.)\n\n';
+  Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length).forEach(g => {
+    body += g.toUpperCase() + ' (' + groups[g].length + ')\n' + groups[g].join('\n') + '\n\n';
+  });
+  if (!week.length) body += 'No new ideas this week.\n';
+  body += '\nForward this email or paste it to Claude for a full summary and the next step.';
+  MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'Mana Hakku: weekly safety ideas (' + week.length + ' new)', body);
+}

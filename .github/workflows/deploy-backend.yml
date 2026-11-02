@@ -1,0 +1,37 @@
+name: Deploy backend (Apps Script)
+on:
+  push:
+    branches: [main]
+    paths: [backend/Code.gs]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency: { group: backend-deploy, cancel-in-progress: false }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
+      SCRIPT_ID: ${{ secrets.SCRIPT_ID }}
+      DEPLOYMENT_ID: AKfycbz08xXmFDTHqrcos-bO8lQW72yBKCRlL2gC8i3zktchZxnMngXD89ki6AyogSja9RyMNw   # the web address the app already uses; it stays the same
+    steps:
+      - uses: actions/checkout@v4
+      - name: Skip if the one-time setup is not done yet
+        id: ready
+        run: |
+          if [ -z "$CLASPRC_JSON" ] || [ -z "$SCRIPT_ID" ]; then echo "Setup secrets missing; nothing deployed."; echo "go=no" >> $GITHUB_OUTPUT; else echo "go=yes" >> $GITHUB_OUTPUT; fi
+      - name: Upload Code.gs and update the live web app
+        if: steps.ready.outputs.go == 'yes'
+        run: |
+          npm i -g @google/clasp@2.4.2 >/dev/null
+          printf '%s' "$CLASPRC_JSON" > ~/.clasprc.json
+          mkdir /tmp/gs && cd /tmp/gs
+          printf '{"scriptId":"%s","rootDir":"."}' "$SCRIPT_ID" > .clasp.json
+          clasp pull
+          f=$(grep -l "function doGet" *.js *.gs 2>/dev/null | head -1); f=${f:-Code.js}
+          echo "replacing $f"
+          cp "$GITHUB_WORKSPACE/backend/Code.gs" "$f"
+          clasp push -f
+          clasp deploy -i "$DEPLOYMENT_ID" -d "auto ${GITHUB_SHA::7}"
+          clasp deployments | grep "$DEPLOYMENT_ID"
