@@ -1,57 +1,68 @@
 {
- "updated": "2026-11-02T10:22",
+ "updated": "2026-11-02T13:27",
  "last7days_trusted": {
   "ts": {
-   "(state-wide / unknown)": {
-    "other": 259,
-    "roads": 24,
-    "health": 32,
-    "housing": 8,
-    "education": 32,
-    "water": 53,
-    "sanitation": 11,
-    "disaster": 25,
-    "elderly": 10,
-    "agri": 60,
-    "nutrition": 24,
-    "power": 20,
-    "livelihood": 5,
-    "certs": 4,
-    "iddocs": 3,
-    "child": 1,
-    "women": 4,
-    "social": 1
-   },
    "Hyderabad": {
-    "other": 17,
-    "water": 14,
+    "other": 19,
+    "sanitation": 1,
+    "health": 3,
+    "water": 13,
     "women": 1,
     "disaster": 4,
     "roads": 1,
     "nutrition": 3,
-    "health": 2,
     "housing": 1
    },
-   "Mancherial": {
-    "roads": 1,
+   "Nagarkurnool": {
+    "agri": 1
+   },
+   "(state-wide / unknown)": {
+    "education": 33,
+    "health": 32,
+    "other": 255,
+    "roads": 25,
+    "housing": 8,
+    "water": 51,
+    "sanitation": 7,
+    "disaster": 26,
+    "elderly": 10,
+    "agri": 59,
+    "nutrition": 24,
+    "power": 20,
+    "women": 5,
+    "livelihood": 5,
+    "certs": 4,
+    "iddocs": 3,
+    "child": 1,
+    "social": 1
+   },
+   "Jangaon": {
+    "education": 1,
+    "sanitation": 1,
     "other": 1
+   },
+   "Sangareddy": {
+    "roads": 1,
+    "agri": 2,
+    "other": 1,
+    "education": 1
+   },
+   "Mancherial": {
+    "roads": 1
    },
    "Rajanna Sircilla": {
     "women": 1
    },
-   "Sangareddy": {
-    "agri": 2,
-    "education": 1
-   },
    "Medchal–Malkajgiri": {
-    "water": 1
+    "water": 1,
+    "other": 1
    },
    "Kumuram Bheem Asifabad": {
     "education": 2,
     "other": 4
    },
    "Warangal": {
-    "health": 9,
+    "health": 7,
     "agri": 1
    },
    "Medak": {
@@ -62,10 +73,6 @@
     "agri": 3,
     "other": 2,
     "power": 1
-   },
-   "Jangaon": {
-    "sanitation": 1,
-    "other": 1
    },
    "Vikarabad": {
     "other": 1
@@ -115,21 +122,21 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 199,
+    "other": 379,
+    "power": 41,
+    "disaster": 198,
+    "agri": 59,
     "health": 30,
-    "other": 376,
     "water": 18,
     "women": 10,
     "education": 49,
     "nutrition": 11,
-    "agri": 58,
-    "power": 40,
     "social": 4,
     "sanitation": 18,
-    "roads": 15,
+    "roads": 14,
     "elderly": 13,
+    "certs": 2,
     "livelihood": 4,
-    "certs": 1,
     "child": 1,
     "housing": 2
    },
