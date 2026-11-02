@@ -19,6 +19,8 @@ const die=m=>{console.error("✗ "+m);console.log("::error title=Deploy failed::
  const tk=await tr.json();if(!tk.access_token)die("Google did not accept the approval code ("+(tk.error||tr.status)+"). Codes work once and expire in a few minutes: approve again and run right away.");
  const H={authorization:"Bearer "+tk.access_token,"content-type":"application/json"};
  const api=async(method,path,body)=>{const r=await fetch("https://script.googleapis.com/v1/projects/"+sid+path,{method,headers:H,body:body?JSON.stringify(body):undefined});const j=await r.json().catch(()=>({}));if(!r.ok)die(method+" "+path.split("?")[0]+" failed: "+((j.error&&j.error.message)||r.status)+(r.status===403?" (turn on the Apps Script API at script.google.com/home/usersettings)":""));return j};
+ const deps=await api("GET","/deployments");const live=(deps.deployments||[]).find(d=>d.deploymentId===dep);
+ if(!live)die("Nothing changed: this Script ID is not the project behind the app's web address. Open the register Sheet → Extensions → Apps Script → Project Settings and copy that Script ID.");
  const cur=await api("GET","/content");const files=cur.files||[];
  const code_gs=fs.readFileSync("backend/Code.gs","utf8");
  const target=files.find(f=>f.type==="SERVER_JS"&&/^code$/i.test(f.name))||files.find(f=>f.type==="SERVER_JS");if(!target)die("No script file found in the project.");
@@ -26,7 +28,6 @@ const die=m=>{console.error("✗ "+m);console.log("::error title=Deploy failed::
  target.source=code_gs;await api("PUT","/content",{files});
  const ver=await api("POST","/versions",{description:"Mana Hakku deploy "+new Date().toISOString().slice(0,16)});
  console.log("• Saved as version "+ver.versionNumber+".");
- const deps=await api("GET","/deployments");const live=(deps.deployments||[]).find(d=>d.deploymentId===dep);if(!live)die("The app's live deployment is not in this project. Check SCRIPT_ID.");
  await api("PUT","/deployments/"+dep,{deploymentConfig:{scriptId:sid,versionNumber:ver.versionNumber,manifestFileName:"appsscript",description:"Mana Hakku v"+ver.versionNumber}});
  console.log("✓ Live web app now runs version "+ver.versionNumber+" at the same address.");
 })().catch(e=>die(String(e&&e.message||e)));
