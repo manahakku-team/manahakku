@@ -13,7 +13,7 @@ const die=m=>{console.error("✗ "+m);console.log("::error title=Deploy failed::
  let accessToken="";
  if(String(process.env.CLASPRC_JSON||"").trim()){
   // Automatic route: the saved clasp login (GitHub secret CLASPRC_JSON) gives a long-lived refresh token.
-  if(/^\s*https?:|localhost/.test(process.env.CLASPRC_JSON))die("CLASPRC_JSON holds a web address, not the login file. On the laptop run: notepad %USERPROFILE%\\.clasprc.json, then Ctrl+A, Ctrl+C and paste that text as the secret.");
+  if(!/^\s*\uFEFF?\s*\{/.test(process.env.CLASPRC_JSON))die("CLASPRC_JSON is not the login file (it should start with {). On the laptop run: notepad %USERPROFILE%\\.clasprc.json, then Ctrl+A, Ctrl+C and paste that text as the secret.");
   let rc;try{rc=JSON.parse(String(process.env.CLASPRC_JSON).replace(/^\uFEFF/,""))}catch(e){die("CLASPRC_JSON is not valid JSON. Open .clasprc.json in Notepad, Ctrl+A, Ctrl+C and paste it again as the secret.")}
   const t=rc.token||rc.tokens&&rc.tokens.default||rc;const rt=t.refresh_token;
   if(!rt)die("CLASPRC_JSON has no refresh_token. Run clasp logout, then clasp login, and save the file again.");
