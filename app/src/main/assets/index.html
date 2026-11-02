@@ -4612,7 +4612,7 @@ const LENS_TILES=[
   const pjh=pj?`<p class="lnks"><button type="button" class="rlink" data-nav="dist" data-arg="${esc(l.district)}">🏗️ ${esc(t("lensDistProj").replace("{d}",dName(l.district))+" · "+L(pj[0]))}</button></p>`:"";
   return hc||mvh||pjh?hc+mvh+pjh:""},true],
  ["news","📰","lensNewsH","news",async l=>{const list=await lensNewsItems(l);return list.length?lensNewsList(list):`<p class="note">${esc(t("lensNewsNone").replace("{p}",lensPlace(l.district)))}</p>`}],
- ["thread","🌱","lensThreadH","",l=>{const rk=x=>(x[0][0]===l.sector?0:2)+(x[6]?0:1),th=THREADS.filter(x=>x[0].includes(l.sector)).sort((a,b)=>rk(a)-rk(b));if(!th.length)return "";const st=["thProb","thCause","thSkill","thEdu"];
+ ["thread","🌱","lensThreadH","",l=>{const rk=x=>(x[0][0]===l.sector?0:2)+(x[6]?0:1),th=THREADS.filter(x=>x[0].includes(l.sector)).sort((a,b)=>rk(a)-rk(b)||(parseInt(b[8])||0)-(parseInt(a[8])||0));if(!th.length)return "";const st=["thProb","thCause","thSkill","thEdu"];
   const one=x=>`<div class="thr">${x.slice(1,5).map((p,i)=>`<div class="ths"><span class="thk">${esc(t(st[i]))}</span><span>${esc(L(p))}</span></div>`).join(`<div class="tha" aria-hidden="true">↓</div>`)}${x[6]?`<p class="thf">📊 ${esc(L(x[6]))}</p><p class="thd">${esc(t("thSrc"))} <a href="${esc(x[7])}" target="_blank" rel="noopener noreferrer">${esc(L(x[5]))}</a> · ${esc(x[8])}</p>`:`<p class="thd">${esc(t("thData"))} ${esc(L(x[5]))}</p>`}</div>`;
   return one(th[0])+(th.length>1?`<details class="thmore"><summary>${esc(t("thMore").replace("{n}",th.length-1))}</summary>${th.slice(1).map(one).join("")}</details>`:"")+`<p class="note">${esc(t("thNote"))}</p>`},true]
 ];
