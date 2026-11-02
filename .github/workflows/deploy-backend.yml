@@ -13,14 +13,14 @@ jobs:
     timeout-minutes: 10
     env:
       CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
-      SCRIPT_ID: ${{ secrets.SCRIPT_ID }}
+      SCRIPT_ID: ${{ secrets.SCRIPT_ID || '1-NRaaM-RO2cBcQJNGBFgKQ23V8sgQbxNrUfAKO9yRKsmg3r6xxIZfn3P' }}   # live register project; not a secret
       DEPLOYMENT_ID: AKfycbz08xXmFDTHqrcos-bO8lQW72yBKCRlL2gC8i3zktchZxnMngXD89ki6AyogSja9RyMNw   # the web address the app already uses; it stays the same
     steps:
       - uses: actions/checkout@v4
       - name: Skip if the one-time setup is not done yet
         id: ready
         run: |
-          if [ -z "$CLASPRC_JSON" ] || [ -z "$SCRIPT_ID" ]; then echo "Setup secrets missing; nothing deployed."; echo "go=no" >> $GITHUB_OUTPUT; else echo "go=yes" >> $GITHUB_OUTPUT; fi
+          if [ -z "$CLASPRC_JSON" ]; then echo "::warning title=Auto-deploy not set up::Add the CLASPRC_JSON secret; nothing deployed."; echo "go=no" >> $GITHUB_OUTPUT; else echo "go=yes" >> $GITHUB_OUTPUT; fi
       - name: Upload Code.gs and update the live web app
         if: steps.ready.outputs.go == 'yes'
         run: |
