@@ -1663,7 +1663,13 @@ function speak(text,btn){
  if(LANG==="te"&&!v){const n=$("voice-note");n.textContent=t("noTeVoice");n.hidden=false;toast(t("noTeVoice"))}
  const list=chunks(digits(speechText(text)));if(!list.length)return;
  speakingBtn=btn;setListenBtn(btn,true);
- list.forEach((c,i)=>{const u=new SpeechSynthesisUtterance(c);u.lang=lang;if(v)u.voice=v;u.rate=LANG==="te"?0.88:0.95;u.pitch=1;if(i===list.length-1){u.onend=()=>{if(speakingBtn===btn){setListenBtn(btn,false);speakingBtn=null}}}u.onerror=()=>{if(speakingBtn===btn){setListenBtn(btn,false);speakingBtn=null}};try{speechSynthesis.speak(u)}catch(e){}});
+ // Paced like the appeal videos: calm speed, a real pause after every sentence, questions lifted at the end.
+ const done=()=>{if(speakingBtn===btn){setListenBtn(btn,false);speakingBtn=null}};
+ const say=i=>{if(speakingBtn!==btn)return;if(i>=list.length)return done();const c=list[i];const u=new SpeechSynthesisUtterance(c);u.lang=lang;if(v)u.voice=v;
+  u.rate=LANG==="te"?0.84:0.9;u.pitch=/[?？]\s*$/.test(c)?1.12:1;
+  u.onend=()=>{if(speakingBtn!==btn)return;setTimeout(()=>say(i+1),/[?？]\s*$/.test(c)?650:/[,:;]\s*$/.test(c)?300:520)};
+  u.onerror=done;try{speechSynthesis.speak(u)}catch(e){done()}};
+ say(0);
 }
 function bindListen(btn,getText){if(!TTS){btn.hidden=true;return}setListenBtn(btn,false);btn.onclick=()=>speak(getText(),btn)}
 

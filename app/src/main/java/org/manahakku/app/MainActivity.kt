@@ -200,16 +200,18 @@ class MainActivity : Activity(), TextToSpeech.OnInitListener {
                 if (best != null) engine.voice = best
             } catch (_: Exception) {}
             // A calm, clear pace: a little slower for Telugu, natural pitch.
-            engine.setSpeechRate(if (lang.startsWith("te")) 0.88f else 0.95f)
-            engine.setPitch(1.0f)
+            // Paced like the appeal videos: calm speed, a real pause after each sentence, questions lifted.
+            engine.setSpeechRate(if (lang.startsWith("te")) 0.84f else 0.9f)
             val parts = splitForSpeech(text)
             parts.forEachIndexed { i, part ->
                 val mode = if (i == 0) TextToSpeech.QUEUE_FLUSH else TextToSpeech.QUEUE_ADD
                 val id = if (i == parts.lastIndex) LAST_ID else "mh-$i"
+                val question = part.trimEnd().endsWith("?")
+                engine.setPitch(if (question) 1.12f else 1.0f)
                 engine.speak(part, mode, null, id)
-                // A short breath between sentences, like a clear speaker.
-                if (i < parts.lastIndex) engine.playSilentUtterance(320L, TextToSpeech.QUEUE_ADD, "mh-gap-$i")
+                if (i < parts.lastIndex) engine.playSilentUtterance(if (question) 650L else 520L, TextToSpeech.QUEUE_ADD, "mh-gap-$i")
             }
+            engine.setPitch(1.0f)
             if (parts.isEmpty()) js("window.mhSpeechDone && window.mhSpeechDone()")
         }
 
