@@ -21,5 +21,5 @@ jobs:
       - name: Deploy
         env:
           AUTH: ${{ github.event.inputs.approval }}
-          SCRIPT_ID: ${{ vars.SCRIPT_ID }}
+          SCRIPT_ID: ${{ vars.SCRIPT_ID || '1w_GePO5JKUro9kNaFzMgi7c4LotYn57YZnWJWI1-ZYhV39uSe8Z_eRO4' }}   # Script ID is not a secret; Google approval is still needed
         run: node tools/deploy_script.js
