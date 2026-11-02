@@ -1,0 +1,27 @@
+name: Deploy backend (Apps Script)
+# Automatic: every change to backend/Code.gs on main goes live at the same web address.
+# Needs one secret, CLASPRC_JSON: the text of .clasprc.json after `clasp login` with the Mana Hakku account.
+on:
+  push:
+    branches: [main]
+    paths: [backend/Code.gs]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency: { group: backend-deploy, cancel-in-progress: false }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Upload Code.gs and update the live web app
+        env:
+          CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
+          SCRIPT_ID: ${{ secrets.SCRIPT_ID || '1-NRaaM-RO2cBcQJNGBFgKQ23V8sgQbxNrUfAKO9yRKsmg3r6xxIZfn3P' }}   # live register project; not a secret
+        run: |
+          if [ -z "$CLASPRC_JSON" ]; then echo "::warning title=Auto-deploy not set up::Add the CLASPRC_JSON secret; nothing deployed."; exit 0; fi
+          node tools/deploy_script.js

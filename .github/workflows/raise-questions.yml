@@ -1,0 +1,23 @@
+name: Lift question endings
+on:
+  workflow_dispatch:
+    inputs:
+      file: { description: "WAV on the media3 branch", default: "te-Sulafat-take1.wav" }
+      spec: { description: "start,end,semitones;...", required: true }
+permissions:
+  contents: write
+jobs:
+  lift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: { ref: media3, path: media }
+      - name: Lift
+        run: |
+          pip install -q praat-parselmouth
+          python3 tools/promo/raise_questions.py "media/${{ inputs.file }}" "media/lifted-${{ inputs.file }}" "${{ inputs.spec }}"
+      - name: Save
+        run: |
+          cd media && git add -A && git -c user.name=tts -c user.email=tts@users.noreply.github.com commit -qm "Lifted questions" && git push -q origin HEAD:media3

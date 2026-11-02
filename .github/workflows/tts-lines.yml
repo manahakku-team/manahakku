@@ -1,0 +1,28 @@
+name: Voice-over by sentence
+on:
+  workflow_dispatch:
+    inputs:
+      spec: { description: "TSV: lang, rate, pitch, pause after, text", default: "tools/promo/appeal/spoken.tsv" }
+      en_voice: { default: "en-IN-NeerjaNeural" }
+      te_voice: { default: "te-IN-ShrutiNeural" }
+permissions:
+  contents: write
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: One clip per sentence, each with its own pace and pitch
+        run: |
+          pip install -q edge-tts
+          mkdir -p /tmp/out; cp "${{ inputs.spec }}" /tmp/out/spec.tsv
+          i=0; while IFS=$'\t' read -r L R P G T || [ -n "$L" ]; do [ -z "$T" ] && continue
+            V="${{ inputs.en_voice }}"; [ "$L" = te ] && V="${{ inputs.te_voice }}"
+            edge-tts --voice "$V" --rate="$R" --pitch="$P" --text "$T" --write-media /tmp/out/$(printf %03d $i)-$L.mp3; i=$((i+1)); done < "${{ inputs.spec }}"
+          ls /tmp/out | head -50
+      - name: Save to the media2 branch
+        run: |
+          cd /tmp/out && git init -q -b media2 && git add -A
+          git -c user.name=tts -c user.email=tts@users.noreply.github.com commit -qm "Voice-over by sentence $(date -u +%FT%H:%M)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/media2

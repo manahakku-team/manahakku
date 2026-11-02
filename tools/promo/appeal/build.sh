@@ -2,7 +2,7 @@
 # per scene: background with the caption fading in and out; then join and add the voice
 set -e
 D=$(dirname "$0"); cd "$D"
-for L in en te; do
+for L in ${LANGS:-en te}; do
   rm -f $L/*.mp4 $L/list.txt
   python3 - "$L" <<'P' > $L/jobs.txt
 import json,sys;L=sys.argv[1]
@@ -14,6 +14,6 @@ P
     echo "file '$(basename $out)'" >> $L/list.txt
   done < $L/jobs.txt
   (cd $L && ffmpeg -nostdin -v error -y -f concat -safe 0 -i list.txt -c copy video.tmp.mp4 && mv video.tmp.mp4 video.mp4)
-  ffmpeg -nostdin -v error -y -i $L/video.mp4 -itsoffset 0.3 -i $L.mp3 -map 0:v -map 1:a -c:v copy -c:a aac -b:a 160k -af "apad" -t 45 out-$L.tmp.mp4 && mv out-$L.tmp.mp4 "Mana-Hakku-safety-appeal-$L.mp4"
+  ffmpeg -nostdin -v error -y -i $L/video.mp4 -itsoffset ${LEAD:-0.3} -i $L.mp3 -map 0:v -map 1:a -c:v copy -c:a aac -b:a 160k -af "apad" -t $(python3 -c "import json;print(round(sum(x['d'] for x in json.load(open('$L/shots.json'))),3))") out-$L.tmp.mp4 && mv out-$L.tmp.mp4 "Mana-Hakku-safety-appeal-$L.mp4"
 done
-for L in en te; do ffprobe -v error -show_entries format=duration -of csv=p=0 "Mana-Hakku-safety-appeal-$L.mp4"; done
+for L in ${LANGS:-en te}; do ffprobe -v error -show_entries format=duration -of csv=p=0 "Mana-Hakku-safety-appeal-$L.mp4"; done
