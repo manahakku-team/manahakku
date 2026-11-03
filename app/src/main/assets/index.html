@@ -4524,7 +4524,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-nav]");if(
 // Kept in memory and in localStorage "mh-lens". The issue is a key of S; the district is one of DNAMES for the state it was set in.
 let LENS=(()=>{try{const o=JSON.parse(localStorage.getItem("mh-lens")||"null");if(o&&typeof o==="object")return {sector:typeof o.sector==="string"?o.sector:"",district:typeof o.district==="string"?o.district:"",st:o.st==="ts"?"ts":"ap"}}catch(e){}return {sector:"",district:"",st:"ap"}})();
 let lensV=1;const lensSeen={};let lensAllSet=null;
-const LENS_VIEWS=["lens","all","news","money","history","rights","dash"];
+const LENS_VIEWS=["lens"];   // Issue/District chips only on the dashboard page (other pages stay simple)
 function lensNow(){return {sector:S[LENS.sector]?LENS.sector:"",district:LENS.st===ST&&DNAMES.includes(LENS.district)?LENS.district:""}}
 function setLens(sector,district,quiet){const s=S[sector]?sector:"",d=DNAMES.includes(district)?district:"";if(s===lensNow().sector&&d===lensNow().district&&LENS.st===ST)return;
  LENS={sector:s,district:d,st:ST};lensV++;try{localStorage.setItem("mh-lens",JSON.stringify(LENS))}catch(e){}if(!quiet)lensRefresh()}
