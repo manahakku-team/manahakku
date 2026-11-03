@@ -71,7 +71,7 @@ const MAX_PER_HOUR = 300;     // reports accepted per hour statewide (stops floo
 // Per-phone limits (each app install sends a random phone id, never anything personal) and overall hourly caps.
 const DEV_REPORTS_PER_HOUR = 6, DEV_SUGGESTIONS_PER_HOUR = 5, DEV_FLAGS_PER_HOUR = 10;
 const SUGGESTIONS_PER_HOUR = 60, FLAGS_PER_HOUR = 120;
-const TR_V = 4, TR_PER_LOAD = 5;   // v4: place names only kept when they translate back to the same name (no meaning-translation of names)   // reports are shown in the reader's language: each report keeps an English and a Telugu copy (machine translation, original always kept)
+const TR_V = 5, TR_PER_LOAD = 5;   // v4: place names only kept when they translate back to the same name (no meaning-translation of names)   // reports are shown in the reader's language: each report keeps an English and a Telugu copy (machine translation, original always kept)
 const RULES_V = 2;            // raise this when the rules below change; older rows are re-checked automatically
 const GRAMMAR_PER_LOAD = 5;   // rows spell-checked per list load (keeps the app fast and within LanguageTool's free limit)
 const SUGGESTION_COLS = ['created', 'text', 'lang', 'state'];
@@ -478,6 +478,7 @@ function trName_(name, to) {
   const plain = tryOne(name); if (plain) cands.push(plain);
   for (const c of cands) {
     if (!c || c === name) continue;
+    if (to === 'te' ? (/[A-Za-z]/.test(c) || !/[\u0C00-\u0C7F]/.test(c)) : /[\u0C00-\u0C7F]/.test(c)) continue;   // must be fully in the target script
     const b = back(to === 'te' ? c : c).replace(/\s*village\s*$/i, '');
     if (simName_(b, name) >= 0.72) return c;
   }
