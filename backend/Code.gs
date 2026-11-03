@@ -60,7 +60,7 @@
 
 const REPORTS = 'Reports';
 const SUGGESTIONS = 'Suggestions';
-const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note', 'reporter_note', 'reporter_note_ok'];
+const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note', 'reporter_note', 'reporter_note_ok', 'title_en', 'desc_en', 'title_te', 'desc_te', 'tr_v'];
 const OUTCOMES = ['acknowledged', 'progress', 'solved', 'none'];
 const GRV_SYSTEMS = ['pgrs', 'prajavani', 'cpgrams', 'uidai', 'incometax', 'eci', 'transport', 'state', 'other'];
 const FLAGS = 'Flags';
@@ -71,6 +71,7 @@ const MAX_PER_HOUR = 300;     // reports accepted per hour statewide (stops floo
 // Per-phone limits (each app install sends a random phone id, never anything personal) and overall hourly caps.
 const DEV_REPORTS_PER_HOUR = 6, DEV_SUGGESTIONS_PER_HOUR = 5, DEV_FLAGS_PER_HOUR = 10;
 const SUGGESTIONS_PER_HOUR = 60, FLAGS_PER_HOUR = 120;
+const TR_V = 1, TR_PER_LOAD = 5;   // reports are shown in the reader's language: each report keeps an English and a Telugu copy (machine translation, original always kept)
 const RULES_V = 2;            // raise this when the rules below change; older rows are re-checked automatically
 const GRAMMAR_PER_LOAD = 5;   // rows spell-checked per list load (keeps the app fast and within LanguageTool's free limit)
 const SUGGESTION_COLS = ['created', 'text', 'lang', 'state'];
@@ -442,6 +443,19 @@ function fixTitle_(title0, desc0, desc1) {
   return clip_(tidy_(t).replace(/\.$/, ''), 90);
 }
 
+// ---------- translation: every report readable in English and Telugu ----------
+// Google's own translator inside Apps Script (no outside service, no key). The original text is never changed.
+function trBoth_(title, desc) {
+  const out = { title_en: '', desc_en: '', title_te: '', desc_te: '' };
+  const tr = (x, to) => { x = String(x || '').trim(); if (!x) return ''; try { return clip_(LanguageApp.translate(x, '', to), to === 'te' ? 1500 : 1500); } catch (e) { return ''; } };
+  ['en', 'te'].forEach(to => {
+    const t1 = tr(title, to), d1 = tr(desc, to);
+    if (t1 && t1 !== String(title || '').trim()) out['title_' + to] = clip_(t1, 120);
+    if (d1 && d1 !== String(desc || '').trim()) out['desc_' + to] = d1;
+  });
+  return out;
+}
+
 // ---------- read: everyone's reports ----------
 // How many safety ideas people have shared from the Home page (only the count is public, never the text). Cached 5 minutes.
 function safetyIdeas_() {
@@ -496,6 +510,15 @@ function doGet(e) {
       set(r, i, 'rules_v', RULES_V);
     });
   }
+  // Translate older reports a few at a time (each page load does up to TR_PER_LOAD), newest first.
+  let trTodo = 0;
+  for (let i = values.length - 1; i >= 0 && trTodo < TR_PER_LOAD; i--) {
+    const r = values[i];
+    if (!r[idx.id] || Number(r[idx.tr_v]) >= TR_V) continue;
+    const x = trBoth_(r[idx.title], r[idx.desc]);
+    Object.keys(x).forEach(k => set(r, i, k, x[k]));
+    set(r, i, 'tr_v', TR_V); trTodo++;
+  }
   // Write each changed column in one go (skipped if another request is writing right now; it will run next time).
   const wl = LockService.getScriptLock();
   if (Object.keys(dirty).length && wl.tryLock(3000)) try { Object.keys(dirty).forEach(k => {
@@ -540,7 +563,9 @@ function doGet(e) {
     // The reporter's short update is public only after it passes the name check (or you set reporter_note_ok to "yes").
     reporter_note: /^(yes|ok)$/i.test(String(r[idx.reporter_note_ok] || '').trim()) ? String(r[idx.reporter_note] || '').slice(0, 300) : '',
     reviewed: r[idx.reviewed] === true || /^(yes|y|true|✔|checked)$/i.test(String(r[idx.reviewed] || '').trim()),
-    review_note: String(r[idx.review_note] || '').slice(0, 140)
+    review_note: String(r[idx.review_note] || '').slice(0, 140),
+    title_en: String(r[idx.title_en] || ''), desc_en: String(r[idx.desc_en] || ''),
+    title_te: String(r[idx.title_te] || ''), desc_te: String(r[idx.desc_te] || '')
   }));
   return json_({ ok: true, state: state, reports: rows, hidden: hidden });
 }
@@ -741,6 +766,7 @@ function doPost(e) {
   const title0 = clip_(r.title, 90);
   const title = fixTitle_(title0, desc0, desc);
 
+  const trx = trBoth_(title, desc);   // English + Telugu copies, made before the write lock
   const lock = LockService.getScriptLock();
   lock.waitLock(10000);
   try {
@@ -773,6 +799,7 @@ function doPost(e) {
     // file from any device by typing it or opening their private link; otherwise a fresh random key.
     const key = /^[A-HJ-NP-Z2-9]{16}$/.test(String(d.my_key || '')) ? String(d.my_key) : Utilities.getUuid().replace(/-/g, '');
     put('edit_key', key); put('grv_system', ''); put('grv_number', ''); put('grv_date', '');
+    Object.keys(trx).forEach(k => put(k, trx[k])); put('tr_v', TR_V);
     for (let i = 0; i < row.length; i++) if (row[i] === undefined) row[i] = '';
     sh.appendRow(row);
     try { sh.getRange(sh.getLastRow(), idx.reviewed + 1).setDataValidation(SpreadsheetApp.newDataValidation().requireCheckbox().build()); } catch (e) {}
