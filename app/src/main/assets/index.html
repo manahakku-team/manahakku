@@ -869,7 +869,6 @@ i.t-lo{background:var(--crit)}i.t-hi{background:var(--warn)}i.t-ok{background:va
     <button type="button" class="hact" data-ha="rights"><span class="hi i-och" data-hico="scale"></span><span class="hx"><b data-t="haRights"></b><small data-t="haRightsS"></small></span><span class="har">→</span></button>
   </div>
   <section class="card safeidea" id="safeidea" aria-labelledby="si-h"><h2 class="gsh" id="si-h" data-t="siH"></h2><p class="note" data-t="siLede"></p><p class="siuntil" data-t="siUntil"></p><p class="sicount" id="si-count" hidden></p><textarea id="si-text" maxlength="1500" aria-labelledby="si-h"></textarea><div class="btns"><button class="btn" type="button" id="si-send" data-t="siSend"></button></div><p class="note" id="si-note" aria-live="polite"></p><p class="note sihelp" data-t="siHelp"></p></section>
-  <div class="hstate" role="group"><span data-t="yourState"></span><button type="button" class="hsc" data-hs="ap">ఆంధ్రప్రదేశ్ · AP</button><button type="button" class="hsc" data-hs="ts">తెలంగాణ · TS</button></div>
   <div class="card gsearch" role="search"><h2 class="gsh" data-t="srchH"></h2>
    <div class="gsrow"><input id="g-q" type="search" autocomplete="off" enterkeyhint="search"><button class="btn" type="button" id="g-go" data-t="srchBtn"></button></div>
    <div class="gsst"><span class="note" data-t="srchIn"></span><button type="button" class="gsc" data-gst="ap">ఆంధ్రప్రదేశ్ · AP</button><button type="button" class="gsc" data-gst="ts">తెలంగాణ · TS</button></div>
@@ -5257,10 +5256,10 @@ function enterState(code,view){
 document.querySelectorAll(".stcard").forEach(c=>c.onclick=()=>{let v=null;try{v=localStorage.getItem("mh-tab")}catch(e){}enterState(c.dataset.state,v)});
 $("st-btn").onclick=()=>show("home");
 document.querySelectorAll("#st-seg [data-seg]").forEach(b=>b.onclick=()=>{const code=b.dataset.seg;document.querySelectorAll("#st-seg [data-seg]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
- if($("v-home")&&!$("v-home").hidden){const hc=document.querySelector('.hsc[data-hs="'+code+'"]');if(hc)hc.click();else{gsState=code;try{localStorage.setItem("mh-state",code)}catch(e){}}return}
+ if($("v-home")&&!$("v-home").hidden){gsState=code;try{stateDay(code)}catch(e){}try{localStorage.setItem("mh-state",code)}catch(e){}document.querySelectorAll(".gsc").forEach(x=>x.classList.toggle("on",x.dataset.gst===code));try{renderG()}catch(e){}return}
  if(ST===code)return;const vis=[...document.querySelectorAll('[id^="v-"]')].find(v=>!v.hidden&&v.id!=="v-home");enterState(code,vis?vis.id.slice(2):"report");
  try{toast(t("stNow").replace("{s}",t(code+"Name")))}catch(e){}window.scrollTo(0,0)});
-// The state switch stays only at the top of the page (no floating copy while scrolling), as the owner asked.
+{let mini=false,hh=0;const H=document.querySelector("header.top");addEventListener("scroll",()=>{if(!mini)hh=H.offsetHeight;const m=scrollY>hh+20;if(m!==mini){mini=m;H.classList.toggle("pinned",m);document.body.style.paddingTop=m?hh+"px":""}},{passive:true})}
 document.querySelectorAll(".hsc").forEach(c=>c.onclick=()=>{gsState=c.dataset.hs;stateDay(gsState);try{localStorage.setItem("mh-state",gsState)}catch(e){}document.querySelectorAll(".hsc").forEach(x=>x.classList.toggle("on",x===c));document.querySelectorAll(".gsc").forEach(x=>x.classList.toggle("on",x.dataset.gst===gsState));try{renderG()}catch(e){}});
 document.querySelectorAll("[data-ha]").forEach(b=>b.onclick=()=>enterState(gsState,b.dataset.ha));
 const hashMap={score:"dash",scorecard:"dash",report:"report",dashboard:"dash",all:"all",money:"money",budget:"money",finance:"money",issues:"all",news:"news",rights:"rights",history:"history",lens:"lens",issue:"lens"};
