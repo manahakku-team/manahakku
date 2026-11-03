@@ -1,5 +1,8 @@
 name: Load test (read-only)
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 0 * * 0"    # Sundays 05:37 India time; the report reaches the owner before 7 AM
 permissions:
   contents: write
 jobs:
