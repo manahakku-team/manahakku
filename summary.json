@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-03T04:08",
+ "updated": "2026-11-03T07:29",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "power": 44,
-    "disaster": 206,
-    "education": 50,
+    "disaster": 209,
+    "other": 391,
+    "women": 11,
+    "power": 49,
+    "agri": 63,
+    "livelihood": 4,
+    "education": 52,
     "nutrition": 13,
-    "other": 389,
-    "agri": 61,
     "social": 8,
-    "health": 32,
-    "water": 18,
-    "women": 9,
+    "health": 31,
+    "water": 17,
     "housing": 2,
-    "sanitation": 17,
+    "sanitation": 16,
     "roads": 13,
     "elderly": 13,
     "certs": 2,
-    "livelihood": 3,
     "child": 1
    },
    "Prakasam": {
-    "disaster": 4,
+    "disaster": 5,
     "power": 1,
     "education": 1
    },
@@ -88,7 +88,7 @@
    },
    "East Godavari": {
     "disaster": 2,
-    "other": 2
+    "other": 1
    },
    "Anakapalli": {
     "health": 1,
@@ -112,13 +112,14 @@
   },
   "ts": {
    "(state-wide / unknown)": {
+    "other": 257,
+    "agri": 63,
+    "social": 2,
     "water": 52,
-    "education": 34,
-    "agri": 62,
+    "education": 36,
     "housing": 10,
     "power": 21,
-    "other": 259,
-    "nutrition": 29,
+    "nutrition": 28,
     "health": 30,
     "disaster": 25,
     "roads": 27,
@@ -128,27 +129,25 @@
     "livelihood": 5,
     "certs": 3,
     "iddocs": 3,
-    "child": 1,
-    "social": 1
-   },
-   "Kumuram Bheem Asifabad": {
-    "other": 5,
-    "education": 2
+    "child": 1
    },
    "Hyderabad": {
+    "nutrition": 5,
     "sanitation": 2,
-    "nutrition": 4,
-    "other": 19,
-    "health": 3,
-    "water": 13,
+    "other": 18,
+    "health": 2,
+    "water": 12,
     "women": 1,
     "disaster": 4,
     "roads": 1,
     "housing": 1
    },
+   "Kumuram Bheem Asifabad": {
+    "other": 5,
+    "education": 2
+   },
    "Wanaparthy": {
-    "agri": 1,
-    "other": 1
+    "agri": 1
    },
    "Warangal": {
     "health": 8,
