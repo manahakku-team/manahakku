@@ -1,9 +1,11 @@
 {
- "updated": "2026-11-03T19:12",
+ "updated": "2026-11-03T22:00",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "education": 42,
+    "nutrition": 27,
+    "education": 43,
+    "agri": 63,
     "other": 239,
     "power": 27,
     "certs": 4,
@@ -11,8 +13,6 @@
     "disaster": 27,
     "roads": 25,
     "health": 29,
-    "agri": 62,
-    "nutrition": 26,
     "social": 2,
     "housing": 10,
     "sanitation": 6,
@@ -48,6 +48,17 @@
     "disaster": 4,
     "roads": 1
    },
+   "Nizamabad": {
+    "health": 1,
+    "other": 1
+   },
+   "Jagtial": {
+    "education": 1
+   },
+   "Mancherial": {
+    "education": 1,
+    "roads": 1
+   },
    "Nalgonda": {
     "disaster": 1,
     "other": 1
@@ -66,9 +77,6 @@
     "agri": 2,
     "other": 1,
     "education": 1
-   },
-   "Mancherial": {
-    "roads": 1
    },
    "Rajanna Sircilla": {
     "women": 1
@@ -109,9 +117,6 @@
    "Mahabubnagar": {
     "other": 2
    },
-   "Nizamabad": {
-    "other": 1
-   },
    "Peddapalli": {
     "water": 1
    },
@@ -121,8 +126,8 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 198,
-    "other": 387,
+    "disaster": 199,
+    "other": 393,
     "roads": 14,
     "agri": 70,
     "education": 56,
@@ -145,6 +150,13 @@
     "education": 18,
     "other": 6,
     "sanitation": 1
+   },
+   "Guntur": {
+    "roads": 1,
+    "education": 1,
+    "health": 1,
+    "agri": 1,
+    "other": 2
    },
    "NTR": {
     "other": 5,
@@ -180,12 +192,6 @@
     "health": 2,
     "power": 1,
     "sanitation": 1
-   },
-   "Guntur": {
-    "education": 1,
-    "health": 1,
-    "agri": 1,
-    "other": 2
    },
    "Sri Potti Sriramulu Nellore": {
     "disaster": 2,
