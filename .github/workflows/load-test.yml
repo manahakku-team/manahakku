@@ -1,0 +1,21 @@
+name: Load test (read-only)
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run
+        run: |
+          pip install -q aiohttp
+          export REGISTER_URL=$(grep -o 'https://script.google.com/macros/s/[A-Za-z0-9_-]*/exec' app/src/main/assets/index.html | head -1)
+          python3 tools/load/loadtest.py
+      - name: Save the summary to the loadtest branch
+        if: always()
+        run: |
+          mkdir -p /tmp/load && cd /tmp/load && git init -q -b loadtest && git add -A
+          git -c user.name=qa -c user.email=qa@users.noreply.github.com commit -qm "Load test $(date -u +%FT%H:%M)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/loadtest
