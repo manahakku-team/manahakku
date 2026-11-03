@@ -67,7 +67,7 @@ const FLAGS = 'Flags';
 const FLAG_COLS = ['created', 'id', 'reason', 'note', 'state', 'dev'];
 const FLAG_REASONS = ['false', 'abusive', 'personal', 'duplicate', 'other'];
 const AUTO_HIDE_FLAGS = 5;    // public flags that hide a report until the owner reviews it
-const MAX_PER_HOUR = 60;      // reports accepted per hour (stops floods)
+const MAX_PER_HOUR = 300;     // reports accepted per hour statewide (stops floods; raised from 60 after the Nov 2026 load test)
 // Per-phone limits (each app install sends a random phone id, never anything personal) and overall hourly caps.
 const DEV_REPORTS_PER_HOUR = 6, DEV_SUGGESTIONS_PER_HOUR = 5, DEV_FLAGS_PER_HOUR = 10;
 const SUGGESTIONS_PER_HOUR = 60, FLAGS_PER_HOUR = 120;
