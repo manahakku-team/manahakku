@@ -872,17 +872,17 @@ function weeklyIdeasDigest() {
   const ss = sheet_(SUGGESTIONS, SUGGESTION_COLS);
   const n = Math.max(0, ss.getLastRow() - 1);
   const rows = n ? ss.getRange(2, 1, n, 4).getValues() : [];
-  const all = rows.filter(r => /^\[Safety idea\]/.test(String(r[1] || '')));
+  const all = rows.filter(r => /^\[(Safety idea|Idea)\]/.test(String(r[1] || '')));   // women's-safety drive ideas, and (from 15 Nov 2026) ideas on any problem
   const since = Date.now() - 7 * 24 * 3600 * 1000;
   const week = all.filter(r => r[0] instanceof Date && r[0].getTime() >= since);
   const groups = {};
   week.forEach(r => {
-    const t = String(r[1]).replace(/^\[Safety idea\]\s*/, '').slice(0, 600);
+    const isSafety = /^\[Safety idea\]/.test(String(r[1])); const t = String(r[1]).replace(/^\[(Safety idea|Idea)\]\s*/, '').slice(0, 600);
     const hit = IDEA_THEMES.filter(([, re]) => re.test(t)).map(([name]) => name);
-    (hit.length ? hit : ['Other ideas']).forEach(g => (groups[g] = groups[g] || []).push('• ' + t + (r[2] ? '  (' + r[2] + (r[3] ? ', ' + r[3] : '') + ')' : '')));
+    (hit.length ? hit : [isSafety ? 'Other safety ideas' : 'Other ideas']).forEach(g => (groups[g] = groups[g] || []).push('• ' + t + (r[2] ? '  (' + r[2] + (r[3] ? ', ' + r[3] : '') + ')' : '')));
   });
   const day = Utilities.formatDate(new Date(), 'Asia/Kolkata', 'd MMM yyyy');
-  let body = 'Mana Hakku · safety ideas · week ending ' + day + '\n\n'
+  let body = 'Mana Hakku · ideas · week ending ' + day + '\n\n'
     + 'New this week: ' + week.length + '   ·   Total so far: ' + all.length + '\n'
     + '(One idea can appear under two themes.)\n\n';
   Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length).forEach(g => {
@@ -890,7 +890,7 @@ function weeklyIdeasDigest() {
   });
   if (!week.length) body += 'No new ideas this week.\n';
   body += '\nForward this email or paste it to Claude for a full summary and the next step.';
-  MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'Mana Hakku: weekly safety ideas (' + week.length + ' new)', body);
+  MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'Mana Hakku: weekly ideas (' + week.length + ' new)', body);
 }
 
 // ---------- chat helper: AI only works out WHAT the person needs; the app answers from its own pages ----------

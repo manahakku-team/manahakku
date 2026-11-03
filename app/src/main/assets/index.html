@@ -1602,7 +1602,8 @@ function speak(text,btn){
 function bindListen(btn,getText){if(!TTS){btn.hidden=true;return}setListenBtn(btn,false);btn.onclick=()=>speak(getText(),btn)}
 
 // ---------- Static text / language ----------
-function applyStatic(){
+const siPhase2=()=>Date.now()>Date.parse("2026-11-14T23:59:59+05:30");   // from 15 Nov the ideas box takes ideas on any problem
+function applyStatic(){if(siPhase2()){const c=document.getElementById("safeidea");if(c){const sw=(a,b)=>{const e=c.querySelector('[data-t="'+a+'"]');if(e)e.dataset.t=b};sw("siLede","siLede2");sw("siShort","siLede2");sw("siUntil","siUntil2")}}
  document.documentElement.lang=LANG;
  document.querySelectorAll("[data-t]").forEach(el=>{el.textContent=t(el.dataset.t)});
  $("brand-main").textContent=LANG==="te"?"మన హక్కు":"Mana Hakku";
@@ -1613,7 +1614,7 @@ function applyStatic(){
  document.querySelectorAll(".listen:not(.mic)").forEach(b=>{if(b!==speakingBtn&&TTS)setListenBtn(b,false)});
  document.querySelectorAll("[data-mic]").forEach(b=>{if(!b.hidden)setMic(b,b===micTarget)});
  $("rk-search").placeholder=t("rkSearchPh");$("src-pop-x").setAttribute("aria-label",t("srcClose"));$("a-search").placeholder=t("allSearchPh");$("a-more").textContent=t("showMore");$("a-refresh").textContent=t("refresh");$("hi-search").placeholder=t("distSearchPh");
- const dr=$("d-refresh");if(dr)dr.textContent=t("refresh");const sgt=$("sg-text");if(sgt)sgt.placeholder=t("suggestPh");const sit=$("si-text");if(sit)sit.placeholder=t("siPh");try{siShow()}catch(e){}if(!$("pii-warn").hidden)piiCheckForm();
+ const dr=$("d-refresh");if(dr)dr.textContent=t("refresh");const sgt=$("sg-text");if(sgt)sgt.placeholder=t("suggestPh");const sit=$("si-text");if(sit)sit.placeholder=t(siPhase2()?"siPh2":"siPh");try{siShow()}catch(e){}if(!$("pii-warn").hidden)piiCheckForm();
  const xp=$("x-pdf"),xc=$("x-csv");if(xp){xp.textContent=t("exportPdf");xc.textContent=t("exportCsv")}
 }
 function fillSelect(el,opts,keepVal){const v=keepVal?el.value:null;el.innerHTML="";opts.forEach(([val,txt])=>{const o=document.createElement("option");o.value=val;o.textContent=txt;el.appendChild(o)});if(v!==null&&[...el.options].some(o=>o.value===v))el.value=v}
@@ -4862,12 +4863,12 @@ if(SHARED){$("reg-note").hidden=false;$("d-refresh").hidden=false;$("suggest").h
   $("sg-send").disabled=true;try{const j=await postRegister({type:"suggestion",text:tx,lang:LANG,state:ST});if(j&&j.ok){$("sg-text").value="";$("sg-note").textContent=t("suggestThanks");thanks("suggestion")}else $("sg-note").textContent=t(j&&j.error==="pii"?"serverPii":"suggestFail")}catch(e){$("sg-note").textContent=t("suggestFail")}$("sg-send").disabled=false}}
 
 // Safety ideas from the Home page go into the same Suggestions sheet, tagged. The Home card shows how many have come in (count only).
-let siN=null;function siShow(){const el=$("si-count");if(!el)return;if(typeof siN!=="number"||siN<1){el.hidden=true;return}el.hidden=false;el.textContent=siN===1?t("siCount1"):t("siCount").replace("{n}",num(siN))}
+let siN=null;function siShow(){const el=$("si-count");if(!el)return;if(siPhase2()){el.hidden=true;return}if(typeof siN!=="number"||siN<1){el.hidden=true;return}el.hidden=false;el.textContent=siN===1?t("siCount1"):t("siCount").replace("{n}",num(siN))}
 async function siLoad(){if(!SHARED)return;try{const r=await fetch(REGISTER_URL+"?action=ideas&t="+Math.floor(Date.now()/6e4));const j=await r.json();if(j&&j.ok&&typeof j.safety_ideas==="number"){siN=j.safety_ideas;siShow()}}catch(e){}}
 siLoad();
 // Safety ideas are collected always (owner, Nov 2026): the card stays open on Home.
 {const sb=$("si-send");if(sb){if(!SHARED)$("safeidea").hidden=true;sb.onclick=async()=>{const tx=$("si-text").value.trim();if(!tx)return;if(piiFound(tx).length){$("si-note").textContent=t("piiBlocked");return}
- sb.disabled=true;try{const j=await postRegister({type:"suggestion",text:"[Safety idea] "+tx,lang:LANG,state:ST||"ap"});if(j&&j.ok){$("si-text").value="";$("si-note").textContent=t("suggestThanks");if(typeof siN==="number"){siN++;siShow()}try{thanks("suggestion")}catch(e){}}else $("si-note").textContent=t(j&&j.error==="pii"?"serverPii":"suggestFail")}catch(e){$("si-note").textContent=t("suggestFail")}sb.disabled=false}}}
+ sb.disabled=true;try{const j=await postRegister({type:"suggestion",text:(siPhase2()?"[Idea] ":"[Safety idea] ")+tx,lang:LANG,state:ST||"ap"});if(j&&j.ok){$("si-text").value="";$("si-note").textContent=t("suggestThanks");if(typeof siN==="number"){siN++;siShow()}try{thanks("suggestion")}catch(e){}}else $("si-note").textContent=t(j&&j.error==="pii"?"serverPii":"suggestFail")}catch(e){$("si-note").textContent=t("suggestFail")}sb.disabled=false}}}
 // ---------- User guide (home page) ----------
 // Built from the app itself: one card per tab that exists (its live label), counts from the app's own data, and the
 // change log below. A new tab shows up here automatically; tools/test_guide.js fails the build if a tab has no guide text
