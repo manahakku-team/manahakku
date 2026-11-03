@@ -1,5 +1,8 @@
 name: Load test (read-only)
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 3 * * 0"   # Sundays 09:07 India time, before the 10:11 APK release
 permissions:
   contents: write
 jobs:
