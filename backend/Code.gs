@@ -71,7 +71,7 @@ const MAX_PER_HOUR = 300;     // reports accepted per hour statewide (stops floo
 // Per-phone limits (each app install sends a random phone id, never anything personal) and overall hourly caps.
 const DEV_REPORTS_PER_HOUR = 6, DEV_SUGGESTIONS_PER_HOUR = 5, DEV_FLAGS_PER_HOUR = 10;
 const SUGGESTIONS_PER_HOUR = 60, FLAGS_PER_HOUR = 120;
-const TR_V = 3, TR_PER_LOAD = 5;   // v2: place / village names; v3: names joined by - , / done part by part   // reports are shown in the reader's language: each report keeps an English and a Telugu copy (machine translation, original always kept)
+const TR_V = 4, TR_PER_LOAD = 5;   // v4: place names only kept when they translate back to the same name (no meaning-translation of names)   // reports are shown in the reader's language: each report keeps an English and a Telugu copy (machine translation, original always kept)
 const RULES_V = 2;            // raise this when the rules below change; older rows are re-checked automatically
 const GRAMMAR_PER_LOAD = 5;   // rows spell-checked per list load (keeps the app fast and within LanguageTool's free limit)
 const SUGGESTION_COLS = ['created', 'text', 'lang', 'state'];
@@ -452,15 +452,49 @@ function trBoth_(title, desc, place) {
     const t1 = tr(title, to), d1 = tr(desc, to);
     if (t1 && t1 !== String(title || '').trim()) out['title_' + to] = clip_(t1, 120);
     if (d1 && d1 !== String(desc || '').trim()) out['desc_' + to] = d1;
-    let p1 = tr(place, to);
-    // Joined names ("Pusapadu-Vankayalapadu", "Ward 5, Anandapuram") often come back unchanged: translate each part.
-    if ((!p1 || p1 === String(place || '').trim()) && /[-,\/]/.test(String(place || ''))) {
-      const parts = String(place).split(/(\s*[-,\/]\s*)/);
-      p1 = parts.map((x, k) => k % 2 ? x : (tr(x, to) || x)).join('');
-    }   // village / street names: Telugu letters for Telugu readers, English letters for English readers
+    const p1 = trPlace_(place, to);
     if (p1 && p1 !== String(place || '').trim()) out['place_' + to] = clip_(p1, 80);
   });
   return out;
+}
+
+// Place names must keep their sound, not be translated by meaning ("Pusapadu" is not "half a foot").
+// A name is accepted only if it translates back to (almost) the same name; otherwise the original spelling stays.
+function simName_(a, b) {
+  const n = x => String(x || '').toLowerCase().replace(/[^a-z\u0C00-\u0C7F]/g, '');
+  a = n(a); b = n(b); if (!a || !b) return 0;
+  const m = a.length, k = b.length, d = [];
+  for (let i = 0; i <= m; i++) { d[i] = [i]; for (let j = 1; j <= k; j++) d[i][j] = i ? 0 : j; }
+  for (let i = 1; i <= m; i++) for (let j = 1; j <= k; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return 1 - d[m][k] / Math.max(m, k);
+}
+function trName_(name, to) {
+  name = String(name || '').trim(); if (!name) return '';
+  const from = to === 'te' ? 'en' : 'te';
+  const tryOne = q => { try { return String(LanguageApp.translate(q, '', to) || '').trim(); } catch (e) { return ''; } };
+  const back = x => { try { return String(LanguageApp.translate(x, to, from) || ''); } catch (e) { return ''; } };
+  const cands = [];
+  if (to === 'te') { const v = tryOne(name + ' village').replace(/\s*గ్రామం\s*$/, '').trim(); if (v) cands.push(v); }
+  const plain = tryOne(name); if (plain) cands.push(plain);
+  for (const c of cands) {
+    if (!c || c === name) continue;
+    const b = back(to === 'te' ? c : c).replace(/\s*village\s*$/i, '');
+    if (simName_(b, name) >= 0.72) return c;
+  }
+  return '';
+}
+function trPlace_(place, to) {
+  place = String(place || '').trim(); if (!place) return '';
+  const parts = place.split(/(\s*[-,\/]\s*|\s+)/);
+  const KEEP = { village: { te: 'గ్రామం', en: 'village' }, ward: { te: 'వార్డు', en: 'ward' }, road: { te: 'రోడ్డు', en: 'road' }, street: { te: 'వీధి', en: 'street' }, colony: { te: 'కాలనీ', en: 'colony' }, nagar: { te: 'నగర్', en: 'Nagar' } };
+  let changed = false, failed = false;
+  const out = parts.map((x, k) => {
+    if (k % 2 || !x.trim()) return x;
+    const kw = KEEP[x.toLowerCase()]; if (kw) { changed = true; return kw[to]; }
+    if (/^\d+$/.test(x)) return x;
+    const y = trName_(x, to); if (y) { changed = true; return y; } failed = true; return x;
+  }).join('');
+  return changed && !failed ? out : '';   // all parts or nothing: never a half-Telugu, half-English name
 }
 
 // ---------- read: everyone's reports ----------
