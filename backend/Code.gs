@@ -60,7 +60,7 @@
 
 const REPORTS = 'Reports';
 const SUGGESTIONS = 'Suggestions';
-const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note', 'reporter_note', 'reporter_note_ok', 'title_en', 'desc_en', 'title_te', 'desc_te', 'tr_v'];
+const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note', 'reporter_note', 'reporter_note_ok', 'title_en', 'desc_en', 'title_te', 'desc_te', 'tr_v', 'note_en', 'note_te', 'note_tr_for'];
 const OUTCOMES = ['acknowledged', 'progress', 'solved', 'none'];
 const GRV_SYSTEMS = ['pgrs', 'prajavani', 'cpgrams', 'uidai', 'incometax', 'eci', 'transport', 'state', 'other'];
 const FLAGS = 'Flags';
@@ -519,6 +519,14 @@ function doGet(e) {
     Object.keys(x).forEach(k => set(r, i, k, x[k]));
     set(r, i, 'tr_v', TR_V); trTodo++;
   }
+  // The reporter's public update, in both languages (re-done whenever the note text changes).
+  let noteTodo = 0;
+  for (let i = values.length - 1; i >= 0 && noteTodo < TR_PER_LOAD; i--) {
+    const r = values[i], nt = String(r[idx.reporter_note] || '').trim();
+    if (!r[idx.id] || !nt || !/^(yes|ok)$/i.test(String(r[idx.reporter_note_ok] || '').trim()) || String(r[idx.note_tr_for] || '') === nt) continue;
+    ['en', 'te'].forEach(to => { let x = ''; try { x = clip_(LanguageApp.translate(nt, '', to), 300); } catch (e) {} set(r, i, 'note_' + to, x && x !== nt ? x : ''); });
+    set(r, i, 'note_tr_for', nt); noteTodo++;
+  }
   // Write each changed column in one go (skipped if another request is writing right now; it will run next time).
   const wl = LockService.getScriptLock();
   if (Object.keys(dirty).length && wl.tryLock(3000)) try { Object.keys(dirty).forEach(k => {
@@ -562,6 +570,8 @@ function doGet(e) {
     reporter_says_date: r[idx.reporter_says_date] instanceof Date ? r[idx.reporter_says_date].toISOString() : String(r[idx.reporter_says_date] || ''),
     // The reporter's short update is public only after it passes the name check (or you set reporter_note_ok to "yes").
     reporter_note: /^(yes|ok)$/i.test(String(r[idx.reporter_note_ok] || '').trim()) ? String(r[idx.reporter_note] || '').slice(0, 300) : '',
+    reporter_note_en: /^(yes|ok)$/i.test(String(r[idx.reporter_note_ok] || '').trim()) && String(r[idx.note_tr_for] || '') === String(r[idx.reporter_note] || '').trim() ? String(r[idx.note_en] || '') : '',
+    reporter_note_te: /^(yes|ok)$/i.test(String(r[idx.reporter_note_ok] || '').trim()) && String(r[idx.note_tr_for] || '') === String(r[idx.reporter_note] || '').trim() ? String(r[idx.note_te] || '') : '',
     reviewed: r[idx.reviewed] === true || /^(yes|y|true|✔|checked)$/i.test(String(r[idx.reviewed] || '').trim()),
     review_note: String(r[idx.review_note] || '').slice(0, 140),
     title_en: String(r[idx.title_en] || ''), desc_en: String(r[idx.desc_en] || ''),
