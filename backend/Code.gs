@@ -71,7 +71,7 @@ const MAX_PER_HOUR = 300;     // reports accepted per hour statewide (stops floo
 // Per-phone limits (each app install sends a random phone id, never anything personal) and overall hourly caps.
 const DEV_REPORTS_PER_HOUR = 6, DEV_SUGGESTIONS_PER_HOUR = 5, DEV_FLAGS_PER_HOUR = 10;
 const SUGGESTIONS_PER_HOUR = 60, FLAGS_PER_HOUR = 120;
-const TR_V = 2, TR_PER_LOAD = 5;   // v2: place / village names too   // reports are shown in the reader's language: each report keeps an English and a Telugu copy (machine translation, original always kept)
+const TR_V = 3, TR_PER_LOAD = 5;   // v2: place / village names; v3: names joined by - , / done part by part   // reports are shown in the reader's language: each report keeps an English and a Telugu copy (machine translation, original always kept)
 const RULES_V = 2;            // raise this when the rules below change; older rows are re-checked automatically
 const GRAMMAR_PER_LOAD = 5;   // rows spell-checked per list load (keeps the app fast and within LanguageTool's free limit)
 const SUGGESTION_COLS = ['created', 'text', 'lang', 'state'];
@@ -452,7 +452,12 @@ function trBoth_(title, desc, place) {
     const t1 = tr(title, to), d1 = tr(desc, to);
     if (t1 && t1 !== String(title || '').trim()) out['title_' + to] = clip_(t1, 120);
     if (d1 && d1 !== String(desc || '').trim()) out['desc_' + to] = d1;
-    const p1 = tr(place, to);   // village / street names: Telugu letters for Telugu readers, English letters for English readers
+    let p1 = tr(place, to);
+    // Joined names ("Pusapadu-Vankayalapadu", "Ward 5, Anandapuram") often come back unchanged: translate each part.
+    if ((!p1 || p1 === String(place || '').trim()) && /[-,\/]/.test(String(place || ''))) {
+      const parts = String(place).split(/(\s*[-,\/]\s*)/);
+      p1 = parts.map((x, k) => k % 2 ? x : (tr(x, to) || x)).join('');
+    }   // village / street names: Telugu letters for Telugu readers, English letters for English readers
     if (p1 && p1 !== String(place || '').trim()) out['place_' + to] = clip_(p1, 80);
   });
   return out;
