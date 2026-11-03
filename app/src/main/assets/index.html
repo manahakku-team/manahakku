@@ -5117,7 +5117,7 @@ document.querySelectorAll("#st-seg [data-seg]").forEach(b=>b.onclick=()=>{const 
  if($("v-home")&&!$("v-home").hidden){const hc=document.querySelector('.hsc[data-hs="'+code+'"]');if(hc)hc.click();else{gsState=code;try{localStorage.setItem("mh-state",code)}catch(e){}}return}
  if(ST===code)return;const vis=[...document.querySelectorAll('[id^="v-"]')].find(v=>!v.hidden&&v.id!=="v-home");enterState(code,vis?vis.id.slice(2):"report");
  try{toast(t("stNow").replace("{s}",t(code+"Name")))}catch(e){}window.scrollTo(0,0)});
-{let mini=false,hh=0;const H=document.querySelector("header.top");addEventListener("scroll",()=>{if(!mini)hh=H.offsetHeight;const m=scrollY>hh+20;if(m!==mini){mini=m;H.classList.toggle("pinned",m);document.body.style.paddingTop=m?hh+"px":""}},{passive:true})}
+// The state switch stays only at the top of the page (no floating copy while scrolling), as the owner asked.
 document.querySelectorAll(".hsc").forEach(c=>c.onclick=()=>{gsState=c.dataset.hs;stateDay(gsState);try{localStorage.setItem("mh-state",gsState)}catch(e){}document.querySelectorAll(".hsc").forEach(x=>x.classList.toggle("on",x===c));document.querySelectorAll(".gsc").forEach(x=>x.classList.toggle("on",x.dataset.gst===gsState));try{renderG()}catch(e){}});
 document.querySelectorAll("[data-ha]").forEach(b=>b.onclick=()=>enterState(gsState,b.dataset.ha));
 const hashMap={score:"dash",scorecard:"dash",report:"report",dashboard:"dash",all:"all",money:"money",budget:"money",finance:"money",issues:"all",news:"news",rights:"rights",history:"history",lens:"lens",issue:"lens"};
