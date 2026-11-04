@@ -1,6 +1,6 @@
-# Mana Hakku daily quality check, 2026-11-03
+# Mana Hakku daily quality check, 2026-11-04
 
-Build: f2732bd Sunday load test at 5:37 AM so the report arrives before 7 AM
+Build: e191812 Place names: accept only results fully in the target script
 
 ## 1. App logic tests
 ```
@@ -20,7 +20,7 @@ TOTAL 0
 ## 3. Live website, register and data
 ```
 Website
-  OK  / 200 1414528
+  OK  / 200 1418461
   OK  /about.html 200 10376
   OK  /privacy.html 200 19981
   OK  /d/ 200 13148
@@ -39,7 +39,7 @@ Register (read only)
   OK  ap: 8 reports, 0 hidden, newest 2026-10-30
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (8 days ago)
+  OK  finance data updated 2026-10-26 (9 days ago)
 LIVE_BAD 0
 ```
 
@@ -47,21 +47,26 @@ LIVE_BAD 0
 ```
 OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 1 naming the district
       - Deputy CM Pawan Kalyan: నేడు నిడదవోలుకు పవన్‌ కల్యాణ్‌.. ‘అమరజీవి జలధారా’కు శంకుస్థాపన..
-OK   ap en "Drinking water shortage in villages" @ Guntur: 1 naming the district
+OK   ap en "Drinking water shortage in villages" @ Guntur: 3 naming the district
+      - Guntur civic body launches ₹2.7 crore summer action plan to ensure drinking water supply
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-OK   ap en "Road accident on highway" @ Krishna: 7 naming the district
+      - National Watershed Conference begins in Guntur with call to strengthen rainwater harvesting
+OK   ap en "Road accident on highway" @ Krishna: 6 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
-      - Four killed in road accident in Vuyyuru
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
-OK   ts en "Doctors absent at government hospital" @ Hyderabad: 2 naming the district
+      - Tipper truck plunges into Krishna River after crashing into car on Karnataka bridge; driver missing
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 4 naming the district
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
+      - Gandhi hospital Hyderabad on duty 1st year PG medico assaulted by patient's attendant, doctors protest
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
-OK   ts te "రైతుల ఆందోళన" @ Khammam: 2 naming the district
-      - Farmers | మక్కలు అమ్మిన రైతుల పేర్లు ఆన్‌లైన్‌లో గల్లంతు.. ఖమ్మం మార్క్‌ఫెడ్‌ అధికారుల నిర్లక్ష్యం!
+      - SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
+OK   ts te "రైతుల ఆందోళన" @ Khammam: 1 naming the district
       - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
-OK   ts en "Floods damage crops" @ Warangal: 2 naming the district
-      - Revanth to Conduct Aerial Survey in Warangal, Husnabad
+OK   ts en "Floods damage crops" @ Warangal: 7 naming the district
+      - Floods Ravage Lowlands as Uplands Face Water Scarcity in Undivided Warangal
+      - Warangal, Hanamkonda Steps Up Relief Works After Floods
+      - Warangal, Khammam, Nalgonda worst hit as Cyclone Montha leaves trail of ruin; Six lives lost
       - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
 NEWS_NONE 0
 ```
