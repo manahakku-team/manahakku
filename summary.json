@@ -1,26 +1,31 @@
 {
- "updated": "2026-11-04T13:25",
+ "updated": "2026-11-04T16:09",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 63,
+    "agri": 64,
+    "education": 48,
+    "roads": 26,
     "child": 3,
-    "other": 223,
-    "water": 43,
-    "education": 46,
-    "health": 28,
-    "disaster": 28,
+    "other": 210,
+    "health": 29,
+    "water": 40,
+    "disaster": 27,
     "power": 29,
-    "roads": 25,
     "women": 3,
     "elderly": 9,
-    "nutrition": 27,
+    "nutrition": 25,
     "certs": 4,
     "sanitation": 7,
     "social": 2,
     "housing": 11,
     "livelihood": 4,
     "iddocs": 2
+   },
+   "Nizamabad": {
+    "nutrition": 1,
+    "health": 1,
+    "other": 1
    },
    "Nirmal": {
     "other": 1
@@ -79,10 +84,6 @@
     "education": 1,
     "sanitation": 1
    },
-   "Nizamabad": {
-    "health": 1,
-    "other": 1
-   },
    "Jagtial": {
     "education": 1
    },
@@ -135,29 +136,41 @@
    }
   },
   "ap": {
-   "NTR": {
-    "other": 6,
-    "power": 1,
-    "disaster": 1
-   },
    "(state-wide / unknown)": {
-    "other": 366,
-    "disaster": 168,
+    "water": 14,
+    "other": 351,
     "agri": 73,
-    "education": 57,
+    "education": 56,
+    "disaster": 169,
     "roads": 15,
     "elderly": 11,
     "nutrition": 9,
-    "health": 23,
+    "health": 22,
     "housing": 3,
-    "power": 39,
-    "women": 12,
+    "power": 38,
+    "women": 11,
     "livelihood": 4,
     "social": 7,
-    "water": 14,
-    "sanitation": 11,
+    "sanitation": 9,
     "certs": 2,
     "child": 1
+   },
+   "Guntur": {
+    "water": 1,
+    "roads": 1,
+    "education": 1,
+    "health": 1,
+    "agri": 1,
+    "other": 2
+   },
+   "West Godavari": {
+    "other": 1,
+    "agri": 3
+   },
+   "NTR": {
+    "other": 7,
+    "power": 1,
+    "disaster": 1
    },
    "Ananthapuramu": {
     "other": 8,
@@ -175,7 +188,8 @@
    },
    "Prakasam": {
     "disaster": 12,
-    "power": 2
+    "power": 2,
+    "other": 1
    },
    "Krishna": {
     "disaster": 2,
@@ -189,13 +203,6 @@
     "other": 4,
     "disaster": 1
    },
-   "Guntur": {
-    "roads": 1,
-    "education": 1,
-    "health": 1,
-    "agri": 1,
-    "other": 2
-   },
    "Kurnool": {
     "other": 2,
     "agri": 1
@@ -205,6 +212,9 @@
     "agri": 1,
     "roads": 1,
     "disaster": 2
+   },
+   "YSR Kadapa": {
+    "other": 1
    },
    "Bapatla": {
     "disaster": 1,
@@ -237,11 +247,7 @@
    },
    "Vizianagaram": {
     "education": 1,
-    "other": 3,
-    "disaster": 1
-   },
-   "West Godavari": {
-    "agri": 3
+    "other": 3
    },
    "Chittoor": {
     "power": 1
