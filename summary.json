@@ -1,26 +1,55 @@
 {
- "updated": "2026-11-04T10:21",
+ "updated": "2026-11-04T13:25",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "disaster": 28,
-    "education": 45,
-    "other": 237,
-    "roads": 26,
-    "women": 3,
-    "agri": 62,
-    "power": 28,
-    "water": 47,
-    "elderly": 9,
-    "nutrition": 26,
+    "agri": 63,
+    "child": 3,
+    "other": 223,
+    "water": 43,
+    "education": 46,
     "health": 28,
+    "disaster": 28,
+    "power": 29,
+    "roads": 25,
+    "women": 3,
+    "elderly": 9,
+    "nutrition": 27,
     "certs": 4,
     "sanitation": 7,
     "social": 2,
     "housing": 11,
     "livelihood": 4,
-    "iddocs": 2,
+    "iddocs": 2
+   },
+   "Nirmal": {
+    "other": 1
+   },
+   "Ranga Reddy": {
+    "education": 2,
+    "agri": 1,
     "child": 1
+   },
+   "Warangal": {
+    "water": 2,
+    "agri": 1,
+    "health": 9
+   },
+   "Hyderabad": {
+    "other": 20,
+    "housing": 1,
+    "education": 2,
+    "nutrition": 5,
+    "sanitation": 2,
+    "health": 2,
+    "water": 12,
+    "women": 1,
+    "disaster": 4,
+    "roads": 1
+   },
+   "Karimnagar": {
+    "roads": 1,
+    "agri": 1
    },
    "Bhadradri Kothagudem": {
     "disaster": 1,
@@ -36,25 +65,9 @@
    "Mahabubabad": {
     "agri": 1
    },
-   "Warangal": {
-    "health": 9,
-    "water": 1
-   },
    "Adilabad": {
     "other": 3,
     "agri": 2
-   },
-   "Hyderabad": {
-    "other": 21,
-    "housing": 1,
-    "education": 2,
-    "nutrition": 5,
-    "sanitation": 2,
-    "health": 2,
-    "water": 12,
-    "women": 1,
-    "disaster": 4,
-    "roads": 1
    },
    "Kumuram Bheem Asifabad": {
     "other": 6,
@@ -110,11 +123,6 @@
    "Vikarabad": {
     "other": 1
    },
-   "Ranga Reddy": {
-    "education": 1,
-    "agri": 1,
-    "child": 1
-   },
    "Siddipet": {
     "education": 2,
     "agri": 1
@@ -124,30 +132,46 @@
    },
    "Peddapalli": {
     "water": 1
-   },
-   "Karimnagar": {
-    "agri": 1
    }
   },
   "ap": {
+   "NTR": {
+    "other": 6,
+    "power": 1,
+    "disaster": 1
+   },
    "(state-wide / unknown)": {
-    "other": 378,
+    "other": 366,
+    "disaster": 168,
     "agri": 73,
-    "disaster": 174,
-    "education": 58,
+    "education": 57,
     "roads": 15,
-    "elderly": 12,
-    "nutrition": 10,
-    "health": 25,
+    "elderly": 11,
+    "nutrition": 9,
+    "health": 23,
     "housing": 3,
     "power": 39,
     "women": 12,
     "livelihood": 4,
     "social": 7,
     "water": 14,
-    "sanitation": 14,
+    "sanitation": 11,
     "certs": 2,
     "child": 1
+   },
+   "Ananthapuramu": {
+    "other": 8,
+    "health": 6,
+    "agri": 1,
+    "education": 18,
+    "sanitation": 1
+   },
+   "Eluru": {
+    "other": 1,
+    "agri": 1
+   },
+   "Dr. B. R. Ambedkar Konaseema": {
+    "disaster": 1
    },
    "Prakasam": {
     "disaster": 12,
@@ -157,16 +181,6 @@
     "disaster": 2,
     "other": 3,
     "education": 1
-   },
-   "Eluru": {
-    "agri": 1
-   },
-   "Ananthapuramu": {
-    "other": 7,
-    "health": 6,
-    "agri": 1,
-    "education": 18,
-    "sanitation": 1
    },
    "Nandyal": {
     "agri": 1
@@ -181,11 +195,6 @@
     "health": 1,
     "agri": 1,
     "other": 2
-   },
-   "NTR": {
-    "other": 5,
-    "power": 1,
-    "disaster": 1
    },
    "Kurnool": {
     "other": 2,
@@ -232,8 +241,7 @@
     "disaster": 1
    },
    "West Godavari": {
-    "agri": 3,
-    "other": 1
+    "agri": 3
    },
    "Chittoor": {
     "power": 1
