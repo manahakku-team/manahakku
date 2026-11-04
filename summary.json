@@ -1,31 +1,36 @@
 {
- "updated": "2026-11-04T01:24",
+ "updated": "2026-11-04T04:11",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 236,
+    "women": 3,
+    "other": 242,
+    "disaster": 26,
     "agri": 63,
-    "power": 30,
+    "education": 46,
+    "power": 29,
     "elderly": 10,
     "nutrition": 26,
-    "education": 44,
+    "health": 28,
     "certs": 4,
     "water": 49,
-    "disaster": 27,
-    "roads": 24,
-    "health": 28,
+    "roads": 23,
+    "sanitation": 7,
     "social": 2,
-    "housing": 10,
-    "sanitation": 6,
-    "women": 2,
+    "housing": 11,
     "livelihood": 4,
-    "iddocs": 3,
+    "iddocs": 2,
     "child": 1
+   },
+   "Khammam": {
+    "other": 3,
+    "education": 2,
+    "agri": 2
    },
    "Hyderabad": {
     "housing": 1,
+    "education": 2,
     "other": 20,
-    "education": 1,
     "nutrition": 5,
     "sanitation": 2,
     "health": 2,
@@ -46,8 +51,7 @@
    },
    "Warangal": {
     "water": 1,
-    "health": 8,
-    "agri": 1
+    "health": 8
    },
    "Nizamabad": {
     "health": 1,
@@ -97,11 +101,6 @@
    "Vikarabad": {
     "other": 1
    },
-   "Khammam": {
-    "education": 2,
-    "other": 2,
-    "agri": 2
-   },
    "Ranga Reddy": {
     "education": 1,
     "agri": 1,
@@ -127,23 +126,27 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 395,
-    "disaster": 199,
+    "disaster": 192,
+    "agri": 73,
+    "other": 397,
+    "elderly": 13,
+    "education": 59,
     "nutrition": 11,
     "roads": 16,
-    "agri": 70,
-    "education": 58,
-    "health": 27,
-    "power": 47,
+    "health": 26,
+    "housing": 3,
+    "power": 44,
     "women": 12,
-    "housing": 2,
     "livelihood": 4,
     "social": 7,
     "water": 14,
     "sanitation": 14,
-    "elderly": 12,
     "certs": 2,
     "child": 1
+   },
+   "Prakasam": {
+    "disaster": 10,
+    "power": 2
    },
    "Ananthapuramu": {
     "other": 7,
@@ -154,6 +157,10 @@
    },
    "Nandyal": {
     "agri": 1
+   },
+   "Visakhapatnam": {
+    "other": 4,
+    "disaster": 1
    },
    "Guntur": {
     "roads": 1,
@@ -166,14 +173,6 @@
     "other": 5,
     "power": 1,
     "disaster": 1
-   },
-   "Prakasam": {
-    "disaster": 9,
-    "power": 1
-   },
-   "Visakhapatnam": {
-    "other": 3,
-    "disaster": 2
    },
    "Krishna": {
     "other": 3,
@@ -208,7 +207,7 @@
     "other": 1
    },
    "Kakinada": {
-    "disaster": 4,
+    "disaster": 3,
     "other": 2,
     "agri": 1
    },
