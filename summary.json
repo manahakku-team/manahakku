@@ -1,12 +1,142 @@
 {
- "updated": "2026-11-04T04:11",
+ "updated": "2026-11-04T07:35",
  "last7days_trusted": {
-  "ts": {
+  "ap": {
    "(state-wide / unknown)": {
+    "disaster": 187,
+    "roads": 16,
+    "other": 385,
+    "agri": 72,
+    "elderly": 13,
+    "education": 58,
+    "nutrition": 10,
+    "health": 25,
+    "housing": 3,
+    "power": 40,
+    "women": 12,
+    "livelihood": 4,
+    "social": 7,
+    "water": 14,
+    "sanitation": 14,
+    "certs": 2,
+    "child": 1
+   },
+   "Krishna": {
+    "disaster": 2,
+    "other": 3,
+    "education": 1
+   },
+   "Eluru": {
+    "agri": 1
+   },
+   "Prakasam": {
+    "disaster": 11,
+    "power": 2
+   },
+   "Ananthapuramu": {
+    "other": 7,
+    "health": 6,
+    "agri": 1,
+    "education": 18,
+    "sanitation": 1
+   },
+   "Nandyal": {
+    "agri": 1
+   },
+   "Visakhapatnam": {
+    "other": 4,
+    "disaster": 1
+   },
+   "Guntur": {
+    "roads": 1,
+    "education": 1,
+    "health": 1,
+    "agri": 1,
+    "other": 2
+   },
+   "NTR": {
+    "other": 5,
+    "power": 1,
+    "disaster": 1
+   },
+   "Kurnool": {
+    "other": 2,
+    "agri": 1
+   },
+   "Srikakulam": {
+    "other": 2,
+    "agri": 1,
+    "roads": 1,
+    "disaster": 2
+   },
+   "Bapatla": {
+    "disaster": 1,
+    "other": 1
+   },
+   "Palnadu": {
+    "education": 2,
+    "health": 2,
+    "power": 1
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "disaster": 2,
+    "agri": 1
+   },
+   "Annamayya": {
+    "other": 1
+   },
+   "Kakinada": {
+    "disaster": 2,
+    "other": 2,
+    "agri": 1
+   },
+   "East Godavari": {
+    "disaster": 2,
+    "other": 1
+   },
+   "Anakapalli": {
+    "health": 1,
+    "agri": 1
+   },
+   "Vizianagaram": {
+    "education": 1,
+    "other": 3,
+    "disaster": 1
+   },
+   "West Godavari": {
+    "agri": 3,
+    "other": 1
+   },
+   "Chittoor": {
+    "power": 1
+   },
+   "Tirupati": {
+    "other": 1
+   }
+  },
+  "ts": {
+   "Adilabad": {
+    "other": 3,
+    "agri": 2
+   },
+   "Hyderabad": {
+    "other": 21,
+    "housing": 1,
+    "education": 2,
+    "nutrition": 5,
+    "sanitation": 2,
+    "health": 2,
+    "water": 12,
+    "women": 1,
+    "disaster": 4,
+    "roads": 1
+   },
+   "(state-wide / unknown)": {
+    "other": 240,
+    "roads": 26,
     "women": 3,
-    "other": 242,
     "disaster": 26,
-    "agri": 63,
+    "agri": 62,
     "education": 46,
     "power": 29,
     "elderly": 10,
@@ -14,7 +144,6 @@
     "health": 28,
     "certs": 4,
     "water": 49,
-    "roads": 23,
     "sanitation": 7,
     "social": 2,
     "housing": 11,
@@ -27,21 +156,9 @@
     "education": 2,
     "agri": 2
    },
-   "Hyderabad": {
-    "housing": 1,
-    "education": 2,
-    "other": 20,
-    "nutrition": 5,
-    "sanitation": 2,
-    "health": 2,
-    "water": 12,
-    "women": 1,
-    "disaster": 4,
-    "roads": 1
-   },
    "Kumuram Bheem Asifabad": {
+    "other": 6,
     "agri": 1,
-    "other": 5,
     "education": 2
    },
    "Jangaon": {
@@ -94,18 +211,13 @@
     "education": 1,
     "agri": 1
    },
-   "Adilabad": {
-    "agri": 2,
-    "other": 2
-   },
    "Vikarabad": {
     "other": 1
    },
    "Ranga Reddy": {
     "education": 1,
     "agri": 1,
-    "child": 1,
-    "other": 1
+    "child": 1
    },
    "Siddipet": {
     "education": 2,
@@ -122,117 +234,6 @@
    },
    "Karimnagar": {
     "agri": 1
-   }
-  },
-  "ap": {
-   "(state-wide / unknown)": {
-    "disaster": 192,
-    "agri": 73,
-    "other": 397,
-    "elderly": 13,
-    "education": 59,
-    "nutrition": 11,
-    "roads": 16,
-    "health": 26,
-    "housing": 3,
-    "power": 44,
-    "women": 12,
-    "livelihood": 4,
-    "social": 7,
-    "water": 14,
-    "sanitation": 14,
-    "certs": 2,
-    "child": 1
-   },
-   "Prakasam": {
-    "disaster": 10,
-    "power": 2
-   },
-   "Ananthapuramu": {
-    "other": 7,
-    "health": 6,
-    "agri": 1,
-    "education": 18,
-    "sanitation": 1
-   },
-   "Nandyal": {
-    "agri": 1
-   },
-   "Visakhapatnam": {
-    "other": 4,
-    "disaster": 1
-   },
-   "Guntur": {
-    "roads": 1,
-    "education": 1,
-    "health": 1,
-    "agri": 1,
-    "other": 2
-   },
-   "NTR": {
-    "other": 5,
-    "power": 1,
-    "disaster": 1
-   },
-   "Krishna": {
-    "other": 3,
-    "education": 1,
-    "disaster": 2,
-    "livelihood": 1
-   },
-   "Kurnool": {
-    "other": 2,
-    "agri": 1
-   },
-   "Srikakulam": {
-    "other": 2,
-    "agri": 1,
-    "roads": 1,
-    "disaster": 2
-   },
-   "Bapatla": {
-    "disaster": 1,
-    "other": 1
-   },
-   "Palnadu": {
-    "education": 2,
-    "health": 2,
-    "power": 1
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "disaster": 2,
-    "agri": 1
-   },
-   "Annamayya": {
-    "other": 1
-   },
-   "Kakinada": {
-    "disaster": 3,
-    "other": 2,
-    "agri": 1
-   },
-   "East Godavari": {
-    "disaster": 2,
-    "other": 1
-   },
-   "Anakapalli": {
-    "health": 1,
-    "agri": 1
-   },
-   "Vizianagaram": {
-    "education": 1,
-    "other": 3,
-    "disaster": 1
-   },
-   "West Godavari": {
-    "agri": 3,
-    "other": 1
-   },
-   "Chittoor": {
-    "power": 1
-   },
-   "Tirupati": {
-    "other": 1
    }
   }
  }
