@@ -1,26 +1,38 @@
 {
- "updated": "2026-11-03T22:00",
+ "updated": "2026-11-04T01:24",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "nutrition": 27,
-    "education": 43,
+    "other": 236,
     "agri": 63,
-    "other": 239,
-    "power": 27,
+    "power": 30,
+    "elderly": 10,
+    "nutrition": 26,
+    "education": 44,
     "certs": 4,
-    "water": 50,
+    "water": 49,
     "disaster": 27,
-    "roads": 25,
-    "health": 29,
+    "roads": 24,
+    "health": 28,
     "social": 2,
     "housing": 10,
     "sanitation": 6,
-    "elderly": 9,
-    "women": 3,
+    "women": 2,
     "livelihood": 4,
     "iddocs": 3,
     "child": 1
+   },
+   "Hyderabad": {
+    "housing": 1,
+    "other": 20,
+    "education": 1,
+    "nutrition": 5,
+    "sanitation": 2,
+    "health": 2,
+    "water": 12,
+    "women": 1,
+    "disaster": 4,
+    "roads": 1
    },
    "Kumuram Bheem Asifabad": {
     "agri": 1,
@@ -36,17 +48,6 @@
     "water": 1,
     "health": 8,
     "agri": 1
-   },
-   "Hyderabad": {
-    "other": 20,
-    "education": 1,
-    "nutrition": 5,
-    "sanitation": 2,
-    "health": 2,
-    "water": 12,
-    "women": 1,
-    "disaster": 4,
-    "roads": 1
    },
    "Nizamabad": {
     "health": 1,
@@ -126,30 +127,33 @@
   },
   "ap": {
    "(state-wide / unknown)": {
+    "other": 395,
     "disaster": 199,
-    "other": 393,
-    "roads": 14,
+    "nutrition": 11,
+    "roads": 16,
     "agri": 70,
-    "education": 56,
+    "education": 58,
     "health": 27,
-    "power": 48,
+    "power": 47,
     "women": 12,
     "housing": 2,
     "livelihood": 4,
-    "nutrition": 11,
     "social": 7,
-    "water": 15,
-    "sanitation": 15,
+    "water": 14,
+    "sanitation": 14,
     "elderly": 12,
     "certs": 2,
     "child": 1
    },
    "Ananthapuramu": {
+    "other": 7,
     "health": 6,
     "agri": 1,
     "education": 18,
-    "other": 6,
     "sanitation": 1
+   },
+   "Nandyal": {
+    "agri": 1
    },
    "Guntur": {
     "roads": 1,
@@ -166,6 +170,10 @@
    "Prakasam": {
     "disaster": 9,
     "power": 1
+   },
+   "Visakhapatnam": {
+    "other": 3,
+    "disaster": 2
    },
    "Krishna": {
     "other": 3,
@@ -190,8 +198,7 @@
    "Palnadu": {
     "education": 2,
     "health": 2,
-    "power": 1,
-    "sanitation": 1
+    "power": 1
    },
    "Sri Potti Sriramulu Nellore": {
     "disaster": 2,
@@ -204,10 +211,6 @@
     "disaster": 4,
     "other": 2,
     "agri": 1
-   },
-   "Visakhapatnam": {
-    "other": 2,
-    "disaster": 2
    },
    "East Godavari": {
     "disaster": 2,
