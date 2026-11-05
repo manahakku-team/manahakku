@@ -90,7 +90,8 @@ elif mode == "build":
     TARGET = float(os.environ.get("TARGET", "56.5"))
     TEMPO = float(os.environ.get("TEMPO", "0.92"))
     al = json.load(open(f"{D}/work/align-{lang}.json"))
-    al = [(max(0, a - 0.04), b + 0.08) for a, b in al]
+    # a little room so no sound is clipped, never reaching into the next line
+    al = [(max(0, a - 0.10, al[i - 1][1] if i else 0), min(b + 0.15, al[i + 1][0] if i + 1 < len(al) else 1e9)) for i, (a, b) in enumerate(al)]
     segs = []
     for i, (a, b) in enumerate(al):
         seg = x[int(a * sr):int(b * sr)].astype(float)
