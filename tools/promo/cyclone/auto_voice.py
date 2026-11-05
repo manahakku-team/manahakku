@@ -85,20 +85,30 @@ if mode == "align":
     print(";".join(spec))
 
 elif mode == "build":
+    # Calm pace that uses the full length: speech slowed a little (same pitch), then the pauses
+    # between lines grow until the video reaches TARGET seconds (lead 0.3 s + end card 2.2 s included).
+    TARGET = float(os.environ.get("TARGET", "56.5"))
+    TEMPO = float(os.environ.get("TEMPO", "0.92"))
     al = json.load(open(f"{D}/work/align-{lang}.json"))
     al = [(max(0, a - 0.04), b + 0.08) for a, b in al]
-    total_speech = sum(b - a for a, b in al)
-    budget = float(os.environ.get('MAXLEN', '58')) - 0.3 - 2.2 - total_speech            # lead + end-card tail
-    gaps = []
-    for i, r in enumerate(rows[:-1]):
-        orig = al[i + 1][0] - al[i][1]
-        gaps.append(max(0.15, min(orig, float(r[3]) + 0.45)))
-    if sum(gaps) > budget > 0:
-        f = budget / sum(gaps); gaps = [max(0.15, g * f) for g in gaps]
-    out, cues, t = [], [], 0.0
+    segs = []
     for i, (a, b) in enumerate(al):
         seg = x[int(a * sr):int(b * sr)].astype(float)
         fl = int(0.02 * sr); seg[:fl] *= np.linspace(0, 1, fl); seg[-fl:] *= np.linspace(1, 0, fl)
+        src, dst = f"{D}/work/s{i}.wav", f"{D}/work/s{i}t.wav"
+        ww = wave.open(src, "wb"); ww.setnchannels(1); ww.setsampwidth(2); ww.setframerate(sr); ww.writeframes(seg.astype(np.int16).tobytes()); ww.close()
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-af", f"atempo={TEMPO}", "-ar", str(sr), "-ac", "1", dst], check=True)
+        w2 = wave.open(dst); segs.append(np.frombuffer(w2.readframes(w2.getnframes()), np.int16).astype(float)); w2.close()
+    speech = sum(len(g) for g in segs) / sr
+    base = [float(r[3]) + 0.45 for r in rows[:-1]]          # the script's own pause after each line
+    room = TARGET - 0.3 - 2.2 - speech
+    if room > sum(base):                                      # spread the spare time, more after the longer pauses
+        extra = room - sum(base); w = [g for g in base]; tot = sum(w)
+        gaps = [min(2.2, g + extra * g / tot) for g in base]
+    else:
+        f = max(room, 0.15 * len(base)) / sum(base); gaps = [max(0.15, g * f) for g in base]
+    out, cues, t = [], [], 0.0
+    for i, seg in enumerate(segs):
         cues.append((t, t + len(seg) / sr, texts[i])); out.append(seg); t += len(seg) / sr
         if i < len(gaps): out.append(np.zeros(int(gaps[i] * sr))); t += gaps[i]
     y = np.concatenate(out).astype(np.int16)
@@ -108,4 +118,4 @@ elif mode == "build":
     ts = lambda s: f"{int(s // 3600):02d}:{int(s % 3600 // 60):02d}:{s % 60:06.3f}".replace(".", ",")
     open(f"{D}/{lang}.vtt", "w", encoding="utf-8").write(
         "".join(f"{i + 1}\n{ts(a)} --> {ts(b)}\n{tx}\n\n" for i, (a, b, tx) in enumerate(cues)))
-    print(f"voice {t:.2f} s", file=sys.stderr)
+    print(f"voice {t:.2f} s, speech {speech:.2f} s, gaps {sum(gaps):.2f} s", file=sys.stderr)
