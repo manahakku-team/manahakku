@@ -1,26 +1,31 @@
 {
- "updated": "2026-11-05T16:20",
+ "updated": "2026-11-05T19:13",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 183,
+    "disaster": 27,
+    "other": 182,
     "health": 25,
-    "agri": 65,
-    "water": 40,
+    "sanitation": 6,
+    "agri": 64,
+    "water": 39,
     "education": 51,
     "nutrition": 27,
-    "disaster": 26,
-    "power": 30,
+    "power": 27,
     "livelihood": 5,
-    "roads": 28,
+    "roads": 26,
     "women": 4,
     "housing": 12,
     "child": 3,
-    "elderly": 9,
+    "elderly": 8,
     "certs": 3,
-    "sanitation": 5,
     "social": 1,
     "iddocs": 1
+   },
+   "Kumuram Bheem Asifabad": {
+    "other": 5,
+    "education": 2,
+    "agri": 1
    },
    "Siddipet": {
     "health": 1,
@@ -34,11 +39,6 @@
     "health": 2,
     "agri": 1,
     "education": 1
-   },
-   "Kumuram Bheem Asifabad": {
-    "education": 2,
-    "other": 6,
-    "agri": 1
    },
    "Hyderabad": {
     "water": 10,
@@ -61,6 +61,11 @@
    },
    "Narayanpet": {
     "water": 1
+   },
+   "Warangal": {
+    "agri": 2,
+    "water": 2,
+    "health": 6
    },
    "Bhadradri Kothagudem": {
     "agri": 1,
@@ -92,11 +97,6 @@
     "education": 2,
     "agri": 1,
     "child": 1
-   },
-   "Warangal": {
-    "water": 2,
-    "agri": 1,
-    "health": 6
    },
    "Karimnagar": {
     "roads": 1
@@ -135,24 +135,30 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "child": 3,
-    "other": 308,
+    "disaster": 135,
+    "other": 313,
     "education": 60,
-    "agri": 56,
-    "disaster": 139,
-    "livelihood": 4,
+    "livelihood": 5,
+    "child": 2,
+    "agri": 54,
     "housing": 4,
     "power": 32,
     "nutrition": 10,
-    "water": 9,
     "roads": 12,
+    "water": 7,
     "elderly": 8,
-    "health": 21,
+    "health": 20,
     "iddocs": 1,
     "women": 11,
     "social": 6,
     "sanitation": 6,
     "certs": 2
+   },
+   "NTR": {
+    "roads": 1,
+    "other": 6,
+    "power": 1,
+    "disaster": 1
    },
    "Tirupati": {
     "other": 1
@@ -169,16 +175,10 @@
     "education": 1
    },
    "West Godavari": {
-    "other": 1,
-    "agri": 2
-   },
-   "NTR": {
-    "other": 6,
-    "power": 1,
-    "disaster": 1
+    "other": 1
    },
    "Ananthapuramu": {
-    "other": 8,
+    "other": 9,
     "health": 6,
     "agri": 1,
     "education": 18
