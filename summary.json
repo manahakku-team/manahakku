@@ -1,18 +1,18 @@
 {
- "updated": "2026-11-05T13:29",
+ "updated": "2026-11-05T16:20",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 190,
-    "agri": 66,
+    "other": 183,
     "health": 25,
+    "agri": 65,
     "water": 40,
     "education": 51,
     "nutrition": 27,
     "disaster": 26,
-    "power": 31,
+    "power": 30,
     "livelihood": 5,
-    "roads": 29,
+    "roads": 28,
     "women": 4,
     "housing": 12,
     "child": 3,
@@ -22,10 +22,28 @@
     "social": 1,
     "iddocs": 1
    },
+   "Siddipet": {
+    "health": 1,
+    "education": 1
+   },
+   "Adilabad": {
+    "agri": 3,
+    "other": 4
+   },
+   "Medak": {
+    "health": 2,
+    "agri": 1,
+    "education": 1
+   },
+   "Kumuram Bheem Asifabad": {
+    "education": 2,
+    "other": 6,
+    "agri": 1
+   },
    "Hyderabad": {
-    "water": 11,
+    "water": 10,
     "power": 1,
-    "other": 18,
+    "other": 17,
     "housing": 1,
     "education": 2,
     "nutrition": 2,
@@ -41,17 +59,12 @@
     "agri": 2,
     "other": 1
    },
-   "Adilabad": {
-    "other": 4,
-    "agri": 2
-   },
    "Narayanpet": {
     "water": 1
    },
    "Bhadradri Kothagudem": {
     "agri": 1,
-    "disaster": 1,
-    "water": 1
+    "disaster": 1
    },
    "Vikarabad": {
     "agri": 1,
@@ -68,10 +81,6 @@
     "education": 2,
     "agri": 1
    },
-   "Medak": {
-    "health": 1,
-    "education": 1
-   },
    "Nizamabad": {
     "nutrition": 1,
     "health": 1
@@ -87,18 +96,13 @@
    "Warangal": {
     "water": 2,
     "agri": 1,
-    "health": 7
+    "health": 6
    },
    "Karimnagar": {
     "roads": 1
    },
    "Mahabubabad": {
     "agri": 1
-   },
-   "Kumuram Bheem Asifabad": {
-    "other": 6,
-    "agri": 1,
-    "education": 1
    },
    "Jangaon": {
     "other": 2,
@@ -127,31 +131,27 @@
    "Medchal–Malkajgiri": {
     "water": 1,
     "other": 1
-   },
-   "Siddipet": {
-    "education": 1,
-    "agri": 1
    }
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 311,
+    "child": 3,
+    "other": 308,
     "education": 60,
-    "agri": 59,
-    "disaster": 142,
+    "agri": 56,
+    "disaster": 139,
     "livelihood": 4,
     "housing": 4,
     "power": 32,
     "nutrition": 10,
     "water": 9,
-    "child": 2,
-    "roads": 13,
+    "roads": 12,
     "elderly": 8,
-    "health": 22,
+    "health": 21,
     "iddocs": 1,
     "women": 11,
     "social": 6,
-    "sanitation": 7,
+    "sanitation": 6,
     "certs": 2
    },
    "Tirupati": {
@@ -165,17 +165,15 @@
    "Guntur": {
     "water": 1,
     "roads": 1,
-    "other": 2,
-    "education": 1,
-    "health": 1,
-    "agri": 1
+    "other": 1,
+    "education": 1
    },
    "West Godavari": {
     "other": 1,
     "agri": 2
    },
    "NTR": {
-    "other": 7,
+    "other": 6,
     "power": 1,
     "disaster": 1
    },
@@ -183,8 +181,7 @@
     "other": 8,
     "health": 6,
     "agri": 1,
-    "education": 18,
-    "sanitation": 1
+    "education": 18
    },
    "Dr. B. R. Ambedkar Konaseema": {
     "disaster": 1
@@ -245,8 +242,7 @@
     "health": 1
    },
    "Vizianagaram": {
-    "education": 1,
-    "other": 3
+    "education": 1
    }
   }
  }
