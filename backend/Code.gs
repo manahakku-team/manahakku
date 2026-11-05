@@ -60,10 +60,12 @@
 
 const REPORTS = 'Reports';
 const SUGGESTIONS = 'Suggestions';
-const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note', 'reporter_note', 'reporter_note_ok', 'title_en', 'desc_en', 'title_te', 'desc_te', 'tr_v', 'note_en', 'note_te', 'note_tr_for', 'place_en', 'place_te'];
+const REPORT_COLS = ['id', 'created', 'district', 'place', 'sector', 'title', 'desc', 'affected', 'urgency', 'status', 'verify_level', 'outlets', 'lang', 'state', 'sub', 'sector_was', 'auto_fix', 'mandal', 'desc_original', 'title_original', 'rules_v', 'hidden', 'hide_reason', 'flags', 'edit_key', 'grv_system', 'grv_number', 'grv_date', 'grv_by', 'reporter_says', 'reporter_says_date', 'reviewed', 'review_note', 'reporter_note', 'reporter_note_ok', 'title_en', 'desc_en', 'title_te', 'desc_te', 'tr_v', 'note_en', 'note_te', 'note_tr_for', 'place_en', 'place_te', 'metoo'];
 const OUTCOMES = ['acknowledged', 'progress', 'solved', 'none'];
 const GRV_SYSTEMS = ['pgrs', 'prajavani', 'cpgrams', 'uidai', 'incometax', 'eci', 'transport', 'state', 'other'];
 const FLAGS = 'Flags';
+const METOO = 'MeToo', METOO_COLS = ['created', 'id', 'state', 'dev'];   // "I face this too": one count per phone per report
+const DEV_METOO_PER_HOUR = 30, METOO_PER_HOUR = 1200;
 const FLAG_COLS = ['created', 'id', 'reason', 'note', 'state', 'dev'];
 const FLAG_REASONS = ['false', 'abusive', 'personal', 'duplicate', 'other'];
 const AUTO_HIDE_FLAGS = 5;    // public flags that hide a report until the owner reviews it
@@ -618,7 +620,8 @@ function doGet(e) {
     review_note: String(r[idx.review_note] || '').slice(0, 140),
     title_en: String(r[idx.title_en] || ''), desc_en: String(r[idx.desc_en] || ''),
     title_te: String(r[idx.title_te] || ''), desc_te: String(r[idx.desc_te] || ''),
-    place_en: String(r[idx.place_en] || ''), place_te: String(r[idx.place_te] || '')
+    place_en: String(r[idx.place_en] || ''), place_te: String(r[idx.place_te] || ''),
+    metoo: Number(r[idx.metoo]) || 0
   }));
   return json_({ ok: true, state: state, reports: rows, hidden: hidden });
 }
@@ -681,6 +684,38 @@ function doPost(e) {
       for (let i = 0; i < frow.length; i++) if (frow[i] === undefined) frow[i] = '';
       fs.appendRow(frow);
       return json_({ ok: true, counted: counts });
+    } finally {
+      lock.releaseLock();
+    }
+  }
+
+  // "I face this too": a person who has the same problem adds their voice. No name; one phone counts once per report.
+  if (d.type === 'metoo') {
+    const id = String(d.id || '').slice(0, 40);
+    if (!/^r[a-z0-9]{4,30}$/.test(id) || !dev) return json_({ ok: false, error: 'bad_request' });
+    if (!rate_('mt', dev, DEV_METOO_PER_HOUR) || !rate_('mt', '*', METOO_PER_HOUR)) return json_({ ok: false, error: 'busy' });
+    const lock = LockService.getScriptLock();
+    lock.waitLock(10000);
+    try {
+      const sh = sheet_(REPORTS, REPORT_COLS);
+      const idx = ensureColumns_(sh, REPORT_COLS);
+      const ids = sh.getRange(2, idx.id + 1, Math.max(1, sh.getLastRow() - 1), 1).getValues().map(x => String(x[0]));
+      const k = ids.indexOf(id);
+      if (k < 0) return json_({ ok: false, error: 'not_found' });
+      if (String(sh.getRange(k + 2, idx.edit_key + 1).getValue() || '') && String(d.key || '') === String(sh.getRange(k + 2, idx.edit_key + 1).getValue())) return json_({ ok: false, error: 'own_report' });
+      const ms = sheet_(METOO, METOO_COLS);
+      const mi = ensureColumns_(ms, METOO_COLS);
+      const cell = sh.getRange(k + 2, idx.metoo + 1);
+      let n = Number(cell.getValue()) || 0;
+      if (ms.getLastRow() > 1) {
+        const prev = ms.getRange(2, 1, ms.getLastRow() - 1, ms.getLastColumn()).getValues();
+        if (prev.some(p => String(p[mi.id]) === id && String(p[mi.dev]) === dev)) return json_({ ok: true, counted: false, count: n });
+      }
+      n += 1; cell.setValue(n);
+      const row = []; row[mi.created] = new Date().toISOString(); row[mi.id] = id; row[mi.state] = state; row[mi.dev] = dev;
+      for (let i = 0; i < row.length; i++) if (row[i] === undefined) row[i] = '';
+      ms.appendRow(row);
+      return json_({ ok: true, counted: true, count: n });
     } finally {
       lock.releaseLock();
     }
