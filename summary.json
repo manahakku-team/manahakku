@@ -1,26 +1,30 @@
 {
- "updated": "2026-11-04T22:00",
+ "updated": "2026-11-05T01:26",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 64,
-    "power": 30,
-    "other": 210,
-    "housing": 14,
+    "disaster": 27,
+    "other": 208,
+    "power": 31,
+    "agri": 65,
+    "education": 52,
+    "health": 28,
+    "livelihood": 5,
+    "roads": 29,
+    "housing": 13,
     "nutrition": 27,
-    "education": 49,
-    "water": 40,
-    "roads": 28,
+    "water": 39,
     "child": 3,
-    "health": 27,
-    "disaster": 26,
     "women": 3,
     "elderly": 9,
     "certs": 4,
     "sanitation": 7,
     "social": 1,
-    "livelihood": 4,
-    "iddocs": 2
+    "iddocs": 1
+   },
+   "Vikarabad": {
+    "agri": 1,
+    "other": 1
    },
    "Nalgonda": {
     "housing": 1,
@@ -122,9 +126,6 @@
     "water": 1,
     "other": 1
    },
-   "Vikarabad": {
-    "other": 1
-   },
    "Siddipet": {
     "education": 2,
     "agri": 1
@@ -135,17 +136,17 @@
   },
   "ap": {
    "(state-wide / unknown)": {
+    "education": 58,
+    "disaster": 162,
     "other": 348,
-    "disaster": 165,
-    "agri": 70,
+    "agri": 68,
     "water": 11,
-    "education": 57,
     "roads": 15,
     "elderly": 10,
     "nutrition": 9,
     "health": 22,
     "housing": 3,
-    "power": 38,
+    "power": 35,
     "women": 11,
     "livelihood": 4,
     "social": 6,
@@ -161,10 +162,10 @@
    "Guntur": {
     "water": 1,
     "roads": 1,
+    "other": 3,
     "education": 1,
     "health": 1,
-    "agri": 1,
-    "other": 2
+    "agri": 1
    },
    "West Godavari": {
     "other": 1,
@@ -249,9 +250,6 @@
    },
    "Chittoor": {
     "power": 1
-   },
-   "Tirupati": {
-    "other": 1
    }
   }
  }
