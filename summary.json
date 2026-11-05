@@ -1,26 +1,39 @@
 {
- "updated": "2026-11-05T10:20",
+ "updated": "2026-11-05T13:29",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "health": 27,
+    "other": 190,
+    "agri": 66,
+    "health": 25,
     "water": 40,
-    "other": 198,
-    "agri": 69,
     "education": 51,
     "nutrition": 27,
-    "disaster": 28,
-    "power": 30,
+    "disaster": 26,
+    "power": 31,
     "livelihood": 5,
     "roads": 29,
-    "housing": 13,
+    "women": 4,
+    "housing": 12,
     "child": 3,
-    "women": 3,
     "elderly": 9,
     "certs": 3,
-    "sanitation": 6,
+    "sanitation": 5,
     "social": 1,
     "iddocs": 1
+   },
+   "Hyderabad": {
+    "water": 11,
+    "power": 1,
+    "other": 18,
+    "housing": 1,
+    "education": 2,
+    "nutrition": 2,
+    "sanitation": 2,
+    "health": 1,
+    "women": 1,
+    "disaster": 4,
+    "roads": 1
    },
    "Sangareddy": {
     "education": 2,
@@ -39,19 +52,6 @@
     "agri": 1,
     "disaster": 1,
     "water": 1
-   },
-   "Hyderabad": {
-    "power": 1,
-    "other": 20,
-    "housing": 1,
-    "education": 2,
-    "nutrition": 4,
-    "sanitation": 2,
-    "health": 1,
-    "water": 11,
-    "women": 1,
-    "disaster": 4,
-    "roads": 1
    },
    "Vikarabad": {
     "agri": 1,
@@ -98,7 +98,7 @@
    "Kumuram Bheem Asifabad": {
     "other": 6,
     "agri": 1,
-    "education": 2
+    "education": 1
    },
    "Jangaon": {
     "other": 2,
@@ -129,25 +129,26 @@
     "other": 1
    },
    "Siddipet": {
-    "education": 2,
+    "education": 1,
     "agri": 1
    }
   },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 144,
-    "education": 62,
-    "other": 324,
+    "other": 311,
+    "education": 60,
+    "agri": 59,
+    "disaster": 142,
     "livelihood": 4,
     "housing": 4,
-    "agri": 60,
-    "power": 33,
+    "power": 32,
     "nutrition": 10,
     "water": 9,
     "child": 2,
     "roads": 13,
-    "elderly": 9,
-    "health": 23,
+    "elderly": 8,
+    "health": 22,
+    "iddocs": 1,
     "women": 11,
     "social": 6,
     "sanitation": 7,
