@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-05T19:13",
+ "updated": "2026-11-05T22:00",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "housing": 13,
+    "power": 28,
+    "agri": 66,
     "disaster": 27,
-    "other": 182,
+    "other": 177,
     "health": 25,
     "sanitation": 6,
-    "agri": 64,
     "water": 39,
     "education": 51,
-    "nutrition": 27,
-    "power": 27,
+    "nutrition": 26,
     "livelihood": 5,
     "roads": 26,
     "women": 4,
-    "housing": 12,
     "child": 3,
     "elderly": 8,
     "certs": 3,
@@ -24,6 +24,7 @@
    },
    "Kumuram Bheem Asifabad": {
     "other": 5,
+    "water": 1,
     "education": 2,
     "agri": 1
    },
@@ -135,23 +136,23 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 135,
-    "other": 313,
+    "other": 315,
+    "disaster": 134,
     "education": 60,
     "livelihood": 5,
     "child": 2,
-    "agri": 54,
+    "power": 33,
+    "agri": 52,
     "housing": 4,
-    "power": 32,
-    "nutrition": 10,
+    "nutrition": 11,
     "roads": 12,
     "water": 7,
     "elderly": 8,
-    "health": 20,
+    "health": 19,
     "iddocs": 1,
+    "sanitation": 7,
     "women": 11,
     "social": 6,
-    "sanitation": 6,
     "certs": 2
    },
    "NTR": {
