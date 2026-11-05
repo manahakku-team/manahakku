@@ -55,6 +55,7 @@ jobs:
         run: |
           R="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
           git clone -q -b cyclone-video --depth 1 "$R" /tmp/pub 2>/dev/null || (mkdir /tmp/pub && cd /tmp/pub && git init -q -b cyclone-video)
+          git -C /tmp/pub config user.name tts && git -C /tmp/pub config user.email tts@users.noreply.github.com
           cp /tmp/*.mp4 tools/promo/cyclone/$L.vtt /tmp/pub/ && cp /tmp/take/$L-Sulafat-take1.wav /tmp/pub/take-$L.wav && cd /tmp/pub && git add -A
           git -c user.name=tts -c user.email=tts@users.noreply.github.com commit -qm "Cyclone appeal video $L $(date -u +%FT%H:%M)"
           for i in 1 2 3 4 5; do git push -q "$R" HEAD:refs/heads/cyclone-video && break; git pull -q --rebase "$R" cyclone-video || true; sleep 5; done
