@@ -30,6 +30,10 @@ STYLE = {
            "The last lines are hopeful and gentle, never pushy."),
 }
 
+# A different video can pass its own reading direction (STYLE_EN / STYLE_TE).
+for _l in ("en", "te"):
+    if os.environ.get("STYLE_" + _l.upper()): STYLE[_l] = os.environ["STYLE_" + _l.upper()]
+
 def lines(lang):
     out = []
     for row in open(SPEC, encoding="utf-8"):
