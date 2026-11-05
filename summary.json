@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-05T01:26",
+ "updated": "2026-11-05T04:11",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "other": 202,
     "disaster": 27,
-    "other": 208,
-    "power": 31,
+    "power": 30,
+    "water": 39,
     "agri": 65,
-    "education": 52,
+    "education": 50,
     "health": 28,
     "livelihood": 5,
     "roads": 29,
     "housing": 13,
     "nutrition": 27,
-    "water": 39,
     "child": 3,
     "women": 3,
     "elderly": 9,
@@ -21,6 +21,19 @@
     "sanitation": 7,
     "social": 1,
     "iddocs": 1
+   },
+   "Hyderabad": {
+    "power": 1,
+    "other": 20,
+    "housing": 1,
+    "education": 2,
+    "nutrition": 5,
+    "sanitation": 2,
+    "health": 1,
+    "water": 12,
+    "women": 1,
+    "disaster": 4,
+    "roads": 1
    },
    "Vikarabad": {
     "agri": 1,
@@ -40,8 +53,7 @@
    },
    "Medak": {
     "health": 1,
-    "education": 1,
-    "agri": 1
+    "education": 1
    },
    "Nizamabad": {
     "nutrition": 1,
@@ -60,18 +72,6 @@
     "water": 2,
     "agri": 1,
     "health": 9
-   },
-   "Hyderabad": {
-    "other": 20,
-    "housing": 1,
-    "education": 2,
-    "nutrition": 5,
-    "sanitation": 2,
-    "health": 2,
-    "water": 12,
-    "women": 1,
-    "disaster": 4,
-    "roads": 1
    },
    "Karimnagar": {
     "roads": 1
@@ -136,23 +136,26 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "education": 58,
-    "disaster": 162,
-    "other": 348,
-    "agri": 68,
-    "water": 11,
+    "disaster": 160,
+    "agri": 65,
+    "power": 36,
+    "nutrition": 10,
+    "other": 346,
+    "education": 60,
+    "water": 9,
     "roads": 15,
     "elderly": 10,
-    "nutrition": 9,
-    "health": 22,
+    "health": 21,
     "housing": 3,
-    "power": 35,
     "women": 11,
-    "livelihood": 4,
+    "livelihood": 3,
     "social": 6,
-    "sanitation": 9,
+    "sanitation": 8,
     "certs": 2,
     "child": 1
+   },
+   "Tirupati": {
+    "other": 1
    },
    "Eluru": {
     "disaster": 1,
@@ -192,7 +195,7 @@
     "other": 1
    },
    "Krishna": {
-    "disaster": 2,
+    "disaster": 1,
     "other": 3,
     "education": 1
    },
