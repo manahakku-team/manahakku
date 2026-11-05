@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://manahakku-team.github.io/manahakku/sitemap.xml
