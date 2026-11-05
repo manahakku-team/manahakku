@@ -1,19 +1,22 @@
 {
- "updated": "2026-11-05T04:11",
+ "updated": "2026-11-05T07:37",
  "last7days_trusted": {
   "ts": {
+   "Narayanpet": {
+    "water": 1
+   },
    "(state-wide / unknown)": {
-    "other": 202,
-    "disaster": 27,
+    "other": 201,
+    "agri": 68,
+    "nutrition": 27,
+    "water": 40,
+    "education": 51,
+    "disaster": 29,
     "power": 30,
-    "water": 39,
-    "agri": 65,
-    "education": 50,
-    "health": 28,
+    "health": 27,
     "livelihood": 5,
     "roads": 29,
     "housing": 13,
-    "nutrition": 27,
     "child": 3,
     "women": 3,
     "elderly": 9,
@@ -41,8 +44,7 @@
    },
    "Nalgonda": {
     "housing": 1,
-    "disaster": 1,
-    "other": 1
+    "disaster": 1
    },
    "Khammam": {
     "other": 4,
@@ -57,8 +59,7 @@
    },
    "Nizamabad": {
     "nutrition": 1,
-    "health": 1,
-    "other": 1
+    "health": 1
    },
    "Nirmal": {
     "other": 1
@@ -136,23 +137,23 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 160,
-    "agri": 65,
-    "power": 36,
+    "livelihood": 4,
+    "housing": 4,
+    "other": 337,
+    "education": 61,
+    "disaster": 153,
+    "agri": 62,
+    "power": 34,
     "nutrition": 10,
-    "other": 346,
-    "education": 60,
     "water": 9,
-    "roads": 15,
+    "child": 2,
+    "roads": 14,
     "elderly": 10,
-    "health": 21,
-    "housing": 3,
+    "health": 22,
     "women": 11,
-    "livelihood": 3,
     "social": 6,
-    "sanitation": 8,
-    "certs": 2,
-    "child": 1
+    "sanitation": 7,
+    "certs": 2
    },
    "Tirupati": {
     "other": 1
@@ -225,8 +226,7 @@
    },
    "Palnadu": {
     "education": 2,
-    "health": 2,
-    "power": 1
+    "health": 2
    },
    "Sri Potti Sriramulu Nellore": {
     "disaster": 2
