@@ -14,6 +14,8 @@ jobs:
       L: ${{ inputs.lang || 'en' }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
       - name: Tools
         run: |
           sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
