@@ -1,39 +1,54 @@
 {
- "updated": "2026-11-05T07:37",
+ "updated": "2026-11-05T10:20",
  "last7days_trusted": {
   "ts": {
-   "Narayanpet": {
-    "water": 1
-   },
    "(state-wide / unknown)": {
-    "other": 201,
-    "agri": 68,
-    "nutrition": 27,
-    "water": 40,
-    "education": 51,
-    "disaster": 29,
-    "power": 30,
     "health": 27,
+    "water": 40,
+    "other": 198,
+    "agri": 69,
+    "education": 51,
+    "nutrition": 27,
+    "disaster": 28,
+    "power": 30,
     "livelihood": 5,
     "roads": 29,
     "housing": 13,
     "child": 3,
     "women": 3,
     "elderly": 9,
-    "certs": 4,
-    "sanitation": 7,
+    "certs": 3,
+    "sanitation": 6,
     "social": 1,
     "iddocs": 1
+   },
+   "Sangareddy": {
+    "education": 2,
+    "roads": 1,
+    "agri": 2,
+    "other": 1
+   },
+   "Adilabad": {
+    "other": 4,
+    "agri": 2
+   },
+   "Narayanpet": {
+    "water": 1
+   },
+   "Bhadradri Kothagudem": {
+    "agri": 1,
+    "disaster": 1,
+    "water": 1
    },
    "Hyderabad": {
     "power": 1,
     "other": 20,
     "housing": 1,
     "education": 2,
-    "nutrition": 5,
+    "nutrition": 4,
     "sanitation": 2,
     "health": 1,
-    "water": 12,
+    "water": 11,
     "women": 1,
     "disaster": 4,
     "roads": 1
@@ -72,21 +87,13 @@
    "Warangal": {
     "water": 2,
     "agri": 1,
-    "health": 9
+    "health": 7
    },
    "Karimnagar": {
     "roads": 1
    },
-   "Bhadradri Kothagudem": {
-    "disaster": 1,
-    "water": 1
-   },
    "Mahabubabad": {
     "agri": 1
-   },
-   "Adilabad": {
-    "other": 3,
-    "agri": 2
    },
    "Kumuram Bheem Asifabad": {
     "other": 6,
@@ -114,12 +121,6 @@
    "Nagarkurnool": {
     "agri": 1
    },
-   "Sangareddy": {
-    "roads": 1,
-    "agri": 2,
-    "other": 1,
-    "education": 1
-   },
    "Rajanna Sircilla": {
     "women": 1
    },
@@ -130,26 +131,23 @@
    "Siddipet": {
     "education": 2,
     "agri": 1
-   },
-   "Mahabubnagar": {
-    "other": 2
    }
   },
   "ap": {
    "(state-wide / unknown)": {
+    "disaster": 144,
+    "education": 62,
+    "other": 324,
     "livelihood": 4,
     "housing": 4,
-    "other": 337,
-    "education": 61,
-    "disaster": 153,
-    "agri": 62,
-    "power": 34,
+    "agri": 60,
+    "power": 33,
     "nutrition": 10,
     "water": 9,
     "child": 2,
-    "roads": 14,
-    "elderly": 10,
-    "health": 22,
+    "roads": 13,
+    "elderly": 9,
+    "health": 23,
     "women": 11,
     "social": 6,
     "sanitation": 7,
@@ -166,14 +164,14 @@
    "Guntur": {
     "water": 1,
     "roads": 1,
-    "other": 3,
+    "other": 2,
     "education": 1,
     "health": 1,
     "agri": 1
    },
    "West Godavari": {
     "other": 1,
-    "agri": 3
+    "agri": 2
    },
    "NTR": {
     "other": 7,
@@ -215,7 +213,7 @@
     "other": 2,
     "agri": 1,
     "roads": 1,
-    "disaster": 2
+    "disaster": 1
    },
    "YSR Kadapa": {
     "other": 1
@@ -235,24 +233,19 @@
     "other": 1
    },
    "Kakinada": {
-    "disaster": 2,
-    "other": 2,
-    "agri": 1
+    "disaster": 1,
+    "other": 1
    },
    "East Godavari": {
-    "disaster": 2,
+    "disaster": 1,
     "other": 1
    },
    "Anakapalli": {
-    "health": 1,
-    "agri": 1
+    "health": 1
    },
    "Vizianagaram": {
     "education": 1,
     "other": 3
-   },
-   "Chittoor": {
-    "power": 1
    }
   }
  }
