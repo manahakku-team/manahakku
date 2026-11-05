@@ -14,6 +14,6 @@ P
     echo "file '$(basename $out)'" >> $L/list.txt
   done < $L/jobs.txt
   (cd $L && ffmpeg -nostdin -v error -y -f concat -safe 0 -i list.txt -c copy video.tmp.mp4 && mv video.tmp.mp4 video.mp4)
-  ffmpeg -nostdin -v error -y -i $L/video.mp4 -itsoffset ${LEAD:-0.3} -i $L.mp3 -map 0:v -map 1:a -c:v copy -c:a aac -b:a 160k -af "apad" -t $(python3 -c "import json;print(round(sum(x['d'] for x in json.load(open('$L/shots.json'))),3))") out-$L.tmp.mp4 && mv out-$L.tmp.mp4 "Mana-Hakku-cyclone-appeal-$L.mp4"
+  ffmpeg -nostdin -v error -y -i $L/video.mp4 -i $L.mp3 -map 0:v -map 1:a -c:v copy -c:a aac -b:a 160k -af "adelay=$(python3 -c "print(int(1000*${LEAD:-0.3}))"):all=1,apad" -t $(python3 -c "import json;print(round(sum(x['d'] for x in json.load(open('$L/shots.json'))),3))") out-$L.tmp.mp4 && mv out-$L.tmp.mp4 "Mana-Hakku-cyclone-appeal-$L.mp4"
 done
 for L in ${LANGS:-en te}; do ffprobe -v error -show_entries format=duration -of csv=p=0 "Mana-Hakku-cyclone-appeal-$L.mp4"; done
