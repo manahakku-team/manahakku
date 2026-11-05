@@ -88,7 +88,7 @@ elif mode == "build":
     al = json.load(open(f"{D}/work/align-{lang}.json"))
     al = [(max(0, a - 0.04), b + 0.08) for a, b in al]
     total_speech = sum(b - a for a, b in al)
-    budget = 55 - 0.3 - 1.6 - total_speech            # lead + end-card tail
+    budget = float(os.environ.get('MAXLEN', '58')) - 0.3 - 2.2 - total_speech            # lead + end-card tail
     gaps = []
     for i, r in enumerate(rows[:-1]):
         orig = al[i + 1][0] - al[i][1]

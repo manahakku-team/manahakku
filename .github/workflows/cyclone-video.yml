@@ -28,7 +28,7 @@ jobs:
           STYLE_EN: "Read this as a calm, caring young Indian woman speaking to families still struggling days after a cyclone, in warm Indian English. Not a news reader, not an advert. Slow and natural, with real pauses between lines. The short lines ending in a question mark are genuine questions to the listener: let the voice clearly rise at the end of each. The safety lines are clear and steady. Read the phone numbers digit by digit: one nine one two, one one two, one zero seven zero. The last lines are hopeful and gentle, never pushy."
           STYLE_TE: "Read in natural spoken Telugu, calm and caring, like a young woman speaking to families still struggling days after a cyclone. Not a news reader. Slow, with real pauses between lines. Every short line ending in a question mark is a genuine question to the listener: the voice must clearly rise at the end of each. The safety lines are clear and steady. Read the phone numbers digit by digit in Telugu: ఒకటి తొమ్మిది ఒకటి రెండు, ఒకటి ఒకటి రెండు, ఒకటి సున్నా ఏడు సున్నా. The last lines are hopeful and gentle, never pushy."
         run: |
-          if [ -n "${{ inputs.reuse }}" ]; then mkdir -p /tmp/take && git fetch -q origin media3 && git show FETCH_HEAD:${{ inputs.reuse }} > /tmp/take/$L-Sulafat-take1.wav
+          if [ -n "${{ inputs.reuse }}" ]; then mkdir -p /tmp/take && git fetch -q origin cyclone-video && git show FETCH_HEAD:${{ inputs.reuse }} > /tmp/take/$L-Sulafat-take1.wav
           else python3 tools/promo/gemini_tts.py tools/promo/cyclone/spoken.tsv /tmp/take; fi
           ls /tmp/take/$L-Sulafat-take1.wav
       - name: Line up, lift questions that fall, tighten
@@ -46,7 +46,7 @@ jobs:
         run: |
           cd tools/promo/cyclone
           (python3 -m http.server 8799 >/dev/null 2>&1 &) ; sleep 1
-          LANGS=$L node render.js
+          MAX=58 TAIL=2.2 LANGS=$L node render.js
           LANGS=$L bash build.sh
           D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 Mana-Hakku-cyclone-appeal-$L.mp4)
           ffmpeg -nostdin -v error -y -i Mana-Hakku-cyclone-appeal-$L.mp4 -stream_loop -1 -i pad.mp3 -filter_complex "[1:a]volume=0.14,afade=t=in:d=1.5,afade=t=out:st=$(python3 -c "print($D-2)"):d=2[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]" -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 160k /tmp/Mana-Hakku-cyclone-appeal-$L-gemini.mp4
@@ -55,6 +55,6 @@ jobs:
         run: |
           R="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
           git clone -q -b cyclone-video --depth 1 "$R" /tmp/pub 2>/dev/null || (mkdir /tmp/pub && cd /tmp/pub && git init -q -b cyclone-video)
-          cp /tmp/*.mp4 tools/promo/cyclone/$L.vtt /tmp/pub/ && cd /tmp/pub && git add -A
+          cp /tmp/*.mp4 tools/promo/cyclone/$L.vtt /tmp/pub/ && cp /tmp/take/$L-Sulafat-take1.wav /tmp/pub/take-$L.wav && cd /tmp/pub && git add -A
           git -c user.name=tts -c user.email=tts@users.noreply.github.com commit -qm "Cyclone appeal video $L $(date -u +%FT%H:%M)"
           git push -q "$R" HEAD:refs/heads/cyclone-video
