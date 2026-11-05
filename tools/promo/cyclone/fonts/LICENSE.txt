@@ -1,0 +1,2 @@
+Anek Telugu, Hind Guntur and IBM Plex Mono are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org).
+Files from the @fontsource packages (version 5.3.0), Telugu and Latin subsets.
