@@ -6,7 +6,8 @@
 Uses the MMS forced-alignment model (works for Telugu and English through romanised text).
 Each line's start is its first word, its end is its last word. Prints a per-line report.
 """
-import json, os, re, sys
+import json, os, re, sys, wave
+import numpy as np
 import torch, torchaudio
 import uroman as ur
 
@@ -29,8 +30,10 @@ def words(line):
 bundle = torchaudio.pipelines.MMS_FA
 model = bundle.get_model(with_star=False)
 tok, aligner = bundle.get_tokenizer(), bundle.get_aligner()
-wav, sr = torchaudio.load(take)
-wav = torchaudio.functional.resample(wav.mean(0, keepdim=True), sr, bundle.sample_rate)
+w = wave.open(take); sr = w.getframerate(); ch = w.getnchannels()
+x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
+x = x.reshape(-1, ch).mean(1)
+wav = torchaudio.functional.resample(torch.from_numpy(x)[None], sr, bundle.sample_rate)
 with torch.inference_mode():
     em, _ = model(wav)
 per_line = [words(t) for t in texts]
