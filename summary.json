@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-06T10:17",
+ "updated": "2026-11-06T13:25",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "agri": 46,
     "other": 298,
+    "disaster": 127,
+    "education": 58,
+    "nutrition": 11,
+    "agri": 47,
+    "iddocs": 2,
     "women": 13,
-    "disaster": 124,
     "livelihood": 6,
-    "power": 26,
-    "nutrition": 10,
-    "health": 20,
-    "education": 57,
+    "power": 25,
+    "health": 19,
     "child": 2,
     "housing": 4,
     "roads": 12,
     "water": 7,
     "elderly": 6,
-    "iddocs": 1,
     "sanitation": 5,
     "social": 6,
     "certs": 1
@@ -40,9 +40,15 @@
    },
    "NTR": {
     "roads": 1,
-    "other": 7,
+    "other": 8,
     "power": 1,
     "disaster": 1
+   },
+   "Guntur": {
+    "other": 2,
+    "water": 1,
+    "roads": 1,
+    "education": 1
    },
    "Visakhapatnam": {
     "other": 5
@@ -55,17 +61,14 @@
     "other": 1,
     "agri": 1
    },
-   "Guntur": {
-    "water": 1,
-    "roads": 1,
-    "other": 1,
-    "education": 1
-   },
    "West Godavari": {
     "other": 1
    },
    "Dr. B. R. Ambedkar Konaseema": {
     "disaster": 1
+   },
+   "YSR Kadapa": {
+    "other": 2
    },
    "Krishna": {
     "disaster": 1,
@@ -83,9 +86,6 @@
     "other": 1,
     "agri": 1,
     "roads": 1
-   },
-   "YSR Kadapa": {
-    "other": 1
    },
    "Bapatla": {
     "disaster": 1,
@@ -107,38 +107,36 @@
    },
    "Anakapalli": {
     "health": 1
-   },
-   "Vizianagaram": {
-    "education": 1
    }
   },
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 68,
+    "agri": 67,
+    "other": 174,
+    "power": 28,
+    "health": 22,
     "sanitation": 7,
     "housing": 14,
-    "power": 28,
-    "other": 178,
     "education": 50,
     "disaster": 23,
-    "water": 34,
-    "health": 21,
-    "women": 6,
+    "water": 32,
+    "women": 5,
     "nutrition": 23,
-    "livelihood": 5,
+    "livelihood": 3,
     "roads": 22,
     "child": 3,
-    "elderly": 8,
+    "elderly": 7,
     "certs": 3,
     "social": 1,
     "iddocs": 1
    },
-   "Suryapet": {
-    "housing": 1
+   "Adilabad": {
+    "other": 3,
+    "agri": 2
    },
    "Hyderabad": {
-    "other": 20,
-    "water": 9,
+    "water": 10,
+    "other": 21,
     "power": 1,
     "housing": 1,
     "education": 2,
@@ -146,7 +144,10 @@
     "sanitation": 2,
     "health": 1,
     "women": 1,
-    "disaster": 4
+    "disaster": 3
+   },
+   "Suryapet": {
+    "housing": 1
    },
    "Vikarabad": {
     "other": 2,
@@ -165,12 +166,7 @@
     "health": 6
    },
    "Siddipet": {
-    "health": 1,
-    "education": 1
-   },
-   "Adilabad": {
-    "agri": 2,
-    "other": 2
+    "health": 1
    },
    "Medak": {
     "health": 2,
@@ -198,8 +194,7 @@
     "other": 4,
     "disaster": 1,
     "roads": 1,
-    "education": 2,
-    "agri": 1
+    "education": 2
    },
    "Nizamabad": {
     "nutrition": 1,
@@ -209,8 +204,7 @@
     "other": 1
    },
    "Ranga Reddy": {
-    "education": 2,
-    "agri": 1
+    "education": 2
    },
    "Karimnagar": {
     "roads": 1
