@@ -1,26 +1,31 @@
 {
- "updated": "2026-11-06T13:25",
+ "updated": "2026-11-06T16:02",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 298,
-    "disaster": 127,
-    "education": 58,
+    "agri": 46,
+    "other": 299,
+    "education": 59,
+    "disaster": 125,
     "nutrition": 11,
-    "agri": 47,
     "iddocs": 2,
     "women": 13,
+    "sanitation": 6,
     "livelihood": 6,
     "power": 25,
-    "health": 19,
+    "health": 22,
     "child": 2,
     "housing": 4,
     "roads": 12,
     "water": 7,
-    "elderly": 6,
-    "sanitation": 5,
+    "elderly": 5,
     "social": 6,
     "certs": 1
+   },
+   "Bapatla": {
+    "agri": 1,
+    "disaster": 1,
+    "other": 1
    },
    "Sri Potti Sriramulu Nellore": {
     "other": 1,
@@ -35,7 +40,7 @@
    "Ananthapuramu": {
     "education": 19,
     "other": 9,
-    "health": 7,
+    "health": 6,
     "agri": 1
    },
    "NTR": {
@@ -68,7 +73,7 @@
     "disaster": 1
    },
    "YSR Kadapa": {
-    "other": 2
+    "other": 3
    },
    "Krishna": {
     "disaster": 1,
@@ -86,10 +91,6 @@
     "other": 1,
     "agri": 1,
     "roads": 1
-   },
-   "Bapatla": {
-    "disaster": 1,
-    "other": 1
    },
    "Palnadu": {
     "education": 2,
@@ -111,21 +112,21 @@
   },
   "ts": {
    "(state-wide / unknown)": {
+    "disaster": 24,
     "agri": 67,
-    "other": 174,
+    "nutrition": 22,
+    "other": 168,
+    "education": 52,
     "power": 28,
     "health": 22,
-    "sanitation": 7,
-    "housing": 14,
-    "education": 50,
-    "disaster": 23,
+    "sanitation": 6,
+    "housing": 13,
     "water": 32,
     "women": 5,
-    "nutrition": 23,
     "livelihood": 3,
-    "roads": 22,
-    "child": 3,
-    "elderly": 7,
+    "roads": 20,
+    "child": 2,
+    "elderly": 6,
     "certs": 3,
     "social": 1,
     "iddocs": 1
@@ -136,15 +137,14 @@
    },
    "Hyderabad": {
     "water": 10,
-    "other": 21,
+    "other": 20,
     "power": 1,
     "housing": 1,
     "education": 2,
     "nutrition": 2,
     "sanitation": 2,
     "health": 1,
-    "women": 1,
-    "disaster": 3
+    "women": 1
    },
    "Suryapet": {
     "housing": 1
@@ -191,7 +191,7 @@
     "disaster": 1
    },
    "Khammam": {
-    "other": 4,
+    "other": 3,
     "disaster": 1,
     "roads": 1,
     "education": 2
