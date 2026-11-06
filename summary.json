@@ -1,26 +1,30 @@
 {
- "updated": "2026-11-05T22:00",
+ "updated": "2026-11-06T01:28",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "water": 38,
+    "other": 179,
+    "agri": 68,
     "housing": 13,
-    "power": 28,
-    "agri": 66,
-    "disaster": 27,
-    "other": 177,
-    "health": 25,
+    "power": 27,
+    "disaster": 25,
+    "health": 24,
     "sanitation": 6,
-    "water": 39,
-    "education": 51,
-    "nutrition": 26,
+    "education": 49,
+    "nutrition": 24,
     "livelihood": 5,
-    "roads": 26,
+    "roads": 24,
     "women": 4,
     "child": 3,
     "elderly": 8,
     "certs": 3,
     "social": 1,
     "iddocs": 1
+   },
+   "Vikarabad": {
+    "other": 2,
+    "agri": 1
    },
    "Kumuram Bheem Asifabad": {
     "other": 5,
@@ -71,10 +75,6 @@
    "Bhadradri Kothagudem": {
     "agri": 1,
     "disaster": 1
-   },
-   "Vikarabad": {
-    "agri": 1,
-    "other": 1
    },
    "Nalgonda": {
     "housing": 1,
@@ -136,18 +136,18 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 315,
-    "disaster": 134,
+    "nutrition": 12,
+    "other": 314,
+    "disaster": 135,
     "education": 60,
     "livelihood": 5,
     "child": 2,
-    "power": 33,
-    "agri": 52,
+    "power": 30,
+    "agri": 51,
     "housing": 4,
-    "nutrition": 11,
     "roads": 12,
     "water": 7,
-    "elderly": 8,
+    "elderly": 7,
     "health": 19,
     "iddocs": 1,
     "sanitation": 7,
@@ -159,6 +159,10 @@
     "roads": 1,
     "other": 6,
     "power": 1,
+    "disaster": 1
+   },
+   "Visakhapatnam": {
+    "other": 5,
     "disaster": 1
    },
    "Tirupati": {
@@ -199,10 +203,6 @@
    },
    "Nandyal": {
     "agri": 1
-   },
-   "Visakhapatnam": {
-    "other": 4,
-    "disaster": 1
    },
    "Kurnool": {
     "other": 2,
