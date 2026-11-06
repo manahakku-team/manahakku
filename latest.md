@@ -1,6 +1,6 @@
-# Mana Hakku daily quality check, 2026-11-05
+# Mana Hakku daily quality check, 2026-11-06
 
-Build: c7b2749 Filing: never save 'officially filed' silently on one phone only; send no-number f
+Build: 6bb91ff "I face this too" on every report: one tap, no name, one count per phone; reporter
 
 ## 1. App logic tests
 ```
@@ -20,7 +20,7 @@ TOTAL 0
 ## 3. Live website, register and data
 ```
 Website
-  OK  / 200 1420687
+  OK  / 200 1422799
   OK  /about.html 200 10376
   OK  /privacy.html 200 19981
   OK  /d/ 200 13148
@@ -39,7 +39,7 @@ Register (read only)
   OK  ap: 9 reports, 0 hidden, newest 2026-11-05
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (10 days ago)
+  OK  finance data updated 2026-10-26 (11 days ago)
 LIVE_BAD 0
 ```
 
@@ -49,16 +49,19 @@ OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్�
       - Deputy CM Pawan Kalyan: నేడు నిడదవోలుకు పవన్‌ కల్యాణ్‌.. ‘అమరజీవి జలధారా’కు శంకుస్థాపన..
 OK   ap en "Drinking water shortage in villages" @ Guntur: 1 naming the district
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-OK   ap en "Road accident on highway" @ Krishna: 6 naming the district
+OK   ap en "Road accident on highway" @ Krishna: 5 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
       - Tipper truck plunges into Krishna River after crashing into car on Karnataka bridge; driver missing
-NONE ts en "Doctors absent at government hospital" @ Hyderabad: 0 naming the district
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 3 naming the district
+      - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
+      - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
+      - SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
 OK   ts te "రైతుల ఆందోళన" @ Khammam: 1 naming the district
       - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
 OK   ts en "Floods damage crops" @ Warangal: 2 naming the district
       - Warangal, Hanamkonda Steps Up Relief Works After Floods
       - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
-NEWS_NONE 1
+NEWS_NONE 0
 ```
