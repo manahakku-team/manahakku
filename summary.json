@@ -1,24 +1,35 @@
 {
- "updated": "2026-11-07T07:19",
+ "updated": "2026-11-07T10:00",
  "last7days_trusted": {
   "ts": {
+   "Hyderabad": {
+    "other": 21,
+    "water": 10,
+    "power": 1,
+    "housing": 1,
+    "education": 2,
+    "nutrition": 2,
+    "sanitation": 2,
+    "health": 1,
+    "women": 1
+   },
    "(state-wide / unknown)": {
+    "other": 155,
+    "health": 19,
     "roads": 22,
-    "agri": 72,
-    "other": 160,
+    "agri": 70,
     "water": 29,
-    "nutrition": 21,
+    "nutrition": 18,
     "power": 25,
     "housing": 14,
-    "education": 54,
+    "education": 52,
     "women": 6,
     "certs": 3,
     "disaster": 24,
-    "health": 20,
     "sanitation": 6,
     "livelihood": 2,
     "child": 2,
-    "elderly": 4,
+    "elderly": 3,
     "social": 1
    },
    "Bhadradri Kothagudem": {
@@ -33,17 +44,6 @@
    "Jagtial": {
     "education": 2,
     "agri": 1
-   },
-   "Hyderabad": {
-    "other": 20,
-    "water": 10,
-    "power": 1,
-    "housing": 1,
-    "education": 2,
-    "nutrition": 2,
-    "sanitation": 2,
-    "health": 1,
-    "women": 1
    },
    "Rajanna Sircilla": {
     "health": 1,
@@ -136,23 +136,23 @@
   },
   "ap": {
    "(state-wide / unknown)": {
+    "other": 288,
+    "agri": 43,
+    "disaster": 109,
+    "health": 21,
+    "women": 13,
     "nutrition": 14,
-    "other": 292,
-    "health": 20,
-    "water": 6,
-    "power": 25,
-    "education": 60,
-    "agri": 41,
-    "women": 12,
+    "water": 5,
+    "power": 24,
+    "education": 54,
     "child": 3,
-    "disaster": 114,
     "iddocs": 2,
-    "sanitation": 4,
+    "sanitation": 3,
     "social": 7,
     "livelihood": 5,
     "housing": 5,
     "roads": 9,
-    "elderly": 5,
+    "elderly": 4,
     "certs": 1
    },
    "Bapatla": {
@@ -162,8 +162,8 @@
     "other": 1
    },
    "Ananthapuramu": {
-    "education": 19,
-    "other": 9,
+    "education": 14,
+    "other": 8,
     "health": 5,
     "agri": 1
    },
@@ -190,9 +190,9 @@
    },
    "Prakasam": {
     "elderly": 1,
+    "other": 2,
     "disaster": 12,
-    "power": 2,
-    "other": 1
+    "power": 2
    },
    "Guntur": {
     "other": 2,
@@ -237,8 +237,7 @@
     "health": 2
    },
    "Kakinada": {
-    "disaster": 1,
-    "other": 1
+    "disaster": 1
    }
   }
  }
