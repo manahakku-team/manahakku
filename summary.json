@@ -1,30 +1,30 @@
 {
- "updated": "2026-11-06T21:54",
+ "updated": "2026-11-07T01:20",
  "last7days_trusted": {
   "ts": {
+   "(state-wide / unknown)": {
+    "other": 160,
+    "agri": 69,
+    "water": 30,
+    "women": 6,
+    "education": 54,
+    "certs": 3,
+    "disaster": 24,
+    "nutrition": 19,
+    "roads": 21,
+    "power": 24,
+    "health": 22,
+    "sanitation": 6,
+    "housing": 12,
+    "livelihood": 2,
+    "child": 2,
+    "elderly": 6,
+    "social": 1
+   },
    "Bhadradri Kothagudem": {
     "health": 1,
     "agri": 1,
     "disaster": 1
-   },
-   "(state-wide / unknown)": {
-    "other": 164,
-    "education": 54,
-    "certs": 3,
-    "disaster": 24,
-    "agri": 67,
-    "nutrition": 22,
-    "roads": 20,
-    "power": 27,
-    "health": 22,
-    "sanitation": 6,
-    "housing": 13,
-    "water": 29,
-    "women": 5,
-    "livelihood": 3,
-    "child": 2,
-    "elderly": 6,
-    "social": 1
    },
    "Nalgonda": {
     "housing": 2,
@@ -61,6 +61,10 @@
    "Suryapet": {
     "housing": 1
    },
+   "Ranga Reddy": {
+    "roads": 1,
+    "education": 2
+   },
    "Vikarabad": {
     "other": 2,
     "agri": 1
@@ -95,7 +99,7 @@
     "water": 1
    },
    "Khammam": {
-    "other": 3,
+    "other": 2,
     "disaster": 1,
     "roads": 1,
     "education": 2
@@ -106,9 +110,6 @@
    },
    "Nirmal": {
     "other": 1
-   },
-   "Ranga Reddy": {
-    "education": 2
    },
    "Karimnagar": {
     "roads": 1
@@ -136,36 +137,40 @@
   },
   "ap": {
    "(state-wide / unknown)": {
+    "education": 62,
+    "nutrition": 13,
+    "agri": 44,
     "other": 299,
     "women": 12,
-    "agri": 42,
-    "nutrition": 12,
-    "education": 60,
     "child": 3,
     "disaster": 121,
     "iddocs": 2,
     "sanitation": 5,
+    "social": 7,
     "livelihood": 5,
-    "power": 24,
-    "health": 21,
+    "power": 23,
+    "health": 20,
     "housing": 4,
     "roads": 10,
     "water": 5,
     "elderly": 5,
-    "social": 6,
     "certs": 1
+   },
+   "Ananthapuramu": {
+    "education": 21,
+    "other": 9,
+    "health": 5,
+    "agri": 1
+   },
+   "Annamayya": {
+    "sanitation": 1,
+    "other": 1
    },
    "NTR": {
     "other": 9,
     "roads": 1,
     "power": 1,
     "disaster": 1
-   },
-   "Ananthapuramu": {
-    "education": 20,
-    "other": 9,
-    "health": 5,
-    "agri": 1
    },
    "Nandyal": {
     "water": 1,
@@ -231,9 +236,6 @@
    "Palnadu": {
     "education": 2,
     "health": 2
-   },
-   "Annamayya": {
-    "other": 1
    },
    "Kakinada": {
     "disaster": 1,
