@@ -1,29 +1,18 @@
 {
- "updated": "2026-11-07T10:00",
+ "updated": "2026-11-07T13:10",
  "last7days_trusted": {
   "ts": {
-   "Hyderabad": {
-    "other": 21,
-    "water": 10,
-    "power": 1,
-    "housing": 1,
-    "education": 2,
-    "nutrition": 2,
-    "sanitation": 2,
-    "health": 1,
-    "women": 1
-   },
    "(state-wide / unknown)": {
-    "other": 155,
-    "health": 19,
-    "roads": 22,
-    "agri": 70,
+    "other": 149,
+    "education": 56,
+    "health": 20,
+    "roads": 20,
+    "agri": 71,
     "water": 29,
     "nutrition": 18,
-    "power": 25,
+    "power": 23,
     "housing": 14,
-    "education": 52,
-    "women": 6,
+    "women": 7,
     "certs": 3,
     "disaster": 24,
     "sanitation": 6,
@@ -31,6 +20,17 @@
     "child": 2,
     "elderly": 3,
     "social": 1
+   },
+   "Hyderabad": {
+    "other": 21,
+    "water": 9,
+    "power": 1,
+    "housing": 1,
+    "education": 2,
+    "nutrition": 2,
+    "sanitation": 2,
+    "health": 1,
+    "women": 1
    },
    "Bhadradri Kothagudem": {
     "health": 1,
@@ -59,7 +59,7 @@
     "agri": 2
    },
    "Warangal": {
-    "health": 7,
+    "health": 5,
     "other": 1,
     "agri": 2,
     "water": 2
@@ -135,24 +135,29 @@
    }
   },
   "ap": {
+   "Krishna": {
+    "other": 3,
+    "disaster": 1,
+    "education": 1
+   },
    "(state-wide / unknown)": {
-    "other": 288,
+    "health": 22,
+    "nutrition": 15,
+    "sanitation": 4,
+    "education": 51,
+    "other": 282,
     "agri": 43,
-    "disaster": 109,
-    "health": 21,
-    "women": 13,
-    "nutrition": 14,
+    "disaster": 108,
     "water": 5,
-    "power": 24,
-    "education": 54,
+    "women": 13,
+    "power": 25,
     "child": 3,
     "iddocs": 2,
-    "sanitation": 3,
     "social": 7,
     "livelihood": 5,
     "housing": 5,
     "roads": 9,
-    "elderly": 4,
+    "elderly": 3,
     "certs": 1
    },
    "Bapatla": {
@@ -162,8 +167,8 @@
     "other": 1
    },
    "Ananthapuramu": {
-    "education": 14,
-    "other": 8,
+    "education": 13,
+    "other": 7,
     "health": 5,
     "agri": 1
    },
@@ -219,11 +224,6 @@
    },
    "YSR Kadapa": {
     "other": 3
-   },
-   "Krishna": {
-    "disaster": 1,
-    "other": 3,
-    "education": 1
    },
    "Kurnool": {
     "other": 1,
