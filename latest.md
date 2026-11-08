@@ -1,4 +1,4 @@
-# Mana Hakku daily quality check, 2026-11-07
+# Mana Hakku daily quality check, 2026-11-08
 
 Build: 6bb91ff "I face this too" on every report: one tap, no name, one count per phone; reporter
 
@@ -39,7 +39,7 @@ Register (read only)
   OK  ap: 9 reports, 0 hidden, newest 2026-11-05
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (12 days ago)
+  OK  finance data updated 2026-10-26 (13 days ago)
 LIVE_BAD 0
 ```
 
@@ -50,7 +50,7 @@ OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్�
       - Deputy CM Pawan Kalyan: నేడు నిడదవోలుకు పవన్‌ కల్యాణ్‌.. ‘అమరజీవి జలధారా’కు శంకుస్థాపన..
 OK   ap en "Drinking water shortage in villages" @ Guntur: 1 naming the district
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-OK   ap en "Road accident on highway" @ Krishna: 6 naming the district
+OK   ap en "Road accident on highway" @ Krishna: 5 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
@@ -61,7 +61,7 @@ OK   ts en "Doctors absent at government hospital" @ Hyderabad: 4 naming the dis
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
       - SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
 OK   ts te "రైతుల ఆందోళన" @ Khammam: 1 naming the district
-      - పంటలు కొనుగోలు చేయాలని అన్నదాతల ఆందోళన.. ఖమ్మం జిల్లాలో అధికారుల నిర్బంధం
+      - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
 OK   ts en "Floods damage crops" @ Warangal: 2 naming the district
       - Warangal, Hanamkonda Steps Up Relief Works After Floods
       - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
