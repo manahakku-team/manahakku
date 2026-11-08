@@ -1,19 +1,25 @@
 {
- "updated": "2026-11-08T15:52",
+ "updated": "2026-11-08T19:00",
  "last7days_trusted": {
   "ts": {
+   "Vikarabad": {
+    "housing": 1,
+    "agri": 2,
+    "elderly": 1,
+    "other": 1
+   },
    "(state-wide / unknown)": {
+    "housing": 15,
     "elderly": 12,
-    "health": 19,
+    "health": 18,
     "women": 8,
     "certs": 3,
-    "education": 56,
-    "agri": 74,
+    "education": 55,
+    "agri": 72,
     "roads": 21,
-    "other": 140,
+    "other": 139,
     "power": 21,
-    "housing": 14,
-    "water": 20,
+    "water": 18,
     "nutrition": 14,
     "disaster": 22,
     "sanitation": 4,
@@ -30,18 +36,13 @@
    "Hyderabad": {
     "roads": 1,
     "health": 2,
-    "other": 19,
+    "other": 20,
     "water": 3,
     "power": 1,
     "housing": 1,
     "education": 2,
     "nutrition": 2,
     "sanitation": 2
-   },
-   "Vikarabad": {
-    "agri": 2,
-    "elderly": 1,
-    "other": 1
    },
    "Adilabad": {
     "water": 1,
@@ -87,7 +88,7 @@
     "women": 1
    },
    "Warangal": {
-    "health": 5,
+    "health": 4,
     "other": 1,
     "agri": 2,
     "water": 2
@@ -97,9 +98,9 @@
     "education": 1
    },
    "Kumuram Bheem Asifabad": {
-    "other": 4,
+    "other": 3,
     "water": 1,
-    "education": 2,
+    "education": 1,
     "agri": 1
    },
    "Siddipet": {
@@ -133,12 +134,28 @@
    },
    "Nagarkurnool": {
     "agri": 1
-   },
-   "Medchal–Malkajgiri": {
-    "water": 1
    }
   },
   "ap": {
+   "(state-wide / unknown)": {
+    "disaster": 94,
+    "other": 278,
+    "education": 47,
+    "agri": 38,
+    "nutrition": 14,
+    "women": 10,
+    "power": 23,
+    "sanitation": 5,
+    "health": 22,
+    "housing": 6,
+    "water": 4,
+    "social": 7,
+    "child": 3,
+    "iddocs": 2,
+    "livelihood": 6,
+    "roads": 5,
+    "elderly": 1
+   },
    "Krishna": {
     "other": 4,
     "disaster": 1,
@@ -146,30 +163,10 @@
    },
    "Palnadu": {
     "other": 1,
-    "education": 2
-   },
-   "(state-wide / unknown)": {
-    "other": 276,
-    "disaster": 97,
-    "education": 48,
-    "agri": 39,
-    "nutrition": 14,
-    "women": 10,
-    "power": 24,
-    "health": 22,
-    "housing": 6,
-    "sanitation": 4,
-    "water": 4,
-    "social": 7,
-    "child": 3,
-    "iddocs": 2,
-    "livelihood": 6,
-    "roads": 6,
-    "elderly": 2,
-    "certs": 1
+    "education": 1
    },
    "NTR": {
-    "other": 10,
+    "other": 9,
     "housing": 1,
     "roads": 1,
     "power": 1,
@@ -189,14 +186,13 @@
     "disaster": 1
    },
    "Ananthapuramu": {
-    "education": 6,
+    "education": 5,
     "other": 5,
     "health": 3,
     "agri": 1
    },
    "Annamayya": {
-    "sanitation": 1,
-    "other": 1
+    "sanitation": 1
    },
    "Parvathipuram Manyam": {
     "disaster": 1
