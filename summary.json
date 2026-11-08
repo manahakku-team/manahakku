@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-07T21:52",
+ "updated": "2026-11-08T01:25",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 71,
-    "elderly": 6,
-    "roads": 21,
-    "other": 143,
-    "housing": 13,
+    "agri": 74,
+    "other": 144,
     "education": 54,
-    "water": 24,
-    "health": 20,
-    "nutrition": 17,
+    "elderly": 7,
     "power": 21,
+    "roads": 21,
+    "housing": 13,
+    "water": 22,
+    "health": 19,
+    "nutrition": 15,
     "women": 7,
-    "certs": 3,
+    "certs": 2,
     "disaster": 24,
     "sanitation": 5,
-    "livelihood": 2,
+    "livelihood": 1,
     "child": 2,
     "social": 1
    },
@@ -42,7 +42,7 @@
     "roads": 1
    },
    "Yadadri Bhuvanagiri": {
-    "other": 1
+    "other": 2
    },
    "Khammam": {
     "agri": 1,
@@ -138,14 +138,19 @@
    }
   },
   "ap": {
+   "Nandyal": {
+    "other": 1,
+    "water": 1,
+    "agri": 1
+   },
    "(state-wide / unknown)": {
+    "education": 48,
     "women": 13,
     "power": 25,
-    "education": 48,
-    "other": 280,
-    "agri": 42,
+    "other": 283,
+    "agri": 41,
     "health": 24,
-    "disaster": 106,
+    "disaster": 104,
     "housing": 6,
     "nutrition": 14,
     "sanitation": 4,
@@ -153,7 +158,7 @@
     "child": 3,
     "iddocs": 2,
     "social": 6,
-    "livelihood": 6,
+    "livelihood": 5,
     "roads": 9,
     "elderly": 3,
     "certs": 1
@@ -184,10 +189,6 @@
     "roads": 1,
     "power": 1,
     "disaster": 1
-   },
-   "Nandyal": {
-    "water": 1,
-    "agri": 1
    },
    "Parvathipuram Manyam": {
     "disaster": 1
