@@ -1,26 +1,33 @@
 {
- "updated": "2026-11-08T09:59",
+ "updated": "2026-11-08T13:10",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 280,
-    "disaster": 99,
-    "education": 49,
-    "agri": 40,
+    "other": 273,
+    "disaster": 98,
+    "education": 48,
+    "agri": 39,
     "nutrition": 14,
     "women": 11,
     "power": 24,
-    "health": 23,
+    "health": 22,
     "housing": 6,
     "sanitation": 4,
     "water": 4,
+    "social": 7,
     "child": 3,
     "iddocs": 2,
-    "social": 6,
-    "livelihood": 5,
-    "roads": 8,
-    "elderly": 3,
+    "livelihood": 6,
+    "roads": 7,
+    "elderly": 2,
     "certs": 1
+   },
+   "NTR": {
+    "housing": 1,
+    "other": 9,
+    "roads": 1,
+    "power": 1,
+    "disaster": 1
    },
    "Visakhapatnam": {
     "other": 5
@@ -42,20 +49,14 @@
     "other": 1
    },
    "Ananthapuramu": {
-    "education": 9,
-    "other": 7,
+    "education": 7,
+    "other": 6,
     "health": 4,
     "agri": 1
    },
    "Annamayya": {
     "sanitation": 1,
     "other": 1
-   },
-   "NTR": {
-    "other": 9,
-    "roads": 1,
-    "power": 1,
-    "disaster": 1
    },
    "Parvathipuram Manyam": {
     "disaster": 1
@@ -110,28 +111,34 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "elderly": 10,
+    "women": 8,
+    "elderly": 11,
     "certs": 3,
-    "education": 56,
+    "education": 57,
     "agri": 75,
     "roads": 22,
     "other": 143,
     "power": 21,
     "housing": 14,
-    "water": 23,
+    "water": 22,
     "health": 18,
-    "nutrition": 16,
-    "women": 7,
-    "disaster": 24,
-    "sanitation": 5,
+    "nutrition": 15,
+    "disaster": 23,
+    "sanitation": 4,
     "livelihood": 1,
     "child": 2,
     "social": 1
    },
+   "Sangareddy": {
+    "other": 2,
+    "education": 1,
+    "roads": 1,
+    "agri": 1
+   },
    "Hyderabad": {
     "roads": 1,
     "health": 2,
-    "other": 20,
+    "other": 19,
     "water": 3,
     "power": 1,
     "housing": 1,
@@ -151,8 +158,7 @@
    },
    "Jangaon": {
     "education": 4,
-    "other": 2,
-    "sanitation": 1
+    "other": 1
    },
    "Mancherial": {
     "other": 1,
@@ -211,12 +217,6 @@
     "health": 2,
     "agri": 1,
     "education": 1
-   },
-   "Sangareddy": {
-    "education": 1,
-    "roads": 1,
-    "agri": 1,
-    "other": 1
    },
    "Narayanpet": {
     "water": 1
