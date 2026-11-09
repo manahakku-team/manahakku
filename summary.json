@@ -1,28 +1,33 @@
 {
- "updated": "2026-11-09T07:45",
+ "updated": "2026-11-09T10:14",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "education": 53,
+    "water": 18,
     "other": 131,
     "agri": 70,
-    "health": 20,
-    "education": 52,
-    "housing": 15,
-    "elderly": 12,
+    "health": 19,
+    "housing": 13,
+    "elderly": 13,
     "women": 8,
     "certs": 3,
-    "roads": 18,
+    "roads": 15,
     "power": 19,
-    "water": 17,
     "nutrition": 13,
-    "disaster": 18,
+    "disaster": 16,
     "sanitation": 3,
     "livelihood": 1,
     "child": 2,
     "social": 1
    },
+   "Mancherial": {
+    "water": 1,
+    "other": 1,
+    "education": 1
+   },
    "Hyderabad": {
-    "other": 22,
+    "other": 20,
     "roads": 1,
     "health": 2,
     "water": 2,
@@ -54,10 +59,6 @@
    "Jangaon": {
     "education": 4,
     "other": 1
-   },
-   "Mancherial": {
-    "other": 1,
-    "education": 1
    },
    "Yadadri Bhuvanagiri": {
     "other": 2
@@ -137,19 +138,24 @@
    }
   },
   "ap": {
+   "NTR": {
+    "other": 13,
+    "housing": 1,
+    "roads": 1
+   },
    "(state-wide / unknown)": {
+    "other": 271,
+    "disaster": 86,
+    "social": 7,
     "health": 22,
-    "other": 276,
-    "education": 46,
-    "nutrition": 14,
-    "disaster": 89,
-    "agri": 37,
+    "education": 43,
+    "nutrition": 15,
+    "agri": 36,
     "women": 6,
-    "water": 5,
+    "water": 4,
     "power": 19,
     "sanitation": 4,
     "housing": 5,
-    "social": 6,
     "child": 3,
     "iddocs": 2,
     "livelihood": 6,
@@ -172,14 +178,7 @@
     "education": 1
    },
    "Palnadu": {
-    "other": 1,
-    "education": 1
-   },
-   "NTR": {
-    "other": 9,
-    "housing": 1,
-    "roads": 1,
-    "power": 1
+    "other": 1
    },
    "East Godavari": {
     "other": 1
