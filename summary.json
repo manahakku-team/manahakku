@@ -1,18 +1,18 @@
 {
- "updated": "2026-11-09T04:16",
+ "updated": "2026-11-09T07:45",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "other": 131,
+    "agri": 70,
     "health": 20,
-    "education": 54,
+    "education": 52,
     "housing": 15,
-    "elderly": 11,
+    "elderly": 12,
     "women": 8,
     "certs": 3,
-    "agri": 69,
-    "roads": 19,
-    "other": 129,
-    "power": 20,
+    "roads": 18,
+    "power": 19,
     "water": 17,
     "nutrition": 13,
     "disaster": 18,
@@ -21,28 +21,30 @@
     "child": 2,
     "social": 1
    },
-   "Vikarabad": {
-    "housing": 1,
-    "agri": 2,
-    "elderly": 1,
-    "other": 1
-   },
-   "Sangareddy": {
-    "other": 1,
-    "education": 1,
-    "roads": 1,
-    "agri": 1
-   },
    "Hyderabad": {
+    "other": 22,
     "roads": 1,
     "health": 2,
-    "other": 20,
     "water": 2,
     "power": 1,
     "housing": 1,
     "education": 2,
     "nutrition": 2,
     "sanitation": 2
+   },
+   "Jogulamba Gadwal": {
+    "other": 1
+   },
+   "Vikarabad": {
+    "other": 2,
+    "housing": 1,
+    "agri": 2,
+    "elderly": 1
+   },
+   "Sangareddy": {
+    "other": 1,
+    "education": 1,
+    "roads": 1
    },
    "Adilabad": {
     "water": 1,
@@ -55,8 +57,7 @@
    },
    "Mancherial": {
     "other": 1,
-    "education": 1,
-    "roads": 1
+    "education": 1
    },
    "Yadadri Bhuvanagiri": {
     "other": 2
@@ -84,8 +85,7 @@
     "agri": 1
    },
    "Rajanna Sircilla": {
-    "health": 1,
-    "women": 1
+    "health": 1
    },
    "Warangal": {
     "health": 4,
@@ -138,23 +138,33 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 278,
-    "disaster": 91,
-    "education": 47,
-    "agri": 38,
+    "health": 22,
+    "other": 276,
+    "education": 46,
     "nutrition": 14,
-    "women": 7,
+    "disaster": 89,
+    "agri": 37,
+    "women": 6,
     "water": 5,
     "power": 19,
     "sanitation": 4,
-    "health": 21,
-    "housing": 6,
+    "housing": 5,
     "social": 6,
     "child": 3,
     "iddocs": 2,
     "livelihood": 6,
     "roads": 5,
     "elderly": 1
+   },
+   "Srikakulam": {
+    "other": 2
+   },
+   "Ananthapuramu": {
+    "water": 1,
+    "education": 4,
+    "other": 4,
+    "health": 3,
+    "agri": 1
    },
    "Krishna": {
     "other": 4,
@@ -169,8 +179,7 @@
     "other": 9,
     "housing": 1,
     "roads": 1,
-    "power": 1,
-    "disaster": 1
+    "power": 1
    },
    "East Godavari": {
     "other": 1
@@ -188,12 +197,6 @@
     "agri": 2,
     "disaster": 1
    },
-   "Ananthapuramu": {
-    "education": 5,
-    "other": 5,
-    "health": 3,
-    "agri": 1
-   },
    "Annamayya": {
     "sanitation": 1
    },
@@ -207,7 +210,7 @@
    "Prakasam": {
     "elderly": 1,
     "other": 2,
-    "disaster": 12,
+    "disaster": 11,
     "power": 2
    },
    "Guntur": {
@@ -235,9 +238,6 @@
    "Kurnool": {
     "other": 1,
     "agri": 1
-   },
-   "Srikakulam": {
-    "other": 1
    }
   }
  }
