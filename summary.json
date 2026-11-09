@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-09T01:28",
+ "updated": "2026-11-09T04:16",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "education": 55,
+    "health": 20,
+    "education": 54,
     "housing": 15,
-    "elderly": 12,
-    "health": 18,
+    "elderly": 11,
     "women": 8,
     "certs": 3,
-    "agri": 72,
-    "roads": 21,
-    "other": 131,
+    "agri": 69,
+    "roads": 19,
+    "other": 129,
     "power": 20,
-    "water": 18,
-    "nutrition": 14,
-    "disaster": 19,
-    "sanitation": 4,
+    "water": 17,
+    "nutrition": 13,
+    "disaster": 18,
+    "sanitation": 3,
     "livelihood": 1,
     "child": 2,
     "social": 1
@@ -28,7 +28,7 @@
     "other": 1
    },
    "Sangareddy": {
-    "other": 2,
+    "other": 1,
     "education": 1,
     "roads": 1,
     "agri": 1
@@ -138,17 +138,17 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 281,
-    "disaster": 94,
-    "education": 46,
+    "other": 278,
+    "disaster": 91,
+    "education": 47,
     "agri": 38,
     "nutrition": 14,
-    "women": 10,
-    "power": 21,
+    "women": 7,
+    "water": 5,
+    "power": 19,
     "sanitation": 4,
-    "health": 22,
+    "health": 21,
     "housing": 6,
-    "water": 4,
     "social": 6,
     "child": 3,
     "iddocs": 2,
@@ -202,8 +202,7 @@
    },
    "Sri Potti Sriramulu Nellore": {
     "health": 1,
-    "other": 1,
-    "disaster": 1
+    "other": 2
    },
    "Prakasam": {
     "elderly": 1,
@@ -214,8 +213,7 @@
    "Guntur": {
     "other": 2,
     "water": 1,
-    "roads": 1,
-    "education": 1
+    "roads": 1
    },
    "Tirupati": {
     "other": 1
