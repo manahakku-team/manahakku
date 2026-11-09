@@ -1,0 +1,1 @@
+    topResumedActivity=ActivityRecord{120996974 u0 org.manahakku.app/.MainActivity t8}
