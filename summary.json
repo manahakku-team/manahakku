@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-09T19:13",
+ "updated": "2026-11-09T22:00",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 266,
-    "agri": 39,
+    "other": 270,
+    "health": 20,
+    "water": 5,
+    "agri": 40,
     "elderly": 3,
-    "disaster": 76,
-    "power": 18,
+    "disaster": 75,
+    "power": 17,
     "livelihood": 7,
     "roads": 6,
-    "social": 5,
-    "health": 19,
+    "social": 4,
     "education": 42,
     "nutrition": 14,
     "sanitation": 5,
     "women": 6,
-    "water": 4,
     "housing": 5,
     "child": 3,
     "iddocs": 2
@@ -40,7 +40,7 @@
     "health": 2
    },
    "Krishna": {
-    "other": 4,
+    "other": 3,
     "disaster": 1,
     "education": 1
    },
@@ -77,7 +77,7 @@
    "Prakasam": {
     "elderly": 1,
     "other": 2,
-    "disaster": 10,
+    "disaster": 9,
     "power": 2
    },
    "Guntur": {
@@ -105,14 +105,14 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 134,
+    "other": 135,
+    "education": 49,
+    "agri": 71,
     "water": 16,
     "social": 3,
-    "agri": 69,
     "women": 9,
     "nutrition": 12,
     "health": 19,
-    "education": 48,
     "housing": 12,
     "elderly": 13,
     "certs": 3,
