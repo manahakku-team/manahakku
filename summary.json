@@ -1,23 +1,131 @@
 {
- "updated": "2026-11-10T07:29",
+ "updated": "2026-11-10T10:10",
  "last7days_trusted": {
-  "ts": {
+  "ap": {
    "(state-wide / unknown)": {
-    "agri": 68,
+    "other": 274,
+    "agri": 42,
+    "education": 40,
+    "health": 21,
+    "power": 11,
+    "sanitation": 6,
+    "disaster": 62,
+    "roads": 9,
+    "livelihood": 7,
+    "water": 5,
+    "elderly": 3,
+    "housing": 5,
+    "social": 3,
+    "nutrition": 13,
+    "women": 5,
+    "child": 3,
+    "iddocs": 1
+   },
+   "Nandyal": {
+    "water": 2,
+    "other": 1,
+    "agri": 1
+   },
+   "Annamayya": {
+    "water": 1,
+    "sanitation": 1
+   },
+   "NTR": {
+    "other": 17,
+    "roads": 2,
+    "housing": 1
+   },
+   "Srikakulam": {
+    "other": 1
+   },
+   "Ananthapuramu": {
+    "water": 1,
+    "education": 3,
+    "other": 3,
+    "health": 2
+   },
+   "Krishna": {
+    "other": 2,
+    "disaster": 1
+   },
+   "Palnadu": {
+    "other": 1
+   },
+   "East Godavari": {
+    "other": 1,
+    "agri": 1
+   },
+   "Dr. B. R. Ambedkar Konaseema": {
+    "other": 1,
+    "disaster": 1
+   },
+   "Visakhapatnam": {
+    "other": 5
+   },
+   "West Godavari": {
+    "other": 2
+   },
+   "Bapatla": {
+    "elderly": 1,
+    "agri": 2
+   },
+   "Parvathipuram Manyam": {
+    "disaster": 1
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "health": 1,
+    "other": 2
+   },
+   "Prakasam": {
+    "elderly": 1,
+    "other": 1,
+    "disaster": 4,
+    "power": 1
+   },
+   "Guntur": {
+    "other": 1,
+    "water": 1,
+    "roads": 1
+   },
+   "Tirupati": {
+    "other": 1
+   },
+   "Eluru": {
+    "disaster": 1,
+    "other": 1,
+    "agri": 1
+   },
+   "YSR Kadapa": {
+    "other": 2
+   }
+  },
+  "ts": {
+   "Warangal": {
+    "agri": 3,
+    "health": 3,
+    "other": 1,
+    "water": 2
+   },
+   "Nirmal": {
+    "water": 1,
+    "other": 1
+   },
+   "(state-wide / unknown)": {
+    "roads": 14,
+    "other": 138,
+    "agri": 65,
     "water": 16,
     "elderly": 14,
-    "other": 137,
     "nutrition": 12,
     "health": 21,
-    "education": 47,
+    "education": 45,
     "housing": 11,
     "sanitation": 5,
     "social": 2,
     "women": 9,
     "certs": 3,
-    "roads": 13,
-    "power": 17,
-    "disaster": 14,
+    "power": 16,
+    "disaster": 13,
     "livelihood": 1,
     "child": 2
    },
@@ -93,12 +201,6 @@
    "Rajanna Sircilla": {
     "health": 1
    },
-   "Warangal": {
-    "health": 3,
-    "other": 1,
-    "agri": 2,
-    "water": 2
-   },
    "Ranga Reddy": {
     "roads": 1,
     "education": 1
@@ -120,112 +222,11 @@
     "nutrition": 1,
     "health": 1
    },
-   "Nirmal": {
-    "other": 1
-   },
    "Karimnagar": {
     "roads": 1
    },
    "Mahabubabad": {
     "agri": 1
-   }
-  },
-  "ap": {
-   "(state-wide / unknown)": {
-    "other": 271,
-    "education": 41,
-    "health": 21,
-    "power": 12,
-    "sanitation": 5,
-    "agri": 40,
-    "disaster": 65,
-    "roads": 9,
-    "livelihood": 7,
-    "water": 5,
-    "elderly": 3,
-    "social": 3,
-    "nutrition": 13,
-    "women": 5,
-    "housing": 4,
-    "child": 3,
-    "iddocs": 2
-   },
-   "Nandyal": {
-    "water": 2,
-    "other": 1,
-    "agri": 1
-   },
-   "Annamayya": {
-    "water": 1,
-    "sanitation": 1
-   },
-   "NTR": {
-    "other": 17,
-    "roads": 2,
-    "housing": 1
-   },
-   "Srikakulam": {
-    "other": 1
-   },
-   "Ananthapuramu": {
-    "water": 1,
-    "education": 3,
-    "other": 3,
-    "health": 2
-   },
-   "Krishna": {
-    "other": 2,
-    "disaster": 1
-   },
-   "Palnadu": {
-    "other": 1
-   },
-   "East Godavari": {
-    "other": 1,
-    "agri": 1
-   },
-   "Dr. B. R. Ambedkar Konaseema": {
-    "other": 1,
-    "disaster": 1
-   },
-   "Visakhapatnam": {
-    "other": 5
-   },
-   "West Godavari": {
-    "other": 2
-   },
-   "Bapatla": {
-    "elderly": 1,
-    "agri": 2
-   },
-   "Parvathipuram Manyam": {
-    "disaster": 1
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "health": 1,
-    "other": 2
-   },
-   "Prakasam": {
-    "elderly": 1,
-    "other": 2,
-    "disaster": 6,
-    "power": 1
-   },
-   "Guntur": {
-    "other": 1,
-    "water": 1,
-    "roads": 1
-   },
-   "Tirupati": {
-    "other": 1
-   },
-   "Eluru": {
-    "disaster": 1,
-    "other": 1,
-    "agri": 1
-   },
-   "YSR Kadapa": {
-    "other": 2
    }
   }
  }
