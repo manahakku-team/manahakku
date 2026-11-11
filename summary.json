@@ -1,18 +1,19 @@
 {
- "updated": "2026-11-11T07:33",
+ "updated": "2026-11-11T10:16",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 256,
+    "disaster": 47,
+    "other": 257,
+    "agri": 37,
+    "health": 25,
     "power": 12,
-    "health": 23,
-    "education": 37,
+    "education": 38,
     "women": 8,
-    "agri": 36,
     "roads": 8,
-    "disaster": 49,
     "livelihood": 8,
     "nutrition": 13,
+    "certs": 1,
     "sanitation": 6,
     "water": 5,
     "elderly": 2,
@@ -20,6 +21,15 @@
     "social": 3,
     "child": 3,
     "iddocs": 1
+   },
+   "NTR": {
+    "power": 1,
+    "other": 14,
+    "roads": 2,
+    "housing": 1
+   },
+   "Sri Sathya Sai": {
+    "other": 1
    },
    "Ananthapuramu": {
     "other": 2,
@@ -49,12 +59,14 @@
    "Prakasam": {
     "power": 1,
     "elderly": 1,
-    "other": 1,
-    "disaster": 1
+    "other": 1
    },
    "West Godavari": {
     "agri": 1,
     "other": 2
+   },
+   "Chittoor": {
+    "power": 1
    },
    "Tirupati": {
     "other": 2
@@ -67,11 +79,6 @@
     "water": 1,
     "sanitation": 1
    },
-   "NTR": {
-    "other": 14,
-    "roads": 2,
-    "housing": 1
-   },
    "Visakhapatnam": {
     "other": 3
    },
@@ -83,40 +90,44 @@
     "other": 1
    },
    "Dr. B. R. Ambedkar Konaseema": {
-    "other": 1,
-    "disaster": 1
+    "other": 1
    },
    "Bapatla": {
     "elderly": 1,
     "agri": 2
    },
    "Eluru": {
-    "disaster": 1,
-    "other": 1
-   },
-   "YSR Kadapa": {
-    "other": 2
+    "disaster": 1
    }
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 131,
-    "agri": 65,
+    "other": 129,
+    "sanitation": 5,
+    "agri": 67,
     "health": 21,
-    "education": 40,
+    "education": 39,
     "elderly": 14,
     "roads": 11,
     "water": 15,
     "nutrition": 11,
     "housing": 11,
-    "sanitation": 4,
     "social": 2,
     "women": 11,
     "certs": 2,
-    "power": 9,
+    "power": 8,
     "disaster": 9,
     "livelihood": 1,
     "child": 2
+   },
+   "Hyderabad": {
+    "water": 3,
+    "other": 18,
+    "housing": 1,
+    "roads": 1,
+    "health": 1,
+    "women": 1,
+    "power": 1
    },
    "Medchal–Malkajgiri": {
     "other": 1
@@ -127,7 +138,7 @@
    },
    "Warangal": {
     "agri": 4,
-    "health": 3,
+    "health": 2,
     "other": 1,
     "water": 1
    },
@@ -138,15 +149,6 @@
    "Nirmal": {
     "water": 2,
     "other": 1
-   },
-   "Hyderabad": {
-    "other": 17,
-    "housing": 1,
-    "roads": 1,
-    "health": 1,
-    "women": 1,
-    "water": 2,
-    "power": 1
    },
    "Jogulamba Gadwal": {
     "other": 2
@@ -180,16 +182,14 @@
    },
    "Khammam": {
     "agri": 1,
-    "other": 1,
-    "disaster": 1
+    "other": 1
    },
    "Suryapet": {
     "housing": 2
    },
    "Bhadradri Kothagudem": {
     "health": 1,
-    "agri": 1,
-    "disaster": 1
+    "agri": 1
    },
    "Nalgonda": {
     "housing": 2
@@ -222,9 +222,6 @@
    },
    "Karimnagar": {
     "roads": 1
-   },
-   "Mahabubabad": {
-    "agri": 1
    }
   }
  }
