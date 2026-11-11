@@ -1,30 +1,30 @@
 {
- "updated": "2026-11-11T10:16",
+ "updated": "2026-11-11T13:28",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 47,
-    "other": 257,
-    "agri": 37,
-    "health": 25,
-    "power": 12,
+    "other": 251,
+    "disaster": 41,
+    "water": 7,
     "education": 38,
+    "agri": 37,
+    "health": 23,
+    "power": 12,
     "women": 8,
     "roads": 8,
     "livelihood": 8,
     "nutrition": 13,
     "certs": 1,
     "sanitation": 6,
-    "water": 5,
     "elderly": 2,
     "housing": 4,
     "social": 3,
-    "child": 3,
+    "child": 2,
     "iddocs": 1
    },
    "NTR": {
     "power": 1,
-    "other": 14,
+    "other": 12,
     "roads": 2,
     "housing": 1
    },
@@ -32,7 +32,7 @@
     "other": 1
    },
    "Ananthapuramu": {
-    "other": 2,
+    "other": 1,
     "education": 4,
     "water": 1
    },
@@ -102,27 +102,30 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 129,
-    "sanitation": 5,
     "agri": 67,
+    "other": 133,
     "health": 21,
-    "education": 39,
+    "education": 36,
+    "sanitation": 5,
     "elderly": 14,
     "roads": 11,
-    "water": 15,
+    "water": 14,
     "nutrition": 11,
     "housing": 11,
     "social": 2,
     "women": 11,
     "certs": 2,
     "power": 8,
-    "disaster": 9,
-    "livelihood": 1,
-    "child": 2
+    "disaster": 8,
+    "livelihood": 1
+   },
+   "Nirmal": {
+    "agri": 1,
+    "water": 2
    },
    "Hyderabad": {
     "water": 3,
-    "other": 18,
+    "other": 16,
     "housing": 1,
     "roads": 1,
     "health": 1,
@@ -137,18 +140,13 @@
     "education": 3
    },
    "Warangal": {
-    "agri": 4,
+    "agri": 3,
     "health": 2,
-    "other": 1,
-    "water": 1
+    "other": 1
    },
    "Siddipet": {
     "other": 2,
     "health": 1
-   },
-   "Nirmal": {
-    "water": 2,
-    "other": 1
    },
    "Jogulamba Gadwal": {
     "other": 2
@@ -202,8 +200,7 @@
     "health": 1
    },
    "Ranga Reddy": {
-    "roads": 1,
-    "education": 1
+    "roads": 1
    },
    "Kumuram Bheem Asifabad": {
     "other": 1,
@@ -216,12 +213,6 @@
    },
    "Narayanpet": {
     "water": 1
-   },
-   "Nizamabad": {
-    "nutrition": 1
-   },
-   "Karimnagar": {
-    "roads": 1
    }
   }
  }
