@@ -1,29 +1,27 @@
 {
- "updated": "2026-11-11T19:17",
+ "updated": "2026-11-11T22:17",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "other": 139,
     "agri": 65,
-    "other": 135,
+    "power": 8,
     "health": 21,
     "water": 15,
     "education": 33,
-    "sanitation": 5,
+    "sanitation": 6,
     "elderly": 14,
     "roads": 8,
     "nutrition": 9,
     "housing": 11,
     "social": 2,
-    "women": 10,
+    "women": 9,
     "certs": 2,
-    "power": 8,
     "disaster": 7,
     "livelihood": 1
    },
-   "Nizamabad": {
-    "water": 1
-   },
    "Hyderabad": {
+    "sanitation": 2,
     "other": 17,
     "water": 3,
     "housing": 1,
@@ -31,6 +29,9 @@
     "health": 1,
     "women": 1,
     "power": 1
+   },
+   "Nizamabad": {
+    "water": 1
    },
    "Jangaon": {
     "agri": 2,
@@ -121,10 +122,11 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "education": 38,
+    "other": 247,
+    "sanitation": 9,
+    "education": 39,
     "agri": 36,
-    "other": 246,
-    "sanitation": 8,
+    "social": 4,
     "health": 23,
     "disaster": 40,
     "water": 6,
@@ -136,7 +138,6 @@
     "certs": 1,
     "elderly": 2,
     "housing": 4,
-    "social": 3,
     "child": 2,
     "iddocs": 1
    },
