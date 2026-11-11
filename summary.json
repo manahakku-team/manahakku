@@ -1,117 +1,18 @@
 {
- "updated": "2026-11-11T13:28",
+ "updated": "2026-11-11T16:07",
  "last7days_trusted": {
-  "ap": {
-   "(state-wide / unknown)": {
-    "other": 251,
-    "disaster": 41,
-    "water": 7,
-    "education": 38,
-    "agri": 37,
-    "health": 23,
-    "power": 12,
-    "women": 8,
-    "roads": 8,
-    "livelihood": 8,
-    "nutrition": 13,
-    "certs": 1,
-    "sanitation": 6,
-    "elderly": 2,
-    "housing": 4,
-    "social": 3,
-    "child": 2,
-    "iddocs": 1
-   },
-   "NTR": {
-    "power": 1,
-    "other": 12,
-    "roads": 2,
-    "housing": 1
-   },
-   "Sri Sathya Sai": {
-    "other": 1
-   },
-   "Ananthapuramu": {
-    "other": 1,
-    "education": 4,
-    "water": 1
-   },
-   "Krishna": {
-    "other": 3,
-    "agri": 1
-   },
-   "East Godavari": {
-    "roads": 1,
-    "other": 1,
-    "agri": 1
-   },
-   "Parvathipuram Manyam": {
-    "other": 1,
-    "disaster": 1
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "other": 3,
-    "health": 1
-   },
-   "Palnadu": {
-    "other": 3
-   },
-   "Prakasam": {
-    "power": 1,
-    "elderly": 1,
-    "other": 1
-   },
-   "West Godavari": {
-    "agri": 1,
-    "other": 2
-   },
-   "Chittoor": {
-    "power": 1
-   },
-   "Tirupati": {
-    "other": 2
-   },
-   "Nandyal": {
-    "water": 2,
-    "other": 1
-   },
-   "Annamayya": {
-    "water": 1,
-    "sanitation": 1
-   },
-   "Visakhapatnam": {
-    "other": 3
-   },
-   "Guntur": {
-    "other": 2,
-    "water": 1
-   },
-   "Srikakulam": {
-    "other": 1
-   },
-   "Dr. B. R. Ambedkar Konaseema": {
-    "other": 1
-   },
-   "Bapatla": {
-    "elderly": 1,
-    "agri": 2
-   },
-   "Eluru": {
-    "disaster": 1
-   }
-  },
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 67,
-    "other": 133,
+    "other": 136,
     "health": 21,
+    "water": 16,
+    "agri": 67,
     "education": 36,
     "sanitation": 5,
     "elderly": 14,
-    "roads": 11,
-    "water": 14,
+    "roads": 10,
     "nutrition": 11,
-    "housing": 11,
+    "housing": 12,
     "social": 2,
     "women": 11,
     "certs": 2,
@@ -120,8 +21,8 @@
     "livelihood": 1
    },
    "Nirmal": {
-    "agri": 1,
-    "water": 2
+    "water": 3,
+    "agri": 1
    },
    "Hyderabad": {
     "water": 3,
@@ -179,8 +80,7 @@
     "other": 2
    },
    "Khammam": {
-    "agri": 1,
-    "other": 1
+    "agri": 1
    },
    "Suryapet": {
     "housing": 2
@@ -190,7 +90,7 @@
     "agri": 1
    },
    "Nalgonda": {
-    "housing": 2
+    "housing": 1
    },
    "Jagtial": {
     "education": 1,
@@ -208,11 +108,107 @@
     "education": 1
    },
    "Medak": {
-    "health": 2,
+    "health": 1,
     "agri": 1
    },
    "Narayanpet": {
     "water": 1
+   }
+  },
+  "ap": {
+   "(state-wide / unknown)": {
+    "other": 249,
+    "sanitation": 7,
+    "health": 23,
+    "agri": 36,
+    "disaster": 42,
+    "water": 6,
+    "education": 37,
+    "power": 12,
+    "women": 8,
+    "roads": 8,
+    "livelihood": 8,
+    "nutrition": 13,
+    "certs": 1,
+    "elderly": 2,
+    "housing": 4,
+    "social": 3,
+    "child": 2,
+    "iddocs": 1
+   },
+   "Visakhapatnam": {
+    "other": 4
+   },
+   "Chittoor": {
+    "water": 1,
+    "power": 1
+   },
+   "NTR": {
+    "power": 1,
+    "other": 12,
+    "roads": 2,
+    "housing": 1
+   },
+   "Sri Sathya Sai": {
+    "other": 1
+   },
+   "Ananthapuramu": {
+    "other": 1,
+    "education": 4,
+    "water": 1
+   },
+   "Krishna": {
+    "other": 3,
+    "agri": 1
+   },
+   "East Godavari": {
+    "roads": 1,
+    "other": 1,
+    "agri": 1
+   },
+   "Parvathipuram Manyam": {
+    "other": 1,
+    "disaster": 1
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "other": 3,
+    "health": 1
+   },
+   "Palnadu": {
+    "other": 3
+   },
+   "Prakasam": {
+    "power": 1,
+    "elderly": 1,
+    "other": 1
+   },
+   "West Godavari": {
+    "agri": 1,
+    "other": 1
+   },
+   "Tirupati": {
+    "other": 2
+   },
+   "Nandyal": {
+    "water": 2,
+    "other": 1
+   },
+   "Annamayya": {
+    "water": 1,
+    "sanitation": 1
+   },
+   "Guntur": {
+    "other": 2
+   },
+   "Srikakulam": {
+    "other": 1
+   },
+   "Dr. B. R. Ambedkar Konaseema": {
+    "other": 1
+   },
+   "Bapatla": {
+    "elderly": 1,
+    "agri": 2
    }
   }
  }
