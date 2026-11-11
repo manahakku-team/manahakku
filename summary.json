@@ -1,44 +1,48 @@
 {
- "updated": "2026-11-11T16:07",
+ "updated": "2026-11-11T19:17",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 136,
+    "agri": 65,
+    "other": 135,
     "health": 21,
-    "water": 16,
-    "agri": 67,
-    "education": 36,
+    "water": 15,
+    "education": 33,
     "sanitation": 5,
     "elderly": 14,
-    "roads": 10,
-    "nutrition": 11,
-    "housing": 12,
+    "roads": 8,
+    "nutrition": 9,
+    "housing": 11,
     "social": 2,
-    "women": 11,
+    "women": 10,
     "certs": 2,
     "power": 8,
-    "disaster": 8,
+    "disaster": 7,
     "livelihood": 1
    },
-   "Nirmal": {
-    "water": 3,
-    "agri": 1
+   "Nizamabad": {
+    "water": 1
    },
    "Hyderabad": {
+    "other": 17,
     "water": 3,
-    "other": 16,
     "housing": 1,
     "roads": 1,
     "health": 1,
     "women": 1,
     "power": 1
    },
-   "Medchal–Malkajgiri": {
-    "other": 1
-   },
    "Jangaon": {
-    "agri": 1,
+    "agri": 2,
     "education": 3
+   },
+   "Nirmal": {
+    "water": 3,
+    "agri": 1
+   },
+   "Medchal–Malkajgiri": {
+    "livelihood": 1,
+    "other": 1
    },
    "Warangal": {
     "agri": 3,
@@ -117,18 +121,18 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 249,
-    "sanitation": 7,
-    "health": 23,
+    "education": 38,
     "agri": 36,
-    "disaster": 42,
+    "other": 246,
+    "sanitation": 8,
+    "health": 23,
+    "disaster": 40,
     "water": 6,
-    "education": 37,
     "power": 12,
     "women": 8,
     "roads": 8,
     "livelihood": 8,
-    "nutrition": 13,
+    "nutrition": 12,
     "certs": 1,
     "elderly": 2,
     "housing": 4,
@@ -145,7 +149,7 @@
    },
    "NTR": {
     "power": 1,
-    "other": 12,
+    "other": 11,
     "roads": 2,
     "housing": 1
    },
@@ -187,7 +191,7 @@
     "other": 1
    },
    "Tirupati": {
-    "other": 2
+    "other": 1
    },
    "Nandyal": {
     "water": 2,
