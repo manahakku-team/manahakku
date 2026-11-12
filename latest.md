@@ -1,4 +1,4 @@
-# Mana Hakku daily quality check, 2026-11-11
+# Mana Hakku daily quality check, 2026-11-12
 
 Build: 6bb91ff "I face this too" on every report: one tap, no name, one count per phone; reporter
 
@@ -36,17 +36,17 @@ Website
   OK  built-in fonts
   OK  no Google Fonts request
 Register (read only)
-  OK  ap: 9 reports, 0 hidden, newest 2026-11-05
+  OK  ap: 10 reports, 0 hidden, newest 2026-11-11
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (16 days ago)
+  OK  finance data updated 2026-10-26 (17 days ago)
 LIVE_BAD 0
 ```
 
 ## 4. Live news check (real Google News through the register)
 ```
 OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 2 naming the district
-      - దేవరపల్లి: జెన్‌జీ సైతం వైఎస్‌ జగన్‌ వెంటే..
+      - Gopalapuram: ఆగస్టు 5న వైఎస్సార్‌సీపీ అధినేత వైఎస్ జగన్ మోహన్ రెడ్డి పర్యటన
       - Deputy CM Pawan Kalyan: నేడు నిడదవోలుకు పవన్‌ కల్యాణ్‌.. ‘అమరజీవి జలధారా’కు శంకుస్థాపన..
 OK   ap en "Drinking water shortage in villages" @ Guntur: 1 naming the district
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
