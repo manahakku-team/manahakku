@@ -1,17 +1,21 @@
 {
- "updated": "2026-11-12T13:31",
+ "updated": "2026-11-12T16:19",
  "last7days_trusted": {
   "ap": {
+   "Visakhapatnam": {
+    "roads": 2,
+    "other": 5
+   },
    "(state-wide / unknown)": {
-    "social": 6,
-    "other": 233,
     "disaster": 35,
+    "other": 241,
+    "power": 12,
+    "social": 6,
     "iddocs": 2,
     "education": 37,
-    "child": 3,
+    "child": 2,
     "sanitation": 11,
     "agri": 35,
-    "power": 12,
     "water": 9,
     "nutrition": 12,
     "health": 24,
@@ -20,18 +24,21 @@
     "livelihood": 6,
     "certs": 1,
     "elderly": 2,
-    "housing": 3
+    "housing": 2
+   },
+   "Kurnool": {
+    "water": 1
    },
    "Chittoor": {
     "other": 1,
     "water": 1,
     "power": 1
    },
-   "Visakhapatnam": {
-    "other": 4
+   "Eluru": {
+    "other": 1
    },
    "Krishna": {
-    "other": 4,
+    "other": 5,
     "agri": 1
    },
    "NTR": {
@@ -103,21 +110,30 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 142,
+    "water": 17,
+    "education": 33,
+    "roads": 8,
+    "other": 141,
     "agri": 62,
-    "education": 32,
-    "water": 15,
-    "health": 20,
+    "health": 19,
     "sanitation": 6,
     "nutrition": 10,
     "housing": 12,
     "power": 6,
     "elderly": 14,
-    "roads": 7,
     "social": 2,
     "women": 8,
     "certs": 2,
     "disaster": 4
+   },
+   "Hyderabad": {
+    "other": 17,
+    "sanitation": 2,
+    "water": 2,
+    "housing": 1,
+    "roads": 1,
+    "health": 1,
+    "women": 1
    },
    "Narayanpet": {
     "water": 1
@@ -125,15 +141,6 @@
    "Ranga Reddy": {
     "child": 1,
     "roads": 1
-   },
-   "Hyderabad": {
-    "sanitation": 2,
-    "other": 16,
-    "water": 2,
-    "housing": 1,
-    "roads": 1,
-    "health": 1,
-    "women": 1
    },
    "Nizamabad": {
     "water": 1
@@ -156,8 +163,7 @@
     "other": 1
    },
    "Siddipet": {
-    "other": 2,
-    "health": 1
+    "other": 2
    },
    "Jogulamba Gadwal": {
     "other": 2
@@ -166,7 +172,7 @@
     "education": 1
    },
    "Adilabad": {
-    "agri": 2,
+    "agri": 1,
     "water": 1,
     "other": 2
    },
@@ -210,10 +216,6 @@
    "Kumuram Bheem Asifabad": {
     "other": 1,
     "water": 1
-   },
-   "Medak": {
-    "health": 1,
-    "agri": 1
    }
   }
  }
