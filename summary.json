@@ -1,24 +1,23 @@
 {
- "updated": "2026-11-11T22:17",
+ "updated": "2026-11-12T01:31",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 139,
-    "agri": 65,
-    "power": 8,
-    "health": 21,
+    "nutrition": 11,
+    "other": 137,
+    "education": 32,
+    "agri": 64,
+    "power": 6,
+    "health": 20,
     "water": 15,
-    "education": 33,
     "sanitation": 6,
     "elderly": 14,
-    "roads": 8,
-    "nutrition": 9,
+    "roads": 7,
     "housing": 11,
     "social": 2,
     "women": 9,
     "certs": 2,
-    "disaster": 7,
-    "livelihood": 1
+    "disaster": 6
    },
    "Hyderabad": {
     "sanitation": 2,
@@ -78,7 +77,7 @@
    "Vikarabad": {
     "other": 2,
     "housing": 1,
-    "agri": 2,
+    "agri": 1,
     "elderly": 1
    },
    "Yadadri Bhuvanagiri": {
@@ -122,19 +121,19 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 247,
+    "water": 8,
+    "other": 242,
     "sanitation": 9,
-    "education": 39,
-    "agri": 36,
+    "education": 37,
+    "agri": 35,
+    "nutrition": 13,
     "social": 4,
     "health": 23,
-    "disaster": 40,
-    "water": 6,
+    "disaster": 39,
     "power": 12,
     "women": 8,
     "roads": 8,
     "livelihood": 8,
-    "nutrition": 12,
     "certs": 1,
     "elderly": 2,
     "housing": 4,
