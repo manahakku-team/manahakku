@@ -1,33 +1,45 @@
 {
- "updated": "2026-11-12T16:19",
+ "updated": "2026-11-12T19:14",
  "last7days_trusted": {
   "ap": {
-   "Visakhapatnam": {
-    "roads": 2,
-    "other": 5
+   "Ananthapuramu": {
+    "other": 2,
+    "education": 4,
+    "water": 1
    },
    "(state-wide / unknown)": {
-    "disaster": 35,
-    "other": 241,
-    "power": 12,
+    "health": 26,
+    "education": 36,
+    "power": 13,
+    "water": 10,
+    "disaster": 33,
+    "other": 237,
     "social": 6,
     "iddocs": 2,
-    "education": 37,
     "child": 2,
-    "sanitation": 11,
+    "sanitation": 12,
     "agri": 35,
-    "water": 9,
     "nutrition": 12,
-    "health": 24,
     "women": 8,
     "roads": 7,
-    "livelihood": 6,
+    "livelihood": 5,
     "certs": 1,
     "elderly": 2,
     "housing": 2
    },
+   "Visakhapatnam": {
+    "women": 1,
+    "roads": 2,
+    "other": 5
+   },
    "Kurnool": {
     "water": 1
+   },
+   "Prakasam": {
+    "livelihood": 1,
+    "agri": 1,
+    "power": 1,
+    "elderly": 1
    },
    "Chittoor": {
     "other": 1,
@@ -44,8 +56,8 @@
    "NTR": {
     "disaster": 1,
     "power": 1,
-    "other": 11,
-    "roads": 2,
+    "other": 10,
+    "roads": 1,
     "housing": 1
    },
    "Bapatla": {
@@ -59,11 +71,6 @@
    },
    "Sri Sathya Sai": {
     "other": 1
-   },
-   "Ananthapuramu": {
-    "other": 1,
-    "education": 4,
-    "water": 1
    },
    "East Godavari": {
     "roads": 1,
@@ -80,11 +87,6 @@
    },
    "Palnadu": {
     "other": 3
-   },
-   "Prakasam": {
-    "power": 1,
-    "elderly": 1,
-    "other": 1
    },
    "West Godavari": {
     "agri": 1,
@@ -110,12 +112,12 @@
   },
   "ts": {
    "(state-wide / unknown)": {
+    "agri": 67,
+    "health": 20,
+    "education": 34,
     "water": 17,
-    "education": 33,
     "roads": 8,
-    "other": 141,
-    "agri": 62,
-    "health": 19,
+    "other": 139,
     "sanitation": 6,
     "nutrition": 10,
     "housing": 12,
@@ -124,10 +126,10 @@
     "social": 2,
     "women": 8,
     "certs": 2,
-    "disaster": 4
+    "disaster": 2
    },
    "Hyderabad": {
-    "other": 17,
+    "other": 16,
     "sanitation": 2,
     "water": 2,
     "housing": 1,
@@ -159,8 +161,7 @@
    },
    "Warangal": {
     "agri": 2,
-    "health": 2,
-    "other": 1
+    "health": 2
    },
    "Siddipet": {
     "other": 2
@@ -212,10 +213,6 @@
    },
    "Rajanna Sircilla": {
     "health": 1
-   },
-   "Kumuram Bheem Asifabad": {
-    "other": 1,
-    "water": 1
    }
   }
  }
