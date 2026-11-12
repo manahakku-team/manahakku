@@ -1,147 +1,34 @@
 {
- "updated": "2026-11-12T01:31",
+ "updated": "2026-11-12T04:12",
  "last7days_trusted": {
-  "ts": {
-   "(state-wide / unknown)": {
-    "nutrition": 11,
-    "other": 137,
-    "education": 32,
-    "agri": 64,
-    "power": 6,
-    "health": 20,
-    "water": 15,
-    "sanitation": 6,
-    "elderly": 14,
-    "roads": 7,
-    "housing": 11,
-    "social": 2,
-    "women": 9,
-    "certs": 2,
-    "disaster": 6
-   },
-   "Hyderabad": {
-    "sanitation": 2,
-    "other": 17,
-    "water": 3,
-    "housing": 1,
-    "roads": 1,
-    "health": 1,
-    "women": 1,
-    "power": 1
-   },
-   "Nizamabad": {
-    "water": 1
-   },
-   "Jangaon": {
-    "agri": 2,
-    "education": 3
-   },
-   "Nirmal": {
-    "water": 3,
-    "agri": 1
-   },
-   "Medchal–Malkajgiri": {
-    "livelihood": 1,
-    "other": 1
-   },
-   "Warangal": {
-    "agri": 3,
-    "health": 2,
-    "other": 1
-   },
-   "Siddipet": {
-    "other": 2,
-    "health": 1
-   },
-   "Jogulamba Gadwal": {
-    "other": 2
-   },
-   "Nagarkurnool": {
-    "education": 1
-   },
-   "Adilabad": {
-    "agri": 2,
-    "water": 1,
-    "other": 3
-   },
-   "Sangareddy": {
-    "agri": 1,
-    "other": 1,
-    "education": 1
-   },
-   "Mancherial": {
-    "agri": 1,
-    "water": 1,
-    "other": 1
-   },
-   "Vikarabad": {
-    "other": 2,
-    "housing": 1,
-    "agri": 1,
-    "elderly": 1
-   },
-   "Yadadri Bhuvanagiri": {
-    "other": 2
-   },
-   "Khammam": {
-    "agri": 1
-   },
-   "Suryapet": {
-    "housing": 2
-   },
-   "Bhadradri Kothagudem": {
-    "health": 1,
-    "agri": 1
-   },
-   "Nalgonda": {
-    "housing": 1
-   },
-   "Jagtial": {
-    "education": 1,
-    "agri": 1
-   },
-   "Rajanna Sircilla": {
-    "health": 1
-   },
-   "Ranga Reddy": {
-    "roads": 1
-   },
-   "Kumuram Bheem Asifabad": {
-    "other": 1,
-    "water": 1,
-    "education": 1
-   },
-   "Medak": {
-    "health": 1,
-    "agri": 1
-   },
-   "Narayanpet": {
-    "water": 1
-   }
-  },
   "ap": {
    "(state-wide / unknown)": {
-    "water": 8,
-    "other": 242,
-    "sanitation": 9,
-    "education": 37,
     "agri": 35,
-    "nutrition": 13,
-    "social": 4,
-    "health": 23,
-    "disaster": 39,
+    "other": 238,
     "power": 12,
+    "water": 9,
+    "sanitation": 9,
+    "education": 35,
+    "nutrition": 12,
+    "health": 24,
+    "social": 4,
+    "disaster": 37,
     "women": 8,
-    "roads": 8,
-    "livelihood": 8,
+    "roads": 7,
+    "livelihood": 7,
     "certs": 1,
     "elderly": 2,
     "housing": 4,
     "child": 2,
     "iddocs": 1
    },
+   "Bapatla": {
+    "sanitation": 1,
+    "elderly": 1,
+    "agri": 2
+   },
    "Visakhapatnam": {
-    "other": 4
+    "other": 3
    },
    "Chittoor": {
     "water": 1,
@@ -209,10 +96,122 @@
    },
    "Dr. B. R. Ambedkar Konaseema": {
     "other": 1
+   }
+  },
+  "ts": {
+   "(state-wide / unknown)": {
+    "education": 33,
+    "other": 136,
+    "water": 16,
+    "nutrition": 11,
+    "housing": 12,
+    "agri": 65,
+    "power": 6,
+    "health": 20,
+    "sanitation": 6,
+    "elderly": 14,
+    "roads": 7,
+    "social": 2,
+    "women": 9,
+    "certs": 2,
+    "disaster": 5
    },
-   "Bapatla": {
-    "elderly": 1,
-    "agri": 2
+   "Hyderabad": {
+    "sanitation": 2,
+    "other": 17,
+    "water": 3,
+    "housing": 1,
+    "roads": 1,
+    "health": 1,
+    "women": 1
+   },
+   "Nizamabad": {
+    "water": 1
+   },
+   "Jangaon": {
+    "agri": 2,
+    "education": 3
+   },
+   "Nirmal": {
+    "water": 3,
+    "agri": 1
+   },
+   "Medchal–Malkajgiri": {
+    "livelihood": 1,
+    "other": 1
+   },
+   "Warangal": {
+    "agri": 3,
+    "health": 2,
+    "other": 1
+   },
+   "Siddipet": {
+    "other": 2,
+    "health": 1
+   },
+   "Jogulamba Gadwal": {
+    "other": 2
+   },
+   "Nagarkurnool": {
+    "education": 1
+   },
+   "Adilabad": {
+    "agri": 2,
+    "water": 1,
+    "other": 3
+   },
+   "Sangareddy": {
+    "agri": 1,
+    "other": 1,
+    "education": 1
+   },
+   "Mancherial": {
+    "agri": 1,
+    "water": 1,
+    "other": 1
+   },
+   "Vikarabad": {
+    "other": 2,
+    "housing": 1,
+    "agri": 1,
+    "elderly": 1
+   },
+   "Yadadri Bhuvanagiri": {
+    "other": 2
+   },
+   "Khammam": {
+    "agri": 1
+   },
+   "Suryapet": {
+    "housing": 2
+   },
+   "Bhadradri Kothagudem": {
+    "health": 1
+   },
+   "Nalgonda": {
+    "housing": 1
+   },
+   "Jagtial": {
+    "education": 1,
+    "agri": 1
+   },
+   "Rajanna Sircilla": {
+    "health": 1
+   },
+   "Ranga Reddy": {
+    "roads": 1
+   },
+   "Kumuram Bheem Asifabad": {
+    "other": 1,
+    "water": 1,
+    "education": 1
+   },
+   "Medak": {
+    "health": 1,
+    "agri": 1
+   },
+   "Narayanpet": {
+    "water": 1
    }
   }
  }
