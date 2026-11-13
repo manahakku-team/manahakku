@@ -1,7 +1,11 @@
 {
- "updated": "2026-11-13T19:14",
+ "updated": "2026-11-13T21:59",
  "last7days_trusted": {
   "ts": {
+   "Warangal": {
+    "agri": 4,
+    "health": 4
+   },
    "Hyderabad": {
     "agri": 1,
     "health": 2,
@@ -14,27 +18,22 @@
    },
    "(state-wide / unknown)": {
     "education": 33,
-    "other": 135,
-    "agri": 65,
+    "other": 133,
+    "agri": 67,
+    "water": 23,
     "elderly": 17,
     "social": 2,
     "roads": 7,
-    "women": 11,
-    "water": 22,
-    "power": 4,
+    "women": 10,
+    "power": 5,
     "sanitation": 7,
     "health": 21,
-    "housing": 11,
+    "housing": 10,
     "nutrition": 8,
     "certs": 1
    },
-   "Warangal": {
-    "health": 4,
-    "agri": 3
-   },
    "Bhadradri Kothagudem": {
-    "other": 1,
-    "health": 1
+    "other": 1
    },
    "Medchal–Malkajgiri": {
     "roads": 1,
@@ -92,22 +91,16 @@
    },
    "Yadadri Bhuvanagiri": {
     "other": 1
-   },
-   "Suryapet": {
-    "housing": 1
-   },
-   "Nalgonda": {
-    "housing": 1
    }
   },
   "ap": {
    "(state-wide / unknown)": {
     "agri": 37,
-    "women": 8,
+    "other": 226,
+    "women": 7,
     "roads": 12,
     "disaster": 29,
     "sanitation": 14,
-    "other": 229,
     "housing": 3,
     "education": 35,
     "water": 14,
@@ -137,7 +130,7 @@
     "housing": 1
    },
    "Ananthapuramu": {
-    "education": 3,
+    "education": 2,
     "other": 2,
     "water": 1
    },
@@ -204,8 +197,7 @@
     "other": 1
    },
    "Annamayya": {
-    "water": 1,
-    "sanitation": 1
+    "water": 1
    },
    "Srikakulam": {
     "other": 1
