@@ -1,36 +1,36 @@
 {
- "updated": "2026-11-13T10:16",
+ "updated": "2026-11-13T13:27",
  "last7days_trusted": {
   "ts": {
-   "Hyderabad": {
-    "roads": 2,
-    "other": 14,
-    "sanitation": 2,
-    "water": 2,
-    "housing": 1,
-    "health": 1,
-    "women": 1
-   },
    "(state-wide / unknown)": {
-    "power": 5,
-    "other": 141,
-    "water": 20,
-    "agri": 66,
+    "women": 11,
+    "other": 137,
     "education": 36,
+    "agri": 64,
+    "water": 21,
+    "power": 4,
     "sanitation": 7,
     "health": 22,
     "housing": 11,
     "elderly": 15,
     "roads": 7,
-    "nutrition": 10,
+    "nutrition": 9,
     "social": 2,
-    "women": 8,
     "certs": 2,
     "disaster": 1
    },
+   "Hyderabad": {
+    "housing": 2,
+    "other": 15,
+    "roads": 2,
+    "sanitation": 2,
+    "water": 1,
+    "health": 1,
+    "women": 1
+   },
    "Warangal": {
-    "agri": 3,
-    "health": 3
+    "health": 4,
+    "agri": 3
    },
    "Medchal–Malkajgiri": {
     "roads": 1,
@@ -69,7 +69,7 @@
    "Adilabad": {
     "agri": 1,
     "water": 1,
-    "other": 2
+    "other": 1
    },
    "Sangareddy": {
     "agri": 1,
@@ -107,25 +107,30 @@
    }
   },
   "ap": {
+   "Visakhapatnam": {
+    "other": 6,
+    "women": 1,
+    "roads": 2
+   },
    "(state-wide / unknown)": {
-    "other": 238,
+    "other": 233,
+    "housing": 3,
+    "agri": 36,
     "sanitation": 12,
     "roads": 10,
     "women": 7,
-    "agri": 35,
-    "disaster": 32,
+    "disaster": 28,
+    "education": 34,
     "water": 13,
-    "power": 13,
+    "power": 14,
     "health": 27,
-    "nutrition": 12,
-    "education": 35,
+    "nutrition": 10,
     "social": 5,
     "iddocs": 1,
-    "child": 2,
+    "child": 1,
     "livelihood": 3,
     "certs": 1,
-    "elderly": 2,
-    "housing": 2
+    "elderly": 2
    },
    "Kurnool": {
     "other": 1,
@@ -138,11 +143,6 @@
     "other": 2,
     "education": 3,
     "water": 1
-   },
-   "Visakhapatnam": {
-    "women": 1,
-    "roads": 2,
-    "other": 5
    },
    "Prakasam": {
     "livelihood": 1,
@@ -171,7 +171,7 @@
    "Bapatla": {
     "sanitation": 1,
     "elderly": 1,
-    "agri": 2
+    "agri": 1
    },
    "Guntur": {
     "water": 1,
