@@ -1,36 +1,39 @@
 {
- "updated": "2026-11-13T13:27",
+ "updated": "2026-11-13T16:04",
  "last7days_trusted": {
   "ts": {
-   "(state-wide / unknown)": {
-    "women": 11,
-    "other": 137,
-    "education": 36,
-    "agri": 64,
-    "water": 21,
-    "power": 4,
-    "sanitation": 7,
-    "health": 22,
-    "housing": 11,
-    "elderly": 15,
-    "roads": 7,
-    "nutrition": 9,
-    "social": 2,
-    "certs": 2,
-    "disaster": 1
-   },
    "Hyderabad": {
+    "other": 17,
     "housing": 2,
-    "other": 15,
     "roads": 2,
     "sanitation": 2,
     "water": 1,
     "health": 1,
     "women": 1
    },
+   "(state-wide / unknown)": {
+    "other": 132,
+    "social": 2,
+    "roads": 7,
+    "agri": 64,
+    "women": 11,
+    "education": 32,
+    "water": 22,
+    "power": 4,
+    "sanitation": 7,
+    "health": 21,
+    "housing": 11,
+    "elderly": 15,
+    "nutrition": 8,
+    "certs": 2
+   },
    "Warangal": {
     "health": 4,
     "agri": 3
+   },
+   "Bhadradri Kothagudem": {
+    "other": 1,
+    "health": 1
    },
    "Medchal–Malkajgiri": {
     "roads": 1,
@@ -51,7 +54,7 @@
    },
    "Jangaon": {
     "agri": 2,
-    "education": 3
+    "education": 2
    },
    "Nirmal": {
     "water": 3,
@@ -92,49 +95,43 @@
    "Suryapet": {
     "housing": 1
    },
-   "Bhadradri Kothagudem": {
-    "health": 1
-   },
    "Nalgonda": {
     "housing": 1
    },
    "Jagtial": {
     "education": 1,
     "agri": 1
-   },
-   "Rajanna Sircilla": {
-    "health": 1
    }
   },
   "ap": {
+   "Kurnool": {
+    "other": 2,
+    "water": 2
+   },
    "Visakhapatnam": {
     "other": 6,
     "women": 1,
     "roads": 2
    },
    "(state-wide / unknown)": {
-    "other": 233,
+    "other": 228,
+    "sanitation": 13,
     "housing": 3,
-    "agri": 36,
-    "sanitation": 12,
+    "agri": 35,
     "roads": 10,
     "women": 7,
     "disaster": 28,
     "education": 34,
-    "water": 13,
-    "power": 14,
+    "water": 14,
+    "power": 13,
     "health": 27,
-    "nutrition": 10,
+    "nutrition": 9,
     "social": 5,
     "iddocs": 1,
     "child": 1,
     "livelihood": 3,
     "certs": 1,
     "elderly": 2
-   },
-   "Kurnool": {
-    "other": 1,
-    "water": 2
    },
    "Kakinada": {
     "other": 1
@@ -170,8 +167,7 @@
    },
    "Bapatla": {
     "sanitation": 1,
-    "elderly": 1,
-    "agri": 1
+    "elderly": 1
    },
    "Guntur": {
     "water": 1,
@@ -186,12 +182,10 @@
     "agri": 1
    },
    "Parvathipuram Manyam": {
-    "other": 1,
-    "disaster": 1
+    "other": 1
    },
    "Sri Potti Sriramulu Nellore": {
-    "other": 1,
-    "health": 1
+    "other": 1
    },
    "Palnadu": {
     "other": 3
