@@ -1,136 +1,27 @@
 {
- "updated": "2026-11-13T04:12",
+ "updated": "2026-11-13T07:35",
  "last7days_trusted": {
-  "ap": {
-   "(state-wide / unknown)": {
-    "other": 240,
-    "water": 11,
-    "power": 12,
-    "health": 27,
-    "nutrition": 12,
-    "agri": 35,
-    "disaster": 32,
-    "education": 36,
-    "social": 5,
-    "iddocs": 2,
-    "child": 2,
-    "sanitation": 11,
-    "women": 8,
-    "roads": 7,
-    "livelihood": 3,
-    "certs": 1,
-    "elderly": 2,
-    "housing": 2
-   },
-   "Kurnool": {
-    "water": 2
-   },
-   "Ananthapuramu": {
-    "other": 2,
-    "education": 4,
-    "water": 1
-   },
-   "Visakhapatnam": {
-    "women": 1,
-    "roads": 2,
-    "other": 5
-   },
-   "Prakasam": {
-    "livelihood": 1,
-    "agri": 1,
-    "power": 1,
-    "elderly": 1
-   },
-   "Chittoor": {
-    "other": 1,
-    "water": 1,
-    "power": 1
-   },
-   "Eluru": {
-    "other": 1
-   },
-   "Krishna": {
-    "other": 6,
-    "agri": 1
-   },
-   "NTR": {
-    "disaster": 1,
-    "power": 1,
-    "other": 10,
-    "roads": 1,
-    "housing": 1
-   },
-   "Bapatla": {
-    "sanitation": 1,
-    "elderly": 1,
-    "agri": 2
-   },
-   "Guntur": {
-    "water": 1,
-    "other": 1
-   },
-   "Sri Sathya Sai": {
-    "other": 1
-   },
-   "East Godavari": {
-    "roads": 1,
-    "other": 1,
-    "agri": 1
-   },
-   "Parvathipuram Manyam": {
-    "other": 1,
-    "disaster": 1
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "other": 3,
-    "health": 1
-   },
-   "Palnadu": {
-    "other": 3
-   },
-   "West Godavari": {
-    "agri": 1,
-    "other": 1
-   },
-   "Tirupati": {
-    "other": 1
-   },
-   "Nandyal": {
-    "water": 2,
-    "other": 1
-   },
-   "Annamayya": {
-    "water": 1,
-    "sanitation": 1
-   },
-   "Srikakulam": {
-    "other": 1
-   },
-   "Dr. B. R. Ambedkar Konaseema": {
-    "other": 1
-   }
-  },
   "ts": {
-   "Warangal": {
-    "health": 3,
-    "agri": 2
-   },
    "(state-wide / unknown)": {
-    "agri": 66,
+    "other": 140,
+    "water": 20,
+    "agri": 67,
     "education": 36,
-    "water": 19,
-    "other": 139,
     "sanitation": 7,
     "health": 23,
-    "housing": 12,
+    "housing": 11,
     "elderly": 15,
     "roads": 8,
     "nutrition": 10,
-    "power": 5,
+    "power": 4,
     "social": 2,
     "women": 8,
     "certs": 2,
     "disaster": 1
+   },
+   "Warangal": {
+    "agri": 3,
+    "health": 3
    },
    "Medchal–Malkajgiri": {
     "roads": 1,
@@ -141,7 +32,7 @@
     "agri": 2
    },
    "Hyderabad": {
-    "other": 16,
+    "other": 15,
     "sanitation": 2,
     "water": 2,
     "housing": 1,
@@ -153,8 +44,7 @@
     "water": 1
    },
    "Ranga Reddy": {
-    "child": 1,
-    "roads": 1
+    "child": 1
    },
    "Nizamabad": {
     "water": 1
@@ -200,7 +90,7 @@
     "other": 1
    },
    "Suryapet": {
-    "housing": 2
+    "housing": 1
    },
    "Bhadradri Kothagudem": {
     "health": 1
@@ -214,6 +104,119 @@
    },
    "Rajanna Sircilla": {
     "health": 1
+   }
+  },
+  "ap": {
+   "(state-wide / unknown)": {
+    "other": 239,
+    "roads": 10,
+    "agri": 35,
+    "disaster": 32,
+    "water": 12,
+    "power": 13,
+    "health": 27,
+    "nutrition": 12,
+    "education": 35,
+    "social": 5,
+    "iddocs": 2,
+    "child": 2,
+    "sanitation": 11,
+    "women": 6,
+    "livelihood": 3,
+    "certs": 1,
+    "elderly": 2,
+    "housing": 2
+   },
+   "Kurnool": {
+    "other": 1,
+    "water": 2
+   },
+   "Kakinada": {
+    "other": 1
+   },
+   "Ananthapuramu": {
+    "other": 2,
+    "education": 3,
+    "water": 1
+   },
+   "Visakhapatnam": {
+    "women": 1,
+    "roads": 2,
+    "other": 5
+   },
+   "Prakasam": {
+    "livelihood": 1,
+    "agri": 1,
+    "power": 1
+   },
+   "Chittoor": {
+    "other": 1,
+    "water": 1,
+    "power": 1
+   },
+   "Eluru": {
+    "other": 1
+   },
+   "Krishna": {
+    "other": 6,
+    "agri": 1
+   },
+   "NTR": {
+    "disaster": 1,
+    "power": 1,
+    "other": 10,
+    "roads": 1,
+    "housing": 1
+   },
+   "Bapatla": {
+    "sanitation": 1,
+    "elderly": 1,
+    "agri": 2
+   },
+   "Guntur": {
+    "water": 1,
+    "other": 1
+   },
+   "Sri Sathya Sai": {
+    "other": 1
+   },
+   "East Godavari": {
+    "roads": 1,
+    "other": 1,
+    "agri": 1
+   },
+   "Parvathipuram Manyam": {
+    "other": 1,
+    "disaster": 1
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "other": 2,
+    "health": 1
+   },
+   "Palnadu": {
+    "other": 3
+   },
+   "West Godavari": {
+    "agri": 1,
+    "disaster": 1,
+    "other": 1
+   },
+   "Tirupati": {
+    "other": 1
+   },
+   "Nandyal": {
+    "water": 2,
+    "other": 1
+   },
+   "Annamayya": {
+    "water": 1,
+    "sanitation": 1
+   },
+   "Srikakulam": {
+    "other": 1
+   },
+   "Dr. B. R. Ambedkar Konaseema": {
+    "other": 1
    }
   }
  }
