@@ -1,31 +1,32 @@
 {
- "updated": "2026-11-13T16:04",
+ "updated": "2026-11-13T19:14",
  "last7days_trusted": {
   "ts": {
    "Hyderabad": {
-    "other": 17,
+    "agri": 1,
+    "health": 2,
+    "other": 16,
     "housing": 2,
     "roads": 2,
     "sanitation": 2,
     "water": 1,
-    "health": 1,
     "women": 1
    },
    "(state-wide / unknown)": {
-    "other": 132,
+    "education": 33,
+    "other": 135,
+    "agri": 65,
+    "elderly": 17,
     "social": 2,
     "roads": 7,
-    "agri": 64,
     "women": 11,
-    "education": 32,
     "water": 22,
     "power": 4,
     "sanitation": 7,
     "health": 21,
     "housing": 11,
-    "elderly": 15,
     "nutrition": 8,
-    "certs": 2
+    "certs": 1
    },
    "Warangal": {
     "health": 4,
@@ -97,31 +98,18 @@
    },
    "Nalgonda": {
     "housing": 1
-   },
-   "Jagtial": {
-    "education": 1,
-    "agri": 1
    }
   },
   "ap": {
-   "Kurnool": {
-    "other": 2,
-    "water": 2
-   },
-   "Visakhapatnam": {
-    "other": 6,
-    "women": 1,
-    "roads": 2
-   },
    "(state-wide / unknown)": {
-    "other": 228,
-    "sanitation": 13,
+    "agri": 37,
+    "women": 8,
+    "roads": 12,
+    "disaster": 29,
+    "sanitation": 14,
+    "other": 229,
     "housing": 3,
-    "agri": 35,
-    "roads": 10,
-    "women": 7,
-    "disaster": 28,
-    "education": 34,
+    "education": 35,
     "water": 14,
     "power": 13,
     "health": 27,
@@ -133,13 +121,37 @@
     "certs": 1,
     "elderly": 2
    },
-   "Kakinada": {
+   "YSR Kadapa": {
     "other": 1
    },
+   "Bapatla": {
+    "disaster": 1,
+    "sanitation": 1,
+    "elderly": 1
+   },
+   "NTR": {
+    "other": 10,
+    "disaster": 1,
+    "power": 1,
+    "roads": 1,
+    "housing": 1
+   },
    "Ananthapuramu": {
-    "other": 2,
     "education": 3,
+    "other": 2,
     "water": 1
+   },
+   "Kurnool": {
+    "other": 2,
+    "water": 2
+   },
+   "Visakhapatnam": {
+    "other": 6,
+    "women": 1,
+    "roads": 2
+   },
+   "Kakinada": {
+    "other": 1
    },
    "Prakasam": {
     "livelihood": 1,
@@ -157,17 +169,6 @@
    "Krishna": {
     "other": 6,
     "agri": 1
-   },
-   "NTR": {
-    "disaster": 1,
-    "power": 1,
-    "other": 10,
-    "roads": 1,
-    "housing": 1
-   },
-   "Bapatla": {
-    "sanitation": 1,
-    "elderly": 1
    },
    "Guntur": {
     "water": 1,
@@ -199,7 +200,7 @@
     "other": 1
    },
    "Nandyal": {
-    "water": 2,
+    "water": 1,
     "other": 1
    },
    "Annamayya": {
