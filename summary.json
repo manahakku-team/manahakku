@@ -1,19 +1,28 @@
 {
- "updated": "2026-11-13T07:35",
+ "updated": "2026-11-13T10:16",
  "last7days_trusted": {
   "ts": {
+   "Hyderabad": {
+    "roads": 2,
+    "other": 14,
+    "sanitation": 2,
+    "water": 2,
+    "housing": 1,
+    "health": 1,
+    "women": 1
+   },
    "(state-wide / unknown)": {
-    "other": 140,
+    "power": 5,
+    "other": 141,
     "water": 20,
-    "agri": 67,
+    "agri": 66,
     "education": 36,
     "sanitation": 7,
-    "health": 23,
+    "health": 22,
     "housing": 11,
     "elderly": 15,
-    "roads": 8,
+    "roads": 7,
     "nutrition": 10,
-    "power": 4,
     "social": 2,
     "women": 8,
     "certs": 2,
@@ -30,15 +39,6 @@
    },
    "Khammam": {
     "agri": 2
-   },
-   "Hyderabad": {
-    "other": 15,
-    "sanitation": 2,
-    "water": 2,
-    "housing": 1,
-    "roads": 1,
-    "health": 1,
-    "women": 1
    },
    "Narayanpet": {
     "water": 1
@@ -108,20 +108,20 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 239,
+    "other": 238,
+    "sanitation": 12,
     "roads": 10,
+    "women": 7,
     "agri": 35,
     "disaster": 32,
-    "water": 12,
+    "water": 13,
     "power": 13,
     "health": 27,
     "nutrition": 12,
     "education": 35,
     "social": 5,
-    "iddocs": 2,
+    "iddocs": 1,
     "child": 2,
-    "sanitation": 11,
-    "women": 6,
     "livelihood": 3,
     "certs": 1,
     "elderly": 2,
@@ -190,7 +190,7 @@
     "disaster": 1
    },
    "Sri Potti Sriramulu Nellore": {
-    "other": 2,
+    "other": 1,
     "health": 1
    },
    "Palnadu": {
