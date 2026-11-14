@@ -1,6 +1,6 @@
-# Mana Hakku daily quality check, 2026-11-13
+# Mana Hakku daily quality check, 2026-11-14
 
-Build: 6bb91ff "I face this too" on every report: one tap, no name, one count per phone; reporter
+Build: 6290722 Home: remove the three duplicate tabs (report, problems near me, rights); one line
 
 ## 1. App logic tests
 ```
@@ -20,7 +20,7 @@ TOTAL 0
 ## 3. Live website, register and data
 ```
 Website
-  OK  / 200 1422799
+  OK  / 200 1425225
   OK  /about.html 200 10376
   OK  /privacy.html 200 19981
   OK  /d/ 200 13148
@@ -36,10 +36,10 @@ Website
   OK  built-in fonts
   OK  no Google Fonts request
 Register (read only)
-  OK  ap: 10 reports, 0 hidden, newest 2026-11-11
+  OK  ap: 11 reports, 0 hidden, newest 2026-11-14
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (18 days ago)
+  OK  finance data updated 2026-10-26 (19 days ago)
 LIVE_BAD 0
 ```
 
@@ -55,12 +55,13 @@ OK   ap en "Road accident on highway" @ Krishna: 7 naming the district
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
       - Tipper truck plunges into Krishna River after crashing into car on Karnataka bridge; driver missing
-OK   ts en "Doctors absent at government hospital" @ Hyderabad: 3 naming the district
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 4 naming the district
       - Hyderabad: Osmania General Hospital’s new Goshamahal complex faces delays, doctors seek faster progress
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
+      - SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
 OK   ts te "రైతుల ఆందోళన" @ Khammam: 1 naming the district
-      - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
+      - Khammam: ప్రభుత్వ నిర్లక్ష్యంతోనే రైతుల కష్టాలు – పువ్వాడ అజయ్ కుమార్
 OK   ts en "Floods damage crops" @ Warangal: 2 naming the district
       - Warangal, Hanamkonda Steps Up Relief Works After Floods
       - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
