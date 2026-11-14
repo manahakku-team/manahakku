@@ -1,19 +1,118 @@
 {
- "updated": "2026-11-14T01:23",
+ "updated": "2026-11-14T04:08",
  "last7days_trusted": {
-  "ap": {
+  "ts": {
    "(state-wide / unknown)": {
+    "other": 134,
+    "agri": 65,
+    "women": 10,
+    "water": 24,
+    "education": 33,
+    "housing": 10,
+    "elderly": 17,
+    "social": 2,
+    "roads": 7,
+    "power": 5,
+    "sanitation": 7,
+    "health": 21,
+    "nutrition": 6,
+    "certs": 1
+   },
+   "Hyderabad": {
+    "power": 1,
+    "agri": 1,
+    "health": 2,
+    "other": 16,
+    "housing": 2,
+    "roads": 2,
+    "sanitation": 2,
+    "water": 1,
+    "women": 1
+   },
+   "Warangal": {
+    "agri": 4,
+    "health": 4
+   },
+   "Bhadradri Kothagudem": {
+    "other": 1
+   },
+   "Medchal–Malkajgiri": {
+    "roads": 1,
+    "livelihood": 1,
+    "other": 1
+   },
+   "Khammam": {
+    "agri": 2
+   },
+   "Narayanpet": {
+    "water": 1
+   },
+   "Ranga Reddy": {
+    "child": 1
+   },
+   "Wanaparthy": {
+    "water": 1
+   },
+   "Nizamabad": {
+    "water": 1
+   },
+   "Jangaon": {
+    "agri": 2,
+    "education": 2
+   },
+   "Nirmal": {
+    "water": 3,
+    "agri": 1
+   },
+   "Siddipet": {
+    "other": 2
+   },
+   "Jogulamba Gadwal": {
+    "other": 2
+   },
+   "Nagarkurnool": {
+    "education": 1
+   },
+   "Adilabad": {
+    "agri": 1,
+    "water": 1,
+    "other": 1
+   },
+   "Sangareddy": {
+    "agri": 1,
+    "other": 1
+   },
+   "Mancherial": {
+    "agri": 1,
+    "water": 1,
+    "other": 1
+   },
+   "Vikarabad": {
+    "other": 1,
+    "housing": 1,
+    "agri": 1,
+    "elderly": 1
+   },
+   "Yadadri Bhuvanagiri": {
+    "other": 1
+   }
+  },
+  "ap": {
+   "Anakapalli": {
+    "roads": 1
+   },
+   "(state-wide / unknown)": {
+    "other": 221,
+    "disaster": 29,
     "roads": 15,
     "agri": 34,
-    "other": 221,
     "women": 7,
-    "disaster": 29,
+    "education": 35,
     "sanitation": 14,
     "housing": 3,
-    "education": 34,
+    "health": 28,
     "water": 14,
-    "power": 13,
-    "health": 27,
+    "power": 11,
     "nutrition": 7,
     "social": 5,
     "iddocs": 1,
@@ -21,6 +120,11 @@
     "livelihood": 3,
     "certs": 1,
     "elderly": 2
+   },
+   "West Godavari": {
+    "other": 2,
+    "agri": 1,
+    "disaster": 1
    },
    "YSR Kadapa": {
     "other": 1
@@ -96,11 +200,6 @@
    "Palnadu": {
     "other": 3
    },
-   "West Godavari": {
-    "agri": 1,
-    "disaster": 1,
-    "other": 1
-   },
    "Tirupati": {
     "other": 1
    },
@@ -112,101 +211,6 @@
     "other": 1
    },
    "Dr. B. R. Ambedkar Konaseema": {
-    "other": 1
-   }
-  },
-  "ts": {
-   "(state-wide / unknown)": {
-    "other": 132,
-    "water": 23,
-    "housing": 11,
-    "agri": 65,
-    "education": 33,
-    "elderly": 17,
-    "social": 2,
-    "roads": 7,
-    "women": 9,
-    "power": 5,
-    "sanitation": 7,
-    "health": 21,
-    "nutrition": 7,
-    "certs": 1
-   },
-   "Warangal": {
-    "agri": 4,
-    "health": 4
-   },
-   "Hyderabad": {
-    "agri": 1,
-    "health": 2,
-    "other": 16,
-    "housing": 2,
-    "roads": 2,
-    "sanitation": 2,
-    "water": 1,
-    "women": 1
-   },
-   "Bhadradri Kothagudem": {
-    "other": 1
-   },
-   "Medchal–Malkajgiri": {
-    "roads": 1,
-    "livelihood": 1,
-    "other": 1
-   },
-   "Khammam": {
-    "agri": 2
-   },
-   "Narayanpet": {
-    "water": 1
-   },
-   "Ranga Reddy": {
-    "child": 1
-   },
-   "Wanaparthy": {
-    "water": 1
-   },
-   "Nizamabad": {
-    "water": 1
-   },
-   "Jangaon": {
-    "agri": 2,
-    "education": 2
-   },
-   "Nirmal": {
-    "water": 3,
-    "agri": 1
-   },
-   "Siddipet": {
-    "other": 2
-   },
-   "Jogulamba Gadwal": {
-    "other": 2
-   },
-   "Nagarkurnool": {
-    "education": 1
-   },
-   "Adilabad": {
-    "agri": 1,
-    "water": 1,
-    "other": 1
-   },
-   "Sangareddy": {
-    "agri": 1,
-    "other": 1
-   },
-   "Mancherial": {
-    "agri": 1,
-    "water": 1,
-    "other": 1
-   },
-   "Vikarabad": {
-    "other": 1,
-    "housing": 1,
-    "agri": 1,
-    "elderly": 1
-   },
-   "Yadadri Bhuvanagiri": {
     "other": 1
    }
   }
