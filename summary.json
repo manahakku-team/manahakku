@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-14T13:11",
+ "updated": "2026-11-14T15:54",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 210,
-    "health": 26,
-    "disaster": 31,
+    "other": 208,
+    "health": 24,
+    "disaster": 28,
     "education": 38,
     "roads": 17,
     "agri": 33,
@@ -21,6 +21,17 @@
     "livelihood": 3,
     "certs": 1,
     "elderly": 2
+   },
+   "East Godavari": {
+    "disaster": 1,
+    "roads": 1,
+    "other": 1
+   },
+   "Kurnool": {
+    "health": 1,
+    "education": 1,
+    "other": 2,
+    "water": 2
    },
    "Guntur": {
     "other": 2,
@@ -52,11 +63,6 @@
     "education": 2,
     "other": 2,
     "water": 1
-   },
-   "Kurnool": {
-    "education": 1,
-    "other": 2,
-    "water": 2
    },
    "Visakhapatnam": {
     "other": 6,
@@ -90,10 +96,6 @@
    "Sri Sathya Sai": {
     "other": 1
    },
-   "East Godavari": {
-    "roads": 1,
-    "other": 1
-   },
    "Parvathipuram Manyam": {
     "other": 1
    },
@@ -119,16 +121,16 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 130,
-    "education": 30,
+    "other": 128,
+    "education": 29,
     "roads": 7,
-    "agri": 65,
+    "agri": 64,
     "disaster": 1,
     "women": 10,
-    "water": 23,
+    "water": 22,
     "housing": 9,
     "health": 20,
-    "elderly": 17,
+    "elderly": 15,
     "social": 2,
     "power": 4,
     "sanitation": 7,
@@ -143,8 +145,7 @@
     "other": 14,
     "housing": 2,
     "roads": 2,
-    "sanitation": 2,
-    "women": 1
+    "sanitation": 2
    },
    "Warangal": {
     "agri": 4,
@@ -162,7 +163,7 @@
     "other": 1
    },
    "Khammam": {
-    "agri": 2
+    "agri": 1
    },
    "Narayanpet": {
     "water": 1
@@ -178,7 +179,7 @@
    },
    "Jangaon": {
     "agri": 2,
-    "education": 2
+    "education": 1
    },
    "Nirmal": {
     "water": 3,
@@ -195,8 +196,7 @@
    },
    "Adilabad": {
     "agri": 1,
-    "water": 1,
-    "other": 1
+    "water": 1
    },
    "Sangareddy": {
     "agri": 1,
@@ -212,9 +212,6 @@
     "housing": 1,
     "agri": 1,
     "elderly": 1
-   },
-   "Yadadri Bhuvanagiri": {
-    "other": 1
    }
   }
  }
