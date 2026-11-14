@@ -987,7 +987,7 @@ function weeklyIdeasDigest() {
   const ss = sheet_(SUGGESTIONS, SUGGESTION_COLS);
   const n = Math.max(0, ss.getLastRow() - 1);
   const rows = n ? ss.getRange(2, 1, n, 4).getValues() : [];
-  const all = rows.filter(r => /^\[(Safety idea|Idea)\]/.test(String(r[1] || '')));   // women's-safety drive ideas, and (from 15 Nov 2026) ideas on any problem
+  const all = rows.filter(r => /^\[(Safety idea|Idea)\]/.test(String(r[1] || '')));   // women's-safety drive ideas, and (from 27 Nov 2026) ideas on any problem
   const since = Date.now() - 7 * 24 * 3600 * 1000;
   const week = all.filter(r => r[0] instanceof Date && r[0].getTime() >= since);
   const groups = {};
