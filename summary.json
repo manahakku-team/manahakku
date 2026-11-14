@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-14T07:23",
+ "updated": "2026-11-14T10:00",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 133,
+    "other": 132,
     "roads": 7,
     "agri": 65,
     "disaster": 1,
     "women": 10,
     "water": 23,
-    "education": 32,
+    "education": 30,
     "housing": 9,
-    "health": 21,
+    "health": 20,
     "elderly": 17,
     "social": 2,
     "power": 4,
@@ -35,6 +35,9 @@
     "health": 4
    },
    "Bhadradri Kothagudem": {
+    "other": 1
+   },
+   "Nalgonda": {
     "other": 1
    },
    "Medchal–Malkajgiri": {
@@ -100,16 +103,16 @@
   },
   "ap": {
    "(state-wide / unknown)": {
+    "other": 210,
     "disaster": 31,
-    "education": 36,
-    "other": 216,
+    "health": 26,
+    "education": 38,
     "roads": 17,
-    "agri": 34,
-    "women": 7,
+    "agri": 33,
+    "women": 6,
     "sanitation": 14,
     "housing": 3,
-    "health": 27,
-    "water": 13,
+    "water": 12,
     "power": 11,
     "nutrition": 6,
     "social": 4,
@@ -119,11 +122,15 @@
     "certs": 1,
     "elderly": 2
    },
+   "Guntur": {
+    "other": 2,
+    "water": 1
+   },
    "Anakapalli": {
     "roads": 1
    },
    "West Godavari": {
-    "other": 2,
+    "other": 1,
     "agri": 1,
     "disaster": 1
    },
@@ -179,10 +186,6 @@
    "Krishna": {
     "other": 6,
     "agri": 1
-   },
-   "Guntur": {
-    "water": 1,
-    "other": 1
    },
    "Sri Sathya Sai": {
     "other": 1
