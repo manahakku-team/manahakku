@@ -1,28 +1,29 @@
 {
- "updated": "2026-11-14T04:08",
+ "updated": "2026-11-14T07:23",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 134,
+    "other": 133,
+    "roads": 7,
     "agri": 65,
+    "disaster": 1,
     "women": 10,
-    "water": 24,
-    "education": 33,
-    "housing": 10,
+    "water": 23,
+    "education": 32,
+    "housing": 9,
+    "health": 21,
     "elderly": 17,
     "social": 2,
-    "roads": 7,
-    "power": 5,
+    "power": 4,
     "sanitation": 7,
-    "health": 21,
-    "nutrition": 6,
+    "nutrition": 5,
     "certs": 1
    },
    "Hyderabad": {
     "power": 1,
     "agri": 1,
     "health": 2,
-    "other": 16,
+    "other": 15,
     "housing": 2,
     "roads": 2,
     "sanitation": 2,
@@ -98,28 +99,28 @@
    }
   },
   "ap": {
-   "Anakapalli": {
-    "roads": 1
-   },
    "(state-wide / unknown)": {
-    "other": 221,
-    "disaster": 29,
-    "roads": 15,
+    "disaster": 31,
+    "education": 36,
+    "other": 216,
+    "roads": 17,
     "agri": 34,
     "women": 7,
-    "education": 35,
     "sanitation": 14,
     "housing": 3,
-    "health": 28,
-    "water": 14,
+    "health": 27,
+    "water": 13,
     "power": 11,
-    "nutrition": 7,
-    "social": 5,
+    "nutrition": 6,
+    "social": 4,
     "iddocs": 1,
     "child": 1,
     "livelihood": 3,
     "certs": 1,
     "elderly": 2
+   },
+   "Anakapalli": {
+    "roads": 1
    },
    "West Godavari": {
     "other": 2,
@@ -131,8 +132,7 @@
    },
    "Bapatla": {
     "disaster": 1,
-    "sanitation": 1,
-    "elderly": 1
+    "sanitation": 1
    },
    "NTR": {
     "other": 10,
@@ -153,8 +153,8 @@
    },
    "Visakhapatnam": {
     "other": 6,
-    "women": 1,
-    "roads": 2
+    "roads": 3,
+    "women": 1
    },
    "Annamayya": {
     "other": 1,
