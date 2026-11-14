@@ -1,19 +1,118 @@
 {
- "updated": "2026-11-14T15:54",
+ "updated": "2026-11-14T19:01",
  "last7days_trusted": {
+  "ts": {
+   "Jagtial": {
+    "agri": 1
+   },
+   "(state-wide / unknown)": {
+    "agri": 65,
+    "other": 129,
+    "education": 30,
+    "roads": 8,
+    "disaster": 1,
+    "women": 11,
+    "water": 22,
+    "housing": 8,
+    "health": 19,
+    "elderly": 15,
+    "social": 2,
+    "power": 5,
+    "sanitation": 7,
+    "nutrition": 5,
+    "certs": 1
+   },
+   "Hanumakonda": {
+    "other": 1
+   },
+   "Hyderabad": {
+    "water": 2,
+    "power": 1,
+    "agri": 1,
+    "health": 2,
+    "other": 14,
+    "housing": 2,
+    "roads": 2,
+    "sanitation": 2
+   },
+   "Warangal": {
+    "agri": 4,
+    "health": 4
+   },
+   "Bhadradri Kothagudem": {
+    "other": 1
+   },
+   "Nalgonda": {
+    "other": 1
+   },
+   "Medchal–Malkajgiri": {
+    "roads": 1,
+    "livelihood": 1,
+    "other": 1
+   },
+   "Khammam": {
+    "agri": 1
+   },
+   "Narayanpet": {
+    "water": 1
+   },
+   "Ranga Reddy": {
+    "child": 1
+   },
+   "Wanaparthy": {
+    "water": 1
+   },
+   "Nizamabad": {
+    "water": 1
+   },
+   "Jangaon": {
+    "agri": 2
+   },
+   "Nirmal": {
+    "water": 3,
+    "agri": 1
+   },
+   "Siddipet": {
+    "other": 2
+   },
+   "Jogulamba Gadwal": {
+    "other": 2
+   },
+   "Nagarkurnool": {
+    "education": 1
+   },
+   "Adilabad": {
+    "agri": 1,
+    "water": 1
+   },
+   "Sangareddy": {
+    "agri": 1,
+    "other": 1
+   },
+   "Mancherial": {
+    "agri": 1,
+    "water": 1
+   },
+   "Vikarabad": {
+    "other": 1,
+    "housing": 1,
+    "agri": 1,
+    "elderly": 1
+   }
+  },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 208,
+    "disaster": 29,
+    "other": 209,
     "health": 24,
-    "disaster": 28,
-    "education": 38,
+    "education": 36,
     "roads": 17,
     "agri": 33,
-    "women": 6,
+    "women": 5,
     "sanitation": 13,
     "housing": 2,
-    "water": 12,
-    "power": 11,
+    "water": 11,
+    "power": 10,
     "nutrition": 5,
     "social": 4,
     "iddocs": 1,
@@ -21,6 +120,11 @@
     "livelihood": 3,
     "certs": 1,
     "elderly": 2
+   },
+   "Visakhapatnam": {
+    "other": 7,
+    "roads": 4,
+    "women": 1
    },
    "East Godavari": {
     "disaster": 1,
@@ -32,6 +136,11 @@
     "education": 1,
     "other": 2,
     "water": 2
+   },
+   "Ananthapuramu": {
+    "water": 2,
+    "education": 2,
+    "other": 2
    },
    "Guntur": {
     "other": 2,
@@ -58,16 +167,6 @@
     "power": 1,
     "roads": 1,
     "housing": 1
-   },
-   "Ananthapuramu": {
-    "education": 2,
-    "other": 2,
-    "water": 1
-   },
-   "Visakhapatnam": {
-    "other": 6,
-    "roads": 3,
-    "women": 1
    },
    "Annamayya": {
     "other": 1,
@@ -117,101 +216,6 @@
    },
    "Dr. B. R. Ambedkar Konaseema": {
     "other": 1
-   }
-  },
-  "ts": {
-   "(state-wide / unknown)": {
-    "other": 128,
-    "education": 29,
-    "roads": 7,
-    "agri": 64,
-    "disaster": 1,
-    "women": 10,
-    "water": 22,
-    "housing": 9,
-    "health": 20,
-    "elderly": 15,
-    "social": 2,
-    "power": 4,
-    "sanitation": 7,
-    "nutrition": 5,
-    "certs": 1
-   },
-   "Hyderabad": {
-    "water": 2,
-    "power": 1,
-    "agri": 1,
-    "health": 2,
-    "other": 14,
-    "housing": 2,
-    "roads": 2,
-    "sanitation": 2
-   },
-   "Warangal": {
-    "agri": 4,
-    "health": 4
-   },
-   "Bhadradri Kothagudem": {
-    "other": 1
-   },
-   "Nalgonda": {
-    "other": 1
-   },
-   "Medchal–Malkajgiri": {
-    "roads": 1,
-    "livelihood": 1,
-    "other": 1
-   },
-   "Khammam": {
-    "agri": 1
-   },
-   "Narayanpet": {
-    "water": 1
-   },
-   "Ranga Reddy": {
-    "child": 1
-   },
-   "Wanaparthy": {
-    "water": 1
-   },
-   "Nizamabad": {
-    "water": 1
-   },
-   "Jangaon": {
-    "agri": 2,
-    "education": 1
-   },
-   "Nirmal": {
-    "water": 3,
-    "agri": 1
-   },
-   "Siddipet": {
-    "other": 2
-   },
-   "Jogulamba Gadwal": {
-    "other": 2
-   },
-   "Nagarkurnool": {
-    "education": 1
-   },
-   "Adilabad": {
-    "agri": 1,
-    "water": 1
-   },
-   "Sangareddy": {
-    "agri": 1,
-    "other": 1
-   },
-   "Mancherial": {
-    "agri": 1,
-    "water": 1,
-    "other": 1
-   },
-   "Vikarabad": {
-    "other": 1,
-    "housing": 1,
-    "agri": 1,
-    "elderly": 1
    }
   }
  }
