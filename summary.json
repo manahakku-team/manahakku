@@ -1,113 +1,14 @@
 {
- "updated": "2026-11-14T19:01",
+ "updated": "2026-11-14T21:52",
  "last7days_trusted": {
-  "ts": {
-   "Jagtial": {
-    "agri": 1
-   },
-   "(state-wide / unknown)": {
-    "agri": 65,
-    "other": 129,
-    "education": 30,
-    "roads": 8,
-    "disaster": 1,
-    "women": 11,
-    "water": 22,
-    "housing": 8,
-    "health": 19,
-    "elderly": 15,
-    "social": 2,
-    "power": 5,
-    "sanitation": 7,
-    "nutrition": 5,
-    "certs": 1
-   },
-   "Hanumakonda": {
-    "other": 1
-   },
-   "Hyderabad": {
-    "water": 2,
-    "power": 1,
-    "agri": 1,
-    "health": 2,
-    "other": 14,
-    "housing": 2,
-    "roads": 2,
-    "sanitation": 2
-   },
-   "Warangal": {
-    "agri": 4,
-    "health": 4
-   },
-   "Bhadradri Kothagudem": {
-    "other": 1
-   },
-   "Nalgonda": {
-    "other": 1
-   },
-   "Medchal–Malkajgiri": {
-    "roads": 1,
-    "livelihood": 1,
-    "other": 1
-   },
-   "Khammam": {
-    "agri": 1
-   },
-   "Narayanpet": {
-    "water": 1
-   },
-   "Ranga Reddy": {
-    "child": 1
-   },
-   "Wanaparthy": {
-    "water": 1
-   },
-   "Nizamabad": {
-    "water": 1
-   },
-   "Jangaon": {
-    "agri": 2
-   },
-   "Nirmal": {
-    "water": 3,
-    "agri": 1
-   },
-   "Siddipet": {
-    "other": 2
-   },
-   "Jogulamba Gadwal": {
-    "other": 2
-   },
-   "Nagarkurnool": {
-    "education": 1
-   },
-   "Adilabad": {
-    "agri": 1,
-    "water": 1
-   },
-   "Sangareddy": {
-    "agri": 1,
-    "other": 1
-   },
-   "Mancherial": {
-    "agri": 1,
-    "water": 1
-   },
-   "Vikarabad": {
-    "other": 1,
-    "housing": 1,
-    "agri": 1,
-    "elderly": 1
-   }
-  },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 29,
     "other": 209,
+    "disaster": 29,
     "health": 24,
     "education": 36,
     "roads": 17,
-    "agri": 33,
+    "agri": 34,
     "women": 5,
     "sanitation": 13,
     "housing": 2,
@@ -122,7 +23,7 @@
     "elderly": 2
    },
    "Visakhapatnam": {
-    "other": 7,
+    "other": 8,
     "roads": 4,
     "women": 1
    },
@@ -216,6 +117,104 @@
    },
    "Dr. B. R. Ambedkar Konaseema": {
     "other": 1
+   }
+  },
+  "ts": {
+   "(state-wide / unknown)": {
+    "agri": 64,
+    "other": 129,
+    "education": 30,
+    "roads": 7,
+    "disaster": 1,
+    "women": 11,
+    "water": 22,
+    "housing": 8,
+    "health": 19,
+    "elderly": 14,
+    "social": 2,
+    "power": 5,
+    "sanitation": 7,
+    "nutrition": 5,
+    "certs": 1
+   },
+   "Jagtial": {
+    "agri": 1
+   },
+   "Hanumakonda": {
+    "other": 1
+   },
+   "Hyderabad": {
+    "water": 2,
+    "power": 1,
+    "agri": 1,
+    "health": 1,
+    "other": 14,
+    "housing": 2,
+    "roads": 2,
+    "sanitation": 2
+   },
+   "Warangal": {
+    "agri": 4,
+    "health": 4
+   },
+   "Bhadradri Kothagudem": {
+    "other": 1
+   },
+   "Nalgonda": {
+    "other": 1
+   },
+   "Medchal–Malkajgiri": {
+    "roads": 1,
+    "livelihood": 1,
+    "other": 1
+   },
+   "Khammam": {
+    "agri": 1
+   },
+   "Narayanpet": {
+    "water": 1
+   },
+   "Ranga Reddy": {
+    "child": 1
+   },
+   "Wanaparthy": {
+    "water": 1
+   },
+   "Nizamabad": {
+    "water": 1
+   },
+   "Jangaon": {
+    "agri": 2
+   },
+   "Nirmal": {
+    "water": 3,
+    "agri": 1
+   },
+   "Siddipet": {
+    "other": 2
+   },
+   "Jogulamba Gadwal": {
+    "other": 2
+   },
+   "Nagarkurnool": {
+    "education": 1
+   },
+   "Adilabad": {
+    "agri": 1
+   },
+   "Sangareddy": {
+    "agri": 1,
+    "other": 1
+   },
+   "Mancherial": {
+    "agri": 1,
+    "water": 1
+   },
+   "Vikarabad": {
+    "other": 1,
+    "housing": 1,
+    "agri": 1,
+    "elderly": 1
    }
   }
  }
