@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T13:13",
+ "updated": "2026-11-15T15:55",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
@@ -10,7 +10,7 @@
     "roads": 7,
     "livelihood": 1,
     "health": 20,
-    "elderly": 7,
+    "elderly": 6,
     "disaster": 1,
     "women": 8,
     "housing": 8,
@@ -106,7 +106,7 @@
   "ap": {
    "(state-wide / unknown)": {
     "disaster": 32,
-    "other": 219,
+    "other": 217,
     "education": 37,
     "roads": 19,
     "livelihood": 5,
@@ -125,7 +125,7 @@
     "elderly": 2
    },
    "Krishna": {
-    "other": 6,
+    "other": 5,
     "agri": 1
    },
    "East Godavari": {
@@ -209,7 +209,7 @@
     "other": 1
    },
    "Palnadu": {
-    "other": 3
+    "other": 2
    },
    "Nandyal": {
     "water": 1
