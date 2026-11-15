@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-15T19:02",
+ "updated": "2026-11-15T21:53",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 63,
+    "agri": 64,
+    "elderly": 7,
+    "disaster": 2,
+    "other": 147,
     "education": 31,
-    "other": 146,
     "nutrition": 7,
-    "water": 25,
+    "water": 26,
     "social": 3,
     "roads": 7,
     "livelihood": 1,
     "health": 20,
-    "elderly": 6,
-    "disaster": 1,
-    "women": 8,
+    "women": 7,
     "housing": 7,
     "power": 4,
     "sanitation": 7
@@ -58,6 +58,9 @@
     "agri": 2
    },
    "Hanumakonda": {
+    "other": 1
+   },
+   "Karimnagar": {
     "other": 1
    },
    "Nalgonda": {
@@ -109,20 +112,20 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 36,
+    "other": 228,
+    "nutrition": 6,
+    "disaster": 38,
     "agri": 34,
-    "other": 227,
     "women": 6,
     "elderly": 3,
     "education": 37,
-    "roads": 20,
+    "roads": 21,
     "livelihood": 6,
-    "sanitation": 13,
+    "sanitation": 15,
     "health": 26,
     "power": 12,
     "housing": 2,
     "water": 12,
-    "nutrition": 5,
     "social": 4,
     "iddocs": 1,
     "child": 1,
