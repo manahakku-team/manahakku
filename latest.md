@@ -1,6 +1,6 @@
-# Mana Hakku daily quality check, 2026-11-14
+# Mana Hakku daily quality check, 2026-11-15
 
-Build: 6290722 Home: remove the three duplicate tabs (report, problems near me, rights); one line
+Build: 1e905c9 Women's safety ideas drive extended to 26 Nov: page says 'until 14 Nov' today, sho
 
 ## 1. App logic tests
 ```
@@ -20,7 +20,7 @@ TOTAL 0
 ## 3. Live website, register and data
 ```
 Website
-  OK  / 200 1425225
+  OK  / 200 1426182
   OK  /about.html 200 10376
   OK  /privacy.html 200 19981
   OK  /d/ 200 13148
@@ -36,32 +36,35 @@ Website
   OK  built-in fonts
   OK  no Google Fonts request
 Register (read only)
-  OK  ap: 11 reports, 0 hidden, newest 2026-11-14
+  OK  ap: 14 reports, 0 hidden, newest 2026-11-14
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (19 days ago)
+  OK  finance data updated 2026-10-26 (20 days ago)
 LIVE_BAD 0
 ```
 
 ## 4. Live news check (real Google News through the register)
 ```
-OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 2 naming the district
-      - Gopalapuram: ఆగస్టు 5న వైఎస్సార్‌సీపీ అధినేత వైఎస్ జగన్ మోహన్ రెడ్డి పర్యటన
-      - Deputy CM Pawan Kalyan: నేడు నిడదవోలుకు పవన్‌ కల్యాణ్‌.. ‘అమరజీవి జలధారా’కు శంకుస్థాపన..
+OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 6 naming the district
+      - "east-godavari"
+      - East Godavari collector instructs speedy restoration of road
+      - Black Magic Rituals On Diwali Amavasya Create Sensation In East Godavari
+      - "east-godavari-district"
 OK   ap en "Drinking water shortage in villages" @ Guntur: 1 naming the district
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-OK   ap en "Road accident on highway" @ Krishna: 7 naming the district
+OK   ap en "Road accident on highway" @ Krishna: 6 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
       - Tipper truck plunges into Krishna River after crashing into car on Karnataka bridge; driver missing
-OK   ts en "Doctors absent at government hospital" @ Hyderabad: 4 naming the district
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 5 naming the district
       - Hyderabad: Osmania General Hospital’s new Goshamahal complex faces delays, doctors seek faster progress
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
+      - RTV Digital. . SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
-      - SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
-OK   ts te "రైతుల ఆందోళన" @ Khammam: 1 naming the district
+OK   ts te "రైతుల ఆందోళన" @ Khammam: 2 naming the district
       - Khammam: ప్రభుత్వ నిర్లక్ష్యంతోనే రైతుల కష్టాలు – పువ్వాడ అజయ్ కుమార్
+      - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
 OK   ts en "Floods damage crops" @ Warangal: 2 naming the district
       - Warangal, Hanamkonda Steps Up Relief Works After Floods
       - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
