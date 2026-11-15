@@ -15,6 +15,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: python3 tools/social/ig_post.py refresh
       - name: Save the renewed key (needs the optional GH_SECRETS_PAT secret)
+        if: steps.r.outputs.token != ''
         env:
           GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
           NEW: ${{ steps.r.outputs.token }}

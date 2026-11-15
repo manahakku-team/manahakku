@@ -14,7 +14,8 @@ import json, os, sys, time, urllib.parse, urllib.request, urllib.error
 
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 USER = os.environ.get("IG_USER_ID", "").strip()
-API = "https://graph.instagram.com/v21.0"
+# Unified (Facebook) login gives a system-user key for graph.facebook.com; an Instagram-login key uses graph.instagram.com.
+API = os.environ.get("IG_API", "https://graph.facebook.com/v21.0").rstrip("/")
 
 
 def call(method, path, **params):
@@ -56,8 +57,11 @@ def main():
         sys.exit("The Instagram key is not set yet (GitHub secrets IG_ACCESS_TOKEN and IG_USER_ID).")
     mode = sys.argv[1]
     if mode == "check":
-        me = call("GET", "me", fields="username,account_type,media_count")
-        print(f"Key works for @{me.get('username')} ({me.get('account_type')}), {me.get('media_count')} posts so far.")
+        me = call("GET", USER, fields="username,media_count")
+        print(f"Key works for @{me.get('username')}, {me.get('media_count')} posts so far.")
+        return
+    if mode == "refresh" and "graph.facebook.com" in API:
+        print("System-user key: it does not expire, nothing to renew.")
         return
     if mode == "refresh":
         r = call("GET", "https://graph.instagram.com/refresh_access_token", grant_type="ig_refresh_token")
