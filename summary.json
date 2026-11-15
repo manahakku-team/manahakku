@@ -1,16 +1,22 @@
 {
- "updated": "2026-11-15T04:10",
+ "updated": "2026-11-15T07:25",
  "last7days_trusted": {
   "ap": {
+   "East Godavari": {
+    "disaster": 2,
+    "health": 1,
+    "other": 2,
+    "roads": 1
+   },
    "(state-wide / unknown)": {
-    "other": 210,
+    "other": 209,
+    "disaster": 28,
     "education": 36,
     "roads": 19,
     "livelihood": 5,
     "agri": 32,
     "sanitation": 13,
     "health": 26,
-    "disaster": 28,
     "women": 5,
     "housing": 2,
     "water": 12,
@@ -25,12 +31,6 @@
    "Tirupati": {
     "other": 3
    },
-   "East Godavari": {
-    "health": 1,
-    "other": 2,
-    "disaster": 1,
-    "roads": 1
-   },
    "NTR": {
     "other": 11,
     "disaster": 1,
@@ -39,7 +39,7 @@
     "housing": 1
    },
    "Visakhapatnam": {
-    "other": 8,
+    "other": 7,
     "roads": 4,
     "women": 1
    },
@@ -121,21 +121,20 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 132,
+    "other": 135,
+    "health": 20,
+    "agri": 58,
     "education": 29,
-    "elderly": 12,
-    "agri": 57,
+    "elderly": 10,
     "roads": 6,
     "disaster": 1,
     "women": 11,
     "water": 22,
     "housing": 8,
-    "health": 19,
     "social": 2,
     "power": 4,
     "sanitation": 7,
-    "nutrition": 5,
-    "certs": 1
+    "nutrition": 5
    },
    "Jagtial": {
     "agri": 1
@@ -150,7 +149,7 @@
     "health": 1,
     "other": 14,
     "housing": 2,
-    "roads": 2,
+    "roads": 1,
     "sanitation": 2
    },
    "Warangal": {
