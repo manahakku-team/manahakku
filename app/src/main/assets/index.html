@@ -2876,7 +2876,7 @@ function fileRender(){const r=repById(fileId);if(!r)return fileClose();const f=F
     if(j&&j.ok){const rr=repById(fileId);if(rr){rr.grv_number=n;rr.grv_system=$("f-sys").value;rr.grv_date=new Date().toISOString()}finish(n);loadShared()}else{$("f-msg").textContent=t(j&&j.error==="not_allowed"?"grvNotAllowed":"flagFail");$("f-save").disabled=false}}catch(e){$("f-msg").textContent=t("flagFail");$("f-save").disabled=false}};}
  const bk=$("f-back");if(bk)bk.onclick=()=>{fileStep=Math.max(1,fileStep-1);fileRender()};
 }
-async function sendOutcome(id,v,note,keyOverride){const key=keyOverride||keyFor(id);if(!SHARED||!key)return null;try{const j=await postRegister({type:"outcome",id:id,key:key,value:v,note:note===undefined?undefined:note,state:ST});if(j&&j.ok)loadShared();return j}catch(e){return null}}
+async function sendOutcome(id,v,note,keyOverride){const key=keyOverride||keyFor(id);if(!SHARED)return null;if(!key)return {ok:false,error:"not_allowed"};try{const j=await postRegister({type:"outcome",id:id,key:key,value:v,note:note===undefined?undefined:note,state:ST});if(j&&j.ok)loadShared();return j}catch(e){return null}}
 // "Update status": the person who reported (this browser, their reports code, or you as owner) says what happened, with an optional short note.
 function updOpen(id){const r=repById(id);if(!r)return;fileId=id;const b=$("file-body"),d=$("file-pop");$("file-h").textContent=t("updH");
  const cur=r.reporter_says||"";const opt=(v,k)=>`<button type="button" class="updo${cur===v?" on":""}" data-u="${v}"><b>${esc(t(k))}</b></button>`;
