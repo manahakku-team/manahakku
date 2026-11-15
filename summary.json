@@ -1,23 +1,31 @@
 {
- "updated": "2026-11-15T10:01",
+ "updated": "2026-11-15T13:13",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 136,
+    "agri": 61,
+    "education": 30,
+    "other": 142,
+    "water": 24,
     "roads": 7,
     "livelihood": 1,
-    "water": 23,
     "health": 20,
-    "agri": 58,
-    "education": 29,
-    "elderly": 8,
+    "elderly": 7,
     "disaster": 1,
-    "women": 11,
+    "women": 8,
     "housing": 8,
     "social": 2,
     "power": 4,
     "sanitation": 7,
     "nutrition": 5
+   },
+   "Jagtial": {
+    "elderly": 1,
+    "agri": 1
+   },
+   "Warangal": {
+    "health": 5,
+    "agri": 4
    },
    "Adilabad": {
     "agri": 2
@@ -26,9 +34,6 @@
     "education": 1,
     "health": 1,
     "agri": 2
-   },
-   "Jagtial": {
-    "agri": 1
    },
    "Hanumakonda": {
     "other": 1
@@ -43,10 +48,6 @@
     "housing": 2,
     "roads": 1,
     "sanitation": 2
-   },
-   "Warangal": {
-    "agri": 4,
-    "health": 4
    },
    "Bhadradri Kothagudem": {
     "other": 1
@@ -104,8 +105,8 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 29,
-    "other": 215,
+    "disaster": 32,
+    "other": 219,
     "education": 37,
     "roads": 19,
     "livelihood": 5,
@@ -130,22 +131,22 @@
    "East Godavari": {
     "disaster": 2,
     "health": 1,
-    "other": 2,
+    "other": 1,
     "roads": 1
    },
    "Tirupati": {
     "other": 3
    },
    "NTR": {
-    "other": 11,
+    "other": 10,
     "disaster": 1,
     "power": 1,
-    "roads": 1,
-    "housing": 1
+    "roads": 1
    },
    "Visakhapatnam": {
     "other": 7,
     "roads": 4,
+    "nutrition": 1,
     "women": 1
    },
    "Kurnool": {
