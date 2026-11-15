@@ -1,23 +1,45 @@
 {
- "updated": "2026-11-15T15:55",
+ "updated": "2026-11-15T19:02",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 61,
-    "education": 30,
-    "other": 142,
-    "water": 24,
+    "agri": 63,
+    "education": 31,
+    "other": 146,
+    "nutrition": 7,
+    "water": 25,
+    "social": 3,
     "roads": 7,
     "livelihood": 1,
     "health": 20,
     "elderly": 6,
     "disaster": 1,
     "women": 8,
-    "housing": 8,
-    "social": 2,
+    "housing": 7,
     "power": 4,
-    "sanitation": 7,
-    "nutrition": 5
+    "sanitation": 7
+   },
+   "Kamareddy": {
+    "women": 1
+   },
+   "Hyderabad": {
+    "water": 3,
+    "education": 1,
+    "certs": 1,
+    "power": 1,
+    "agri": 1,
+    "health": 1,
+    "other": 13,
+    "housing": 2,
+    "roads": 1,
+    "sanitation": 2,
+    "elderly": 1
+   },
+   "Sangareddy": {
+    "agri": 2
+   },
+   "Bhadradri Kothagudem": {
+    "other": 2
    },
    "Jagtial": {
     "elderly": 1,
@@ -36,20 +58,6 @@
     "agri": 2
    },
    "Hanumakonda": {
-    "other": 1
-   },
-   "Hyderabad": {
-    "certs": 1,
-    "water": 2,
-    "power": 1,
-    "agri": 1,
-    "health": 1,
-    "other": 14,
-    "housing": 2,
-    "roads": 1,
-    "sanitation": 2
-   },
-   "Bhadradri Kothagudem": {
     "other": 1
    },
    "Nalgonda": {
@@ -91,38 +99,38 @@
    "Nagarkurnool": {
     "education": 1
    },
-   "Sangareddy": {
-    "agri": 1
-   },
    "Mancherial": {
     "agri": 1,
     "water": 1
    },
    "Vikarabad": {
-    "other": 1,
-    "housing": 1
+    "other": 1
    }
   },
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 32,
-    "other": 217,
+    "disaster": 36,
+    "agri": 34,
+    "other": 227,
+    "women": 6,
+    "elderly": 3,
     "education": 37,
-    "roads": 19,
-    "livelihood": 5,
-    "agri": 32,
+    "roads": 20,
+    "livelihood": 6,
     "sanitation": 13,
     "health": 26,
-    "women": 5,
-    "power": 11,
+    "power": 12,
     "housing": 2,
     "water": 12,
     "nutrition": 5,
     "social": 4,
     "iddocs": 1,
     "child": 1,
-    "certs": 1,
-    "elderly": 2
+    "certs": 1
+   },
+   "Sri Sathya Sai": {
+    "health": 1,
+    "other": 1
    },
    "Krishna": {
     "other": 5,
@@ -156,7 +164,7 @@
     "water": 2
    },
    "Ananthapuramu": {
-    "water": 2,
+    "water": 1,
     "education": 2,
     "other": 2
    },
@@ -168,7 +176,7 @@
     "roads": 1
    },
    "West Godavari": {
-    "other": 1,
+    "other": 2,
     "agri": 1,
     "disaster": 1
    },
@@ -178,6 +186,10 @@
    "Bapatla": {
     "disaster": 1,
     "sanitation": 1
+   },
+   "Palnadu": {
+    "roads": 1,
+    "other": 2
    },
    "Annamayya": {
     "other": 1,
@@ -199,17 +211,11 @@
    "Eluru": {
     "other": 1
    },
-   "Sri Sathya Sai": {
-    "other": 1
-   },
    "Parvathipuram Manyam": {
     "other": 1
    },
    "Sri Potti Sriramulu Nellore": {
     "other": 1
-   },
-   "Palnadu": {
-    "other": 2
    },
    "Nandyal": {
     "water": 1
