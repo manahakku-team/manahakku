@@ -1,0 +1,24 @@
+name: Send ideas (one-time, owner-run)
+on:
+  workflow_dispatch:
+    inputs:
+      ideas: { description: "JSON list of idea texts", required: true }
+permissions: { contents: read }
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send each idea to the ideas box
+        env: { IDEAS: "${{ inputs.ideas }}" }
+        run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.request
+          html = open("app/src/main/assets/index.html", encoding="utf-8").read()
+          url = re.search(r"https://script\.google\.com/macros/s/[A-Za-z0-9_-]+/exec", html).group(0)
+          for i, text in enumerate(json.loads(os.environ["IDEAS"]), 1):
+              body = json.dumps({"type": "suggestion", "text": text, "lang": "en", "state": "ap", "dev": "team-import"}).encode()
+              req = urllib.request.Request(url, data=body, headers={"Content-Type": "text/plain;charset=utf-8"})
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  print(i, r.read().decode()[:120])
+          PY
