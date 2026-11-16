@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-16T04:51",
+ "updated": "2026-11-16T09:03",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 39,
-    "other": 231,
+    "disaster": 38,
+    "other": 224,
     "agri": 36,
     "water": 13,
     "nutrition": 5,
     "women": 6,
     "elderly": 3,
-    "education": 36,
+    "education": 35,
     "roads": 21,
     "livelihood": 6,
     "sanitation": 14,
-    "health": 26,
+    "health": 23,
     "power": 12,
-    "housing": 2,
-    "social": 4,
+    "housing": 1,
+    "social": 3,
     "iddocs": 1,
     "child": 1,
     "certs": 1
@@ -40,7 +40,7 @@
     "other": 3
    },
    "NTR": {
-    "other": 10,
+    "other": 6,
     "disaster": 1,
     "power": 1,
     "roads": 1
@@ -64,7 +64,7 @@
     "other": 2
    },
    "Guntur": {
-    "other": 2,
+    "other": 1,
     "water": 1
    },
    "Anakapalli": {
@@ -118,9 +118,9 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 68,
+    "agri": 67,
     "education": 32,
-    "other": 153,
+    "other": 150,
     "elderly": 7,
     "disaster": 2,
     "nutrition": 7,
@@ -129,7 +129,7 @@
     "roads": 7,
     "livelihood": 1,
     "health": 19,
-    "women": 7,
+    "women": 6,
     "housing": 7,
     "power": 4,
     "sanitation": 7
@@ -144,11 +144,10 @@
     "power": 1,
     "agri": 1,
     "health": 1,
-    "other": 12,
+    "other": 11,
     "housing": 2,
     "roads": 1,
-    "sanitation": 2,
-    "elderly": 1
+    "sanitation": 2
    },
    "Sangareddy": {
     "agri": 2
@@ -212,14 +211,13 @@
     "other": 2
    },
    "Jogulamba Gadwal": {
-    "other": 2
+    "other": 1
    },
    "Nagarkurnool": {
     "education": 1
    },
    "Mancherial": {
-    "agri": 1,
-    "water": 1
+    "agri": 1
    }
   }
  }
