@@ -1,23 +1,19 @@
 {
- "updated": "2026-11-16T19:15",
+ "updated": "2026-11-16T22:03",
  "last7days_trusted": {
   "ap": {
-   "Sri Potti Sriramulu Nellore": {
-    "disaster": 2,
-    "other": 1
-   },
    "(state-wide / unknown)": {
-    "health": 26,
-    "disaster": 47,
+    "other": 231,
+    "education": 37,
+    "health": 25,
+    "disaster": 48,
     "housing": 5,
-    "other": 232,
     "roads": 23,
-    "water": 15,
+    "water": 16,
     "power": 14,
-    "agri": 35,
+    "agri": 36,
     "elderly": 2,
     "livelihood": 7,
-    "education": 36,
     "social": 5,
     "nutrition": 6,
     "women": 6,
@@ -25,6 +21,10 @@
     "iddocs": 1,
     "child": 1,
     "certs": 1
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "disaster": 2,
+    "other": 1
    },
    "Krishna": {
     "other": 6,
@@ -127,16 +127,16 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "education": 35,
+    "water": 25,
+    "education": 36,
     "disaster": 3,
-    "housing": 11,
-    "agri": 73,
+    "housing": 10,
+    "agri": 72,
     "power": 6,
-    "nutrition": 7,
-    "other": 159,
+    "nutrition": 6,
+    "other": 157,
     "elderly": 9,
     "health": 18,
-    "water": 24,
     "social": 2,
     "roads": 7,
     "livelihood": 1,
