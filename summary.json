@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-15T21:53",
+ "updated": "2026-11-16T01:43",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 64,
+    "other": 151,
+    "education": 31,
+    "agri": 65,
     "elderly": 7,
     "disaster": 2,
-    "other": 147,
-    "education": 31,
     "nutrition": 7,
     "water": 26,
     "social": 3,
@@ -113,19 +113,19 @@
   "ap": {
    "(state-wide / unknown)": {
     "other": 228,
+    "water": 13,
     "nutrition": 6,
     "disaster": 38,
-    "agri": 34,
+    "agri": 35,
     "women": 6,
     "elderly": 3,
     "education": 37,
     "roads": 21,
     "livelihood": 6,
-    "sanitation": 15,
+    "sanitation": 14,
     "health": 26,
     "power": 12,
     "housing": 2,
-    "water": 12,
     "social": 4,
     "iddocs": 1,
     "child": 1,
