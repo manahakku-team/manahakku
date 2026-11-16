@@ -1,0 +1,7 @@
+Starting: Intent { cmp=org.manahakku.app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: org.manahakku.app/.MainActivity
+TotalTime: 1366
+WaitTime: 1373
+Complete
