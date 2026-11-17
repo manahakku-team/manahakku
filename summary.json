@@ -1,36 +1,40 @@
 {
- "updated": "2026-11-17T10:23",
+ "updated": "2026-11-17T13:29",
  "last7days_trusted": {
   "ap": {
+   "(state-wide / unknown)": {
+    "other": 207,
+    "power": 14,
+    "disaster": 59,
+    "livelihood": 9,
+    "agri": 33,
+    "roads": 19,
+    "social": 6,
+    "education": 33,
+    "housing": 6,
+    "health": 22,
+    "water": 16,
+    "elderly": 2,
+    "nutrition": 6,
+    "women": 5,
+    "sanitation": 13,
+    "iddocs": 1,
+    "child": 1
+   },
+   "NTR": {
+    "power": 2,
+    "other": 6,
+    "disaster": 1
+   },
+   "Prakasam": {
+    "agri": 2,
+    "livelihood": 1,
+    "power": 1
+   },
    "Ananthapuramu": {
     "education": 3,
     "water": 1,
     "other": 2
-   },
-   "(state-wide / unknown)": {
-    "other": 211,
-    "disaster": 57,
-    "livelihood": 9,
-    "agri": 33,
-    "social": 6,
-    "education": 34,
-    "housing": 6,
-    "health": 23,
-    "roads": 19,
-    "water": 16,
-    "power": 13,
-    "elderly": 2,
-    "nutrition": 6,
-    "women": 6,
-    "sanitation": 13,
-    "iddocs": 1,
-    "child": 1,
-    "certs": 1
-   },
-   "NTR": {
-    "other": 6,
-    "disaster": 1,
-    "power": 1
    },
    "Palnadu": {
     "roads": 2,
@@ -38,8 +42,7 @@
    },
    "Krishna": {
     "disaster": 1,
-    "other": 6,
-    "agri": 1
+    "other": 6
    },
    "Sri Potti Sriramulu Nellore": {
     "disaster": 2,
@@ -105,15 +108,9 @@
    "Annamayya": {
     "other": 1
    },
-   "Prakasam": {
-    "livelihood": 1,
-    "agri": 1,
-    "power": 1
-   },
    "Chittoor": {
     "other": 1,
-    "water": 1,
-    "power": 1
+    "water": 1
    },
    "Eluru": {
     "other": 1
@@ -124,15 +121,15 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "health": 17,
-    "other": 161,
+    "other": 166,
+    "agri": 72,
+    "health": 16,
     "child": 1,
     "education": 38,
-    "elderly": 9,
+    "elderly": 11,
     "disaster": 4,
     "power": 8,
-    "agri": 76,
-    "water": 25,
+    "water": 26,
     "roads": 7,
     "housing": 8,
     "nutrition": 5,
@@ -158,6 +155,10 @@
     "health": 1,
     "other": 2
    },
+   "Warangal": {
+    "health": 6,
+    "agri": 3
+   },
    "Hanumakonda": {
     "education": 1,
     "other": 1
@@ -176,10 +177,6 @@
    "Siddipet": {
     "other": 2
    },
-   "Warangal": {
-    "health": 6,
-    "agri": 3
-   },
    "Nalgonda": {
     "other": 2,
     "women": 1
@@ -193,6 +190,10 @@
    },
    "Sangareddy": {
     "agri": 1
+   },
+   "Nizamabad": {
+    "other": 1,
+    "water": 1
    },
    "Adilabad": {
     "agri": 1
@@ -219,11 +220,8 @@
    "Wanaparthy": {
     "water": 1
    },
-   "Nizamabad": {
-    "water": 1
-   },
    "Nirmal": {
-    "water": 2,
+    "water": 1,
     "agri": 1
    }
   }
