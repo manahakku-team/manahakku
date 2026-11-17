@@ -1,133 +1,40 @@
 {
- "updated": "2026-11-17T07:38",
+ "updated": "2026-11-17T10:23",
  "last7days_trusted": {
-  "ts": {
-   "(state-wide / unknown)": {
-    "other": 160,
-    "education": 37,
-    "elderly": 9,
-    "disaster": 4,
-    "power": 8,
-    "agri": 76,
-    "water": 25,
-    "roads": 8,
-    "housing": 8,
-    "nutrition": 5,
-    "health": 15,
-    "social": 2,
-    "livelihood": 1,
-    "women": 5,
-    "sanitation": 5
-   },
-   "Hanumakonda": {
-    "education": 1,
-    "other": 1
-   },
-   "Narayanpet": {
-    "women": 1,
-    "elderly": 1,
-    "water": 1
-   },
-   "Karimnagar": {
-    "other": 2
-   },
-   "Kumuram Bheem Asifabad": {
-    "power": 1
-   },
-   "Siddipet": {
-    "other": 2
-   },
-   "Hyderabad": {
-    "other": 13,
-    "water": 6,
-    "education": 1,
-    "certs": 1,
-    "power": 2,
-    "agri": 1,
-    "health": 1,
-    "housing": 1,
-    "roads": 1,
-    "sanitation": 2
-   },
-   "Warangal": {
-    "health": 6,
-    "agri": 4
-   },
-   "Nalgonda": {
-    "other": 2,
-    "women": 1
-   },
-   "Jagtial": {
-    "agri": 2,
-    "elderly": 1
-   },
-   "Kamareddy": {
-    "women": 1
-   },
-   "Sangareddy": {
-    "agri": 1
-   },
-   "Bhadradri Kothagudem": {
-    "other": 2
-   },
-   "Adilabad": {
-    "agri": 1
-   },
-   "Jangaon": {
-    "education": 1,
-    "health": 1,
-    "agri": 2
-   },
-   "Medchal–Malkajgiri": {
-    "roads": 1,
-    "livelihood": 1,
-    "other": 1
-   },
-   "Peddapalli": {
-    "water": 1
-   },
-   "Khammam": {
-    "agri": 1
-   },
-   "Ranga Reddy": {
-    "child": 1
-   },
-   "Wanaparthy": {
-    "water": 1
-   },
-   "Nizamabad": {
-    "water": 1
-   },
-   "Nirmal": {
-    "water": 3,
-    "agri": 1
-   }
-  },
   "ap": {
-   "NTR": {
-    "other": 5,
-    "disaster": 1,
-    "power": 1
+   "Ananthapuramu": {
+    "education": 3,
+    "water": 1,
+    "other": 2
    },
    "(state-wide / unknown)": {
-    "disaster": 54,
-    "other": 216,
-    "agri": 35,
-    "education": 37,
-    "livelihood": 7,
+    "other": 211,
+    "disaster": 57,
+    "livelihood": 9,
+    "agri": 33,
+    "social": 6,
+    "education": 34,
     "housing": 6,
     "health": 23,
     "roads": 19,
     "water": 16,
     "power": 13,
     "elderly": 2,
-    "social": 5,
     "nutrition": 6,
     "women": 6,
     "sanitation": 13,
     "iddocs": 1,
     "child": 1,
     "certs": 1
+   },
+   "NTR": {
+    "other": 6,
+    "disaster": 1,
+    "power": 1
+   },
+   "Palnadu": {
+    "roads": 2,
+    "other": 2
    },
    "Krishna": {
     "disaster": 1,
@@ -181,11 +88,6 @@
     "disaster": 1,
     "sanitation": 1
    },
-   "Ananthapuramu": {
-    "water": 1,
-    "education": 2,
-    "other": 2
-   },
    "Guntur": {
     "other": 1,
     "water": 1
@@ -195,15 +97,10 @@
    },
    "West Godavari": {
     "other": 2,
-    "agri": 1,
-    "disaster": 1
+    "agri": 1
    },
    "YSR Kadapa": {
     "other": 1
-   },
-   "Palnadu": {
-    "roads": 1,
-    "other": 2
    },
    "Annamayya": {
     "other": 1
@@ -223,6 +120,111 @@
    },
    "Parvathipuram Manyam": {
     "other": 1
+   }
+  },
+  "ts": {
+   "(state-wide / unknown)": {
+    "health": 17,
+    "other": 161,
+    "child": 1,
+    "education": 38,
+    "elderly": 9,
+    "disaster": 4,
+    "power": 8,
+    "agri": 76,
+    "water": 25,
+    "roads": 7,
+    "housing": 8,
+    "nutrition": 5,
+    "social": 2,
+    "livelihood": 1,
+    "women": 5,
+    "sanitation": 5
+   },
+   "Hyderabad": {
+    "education": 2,
+    "other": 14,
+    "elderly": 1,
+    "water": 6,
+    "certs": 1,
+    "power": 2,
+    "agri": 1,
+    "health": 1,
+    "housing": 1,
+    "roads": 1,
+    "sanitation": 2
+   },
+   "Bhadradri Kothagudem": {
+    "health": 1,
+    "other": 2
+   },
+   "Hanumakonda": {
+    "education": 1,
+    "other": 1
+   },
+   "Narayanpet": {
+    "women": 1,
+    "elderly": 1,
+    "water": 1
+   },
+   "Karimnagar": {
+    "other": 2
+   },
+   "Kumuram Bheem Asifabad": {
+    "power": 1
+   },
+   "Siddipet": {
+    "other": 2
+   },
+   "Warangal": {
+    "health": 6,
+    "agri": 3
+   },
+   "Nalgonda": {
+    "other": 2,
+    "women": 1
+   },
+   "Jagtial": {
+    "agri": 2,
+    "elderly": 1
+   },
+   "Kamareddy": {
+    "women": 1
+   },
+   "Sangareddy": {
+    "agri": 1
+   },
+   "Adilabad": {
+    "agri": 1
+   },
+   "Jangaon": {
+    "education": 1,
+    "health": 1,
+    "agri": 2
+   },
+   "Medchal–Malkajgiri": {
+    "roads": 1,
+    "livelihood": 1,
+    "other": 1
+   },
+   "Peddapalli": {
+    "water": 1
+   },
+   "Khammam": {
+    "agri": 1
+   },
+   "Ranga Reddy": {
+    "child": 1
+   },
+   "Wanaparthy": {
+    "water": 1
+   },
+   "Nizamabad": {
+    "water": 1
+   },
+   "Nirmal": {
+    "water": 2,
+    "agri": 1
    }
   }
  }
