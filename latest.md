@@ -1,4 +1,4 @@
-# Mana Hakku daily quality check, 2026-11-17
+# Mana Hakku daily quality check, 2026-11-18
 
 Build: fdaa91b Instagram job: use the never-expiring system-user key (graph.facebook.com); renewa
 
@@ -39,7 +39,7 @@ Register (read only)
   OK  ap: 14 reports, 0 hidden, newest 2026-11-14
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (22 days ago)
+  OK  finance data updated 2026-10-26 (23 days ago)
 LIVE_BAD 0
 ```
 
@@ -60,10 +60,11 @@ OK   ap en "Road accident on highway" @ Krishna: 7 naming the district
 OK   ts en "Doctors absent at government hospital" @ Hyderabad: 2 naming the district
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
-NONE ts te "రైతుల ఆందోళన" @ Khammam: 0 naming the district
+OK   ts te "రైతుల ఆందోళన" @ Khammam: 1 naming the district
+      - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
 OK   ts en "Floods damage crops" @ Warangal: 3 naming the district
-      - Warangal, Hanamkonda Steps Up Relief Works After Floods
-      - Revanth to Conduct Aerial Survey in Warangal, Husnabad
+      - Rain Damages Crops, Disrupts Transport In Warangal
       - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
-NEWS_NONE 1
+      - Revanth to Conduct Aerial Survey in Warangal, Husnabad
+NEWS_NONE 0
 ```
