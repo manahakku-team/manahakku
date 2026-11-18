@@ -1,30 +1,33 @@
 {
- "updated": "2026-11-17T22:10",
+ "updated": "2026-11-18T01:36",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 165,
-    "livelihood": 2,
-    "agri": 72,
-    "housing": 9,
+    "education": 39,
+    "water": 25,
+    "other": 166,
     "health": 19,
+    "agri": 69,
+    "livelihood": 2,
+    "housing": 9,
     "child": 1,
-    "education": 37,
-    "elderly": 11,
+    "elderly": 10,
     "disaster": 4,
     "power": 8,
-    "water": 24,
-    "roads": 7,
+    "roads": 6,
     "nutrition": 5,
     "social": 2,
     "women": 5,
     "sanitation": 5
    },
+   "Siddipet": {
+    "education": 1,
+    "other": 1
+   },
    "Medchal–Malkajgiri": {
     "water": 1,
     "roads": 1,
-    "livelihood": 1,
-    "other": 1
+    "livelihood": 1
    },
    "Hyderabad": {
     "education": 2,
@@ -61,9 +64,6 @@
    },
    "Kumuram Bheem Asifabad": {
     "power": 1
-   },
-   "Siddipet": {
-    "other": 1
    },
    "Nalgonda": {
     "other": 2,
@@ -109,17 +109,13 @@
    }
   },
   "ap": {
-   "Palnadu": {
-    "other": 1,
-    "roads": 2
-   },
    "(state-wide / unknown)": {
-    "education": 33,
-    "disaster": 62,
-    "roads": 19,
-    "power": 15,
-    "other": 198,
+    "roads": 20,
+    "other": 197,
     "agri": 32,
+    "education": 32,
+    "disaster": 62,
+    "power": 15,
     "women": 5,
     "livelihood": 8,
     "social": 6,
@@ -131,6 +127,10 @@
     "sanitation": 13,
     "iddocs": 1,
     "child": 1
+   },
+   "Palnadu": {
+    "other": 1,
+    "roads": 2
    },
    "Eluru": {
     "nutrition": 1,
@@ -160,7 +160,7 @@
    },
    "Krishna": {
     "disaster": 1,
-    "other": 6
+    "other": 5
    },
    "Kakinada": {
     "other": 2
