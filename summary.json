@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-18T07:37",
+ "updated": "2026-11-18T10:22",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "education": 34,
-    "disaster": 68,
+    "disaster": 72,
     "other": 197,
+    "education": 34,
     "housing": 7,
     "roads": 20,
-    "agri": 33,
+    "agri": 31,
     "power": 13,
     "women": 4,
     "livelihood": 8,
     "social": 6,
-    "health": 18,
+    "health": 17,
     "water": 16,
     "elderly": 2,
     "nutrition": 5,
@@ -21,7 +21,14 @@
     "iddocs": 1,
     "child": 1
    },
+   "Kurnool": {
+    "health": 3,
+    "education": 1,
+    "other": 2,
+    "water": 2
+   },
    "Ananthapuramu": {
+    "health": 1,
     "other": 2,
     "education": 3,
     "water": 1
@@ -36,7 +43,7 @@
    },
    "NTR": {
     "other": 7,
-    "power": 2,
+    "power": 1,
     "disaster": 1
    },
    "Palnadu": {
@@ -57,7 +64,7 @@
     "disaster": 2
    },
    "Prakasam": {
-    "agri": 2,
+    "agri": 3,
     "livelihood": 1
    },
    "Krishna": {
@@ -90,12 +97,6 @@
    "Tirupati": {
     "other": 3
    },
-   "Kurnool": {
-    "health": 2,
-    "education": 1,
-    "other": 2,
-    "water": 2
-   },
    "Bapatla": {
     "other": 1,
     "disaster": 1,
@@ -118,22 +119,26 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 167,
-    "education": 40,
+    "other": 168,
+    "disaster": 5,
+    "education": 41,
     "agri": 70,
     "power": 10,
     "roads": 8,
     "child": 2,
-    "water": 25,
+    "water": 26,
     "health": 18,
     "livelihood": 2,
     "housing": 10,
     "elderly": 10,
-    "disaster": 4,
     "nutrition": 5,
     "social": 2,
     "women": 5,
-    "sanitation": 4
+    "sanitation": 3
+   },
+   "Adilabad": {
+    "other": 1,
+    "agri": 1
    },
    "Nagarkurnool": {
     "other": 2
@@ -200,9 +205,6 @@
    "Nizamabad": {
     "other": 1,
     "water": 1
-   },
-   "Adilabad": {
-    "agri": 1
    },
    "Jangaon": {
     "education": 1,
