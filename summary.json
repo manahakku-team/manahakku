@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-19T07:39",
+ "updated": "2026-11-19T10:22",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "disaster": 91,
     "other": 203,
+    "agri": 32,
+    "education": 33,
+    "livelihood": 8,
+    "disaster": 91,
     "health": 18,
-    "education": 35,
     "power": 14,
     "water": 15,
     "housing": 8,
-    "agri": 31,
     "nutrition": 5,
     "women": 5,
     "sanitation": 8,
     "roads": 22,
-    "livelihood": 8,
-    "social": 5,
+    "social": 4,
     "elderly": 2,
     "iddocs": 1
    },
@@ -50,7 +50,7 @@
    },
    "Visakhapatnam": {
     "disaster": 2,
-    "other": 6,
+    "other": 4,
     "roads": 4,
     "water": 1,
     "nutrition": 1,
@@ -114,6 +114,25 @@
    }
   },
   "ts": {
+   "(state-wide / unknown)": {
+    "other": 153,
+    "power": 11,
+    "nutrition": 6,
+    "water": 25,
+    "health": 18,
+    "agri": 68,
+    "education": 44,
+    "roads": 9,
+    "elderly": 13,
+    "women": 6,
+    "livelihood": 3,
+    "certs": 1,
+    "disaster": 6,
+    "child": 2,
+    "housing": 9,
+    "social": 2,
+    "sanitation": 1
+   },
    "Hyderabad": {
     "other": 15,
     "power": 4,
@@ -126,32 +145,13 @@
     "housing": 1,
     "roads": 1
    },
-   "(state-wide / unknown)": {
-    "water": 26,
-    "health": 18,
-    "other": 153,
-    "agri": 68,
-    "education": 43,
-    "roads": 9,
-    "elderly": 13,
-    "nutrition": 5,
-    "women": 6,
-    "livelihood": 3,
-    "certs": 1,
-    "disaster": 6,
-    "power": 10,
-    "child": 2,
-    "housing": 9,
-    "social": 2,
-    "sanitation": 2
-   },
    "Medchal–Malkajgiri": {
     "other": 2,
     "water": 1,
     "roads": 1
    },
    "Narayanpet": {
-    "water": 2,
+    "water": 1,
     "women": 1,
     "elderly": 1
    },
