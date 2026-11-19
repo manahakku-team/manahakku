@@ -1,30 +1,29 @@
 {
- "updated": "2026-11-19T04:16",
+ "updated": "2026-11-19T07:39",
  "last7days_trusted": {
   "ap": {
-   "Palnadu": {
-    "water": 2,
-    "other": 1,
-    "roads": 2
-   },
    "(state-wide / unknown)": {
+    "disaster": 91,
+    "other": 203,
+    "health": 18,
+    "education": 35,
+    "power": 14,
     "water": 15,
-    "disaster": 87,
     "housing": 8,
-    "education": 36,
     "agri": 31,
-    "other": 196,
     "nutrition": 5,
-    "health": 17,
-    "power": 12,
     "women": 5,
-    "roads": 21,
+    "sanitation": 8,
+    "roads": 22,
     "livelihood": 8,
     "social": 5,
     "elderly": 2,
-    "sanitation": 8,
-    "iddocs": 1,
-    "child": 1
+    "iddocs": 1
+   },
+   "Palnadu": {
+    "roads": 3,
+    "water": 2,
+    "other": 1
    },
    "Ananthapuramu": {
     "other": 4,
@@ -46,7 +45,7 @@
    },
    "Krishna": {
     "water": 1,
-    "other": 6,
+    "other": 5,
     "disaster": 1
    },
    "Visakhapatnam": {
@@ -59,8 +58,7 @@
    },
    "NTR": {
     "other": 7,
-    "power": 1,
-    "disaster": 1
+    "power": 1
    },
    "Eluru": {
     "nutrition": 1,
@@ -116,24 +114,36 @@
    }
   },
   "ts": {
+   "Hyderabad": {
+    "other": 15,
+    "power": 4,
+    "education": 2,
+    "elderly": 1,
+    "water": 5,
+    "certs": 1,
+    "agri": 1,
+    "health": 1,
+    "housing": 1,
+    "roads": 1
+   },
    "(state-wide / unknown)": {
-    "education": 44,
-    "agri": 67,
-    "water": 25,
-    "other": 158,
+    "water": 26,
+    "health": 18,
+    "other": 153,
+    "agri": 68,
+    "education": 43,
+    "roads": 9,
     "elderly": 13,
     "nutrition": 5,
-    "health": 18,
-    "women": 7,
+    "women": 6,
     "livelihood": 3,
     "certs": 1,
     "disaster": 6,
-    "power": 9,
-    "roads": 8,
+    "power": 10,
     "child": 2,
     "housing": 9,
     "social": 2,
-    "sanitation": 3
+    "sanitation": 2
    },
    "Medchal–Malkajgiri": {
     "other": 2,
@@ -152,18 +162,6 @@
    "Sangareddy": {
     "education": 1,
     "agri": 1
-   },
-   "Hyderabad": {
-    "other": 14,
-    "power": 4,
-    "education": 2,
-    "elderly": 1,
-    "water": 5,
-    "certs": 1,
-    "agri": 1,
-    "health": 1,
-    "housing": 1,
-    "roads": 1
    },
    "Kamareddy": {
     "other": 1,
@@ -214,9 +212,6 @@
    },
    "Khammam": {
     "agri": 1
-   },
-   "Ranga Reddy": {
-    "child": 1
    }
   }
  }
