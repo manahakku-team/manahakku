@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-19T13:35",
+ "updated": "2026-11-19T16:19",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "social": 3,
-    "roads": 12,
-    "health": 19,
-    "other": 152,
-    "power": 11,
-    "nutrition": 6,
     "water": 24,
+    "other": 152,
+    "social": 3,
+    "roads": 11,
+    "health": 19,
+    "power": 10,
+    "nutrition": 6,
     "agri": 66,
-    "education": 43,
+    "education": 42,
     "elderly": 13,
     "women": 6,
     "livelihood": 3,
@@ -21,12 +21,20 @@
     "housing": 9,
     "sanitation": 1
    },
+   "Medchal–Malkajgiri": {
+    "other": 3,
+    "water": 1,
+    "roads": 1
+   },
+   "Nirmal": {
+    "agri": 1
+   },
    "Siddipet": {
     "other": 2,
     "education": 1
    },
    "Hyderabad": {
-    "other": 18,
+    "other": 17,
     "power": 4,
     "education": 2,
     "elderly": 1,
@@ -35,11 +43,6 @@
     "agri": 1,
     "health": 1,
     "housing": 1,
-    "roads": 1
-   },
-   "Medchal–Malkajgiri": {
-    "other": 2,
-    "water": 1,
     "roads": 1
    },
    "Narayanpet": {
@@ -103,20 +106,15 @@
    }
   },
   "ap": {
-   "Palnadu": {
-    "water": 3,
-    "roads": 3,
-    "other": 1
-   },
    "(state-wide / unknown)": {
-    "disaster": 93,
     "other": 203,
-    "agri": 33,
-    "women": 6,
-    "education": 33,
+    "women": 7,
+    "disaster": 94,
+    "education": 34,
+    "agri": 34,
     "livelihood": 8,
-    "health": 18,
-    "power": 14,
+    "health": 19,
+    "power": 12,
     "water": 15,
     "housing": 8,
     "nutrition": 5,
@@ -126,13 +124,22 @@
     "elderly": 2
    },
    "Ananthapuramu": {
-    "other": 4,
-    "education": 5,
+    "other": 5,
+    "education": 6,
     "health": 1,
     "water": 1
    },
+   "Palnadu": {
+    "water": 3,
+    "roads": 3,
+    "other": 2
+   },
    "Kakinada": {
     "other": 3
+   },
+   "Prakasam": {
+    "other": 1,
+    "agri": 2
    },
    "Tirupati": {
     "other": 4
@@ -141,7 +148,7 @@
     "health": 4,
     "education": 1,
     "other": 2,
-    "water": 2
+    "water": 1
    },
    "Krishna": {
     "water": 1,
@@ -151,7 +158,7 @@
    "Visakhapatnam": {
     "disaster": 2,
     "other": 5,
-    "roads": 4,
+    "roads": 2,
     "water": 1,
     "nutrition": 1,
     "women": 1
@@ -171,10 +178,6 @@
    "Sri Potti Sriramulu Nellore": {
     "other": 1,
     "disaster": 3
-   },
-   "Prakasam": {
-    "agri": 2,
-    "livelihood": 1
    },
    "West Godavari": {
     "other": 3
