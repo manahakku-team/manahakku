@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-20T13:30",
+ "updated": "2026-11-20T16:13",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "agri": 38,
-    "other": 213,
+    "other": 217,
+    "health": 26,
+    "agri": 41,
     "housing": 8,
-    "roads": 22,
-    "disaster": 111,
-    "elderly": 4,
+    "roads": 21,
+    "disaster": 112,
+    "elderly": 5,
+    "education": 41,
     "water": 15,
-    "health": 24,
-    "education": 39,
     "social": 4,
-    "certs": 2,
+    "certs": 3,
     "women": 6,
     "livelihood": 8,
     "nutrition": 5,
     "power": 10,
-    "sanitation": 8
+    "sanitation": 6
    },
    "YSR Kadapa": {
     "education": 1,
@@ -37,7 +37,7 @@
    },
    "Ananthapuramu": {
     "education": 8,
-    "other": 5,
+    "other": 6,
     "health": 2,
     "water": 1
    },
@@ -58,8 +58,7 @@
    },
    "Kurnool": {
     "health": 5,
-    "education": 1,
-    "other": 1
+    "education": 1
    },
    "Tirupati": {
     "other": 4
@@ -68,6 +67,9 @@
     "water": 1,
     "other": 3,
     "disaster": 1
+   },
+   "Guntur": {
+    "other": 2
    },
    "NTR": {
     "other": 7,
@@ -105,18 +107,26 @@
     "other": 1,
     "disaster": 1
    },
-   "Guntur": {
-    "other": 1
-   },
    "Anakapalli": {
     "roads": 1
    }
   },
   "ts": {
+   "Hyderabad": {
+    "water": 6,
+    "other": 16,
+    "roads": 1,
+    "power": 4,
+    "education": 3,
+    "elderly": 1,
+    "certs": 1,
+    "agri": 1,
+    "health": 1
+   },
    "(state-wide / unknown)": {
-    "roads": 18,
+    "roads": 17,
     "education": 47,
-    "other": 159,
+    "other": 157,
     "water": 28,
     "agri": 59,
     "disaster": 9,
@@ -124,23 +134,12 @@
     "nutrition": 9,
     "housing": 9,
     "health": 20,
-    "social": 3,
+    "social": 2,
     "power": 9,
     "women": 4,
     "livelihood": 3,
     "certs": 1,
     "child": 2
-   },
-   "Hyderabad": {
-    "other": 17,
-    "roads": 1,
-    "power": 4,
-    "education": 3,
-    "elderly": 1,
-    "water": 5,
-    "certs": 1,
-    "agri": 1,
-    "health": 1
    },
    "Warangal": {
     "health": 4,
