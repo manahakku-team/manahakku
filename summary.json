@@ -1,42 +1,41 @@
 {
- "updated": "2026-11-20T16:13",
+ "updated": "2026-11-20T19:19",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 217,
-    "health": 26,
-    "agri": 41,
-    "housing": 8,
+    "other": 219,
+    "disaster": 114,
     "roads": 21,
-    "disaster": 112,
+    "health": 26,
+    "agri": 38,
+    "housing": 8,
     "elderly": 5,
     "education": 41,
-    "water": 15,
+    "water": 16,
     "social": 4,
     "certs": 3,
-    "women": 6,
+    "women": 5,
     "livelihood": 8,
     "nutrition": 5,
     "power": 10,
-    "sanitation": 6
-   },
-   "YSR Kadapa": {
-    "education": 1,
-    "sanitation": 1,
-    "other": 1
+    "sanitation": 5
    },
    "Visakhapatnam": {
-    "other": 5,
+    "other": 6,
     "health": 1,
     "disaster": 2,
     "roads": 1,
     "water": 1
    },
    "Srikakulam": {
-    "disaster": 1
+    "disaster": 2
+   },
+   "YSR Kadapa": {
+    "education": 1,
+    "sanitation": 1
    },
    "Ananthapuramu": {
-    "education": 8,
+    "education": 7,
     "other": 6,
     "health": 2,
     "water": 1
@@ -57,22 +56,21 @@
     "agri": 2
    },
    "Kurnool": {
-    "health": 5,
-    "education": 1
+    "health": 5
    },
    "Tirupati": {
     "other": 4
    },
    "Krishna": {
     "water": 1,
-    "other": 3,
+    "other": 4,
     "disaster": 1
    },
    "Guntur": {
     "other": 2
    },
    "NTR": {
-    "other": 7,
+    "other": 6,
     "power": 1
    },
    "Eluru": {
@@ -104,36 +102,24 @@
     "other": 1
    },
    "Bapatla": {
-    "other": 1,
-    "disaster": 1
+    "other": 1
    },
    "Anakapalli": {
     "roads": 1
    }
   },
   "ts": {
-   "Hyderabad": {
-    "water": 6,
-    "other": 16,
-    "roads": 1,
-    "power": 4,
-    "education": 3,
-    "elderly": 1,
-    "certs": 1,
-    "agri": 1,
-    "health": 1
-   },
    "(state-wide / unknown)": {
+    "other": 155,
+    "health": 20,
     "roads": 17,
-    "education": 47,
-    "other": 157,
-    "water": 28,
-    "agri": 59,
+    "education": 45,
+    "water": 27,
+    "agri": 54,
     "disaster": 9,
-    "elderly": 15,
+    "elderly": 13,
     "nutrition": 9,
     "housing": 9,
-    "health": 20,
     "social": 2,
     "power": 9,
     "women": 4,
@@ -141,9 +127,30 @@
     "certs": 1,
     "child": 2
    },
+   "Kumuram Bheem Asifabad": {
+    "education": 1,
+    "power": 1
+   },
+   "Hyderabad": {
+    "water": 6,
+    "other": 16,
+    "roads": 1,
+    "power": 4,
+    "education": 3,
+    "elderly": 1,
+    "certs": 1
+   },
+   "Siddipet": {
+    "other": 4,
+    "education": 1
+   },
+   "Narayanpet": {
+    "water": 3,
+    "women": 1,
+    "elderly": 1
+   },
    "Warangal": {
-    "health": 4,
-    "agri": 1
+    "health": 4
    },
    "Nizamabad": {
     "health": 1,
@@ -164,15 +171,6 @@
    },
    "Nirmal": {
     "agri": 1
-   },
-   "Siddipet": {
-    "other": 3,
-    "education": 1
-   },
-   "Narayanpet": {
-    "water": 2,
-    "women": 1,
-    "elderly": 1
    },
    "Jagtial": {
     "agri": 3,
@@ -201,9 +199,6 @@
    },
    "Karimnagar": {
     "other": 2
-   },
-   "Kumuram Bheem Asifabad": {
-    "power": 1
    },
    "Jangaon": {
     "education": 1,
