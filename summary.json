@@ -1,36 +1,44 @@
 {
- "updated": "2026-11-20T10:22",
+ "updated": "2026-11-20T13:30",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 211,
-    "disaster": 108,
+    "agri": 38,
+    "other": 213,
+    "housing": 8,
+    "roads": 22,
+    "disaster": 111,
     "elderly": 4,
     "water": 15,
     "health": 24,
+    "education": 39,
     "social": 4,
-    "roads": 20,
-    "agri": 37,
     "certs": 2,
     "women": 6,
-    "education": 39,
     "livelihood": 8,
     "nutrition": 5,
-    "power": 11,
-    "housing": 8,
-    "sanitation": 9
+    "power": 10,
+    "sanitation": 8
+   },
+   "YSR Kadapa": {
+    "education": 1,
+    "sanitation": 1,
+    "other": 1
+   },
+   "Visakhapatnam": {
+    "other": 5,
+    "health": 1,
+    "disaster": 2,
+    "roads": 1,
+    "water": 1
+   },
+   "Srikakulam": {
+    "disaster": 1
    },
    "Ananthapuramu": {
     "education": 8,
     "other": 5,
     "health": 2,
-    "water": 1
-   },
-   "Visakhapatnam": {
-    "health": 1,
-    "disaster": 2,
-    "other": 4,
-    "roads": 2,
     "water": 1
    },
    "Kakinada": {
@@ -67,10 +75,6 @@
    },
    "Eluru": {
     "nutrition": 1,
-    "other": 1
-   },
-   "YSR Kadapa": {
-    "sanitation": 1,
     "other": 1
    },
    "Sri Potti Sriramulu Nellore": {
@@ -111,10 +115,10 @@
   "ts": {
    "(state-wide / unknown)": {
     "roads": 18,
-    "education": 49,
-    "other": 166,
-    "water": 29,
-    "agri": 60,
+    "education": 47,
+    "other": 159,
+    "water": 28,
+    "agri": 59,
     "disaster": 9,
     "elderly": 15,
     "nutrition": 9,
@@ -122,13 +126,13 @@
     "health": 20,
     "social": 3,
     "power": 9,
-    "women": 7,
+    "women": 4,
     "livelihood": 3,
     "certs": 1,
     "child": 2
    },
    "Hyderabad": {
-    "other": 19,
+    "other": 17,
     "roads": 1,
     "power": 4,
     "education": 3,
@@ -136,11 +140,10 @@
     "water": 5,
     "certs": 1,
     "agri": 1,
-    "health": 1,
-    "housing": 1
+    "health": 1
    },
    "Warangal": {
-    "health": 5,
+    "health": 4,
     "agri": 1
    },
    "Nizamabad": {
@@ -195,7 +198,7 @@
    },
    "Bhadradri Kothagudem": {
     "health": 1,
-    "other": 2
+    "other": 1
    },
    "Karimnagar": {
     "other": 2
