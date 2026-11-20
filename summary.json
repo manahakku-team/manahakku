@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-20T01:27",
+ "updated": "2026-11-20T04:12",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "elderly": 15,
-    "nutrition": 7,
     "education": 47,
-    "other": 163,
+    "disaster": 9,
+    "water": 28,
+    "elderly": 15,
+    "nutrition": 8,
+    "agri": 60,
+    "other": 165,
     "roads": 16,
     "housing": 9,
-    "water": 27,
     "health": 17,
-    "agri": 60,
     "social": 3,
     "power": 10,
     "women": 7,
     "livelihood": 3,
     "certs": 1,
-    "disaster": 8,
     "child": 2
    },
    "Hyderabad": {
@@ -82,7 +82,7 @@
     "other": 2
    },
    "Warangal": {
-    "health": 6,
+    "health": 5,
     "agri": 2
    },
    "Karimnagar": {
@@ -100,29 +100,32 @@
    }
   },
   "ap": {
+   "(state-wide / unknown)": {
+    "disaster": 102,
+    "other": 212,
+    "social": 4,
+    "water": 14,
+    "roads": 24,
+    "agri": 38,
+    "certs": 1,
+    "health": 19,
+    "women": 7,
+    "education": 33,
+    "livelihood": 8,
+    "nutrition": 5,
+    "power": 11,
+    "housing": 8,
+    "sanitation": 9,
+    "elderly": 2
+   },
    "Ananthapuramu": {
     "education": 8,
     "other": 4,
     "health": 1,
     "water": 1
    },
-   "(state-wide / unknown)": {
-    "other": 207,
-    "social": 4,
-    "water": 14,
-    "roads": 24,
-    "agri": 38,
-    "certs": 1,
-    "disaster": 99,
-    "health": 19,
-    "women": 7,
-    "education": 34,
-    "livelihood": 8,
-    "nutrition": 5,
-    "power": 10,
-    "housing": 8,
-    "sanitation": 8,
-    "elderly": 2
+   "Kakinada": {
+    "other": 4
    },
    "Chittoor": {
     "education": 1
@@ -131,9 +134,6 @@
     "water": 4,
     "roads": 3,
     "other": 2
-   },
-   "Kakinada": {
-    "other": 3
    },
    "Prakasam": {
     "other": 1,
@@ -145,8 +145,7 @@
    "Kurnool": {
     "health": 4,
     "education": 1,
-    "other": 2,
-    "water": 1
+    "other": 2
    },
    "Krishna": {
     "water": 1,
@@ -176,7 +175,7 @@
     "disaster": 3
    },
    "West Godavari": {
-    "other": 3
+    "other": 4
    },
    "Polavaram": {
     "social": 1
