@@ -20,3 +20,4 @@
 2026-11-17 screens=0 live=0 news_none=1
 2026-11-18 screens=0 live=0 news_none=0
 2026-11-19 screens=0 live=0 news_none=0
+2026-11-20 screens=0 live=0 news_none=0
