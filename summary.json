@@ -1,24 +1,29 @@
 {
- "updated": "2026-11-21T01:31",
+ "updated": "2026-11-21T04:09",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 228,
-    "education": 43,
-    "housing": 9,
+    "other": 231,
     "disaster": 124,
+    "agri": 39,
+    "nutrition": 6,
     "roads": 18,
+    "education": 41,
+    "housing": 9,
     "health": 27,
-    "agri": 38,
-    "elderly": 6,
+    "elderly": 7,
     "water": 16,
     "social": 4,
     "certs": 3,
     "women": 5,
     "livelihood": 8,
-    "nutrition": 5,
     "power": 9,
     "sanitation": 5
+   },
+   "Prakasam": {
+    "roads": 1,
+    "other": 1,
+    "agri": 2
    },
    "Kakinada": {
     "nutrition": 1,
@@ -52,10 +57,6 @@
     "roads": 2,
     "other": 2
    },
-   "Prakasam": {
-    "other": 1,
-    "agri": 2
-   },
    "Kurnool": {
     "health": 5
    },
@@ -83,7 +84,7 @@
     "disaster": 3
    },
    "West Godavari": {
-    "other": 3
+    "other": 2
    },
    "Polavaram": {
     "social": 1
@@ -104,26 +105,32 @@
    },
    "Bapatla": {
     "other": 1
-   },
-   "Anakapalli": {
-    "roads": 1
    }
   },
   "ts": {
+   "Hyderabad": {
+    "other": 17,
+    "water": 6,
+    "roads": 1,
+    "power": 3,
+    "education": 3,
+    "elderly": 1,
+    "certs": 1
+   },
    "(state-wide / unknown)": {
+    "agri": 53,
+    "roads": 21,
+    "other": 154,
     "health": 23,
     "education": 47,
-    "other": 155,
-    "agri": 54,
-    "roads": 19,
     "water": 24,
-    "disaster": 9,
-    "elderly": 13,
+    "disaster": 8,
+    "elderly": 16,
     "nutrition": 9,
     "housing": 8,
     "social": 3,
     "power": 9,
-    "women": 4,
+    "women": 3,
     "livelihood": 3,
     "certs": 1,
     "child": 2
@@ -137,15 +144,6 @@
     "health": 1,
     "other": 1
    },
-   "Hyderabad": {
-    "water": 6,
-    "other": 16,
-    "roads": 1,
-    "power": 4,
-    "education": 3,
-    "elderly": 1,
-    "certs": 1
-   },
    "Siddipet": {
     "other": 4,
     "education": 1
@@ -156,7 +154,7 @@
     "elderly": 1
    },
    "Warangal": {
-    "health": 4
+    "health": 5
    },
    "Nizamabad": {
     "health": 1,
