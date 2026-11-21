@@ -1,27 +1,37 @@
 {
- "updated": "2026-11-21T15:59",
+ "updated": "2026-11-21T19:05",
  "last7days_trusted": {
   "ap": {
+   "Krishna": {
+    "water": 4,
+    "other": 5,
+    "education": 1,
+    "disaster": 1
+   },
    "(state-wide / unknown)": {
-    "other": 239,
-    "education": 41,
+    "education": 42,
+    "health": 26,
+    "other": 244,
     "roads": 20,
     "elderly": 8,
-    "disaster": 129,
+    "disaster": 127,
     "women": 6,
     "agri": 37,
     "nutrition": 6,
     "housing": 9,
-    "health": 25,
     "livelihood": 8,
-    "water": 16,
+    "water": 18,
     "social": 5,
     "certs": 3,
     "power": 9,
     "sanitation": 4
    },
+   "Kurnool": {
+    "other": 1,
+    "health": 4
+   },
    "Visakhapatnam": {
-    "other": 7,
+    "other": 6,
     "health": 1,
     "disaster": 2
    },
@@ -29,17 +39,11 @@
     "other": 7,
     "power": 1
    },
-   "Krishna": {
-    "education": 1,
-    "water": 1,
-    "other": 4,
-    "disaster": 1
-   },
    "Srikakulam": {
-    "disaster": 3
+    "disaster": 4
    },
    "Prakasam": {
-    "other": 2,
+    "other": 3,
     "roads": 1,
     "agri": 2
    },
@@ -59,19 +63,23 @@
     "education": 1,
     "sanitation": 1
    },
+   "Palnadu": {
+    "water": 7,
+    "roads": 2,
+    "other": 2
+   },
    "Tirupati": {
     "other": 4
    },
    "Chittoor": {
     "education": 1
    },
-   "Palnadu": {
-    "water": 6,
-    "roads": 2,
-    "other": 2
+   "Annamayya": {
+    "child": 1
    },
-   "Kurnool": {
-    "health": 4
+   "Sri Potti Sriramulu Nellore": {
+    "other": 2,
+    "disaster": 3
    },
    "Guntur": {
     "other": 1
@@ -79,10 +87,6 @@
    "Eluru": {
     "nutrition": 1,
     "other": 1
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "other": 1,
-    "disaster": 3
    },
    "West Godavari": {
     "other": 2
@@ -106,6 +110,24 @@
    }
   },
   "ts": {
+   "(state-wide / unknown)": {
+    "nutrition": 11,
+    "other": 166,
+    "women": 4,
+    "roads": 21,
+    "elderly": 18,
+    "certs": 2,
+    "education": 46,
+    "health": 26,
+    "livelihood": 4,
+    "agri": 51,
+    "water": 23,
+    "disaster": 8,
+    "housing": 8,
+    "social": 3,
+    "power": 8,
+    "child": 2
+   },
    "Hyderabad": {
     "other": 21,
     "power": 3,
@@ -114,26 +136,7 @@
     "water": 5,
     "roads": 1,
     "education": 3,
-    "elderly": 1,
-    "certs": 1
-   },
-   "(state-wide / unknown)": {
-    "roads": 21,
-    "nutrition": 10,
-    "certs": 2,
-    "education": 47,
-    "other": 165,
-    "agri": 55,
-    "health": 24,
-    "elderly": 17,
-    "water": 23,
-    "disaster": 8,
-    "housing": 8,
-    "social": 3,
-    "power": 9,
-    "women": 3,
-    "livelihood": 3,
-    "child": 2
+    "elderly": 1
    },
    "Bhadradri Kothagudem": {
     "water": 1,
@@ -143,6 +146,7 @@
    },
    "Nalgonda": {
     "other": 3,
+    "roads": 1,
     "women": 1
    },
    "Khammam": {
@@ -170,8 +174,7 @@
    },
    "Hanumakonda": {
     "agri": 1,
-    "education": 1,
-    "other": 1
+    "education": 1
    },
    "Medchal–Malkajgiri": {
     "other": 3,
@@ -181,7 +184,7 @@
     "agri": 1
    },
    "Jagtial": {
-    "agri": 3,
+    "agri": 2,
     "education": 1,
     "elderly": 1
    },
