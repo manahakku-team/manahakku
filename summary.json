@@ -1,31 +1,33 @@
 {
- "updated": "2026-11-22T07:29",
+ "updated": "2026-11-22T10:01",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "education": 49,
     "roads": 24,
-    "education": 48,
+    "other": 173,
+    "power": 10,
     "disaster": 9,
-    "other": 169,
     "agri": 51,
-    "water": 24,
-    "power": 9,
+    "water": 23,
+    "sanitation": 1,
     "nutrition": 11,
     "women": 4,
-    "health": 25,
+    "health": 26,
     "elderly": 17,
     "certs": 2,
-    "livelihood": 4,
+    "livelihood": 3,
     "housing": 8,
     "social": 3,
     "child": 2
    },
    "Hyderabad": {
-    "other": 22,
+    "other": 26,
     "power": 3,
     "health": 1,
     "disaster": 1,
     "water": 5,
+    "housing": 1,
     "roads": 1,
     "education": 3,
     "elderly": 1
@@ -44,6 +46,10 @@
    "Khammam": {
     "health": 1
    },
+   "Nizamabad": {
+    "other": 2,
+    "health": 1
+   },
    "Kumuram Bheem Asifabad": {
     "education": 1,
     "power": 1
@@ -59,10 +65,6 @@
    },
    "Warangal": {
     "health": 5
-   },
-   "Nizamabad": {
-    "health": 1,
-    "other": 1
    },
    "Jogulamba Gadwal": {
     "elderly": 1
@@ -96,31 +98,26 @@
     "women": 1
    },
    "Adilabad": {
-    "other": 1,
-    "agri": 1
+    "other": 1
    },
    "Nagarkurnool": {
     "other": 2
-   },
-   "Jangaon": {
-    "education": 1,
-    "health": 1
    }
   },
   "ap": {
    "(state-wide / unknown)": {
-    "education": 42,
+    "nutrition": 7,
+    "roads": 21,
+    "education": 43,
     "other": 255,
-    "roads": 20,
     "agri": 38,
     "power": 11,
-    "health": 29,
+    "health": 28,
     "elderly": 8,
     "disaster": 128,
     "women": 6,
-    "nutrition": 6,
     "housing": 10,
-    "livelihood": 8,
+    "livelihood": 9,
     "water": 18,
     "social": 5,
     "certs": 3,
@@ -140,7 +137,7 @@
    },
    "Krishna": {
     "water": 4,
-    "other": 5,
+    "other": 4,
     "education": 1,
     "disaster": 1
    },
@@ -150,7 +147,7 @@
     "disaster": 2
    },
    "NTR": {
-    "other": 6,
+    "other": 7,
     "power": 1
    },
    "Srikakulam": {
