@@ -1,32 +1,27 @@
 {
- "updated": "2026-11-22T04:12",
+ "updated": "2026-11-22T07:29",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "roads": 24,
+    "education": 48,
     "disaster": 9,
-    "other": 168,
-    "roads": 22,
+    "other": 169,
     "agri": 51,
     "water": 24,
     "power": 9,
     "nutrition": 11,
     "women": 4,
-    "health": 26,
+    "health": 25,
     "elderly": 17,
     "certs": 2,
-    "education": 47,
     "livelihood": 4,
     "housing": 8,
     "social": 3,
     "child": 2
    },
-   "Nalgonda": {
-    "agri": 2,
-    "other": 3,
-    "roads": 1
-   },
    "Hyderabad": {
-    "other": 21,
+    "other": 22,
     "power": 3,
     "health": 1,
     "disaster": 1,
@@ -34,6 +29,11 @@
     "roads": 1,
     "education": 3,
     "elderly": 1
+   },
+   "Nalgonda": {
+    "agri": 2,
+    "other": 3,
+    "roads": 1
    },
    "Bhadradri Kothagudem": {
     "water": 1,
@@ -63,6 +63,12 @@
    "Nizamabad": {
     "health": 1,
     "other": 1
+   },
+   "Jogulamba Gadwal": {
+    "elderly": 1
+   },
+   "Karimnagar": {
+    "other": 2
    },
    "Hanumakonda": {
     "agri": 1,
@@ -96,9 +102,6 @@
    "Nagarkurnool": {
     "other": 2
    },
-   "Karimnagar": {
-    "other": 1
-   },
    "Jangaon": {
     "education": 1,
     "health": 1
@@ -106,18 +109,18 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 256,
-    "roads": 19,
+    "education": 42,
+    "other": 255,
+    "roads": 20,
     "agri": 38,
     "power": 11,
     "health": 29,
-    "education": 41,
     "elderly": 8,
-    "disaster": 129,
+    "disaster": 128,
     "women": 6,
     "nutrition": 6,
     "housing": 10,
-    "livelihood": 7,
+    "livelihood": 8,
     "water": 18,
     "social": 5,
     "certs": 3,
@@ -131,15 +134,15 @@
    "Nandyal": {
     "other": 1
    },
+   "Kurnool": {
+    "other": 2,
+    "health": 3
+   },
    "Krishna": {
     "water": 4,
     "other": 5,
     "education": 1,
     "disaster": 1
-   },
-   "Kurnool": {
-    "other": 1,
-    "health": 3
    },
    "Visakhapatnam": {
     "other": 6,
@@ -168,7 +171,7 @@
    "Ananthapuramu": {
     "health": 3,
     "education": 7,
-    "other": 6
+    "other": 7
    },
    "Palnadu": {
     "water": 7,
@@ -209,9 +212,6 @@
    },
    "Sri Sathya Sai": {
     "health": 1
-   },
-   "East Godavari": {
-    "disaster": 1
    }
   }
  }
