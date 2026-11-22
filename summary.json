@@ -1,125 +1,20 @@
 {
- "updated": "2026-11-22T19:08",
+ "updated": "2026-11-22T21:58",
  "last7days_trusted": {
-  "ap": {
-   "(state-wide / unknown)": {
-    "other": 267,
-    "health": 31,
-    "water": 22,
-    "education": 47,
-    "women": 6,
-    "power": 14,
-    "nutrition": 7,
-    "roads": 21,
-    "agri": 37,
-    "elderly": 8,
-    "disaster": 121,
-    "housing": 10,
-    "livelihood": 9,
-    "social": 5,
-    "certs": 3,
-    "sanitation": 3
-   },
-   "YSR Kadapa": {
-    "education": 4,
-    "other": 3,
-    "sanitation": 1
-   },
-   "Visakhapatnam": {
-    "education": 1,
-    "other": 6,
-    "health": 1,
-    "disaster": 2
-   },
-   "Ananthapuramu": {
-    "other": 8,
-    "health": 3,
-    "education": 7
-   },
-   "Nandyal": {
-    "other": 1
-   },
-   "Kurnool": {
-    "other": 2,
-    "health": 3
-   },
-   "Krishna": {
-    "water": 4,
-    "other": 4,
-    "education": 1,
-    "disaster": 1
-   },
-   "NTR": {
-    "other": 7,
-    "power": 1
-   },
-   "Srikakulam": {
-    "disaster": 4
-   },
-   "Prakasam": {
-    "other": 4,
-    "roads": 1,
-    "agri": 2
-   },
-   "Kakinada": {
-    "nutrition": 1,
-    "other": 4
-   },
-   "Bapatla": {
-    "other": 1
-   },
-   "Guntur": {
-    "other": 3
-   },
-   "Palnadu": {
-    "water": 7,
-    "roads": 2,
-    "other": 2
-   },
-   "Tirupati": {
-    "other": 3
-   },
-   "Chittoor": {
-    "education": 1
-   },
-   "Annamayya": {
-    "child": 1
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "other": 2,
-    "disaster": 3
-   },
-   "Eluru": {
-    "nutrition": 1,
-    "other": 1
-   },
-   "West Godavari": {
-    "other": 2
-   },
-   "Polavaram": {
-    "social": 1
-   },
-   "Vizianagaram": {
-    "sanitation": 1
-   },
-   "Dr. B. R. Ambedkar Konaseema": {
-    "other": 1
-   }
-  },
   "ts": {
    "(state-wide / unknown)": {
+    "agri": 47,
     "power": 11,
-    "other": 181,
+    "other": 180,
     "roads": 26,
-    "agri": 48,
     "education": 47,
-    "disaster": 9,
+    "disaster": 8,
     "water": 21,
     "sanitation": 1,
     "nutrition": 12,
     "women": 5,
     "health": 26,
-    "elderly": 17,
+    "elderly": 16,
     "certs": 2,
     "livelihood": 3,
     "housing": 8,
@@ -131,7 +26,7 @@
     "power": 3,
     "health": 1,
     "disaster": 1,
-    "water": 4,
+    "water": 5,
     "certs": 1,
     "housing": 1,
     "roads": 1,
@@ -210,6 +105,111 @@
    },
    "Nagarkurnool": {
     "other": 2
+   }
+  },
+  "ap": {
+   "(state-wide / unknown)": {
+    "roads": 22,
+    "other": 268,
+    "education": 48,
+    "health": 31,
+    "water": 22,
+    "women": 6,
+    "power": 14,
+    "nutrition": 7,
+    "agri": 36,
+    "elderly": 8,
+    "disaster": 118,
+    "housing": 10,
+    "livelihood": 9,
+    "social": 5,
+    "certs": 3,
+    "sanitation": 3
+   },
+   "YSR Kadapa": {
+    "education": 4,
+    "other": 3,
+    "sanitation": 1
+   },
+   "Visakhapatnam": {
+    "education": 1,
+    "other": 6,
+    "health": 1,
+    "disaster": 2
+   },
+   "Dr. B. R. Ambedkar Konaseema": {
+    "other": 2
+   },
+   "Ananthapuramu": {
+    "other": 8,
+    "health": 3,
+    "education": 7
+   },
+   "Nandyal": {
+    "other": 1
+   },
+   "Kurnool": {
+    "other": 2,
+    "health": 3
+   },
+   "Krishna": {
+    "water": 4,
+    "other": 4,
+    "education": 1,
+    "disaster": 1
+   },
+   "NTR": {
+    "other": 7,
+    "power": 1
+   },
+   "Srikakulam": {
+    "disaster": 4
+   },
+   "Prakasam": {
+    "other": 4,
+    "roads": 1,
+    "agri": 2
+   },
+   "Kakinada": {
+    "nutrition": 1,
+    "other": 4
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "disaster": 4,
+    "other": 2
+   },
+   "Bapatla": {
+    "other": 1
+   },
+   "Guntur": {
+    "other": 3
+   },
+   "Palnadu": {
+    "water": 7,
+    "roads": 2,
+    "other": 2
+   },
+   "Tirupati": {
+    "other": 3
+   },
+   "Chittoor": {
+    "education": 1
+   },
+   "Annamayya": {
+    "child": 1
+   },
+   "Eluru": {
+    "nutrition": 1,
+    "other": 1
+   },
+   "West Godavari": {
+    "other": 2
+   },
+   "Polavaram": {
+    "social": 1
+   },
+   "Vizianagaram": {
+    "sanitation": 1
    }
   }
  }
