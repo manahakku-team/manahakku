@@ -1,4 +1,4 @@
-# Mana Hakku daily quality check, 2026-11-21
+# Mana Hakku daily quality check, 2026-11-22
 
 Build: fdaa91b Instagram job: use the never-expiring system-user key (graph.facebook.com); renewa
 
@@ -39,7 +39,7 @@ Register (read only)
   OK  ap: 14 reports, 0 hidden, newest 2026-11-14
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (26 days ago)
+  OK  finance data updated 2026-10-26 (27 days ago)
 LIVE_BAD 0
 ```
 
@@ -50,20 +50,16 @@ OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్�
       - "east-godavari"
       - East Godavari collector instructs speedy restoration of road
       - Black Magic Rituals On Diwali Amavasya Create Sensation In East Godavari
-OK   ap en "Drinking water shortage in villages" @ Guntur: 3 naming the district
-      - Guntur civic body launches ₹2.7 crore summer action plan to ensure drinking water supply
+OK   ap en "Drinking water shortage in villages" @ Guntur: 1 naming the district
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-      - National Watershed Conference begins in Guntur with call to strengthen rainwater harvesting
-OK   ap en "Road accident on highway" @ Krishna: 7 naming the district
+OK   ap en "Road accident on highway" @ Krishna: 8 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
-      - Tipper truck plunges into Krishna River after crashing into car on Karnataka bridge; driver missing
-OK   ts en "Doctors absent at government hospital" @ Hyderabad: 4 naming the district
+      - Three killed, four injured in rain-related incidents in Krishna, NTR Districts
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 2 naming the district
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
-      - RTV Digital. . SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
       - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
-      - SWASA Hospital | Freedom to Breath | Hyderabad | Dr. Vishnu Veerapaneni | RTV
 OK   ts te "రైతుల ఆందోళన" @ Khammam: 1 naming the district
       - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
 OK   ts en "Floods damage crops" @ Warangal: 3 naming the district
