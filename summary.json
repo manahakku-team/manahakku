@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-22T21:58",
+ "updated": "2026-11-23T01:34",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "agri": 47,
+    "nutrition": 13,
+    "other": 187,
+    "agri": 45,
     "power": 11,
-    "other": 180,
     "roads": 26,
-    "education": 47,
+    "education": 45,
     "disaster": 8,
-    "water": 21,
+    "water": 20,
     "sanitation": 1,
-    "nutrition": 12,
     "women": 5,
     "health": 26,
     "elderly": 16,
@@ -26,7 +26,7 @@
     "power": 3,
     "health": 1,
     "disaster": 1,
-    "water": 5,
+    "water": 6,
     "certs": 1,
     "housing": 1,
     "roads": 1,
@@ -108,12 +108,18 @@
    }
   },
   "ap": {
+   "Krishna": {
+    "water": 5,
+    "other": 4,
+    "education": 1,
+    "disaster": 1
+   },
    "(state-wide / unknown)": {
     "roads": 22,
     "other": 268,
     "education": 48,
     "health": 31,
-    "water": 22,
+    "water": 21,
     "women": 6,
     "power": 14,
     "nutrition": 7,
@@ -122,9 +128,9 @@
     "disaster": 118,
     "housing": 10,
     "livelihood": 9,
-    "social": 5,
+    "social": 4,
     "certs": 3,
-    "sanitation": 3
+    "sanitation": 2
    },
    "YSR Kadapa": {
     "education": 4,
@@ -138,7 +144,7 @@
     "disaster": 2
    },
    "Dr. B. R. Ambedkar Konaseema": {
-    "other": 2
+    "other": 1
    },
    "Ananthapuramu": {
     "other": 8,
@@ -151,12 +157,6 @@
    "Kurnool": {
     "other": 2,
     "health": 3
-   },
-   "Krishna": {
-    "water": 4,
-    "other": 4,
-    "education": 1,
-    "disaster": 1
    },
    "NTR": {
     "other": 7,
