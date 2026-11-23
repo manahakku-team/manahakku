@@ -1,34 +1,34 @@
 {
- "updated": "2026-11-23T04:28",
+ "updated": "2026-11-23T07:54",
  "last7days_trusted": {
   "ap": {
-   "NTR": {
-    "health": 1,
-    "other": 7,
-    "power": 1
-   },
    "(state-wide / unknown)": {
-    "roads": 24,
-    "other": 267,
-    "water": 22,
-    "agri": 36,
+    "other": 270,
+    "education": 50,
+    "agri": 37,
+    "sanitation": 3,
+    "health": 34,
+    "housing": 11,
+    "roads": 23,
     "disaster": 118,
-    "health": 33,
-    "education": 48,
+    "water": 22,
     "women": 6,
-    "power": 14,
-    "nutrition": 7,
+    "power": 13,
+    "nutrition": 6,
     "elderly": 8,
-    "housing": 10,
     "livelihood": 9,
     "social": 4,
-    "certs": 3,
-    "sanitation": 2
+    "certs": 3
+   },
+   "NTR": {
+    "power": 2,
+    "health": 1,
+    "other": 7
    },
    "Palnadu": {
+    "other": 3,
     "water": 8,
-    "roads": 2,
-    "other": 2
+    "roads": 2
    },
    "Krishna": {
     "water": 5,
@@ -43,7 +43,7 @@
    },
    "Visakhapatnam": {
     "education": 1,
-    "other": 6,
+    "other": 5,
     "health": 1,
     "disaster": 2
    },
@@ -75,7 +75,7 @@
     "other": 4
    },
    "Sri Potti Sriramulu Nellore": {
-    "disaster": 4,
+    "disaster": 2,
     "other": 2
    },
    "Bapatla": {
@@ -102,33 +102,35 @@
    },
    "Polavaram": {
     "social": 1
-   },
-   "Vizianagaram": {
-    "sanitation": 1
    }
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 188,
+    "other": 189,
+    "water": 22,
+    "elderly": 14,
     "nutrition": 13,
-    "water": 21,
-    "agri": 44,
+    "agri": 45,
+    "education": 45,
     "power": 11,
     "roads": 26,
-    "education": 44,
     "disaster": 8,
     "sanitation": 1,
     "women": 5,
     "health": 25,
-    "elderly": 16,
     "certs": 2,
     "livelihood": 3,
     "housing": 8,
     "social": 2,
     "child": 2
    },
+   "Kamareddy": {
+    "health": 1,
+    "other": 1,
+    "agri": 1
+   },
    "Hyderabad": {
-    "other": 27,
+    "other": 28,
     "power": 3,
     "health": 1,
     "disaster": 1,
@@ -201,10 +203,6 @@
    },
    "Sangareddy": {
     "education": 1
-   },
-   "Kamareddy": {
-    "other": 1,
-    "agri": 1
    },
    "Adilabad": {
     "other": 1
