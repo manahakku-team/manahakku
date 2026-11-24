@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-24T19:18",
+ "updated": "2026-11-24T22:13",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "roads": 20,
     "agri": 32,
-    "other": 285,
-    "education": 52,
-    "disaster": 87,
-    "health": 35,
+    "roads": 20,
+    "other": 287,
+    "health": 36,
+    "education": 51,
+    "disaster": 86,
     "nutrition": 6,
     "women": 6,
-    "water": 28,
+    "water": 29,
     "housing": 7,
     "sanitation": 4,
     "social": 3,
@@ -19,6 +19,11 @@
     "elderly": 7,
     "livelihood": 4,
     "certs": 3
+   },
+   "Palnadu": {
+    "water": 11,
+    "other": 5,
+    "roads": 1
    },
    "NTR": {
     "other": 6,
@@ -37,7 +42,7 @@
    "Ananthapuramu": {
     "other": 10,
     "health": 3,
-    "education": 5
+    "education": 4
    },
    "Guntur": {
     "other": 5,
@@ -50,11 +55,6 @@
     "other": 6,
     "water": 11,
     "education": 1
-   },
-   "Palnadu": {
-    "other": 5,
-    "water": 10,
-    "roads": 1
    },
    "Polavaram": {
     "power": 1,
@@ -121,13 +121,14 @@
     "nutrition": 12,
     "disaster": 6,
     "power": 7,
-    "roads": 26,
+    "roads": 25,
     "certs": 2,
     "livelihood": 2,
     "housing": 1
    },
    "Karimnagar": {
     "agri": 1,
+    "education": 1,
     "other": 1
    },
    "Hyderabad": {
@@ -140,6 +141,10 @@
     "disaster": 1,
     "certs": 1,
     "roads": 1
+   },
+   "Ranga Reddy": {
+    "agri": 1,
+    "other": 2
    },
    "Sangareddy": {
     "water": 1,
@@ -160,15 +165,11 @@
    },
    "Medchal–Malkajgiri": {
     "housing": 1,
-    "other": 3,
-    "water": 1
+    "other": 3
    },
    "Warangal": {
     "nutrition": 1,
     "health": 2
-   },
-   "Ranga Reddy": {
-    "other": 2
    },
    "Kumuram Bheem Asifabad": {
     "education": 2
