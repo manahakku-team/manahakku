@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-24T10:24",
+ "updated": "2026-11-24T13:35",
  "last7days_trusted": {
   "ts": {
-   "Sangareddy": {
-    "water": 1,
-    "power": 1,
-    "education": 1
+   "Hyderabad": {
+    "other": 29,
+    "water": 4,
+    "education": 1,
+    "housing": 2,
+    "power": 3,
+    "health": 1,
+    "disaster": 1,
+    "certs": 1,
+    "roads": 1
    },
    "(state-wide / unknown)": {
-    "other": 221,
+    "other": 217,
+    "women": 6,
+    "agri": 41,
     "education": 47,
     "elderly": 14,
     "health": 30,
     "water": 26,
-    "agri": 41,
     "child": 2,
     "social": 3,
     "sanitation": 2,
@@ -21,25 +28,18 @@
     "disaster": 6,
     "power": 7,
     "roads": 27,
-    "women": 5,
     "certs": 2,
     "livelihood": 3,
     "housing": 3
    },
+   "Sangareddy": {
+    "water": 1,
+    "power": 1,
+    "education": 1
+   },
    "Khammam": {
     "education": 1,
     "health": 1
-   },
-   "Hyderabad": {
-    "other": 28,
-    "education": 1,
-    "housing": 2,
-    "power": 3,
-    "health": 1,
-    "disaster": 1,
-    "water": 3,
-    "certs": 1,
-    "roads": 1
    },
    "Narayanpet": {
     "water": 5
@@ -127,19 +127,19 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "education": 54,
-    "health": 34,
-    "nutrition": 7,
-    "other": 288,
+    "other": 285,
+    "education": 55,
     "roads": 22,
-    "disaster": 100,
-    "water": 27,
+    "health": 35,
+    "nutrition": 7,
+    "women": 7,
+    "disaster": 96,
+    "water": 28,
     "housing": 7,
     "sanitation": 4,
     "social": 3,
-    "agri": 33,
-    "women": 6,
-    "power": 10,
+    "agri": 32,
+    "power": 8,
     "elderly": 7,
     "livelihood": 4,
     "certs": 3
@@ -180,7 +180,7 @@
     "sanitation": 1
    },
    "NTR": {
-    "power": 2,
+    "power": 1,
     "health": 1,
     "other": 5
    },
@@ -205,8 +205,7 @@
    },
    "Prakasam": {
     "roads": 2,
-    "other": 4,
-    "agri": 2
+    "other": 4
    },
    "Srikakulam": {
     "disaster": 5
