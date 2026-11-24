@@ -1,27 +1,16 @@
 {
- "updated": "2026-11-24T13:35",
+ "updated": "2026-11-24T16:27",
  "last7days_trusted": {
   "ts": {
-   "Hyderabad": {
-    "other": 29,
-    "water": 4,
-    "education": 1,
-    "housing": 2,
-    "power": 3,
-    "health": 1,
-    "disaster": 1,
-    "certs": 1,
-    "roads": 1
-   },
    "(state-wide / unknown)": {
-    "other": 217,
+    "health": 28,
+    "other": 221,
     "women": 6,
     "agri": 41,
     "education": 47,
     "elderly": 14,
-    "health": 30,
     "water": 26,
-    "child": 2,
+    "child": 3,
     "social": 3,
     "sanitation": 2,
     "nutrition": 12,
@@ -30,7 +19,18 @@
     "roads": 27,
     "certs": 2,
     "livelihood": 3,
-    "housing": 3
+    "housing": 2
+   },
+   "Hyderabad": {
+    "other": 30,
+    "water": 4,
+    "education": 2,
+    "housing": 2,
+    "power": 3,
+    "health": 1,
+    "disaster": 1,
+    "certs": 1,
+    "roads": 1
    },
    "Sangareddy": {
     "water": 1,
@@ -126,19 +126,28 @@
    }
   },
   "ap": {
+   "Srikakulam": {
+    "other": 1,
+    "disaster": 5
+   },
+   "Ananthapuramu": {
+    "other": 10,
+    "health": 3,
+    "education": 5
+   },
    "(state-wide / unknown)": {
+    "disaster": 91,
     "other": 285,
-    "education": 55,
-    "roads": 22,
+    "education": 54,
+    "agri": 31,
+    "roads": 20,
     "health": 35,
     "nutrition": 7,
-    "women": 7,
-    "disaster": 96,
+    "women": 6,
     "water": 28,
     "housing": 7,
     "sanitation": 4,
     "social": 3,
-    "agri": 32,
     "power": 8,
     "elderly": 7,
     "livelihood": 4,
@@ -153,7 +162,7 @@
    },
    "Krishna": {
     "other": 6,
-    "water": 10,
+    "water": 11,
     "education": 1
    },
    "Palnadu": {
@@ -195,11 +204,6 @@
    "Dr. B. R. Ambedkar Konaseema": {
     "other": 1
    },
-   "Ananthapuramu": {
-    "other": 9,
-    "health": 3,
-    "education": 5
-   },
    "Nandyal": {
     "other": 2
    },
@@ -207,16 +211,13 @@
     "roads": 2,
     "other": 4
    },
-   "Srikakulam": {
-    "disaster": 5
-   },
    "Kakinada": {
     "nutrition": 1,
     "other": 3
    },
    "Sri Potti Sriramulu Nellore": {
     "disaster": 1,
-    "other": 2
+    "other": 1
    },
    "Bapatla": {
     "other": 1
@@ -229,9 +230,6 @@
    },
    "Eluru": {
     "nutrition": 1
-   },
-   "West Godavari": {
-    "other": 1
    }
   }
  }
