@@ -1,18 +1,18 @@
 {
- "updated": "2026-11-24T04:18",
+ "updated": "2026-11-24T07:40",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
+    "other": 287,
+    "roads": 22,
+    "education": 53,
+    "disaster": 103,
+    "water": 27,
     "housing": 7,
-    "water": 26,
     "health": 34,
-    "other": 286,
-    "education": 49,
     "sanitation": 4,
     "social": 3,
     "agri": 35,
-    "roads": 21,
-    "disaster": 104,
     "women": 6,
     "power": 10,
     "nutrition": 6,
@@ -20,13 +20,18 @@
     "livelihood": 6,
     "certs": 3
    },
+   "Vizianagaram": {
+    "other": 3
+   },
+   "Krishna": {
+    "other": 6,
+    "water": 10,
+    "education": 1
+   },
    "Palnadu": {
     "other": 5,
     "water": 10,
-    "roads": 2
-   },
-   "Vizianagaram": {
-    "other": 2
+    "roads": 1
    },
    "Guntur": {
     "education": 1,
@@ -46,11 +51,6 @@
     "health": 1,
     "disaster": 2
    },
-   "Krishna": {
-    "water": 9,
-    "other": 5,
-    "education": 1
-   },
    "Tirupati": {
     "other": 4,
     "sanitation": 1
@@ -58,7 +58,7 @@
    "NTR": {
     "power": 2,
     "health": 1,
-    "other": 7
+    "other": 6
    },
    "Anakapalli": {
     "other": 1
@@ -72,7 +72,7 @@
     "other": 1
    },
    "Ananthapuramu": {
-    "other": 8,
+    "other": 9,
     "health": 3,
     "education": 7
    },
@@ -114,12 +114,13 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 214,
-    "health": 30,
     "education": 48,
-    "water": 25,
+    "health": 32,
+    "other": 215,
+    "water": 26,
     "agri": 41,
-    "elderly": 14,
+    "social": 3,
+    "elderly": 13,
     "sanitation": 2,
     "nutrition": 12,
     "disaster": 6,
@@ -129,8 +130,21 @@
     "certs": 2,
     "livelihood": 3,
     "housing": 3,
-    "social": 2,
     "child": 2
+   },
+   "Hyderabad": {
+    "other": 28,
+    "housing": 2,
+    "power": 3,
+    "health": 1,
+    "disaster": 1,
+    "water": 3,
+    "certs": 1,
+    "roads": 1,
+    "education": 2
+   },
+   "Narayanpet": {
+    "water": 5
    },
    "Adilabad": {
     "sanitation": 1,
@@ -144,24 +158,10 @@
    },
    "Warangal": {
     "nutrition": 1,
-    "health": 3
-   },
-   "Hyderabad": {
-    "other": 28,
-    "housing": 2,
-    "power": 3,
-    "health": 1,
-    "disaster": 1,
-    "water": 3,
-    "certs": 1,
-    "roads": 1,
-    "education": 2
+    "health": 2
    },
    "Ranga Reddy": {
     "other": 2
-   },
-   "Narayanpet": {
-    "water": 4
    },
    "Kumuram Bheem Asifabad": {
     "education": 2
@@ -201,8 +201,7 @@
    },
    "Bhadradri Kothagudem": {
     "water": 1,
-    "women": 1,
-    "health": 1
+    "women": 1
    },
    "Khammam": {
     "health": 1
@@ -222,8 +221,7 @@
     "other": 1
    },
    "Hanumakonda": {
-    "agri": 1,
-    "education": 1
+    "agri": 1
    },
    "Nirmal": {
     "agri": 1
