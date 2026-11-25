@@ -1,46 +1,47 @@
 {
- "updated": "2026-11-25T01:38",
+ "updated": "2026-11-25T04:26",
  "last7days_trusted": {
   "ts": {
-   "Warangal": {
-    "health": 3,
-    "nutrition": 1
-   },
    "(state-wide / unknown)": {
-    "other": 224,
-    "education": 46,
-    "roads": 25,
-    "agri": 40,
+    "other": 225,
+    "education": 48,
+    "roads": 24,
+    "agri": 38,
     "sanitation": 5,
+    "water": 26,
     "housing": 2,
     "nutrition": 13,
-    "power": 7,
+    "power": 6,
     "health": 28,
     "women": 6,
     "elderly": 13,
-    "water": 24,
-    "child": 3,
+    "child": 2,
     "social": 3,
     "disaster": 5,
     "certs": 2,
     "livelihood": 2
    },
-   "Karimnagar": {
-    "agri": 1,
-    "education": 1,
-    "other": 1
-   },
    "Hyderabad": {
+    "social": 1,
     "other": 30,
     "sanitation": 1,
     "water": 4,
     "education": 2,
     "housing": 2,
-    "power": 3,
+    "power": 1,
     "health": 1,
     "disaster": 1,
     "certs": 1,
     "roads": 1
+   },
+   "Warangal": {
+    "health": 3,
+    "nutrition": 1
+   },
+   "Karimnagar": {
+    "agri": 1,
+    "education": 1,
+    "other": 1
    },
    "Ranga Reddy": {
     "agri": 1,
@@ -119,46 +120,47 @@
     "agri": 1
    },
    "Jagtial": {
-    "agri": 1,
-    "education": 1
-   },
-   "Nagarkurnool": {
-    "other": 2
+    "agri": 1
    }
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 289,
+    "other": 285,
+    "agri": 31,
+    "power": 8,
     "livelihood": 5,
     "roads": 20,
-    "agri": 30,
-    "health": 35,
-    "education": 51,
-    "disaster": 85,
+    "health": 34,
+    "education": 48,
+    "disaster": 80,
     "nutrition": 6,
     "women": 6,
     "water": 29,
-    "housing": 7,
+    "housing": 6,
     "sanitation": 4,
     "social": 3,
-    "power": 7,
     "elderly": 7,
     "certs": 3
    },
-   "Palnadu": {
+   "Krishna": {
+    "other": 7,
     "water": 11,
+    "education": 1
+   },
+   "Palnadu": {
+    "water": 10,
     "other": 5,
     "roads": 1
+   },
+   "Nandyal": {
+    "other": 3,
+    "child": 1,
+    "housing": 1
    },
    "NTR": {
     "other": 6,
     "power": 1,
     "health": 1
-   },
-   "Nandyal": {
-    "child": 1,
-    "housing": 1,
-    "other": 2
    },
    "Srikakulam": {
     "other": 1,
@@ -176,11 +178,6 @@
    "Vizianagaram": {
     "other": 3
    },
-   "Krishna": {
-    "other": 6,
-    "water": 11,
-    "education": 1
-   },
    "Polavaram": {
     "power": 1,
     "other": 1
@@ -193,7 +190,7 @@
     "other": 7,
     "education": 1,
     "health": 1,
-    "disaster": 2
+    "disaster": 1
    },
    "Tirupati": {
     "other": 4,
