@@ -1,25 +1,135 @@
 {
- "updated": "2026-11-25T04:26",
+ "updated": "2026-11-25T07:43",
  "last7days_trusted": {
+  "ap": {
+   "Sri Potti Sriramulu Nellore": {
+    "housing": 1,
+    "disaster": 1,
+    "other": 1
+   },
+   "(state-wide / unknown)": {
+    "other": 283,
+    "health": 35,
+    "agri": 31,
+    "power": 8,
+    "social": 4,
+    "livelihood": 5,
+    "roads": 20,
+    "water": 30,
+    "education": 46,
+    "disaster": 76,
+    "nutrition": 6,
+    "women": 6,
+    "housing": 6,
+    "sanitation": 4,
+    "elderly": 7,
+    "certs": 3
+   },
+   "Krishna": {
+    "other": 7,
+    "water": 11,
+    "education": 1
+   },
+   "Palnadu": {
+    "water": 10,
+    "other": 5,
+    "roads": 1
+   },
+   "Nandyal": {
+    "other": 3,
+    "child": 1,
+    "housing": 1
+   },
+   "NTR": {
+    "other": 5,
+    "power": 1,
+    "health": 1
+   },
+   "Srikakulam": {
+    "other": 1,
+    "disaster": 5
+   },
+   "Ananthapuramu": {
+    "other": 9,
+    "health": 3,
+    "education": 4
+   },
+   "Guntur": {
+    "other": 5,
+    "education": 1
+   },
+   "Vizianagaram": {
+    "other": 3,
+    "roads": 1
+   },
+   "Polavaram": {
+    "power": 1,
+    "other": 1
+   },
+   "Kurnool": {
+    "other": 3,
+    "health": 3
+   },
+   "Visakhapatnam": {
+    "other": 7,
+    "education": 1,
+    "health": 1
+   },
+   "Tirupati": {
+    "other": 4,
+    "sanitation": 1
+   },
+   "Anakapalli": {
+    "other": 1
+   },
+   "YSR Kadapa": {
+    "education": 4,
+    "other": 3
+   },
+   "Dr. B. R. Ambedkar Konaseema": {
+    "other": 1
+   },
+   "Prakasam": {
+    "roads": 2,
+    "other": 4
+   },
+   "Kakinada": {
+    "nutrition": 1,
+    "other": 3
+   },
+   "Bapatla": {
+    "other": 1
+   },
+   "Chittoor": {
+    "education": 1
+   },
+   "Annamayya": {
+    "child": 1
+   }
+  },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 225,
-    "education": 48,
-    "roads": 24,
     "agri": 38,
+    "elderly": 14,
+    "other": 225,
+    "education": 47,
+    "nutrition": 14,
+    "roads": 24,
     "sanitation": 5,
     "water": 26,
     "housing": 2,
-    "nutrition": 13,
     "power": 6,
     "health": 28,
     "women": 6,
-    "elderly": 13,
     "child": 2,
     "social": 3,
     "disaster": 5,
     "certs": 2,
     "livelihood": 2
+   },
+   "Medak": {
+    "nutrition": 1,
+    "other": 1
    },
    "Hyderabad": {
     "social": 1,
@@ -86,9 +196,6 @@
    "Peddapalli": {
     "elderly": 1
    },
-   "Medak": {
-    "other": 1
-   },
    "Kamareddy": {
     "health": 1,
     "other": 1
@@ -121,111 +228,6 @@
    },
    "Jagtial": {
     "agri": 1
-   }
-  },
-  "ap": {
-   "(state-wide / unknown)": {
-    "other": 285,
-    "agri": 31,
-    "power": 8,
-    "livelihood": 5,
-    "roads": 20,
-    "health": 34,
-    "education": 48,
-    "disaster": 80,
-    "nutrition": 6,
-    "women": 6,
-    "water": 29,
-    "housing": 6,
-    "sanitation": 4,
-    "social": 3,
-    "elderly": 7,
-    "certs": 3
-   },
-   "Krishna": {
-    "other": 7,
-    "water": 11,
-    "education": 1
-   },
-   "Palnadu": {
-    "water": 10,
-    "other": 5,
-    "roads": 1
-   },
-   "Nandyal": {
-    "other": 3,
-    "child": 1,
-    "housing": 1
-   },
-   "NTR": {
-    "other": 6,
-    "power": 1,
-    "health": 1
-   },
-   "Srikakulam": {
-    "other": 1,
-    "disaster": 5
-   },
-   "Ananthapuramu": {
-    "other": 10,
-    "health": 3,
-    "education": 4
-   },
-   "Guntur": {
-    "other": 5,
-    "education": 1
-   },
-   "Vizianagaram": {
-    "other": 3
-   },
-   "Polavaram": {
-    "power": 1,
-    "other": 1
-   },
-   "Kurnool": {
-    "other": 3,
-    "health": 3
-   },
-   "Visakhapatnam": {
-    "other": 7,
-    "education": 1,
-    "health": 1,
-    "disaster": 1
-   },
-   "Tirupati": {
-    "other": 4,
-    "sanitation": 1
-   },
-   "Anakapalli": {
-    "other": 1
-   },
-   "YSR Kadapa": {
-    "education": 4,
-    "other": 3
-   },
-   "Dr. B. R. Ambedkar Konaseema": {
-    "other": 1
-   },
-   "Prakasam": {
-    "roads": 2,
-    "other": 4
-   },
-   "Kakinada": {
-    "nutrition": 1,
-    "other": 3
-   },
-   "Sri Potti Sriramulu Nellore": {
-    "disaster": 1,
-    "other": 1
-   },
-   "Bapatla": {
-    "other": 1
-   },
-   "Chittoor": {
-    "education": 1
-   },
-   "Annamayya": {
-    "child": 1
    }
   }
  }
