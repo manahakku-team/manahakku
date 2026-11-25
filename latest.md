@@ -1,4 +1,4 @@
-# Mana Hakku daily quality check, 2026-11-24
+# Mana Hakku daily quality check, 2026-11-25
 
 Build: fdaa91b Instagram job: use the never-expiring system-user key (graph.facebook.com); renewa
 
@@ -39,7 +39,7 @@ Register (read only)
   OK  ap: 14 reports, 0 hidden, newest 2026-11-14
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (29 days ago)
+  OK  finance data updated 2026-10-26 (30 days ago)
 LIVE_BAD 0
 ```
 
@@ -47,22 +47,23 @@ LIVE_BAD 0
 ```
 OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 1 naming the district
       - Deputy CM Pawan Kalyan: నేడు నిడదవోలుకు పవన్‌ కల్యాణ్‌.. ‘అమరజీవి జలధారా’కు శంకుస్థాపన..
-OK   ap en "Drinking water shortage in villages" @ Guntur: 1 naming the district
+OK   ap en "Drinking water shortage in villages" @ Guntur: 3 naming the district
+      - Guntur civic body launches ₹2.7 crore summer action plan to ensure drinking water supply
       - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-OK   ap en "Road accident on highway" @ Krishna: 8 naming the district
+      - National Watershed Conference begins in Guntur with call to strengthen rainwater harvesting
+OK   ap en "Road accident on highway" @ Krishna: 7 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
+      - Four killed in road accident in Vuyyuru
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
-      - Three killed, four injured in rain-related incidents in Krishna, NTR Districts
 OK   ts en "Doctors absent at government hospital" @ Hyderabad: 1 naming the district
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
 OK   ts te "రైతుల ఆందోళన" @ Khammam: 2 naming the district
       - Farmers | మక్కలు అమ్మిన రైతుల పేర్లు ఆన్‌లైన్‌లో గల్లంతు.. ఖమ్మం మార్క్‌ఫెడ్‌ అధికారుల నిర్లక్ష్యం!
       - ఖమ్మంలో మిర్చికి తెగులు.. రైతులకు దిగులు..
-OK   ts en "Floods damage crops" @ Warangal: 7 naming the district
-      - Floods Ravage Lowlands as Uplands Face Water Scarcity in Undivided Warangal
-      - Warangal, Hanamkonda Steps Up Relief Works After Floods
+OK   ts en "Floods damage crops" @ Warangal: 3 naming the district
       - Rain Damages Crops, Disrupts Transport In Warangal
-      - Warangal, Khammam, Nalgonda worst hit as Cyclone Montha leaves trail of ruin; Six lives lost
+      - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
+      - Revanth to Conduct Aerial Survey in Warangal, Husnabad
 NEWS_NONE 0
 ```
