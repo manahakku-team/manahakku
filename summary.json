@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-25T19:13",
+ "updated": "2026-11-25T22:14",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
     "other": 283,
-    "nutrition": 10,
-    "roads": 21,
     "education": 45,
-    "agri": 30,
-    "health": 35,
-    "disaster": 66,
+    "nutrition": 11,
+    "roads": 21,
+    "agri": 28,
+    "health": 34,
+    "disaster": 65,
     "power": 7,
     "social": 4,
     "livelihood": 5,
-    "water": 25,
+    "water": 24,
     "women": 5,
     "housing": 6,
     "sanitation": 2,
@@ -111,13 +111,13 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "education": 47,
+    "other": 228,
+    "education": 46,
     "water": 25,
     "nutrition": 17,
-    "other": 228,
     "housing": 3,
     "agri": 37,
-    "health": 28,
+    "health": 26,
     "roads": 24,
     "elderly": 9,
     "child": 3,
@@ -125,16 +125,16 @@
     "power": 7,
     "women": 4,
     "social": 3,
+    "livelihood": 2,
     "disaster": 4,
-    "certs": 1,
-    "livelihood": 1
+    "certs": 1
    },
    "Kumuram Bheem Asifabad": {
     "other": 1,
     "education": 2
    },
    "Medchal–Malkajgiri": {
-    "other": 3,
+    "other": 2,
     "housing": 1
    },
    "Jagtial": {
@@ -160,8 +160,7 @@
     "power": 1,
     "health": 1,
     "disaster": 1,
-    "certs": 1,
-    "roads": 1
+    "certs": 1
    },
    "Medak": {
     "nutrition": 1,
@@ -185,7 +184,7 @@
     "health": 1
    },
    "Narayanpet": {
-    "water": 4
+    "water": 3
    },
    "Adilabad": {
     "sanitation": 1,
