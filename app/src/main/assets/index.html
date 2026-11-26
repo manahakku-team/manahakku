@@ -1625,8 +1625,8 @@ function noVoiceTap(){if(INAPP&&!NATIVE){toast(t("noVoiceApp"));setTimeout(openO
 function bindListen(btn,getText){setListenBtn(btn,false);btn.onclick=TTS?()=>speak(getText(),btn):noVoiceTap}
 
 // ---------- Static text / language ----------
-const siPhase2=()=>Date.now()>Date.parse("2026-11-26T23:59:59+05:30");   // from 27 Nov the ideas box takes ideas on any problem
-const siExtended=()=>!siPhase2()&&Date.now()>Date.parse("2026-11-14T23:59:59+05:30");   // 15–26 Nov: safety drive extended
+const siPhase2=()=>Date.now()>Date.parse("2026-11-29T23:59:59+05:30");   // from 30 Nov the ideas box takes ideas on any problem
+const siExtended=()=>!siPhase2()&&Date.now()>Date.parse("2026-11-14T23:59:59+05:30");   // 15–29 Nov: safety drive extended
 function applyStatic(){if(siExtended()){const c=document.getElementById("safeidea");const e=c&&c.querySelector('[data-t="siUntil"]');if(e)e.dataset.t="siUntilExt"}if(siPhase2()){const c=document.getElementById("safeidea");if(c){const sw=(a,b)=>{const e=c.querySelector('[data-t="'+a+'"]');if(e)e.dataset.t=b};sw("siLede","siLede2");sw("siShort","siLede2");sw("siUntil","siUntil2")}}
  document.documentElement.lang=LANG;
  document.querySelectorAll("[data-t]").forEach(el=>{el.textContent=t(el.dataset.t)});

@@ -1,0 +1,25 @@
+name: Instagram key renewal (monthly)
+on:
+  schedule: [ { cron: "17 4 1 * *" } ]   # 1st of every month, 9:47 IST
+  workflow_dispatch:
+permissions: { contents: read }
+jobs:
+  renew:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Renew the 60-day key
+        id: r
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python3 tools/social/ig_post.py refresh
+      - name: Save the renewed key (needs the optional GH_SECRETS_PAT secret)
+        if: steps.r.outputs.token != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+          NEW: ${{ steps.r.outputs.token }}
+        run: |
+          echo "::add-mask::$NEW"
+          if [ -z "$GH_TOKEN" ]; then echo "GH_SECRETS_PAT not set: the old key stays valid until it expires; renew it by hand before then."; exit 1; fi
+          gh secret set IG_ACCESS_TOKEN --repo "${{ github.repository }}" --body "$NEW" && echo "Saved the renewed key."
