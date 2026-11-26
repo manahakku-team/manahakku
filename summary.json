@@ -1,24 +1,35 @@
 {
- "updated": "2026-11-26T04:22",
+ "updated": "2026-11-26T07:42",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 284,
-    "education": 46,
-    "elderly": 7,
-    "agri": 27,
-    "nutrition": 10,
+    "other": 281,
+    "education": 41,
+    "elderly": 6,
+    "agri": 26,
+    "nutrition": 9,
     "roads": 20,
-    "health": 33,
-    "disaster": 61,
-    "power": 7,
+    "health": 30,
+    "disaster": 54,
+    "power": 6,
     "social": 4,
     "livelihood": 5,
-    "water": 22,
+    "water": 21,
     "women": 5,
     "housing": 5,
     "sanitation": 2,
     "certs": 3
+   },
+   "Tirupati": {
+    "other": 4,
+    "water": 1,
+    "sanitation": 1
+   },
+   "Ananthapuramu": {
+    "roads": 1,
+    "other": 6,
+    "health": 1,
+    "education": 2
    },
    "Guntur": {
     "other": 5,
@@ -27,11 +38,6 @@
    "Anakapalli": {
     "roads": 1,
     "other": 1
-   },
-   "Tirupati": {
-    "water": 1,
-    "other": 3,
-    "sanitation": 1
    },
    "YSR Kadapa": {
     "water": 1,
@@ -54,7 +60,7 @@
     "education": 1
    },
    "Palnadu": {
-    "water": 8,
+    "water": 7,
     "other": 4
    },
    "Nandyal": {
@@ -65,11 +71,6 @@
    "Srikakulam": {
     "other": 1,
     "disaster": 4
-   },
-   "Ananthapuramu": {
-    "other": 6,
-    "health": 1,
-    "education": 2
    },
    "Vizianagaram": {
     "other": 3,
@@ -109,17 +110,22 @@
    }
   },
   "ts": {
+   "Medak": {
+    "agri": 1,
+    "nutrition": 1,
+    "other": 1
+   },
    "(state-wide / unknown)": {
-    "health": 27,
-    "agri": 37,
+    "education": 43,
+    "agri": 38,
+    "health": 26,
+    "other": 227,
     "nutrition": 16,
     "elderly": 9,
-    "education": 42,
-    "other": 227,
     "sanitation": 6,
-    "water": 24,
+    "water": 23,
     "housing": 3,
-    "roads": 23,
+    "roads": 22,
     "child": 3,
     "power": 6,
     "women": 3,
@@ -129,9 +135,9 @@
     "certs": 1
    },
    "Hyderabad": {
+    "other": 28,
     "roads": 1,
     "education": 3,
-    "other": 30,
     "social": 1,
     "sanitation": 1,
     "water": 4,
@@ -161,10 +167,6 @@
     "sanitation": 1,
     "agri": 2,
     "roads": 1
-   },
-   "Medak": {
-    "nutrition": 1,
-    "other": 1
    },
    "Karimnagar": {
     "agri": 1,
@@ -218,7 +220,7 @@
     "health": 1
    },
    "Siddipet": {
-    "other": 4
+    "other": 3
    },
    "Jogulamba Gadwal": {
     "elderly": 1
