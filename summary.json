@@ -1,24 +1,28 @@
 {
- "updated": "2026-11-25T22:14",
+ "updated": "2026-11-26T01:39",
  "last7days_trusted": {
   "ap": {
    "(state-wide / unknown)": {
-    "other": 283,
+    "elderly": 8,
+    "agri": 26,
+    "other": 284,
     "education": 45,
-    "nutrition": 11,
+    "nutrition": 10,
     "roads": 21,
-    "agri": 28,
-    "health": 34,
-    "disaster": 65,
+    "health": 32,
+    "disaster": 66,
     "power": 7,
     "social": 4,
     "livelihood": 5,
-    "water": 24,
+    "water": 23,
     "women": 5,
     "housing": 6,
     "sanitation": 2,
-    "elderly": 7,
     "certs": 3
+   },
+   "Guntur": {
+    "other": 5,
+    "education": 1
    },
    "Anakapalli": {
     "roads": 1,
@@ -26,7 +30,7 @@
    },
    "Tirupati": {
     "water": 1,
-    "other": 3,
+    "other": 4,
     "sanitation": 1
    },
    "YSR Kadapa": {
@@ -64,13 +68,9 @@
     "disaster": 5
    },
    "Ananthapuramu": {
-    "other": 8,
+    "other": 7,
     "health": 1,
     "education": 2
-   },
-   "Guntur": {
-    "other": 4,
-    "education": 1
    },
    "Vizianagaram": {
     "other": 3,
@@ -81,7 +81,7 @@
     "other": 1
    },
    "Kurnool": {
-    "other": 3
+    "other": 4
    },
    "Visakhapatnam": {
     "other": 7,
@@ -93,11 +93,11 @@
    },
    "Prakasam": {
     "roads": 2,
-    "other": 4
+    "other": 3
    },
    "Kakinada": {
     "nutrition": 1,
-    "other": 3
+    "other": 2
    },
    "Bapatla": {
     "other": 1
@@ -111,19 +111,19 @@
   },
   "ts": {
    "(state-wide / unknown)": {
-    "other": 228,
-    "education": 46,
-    "water": 25,
-    "nutrition": 17,
+    "education": 42,
+    "other": 225,
+    "sanitation": 6,
+    "water": 24,
+    "nutrition": 15,
     "housing": 3,
-    "agri": 37,
+    "agri": 35,
     "health": 26,
-    "roads": 24,
-    "elderly": 9,
+    "roads": 23,
+    "elderly": 8,
     "child": 3,
-    "sanitation": 5,
     "power": 7,
-    "women": 4,
+    "women": 3,
     "social": 3,
     "livelihood": 2,
     "disaster": 4,
@@ -152,7 +152,7 @@
    },
    "Hyderabad": {
     "education": 3,
-    "other": 30,
+    "other": 31,
     "social": 1,
     "sanitation": 1,
     "water": 4,
