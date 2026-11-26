@@ -1,0 +1,32 @@
+name: Instagram (post only after the owner says "post it")
+on:
+  workflow_dispatch:
+    inputs:
+      mode: { description: "check | image | carousel | reel", default: "check" }
+      post: { description: "Folder on the 'social' branch with caption.txt and 1.jpg, 2.jpg… or reel.mp4", default: "" }
+permissions: { contents: read }
+concurrency: { group: instagram, cancel-in-progress: false }
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the post files
+        if: inputs.mode != 'check'
+        run: |
+          git fetch -q origin social && git worktree add -q /tmp/social origin/social
+          test -f "/tmp/social/${{ inputs.post }}/caption.txt" || { echo "No caption.txt in ${{ inputs.post }}"; exit 1; }
+      - name: Post (or check the key)
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          BASE: https://raw.githubusercontent.com/${{ github.repository }}/social/${{ inputs.post }}
+        run: |
+          M="${{ inputs.mode }}"; D="/tmp/social/${{ inputs.post }}"
+          case "$M" in
+            check) python3 tools/social/ig_post.py check ;;
+            image) python3 tools/social/ig_post.py image "$BASE/1.jpg" "$D/caption.txt" ;;
+            carousel) U=$(ls "$D" | grep -E '^[0-9]+\.jpg$' | sort -n | sed "s#^#$BASE/#" | paste -sd, -); python3 tools/social/ig_post.py carousel "$U" "$D/caption.txt" ;;
+            reel) python3 tools/social/ig_post.py reel "$BASE/reel.mp4" "$D/caption.txt" ;;
+            *) echo "unknown mode"; exit 1 ;;
+          esac
