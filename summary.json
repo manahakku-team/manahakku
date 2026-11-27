@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-27T01:40",
+ "updated": "2026-11-27T04:25",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 238,
+    "livelihood": 5,
+    "health": 27,
+    "disaster": 5,
+    "other": 244,
     "agri": 43,
-    "elderly": 9,
-    "education": 43,
+    "elderly": 10,
+    "education": 42,
     "women": 4,
+    "roads": 18,
     "nutrition": 15,
     "water": 22,
-    "roads": 17,
     "power": 6,
-    "livelihood": 4,
     "social": 2,
     "sanitation": 7,
-    "health": 25,
     "housing": 2,
     "child": 4,
-    "disaster": 4,
     "certs": 1
    },
    "Bhadradri Kothagudem": {
@@ -130,20 +130,20 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "agri": 32,
-    "water": 20,
-    "other": 259,
+    "social": 3,
+    "roads": 18,
+    "water": 22,
+    "health": 28,
+    "other": 257,
+    "agri": 33,
     "nutrition": 12,
-    "roads": 17,
     "livelihood": 5,
     "sanitation": 3,
-    "health": 28,
-    "disaster": 41,
+    "disaster": 35,
     "housing": 5,
-    "education": 39,
-    "elderly": 6,
+    "education": 38,
+    "elderly": 5,
     "power": 6,
-    "social": 2,
     "women": 3
    },
    "Nandyal": {
