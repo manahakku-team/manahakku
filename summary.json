@@ -1,35 +1,29 @@
 {
- "updated": "2026-11-27T16:21",
+ "updated": "2026-11-27T19:16",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "other": 253,
+    "water": 23,
+    "education": 42,
+    "agri": 46,
     "power": 11,
-    "other": 248,
-    "agri": 45,
     "livelihood": 6,
     "elderly": 11,
     "social": 3,
     "health": 25,
     "disaster": 5,
-    "education": 40,
     "women": 4,
     "roads": 18,
     "nutrition": 13,
-    "water": 21,
     "iddocs": 1,
     "sanitation": 7,
     "housing": 2,
     "child": 4,
     "certs": 1
    },
-   "Warangal": {
-    "health": 10,
-    "nutrition": 1
-   },
-   "Mancherial": {
-    "other": 1
-   },
    "Hyderabad": {
+    "disaster": 1,
     "other": 21,
     "health": 3,
     "roads": 1,
@@ -38,8 +32,14 @@
     "sanitation": 1,
     "water": 1,
     "housing": 1,
-    "power": 1,
-    "disaster": 1
+    "power": 1
+   },
+   "Warangal": {
+    "health": 10,
+    "nutrition": 1
+   },
+   "Mancherial": {
+    "other": 1
    },
    "Adilabad": {
     "agri": 2,
@@ -60,7 +60,7 @@
    "Kumuram Bheem Asifabad": {
     "agri": 1,
     "other": 1,
-    "education": 2
+    "education": 1
    },
    "Karimnagar": {
     "education": 2,
@@ -129,38 +129,38 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "water": 23,
-    "power": 10,
+    "roads": 17,
+    "housing": 5,
+    "health": 31,
+    "agri": 31,
+    "other": 250,
+    "child": 2,
+    "education": 40,
+    "power": 12,
+    "water": 24,
     "certs": 1,
     "women": 6,
-    "other": 257,
-    "child": 1,
-    "disaster": 23,
-    "agri": 30,
-    "education": 38,
-    "health": 28,
+    "disaster": 19,
+    "livelihood": 4,
     "social": 3,
-    "roads": 17,
     "nutrition": 12,
-    "livelihood": 3,
     "sanitation": 3,
-    "housing": 4,
     "elderly": 2
    },
    "NTR": {
+    "health": 2,
     "other": 7,
     "nutrition": 1,
-    "power": 1,
-    "health": 1
+    "power": 1
+   },
+   "Palnadu": {
+    "agri": 2,
+    "water": 5,
+    "other": 4
    },
    "Anakapalli": {
     "roads": 2,
     "other": 1
-   },
-   "Palnadu": {
-    "agri": 1,
-    "water": 5,
-    "other": 4
    },
    "Srikakulam": {
     "agri": 1,
@@ -215,7 +215,7 @@
     "other": 4
    },
    "Visakhapatnam": {
-    "other": 5,
+    "other": 4,
     "education": 1
    },
    "Dr. B. R. Ambedkar Konaseema": {
