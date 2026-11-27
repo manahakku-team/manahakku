@@ -1,8 +1,9 @@
 {
- "updated": "2026-11-27T13:36",
+ "updated": "2026-11-27T16:21",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "power": 11,
     "other": 248,
     "agri": 45,
     "livelihood": 6,
@@ -14,33 +15,40 @@
     "women": 4,
     "roads": 18,
     "nutrition": 13,
-    "water": 20,
-    "power": 6,
+    "water": 21,
     "iddocs": 1,
     "sanitation": 7,
     "housing": 2,
     "child": 4,
     "certs": 1
    },
+   "Warangal": {
+    "health": 10,
+    "nutrition": 1
+   },
    "Mancherial": {
     "other": 1
    },
    "Hyderabad": {
-    "other": 23,
+    "other": 21,
     "health": 3,
     "roads": 1,
     "education": 3,
     "social": 1,
     "sanitation": 1,
-    "water": 2,
+    "water": 1,
     "housing": 1,
     "power": 1,
     "disaster": 1
    },
+   "Adilabad": {
+    "agri": 2,
+    "other": 1,
+    "sanitation": 1
+   },
    "Bhadradri Kothagudem": {
     "other": 1,
-    "water": 1,
-    "women": 1
+    "water": 1
    },
    "Nagarkurnool": {
     "agri": 1
@@ -58,17 +66,8 @@
     "education": 2,
     "agri": 1
    },
-   "Warangal": {
-    "health": 6,
-    "nutrition": 1
-   },
    "Jogulamba Gadwal": {
     "power": 1
-   },
-   "Adilabad": {
-    "other": 1,
-    "sanitation": 1,
-    "agri": 1
    },
    "Nirmal": {
     "sanitation": 1,
@@ -126,29 +125,33 @@
    },
    "Nizamabad": {
     "other": 1
-   },
-   "Siddipet": {
-    "other": 1
    }
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 255,
-    "women": 4,
+    "water": 23,
+    "power": 10,
+    "certs": 1,
+    "women": 6,
+    "other": 257,
     "child": 1,
-    "power": 7,
-    "disaster": 24,
-    "education": 39,
-    "health": 29,
-    "agri": 32,
-    "water": 22,
+    "disaster": 23,
+    "agri": 30,
+    "education": 38,
+    "health": 28,
     "social": 3,
-    "roads": 18,
+    "roads": 17,
     "nutrition": 12,
     "livelihood": 3,
     "sanitation": 3,
     "housing": 4,
     "elderly": 2
+   },
+   "NTR": {
+    "other": 7,
+    "nutrition": 1,
+    "power": 1,
+    "health": 1
    },
    "Anakapalli": {
     "roads": 2,
@@ -162,7 +165,7 @@
    "Srikakulam": {
     "agri": 1,
     "other": 1,
-    "disaster": 3
+    "disaster": 1
    },
    "Kakinada": {
     "other": 1,
@@ -178,12 +181,6 @@
     "child": 1,
     "housing": 1
    },
-   "NTR": {
-    "nutrition": 1,
-    "other": 6,
-    "power": 1,
-    "health": 1
-   },
    "Guntur": {
     "other": 7,
     "education": 1
@@ -195,8 +192,7 @@
    },
    "Ananthapuramu": {
     "roads": 2,
-    "other": 3,
-    "health": 1
+    "other": 3
    },
    "YSR Kadapa": {
     "water": 1,
