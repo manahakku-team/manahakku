@@ -1,25 +1,33 @@
 {
- "updated": "2026-11-26T22:13",
+ "updated": "2026-11-27T01:40",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
-    "other": 237,
-    "water": 22,
-    "roads": 19,
-    "agri": 41,
-    "power": 6,
-    "livelihood": 3,
+    "other": 238,
+    "agri": 43,
     "elderly": 9,
-    "nutrition": 16,
+    "education": 43,
+    "women": 4,
+    "nutrition": 15,
+    "water": 22,
+    "roads": 17,
+    "power": 6,
+    "livelihood": 4,
     "social": 2,
-    "education": 42,
     "sanitation": 7,
-    "health": 24,
+    "health": 25,
     "housing": 2,
     "child": 4,
-    "women": 3,
     "disaster": 4,
     "certs": 1
+   },
+   "Bhadradri Kothagudem": {
+    "other": 1,
+    "water": 1,
+    "women": 1
+   },
+   "Nagarkurnool": {
+    "agri": 1
    },
    "Peddapalli": {
     "agri": 1,
@@ -52,8 +60,7 @@
     "nutrition": 1
    },
    "Jogulamba Gadwal": {
-    "power": 1,
-    "elderly": 1
+    "power": 1
    },
    "Adilabad": {
     "other": 1,
@@ -113,10 +120,6 @@
    "Suryapet": {
     "roads": 1
    },
-   "Bhadradri Kothagudem": {
-    "water": 1,
-    "women": 1
-   },
    "Nizamabad": {
     "other": 1,
     "health": 1
@@ -127,28 +130,33 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "agri": 30,
-    "water": 22,
-    "other": 262,
+    "agri": 32,
+    "water": 20,
+    "other": 259,
     "nutrition": 12,
     "roads": 17,
     "livelihood": 5,
     "sanitation": 3,
     "health": 28,
-    "disaster": 43,
+    "disaster": 41,
     "housing": 5,
-    "education": 40,
+    "education": 39,
     "elderly": 6,
     "power": 6,
-    "social": 3,
+    "social": 2,
     "women": 3
+   },
+   "Nandyal": {
+    "other": 4,
+    "child": 1,
+    "housing": 1
    },
    "Palnadu": {
     "water": 6,
     "other": 4
    },
    "Guntur": {
-    "other": 7,
+    "other": 8,
     "education": 1
    },
    "Tirupati": {
@@ -159,8 +167,7 @@
    "Ananthapuramu": {
     "roads": 2,
     "other": 3,
-    "health": 1,
-    "education": 1
+    "health": 1
    },
    "Anakapalli": {
     "roads": 1,
@@ -182,13 +189,8 @@
    },
    "Krishna": {
     "other": 5,
-    "water": 10,
+    "water": 9,
     "education": 1
-   },
-   "Nandyal": {
-    "other": 3,
-    "child": 1,
-    "housing": 1
    },
    "Srikakulam": {
     "other": 1,
