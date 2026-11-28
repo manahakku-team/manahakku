@@ -1,4 +1,4 @@
-# Mana Hakku daily quality check, 2026-11-27
+# Mana Hakku daily quality check, 2026-11-28
 
 Build: 9420b69 Extend women's safety ideas drive to 29 Nov; any-problem ideas from 30 Nov
 
@@ -39,30 +39,33 @@ Register (read only)
   OK  ap: 14 reports, 0 hidden, newest 2026-11-14
   OK  ts: 1 reports, 0 hidden, newest 2026-10-26
 Data freshness
-  OK  finance data updated 2026-10-26 (32 days ago)
+  OK  finance data updated 2026-10-26 (33 days ago)
 LIVE_BAD 0
 ```
 
 ## 4. Live news check (real Google News through the register)
 ```
-OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 1 naming the district
+OK   ap te "మాజీ సీఎం గ్రామాల్లో పర్యటించారు" @ East Godavari: 4 naming the district
+      - "east-godavari"
+      - Twin setbacks in East Godavari test Durgesh’s alliance management
+      - "east-godavari-district"
       - Deputy CM Pawan Kalyan: నేడు నిడదవోలుకు పవన్‌ కల్యాణ్‌.. ‘అమరజీవి జలధారా’కు శంకుస్థాపన..
-OK   ap en "Drinking water shortage in villages" @ Guntur: 1 naming the district
-      - Rs 550 cr drinking water project for Guntur awaits cabinet nod
-OK   ap en "Road accident on highway" @ Krishna: 6 naming the district
+NONE ap en "Drinking water shortage in villages" @ Guntur: 0 naming the district, 1 wider
+OK   ap en "Road accident on highway" @ Krishna: 5 naming the district
       - 17 Injured in Road Accident Near Pendur in NTR Krishna District
       - Four Killed in Road Accident in Krishna District
       - Four dead in separate road accidents in NTR, Krishna districts in Andhra Pradesh
       - Tipper truck plunges into Krishna River after crashing into car on Karnataka bridge; driver missing
-OK   ts en "Doctors absent at government hospital" @ Hyderabad: 2 naming the district
+OK   ts en "Doctors absent at government hospital" @ Hyderabad: 1 naming the district
       - Doctor shortage, poor emergency care crippling Hyderabad government hospitals, says HRF
-      - Telangana: Hyderabad medical colleges have 71% more doctors than required, Asifabad faces 73% vacancies
-OK   ts te "రైతుల ఆందోళన" @ Khammam: 2 naming the district
+OK   ts te "రైతుల ఆందోళన" @ Khammam: 3 naming the district
+      - Khammam cotton loss: ఖమ్మం జిల్లాలో నిండా మునుగుతున్న పత్తి రైతులు
       - Farmers | మక్కలు అమ్మిన రైతుల పేర్లు ఆన్‌లైన్‌లో గల్లంతు.. ఖమ్మం మార్క్‌ఫెడ్‌ అధికారుల నిర్లక్ష్యం!
-      - ఖమ్మం జిల్లాపై ‘అర్నబ్‌’ తుపాను ప్రభావం.. జిల్లా వ్యాప్తంగా మోస్తరు వర్షం
-OK   ts en "Floods damage crops" @ Warangal: 3 naming the district
+      - ఖమ్మంలో మిర్చికి తెగులు.. రైతులకు దిగులు..
+OK   ts en "Floods damage crops" @ Warangal: 7 naming the district
+      - Floods Ravage Lowlands as Uplands Face Water Scarcity in Undivided Warangal
+      - Warangal, Hanamkonda Steps Up Relief Works After Floods
       - Rain Damages Crops, Disrupts Transport In Warangal
-      - Cyclone Montha hits Warangal, Hanamkonda hard, colonies inundated
-      - Revanth to Conduct Aerial Survey in Warangal, Husnabad
-NEWS_NONE 0
+      - Warangal, Khammam, Nalgonda worst hit as Cyclone Montha leaves trail of ruin; Six lives lost
+NEWS_NONE 1
 ```
