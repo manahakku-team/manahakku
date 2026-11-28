@@ -1,41 +1,46 @@
 {
- "updated": "2026-11-28T07:34",
+ "updated": "2026-11-28T17:36",
  "last7days_trusted": {
   "ts": {
    "(state-wide / unknown)": {
+    "other": 295,
+    "agri": 52,
+    "roads": 17,
+    "water": 32,
+    "women": 5,
+    "health": 25,
+    "education": 45,
+    "livelihood": 9,
     "power": 18,
-    "water": 29,
-    "livelihood": 8,
-    "roads": 16,
-    "other": 260,
-    "education": 41,
-    "health": 23,
-    "nutrition": 14,
+    "nutrition": 13,
     "iddocs": 2,
-    "agri": 48,
-    "sanitation": 8,
+    "sanitation": 9,
     "elderly": 11,
     "social": 3,
     "disaster": 5,
-    "women": 3,
     "housing": 2,
-    "child": 4,
-    "certs": 1
+    "child": 4
+   },
+   "Warangal": {
+    "health": 11,
+    "nutrition": 1
    },
    "Hyderabad": {
-    "other": 22,
+    "roads": 2,
+    "other": 20,
     "disaster": 1,
     "health": 2,
-    "roads": 1,
     "education": 3,
     "social": 1,
     "sanitation": 1,
     "water": 1,
     "housing": 1
    },
-   "Warangal": {
-    "health": 10,
-    "nutrition": 1
+   "Adilabad": {
+    "education": 1,
+    "agri": 2,
+    "other": 1,
+    "sanitation": 1
    },
    "Nalgonda": {
     "roads": 2,
@@ -45,11 +50,6 @@
    },
    "Mancherial": {
     "other": 1
-   },
-   "Adilabad": {
-    "agri": 2,
-    "other": 1,
-    "sanitation": 1
    },
    "Bhadradri Kothagudem": {
     "other": 1
@@ -123,36 +123,57 @@
   },
   "ap": {
    "(state-wide / unknown)": {
-    "other": 260,
-    "agri": 36,
-    "water": 27,
-    "roads": 17,
-    "education": 39,
+    "housing": 5,
+    "other": 264,
+    "agri": 40,
+    "women": 8,
+    "education": 40,
     "health": 32,
+    "disaster": 13,
+    "water": 27,
+    "livelihood": 5,
+    "roads": 16,
     "power": 13,
-    "housing": 4,
     "social": 4,
     "sanitation": 4,
     "child": 3,
     "certs": 1,
-    "women": 6,
-    "disaster": 14,
-    "livelihood": 4,
     "nutrition": 11,
-    "elderly": 2
+    "elderly": 1
+   },
+   "Ananthapuramu": {
+    "education": 1,
+    "other": 3,
+    "roads": 2
+   },
+   "Visakhapatnam": {
+    "education": 2,
+    "other": 3
+   },
+   "Srikakulam": {
+    "other": 2,
+    "agri": 1
+   },
+   "Kakinada": {
+    "other": 2
+   },
+   "Krishna": {
+    "other": 8,
+    "water": 9
    },
    "NTR": {
     "health": 3,
-    "other": 5,
+    "other": 4,
     "nutrition": 1,
     "power": 1
    },
    "Chittoor": {
     "education": 1
    },
-   "Ananthapuramu": {
-    "other": 4,
-    "roads": 2
+   "Polavaram": {
+    "nutrition": 1,
+    "power": 1,
+    "other": 1
    },
    "Palnadu": {
     "agri": 2,
@@ -163,37 +184,24 @@
     "roads": 2,
     "other": 1
    },
-   "Srikakulam": {
-    "agri": 1,
-    "other": 1,
-    "disaster": 1
-   },
-   "Kakinada": {
-    "other": 1
-   },
-   "Krishna": {
-    "other": 7,
-    "water": 9,
-    "education": 1
-   },
    "Nandyal": {
-    "other": 4,
+    "other": 3,
     "child": 1,
     "housing": 1
+   },
+   "YSR Kadapa": {
+    "other": 3,
+    "water": 1,
+    "education": 3
    },
    "Guntur": {
     "other": 6,
     "education": 1
    },
    "Tirupati": {
-    "other": 3,
+    "other": 4,
     "water": 1,
     "sanitation": 1
-   },
-   "YSR Kadapa": {
-    "water": 1,
-    "education": 3,
-    "other": 2
    },
    "Sri Potti Sriramulu Nellore": {
     "housing": 1
@@ -202,22 +210,11 @@
     "other": 4,
     "roads": 1
    },
-   "Polavaram": {
-    "power": 1,
-    "other": 1
-   },
    "Kurnool": {
-    "other": 4
-   },
-   "Visakhapatnam": {
-    "other": 4,
-    "education": 1
+    "other": 3
    },
    "Dr. B. R. Ambedkar Konaseema": {
     "other": 1
-   },
-   "Prakasam": {
-    "roads": 1
    }
   }
  }
